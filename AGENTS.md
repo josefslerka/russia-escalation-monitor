@@ -1016,3 +1016,10 @@ to the public repository `josefslerka/russia-escalation-monitor`.
   published assessment, explain the failure and request input only when needed.
 - The scheduled task runs locally: the computer and Codex app must be available.
   Do not silently replace it with a different execution environment or service.
+
+## Public-facing language
+
+Use factual Czech headings that name the subject. Avoid promotional slogans,
+generic rhetorical questions and sentence fragments such as “Co se mění. A co
+z toho plyne.” Prefer short, concrete sentences in summaries. Explain specialist
+terms when plain Czech can convey the same distinction without losing accuracy.

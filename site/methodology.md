@@ -1,4 +1,4 @@
-# Odhad, který se dá zkontrolovat
+# Metodika předpovědi
 
 Monitor eskalace je průběžný analytický projekt Josefa Šlerky s podporou AI. Sleduje ruskou eskalaci a její dopady na Ukrajinu, EU, NATO, Pobaltí, Bělorusko a Česko. Každý běh vychází z předchozího uloženého stavu a aktualizuje jen otázky, kterých se nové důkazy skutečně týkají.
 

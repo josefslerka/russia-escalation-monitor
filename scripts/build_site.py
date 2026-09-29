@@ -210,18 +210,18 @@ def dashboard(state, reports, evidence_count):
     watch = "".join(f"<li>{escape(text)}</li>" for text in state.get("watch_24_72h", []))
     basis = escape(state["overall_level_basis"])
     latest = Path(state["last_report"]).stem
-    return f'''<div class="hero"><div><p class="eyebrow">Rusko · Ukrajina · Evropa</p><h1>Co se mění.<br>A co z toho plyne.</h1>
+    return f'''<div class="hero"><div><p class="eyebrow">Hodnocení k <time datetime="{escape(state['assessment_time'])}">{timestamp(state['assessment_time'])}</time></p><h1>Rizika ruské eskalace</h1>
 <p class="lede">{escape(state['one_line_judgment'])}</p><div class="actions"><a class="button" href="reports/{latest}.html">Číst aktuální zprávu →</a><a class="button secondary" href="archive.html">Procházet archiv</a></div></div>
 <aside class="status-card" aria-label="Celkové hodnocení"><p class="status-label">Celkový stupeň varování</p>{badge(state['overall_level'])}<span class="trend">{escape(TRENDS[state['overall_trend']])}</span><p class="meta">Kvalitativní hodnocení. Význam stupně a podklady jsou vysvětleny ve zprávě.</p></aside></div>
 <p class="freshness" data-assessment-time="{escape(state['assessment_time'])}" hidden></p>
-<div class="data-strip"><span>Uzávěrka <strong>{timestamp(state['assessment_time'])}</strong></span><span>Hlavní horizont <strong>{day(state['forecast_horizon'])}</strong></span><span><strong>{len(reports)}</strong> zpráv v archivu · <strong>{evidence_count}</strong> záznamů evidence</span></div>
+<div class="data-strip"><span>Odhady do <strong>{day(state['forecast_horizon'])}</strong></span><span><strong>{len(reports)}</strong> zpráv v archivu · <strong>{evidence_count}</strong> záznamů evidence</span></div>
 <section class="section"><div class="section-head"><h2>Aktuální pravděpodobnosti</h2><p>Odhad · pásmo nejistoty · změna vůči prioru</p></div>
 <div class="table-wrap"><table><thead><tr><th scope="col">Událost</th><th scope="col">Do kdy</th><th scope="col">Odhad / pásmo</th><th scope="col">Změna</th><th scope="col">Důvěra</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
-<p class="note">Odhady se vztahují k dalším událostem po uzávěrce. Události se mohou překrývat a jejich pravděpodobnosti se nesčítají do 100 %. Pásma vyjadřují úsudkovou nejistotu. Nezměněný odhad je plnohodnotný výsledek.</p></section>
-<section class="section two-column"><div class="panel"><p class="eyebrow">Západní rozhodování</p><h2>Mění tlak skutečné chování?</h2><p class="metric">{wdpi['total']}<small> / 100 · WDPI · {escape(TRENDS[wdpi['trend']])}</small></p>
+<p class="note">Odhady se vztahují k dalším událostem po uzávěrce. Události se mohou překrývat a jejich pravděpodobnosti se nesčítají do 100 %. Pásma vyjadřují úsudkovou nejistotu.</p></section>
+<section class="section two-column"><div class="panel"><p class="eyebrow">WDPI</p><h2>Tlak na západní rozhodování</h2><p class="metric">{wdpi['total']}<small> / 100 · {escape(TRENDS[wdpi['trend']])}</small></p>
 <div class="component"><span>Konkurence o zdroje · 35 %</span><strong>{wdpi['resource_dilution']}</strong></div><div class="component"><span>Domácí náklady · 35 %</span><strong>{wdpi['domestic_pain']}</strong></div><div class="component"><span>Sebeodstrašení · 30 %</span><strong>{wdpi['self_deterrence']}</strong></div>
 <p class="formula">{escape(wdpi.get('derivation', wdpi['formula']))}</p><p>WDPI je index tlaku na rozhodování, nikoli pravděpodobnost války. Ruské nátlakové úsilí se hodnotí samostatně ve zprávě.</p></div>
-<div class="panel"><p class="eyebrow">Jak číst varování</p><h2>Proč {escape(state['overall_level'])}</h2><p>{basis}</p><a href="reports/{latest}.html">Podklady pro i proti eskalaci →</a></div></section>
+<div class="panel"><p class="eyebrow">Celkové hodnocení</p><h2>Zdůvodnění stupně {escape(state['overall_level'])}</h2><p>{basis}</p><a href="reports/{latest}.html">Podklady pro i proti eskalaci →</a></div></section>
 <section class="section"><h2>Co sledovat v dalších 24–72 hodinách</h2><div class="panel"><ul>{watch}</ul></div></section>
 <section class="section"><div class="section-head"><h2>Poslední hodnocení</h2><a href="archive.html">Všech {len(reports)} zpráv →</a></div>{archive_cards(reports[:3])}</section>'''
 
@@ -232,7 +232,7 @@ def build():
     known_reports = {path.name for path in paths}
     files = {}
     files["index.html"] = page("Aktuální předpověď", dashboard(state, reports, len(evidence)), active="Přehled")
-    files["archive.html"] = page("Archiv zpráv", f'''<div class="hero"><div><p class="eyebrow">Kontinuita a dohledatelnost</p><h1>Každá zpráva.<br>V kontextu své doby.</h1><p class="lede">Historie hodnocení, jejich zdroje a důvody změn. Odhady zůstávají přiřazené k původnímu datu a horizontu.</p></div></div>
+    files["archive.html"] = page("Archiv zpráv", f'''<div class="hero"><div><p class="eyebrow">{len(reports)} zpráv od {day(reports[-1]['time'][:10])}</p><h1>Archiv hodnocení</h1><p class="lede">Zprávy od nejnovější po nejstarší. Každá obsahuje tehdejší odhady, zdroje a zdůvodnění změn.</p></div></div>
 <div class="archive-toolbar"><label for="archive-search" class="meta">Hledat v datu a shrnutí</label><input id="archive-search" data-archive-search type="search" placeholder="Například: mobilizace, 29. 9., NATO"><span class="meta" data-archive-count aria-live="polite">{len(reports)} zpráv</span></div>
 <section class="section">{archive_cards(reports)}</section>''', active="Archiv")
     for i, report in enumerate(reports):
