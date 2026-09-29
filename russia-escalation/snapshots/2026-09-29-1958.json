@@ -1,0 +1,448 @@
+{
+  "schema_version": 2,
+  "assessment_time": "2026-09-29T19:58:37+02:00",
+  "source_cutoff": "2026-09-29T19:58:37+02:00",
+  "forecast_horizon": "2026-12-31",
+  "forecast_window_start": "2026-09-29T19:58:37+02:00",
+  "baseline_run": false,
+  "prior_available": true,
+  "previous_assessment": {
+    "assessment_time": "2026-09-27T21:46:12+02:00",
+    "last_report": "reports/2026-09-27-2146.md",
+    "overall_level": "ORANGE",
+    "elapsed": "PT46H12M25S"
+  },
+  "overall_level": "ORANGE",
+  "overall_trend": "flat",
+  "overall_level_basis": "ORANGE beze změny: trvalá ruská kampaň proti Ukrajině má operační i skutečnou účinkovou vrstvu a předchozí nezávislé evropské sabotážní případy drží zvýšené hybridní varování. Jde o kvalitativní syntézu stávajícího vážného scénáře, nikoli o průměr procent nebo o potvrzení bezprostředního útoku na NATO. Dnešní kapacitní a náborové signály nepřidávají nezávislou konvergenci k takovému útoku. Polsko 28. září nehlásí průnik; poslední dohledané estonské hodnocení z 24. září je nezměněné. Pro RED chybí doložená bezprostřední příprava závažné nové eskalace.",
+  "one_line_judgment": "Rusko posiluje tabulkové kapacity a tlak na ukrajinskou PVO, ale nové podklady nepotvrzují významnou nucenou mobilizační vlnu ani bezprostřední přípravu útoku na NATO; všechny prognostické odhady zůstávají stejné.",
+  "hypotheses": {
+    "further_sustained_conventional_escalation_ukraine_by_2026_12_31": {
+      "event_definition": "Nejméně dvoutýdenní zvýšení intenzity proti srpnovému standardu nebo kvalitativní rozšíření kategorií cílů či nasazených prostředků.",
+      "horizon": "2026-12-31",
+      "status": "occurred",
+      "resolved_at": "2026-09-09",
+      "p": 1,
+      "range": [
+        1,
+        1
+      ],
+      "confidence": "high",
+      "trend": "flat",
+      "prior": 1,
+      "delta_pp": 0,
+      "change_basis": "Historická událost byla vyhodnocena jako nastalá 9. září; 100 % je archivní vyhodnocení, nikoli dnešní budoucí prognóza."
+    },
+    "additional_qualitative_conventional_escalation_ukraine_by_2026_12_31": {
+      "event_definition": "Po 19. září 2026 vznikne další kvalitativní stupeň nad nynější logistickou kampaň: nejméně dvoutýdenní systematická zimní kampaň proti energetice, trvalé rozšíření na novou kategorii strategických cílů nebo výrazná a udržitelná změna prostředků či geografického rozsahu.",
+      "horizon": "2026-12-31",
+      "status": "active",
+      "p": 0.64,
+      "range": [
+        0.48,
+        0.78
+      ],
+      "confidence": "medium",
+      "trend": "flat",
+      "prior": 0.64,
+      "delta_pp": 0,
+      "change_basis": "Údery 28.–29. září a vysoký podíl proudových dronů pokračují v již započtené kampani; samotné nasazení tohoto typu není nové. Nový nejméně dvoutýdenní kvalitativní stupeň nad definici z 19. září doložen není. 64 % a pásmo beze změny. Evidence evt-20260928-29-ukraine-presidential-assessment-and-air-campaign."
+    },
+    "significant_hybrid_proxy_operation_eu_by_2026_12_31": {
+      "event_definition": "Ruskem řízená či podporovaná operace nad běžným pozadím s materiálním fyzickým, infrastrukturním, bezpečnostním, ekonomickým nebo strategickým účinkem, včetně pokročilého zmařeného spiknutí.",
+      "horizon": "2026-12-31",
+      "status": "active",
+      "p": 0.71,
+      "range": [
+        0.56,
+        0.82
+      ],
+      "confidence": "medium",
+      "trend": "flat",
+      "prior": 0.71,
+      "delta_pp": 0,
+      "change_basis": "Minulá polská forenzní korekce a německá atribuční zpráva již vstoupily do 71 %. Ministr Kierwiński 28. září opakuje sabotáž, ale zadavatele má teprve určit vyšetřování; není to další nezávislá atribuční linie. Nový významný ruský EU případ v prověřených zdrojích doložen nebyl. 71 % beze změny."
+    },
+    "physical_sabotage_proxy_attempt_eu_by_2026_12_31": {
+      "event_definition": "Příprava, zmařený pokus nebo provedení významné fyzické sabotážní či proxy operace v EU s alespoň střední důvěrou v ruskou vazbu.",
+      "horizon": "2026-12-31",
+      "status": "active",
+      "p": 0.65,
+      "range": [
+        0.5,
+        0.77
+      ],
+      "confidence": "medium",
+      "trend": "flat",
+      "prior": 0.65,
+      "delta_pp": 0,
+      "change_basis": "Polské žhářství a starší mnichovský pokus jsou již započtené. Opakované ministerské vyjádření nepřináší veřejný řídicí řetězec či nový samostatný významný pokus. 65 % beze změny; nejde o odvolání předchozího zvýšení ani o nulové riziko."
+    },
+    "limited_deliberate_nato_test_by_2026_12_31": {
+      "event_definition": "Záměrná ruská akce pod prahem velké války s cílem testovat soudržnost či reakci NATO; běžné DDoS, špionáž a neprokázaný přesah války se nepočítají.",
+      "horizon": "2026-12-31",
+      "status": "active",
+      "p": 0.4,
+      "range": [
+        0.26,
+        0.55
+      ],
+      "confidence": "medium-low",
+      "trend": "flat",
+      "prior": 0.4,
+      "delta_pp": 0,
+      "change_basis": "Dron z 28. září dopadl na ukrajinské straně; polské úřady výslovně nehlásí narušení vzdušného prostoru. Preventivní letová a dopravní opatření jsou reálným účinkem, nikoli sama důkazem ruského záměru testovat NATO. 40 % beze změny. Evidence evt-20260928-dorohusk-strike-no-polish-airspace-breach."
+    },
+    "baltic_limited_test_by_2026_12_31": {
+      "event_definition": "Omezený záměrný test NATO zaměřený na Estonsko, Lotyšsko nebo Litvu, včetně závažné operace pod falešnou vlajkou.",
+      "horizon": "2026-12-31",
+      "status": "active",
+      "p": 0.24,
+      "range": [
+        0.13,
+        0.38
+      ],
+      "confidence": "medium-low",
+      "trend": "flat",
+      "prior": 0.24,
+      "delta_pp": 0,
+      "change_basis": "Běloruské ministerstvo deklaruje každoroční teritoriální výcvik 29. září–2. října; rozsah není nezávisle ověřen, ale oznámení samo nedokládá útočnou koncentraci. Poslední dohledané konkrétní estonské hodnocení z 24. září je nezměněné, ne vydané dnes. Nová logistická konvergence v prověřených zdrojích nenalezena; 24 % beze změny."
+    },
+    "larger_conventional_attack_on_nato_by_2026_12_31": {
+      "event_definition": "Otevřený konvenční útok větší než omezený incident či lokální test.",
+      "horizon": "2026-12-31",
+      "status": "active",
+      "p": 0.03,
+      "range": [
+        0.01,
+        0.07
+      ],
+      "confidence": "medium-low",
+      "trend": "flat",
+      "prior": 0.03,
+      "delta_pp": 0,
+      "change_basis": "Nový dekret zvyšuje autorizovaný stav, nikoli doložené síly a logistiku pro bezprostřední větší útok. Polský incident neporušil prostor NATO; starší estonské a DDIS protiindikátory trvají jako prior, nikoli nová měření. 3 % beze změny."
+    },
+    "open_russia_nato_war_by_2026_12_31": {
+      "event_definition": "Trvalejší otevřené bojové operace mezi Ruskem a alespoň jedním státem NATO, včetně eskalace z incidentu.",
+      "horizon": "2026-12-31",
+      "status": "active",
+      "p": 0.04,
+      "range": [
+        0.01,
+        0.09
+      ],
+      "confidence": "low",
+      "trend": "flat",
+      "prior": 0.04,
+      "delta_pp": 0,
+      "change_basis": "Nové zdroje neprokazují rozhodnutí zahájit trvalejší boj proti NATO. Reuters uvádí pokračování americko-ruského jednání, ale bez potvrzeného výsledku; žádné automatické snížení kvůli samotnému kontaktu. 4 % beze změny."
+    },
+    "significant_russian_mobilization_by_2026_12_31": {
+      "event_definition": "Nová významná nucená mobilizační vlna nad rámec průběžného smluvního náboru a běžného odvodu.",
+      "horizon": "2026-12-31",
+      "status": "active",
+      "p": 0.6,
+      "range": [
+        0.44,
+        0.75
+      ],
+      "confidence": "medium-low",
+      "trend": "flat",
+      "prior": 0.6,
+      "delta_pp": 0,
+      "change_basis": "Dekret č. 700 přidává tabulková místa. Zelenskyj 28. září popisuje dodatečnou mobilizaci jako zvýšený nábor různými způsoby a uvádí plánované posily KLDR; podklad HUR není veřejný a nezávislost na dřívějším Macronově varování neznáme. Smluvní či zahraniční nábor může nucenou domácí vlnu nahrazovat. Ověřená synchronní nucená vlna napříč regiony v prověřených zdrojích doložena není; kontrola je neúplná. 60 % beze změny."
+    },
+    "belarus_direct_entry_into_war_by_2026_12_31": {
+      "event_definition": "Přímé nasazení běloruských ozbrojených sil do rozsáhlejších bojových operací proti Ukrajině.",
+      "horizon": "2026-12-31",
+      "status": "active",
+      "p": 0.05,
+      "range": [
+        0.02,
+        0.11
+      ],
+      "confidence": "medium-low",
+      "trend": "flat",
+      "prior": 0.05,
+      "delta_pp": 0,
+      "change_basis": "Oficiální oznámení 29. září uvádí roční výcvik lokálních orgánů a teritoriálních sil. Pro přímý vstup do bojů by bylo třeba doložit koncentraci bojových sil a udržovací logistiku; samotný plán ji neprokazuje ani nevylučuje. 5 % beze změny."
+    },
+    "nuclear_posture_change_by_2026_12_31": {
+      "event_definition": "Veřejně nebo nezávisle pozorovatelná neobvyklá změna jaderné pohotovosti, rozmístění nebo velitelské aktivity nad rámec cvičení a signalizace.",
+      "horizon": "2026-12-31",
+      "status": "active",
+      "p": 0.15,
+      "range": [
+        0.07,
+        0.25
+      ],
+      "confidence": "medium-low",
+      "trend": "flat",
+      "prior": 0.15,
+      "delta_pp": 0,
+      "change_basis": "Nově dohledaná investigace Danwatch z 26. září popisuje modernizaci v letech 2018–2024 a tvrzenou reaktivaci Perimetru v roce 2023, ne novou zářijovou pohotovost. Aktuální provozní režim neověřen; ve zkoumaných zdrojích nová neobvyklá velitelská či jednotková změna doložena není. 15 % beze změny."
+    },
+    "nuclear_demonstration_by_2026_12_31": {
+      "event_definition": "Záměrná jaderná detonace mimo přímý útok na obydlený nebo vojenský cíl, určená především k nátlakové demonstraci.",
+      "horizon": "2026-12-31",
+      "status": "active",
+      "p": 0.04,
+      "range": [
+        0.01,
+        0.09
+      ],
+      "confidence": "low",
+      "trend": "flat",
+      "prior": 0.04,
+      "delta_pp": 0,
+      "change_basis": "Historická modernizace odvetného velení není důkaz přípravy demonstrační detonace. Nezávislá současná readiness vrstva pro tento scénář v prověřených zdrojích chybí; 4 % beze změny."
+    },
+    "nuclear_use_by_2026_12_31": {
+      "event_definition": "Použití jaderné zbraně proti cíli v probíhajícím konfliktu.",
+      "horizon": "2026-12-31",
+      "status": "active",
+      "p": 0.01,
+      "range": [
+        0.003,
+        0.03
+      ],
+      "confidence": "low",
+      "trend": "flat",
+      "prior": 0.01,
+      "delta_pp": 0,
+      "change_basis": "Nově dohledaná dokumentová investigace nevytváří důkaz aktuálního rozhodnutí nebo přípravy k jadernému úderu. Ochrana odvetného velení je alternativou k interpretaci přípravy prvního úderu. 1 % beze změny."
+    },
+    "significant_russian_linked_hybrid_operation_czechia_by_2026_12_31": {
+      "event_definition": "Ruskem řízená nebo podporovaná hybridní či proxy operace v Česku s materiálním účinkem nebo pokročilou zmařenou přípravou; běžné DDoS a špionáž se samy o sobě nepočítají.",
+      "horizon": "2026-12-31",
+      "status": "active",
+      "p": 0.26,
+      "range": [
+        0.14,
+        0.4
+      ],
+      "confidence": "medium-low",
+      "trend": "flat",
+      "prior": 0.26,
+      "delta_pp": 0,
+      "change_basis": "Kontrola veřejných Aktualit BIS a NÚKIB a cílené vyhledávání nepřinesly nový český případ s materiálním účinkem a ruskou vazbou. To není důkaz absence neveřejných hrozeb. Polská reakce ani starší zahraniční případy nejsou nový český operativní podklad; 26 % beze změny."
+    }
+  },
+  "wdpi": {
+    "resource_dilution": 70,
+    "domestic_pain": 36,
+    "self_deterrence": 32,
+    "formula": "round(0.35 * resource_dilution + 0.35 * domestic_pain + 0.30 * self_deterrence)",
+    "component_trend": {
+      "resource_dilution": "flat",
+      "domestic_pain": "flat",
+      "self_deterrence": "flat"
+    },
+    "component_basis": {
+      "resource_dilution": {
+        "rationale": "Převzatý vysoký zdrojový tlak trvá; AP 29. září znovu popisuje nedostatek interceptorů. Ve zkoumaných podkladech nebyl ověřen nový přesun zásob od Ukrajiny ani skutečná nová dodávka. Politické financování není fyzický interceptor. Blízkovýchodní tlak není automaticky ruským dílem; 70 beze změny.",
+        "evidence_ids": [
+          "evt-20260827-patriot-shortage-europe",
+          "evt-20260922-trump-zelensky-energy-air-defense-talks",
+          "evt-20260925-eu-epf-political-agreement",
+          "evt-20260924-eu-ukraine-facility-eighth-payment",
+          "evt-20260928-29-ukraine-presidential-assessment-and-air-campaign"
+        ]
+      },
+      "domestic_pain": {
+        "rationale": "Polský poplach 28. září vedl k dočasnému přerušení odbavení na dvou přechodech. Tento omezený účinek uznávám, ale délka, hospodářský rozsah a vazba na politiku podpory Ukrajině nejsou doloženy. Neopakuji zvýšení za již započtené žhářství; 36 beze změny.",
+        "evidence_ids": [
+          "evt-20260918-france-hybrid-protection-plan",
+          "evt-20260921-vilnius-airport-restriction",
+          "evt-20260925-poland-starlink-arson-prosecutor",
+          "evt-20260927-romania-airspace-target",
+          "evt-20260928-dorohusk-strike-no-polish-airspace-breach"
+        ]
+      },
+      "self_deterrence": {
+        "rationale": "EU 28. září skutečně rozšířila sankce. Reuters uvádí americko-ruské jednání z 28. září, nikoli přijatý ústupek či odklad pomoci ze strachu z eskalace. Diplomacie sama není sebeodstrašení; uskutečněná platba či nové dodávky zůstávají předmětem ověření. 32 beze změny.",
+        "evidence_ids": [
+          "evt-20260922-eu-sanctions-renewal",
+          "evt-20260924-eu-ukraine-facility-eighth-payment",
+          "evt-20260925-eu-epf-political-agreement",
+          "evt-20260926-germany-russia-fm-talks",
+          "evt-20260928-eu-sanctions-ukrainian-children",
+          "evt-20260928-us-russia-envoy-energy-talks"
+        ]
+      }
+    },
+    "prior": {
+      "resource_dilution": 70,
+      "domestic_pain": 36,
+      "self_deterrence": 32,
+      "total": 47
+    },
+    "total": 47,
+    "delta": 0,
+    "trend": "flat",
+    "change_type": "temporal_update",
+    "drivers": [
+      {
+        "driver": "Nedostatek interceptorů a konkurence jiných krizí o zásoby; ruská příčina celé globální krize nedoložena",
+        "tag": "independent"
+      },
+      {
+        "driver": "Ruské údery na Ukrajinu a omezený polský pohraniční ochranný účinek",
+        "tag": "russian_caused"
+      },
+      {
+        "driver": "Polské žhářství s podezřením na ruské úkolování; atribuce neuzavřena",
+        "tag": "unknown"
+      },
+      {
+        "driver": "Ruská snaha využít diplomatické a obchodní kontakty; skutečný západní ústupek ani jeho příčina neověřeny",
+        "tag": "unknown"
+      },
+      {
+        "driver": "Nové uskutečněné sankční rozhodnutí EU",
+        "tag": "independent"
+      }
+    ],
+    "derivation": "round(0.35 * 70 + 0.35 * 36 + 0.30 * 32) = round(24.50 + 12.60 + 9.60) = round(46.70) = 47"
+  },
+  "rpe": {
+    "scored": false,
+    "trend": "flat",
+    "confidence": "medium-low",
+    "assessment": "Ruské úsilí zůstává kvalitativně vysoké, trend flat. Nové kapacitní a náborové informace nejsou kvantifikovaným operačním skokem; historická jaderná modernizace není dnešní posture. Polský pohraniční poplach má omezený provozní účinek, ale nová změna západní podpory Ukrajině kvůli ruskému nátlaku doložena není. WDPI 47 a sebeodstrašení 32 zůstávají stejné.",
+    "unscored_reason": "Ve stavu není definována reprodukovatelná komponentová metoda RPE; bez ní se celkové číslo nevytváří."
+  },
+  "nuclear": {
+    "nuclear_signalling": {
+      "level": "high",
+      "trend": "flat",
+      "confidence": "medium",
+      "level_basis": "Vysoká úroveň signalizace je převzatá z prioru; nová doložená změna pohotovosti není z rétoriky vyvozována. Danwatch přidává historické kapacitní poznání, nikoli aktuální zářijovou změnu."
+    },
+    "nuclear_posture_change_hypothesis": "nuclear_posture_change_by_2026_12_31",
+    "nuclear_demonstration_hypothesis": "nuclear_demonstration_by_2026_12_31",
+    "nuclear_use_hypothesis": "nuclear_use_by_2026_12_31",
+    "assessment": "Signalizace high/flat je oddělena od posture 15 %, demonstrace 4 % a použití 1 % do 31. prosince 2026. Společná investigace Danwatch / Sunday Times / Dossier je jedna linie o dlouhodobé modernizaci; veřejně citované datum reaktivace je 2023. Aktuální řídicí režim a aktivace nejsou ověřeny. Bez současné nezávislé readiness vrstvy se jaderné pravděpodobnosti nemění; bezpečnost ZNPP je samostatný problém."
+  },
+  "context_manipulation": {
+    "claim": "Tabulkové navýšení armády + každoroční běloruský výcvik + nově zveřejněná starší jaderná modernizace dokazují dnešní rozhodnutí o velké mobilizaci a bezprostředním jaderném útoku.",
+    "claim_type": "Analytical inference: příklad nepodloženého kauzálního skládání faktů, nikoli atribuce konkrétní vlivové kampaně.",
+    "verdict": "misleading",
+    "factual_truth": "partial",
+    "contextual_integrity": "severely_distorted",
+    "causal_link": "unsupported",
+    "observed_effect": "unknown",
+    "forecast_impact": "0 procentních bodů; konkrétní události nejsou popřeny, ale silnější závěr z nich neplyne.",
+    "basis": "Autorizovaná místa nejsou obsazené síly a povolávací rozkaz. Běloruský zdroj označuje výcvik za každoroční. Danwatch pracuje s víceletou dokumentací a tvrzeným datem 2023, nikoli s pozorovaným zářijovým stavem. Skládání pravdivých fragmentů může vyvolat závěr bez doložené kauzality; účinek na politiku či publikum není změřen."
+  },
+  "key_unknowns": [
+    "Zda dodatečný ruský nábor popsaný HUR znamená nucenou domácí vlnu, nebo pokračující smluvní a zahraniční doplnění; podklad a nezávislost na Macronově varování nejsou veřejné.",
+    "Zda dalších 10 000 vojáků KLDR skutečně odjede, v jaké roli a kdy; nyní jde o ukrajinské zpravodajské tvrzení o přípravě.",
+    "Kdy a jak se navýšená tabulková místa skutečně obsadí a s jakým operačním určením.",
+    "Ruské úkolování polského žhářství a mnichovského pokusu: veřejný řídicí řetězec a procesní závěry nadále chybí.",
+    "Skutečný rozsah běloruských cvičení a pohyb sil po jejich deklarovaném konci; úplný nezávislý veřejný obraz není k dispozici.",
+    "Současný režim jaderného velení; historická dokumentace neprokazuje dnešní aktivaci. Aktuální bezpečnostní stav ZNPP nebyl novým nezávislým podkladem potvrzen.",
+    "Zda pokračující proudové drony a zimní energetické údery vytvoří další nejméně dvoutýdenní kvalitativní fázi nad stávající kampaní.",
+    "Skutečné platby EU, fyzické dodávky PVO a případné konkrétní výsledky americko-ruského jednání; oznámení, schválení a dodání se nesmějí zaměnit."
+  ],
+  "watch_24_72h": [
+    "Rusko: skutečné hromadné nucené povolání ve více regionech, nikoli pouze tabulkový dekret či běžný podzimní odvod; ověřit podklad HUR.",
+    "KLDR: nezávislé potvrzení skutečného nového přesunu a jeho role, ne další přetisk Zelenského projevu.",
+    "Bělorusko: rozsah výcviku a setrvání bojových sil s logistikou po 2. říjnu; roční teritoriální přípravu oddělit od útočné koncentrace.",
+    "Polsko/Německo: nové procesní či forenzní důkazy o ruském úkolování; opakovaný komentář ministra není nová atribuční linie.",
+    "Ukrajina: trvání a účinek změny dronového mixu, zvlášť nový energetický vzorec; nesčítat překrývající se denní a noční údaje.",
+    "NATO/Pobaltí: nové datované lokální hodnocení, neplánované přesuny a logistika; další hraniční poplach hodnotit odděleně od úmyslu.",
+    "Západ: skutečné dodávky a platby, podepsané sankční změny či příměří s plněním; hledat výslovnou vazbu omezení pomoci na ruskou eskalační hrozbu.",
+    "Jaderná oblast: nová nezávislá evidence současné pohotovosti a velení; jadernou bezpečnost ZNPP sledovat odděleně."
+  ],
+  "last_report": "reports/2026-09-29-1958.md",
+  "new_evidence_ids": [
+    "evt-20260928-russia-authorized-strength-decree-700",
+    "evt-20260928-29-ukraine-presidential-assessment-and-air-campaign",
+    "evt-20260928-dorohusk-strike-no-polish-airspace-breach",
+    "evt-20260929-belarus-annual-mobilization-readiness-training",
+    "evt-20260928-eu-sanctions-ukrainian-children",
+    "evt-20260926-danwatch-perimetr-historical-modernization",
+    "evt-20260928-us-russia-envoy-energy-talks"
+  ],
+  "retrospective_corrections": [
+    {
+      "prior_report": "reports/2026-09-25-1638.md",
+      "claim_corrected": "Polský požár měl stále otevřenou příčinu včetně elektrického zkratu.",
+      "correction": "Již 25. září v 11:25 zveřejnilo Polskie Radio ministerské potvrzení žhářství a do 14:54 zveřejnil Onet vyjádření prokuratury s důvodným podezřením na ruské úkolování. Před uzávěrkou minulého hodnocení v 16:38 byla tedy tato informace veřejná, ale přehlédnutá. Ruské zadání není prokázáno.",
+      "probability_impact": {
+        "significant_hybrid_proxy_operation_eu_by_2026_12_31": 3,
+        "physical_sabotage_proxy_attempt_eu_by_2026_12_31": 4
+      }
+    }
+  ],
+  "migration": {
+    "time": "2026-08-28T23:33:50+02:00",
+    "from_schema_version": 1,
+    "from_path": ".russia-escalation",
+    "to_path": "russia-escalation",
+    "forecast_values_changed": false,
+    "note": "Path and schema migration only. Legacy aggregate fields without reproducible derivations were removed; all hypothesis probabilities and ranges were preserved."
+  },
+  "provenance_corrections": [
+    "corr-20260830-patriot-source-contradiction"
+  ],
+  "usable_as_prior": true,
+  "forecast_window_end": "2026-12-31T23:59:59+01:00",
+  "probability_update_method": "Úsudkové bounded forecasty převzaté z prioru; nikoli měřená frekvence či kalibrovaný statistický model. Nové důkazy posouzeny proti definicím událostí a alternativám. Dvoudenní zkrácení zbývajícího horizontu při širokých pásmech a neznámé časové intenzitě nevyvolává mechanický posun. Nulová delta neznamená nulové riziko ani nezměněné znalosti.",
+  "material_probability_deltas": [],
+  "baltic_warning_layers": {
+    "narrative": {
+      "assessment": "Preconditioning zůstává v prioru; nový synchronizovaný objemový skok napříč zdroji nebyl v tomto běhu kvantifikován.",
+      "confidence": "low"
+    },
+    "political_diplomatic": {
+      "assessment": "V prověřených zdrojích nebylo doloženo nové konkrétní ultimátum. Podmíněná veřejná výhrůžná rétorika není sama rozhodnutím k útoku.",
+      "confidence": "medium-low"
+    },
+    "military_readiness": {
+      "assessment": "Nově oznámený běloruský teritoriální výcvik má deklarovaný roční rámec; jeho skutečný rozsah a setrvání sil zůstávají neověřené. Nová logistická konvergence pro útok v prověřených zdrojích nenalezena.",
+      "evidence_ids": [
+        "evt-20260929-belarus-annual-mobilization-readiness-training"
+      ],
+      "confidence": "medium-low"
+    },
+    "local_official_assessment": {
+      "assessment": "Poslední dohledané výslovné estonské hodnocení z 24. září ponechává vojenskou hrozbu beze změny bez potřeby zvyšovat pohotovost. Není vydáno dnes a nenahrazuje nové měření.",
+      "evidence_ids": [
+        "evt-20260924-estonian-threat-assessment-unchanged"
+      ],
+      "confidence": "medium"
+    }
+  },
+  "retrospective_discoveries": [
+    {
+      "discovery_time": "2026-09-29T19:58:37+02:00",
+      "publication_time": "2026-09-26",
+      "evidence_id": "evt-20260926-danwatch-perimetr-historical-modernization",
+      "prior_report": "reports/2026-09-27-2146.md",
+      "note": "Nově dohledaná starší investigace dlouhodobé jaderné modernizace; neprokazuje novou současnou posture, proto žádná probability delta."
+    }
+  ],
+  "research_scope": {
+    "window_start": "2026-09-27T21:46:12+02:00",
+    "window_end": "2026-09-29T19:58:37+02:00",
+    "method": "Cílené veřejné vyhledávání; primární ukrajinský prezidentský text, Rada EU, veřejný oficiální Telegram běloruského MO a ukrajinských vzdušných sil; právní reprodukce dekretu, přímá polská vyjádření, AP/Reuters a dokumentová investigace.",
+    "retrospective_research": "Publikace z 26. září s událostmi 2018–2024 rozlišena od dnešního discovery_time.",
+    "negative_checks": [
+      "Více-regionové ruské nucené povolávání nad rutinní odvod",
+      "Nová NATO/pobaltská logistika a aktuální lokální hodnocení",
+      "Belarus roční cvičení vs neplánovaná útočná koncentrace",
+      "Jaderná aktuální posture vs historická capability",
+      "BIS/NÚKIB veřejné aktuality vs nový materiální český případ",
+      "Skutečné západní politické a dodávkové účinky vs přísliby"
+    ],
+    "limitations": [
+      "Bez neveřejného zpravodajství, plošného satelitního monitorování a úplného vzorku regionálních ruských dokumentů.",
+      "Přímý oficiální právní portál nebyl dostupný; použita ověřovaná textová reprodukce. Část jiných stránek dostupná jen ve vyhledávacích výstupech či syndikaci.",
+      "Telegram byl použit cíleně u veřejných oficiálních kanálů, nikoli jako úplný monitoring všech kanálů.",
+      "Nenalezení nové evidence není kategorickým důkazem absence přípravy; starší estonské hodnocení není dnešním měřením."
+    ]
+  }
+}

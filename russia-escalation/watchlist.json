@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "assessment_time": "2026-09-29T19:58:37+02:00",
+  "ukraine_additional_conventional_escalation": {
+    "would_strengthen": [
+      "Po 19. září se rozběhne nejméně dvoutýdenní systematická nová zimní kampaň proti energetice nad dřívější logistický a průmyslový vzorec.",
+      "Vznikne trvale nová kategorie strategických cílů, prostředků nebo geografického rozsahu podložená více nezávislými daty.",
+      "Ukrajina zavede další celostátní nouzová provozní opatření v důsledku doloženého strategického účinku."
+    ],
+    "would_weaken": [
+      "Průmyslové a energetické zásahy zůstanou v již započteném vzorci bez nového trvalého rozšíření.",
+      "Ocelářský provoz bude alespoň částečně obnoven a neprojeví se další trvalý systémový účinek."
+    ],
+    "next_check_by": "2026-10-01T19:58:37+02:00"
+  },
+  "hybrid_and_sabotage_eu": {
+    "would_strengthen": [
+      "Polské vyšetřování vedle již zjištěného žhářství doloží ověřitelný řetězec ruského úkolování, identifikuje pachatele a případně vznese obvinění.",
+      "Německé úřady zveřejní procesní nebo forenzní podklad pro ruské řízení mnichovského případu nad dosavadní anonymní mediální tvrzení; nebo další nezávislá evropská linie potvrdí významný fyzický pokus.",
+      "Zvýšená ochranná opatření reagují na konkrétní doloženou operativní přípravu, nikoli pouze na scénářová varování."
+    ],
+    "would_weaken": [
+      "Polská forenzní či soudní zjištění vyvrátí dosavadní závěr o žhářství nebo prokážou neruský motiv.",
+      "Podezřelé případy zůstanou izolované bez prokázaného ruského řízení a bez měřitelného strategického účinku."
+    ],
+    "next_check_by": "2026-10-01T19:58:37+02:00"
+  },
+  "limited_nato_and_baltic_test": {
+    "would_strengthen": [
+      "Polská rekonstrukce Mi-8 nebo rumunská identifikace vzdušných cílů prokáže úmyslnou trajektorii, koordinaci a ruské zadání testovat reakci NATO.",
+      "Více nezávislých služeb zveřejní konkrétní přípravné indikátory odlišitelné od sdíleného scénářového hodnocení DDIS.",
+      "Objeví se neplánovaná koncentrace, logistika či pohotovost v oblasti sousedící s NATO, která by podle DDIS předcházela omezenému pozemnímu vpádu.",
+      "NATO zavede mimořádné ochranné kroky mimo rámec běžné ostrahy, cvičení a odpovědi na přesahy války."
+    ],
+    "would_weaken": [
+      "Polský Mi-8 bude vysvětlen navigační chybou a rumunský dron odchylkou od útoku na Ukrajinu.",
+      "Pobaltské služby ponechají hrozbu beze změny a neohlásí nutnost zvýšit pohotovost, incidenty zůstanou neprovázané a další lety budou pouze v mezinárodním prostoru.",
+      "DDIS či další služby upřesní, že veřejná aktualizace stojí převážně na starších známých událostech bez nového operativního podkladu."
+    ],
+    "next_check_by": "2026-10-01T19:58:37+02:00",
+    "current_note": "Dorohusk 28. září: potvrzeno dočasné polské opatření, ne narušení vzdušného prostoru. Poslední dohledané konkrétní estonské hodnocení je z 24. září."
+  },
+  "russian_mobilization": {
+    "would_strengthen": [
+      "Ověřené masové nucené povolání ve více regionech, mimo běžný odvod a smluvní nábor; ne pouze další tabulkový dekret.",
+      "Nezávislý administrativní a kapacitní podklad HUR pro dodatečnou mobilizaci: mimořádný provoz a příjem velkého počtu skutečně povolaných.",
+      "Doložený nedostatek smluvních a zahraničních náborů doprovázený změnou nucené regionální praxe."
+    ],
+    "would_weaken": [
+      "Provoz od 1. října odpovídá běžnému podzimnímu odesílání branců a smluvnímu náboru bez významné nucené vlny.",
+      "Nová autorizovaná místa budou obsazována postupně či zahraničními vojáky, bez synchronních nucených příkazů a přijímacího skoku.",
+      "HUR upřesní, že výraz mobilizace označuje růst různých forem náboru, ne novou masovou nucenou vlnu."
+    ],
+    "next_check_by": "2026-10-01T19:58:37+02:00",
+    "current_note": "Dekret č. 700 je potvrzené navýšení tabulky; Zelenského/HUR skutečná nucená vlna nebyla nezávisle ověřena."
+  },
+  "belarus_and_nuclear": {
+    "would_strengthen": [
+      "Bojové síly a podpůrná logistika zůstanou po deklarovaném konci 2. října v neplánované koncentraci orientované na Ukrajinu či NATO.",
+      "Přijde datovaná nezávislá evidence současné neobvyklé jaderné pohotovosti, velitelského režimu či krizového rozmístění, nikoli historické zakázky."
+    ],
+    "would_weaken": [
+      "Teritoriální výcvik proběhne v oznámeném ročním rozsahu bez navazující útočné koncentrace.",
+      "Historická dokumentace jaderné modernizace nebude doplněna důkazem nové současné aktivace nebo rozmístění."
+    ],
+    "next_check_by": "2026-10-01T19:58:37+02:00",
+    "current_note": "Oznámení běloruského MO 29. září–2. října; Danwatch uvádí mnohaletou modernizaci a tvrzenou reaktivaci v roce 2023."
+  },
+  "czechia": {
+    "would_strengthen": [
+      "BIS, policie nebo NÚKIB zveřejní český operativní případ s materiálním účinkem či pokročilou přípravou a doloženou ruskou vazbou.",
+      "Ochranná opatření přejdou z preventivního stupně do reakce na konkrétní ověřenou hrozbu odlišnou od obecného aliančního scénáře."
+    ],
+    "would_weaken": [
+      "BIS bude nadále bez přímé konkrétní informace o české hrozbě a preventivní opatření se nepromění v operativní případ.",
+      "Veřejné české hodnocení zůstane na obecné dlouhodobé hrozbě bez nové readiness vrstvy."
+    ],
+    "next_check_by": "2026-10-01T19:58:37+02:00"
+  },
+  "znpp_nuclear_safety": {
+    "would_strengthen": [
+      "Znovu selže vnější napájení, omezí se dodávky paliva nebo se zhorší chlazení.",
+      "IAEA ztratí přístup k ověření bezpečnostních funkcí nebo nové poškození zasáhne bezpečnostně významné systémy."
+    ],
+    "would_weaken": [
+      "Obnovené vnější napájení zůstane stabilní a IAEA potvrdí zásoby paliva i funkci chlazení."
+    ],
+    "next_check_by": "2026-10-01T19:58:37+02:00",
+    "note": "Bez nového ověřeného provozního podkladu v tomto běhu; neprohlašovat současné napájení za potvrzené jen z dřívějšího obnovení. Bezpečnost elektrárny je oddělena od použití zbraně."
+  },
+  "western_decision_pressure": {
+    "would_strengthen": [
+      "Pomoc Ukrajině bude doloženě odložena či omezena kvůli ruské eskalační nebo jaderné hrozbě.",
+      "Interceptory, výroba nebo ISR budou prokazatelně přesměrovány od Ukrajiny do jiné krize.",
+      "Materiální ruský hybridní zásah vyvolá měřitelnou změnu evropské politiky vůči Ukrajině.",
+      "Americko-ruské jednání přinese uskutečněnou změnu pomoci nebo sankcí a bude doložena kauzální vazba na ruský eskalační nátlak; obchodní či humanitární motiv bez této vazby není automaticky sebeodstrašení."
+    ],
+    "would_weaken": [
+      "Politická dohoda o 6,6 mld. EUR projde potřebnými právními kroky a fond začne skutečně financovat pomoc Ukrajině.",
+      "Rada EU uskuteční schválenou platbu téměř 3 mld. EUR a americko-evropská ujednání povedou ke skutečným dodávkám PVO.",
+      "Ochranná opatření ztlumí účinky hybridních operací bez omezení podpory Ukrajině."
+    ],
+    "next_check_by": "2026-10-01T19:58:37+02:00",
+    "current_note": "EU 28. září sankce skutečně rozšířila; Reuters o schůzce Dmitrijeva nepřináší uskutečněnou dohodu."
+  },
+  "north_korean_reinforcements": {
+    "would_strengthen": [
+      "Nezávislé ověření skutečného odjezdu a příchodu nových posil, jejich rozsahu a role nad původní ukrajinské tvrzení."
+    ],
+    "would_weaken": [
+      "Výběr a výcvik se nepromění v nasazení, čísla se opraví nebo půjde o rotaci místo čistého posílení."
+    ],
+    "next_check_by": "2026-10-01T19:58:37+02:00",
+    "current_note": "Přes 8 000 v Rusku a příprava dalších 10 000 jsou tvrzení Zelenského z 28. září podle HUR; Reuters/AP je samostatně nepotvrzují."
+  }
+}
