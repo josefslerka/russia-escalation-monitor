@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 from datetime import date, datetime
+from hashlib import sha256
 from html import escape
 import json
 import math
@@ -130,6 +131,8 @@ def badge(level: str) -> str:
 
 
 def page(title: str, content: str, prefix: str = ".", active: str = "") -> str:
+    css_version = sha256((ROOT / "site/assets/site.css").read_bytes()).hexdigest()[:12]
+    js_version = sha256((ROOT / "site/assets/site.js").read_bytes()).hexdigest()[:12]
     navigation = "".join(
         f'<a href="{prefix}/{path}"' + (' aria-current="page"' if active == label else "") + f'>{label}</a>'
         for path, label in (("index.html", "Přehled"), ("archive.html", "Archiv"), ("methodology.html", "Metodika"))
@@ -138,7 +141,7 @@ def page(title: str, content: str, prefix: str = ".", active: str = "") -> str:
 <html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{escape(title)} · Monitor eskalace</title><meta name="description" content="Průběžná OSINT předpověď ruské eskalace. Pravděpodobnosti, podklady, nejistoty a archiv hodnocení.">
 <meta name="color-scheme" content="light"><meta name="referrer" content="strict-origin-when-cross-origin">
-<link rel="stylesheet" href="{prefix}/assets/site.css"><script src="{prefix}/assets/site.js" defer></script></head>
+<link rel="stylesheet" href="{prefix}/assets/site.css?v={css_version}"><script src="{prefix}/assets/site.js?v={js_version}" defer></script></head>
 <body><a class="skip" href="#main">Přejít na obsah</a><header class="masthead"><div class="shell">
 <a class="brand" href="{prefix}/index.html"><span aria-hidden="true">◉</span> MONITOR ESKALACE</a><nav class="nav" aria-label="Hlavní navigace">{navigation}</nav></div></header>
 <main id="main" class="shell">{content}</main><footer class="footer"><div class="shell">
