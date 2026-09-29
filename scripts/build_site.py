@@ -70,6 +70,11 @@ def timestamp(value: str) -> str:
 
 def public_text(text: str) -> str:
     # Historical reports used clickable local paths. Their web copies use relative links.
+    # The archived author path differs from ROOT on GitHub's Linux runner.
+    text = re.sub(
+        r"/(?:Users|home)/[^<>\n\"']*?/\.?russia-escalation/reports/(\d{4}-\d{2}-\d{2}-\d{4}\.md)",
+        r"\1", text,
+    )
     for folder in ("russia-escalation", ".russia-escalation"):
         text = text.replace(f"{ROOT}/{folder}/reports/", "")
     return text.replace(str(ROOT), ".")

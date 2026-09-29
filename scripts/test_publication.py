@@ -57,7 +57,7 @@ class PublicationChecks(unittest.TestCase):
 
     def test_historical_report_link_is_portable(self):
         name = "2026-09-27-2146.md"
-        markdown = build_site.public_text(f"[prior](<{build_site.ROOT}/russia-escalation/reports/{name}>)")
+        markdown = build_site.public_text(f"[prior](</Users/archived-author/Documents/project/russia-escalation/reports/{name}>)")
         html, _ = build_site.render_markdown(markdown, {name})
         self.assertIn('href="../reports/2026-09-27-2146.html"', html)
         self.assertNotIn("/Users/", html)
