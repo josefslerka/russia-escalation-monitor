@@ -1,8 +1,9 @@
 {
   "schema_version": 1,
-  "assessment_time": "2026-09-29T19:58:37+02:00",
+  "assessment_time": "2026-09-30T07:11:07+02:00",
   "ukraine_additional_conventional_escalation": {
     "would_strengthen": [
+      "Oficiální bilance a provozovatelé potvrdí soustavné nové energetické zásahy a dlouhé systémové výpadky nad dosavadní vzorec.",
       "Po 19. září se rozběhne nejméně dvoutýdenní systematická nová zimní kampaň proti energetice nad dřívější logistický a průmyslový vzorec.",
       "Vznikne trvale nová kategorie strategických cílů, prostředků nebo geografického rozsahu podložená více nezávislými daty.",
       "Ukrajina zavede další celostátní nouzová provozní opatření v důsledku doloženého strategického účinku."
@@ -11,10 +12,12 @@
       "Průmyslové a energetické zásahy zůstanou v již započteném vzorci bez nového trvalého rozšíření.",
       "Ocelářský provoz bude alespoň částečně obnoven a neprojeví se další trvalý systémový účinek."
     ],
-    "next_check_by": "2026-10-01T19:58:37+02:00"
+    "next_check_by": "2026-10-01T07:00:00+02:00",
+    "current_note": "Noc 30. září: potvrzena pokračující útočná aktivita, lokální výpadek hlášen reportéry. Rozsah energetického poškození a dlouhodobá kvalitativní fáze nepotvrzeny."
   },
   "hybrid_and_sabotage_eu": {
     "would_strengthen": [
+      "Estonské procesní důkazy potvrdí aktivní zadavatelskou síť, nové připravené operace nebo významný dopad Milrem; přetisky KAPO nepočítat znovu.",
       "Polské vyšetřování vedle již zjištěného žhářství doloží ověřitelný řetězec ruského úkolování, identifikuje pachatele a případně vznese obvinění.",
       "Německé úřady zveřejní procesní nebo forenzní podklad pro ruské řízení mnichovského případu nad dosavadní anonymní mediální tvrzení; nebo další nezávislá evropská linie potvrdí významný fyzický pokus.",
       "Zvýšená ochranná opatření reagují na konkrétní doloženou operativní přípravu, nikoli pouze na scénářová varování."
@@ -23,7 +26,8 @@
       "Polská forenzní či soudní zjištění vyvrátí dosavadní závěr o žhářství nebo prokážou neruský motiv.",
       "Podezřelé případy zůstanou izolované bez prokázaného ruského řízení a bez měřitelného strategického účinku."
     ],
-    "next_check_by": "2026-10-01T19:58:37+02:00"
+    "next_check_by": "2026-10-01T07:00:00+02:00",
+    "current_note": "Milrem: srpnová událost, oficiální atribuce 29. září, dohledána 30. září; veřejný důkazní materiál a významný výrobní dopad nezveřejněny. Jedna estonská vyšetřovací linie."
   },
   "limited_nato_and_baltic_test": {
     "would_strengthen": [
@@ -37,22 +41,23 @@
       "Pobaltské služby ponechají hrozbu beze změny a neohlásí nutnost zvýšit pohotovost, incidenty zůstanou neprovázané a další lety budou pouze v mezinárodním prostoru.",
       "DDIS či další služby upřesní, že veřejná aktualizace stojí převážně na starších známých událostech bez nového operativního podkladu."
     ],
-    "next_check_by": "2026-10-01T19:58:37+02:00",
-    "current_note": "Dorohusk 28. září: potvrzeno dočasné polské opatření, ne narušení vzdušného prostoru. Poslední dohledané konkrétní estonské hodnocení je z 24. září."
+    "next_check_by": "2026-10-01T07:00:00+02:00",
+    "current_note": "Taro 29. září hodnotí stabilní vnitřní bezpečnost při vážné sabotážní hrozbě. Není to dnešní celoarmádní hodnocení. Kaliningradské podmíněné výhrůžky nejsou potvrzení blokády ani útočné připravenosti."
   },
   "russian_mobilization": {
     "would_strengthen": [
       "Ověřené masové nucené povolání ve více regionech, mimo běžný odvod a smluvní nábor; ne pouze další tabulkový dekret.",
       "Nezávislý administrativní a kapacitní podklad HUR pro dodatečnou mobilizaci: mimořádný provoz a příjem velkého počtu skutečně povolaných.",
-      "Doložený nedostatek smluvních a zahraničních náborů doprovázený změnou nucené regionální praxe."
+      "Doložený nedostatek smluvních a zahraničních náborů doprovázený změnou nucené regionální praxe.",
+      "Zveřejněný rozpočtový návrh a prováděcí dokumenty spojí finance s konkrétní nucenou vlnou, nikoli jen s pokračováním stávajícího náboru."
     ],
     "would_weaken": [
       "Provoz od 1. října odpovídá běžnému podzimnímu odesílání branců a smluvnímu náboru bez významné nucené vlny.",
       "Nová autorizovaná místa budou obsazována postupně či zahraničními vojáky, bez synchronních nucených příkazů a přijímacího skoku.",
       "HUR upřesní, že výraz mobilizace označuje růst různých forem náboru, ne novou masovou nucenou vlnu."
     ],
-    "next_check_by": "2026-10-01T19:58:37+02:00",
-    "current_note": "Dekret č. 700 je potvrzené navýšení tabulky; Zelenského/HUR skutečná nucená vlna nebyla nezávisle ověřena."
+    "next_check_by": "2026-10-01T07:00:00+02:00",
+    "current_note": "Dekret 700 již v prioru. Rozpočtový návrh na 2027: Reuters uvádí 17,1 bilionu RUB, +27 % proti staršímu plánu, nikoli proti skutečným výdajům 2026. Není to mobilizační rozkaz."
   },
   "belarus_and_nuclear": {
     "would_strengthen": [
@@ -63,8 +68,8 @@
       "Teritoriální výcvik proběhne v oznámeném ročním rozsahu bez navazující útočné koncentrace.",
       "Historická dokumentace jaderné modernizace nebude doplněna důkazem nové současné aktivace nebo rozmístění."
     ],
-    "next_check_by": "2026-10-01T19:58:37+02:00",
-    "current_note": "Oznámení běloruského MO 29. září–2. října; Danwatch uvádí mnohaletou modernizaci a tvrzenou reaktivaci v roce 2023."
+    "next_check_by": "2026-10-01T07:00:00+02:00",
+    "current_note": "Roční běloruský výcvik podle předchozího oznámení do 2. října. Kaliningradská rétorika a historický Perimetr se nepočítají jako současná jaderná posture."
   },
   "czechia": {
     "would_strengthen": [
@@ -72,10 +77,11 @@
       "Ochranná opatření přejdou z preventivního stupně do reakce na konkrétní ověřenou hrozbu odlišnou od obecného aliančního scénáře."
     ],
     "would_weaken": [
-      "BIS bude nadále bez přímé konkrétní informace o české hrozbě a preventivní opatření se nepromění v operativní případ.",
+      "České úřady výslovně sdělí, že se aktuální specifická hrozba nepotvrdila, nebo vyšetřování konkrétního případu doloží neruský původ; samotné mlčení služeb není takový důkaz.",
       "Veřejné české hodnocení zůstane na obecné dlouhodobé hrozbě bez nové readiness vrstvy."
     ],
-    "next_check_by": "2026-10-01T19:58:37+02:00"
+    "next_check_by": "2026-10-01T07:00:00+02:00",
+    "current_note": "BIS/NÚKIB zkontrolovány 30. září ráno, bez nové veřejné zprávy o materiálním ruském případu. Mlčení není ujištění o absenci hrozby."
   },
   "znpp_nuclear_safety": {
     "would_strengthen": [
@@ -85,8 +91,8 @@
     "would_weaken": [
       "Obnovené vnější napájení zůstane stabilní a IAEA potvrdí zásoby paliva i funkci chlazení."
     ],
-    "next_check_by": "2026-10-01T19:58:37+02:00",
-    "note": "Bez nového ověřeného provozního podkladu v tomto běhu; neprohlašovat současné napájení za potvrzené jen z dřívějšího obnovení. Bezpečnost elektrárny je oddělena od použití zbraně."
+    "next_check_by": "2026-10-01T07:00:00+02:00",
+    "note": "Kontrola 30. září ráno nepřinesla nový datovaný ověřený provozní podklad. Staré obnovení napájení nepředkládat jako dnešní stav; jaderná bezpečnost zůstává oddělena od použití zbraně."
   },
   "western_decision_pressure": {
     "would_strengthen": [
@@ -97,11 +103,11 @@
     ],
     "would_weaken": [
       "Politická dohoda o 6,6 mld. EUR projde potřebnými právními kroky a fond začne skutečně financovat pomoc Ukrajině.",
-      "Rada EU uskuteční schválenou platbu téměř 3 mld. EUR a americko-evropská ujednání povedou ke skutečným dodávkám PVO.",
+      "Komise či ukrajinské ministerstvo financí potvrdí skutečné přijetí nově schválené tranše; dodávky PVO prokazatelně zlepší poměr zásob a spotřeby, zejména u Patriotů.",
       "Ochranná opatření ztlumí účinky hybridních operací bez omezení podpory Ukrajině."
     ],
-    "next_check_by": "2026-10-01T19:58:37+02:00",
-    "current_note": "EU 28. září sankce skutečně rozšířila; Reuters o schůzce Dmitrijeva nepřináší uskutečněnou dohodu."
+    "next_check_by": "2026-10-01T07:00:00+02:00",
+    "current_note": "NASAMS: prezident 29. září oznámil předchozí dodání, velikost nezveřejnil. U 3,3 mld. EUR projev říká minulý týden, ale dohledaný záznam Komise je z 18. září; druhá taková platba neověřena a znovu nezapočtena. Nový rozpočtový převod zatím očekáván."
   },
   "north_korean_reinforcements": {
     "would_strengthen": [
@@ -110,7 +116,7 @@
     "would_weaken": [
       "Výběr a výcvik se nepromění v nasazení, čísla se opraví nebo půjde o rotaci místo čistého posílení."
     ],
-    "next_check_by": "2026-10-01T19:58:37+02:00",
+    "next_check_by": "2026-10-01T07:00:00+02:00",
     "current_note": "Přes 8 000 v Rusku a příprava dalších 10 000 jsou tvrzení Zelenského z 28. září podle HUR; Reuters/AP je samostatně nepotvrzují."
   }
 }
