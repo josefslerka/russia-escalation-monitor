@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "assessment_time": "2026-09-30T07:11:07+02:00",
+  "assessment_time": "2026-09-30T21:35:31+02:00",
   "ukraine_additional_conventional_escalation": {
     "would_strengthen": [
       "Oficiální bilance a provozovatelé potvrdí soustavné nové energetické zásahy a dlouhé systémové výpadky nad dosavadní vzorec.",
@@ -45,19 +45,23 @@
     "current_note": "Taro 29. září hodnotí stabilní vnitřní bezpečnost při vážné sabotážní hrozbě. Není to dnešní celoarmádní hodnocení. Kaliningradské podmíněné výhrůžky nejsou potvrzení blokády ani útočné připravenosti."
   },
   "russian_mobilization": {
+    "definition_version": 2,
+    "forecast_hypothesis": "significant_russian_mobilization_by_2026_12_31",
+    "assessment_time": "2026-09-30T21:35:31+02:00",
     "would_strengthen": [
-      "Ověřené masové nucené povolání ve více regionech, mimo běžný odvod a smluvní nábor; ne pouze další tabulkový dekret.",
-      "Nezávislý administrativní a kapacitní podklad HUR pro dodatečnou mobilizaci: mimořádný provoz a příjem velkého počtu skutečně povolaných.",
-      "Doložený nedostatek smluvních a zahraničních náborů doprovázený změnou nucené regionální praxe.",
-      "Zveřejněný rozpočtový návrh a prováděcí dokumenty spojí finance s konkrétní nucenou vlnou, nikoli jen s pokračováním stávajícího náboru."
+      "Nový ověřený závazný mobilizační příkaz alespoň pro 100 000 lidí, i podle starého dekretu; nebo důvěryhodně doložená faktická nucená vlna stejného rozsahu.",
+      "Nezávislé regionální linie ukážou současně nové nucené rozkazy a příjem/výcvik nad normál; samotné dvě regionální anekdoty nedokazují celostátní počet.",
+      "Ověřená personální bilance prokáže přetrvávající deficit i po návratech raněných, dobrovolném a zahraničním náboru a tento deficit doprovodí změna nucené praxe."
     ],
     "would_weaken": [
-      "Provoz od 1. října odpovídá běžnému podzimnímu odesílání branců a smluvnímu náboru bez významné nucené vlny.",
-      "Nová autorizovaná místa budou obsazována postupně či zahraničními vojáky, bez synchronních nucených příkazů a přijímacího skoku.",
-      "HUR upřesní, že výraz mobilizace označuje růst různých forem náboru, ne novou masovou nucenou vlnu."
+      "Doložený běžný průběh říjnového odesílání branců bez další povinné vlny, z ověřeného a opakovaného regionálního vzorku; ne jen mlčení médií.",
+      "Nové údaje ukážou, že potřeby jednotek pokrývají skutečné nové kontrakty a další nemobilizační zdroje; nabídka bonusu sama úspěšný nábor neprokazuje.",
+      "Zdroje upřesní, že hlášené statisíce označují součet průběžného náboru či scénář, ne nové povinné povolání."
     ],
     "next_check_by": "2026-10-01T07:00:00+02:00",
-    "current_note": "Dekret 700 již v prioru. Rozpočtový návrh na 2027: Reuters uvádí 17,1 bilionu RUB, +27 % proti staršímu plánu, nikoli proti skutečným výdajům 2026. Není to mobilizační rozkaz."
+    "checkpoint_72h": "2026-10-03T21:35:31+02:00",
+    "next_review_rule": "Ověřit pokrytí a očekávané signatury; nepočítat každý den stejné nenalezení jako nezávislý důkaz a automaticky neodečítat procento. Pokud se signály neobjeví, podmínit závěr tím, co by šlo skutečně pozorovat.",
+    "current_note": "Metodická revize: nový prior verze 2 je 20 % (10–35 %) do 31. 12. 2026. Historických 60 % se nepřenáší jako srovnatelná číselná řada. HUR/Economist/Bloomberg a nynější externí benchmarky jsou již zohledněny; nezapočítávat je znovu. Kontrola do konce září slíbena 21. září byla nyní vyhodnocena s omezenou vahou kvůli nedostupnému právnímu portálu a nereprezentativnímu vzorku."
   },
   "belarus_and_nuclear": {
     "would_strengthen": [
@@ -118,5 +122,7 @@
     ],
     "next_check_by": "2026-10-01T07:00:00+02:00",
     "current_note": "Přes 8 000 v Rusku a příprava dalších 10 000 jsou tvrzení Zelenského z 28. září podle HUR; Reuters/AP je samostatně nepotvrzují."
-  }
+  },
+  "assessment_scope": "mobilization_only",
+  "inherited_other_domains_assessment_time": "2026-09-30T07:11:07+02:00"
 }
