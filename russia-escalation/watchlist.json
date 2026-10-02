@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "assessment_time": "2026-10-01T07:27:29+02:00",
+  "assessment_time": "2026-10-02T07:16:39+02:00",
   "ukraine_additional_conventional_escalation": {
     "would_strengthen": [
       "Oficiální bilance a provozovatelé potvrdí soustavné nové energetické zásahy a dlouhé systémové výpadky nad dosavadní vzorec.",
@@ -12,9 +12,9 @@
       "Omezení po 30. září rychle skončí a provozovatelé doloží návrat stabilního zásobování bez návazné systematické energetické kampaně.",
       "Další zásahy zůstanou v již započteném vzorci bez nové trvalé kategorie, rozsahu nebo prostředků."
     ],
-    "next_check_by": "2026-10-02T07:00:00+02:00",
-    "current_note": "Nová provozní evidence nouzového a později rozpisového omezování 30. září: 64 → 68 %. Návrat na rozpisy není plná obnova. Trvání nejméně dvou týdnů stále nedoloženo; první dny nepovažovat za splnění.",
-    "assessment_time": "2026-10-01T07:27:29+02:00"
+    "next_check_by": "2026-10-03T07:00:00+02:00",
+    "current_note": "1. října provozní úleva oproti předchozímu dni; pokračující poškození a útoky. 68 % beze změny není potvrzení dvoutýdenní nové fáze. Další stabilizace bez návazné kampaně je důvod k poklesu, nikoli informace k ignorování.",
+    "assessment_time": "2026-10-02T07:16:39+02:00"
   },
   "hybrid_and_sabotage_eu": {
     "would_strengthen": [
@@ -27,9 +27,9 @@
       "Polská forenzní či soudní zjištění vyvrátí dosavadní závěr o žhářství nebo prokážou neruský motiv.",
       "Podezřelé případy zůstanou izolované bez prokázaného ruského řízení a bez měřitelného strategického účinku."
     ],
-    "next_check_by": "2026-10-02T07:00:00+02:00",
-    "current_note": "Litevský protest nepřidává nezávislou atribuci Milrem. Dodatečně dohledaný polský rozsudek se týká zmařené přípravy z července 2025 a nejmenuje Rusko; nejde o nový případ Starlink ani nové splnění prognózy.",
-    "assessment_time": "2026-10-01T07:27:29+02:00"
+    "next_check_by": "2026-10-03T07:00:00+02:00",
+    "current_note": "Aktuální veřejný vzorek nepřinesl nový ověřený materiální ruský případ. Neznamená celkovou absenci příprav. Lotyšské hodnocení zdůrazňuje dlouhodobou hybridní hrozbu; nesčítat přetisky starých případů.",
+    "assessment_time": "2026-10-02T07:16:39+02:00"
   },
   "limited_nato_and_baltic_test": {
     "would_strengthen": [
@@ -43,14 +43,14 @@
       "Pobaltské služby ponechají hrozbu beze změny a neohlásí nutnost zvýšit pohotovost, incidenty zůstanou neprovázané a další lety budou pouze v mezinárodním prostoru.",
       "DDIS či další služby upřesní, že veřejná aktualizace stojí převážně na starších známých událostech bez nového operativního podkladu."
     ],
-    "next_check_by": "2026-10-02T07:00:00+02:00",
-    "current_note": "Rutte 30. září: veřejné hodnocení beze změny, bez bezprostřední hrozby. Non-paper patří do známé kaliningradské linie. Pro malé skryté testy má nepřítomnost koncentrace omezenou výpovědní hodnotu.",
-    "assessment_time": "2026-10-01T07:27:29+02:00"
+    "next_check_by": "2026-10-03T07:00:00+02:00",
+    "current_note": "Putinův Valdaj 1. října: nová nejvyšší autorita stejné podmíněné kaliningradské linie, nikoli nová operační konvergence. Lotyšský rozhovor z 30. září vydaný 1. října nepodporuje bezprostřední velký scénář. Velitelská kapacita z článku NATO není nové vyslání vojáků.",
+    "assessment_time": "2026-10-02T07:16:39+02:00"
   },
   "russian_mobilization": {
     "definition_version": 2,
     "forecast_hypothesis": "significant_russian_mobilization_by_2026_12_31",
-    "assessment_time": "2026-10-01T07:27:29+02:00",
+    "assessment_time": "2026-10-02T07:16:39+02:00",
     "would_strengthen": [
       "Nový ověřený závazný mobilizační příkaz alespoň pro 100 000 lidí, i podle starého dekretu; nebo důvěryhodně doložená faktická nucená vlna stejného rozsahu.",
       "Nezávislé regionální linie ukážou současně nové nucené rozkazy a příjem/výcvik nad normál; samotné dvě regionální anekdoty nedokazují celostátní počet.",
@@ -61,23 +61,23 @@
       "Nové údaje ukážou, že potřeby jednotek pokrývají skutečné nové kontrakty a další nemobilizační zdroje; nabídka bonusu sama úspěšný nábor neprokazuje.",
       "Zdroje upřesní, že hlášené statisíce označují součet průběžného náboru či scénář, ne nové povinné povolání."
     ],
-    "next_check_by": "2026-10-02T07:00:00+02:00",
+    "next_check_by": "2026-10-03T07:00:00+02:00",
     "checkpoint_72h": "2026-10-03T21:35:31+02:00",
     "next_review_rule": "Ověřit pokrytí a očekávané signatury; nepočítat každý den stejné nenalezení jako nezávislý důkaz a automaticky neodečítat procento. Pokud se signály neobjeví, podmínit závěr tím, co by šlo skutečně pozorovat.",
-    "current_note": "V2 navazuje na 20 % (10–35 %) z 30. září 21:35 CEST; dnes 20 % beze změny. Ohlášených 120 000 běžných branců je odlišná, vyloučená kategorie v ročním rámci 261 000. Historické anonymní zprávy a včerejší benchmarky již zohledněny. Původní 72h kontrolní bod není posunut denním běžným nenalezením."
+    "current_note": "V2 a prior 20 % (10–35 %) zachovány. Rostovský klientský případ zveřejněný 1. října je nezávisle neověřený, s neznámým datem a bez celostátního rozsahu. Běžný odvod vyloučen; nucené kontrakty mohou patřit do v2 jen při doložené nové koordinované vlně >=100 000. Původní checkpoint neměnit."
   },
   "belarus_and_nuclear": {
     "would_strengthen": [
-      "Bojové síly a podpůrná logistika zůstanou po deklarovaném konci 2. října v neplánované koncentraci orientované na Ukrajinu či NATO.",
+      "Po konci konkrétní aktivity zůstanou síly a podpůrná logistika v neplánované útočné koncentraci; termín 2. října neaplikovat na jinou praporní kontrolu ani na dvě oblasti se známým pozdějším teritoriálním termínem.",
       "Přijde datovaná nezávislá evidence současné neobvyklé jaderné pohotovosti, velitelského režimu či krizového rozmístění, nikoli historické zakázky."
     ],
     "would_weaken": [
       "Teritoriální výcvik proběhne v oznámeném ročním rozsahu bez navazující útočné koncentrace.",
       "Historická dokumentace jaderné modernizace nebude doplněna důkazem nové současné aktivace nebo rozmístění."
     ],
-    "next_check_by": "2026-10-02T07:00:00+02:00",
-    "current_note": "Veřejná kontrola nepřinesla novou ověřenou útočnou koncentraci ani jadernou pohotovost. Rozhodující další test je chování po deklarovaném konci výcviku 2. října. Diplomatické opakování výhrůžek nepovažovat za změnu rozmístění.",
-    "assessment_time": "2026-10-01T07:27:29+02:00"
+    "next_check_by": "2026-10-03T07:00:00+02:00",
+    "current_note": "Oznámení 1. října popisuje překvapivou kontrolu mechanizovaného praporu; neztotožňovat ji s ročním teritoriálním cvičením. Pro první nemáme potvrzený termín konce; hlavní teritoriální termín končí 2. října, dvě oblasti mají 13.–16. října. Putinova řeč není doložená změna jaderné pohotovosti.",
+    "assessment_time": "2026-10-02T07:16:39+02:00"
   },
   "czechia": {
     "would_strengthen": [
@@ -88,9 +88,9 @@
       "České úřady výslovně sdělí, že se aktuální specifická hrozba nepotvrdila, nebo vyšetřování konkrétního případu doloží neruský původ; samotné mlčení služeb není takový důkaz.",
       "Veřejné české hodnocení zůstane na obecné dlouhodobé hrozbě bez nové readiness vrstvy."
     ],
-    "next_check_by": "2026-10-02T07:00:00+02:00",
-    "current_note": "BIS a NÚKIB zkontrolovány 1. října; poslední viditelné aktuality 27. srpna a 24. září. Nenalezení nového veřejného případu není nové ujištění služeb.",
-    "assessment_time": "2026-10-01T07:27:29+02:00"
+    "next_check_by": "2026-10-03T07:00:00+02:00",
+    "current_note": "BIS, NÚKIB a veřejné reportování zkontrolovány 2. října; poslední viditelné aktuality 27. srpna a 24. září nejsou nové dnešní ujištění. Nový veřejně doložený materiální ruský případ nenalezen; nejde o vyloučení skrytého.",
+    "assessment_time": "2026-10-02T07:16:39+02:00"
   },
   "znpp_nuclear_safety": {
     "would_strengthen": [
@@ -100,9 +100,9 @@
     "would_weaken": [
       "Obnovené vnější napájení zůstane stabilní a IAEA potvrdí zásoby paliva i funkci chlazení."
     ],
-    "next_check_by": "2026-10-02T07:00:00+02:00",
-    "note": "Dohledána přehlédnutá IAEA z 25. září: vnější napájení fungovalo, zásoba paliva se snižovala a záložní režim se úsporně měnil. Nejde o nový výpadek ani o současné měření 1. října; potřeba novějšího potvrzení. Odděleno od použití jaderné zbraně.",
-    "assessment_time": "2026-10-01T07:27:29+02:00",
+    "next_check_by": "2026-10-03T07:00:00+02:00",
+    "note": "Kontrola indexu IAEA stále vede k poslední nalezené ukrajinské aktualizaci z 25. září. Její obsah není současný stav 2. října. Odděleno od pravděpodobnosti jaderné zbraně.",
+    "assessment_time": "2026-10-02T07:16:39+02:00",
     "last_dated_observation": "2026-09-25",
     "evidence_ids": [
       "evt-20260925-iaea-znpp-backup-fuel"
@@ -120,9 +120,9 @@
       "Komise či ukrajinské ministerstvo financí potvrdí skutečné přijetí nově schválené tranše; dodávky PVO prokazatelně zlepší poměr zásob a spotřeby, zejména u Patriotů.",
       "Ochranná opatření ztlumí účinky hybridních operací bez omezení podpory Ukrajině."
     ],
-    "next_check_by": "2026-10-02T07:00:00+02:00",
-    "current_note": "NATO potvrzuje nedostatek interceptorů; nové hovory s Finskem/Norskem ani veřejný apel nejsou dodávka. Ukrajinské energetické omezení není automatický růst západního Domestic Pain. Nové uskutečněné omezení pomoci kvůli ruským hrozbám neověřeno; WDPI 47 beze změny.",
-    "assessment_time": "2026-10-01T07:27:29+02:00"
+    "next_check_by": "2026-10-03T07:00:00+02:00",
+    "current_note": "Britský balík 1. října kombinuje nové sankce s cíleným omezeným LNG licencováním pro energetické potřeby spojenců. Výjimka není doložena jako ústupek ruské jaderné hrozbě. Nové uskutečněné omezení pomoci ze strachu ani čistá změna zásob PVO neověřeny; WDPI 47.",
+    "assessment_time": "2026-10-02T07:16:39+02:00"
   },
   "north_korean_reinforcements": {
     "would_strengthen": [
@@ -131,21 +131,22 @@
     "would_weaken": [
       "Výběr a výcvik se nepromění v nasazení, čísla se opraví nebo půjde o rotaci místo čistého posílení."
     ],
-    "next_check_by": "2026-10-02T07:00:00+02:00",
-    "current_note": "Dřívější tvrzení HUR/Zelenského o posilách zůstává již započtenou linií. V kontrolovaném veřejném vzorku nebyla získána nová nezávislá verifikace čistého přírůstku a role; neopakovat počty jako novou událost.",
-    "assessment_time": "2026-10-01T07:27:29+02:00"
+    "next_check_by": "2026-10-03T07:00:00+02:00",
+    "current_note": "Přeneseno z 1. října, bez nové cílené verifikace v dnešním běhu. Staré HUR/Zelenského počty nejsou nové důkazy; při další cílené kontrole rozlišit čistý přírůstek a rotaci.",
+    "assessment_time": "2026-10-01T07:27:29+02:00",
+    "review_status": "carried_forward_not_targeted_this_run"
   },
   "assessment_scope": "full_recalibration",
-  "watch_window_end": "2026-10-04T07:27:29+02:00",
+  "watch_window_end": "2026-10-05T07:16:39+02:00",
   "latvian_election_cyber_effect": {
-    "assessment_time": "2026-10-01T07:27:29+02:00",
+    "assessment_time": "2026-10-02T07:16:39+02:00",
     "would_strengthen": [
       "CERT.LV doloží incident s materiálním dopadem na volební proces; ruskou atribuci a samotný účinek posuzovat odděleně."
     ],
     "would_weaken": [
       "Aktivní monitorování přes volební období doloží zachování funkcí bez materiálního narušení; nesčítat opakované bezincidentní aktualizace jako nezávislé důkazy."
     ],
-    "next_check_by": "2026-10-01T10:00:00+02:00",
-    "current_note": "Poslední kontrolovaná aktualizace 30. září 20:00 EEST bez dopadu na volební proces, při vysoké obecné kybernetické hrozbě. Další přehled oznámen na 1. října 11:00 EEST."
+    "next_check_by": "2026-10-02T14:00:00+02:00",
+    "current_note": "Poslední načtená aktualizace 1. října 11:00 EEST: volební dopad nezjištěn, celková hrozba vysoká a nezměněná. Další přehled avizován na 2. října 15:00 EEST (14:00 CEST). Stejný monitor, ne další nezávislá služba."
   }
 }
