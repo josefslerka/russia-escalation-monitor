@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "assessment_time": "2026-10-03T07:21:11+02:00",
+  "assessment_time": "2026-10-04T09:15:45+02:00",
   "ukraine_additional_conventional_escalation": {
     "would_strengthen": [
       "Oficiální bilance a provozovatelé potvrdí soustavné nové energetické zásahy a dlouhé systémové výpadky nad dosavadní vzorec.",
@@ -12,9 +12,9 @@
       "Omezení po 30. září rychle skončí a provozovatelé doloží návrat stabilního zásobování bez návazné systematické energetické kampaně.",
       "Další zásahy zůstanou v již započteném vzorci bez nové trvalé kategorie, rozsahu nebo prostředků."
     ],
-    "next_check_by": "2026-10-04T07:00:00+02:00",
-    "current_note": "Opakované dopravní zásahy pokračují i ráno 3. října; část prvních uzávěr byla doplněna retrospektivně. Ukrenergo potvrzuje provozní úlevu 1. října, večer 2. října neplánuje plošná omezení na 3. října. Výhled ještě není výsledek. 68 % beze změny, důležitá je trvalost a nová kategorie nad dosavadní logistiku.",
-    "assessment_time": "2026-10-03T07:21:11+02:00"
+    "next_check_by": "2026-10-05T07:00:00+02:00",
+    "current_note": "68 % zachováno. Obnovené ruské varování a Zelenského tvrzení o dokumentech podporují trvající vysoký tlak, ale dokumenty nejsou veřejné a logistická kampaň i její účinek jsou již započteny. Ukrenergo neplánuje omezení na 4. října, což je jen výhled. Další kvalitativní a trvalý zlom podle definice zatím neadjudikován.",
+    "assessment_time": "2026-10-04T09:15:45+02:00"
   },
   "hybrid_and_sabotage_eu": {
     "would_strengthen": [
@@ -28,9 +28,9 @@
       "Polská forenzní či soudní zjištění vyvrátí dosavadní závěr o žhářství nebo prokážou neruský motiv.",
       "Podezřelé případy zůstanou izolované bez prokázaného ruského řízení a bez měřitelného strategického účinku."
     ],
-    "next_check_by": "2026-10-04T07:00:00+02:00",
-    "current_note": "Nové HUR varování nemá zveřejněný podklad konkrétní operace. VDD/MIDD oznámení se týká červnového zadržení a potenciální podpory skupin, ne nového říjnového pokusu. 71/65 % beze změny.",
-    "assessment_time": "2026-10-03T07:21:11+02:00"
+    "next_check_by": "2026-10-05T07:00:00+02:00",
+    "current_note": "71/65 % zachováno. Nová přímá potvrzená materiální evropská operace neověřena; starší procesní případy zůstávají v prioru. CERT.LV po volbách uvádí absenci kybernetického účinku, což není vyvrácení fyzické sabotáže v jiných zemích.",
+    "assessment_time": "2026-10-04T09:15:45+02:00"
   },
   "limited_nato_and_baltic_test": {
     "would_strengthen": [
@@ -44,14 +44,14 @@
       "Pobaltské služby ponechají hrozbu beze změny a neohlásí nutnost zvýšit pohotovost, incidenty zůstanou neprovázané a další lety budou pouze v mezinárodním prostoru.",
       "DDIS či další služby upřesní, že veřejná aktualizace stojí převážně na starších známých událostech bez nového operativního podkladu."
     ],
-    "next_check_by": "2026-10-04T07:00:00+02:00",
-    "current_note": "HUR hybridní varování a červnový lotyšský podpůrný případ neurčují nový úmysl a termín testu NATO. Konkrétní logistická konvergence dnes neověřena; poslední přímá veřejná hodnocení z minulých dnů se nepředstírají jako nová.",
-    "assessment_time": "2026-10-03T07:21:11+02:00"
+    "next_check_by": "2026-10-05T07:00:00+02:00",
+    "current_note": "40/24 % zachováno. Kyjevská výhrůžka není pobaltské ultimátum; aktuální CERT.LV negativní výsledek má úzký rozsah. NATO/VDD dynamické indexy nebyly úplně čitelné, starší místní hodnocení nejsou nová.",
+    "assessment_time": "2026-10-04T09:15:45+02:00"
   },
   "russian_mobilization": {
     "definition_version": 2,
     "forecast_hypothesis": "significant_russian_mobilization_by_2026_12_31",
-    "assessment_time": "2026-10-03T07:21:11+02:00",
+    "assessment_time": "2026-10-04T09:15:45+02:00",
     "would_strengthen": [
       "Nový ověřený závazný mobilizační příkaz alespoň pro 100 000 lidí, i podle starého dekretu; nebo důvěryhodně doložená faktická nucená vlna stejného rozsahu.",
       "Nezávislé regionální linie ukážou současně nové nucené rozkazy a příjem/výcvik nad normál; samotné dvě regionální anekdoty nedokazují celostátní počet.",
@@ -62,10 +62,23 @@
       "Nové údaje ukážou, že potřeby jednotek pokrývají skutečné nové kontrakty a další nemobilizační zdroje; nabídka bonusu sama úspěšný nábor neprokazuje.",
       "Zdroje upřesní, že hlášené statisíce označují součet průběžného náboru či scénář, ne nové povinné povolání."
     ],
-    "next_check_by": "2026-10-03T21:35:31+02:00",
+    "next_check_by": "2026-10-05T07:00:00+02:00",
     "checkpoint_72h": "2026-10-03T21:35:31+02:00",
-    "next_review_rule": "Ověřit pokrytí a očekávané signatury; nepočítat každý den stejné nenalezení jako nezávislý důkaz a automaticky neodečítat procento. Pokud se signály neobjeví, podmínit závěr tím, co by šlo skutečně pozorovat.",
-    "current_note": "20 % (10–35 %) podle v2 ponecháno. Znovu sdílený rozpočet a individuální příběhy neprokazují nový mechanismus ani 100 000 osob. Právní portál nedostupný, celostátní vzorek chybí. Checkpoint teprve dnes večer; ranní běh jej nesmí označit jako splněný."
+    "next_review_rule": "Další kontrola navazuje na skutečně provedený 72h audit. Původní checkpoint 3. října 21:35:31 nepřepisovat. Rutinní odesílání branců od 10. října oddělit od nové nucené vlny; opakované nenalezení v neúplném vzorku není další nezávislý záporný důkaz.",
+    "current_note": "20 % (10–35 %) podle v2 zachováno po kontrole původního 72h bodu, provedené až dnes. Sedm obrázků HUR opakuje již započtenou linii 300 000 + 300 000; srovnání celkových ztrát s kontrakty není čistá personální bilance. Nový závazný příkaz či faktická nová nucená vlna >=100 000 není doložena. Právní portál nedostupný a regionální pokrytí omezené: není to No ani automatický důvod odečítat procento.",
+    "checkpoint_review": {
+      "scheduled_for": "2026-10-03T21:35:31+02:00",
+      "reviewed_at": "2026-10-04T09:15:45+02:00",
+      "status": "reviewed_after_due_time",
+      "outcome": "Nový rozhodující v2 indikátor neověřen při neúplném pokrytí; hypotéza zůstává aktivní, p 20 %, nikoli No.",
+      "evidence_ids": [
+        "claim-20261003-hur-mobilization-carousel"
+      ],
+      "coverage_limitations": [
+        "Primární právní portál nedostupný; sekundární přehled není úplná náhrada.",
+        "Regionální vzorek nereprezentativní; neveřejné příkazy nelze vyloučit."
+      ]
+    }
   },
   "belarus_and_nuclear": {
     "would_strengthen": [
@@ -76,12 +89,12 @@
       "Teritoriální výcvik proběhne v oznámeném ročním rozsahu bez navazující útočné koncentrace.",
       "Historická dokumentace jaderné modernizace nebude doplněna důkazem nové současné aktivace nebo rozmístění."
     ],
-    "next_check_by": "2026-10-04T07:00:00+02:00",
-    "current_note": "Resort 2. října hlásí návštěvu plánovaných cvičení v Rusku. Samostatná ukrajinská linie uvádí technickou podporu dronových útoků přes Bělorusko; nezávislé technické ověření chybí a nejde samo o přímé nasazení běloruských vojsk. Konec hlavního teritoriálního cvičení ani samostatné praporní kontroly není úplně ověřen; termíny nemíchat.",
-    "assessment_time": "2026-10-03T07:21:11+02:00",
+    "next_check_by": "2026-10-05T07:00:00+02:00",
+    "current_note": "5 % zachováno. Běloruský resort 3. října oznamuje závěrečné ocenění při plánovaných cvičeních v Rusku. To podporuje rutinní alternativu, ale není ověřením návratu domů ani ukončení jiné praporní prověrky; nový přímý vstup vojsk neověřen. Jaderné pravděpodobnosti 15/4/1 % do konce roku beze změny.",
+    "assessment_time": "2026-10-04T09:15:45+02:00",
     "source_urls": [
-      "https://t.me/modmilby/59199",
-      "https://www.ukrinform.ua/rubric-ato/4170416-bilorus-citko-koordinue-z-rf-uvimknenna-retranslatoriv-pid-cas-zapuskiv-droniv-demcenko.html"
+      "https://t.me/modmilby/59226",
+      "https://t.me/modmilby/59233"
     ]
   },
   "czechia": {
@@ -93,9 +106,9 @@
       "České úřady výslovně sdělí, že se aktuální specifická hrozba nepotvrdila, nebo vyšetřování konkrétního případu doloží neruský původ; samotné mlčení služeb není takový důkaz.",
       "Veřejné české hodnocení zůstane na obecné dlouhodobé hrozbě bez nové readiness vrstvy."
     ],
-    "next_check_by": "2026-10-04T07:00:00+02:00",
-    "current_note": "BIS a NÚKIB aktuální indexy kontrolovány 3. října; poslední viditelné aktuality 27. srpna a 24. září, ne dnešní ujištění. HUR obecná evropská výstraha sama nemění český odhad 26 %.",
-    "assessment_time": "2026-10-03T07:21:11+02:00"
+    "next_check_by": "2026-10-05T07:00:00+02:00",
+    "current_note": "26 % zachováno. Kontrola BIS a NÚKIB nepřinesla nové české operativní zjištění; viditelné indexy zůstávají starší. Mlčení služeb není důkaz bezpečí a lotyšský volební výsledek nelze automaticky přenést do Česka.",
+    "assessment_time": "2026-10-04T09:15:45+02:00"
   },
   "znpp_nuclear_safety": {
     "would_strengthen": [
@@ -105,9 +118,9 @@
     "would_weaken": [
       "Obnovené vnější napájení zůstane stabilní a IAEA potvrdí zásoby paliva i funkci chlazení."
     ],
-    "next_check_by": "2026-10-04T07:00:00+02:00",
-    "note": "Nová IAEA 369 z 2. října: nízké zásoby záložního paliva, odložená údržba a zvažované další omezení automatické zálohy. Zvažované není provedené. Bezpečnost civilního zařízení je oddělena od prognóz vojenských jaderných zbraní.",
-    "assessment_time": "2026-10-03T07:21:11+02:00",
+    "next_check_by": "2026-10-05T07:00:00+02:00",
+    "note": "Poslední dostupná aktualizace IAEA 369 z 2. října již byla započtena. Dnešní index neposkytl nové provozní potvrzení. Nízké zásoby paliva a zvažované omezení zálohy zůstávají otevřenou starší nejistotou, nikoli nově potvrzeným dnešním stavem.",
+    "assessment_time": "2026-10-04T09:15:45+02:00",
     "last_dated_observation": "2026-10-02",
     "evidence_ids": [
       "evt-20261002-iaea-znpp-safety-update369"
@@ -118,16 +131,17 @@
       "Pomoc Ukrajině bude doloženě odložena či omezena kvůli ruské eskalační nebo jaderné hrozbě.",
       "Interceptory, výroba nebo ISR budou prokazatelně přesměrovány od Ukrajiny do jiné krize.",
       "Materiální ruský hybridní zásah vyvolá měřitelnou změnu evropské politiky vůči Ukrajině.",
-      "Americko-ruské jednání přinese uskutečněnou změnu pomoci nebo sankcí a bude doložena kauzální vazba na ruský eskalační nátlak; obchodní či humanitární motiv bez této vazby není automaticky sebeodstrašení."
+      "Americko-ruské jednání přinese uskutečněnou změnu pomoci nebo sankcí a bude doložena kauzální vazba na ruský eskalační nátlak; obchodní či humanitární motiv bez této vazby není automaticky sebeodstrašení.",
+      "Vlastní datované prohlášení ambasády či vlády doloží provedené omezení přítomnosti nebo pomoci způsobené ruským nátlakem; samotný záložní plán nestačí."
     ],
     "would_weaken": [
       "Politická dohoda o 6,6 mld. EUR projde potřebnými právními kroky a fond začne skutečně financovat pomoc Ukrajině.",
       "Další skutečně vyplacené tranše či provedené dodávky sníží konkrétní potřebu; zejména ověřená dodávková bilance PVO prokáže úlevu. Osmou tranši již znovu nepočítat.",
       "Ochranná opatření ztlumí účinky hybridních operací bez omezení podpory Ukrajině."
     ],
-    "next_check_by": "2026-10-04T07:00:00+02:00",
-    "current_note": "Potvrzeno přijetí 2,9 mld. EUR: naplnil se sledovaný platební krok osmé tranše. Resource Dilution 70 → 68, WDPI 47 → 46; Self-Deterrence 32 beze změny, tentýž finanční efekt se nepočítá dvakrát. Dodávky interceptorů ani právní plnění EPF tím vyřešeny nejsou.",
-    "assessment_time": "2026-10-03T07:21:11+02:00",
+    "next_check_by": "2026-10-05T07:00:00+02:00",
+    "current_note": "WDPI 46 (68/36/32) beze změny. Dřívější platba EU započtena jednou; nové finanční přísliby nejsou peníze na účtu. Konkrétní vazba nové konkurence zdrojů na odebrané ukrajinské dodávky není doložena. Diplomatické varování nezaměňovat za prokázaný odjezd či sebeodstrašení.",
+    "assessment_time": "2026-10-04T09:15:45+02:00",
     "met_indicators": [
       {
         "date": "2026-10-02",
@@ -144,22 +158,31 @@
     "would_weaken": [
       "Výběr a výcvik se nepromění v nasazení, čísla se opraví nebo půjde o rotaci místo čistého posílení."
     ],
-    "next_check_by": "2026-10-04T07:00:00+02:00",
-    "current_note": "Dnes provedeno cílené vyhledání. Červencový údaj 30 000 se neproměnil v nové nezávislé ověření; říjnová zpráva o zajatcích se netýká nových posil. Přímý Yonhap blokován, dostupné jen výňatky, žádný kladný počet nebo nasazení tím neověřeno.",
-    "assessment_time": "2026-10-03T07:21:11+02:00",
-    "review_status": "targeted_search_limited_access"
+    "next_check_by": "2026-10-05T07:00:00+02:00",
+    "current_note": "Cílené vyhledání nových datovaných posil nepřineslo ověřenou novou linii. Předchozí čísla mají původní datum; nejde o dnešní potvrzení nepřítomnosti dalších jednotek.",
+    "assessment_time": "2026-10-04T09:15:45+02:00",
+    "review_status": "targeted_search_no_new_verified_result"
   },
   "assessment_scope": "full_recalibration",
-  "watch_window_end": "2026-10-06T07:21:11+02:00",
+  "watch_window_end": "2026-10-07T09:15:45+02:00",
   "latvian_election_cyber_effect": {
-    "assessment_time": "2026-10-03T07:21:11+02:00",
+    "assessment_time": "2026-10-04T09:15:45+02:00",
     "would_strengthen": [
       "CERT.LV doloží incident s materiálním dopadem na volební proces; ruskou atribuci a samotný účinek posuzovat odděleně."
     ],
     "would_weaken": [
       "Aktivní monitorování přes volební období doloží zachování funkcí bez materiálního narušení; nesčítat opakované bezincidentní aktualizace jako nezávislé důkazy."
     ],
-    "next_check_by": "2026-10-03T11:30:00+02:00",
-    "current_note": "Poslední načtená aktualizace 2. října 15:00 EEST: volební narušení nehlášeno při vysoké obecné hrozbě. Zachycené napodobeniny webů zatím bez škodlivého obsahu; ruský původ neprokázán. Další přehled 3. října 12:30 EEST = 11:30 CEST. Stejný monitor, nikoli nové nezávislé potvrzení."
+    "next_check_by": "2026-10-05T07:00:00+02:00",
+    "current_note": "CERT.LV 4. října 09:30 EEST (= 08:30 CEST) uvádí klidnou volební noc a žádný materiální dopad na volby nebo sčítání. Naplnil se sledovaný oslabující indikátor v omezeném intervalu; další kontrola je pro dodatečné objevy, nikoli další započítání stejného negativního výsledku.",
+    "review_status": "election_window_reviewed_followup_for_late_discovery",
+    "met_indicators": [
+      {
+        "date": "2026-10-04",
+        "indicator": "Aktivní monitoring doložil nenarušené volební a sčítací funkce za volební den a noc.",
+        "evidence_id": "obs-20261004-certlv-election-no-disruption",
+        "scope": "Kybernetický účinek na sledované lotyšské volby, nikoli všechny hybridní operace."
+      }
+    ]
   }
 }
