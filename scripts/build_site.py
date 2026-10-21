@@ -14,10 +14,10 @@ from urllib.parse import unquote, urlsplit
 from zoneinfo import ZoneInfo
 
 from markdown_it import MarkdownIt
+from bilingual import REPORT_NAME, TRANSLATION_NAME, english_path, validate_translations
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "russia-escalation"
-REPORT_NAME = re.compile(r"\d{4}-\d{2}-\d{2}-\d{4}\.md")
 PRAGUE = ZoneInfo("Europe/Prague")
 REPOSITORY = "https://github.com/josefslerka/russia-escalation-monitor"
 TRENDS = {"baseline": "výchozí stav", "flat": "beze změny", "up": "růst", "down": "pokles"}
@@ -64,8 +64,10 @@ def day(value: str) -> str:
     return f"{dt.day}. {dt.month}. {dt.year}"
 
 
-def timestamp(value: str) -> str:
+def timestamp(value: str, lang: str = "cs") -> str:
     dt = datetime.fromisoformat(value).astimezone(PRAGUE)
+    if lang == "en":
+        return f"{dt:%Y-%m-%d, %H:%M} {dt.tzname()}"
     return f"{dt.day}. {dt.month}. {dt.year}, {dt:%H:%M} {dt.tzname()}"
 
 
@@ -73,7 +75,7 @@ def public_text(text: str) -> str:
     # Historical reports used clickable local paths. Their web copies use relative links.
     # The archived author path differs from ROOT on GitHub's Linux runner.
     text = re.sub(
-        r"/(?:Users|home)/[^<>\n\"']*?/\.?russia-escalation/reports/(\d{4}-\d{2}-\d{2}-\d{4}\.md)",
+        r"/(?:Users|home)/[^<>\n\"']*?/\.?russia-escalation/reports/(\d{4}-\d{2}-\d{2}-\d{4}(?:\.en)?\.md)",
         r"\1", text,
     )
     for folder in ("russia-escalation", ".russia-escalation"):
@@ -118,11 +120,13 @@ def validate():
     if not set(state.get("new_evidence_ids", [])).issubset(identifiers):
         raise ValueError("New evidence IDs are missing from evidence.jsonl")
     read_json(DATA / "watchlist.json")
-    reports = sorted((DATA / "reports").glob("*.md"), reverse=True)
-    if not reports or any(not REPORT_NAME.fullmatch(p.name) for p in reports):
+    all_reports = list((DATA / "reports").glob("*.md"))
+    reports = sorted((p for p in all_reports if REPORT_NAME.fullmatch(p.name)), reverse=True)
+    if not reports or any(not (REPORT_NAME.fullmatch(p.name) or TRANSLATION_NAME.fullmatch(p.name)) for p in all_reports):
         raise ValueError("Unexpected report filename")
     if reports[0] != report:
         raise ValueError("state.json does not point to the latest timestamped report")
+    validate_translations(reports, state, read_json)
     return state, evidence, reports
 
 
@@ -130,35 +134,42 @@ def badge(level: str) -> str:
     return f'<span class="badge {escape(level.lower())}">{escape(level)}</span>'
 
 
-def page(title: str, content: str, prefix: str = ".", active: str = "") -> str:
+def page(title: str, content: str, prefix: str = ".", active: str = "", lang: str = "cs", alternates=None) -> str:
     css_version = sha256((ROOT / "site/assets/site.css").read_bytes()).hexdigest()[:12]
     js_version = sha256((ROOT / "site/assets/site.js").read_bytes()).hexdigest()[:12]
+    en = lang == "en"
     navigation = "".join(
-        f'<a href="{prefix}/{path}"' + (' aria-current="page"' if active == label else "") + f'>{label}</a>'
-        for path, label in (("index.html", "Přehled"), ("archive.html", "Archiv"), ("methodology.html", "Metodika"))
+        f'<a href="{prefix}/{path}" hreflang="cs"' + (' aria-current="page"' if active == label else "") + f'>{english if en else label}</a>'
+        for path, label, english in (("index.html", "Přehled", "Overview (Czech)"), ("archive.html", "Archiv", "Archive (Czech)"), ("methodology.html", "Metodika", "Methodology (Czech)"))
     )
+    alternate_links = "".join(f'<link rel="alternate" hreflang="{language}" href="{escape(href, quote=True)}">'
+                              for language, href in (alternates or {}).items())
+    name = "Escalation Monitor" if en else "Monitor eskalace"
+    description = "Source-linked OSINT forecasts of Russian escalation, with probabilities, uncertainty and an assessment archive." if en else "Průběžná OSINT předpověď ruské eskalace. Pravděpodobnosti, podklady, nejistoty a archiv hodnocení."
+    disclaimer = "An analytical project by Josef Šlerka, assisted by AI. It uses public sources and judgmental estimates; it is not an official warning system. Each assessment is valid as of its own research cutoff." if en else "Analytický projekt Josefa Šlerky s podporou AI. Pracuje s veřejnými zdroji a úsudkovými odhady; nejde o oficiální výstražný systém. Každé hodnocení platí k vlastní uzávěrce."
     return f'''<!doctype html>
-<html lang="cs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{escape(title)} · Monitor eskalace</title><meta name="description" content="Průběžná OSINT předpověď ruské eskalace. Pravděpodobnosti, podklady, nejistoty a archiv hodnocení.">
+<html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{escape(title)} · {name}</title><meta name="description" content="{description}">{alternate_links}
 <meta name="color-scheme" content="light"><meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="stylesheet" href="{prefix}/assets/site.css?v={css_version}"><script src="{prefix}/assets/site.js?v={js_version}" defer></script></head>
-<body><a class="skip" href="#main">Přejít na obsah</a><header class="masthead"><div class="shell">
-<a class="brand" href="{prefix}/index.html"><span aria-hidden="true">◉</span> MONITOR ESKALACE</a><nav class="nav" aria-label="Hlavní navigace">{navigation}</nav></div></header>
+<body><a class="skip" href="#main">{'Skip to content' if en else 'Přejít na obsah'}</a><header class="masthead"><div class="shell">
+<a class="brand" href="{prefix}/index.html"><span aria-hidden="true">◉</span> {name.upper()}</a><nav class="nav" aria-label="{'Main navigation' if en else 'Hlavní navigace'}">{navigation}</nav></div></header>
 <main id="main" class="shell">{content}</main><footer class="footer"><div class="shell">
-<p>Analytický projekt Josefa Šlerky s podporou AI. Pracuje s veřejnými zdroji a úsudkovými odhady; nejde o oficiální výstražný systém. Každé hodnocení platí k vlastní uzávěrce.</p>
-<p><a href="{REPOSITORY}">GitHub a historie změn ↗</a><br><a href="{prefix}/data/state.json">Aktuální data JSON</a></p></div></footer></body></html>'''
+<p>{disclaimer}</p>
+<p><a href="{REPOSITORY}">{'GitHub and revision history' if en else 'GitHub a historie změn'} ↗</a><br><a href="{prefix}/data/state.json">{'Current data (JSON)' if en else 'Aktuální data JSON'}</a></p></div></footer></body></html>'''
 
 
 def report_metadata(path: Path):
     text = public_text(path.read_text(encoding="utf-8"))
     level = re.search(r"\*\*(?:Celkově|Overall):\*\*\s*(GREEN|YELLOW|ORANGE|RED)", text)
     judgment = re.search(r"\*\*(?:Jednovětý závěr|One-line judgment):\*\*\s*(.+)", text)
-    naive = datetime.strptime(path.stem, "%Y-%m-%d-%H%M")
-    return {"id": path.stem, "time": naive.replace(tzinfo=PRAGUE).isoformat(),
+    identifier = path.name.removesuffix(".en.md").removesuffix(".md")
+    naive = datetime.strptime(identifier, "%Y-%m-%d-%H%M")
+    return {"id": identifier, "time": naive.replace(tzinfo=PRAGUE).isoformat(),
             "level": level.group(1) if level else "", "judgment": judgment.group(1).strip() if judgment else "Otevřít úplné hodnocení", "text": text}
 
 
-def render_markdown(source: str, known_reports: set[str], prefix: str = ".."):
+def render_markdown(source: str, known_reports: set[str], prefix: str = "..", lang: str = "cs"):
     md = MarkdownIt("commonmark", {"html": False}).enable("table")
     tokens = md.parse(source)
     contents = []
@@ -167,7 +178,7 @@ def render_markdown(source: str, known_reports: set[str], prefix: str = ".."):
             heading = tokens[i + 1].content
             identifier = f"section-{len(contents) + 1}"
             token.attrSet("id", identifier)
-            contents.append((identifier, SECTION_NAMES.get(heading, heading)))
+            contents.append((identifier, SECTION_NAMES.get(heading, heading) if lang == "cs" else heading))
         for child in token.children or []:
             if child.type != "link_open":
                 continue
@@ -176,14 +187,17 @@ def render_markdown(source: str, known_reports: set[str], prefix: str = ".."):
             if parsed.scheme in ("https", "http"):
                 child.attrSet("rel", "noopener noreferrer")
             elif Path(parsed.path).name in known_reports:
-                child.attrSet("href", f"{prefix}/reports/{Path(parsed.path).stem}.html" + (f"#{parsed.fragment}" if parsed.fragment else ""))
+                target = Path(parsed.path)
+                if lang == "en" and not target.name.endswith(".en.md") and english_path(target).name in known_reports:
+                    target = english_path(target)
+                child.attrSet("href", f"{prefix}/reports/{target.stem}.html" + (f"#{parsed.fragment}" if parsed.fragment else ""))
             elif Path(parsed.path).name in ("state.json", "watchlist.json", "evidence.jsonl"):
                 child.attrSet("href", f"{prefix}/data/{Path(parsed.path).name}")
             elif href.startswith("#"):
                 pass
             else:
                 child.attrs.pop("href", None)
-                child.attrSet("title", "Odkaz není součástí veřejného archivu")
+                child.attrSet("title", "Link is not part of the public archive" if lang == "en" else "Odkaz není součástí veřejného archivu")
     html = md.renderer.render(tokens, md.options, {})
     html = html.replace("<table>", '<div class="table-wrap"><table>').replace("</table>", "</table></div>")
     toc = "".join(f'<a href="#{identifier}">{escape(label)}</a>' for identifier, label in contents)
@@ -193,9 +207,24 @@ def render_markdown(source: str, known_reports: set[str], prefix: str = ".."):
 def archive_cards(reports):
     return '<div class="archive-list">' + "".join(
         f'<article class="archive-item" data-archive-item><time datetime="{r["time"]}">{day(r["time"][:10])}<br><small>{timestamp(r["time"]).split(", ")[1]}</small></time>'
-        f'<a href="reports/{r["id"]}.html">{escape(r["judgment"])}</a>{badge(r["level"])}</article>'
+        f'<div><a href="reports/{r["id"]}.html">{escape(r["judgment"])}</a>{archive_languages(r)}</div>{badge(r["level"])}</article>'
         for r in reports
     ) + "</div>"
+
+
+def archive_languages(report):
+    if "en" not in report.get("languages", {}):
+        return ""
+    return f'<div class="archive-languages"><a href="reports/{report["id"]}.html" lang="cs" hreflang="cs">Čeština</a><span aria-hidden="true"> / </span><a href="reports/{report["id"]}.en.html" lang="en" hreflang="en">English</a></div>'
+
+
+def language_switch(report, lang):
+    if "en" not in report["languages"]:
+        return ""
+    links = "".join(f'<a href="{report["id"]}{".en" if code == "en" else ""}.html" lang="{code}" hreflang="{code}"'
+                    + (' aria-current="page"' if lang == code else "") + f'>{label}</a>'
+                    for code, label in (("cs", "Čeština"), ("en", "English")))
+    return f'<div class="report-toolbar"><nav class="language-switch" aria-label="{"Report language" if lang == "en" else "Jazyk zprávy"}">{links}</nav></div>'
 
 
 def dashboard(state, reports, evidence_count):
@@ -213,8 +242,9 @@ def dashboard(state, reports, evidence_count):
     watch = "".join(f"<li>{escape(text)}</li>" for text in state.get("watch_24_72h", []))
     basis = escape(state["overall_level_basis"])
     latest = Path(state["last_report"]).stem
+    english_link = f'<a class="button secondary" href="reports/{latest}.en.html" lang="en" hreflang="en">Read in English →</a>' if "en" in reports[0].get("languages", {}) else ""
     return f'''<div class="hero"><div><p class="eyebrow">Hodnocení k <time datetime="{escape(state['assessment_time'])}">{timestamp(state['assessment_time'])}</time></p><h1>Rizika ruské eskalace</h1>
-<p class="lede">{escape(state['one_line_judgment'])}</p><div class="actions"><a class="button" href="reports/{latest}.html">Číst aktuální zprávu →</a><a class="button secondary" href="archive.html">Procházet archiv</a></div></div>
+<p class="lede">{escape(state['one_line_judgment'])}</p><div class="actions"><a class="button" href="reports/{latest}.html">Číst aktuální zprávu →</a>{english_link}<a class="button secondary" href="archive.html">Procházet archiv</a></div></div>
 <aside class="status-card" aria-label="Celkové hodnocení"><p class="status-label">Celkový stupeň varování</p>{badge(state['overall_level'])}<span class="trend">{escape(TRENDS[state['overall_trend']])}</span><p class="meta">Kvalitativní hodnocení. Význam stupně a podklady jsou vysvětleny ve zprávě.</p></aside></div>
 <p class="freshness" data-assessment-time="{escape(state['assessment_time'])}" hidden></p>
 <div class="data-strip"><span>Odhady do <strong>{day(state['forecast_horizon'])}</strong></span><span><strong>{len(reports)}</strong> zpráv v archivu · <strong>{evidence_count}</strong> záznamů evidence</span></div>
@@ -229,23 +259,55 @@ def dashboard(state, reports, evidence_count):
 <section class="section"><div class="section-head"><h2>Poslední hodnocení</h2><a href="archive.html">Všech {len(reports)} zpráv →</a></div>{archive_cards(reports[:3])}</section>'''
 
 
+def report_page(report, text, lang, known_reports, reports, index):
+    en = lang == "en"
+    html, toc = render_markdown(text, known_reports, lang=lang)
+
+    def adjacent(position, label):
+        other = reports[position]
+        target_lang = lang if lang in other["languages"] else "cs"
+        suffix = ".en" if target_lang == "en" else ""
+        fallback = " (Czech only)" if en and target_lang == "cs" else ""
+        return f'<a href="{other["id"]}{suffix}.html" hreflang="{target_lang}">{label}{fallback}</a>'
+
+    older = adjacent(index + 1, "← Older assessment" if en else "← Starší hodnocení") if index + 1 < len(reports) else "<span></span>"
+    newer = adjacent(index - 1, "Newer assessment →" if en else "Novější hodnocení →") if index > 0 else f'<a href="../index.html" hreflang="cs">{"Current overview (Czech) →" if en else "Aktuální přehled →"}</a>'
+    if index > 0:
+        notice = "Archived assessment, valid as of its stated cutoff. It preserves the information and methodology available then; later corrections appear in newer reports. Historical aggregate scores without a reproducible model are not carried into the current overview." if en else "Archivní hodnocení platné k uvedené uzávěrce. Zachovává tehdejší poznatky a metodiku; pozdější opravy a změny najdete v novějších zprávách. Starší souhrnná skóre bez reprodukovatelného modelu nepřebíráme do aktuálního přehledu."
+    else:
+        notice = "Latest saved assessment. Its cutoff marks the end of research, not the time this page was opened." if en else "Aktuální uložené hodnocení. Datum uzávěrky označuje konec rešerše, ne okamžik otevření této stránky."
+    suffix = ".en" if en else ""
+    contents_label = "Contents" if en else "Obsah zprávy"
+    contents = language_switch(report, lang) + f'<div class="article-layout"><aside class="toc" aria-label="{contents_label}"><p class="eyebrow">{contents_label}</p>{toc}<a href="{report["id"]}{suffix}.md">{"Download Markdown" if en else "Stáhnout Markdown"} ↓</a></aside><article class="report"><div class="archive-notice">{notice}</div>{html}<nav class="report-nav" aria-label="{"Other assessments" if en else "Další zprávy"}">{older}{newer}</nav></article></div>'
+    alternates = {language: f'{report["id"]}{".en" if language == "en" else ""}.html' for language in report["languages"]} if len(report["languages"]) > 1 else None
+    return page(timestamp(report["time"], lang), contents, "..", "Archiv", lang, alternates)
+
+
 def build():
     state, evidence, paths = validate()
     reports = [report_metadata(path) for path in paths]
     known_reports = {path.name for path in paths}
+    translations = {}
+    for report, path in zip(reports, paths):
+        report["languages"] = {"cs": {"html": f'reports/{path.stem}.html', "markdown": f'reports/{path.name}'}}
+        translation = english_path(path)
+        if translation.is_file():
+            metadata = report_metadata(translation)
+            translations[report["id"]] = metadata["text"]
+            known_reports.add(translation.name)
+            report["languages"]["en"] = {"html": f'reports/{translation.stem}.html', "markdown": f'reports/{translation.name}', "judgment": metadata["judgment"]}
     files = {}
     files["index.html"] = page("Aktuální předpověď", dashboard(state, reports, len(evidence)), active="Přehled")
     files["archive.html"] = page("Archiv zpráv", f'''<div class="hero"><div><p class="eyebrow">{len(reports)} zpráv od {day(reports[-1]['time'][:10])}</p><h1>Archiv hodnocení</h1><p class="lede">Zprávy od nejnovější po nejstarší. Každá obsahuje tehdejší odhady, zdroje a zdůvodnění změn.</p></div></div>
 <div class="archive-toolbar"><label for="archive-search" class="meta">Hledat v datu a shrnutí</label><input id="archive-search" data-archive-search type="search" placeholder="Například: mobilizace, 29. 9., NATO"><span class="meta" data-archive-count aria-live="polite">{len(reports)} zpráv</span></div>
 <section class="section">{archive_cards(reports)}</section>''', active="Archiv")
     for i, report in enumerate(reports):
-        html, toc = render_markdown(report["text"], known_reports)
-        older = f'<a href="{reports[i + 1]["id"]}.html">← Starší hodnocení</a>' if i + 1 < len(reports) else "<span></span>"
-        newer = f'<a href="{reports[i - 1]["id"]}.html">Novější hodnocení →</a>' if i > 0 else '<a href="../index.html">Aktuální přehled →</a>'
-        notice = "Archivní hodnocení platné k uvedené uzávěrce. Zachovává tehdejší poznatky a metodiku; pozdější opravy a změny najdete v novějších zprávách. Starší souhrnná skóre bez reprodukovatelného modelu nepřebíráme do aktuálního přehledu." if i > 0 else "Aktuální uložené hodnocení. Datum uzávěrky označuje konec rešerše, ne okamžik otevření této stránky."
-        contents = f'<div class="article-layout"><aside class="toc" aria-label="Obsah zprávy"><p class="eyebrow">Obsah zprávy</p>{toc}<a href="{report["id"]}.md">Stáhnout Markdown ↓</a></aside><article class="report"><div class="archive-notice">{notice}</div>{html}<nav class="report-nav" aria-label="Další zprávy">{older}{newer}</nav></article></div>'
-        files[f'reports/{report["id"]}.html'] = page(timestamp(report["time"]), contents, "..", "Archiv")
+        files[f'reports/{report["id"]}.html'] = report_page(report, report["text"], "cs", known_reports, reports, i)
         files[f'reports/{report["id"]}.md'] = report["text"]
+        if report["id"] in translations:
+            text = translations[report["id"]]
+            files[f'reports/{report["id"]}.en.html'] = report_page(report, text, "en", known_reports, reports, i)
+            files[f'reports/{report["id"]}.en.md'] = text
     methodology, _ = render_markdown((ROOT / "site/methodology.md").read_text(), known_reports, ".")
     files["methodology.html"] = page("Metodika", f'<article class="method report">{methodology}</article>', active="Metodika")
     for name in ("state.json", "watchlist.json", "evidence.jsonl"):

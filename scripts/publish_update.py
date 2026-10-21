@@ -16,7 +16,7 @@ EXPECTED_REMOTES = {
     "https://github.com/josefslerka/russia-escalation-monitor",
     "git@github.com:josefslerka/russia-escalation-monitor.git",
 }
-ALLOWED = re.compile(r"russia-escalation/(?:state\.json|evidence\.jsonl|watchlist\.json|reports/\d{4}-\d{2}-\d{2}-\d{4}\.md|snapshots/\d{4}-\d{2}-\d{2}-\d{4}\.json)")
+ALLOWED = re.compile(r"russia-escalation/(?:state\.json|evidence\.jsonl|watchlist\.json|reports/\d{4}-\d{2}-\d{2}-\d{4}(?:\.en)?\.md|snapshots/\d{4}-\d{2}-\d{2}-\d{4}\.json)")
 
 
 def git(*args, check=True):

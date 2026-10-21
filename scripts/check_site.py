@@ -5,7 +5,8 @@ import json
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
-from build_site import ROOT, DATA, validate
+from build_site import ROOT, DATA, validate, public_text
+from bilingual import english_path
 
 
 class Links(HTMLParser):
@@ -13,9 +14,18 @@ class Links(HTMLParser):
         super().__init__()
         self.links = []
         self.ids = set()
+        self.lang = None
+        self.anchors = []
+        self.alternates = {}
 
     def handle_starttag(self, tag, attrs):
         attrs = dict(attrs)
+        if tag == "html":
+            self.lang = attrs.get("lang")
+        if tag == "a":
+            self.anchors.append(attrs)
+        if tag == "link" and attrs.get("rel") == "alternate":
+            self.alternates[attrs.get("hreflang")] = attrs.get("href")
         self.ids.add(attrs.get("id", ""))
         for attribute in ("href", "src"):
             if attrs.get(attribute):
@@ -48,11 +58,32 @@ def check():
     if {r["id"] for r in index} != {p.stem for p in reports}:
         problems.append("Archive index does not match the report history")
     for path in reports:
-        if not (site / "reports" / (path.stem + ".html")).is_file():
-            problems.append(f"Missing rendered report {path.name}")
+        versions = {"cs": path}
+        if english_path(path).is_file():
+            versions["en"] = english_path(path)
+        entry = next((r for r in index if r["id"] == path.stem), {})
+        if set(entry.get("languages", {})) != set(versions):
+            problems.append(f"Incorrect language availability: {path.name}")
+        for lang, source in versions.items():
+            html = site / "reports" / (source.stem + ".html")
+            parser = parsed.get(html.resolve())
+            if parser is None or parser.lang != lang:
+                problems.append(f"Missing report or incorrect HTML language: {source.name}")
+                continue
+            download = site / "reports" / source.name
+            if not download.is_file() or download.read_text() != public_text(source.read_text()):
+                problems.append(f"Markdown download differs from its source: {source.name}")
+            if len(versions) == 2:
+                expected = {code: version.stem + ".html" for code, version in versions.items()}
+                if parser.alternates != expected:
+                    problems.append(f"Missing language alternates: {source.name}")
+                for code, href in expected.items():
+                    links = [a for a in parser.anchors if a.get("href") == href and a.get("hreflang") == code and a.get("lang") == code]
+                    if len(links) != 1 or (links[0].get("aria-current") == "page") != (code == lang):
+                        problems.append(f"Invalid language switch: {source.name} → {code}")
     if problems:
         raise SystemExit("\n".join(problems))
-    print(f"Checked {len(parsed)} HTML pages: local links, anchors, archive and probability fidelity OK")
+    print(f"Checked {len(parsed)} HTML pages: links, language switches, archive and probability fidelity OK")
 
 
 if __name__ == "__main__":

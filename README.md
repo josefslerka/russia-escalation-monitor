@@ -23,6 +23,23 @@ Publikace nikdy nevytváří nové datum pro staré hodnocení. Zdrojové zpráv
 se nepřepisují; opravy patří do nového hodnocení. Úplné JSON snímky jsou k dispozici
 od zavedení webu, nikoli zpětně pro všechny starší zprávy.
 
+## Dvě jazykové verze zpráv
+
+Od **22. října 2026** vzniká každá zpráva česky i anglicky. Na stránce zprávy
+je přepínač **Čeština / English**, který vede na stejnou uzávěrku v druhém jazyce
+a funguje i bez JavaScriptu. Odkazy na obě verze jsou také v archivu; u aktuální
+zprávy je anglický odkaz dostupný přímo z přehledu.
+
+Český soubor `reports/YYYY-MM-DD-HHMM.md` si zachovává adresu. Úplný anglický
+překlad je uložen jako `reports/YYYY-MM-DD-HHMM.en.md`. Sdílejí jeden stav,
+snímek a položku archivu. Generátor nepřekládá text automaticky; obě verze připraví
+a významově porovná ranní analytický běh podle `AGENTS.md`.
+
+Publikace od tohoto data vyžaduje oba soubory a kontroluje shodu tabulek,
+pravděpodobností, důvěry, uzávěrky, horizontu, WDPI a zdrojových odkazů.
+Při chybě se nová verze nenasadí. Starší české zprávy zůstávají beze změny;
+přehled, obecný archiv a metodika zatím zůstávají česky.
+
 ## Místní spuštění
 
 Vyžaduje Python 3.10+ s databází časových pásem.

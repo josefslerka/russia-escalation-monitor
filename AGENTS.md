@@ -1016,10 +1016,67 @@ to the public repository `josefslerka/russia-escalation-monitor`.
   published assessment, explain the failure and request input only when needed.
 - The scheduled task runs locally: the computer and Codex app must be available.
   Do not silently replace it with a different execution environment or service.
+- Preserve the established scheduled-run reporting behavior: surface material
+  changes, failures or required user input; do not issue a routine user alert for
+  an unchanged result. Still save and publish the completed daily assessment.
 
 ## Public-facing language
 
-Use factual Czech headings that name the subject. Avoid promotional slogans,
+Use factual headings that name the subject, in Czech and in the matching English
+translation described below. Avoid promotional slogans,
 generic rhetorical questions and sentence fragments such as “Co se mění. A co
 z toho plyne.” Prefer short, concrete sentences in summaries. Explain specialist
 terms when plain Czech can convey the same distinction without losing accuracy.
+
+## Bilingual reports — effective 22 October 2026
+
+For every assessment dated **2026-10-22 or later in Europe/Prague**, publish two
+complete versions of the same report:
+
+- Czech: `russia-escalation/reports/YYYY-MM-DD-HHMM.md` (existing canonical URL).
+- English: `russia-escalation/reports/YYYY-MM-DD-HHMM.en.md`.
+
+English is a full, faithful translation, not a shorter summary or a second
+forecast. Preserve all conclusions, qualifications, uncertainty, alternatives,
+negative evidence, source URLs, and distinctions between fact and inference.
+Never strengthen attribution or wording in translation. Review the two versions
+side by side before publication. Do not create a second evidence entry, state,
+snapshot, or assessment timestamp for a translation.
+
+Keep `state.json.last_report` pointing to the Czech file. The generator discovers
+the English sibling automatically. Store both reports before atomically replacing
+the shared state. Both reports become immutable archive material; later factual
+corrections belong in a new timestamped assessment in both languages.
+
+For reproducible bilingual validation:
+
+- Include the exact same ISO-8601 `assessment_time` and `forecast_window_end`
+  (including seconds and UTC offsets) in both report introductions. The first
+  ISO timestamp in either report must be its assessment time.
+- Use `**Celkově:**` / `**Overall:**` and `**Jednovětý závěr:**` /
+  `**One-line judgment:**` for the corresponding metadata.
+- The first Markdown table is the probability dashboard. Include every active
+  hypothesis in state order, with seven columns: Event, Horizon, Prior, Now,
+  Delta, Range, Confidence (translated headings in Czech). Keep horizons as
+  `YYYY-MM-DD` in both tables, probabilities and ranges in percent, and deltas
+  in percentage points. Use an en dash for ranges, e.g. `10–35 %`.
+- Use the established Czech confidence labels and English `low`, `medium-low`,
+  `medium`, `medium-high`, `high`. Preserve table row/column order and heading
+  structure across languages. Narrative dates can be translated; table numbers
+  must remain equivalent, with decimal commas or decimal points allowed.
+- Include `**WDPI: N/100` in each language. The value must match shared state.
+- Keep identical external source URLs. Internal report links may remain canonical;
+  English rendering automatically prefers an available English counterpart.
+- Run `.venv/bin/python -m unittest discover -s scripts -p 'test_*.py'`,
+  `.venv/bin/python scripts/build_site.py --check`, then the normal publication
+  command. A missing English version or inconsistent numbers, confidence, cutoff,
+  horizon, sections or source links blocks publication. Automated checks do not
+  replace a semantic translation review.
+- Verify successful GitHub Actions deployment, both `.html` versions and their
+  reciprocal **Čeština / English** links on the public site.
+
+The site keeps one archive item per assessment. Both language URLs are directly
+shareable and work without JavaScript. Older Czech-only reports remain unchanged;
+do not invent backdated English reports or silently relabel old content. The
+dashboard, general archive and methodology remain Czech; English report navigation
+labels any Czech-only destination explicitly.
