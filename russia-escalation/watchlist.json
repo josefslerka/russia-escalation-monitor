@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "assessment_time": "2026-10-21T07:08:07+02:00",
+  "assessment_time": "2026-10-22T07:06:53+02:00",
   "ukraine_additional_conventional_escalation": {
     "would_strengthen": [
       "Další nezávislá časová řada potvrzuje již vyhodnocenou soustavnost energetické kampaně; nezakládá novou budoucí pravděpodobnost."
@@ -8,9 +8,9 @@
     "would_weaken": [
       "Zjištěná chyba data, duplicita nebo jiné vysvětlení podstatné části řady zpochybní splnění; případnou opravu uvést v nové zprávě, ne přepisovat archiv."
     ],
-    "next_check_by": "2026-10-22T07:08:07+02:00",
-    "current_note": "Historická rezoluce z15. října zůstává. Nové energetické škody20. října, ale mírnější regionální plán21. října; kontrolovat skutečné plnění, ne znovu otevírat vyřešenou pravděpodobnost.",
-    "assessment_time": "2026-10-21T07:08:07+02:00",
+    "next_check_by": "2026-10-23T07:06:53+02:00",
+    "current_note": "Nový provozní účinek21. října a plán22. října odděleny. Historická rezoluce14. října zůstává; ne nová prognóza.",
+    "assessment_time": "2026-10-22T07:06:53+02:00",
     "met_indicators": [
       {
         "date": "2026-10-07",
@@ -88,7 +88,8 @@
       }
     ],
     "evidence_ids": [
-      "obs-20261020-ukrenergo-damage-oct21-plan"
+      "obs-20261020-ukrenergo-damage-oct21-plan",
+      "obs-20261021-ukrenergo-damage-oct22-plan"
     ],
     "adjudication_review_by": "2026-10-16T08:05:57+02:00",
     "adjudication_review_rule": "Sestavit datovanou řadu skutečných nových zásahů a porovnat s definicí po 19. září. Explicitně zaznamenat splněno / nesplněno / zatím nedoložitelné, nikoli jen znovu posunout checkpoint. Série starých výpadků není náhrada.",
@@ -218,13 +219,16 @@
       "Podezřelé případy zůstanou izolované bez prokázaného ruského řízení a bez měřitelného strategického účinku.",
       "Litevská atribuce bude věrohodně opravena nebo ochrana opakovaně zabrání účinku bez omezení podpory Ukrajině; úspěšná ochrana nesmaže existenci samotného pokusu."
     ],
-    "next_check_by": "2026-10-22T07:08:07+02:00",
-    "current_note": "Žádný nový kvalifikující pokus nebo ruský zadavatel ověřen. EEAS znovu hodnotí starou sérii bez nového forenzního podkladu; francouzské nepokoje se nepočítají jako ruská sabotáž.",
-    "assessment_time": "2026-10-21T07:08:07+02:00",
+    "next_check_by": "2026-10-23T07:06:53+02:00",
+    "current_note": "Italské šetření není prokázaná ruská operace. Rumunský nález má neznámý původ i čas. Hledat zadání, koordinaci a účinek; politické výroky nestačí.",
+    "assessment_time": "2026-10-22T07:06:53+02:00",
     "evidence_ids": [
       "followup-20261020-eeas-black-sea-assessment",
       "reported-20261018-lithuania-starlink-arson-attempt",
-      "followup-20261019-bulgaria-arrest-warrants"
+      "followup-20261019-bulgaria-arrest-warrants",
+      "reported-20261021-italy-foreign-role-inquiry",
+      "reported-20261021-unrest-attribution-limits",
+      "reported-20261021-romania-debris-discovery"
     ],
     "bulgaria_proceedings": {
       "event_date_reported_by_court": "2026-10-09",
@@ -255,13 +259,17 @@
       "Vyšetřování doloží ukrajinský směr mise či navigační odchylku; konkrétní přesuny půjde přiřadit plánovanému výcviku a nebudou navazovat útočné přípravy.",
       "Forenzní šetření potvrdí ukrajinský stroj s nezáměrným odklonem a bez ruského záměru zasáhnout NATO."
     ],
-    "next_check_by": "2026-10-22T07:08:07+02:00",
-    "current_note": "Společná litevsko-polská skupina vyšetřuje známý dron, příčina neuzavřena. Dnešní rumunské sledované okno bez vstupu je omezený protidůkaz; ne celodenní ani univerzální bezpečí.",
-    "assessment_time": "2026-10-21T07:08:07+02:00",
+    "next_check_by": "2026-10-23T07:06:53+02:00",
+    "current_note": "Alianční dohled je reakce, ne atribuce. Litevské cvičení22.–25. října je plánované. Konečný původ dronu zůstává otevřený.",
+    "assessment_time": "2026-10-22T07:06:53+02:00",
     "evidence_ids": [
       "followup-20261020-lithuania-poland-drone-inquiry",
       "obs-20261021-romania-alert-no-incursion",
-      "followup-20261020-belarus-unit-check-training"
+      "followup-20261020-belarus-unit-check-training",
+      "evt-20261020-nato-black-sea-surveillance",
+      "obs-20261020-bulgaria-us-patrol-confirmation",
+      "obs-20261021-lithuania-scheduled-exercise",
+      "reported-20261021-romania-debris-discovery"
     ],
     "scheduled_observation": {
       "date": "2026-10-14",
@@ -302,12 +310,22 @@
       "evidence_id": "followup-20261020-lithuania-poland-drone-inquiry",
       "status": "joint_inquiry_no_final_causal_finding",
       "next_check_by": "2026-10-22T07:08:07+02:00"
+    },
+    "exercise_baseline": {
+      "announced_on": "2026-10-21",
+      "scheduled_window": [
+        "2026-10-22",
+        "2026-10-25"
+      ],
+      "evidence_id": "obs-20261021-lithuania-scheduled-exercise",
+      "reviewed_at": "2026-10-22T07:06:53+02:00",
+      "rule": "Nevyvozovat mimořádnou přípravu z přesunů odpovídajících ohlášenému cvičení; ukončení samostatně ověřit."
     }
   },
   "russian_mobilization": {
     "definition_version": 2,
     "forecast_hypothesis": "significant_russian_mobilization_by_2026_12_31",
-    "assessment_time": "2026-10-21T07:08:07+02:00",
+    "assessment_time": "2026-10-22T07:06:53+02:00",
     "would_strengthen": [
       "Nový ověřený závazný mobilizační příkaz alespoň pro 100 000 lidí, i podle starého dekretu; nebo důvěryhodně doložená faktická nucená vlna stejného rozsahu.",
       "Nezávislé regionální linie ukážou současně nové nucené rozkazy a příjem/výcvik nad normál; samotné dvě regionální anekdoty nedokazují celostátní počet.",
@@ -322,10 +340,10 @@
       "Zdroje upřesní, že hlášené statisíce označují součet průběžného náboru či scénář, ne nové povinné povolání.",
       "Doložené návraty konkrétních záložníků po avizovaném měsíčním výcviku bez nucené změny statusu; nekonstruovat plošný závěr z jednoho regionu."
     ],
-    "next_check_by": "2026-10-23T07:08:07+02:00",
+    "next_check_by": "2026-10-23T07:06:53+02:00",
     "checkpoint_72h": "2026-10-03T21:35:31+02:00",
     "next_review_rule": "Další kontrola navazuje na skutečně provedený 72h audit. Původní checkpoint 3. října 21:35:31 nepřepisovat. Rutinní odesílání branců od 10. října oddělit od nové nucené vlny; opakované nenalezení v neúplném vzorku není další nezávislý záporný důkaz.",
-    "current_note": "20 % v2; dva nové klientské příběhy jedné NGO bez reprezentativního počtu a ověřené koordinace. Dekret2022 může stačit jako mechanismus; nedostupný právní portál nevylučuje novou vlnu.",
+    "current_note": "Zářijový vzorek50 kontaktů proti51 v srpnu nepřidává důkaz koordinované vlny100 000. Rušená předvolánka je jednotlivý klientský případ. Právní portál nedostupný.",
     "checkpoint_review": {
       "scheduled_for": "2026-10-03T21:35:31+02:00",
       "reviewed_at": "2026-10-04T09:15:45+02:00",
@@ -340,20 +358,21 @@
       ]
     },
     "latest_routine_review": {
-      "reviewed_at": "2026-10-21T07:08:07+02:00",
+      "reviewed_at": "2026-10-22T07:06:53+02:00",
       "status": "no_new_qualifying_evidence_partial_coverage",
       "evidence_ids": [
-        "claim-20261020-iditelesom-contract-pressure"
+        "obs-20261021-iditelesom-monthly-coercion-sample"
       ],
       "source_urls": [
-        "https://t.me/iditelesom_help/8141",
-        "https://t.me/iditelesom_help/8152",
+        "https://t.me/iditelesom_help/8160",
+        "https://t.me/iditelesom_help/8154",
         "https://publication.pravo.gov.ru/"
       ],
-      "outcome": "Nový mechanismus a rozsah100 000 neověřen. Původní checkpoint3. října a jeho audit4. října zachovány."
+      "outcome": "Rozsah v2 neověřen; stabilita vzorku neprokazuje celostátní pokles. Původní checkpoint3. října a jeho audit4. října zachovány."
     },
     "evidence_ids": [
-      "claim-20261020-iditelesom-contract-pressure"
+      "claim-20261020-iditelesom-contract-pressure",
+      "obs-20261021-iditelesom-monthly-coercion-sample"
     ]
   },
   "belarus_and_nuclear": {
@@ -369,9 +388,9 @@
       "Historická dokumentace jaderné modernizace nebude doplněna důkazem nové současné aktivace nebo rozmístění.",
       "Resortní praporní kontrola prokazatelně skončí a síly se vrátí do běžného režimu, bez nové koncentrace."
     ],
-    "next_check_by": "2026-10-22T07:08:07+02:00",
-    "current_note": "38. brigáda pokračuje ve výcvikové prověrce; skutečný konec a návraty ověřit zvlášť. Bez nové nezávislé jaderné zbraňové pohotovosti. Původní návratový checkpoint18. října neodsouván.",
-    "assessment_time": "2026-10-21T07:08:07+02:00",
+    "next_check_by": "2026-10-23T07:06:53+02:00",
+    "current_note": "Dnešní plánované odesílání branců není ruská mobilizace ani válečný vstup. Návraty ODKB a konec oddělené prověrky neověřeny. Rutinní Steadfast Noon není nová ruská pohotovost.",
+    "assessment_time": "2026-10-22T07:06:53+02:00",
     "source_urls": [
       "https://t.me/modmilby/59598",
       "https://t.me/modmilby/59592"
@@ -425,23 +444,23 @@
       ]
     },
     "latest_return_review": {
-      "scheduled_for": "2026-10-21T07:15:28+02:00",
-      "reviewed_at": "2026-10-21T07:08:07+02:00",
+      "scheduled_for": "2026-10-22T07:08:07+02:00",
+      "reviewed_at": "2026-10-22T07:06:53+02:00",
       "status": "return_not_verified_partial_coverage",
-      "outcome": "Primární feed a cílené dotazy nedokládají dokončené návratyODKB; nevydáváno za důkaz další koncentrace.",
+      "outcome": "Čerstvý primární feed a cílené dotazy návraty neověřily; nejde o potvrzení setrvání.",
       "source_urls": [
         "https://t.me/s/modmilby",
-        "https://t.me/modmilby/59592",
-        "https://t.me/modmilby/59598"
+        "https://t.me/modmilby/59607",
+        "https://t.me/modmilby/59627"
       ],
       "coverage_limitations": [
-        "Ceremonie končících branců není návrat kontingentůODKB.",
-        "Historický rozpor16./17. října u závěru cvičení není vyřešen.",
-        "Podjednotkový výcvik a starší mechanizovaný prapor jsou rozdílné aktivity."
+        "Rutinní propuštění a odesílání branců nejsou návraty ODKB.",
+        "Konec oddělené prověrky z19. října neověřen."
       ]
     },
     "evidence_ids": [
-      "followup-20261020-belarus-unit-check-training"
+      "followup-20261020-belarus-unit-check-training",
+      "obs-20261022-belarus-routine-conscript-dispatch"
     ],
     "return_review_history": [
       {
@@ -473,16 +492,32 @@
           "Datum ceremonie16./17. října zůstává historicky rozporné.",
           "Mechanizovaný prapor, nová výsadková podjednotka a teritoriální výcvik mají odlišné průběhy."
         ]
+      },
+      {
+        "scheduled_for": "2026-10-21T07:15:28+02:00",
+        "reviewed_at": "2026-10-21T07:08:07+02:00",
+        "status": "return_not_verified_partial_coverage",
+        "outcome": "Primární feed a cílené dotazy nedokládají dokončené návratyODKB; nevydáváno za důkaz další koncentrace.",
+        "source_urls": [
+          "https://t.me/s/modmilby",
+          "https://t.me/modmilby/59592",
+          "https://t.me/modmilby/59598"
+        ],
+        "coverage_limitations": [
+          "Ceremonie končících branců není návrat kontingentůODKB.",
+          "Historický rozpor16./17. října u závěru cvičení není vyřešen.",
+          "Podjednotkový výcvik a starší mechanizovaný prapor jsou rozdílné aktivity."
+        ]
       }
     ],
     "current_separate_activity": {
       "announced_at": "2026-10-19T11:24:14+00:00",
       "evidence_id": "evt-20261019-belarus-air-assault-unit-check",
-      "next_check_by": "2026-10-22T07:08:07+02:00",
+      "next_check_by": "2026-10-23T07:06:53+02:00",
       "check": "Rozsah a konec konkrétní podjednotkové prověrky; zvlášť případná útočná logistika, ne součet všech cvičení.",
       "latest_followup_evidence_id": "followup-20261020-belarus-unit-check-training",
-      "reviewed_at": "2026-10-21T07:08:07+02:00",
-      "status": "training_continues_completion_unverified"
+      "reviewed_at": "2026-10-22T07:06:53+02:00",
+      "status": "completion_unverified_partial_coverage"
     }
   },
   "czechia": {
@@ -494,9 +529,9 @@
       "České úřady výslovně sdělí, že se aktuální specifická hrozba nepotvrdila, nebo vyšetřování konkrétního případu doloží neruský původ; samotné mlčení služeb není takový důkaz.",
       "Veřejné české hodnocení zůstane na obecné dlouhodobé hrozbě bez nové readiness vrstvy."
     ],
-    "next_check_by": "2026-10-24T07:08:07+02:00",
-    "current_note": "Čerstvé indexyBIS/NÚKIB bez nového kvalifikujícího případu. MetodikaNÚKIB20. října není incident; další neveřejné případy nelze vyloučit.",
-    "assessment_time": "2026-10-21T07:08:07+02:00",
+    "next_check_by": "2026-10-23T07:06:53+02:00",
+    "current_note": "Kontrola BIS/NÚKIB: nová zranitelnost není připsaný útok; žádný nový kvalifikující veřejně doložený případ nezískán. Pokrytí není úplné.",
+    "assessment_time": "2026-10-22T07:06:53+02:00",
     "evidence_ids": [
       "obs-20261015-nukib-september-incidents"
     ]
@@ -512,7 +547,7 @@
       "Obnovené vnější napájení zůstane stabilní a IAEA potvrdí zásoby paliva i funkci chlazení.",
       "IAEA potvrdí dokončení opravy záložního transformátoru, obnovení druhé linky nebo skutečnou novou dodávku nafty; plán není splnění."
     ],
-    "next_check_by": "2026-10-23T07:08:07+02:00",
+    "next_check_by": "2026-10-24T07:06:53+02:00",
     "note": "Staré pozorování a čas371 zachovány. Očekávaný indikátor: výslovné ověření IAEA o dokončení opravy a funkčnosti, nikoli pouhá nová položka indexu.",
     "assessment_time": "2026-10-20T07:15:28+02:00",
     "last_dated_observation": "2026-10-15",
@@ -526,10 +561,10 @@
     "observation_date_precision": "Příměří od čtvrtka15. října; souhrn publikován16. října. Přesný čas jednotlivých dalších týdenních pozorování neurčen.",
     "latest_iaea_publication": "2026-10-16",
     "latest_publication_recheck": {
-      "checked_at": "2026-10-21T07:08:07+02:00",
+      "checked_at": "2026-10-22T07:06:53+02:00",
       "source_url": "https://www.iaea.org/newscenter/pressreleases",
-      "outcome": "Nejnovější nalezená ukrajinská zpráva371 z16. října; novější20. října položka se týkáSAE. Neověřena dokončená opravaZNPP.",
-      "scope": "Kontrola veřejného indexu, nikoli nové místní pozorování."
+      "outcome": "Nejnovější nalezený ukrajinský bulletin371 je16. října; index nenahrazuje nové ověření opravy.",
+      "scope": "Kontrola veřejného indexu, nikoli místní provozní audit."
     }
   },
   "western_decision_pressure": {
@@ -564,9 +599,9 @@
       "Nezávislé provozní potvrzení21.–23. října doloží trvalé obnovení varování; nezaměnit se Starshield nebo novou dodávkou.",
       "Zklidnění francouzských nepokojů a provedené kompenzace omezí další náklady při nezměněné podpoře Ukrajině."
     ],
-    "next_check_by": "2026-10-22T07:08:07+02:00",
-    "current_note": "WDPI52 (68/52/32), +2 kvůli nově doloženým francouzským domácím nákladům. Ruské řízení a změna pomoci nedoloženy. Prezidentské tvrzení obnovy varování ověřit provozně; korejský částečný odjezd zatím rozhodnutí se smíšenými motivy.",
-    "assessment_time": "2026-10-21T07:08:07+02:00",
+    "next_check_by": "2026-10-24T07:06:53+02:00",
+    "current_note": "WDPI52 beze změny. Italská reakce doplňuje existující náklady; norský příslib není dodávka. Plná obnova amerických služeb a politický ústup kvůli novému ruskému tlaku neověřeny.",
+    "assessment_time": "2026-10-22T07:06:53+02:00",
     "met_indicators": [
       {
         "date": "2026-10-02",
@@ -709,14 +744,14 @@
       "evidence_id": "evt-20261016-european-council-ukraine-conclusions"
     },
     "latest_connectivity_review": {
-      "reviewed_at": "2026-10-21T07:08:07+02:00",
-      "status": "presidential_restoration_claim_not_full_technical_verification",
+      "reviewed_at": "2026-10-22T07:06:53+02:00",
+      "status": "no_new_independent_full_technical_verification",
       "evidence_ids": [
         "followup-20261020-zelensky-warning-restoration",
         "followup-20261020-rubio-interceptor-warning-account"
       ],
-      "inspector_general_status": "Nový veřejný vyšetřovací závěr nezískán; odpověďSpaceX zůstává vyžádaná do2. listopadu.",
-      "timing_note": "Nové ukrajinské tvrzení20. října večer; nejde o zpětné vymazání dřívějších výpadků nebo potvrzení všech služeb."
+      "inspector_general_status": "Nový veřejný nález nezískán; lhůta SpaceX2. listopadu zachována.",
+      "timing_note": "Poslední uložené prezidentské tvrzení o obnově je20. října. Norský příslib21. října není technický audit."
     },
     "evidence_ids": [
       "followup-20261020-zelensky-warning-restoration",
@@ -724,7 +759,12 @@
       "evt-20261020-france-business-relief",
       "evt-20261020-norway-sanctions-implementation",
       "reported-20261020-south-korea-embassy-drawdown-decision",
-      "evt-20261020-oslo-consultations"
+      "evt-20261020-oslo-consultations",
+      "evt-20261020-italy-security-reinforcement",
+      "evt-20261020-nato-black-sea-surveillance",
+      "obs-20261020-bulgaria-us-patrol-confirmation",
+      "followup-20261021-norway-support-plans",
+      "evt-20261021-putin-witkoff-meeting"
     ],
     "spacex_letter": {
       "issued_on": "2026-10-19",
@@ -744,16 +784,16 @@
     "would_weaken": [
       "Výběr a výcvik se nepromění v nasazení, čísla se opraví nebo půjde o rotaci místo čistého posílení."
     ],
-    "next_check_by": "2026-10-24T07:08:07+02:00",
-    "current_note": "Nový přesun bojových posil neověřen cíleným hledáním. Jihokorejský diplomatický spor není důkaz severokorejské bojové vlny; případné industriální pracovníky odlišit od vojáků.",
-    "assessment_time": "2026-10-21T07:08:07+02:00",
+    "next_check_by": "2026-10-23T07:06:53+02:00",
+    "current_note": "Cílené hledání bez nového ověřeného bojového přesunu; jihokorejské diplomatické rozhodnutí není důkaz severokorejské posily.",
+    "assessment_time": "2026-10-22T07:06:53+02:00",
     "review_status": "reassessed_partial_public_coverage"
   },
   "assessment_scope": {
     "type": "full_recalibration",
-    "note": "Aktualizovány průběžné kontroly po skutečné rešerši. Původní mobilizační a návratový checkpoint, historická pozorování a pevný termínSpaceX zachovány."
+    "note": "Aktualizované kontroly22. října; staré pevné checkpointy a skutečná data pozorování zachovány."
   },
-  "watch_window_end": "2026-10-24T07:08:07+02:00",
+  "watch_window_end": "2026-10-25T06:06:53+01:00",
   "latvian_election_cyber_effect": {
     "assessment_time": "2026-10-14T07:17:40+02:00",
     "would_strengthen": [
@@ -762,7 +802,7 @@
     "would_weaken": [
       "Aktivní monitorování přes volební období doloží zachování funkcí bez materiálního narušení; nesčítat opakované bezincidentní aktualizace jako nezávislé důkazy."
     ],
-    "next_check_by": "2026-10-24T07:08:07+02:00",
+    "next_check_by": "2026-10-24T07:06:53+02:00",
     "current_note": "Poslední skutečné volební pozorování4. října a assessment14. října zůstávají. Dnes kontrolován jen veřejný index, nikoli znovu volební provoz.",
     "review_status": "carried_forward_no_new_election_audit",
     "met_indicators": [
@@ -775,15 +815,15 @@
     ],
     "carried_forward_at": "2026-10-21T07:08:07+02:00",
     "latest_index_check": {
-      "checked_at": "2026-10-21T07:08:07+02:00",
+      "checked_at": "2026-10-22T07:06:53+02:00",
       "source_url": "https://cert.lv/lv/",
       "outcome": "no_new_dated_election_followup_found",
-      "scope": "Veřejný index čerstvě přečten; bez nového volebního provozního auditu."
+      "scope": "Čerstvá kontrola indexu; původní datum volebního pozorování zachováno."
     }
   },
   "black_sea_maritime_incident": {
-    "assessment_time": "2026-10-21T07:08:07+02:00",
-    "next_check_by": "2026-10-22T07:08:07+02:00",
+    "assessment_time": "2026-10-22T07:06:53+02:00",
+    "next_check_by": "2026-10-23T07:06:53+02:00",
     "would_strengthen": [
       "Veřejný datovaný forenzní nebo zpravodajský závěr určí konkrétního původce jednotlivých útoků; přetisky jedné anonymní atribuce nesčítat.",
       "Nezávislé údaje bezpečně určí místo každého incidentu a rozliší teritoriální moře od výlučné ekonomické zóny.",
@@ -795,17 +835,19 @@
       "Při ruské atribuci se doloží cíl proti ukrajinské logistice bez záměru testovat soudržnost NATO.",
       "Obranná opatření zajistí pokračování plavby bez dalšího materiálního zásahu; nepřítomnost jedné radarové stopy sama příčinu nevyvrací."
     ],
-    "current_note": "EEAS politicky hodnotí již sledované incidenty, podezření na ruský původ není nový forenzní závěr. Rumunský dnešní noční interval bez narušení se vztahuje jen k danému oknu.",
+    "current_note": "Nově dohledané NATO rozhodnutí20. října a skutečná hlídka jsou protiargument k úplné paralýze. Nejde o nový incident22. října ani uzavřenou atribuci.",
     "evidence_ids": [
       "followup-20261020-eeas-black-sea-assessment",
       "obs-20261021-romania-alert-no-incursion",
-      "followup-20261015-romania-maritime-drone-assessment"
+      "followup-20261015-romania-maritime-drone-assessment",
+      "evt-20261020-nato-black-sea-surveillance",
+      "obs-20261020-bulgaria-us-patrol-confirmation"
     ],
     "related_distinct_incident": "evt-20261017-romania-two-geran-interceptions"
   },
   "french_refrigeration_cyber_incident": {
-    "assessment_time": "2026-10-21T07:08:07+02:00",
-    "next_check_by": "2026-10-24T07:08:07+02:00",
+    "assessment_time": "2026-10-22T07:06:53+02:00",
+    "next_check_by": "2026-10-23T07:06:53+02:00",
     "event_time": "2026-10-11/2026-10-12",
     "evidence_ids": [
       "reported-20261013-france-refrigeration-cyber-effects",
@@ -818,14 +860,15 @@
     "would_weaken": [
       "Vyšetřování doloží jiného původce, rozsah se zúží nebo škody budou odstraněny bez širšího dopadu."
     ],
-    "current_note": "CERT-FR čerstvě čten, poslední revize16. října; nová atribuce ani materiální účinek nezískány. Nezaměňovat s oddělenými francouzskými pouličními nepokoji."
+    "current_note": "CERT-FR stále verze16. října; nové forenzní připsání nebo nezávislá úplná bilance obnovy nezískány."
   },
   "france_domestic_pressure": {
-    "assessment_time": "2026-10-21T07:08:07+02:00",
-    "next_check_by": "2026-10-24T07:08:07+02:00",
+    "assessment_time": "2026-10-22T07:06:53+02:00",
+    "next_check_by": "2026-10-23T07:06:53+02:00",
     "event_window": "2026-10-17/2026-10-20",
     "evidence_ids": [
-      "evt-20261020-france-business-relief"
+      "evt-20261020-france-business-relief",
+      "reported-20261021-unrest-attribution-limits"
     ],
     "russian_role": "independent",
     "would_strengthen": [
@@ -834,11 +877,11 @@
     "would_weaken": [
       "Ověřené zklidnění a obnovení provozu při nezměněné podpořeUkrajině; odlišit pouhé oznámení kompenzací od vyplacení."
     ],
-    "current_note": "Nové domácí ekonomické opatření20. října; víkendové škody doplněny retrospektivně. Plánované další protesty nejsou uskutečněné."
+    "current_note": "Domácí náklady z prioru trvají. Euronews odděluje zesilování od prokázaného zahraničního vyvolání; nepředpokládat změnu pomoci Ukrajině."
   },
   "south_korea_diplomatic_presence": {
-    "assessment_time": "2026-10-21T07:08:07+02:00",
-    "next_check_by": "2026-10-24T07:08:07+02:00",
+    "assessment_time": "2026-10-22T07:06:53+02:00",
+    "next_check_by": "2026-10-23T07:06:53+02:00",
     "evidence_ids": [
       "reported-20261020-south-korea-embassy-drawdown-decision"
     ],
@@ -849,6 +892,25 @@
     "would_weaken": [
       "Omezení či zrušení plánovaného stažení, udržení funkcí a vysvětlení dominantně bilaterálním sporem."
     ],
-    "current_note": "Neprezentovat jako úplné uzavření ambasády; konzulární služby mají pokračovat."
+    "current_note": "Nové reprodukce starého rozhodnutí nejsou dokončený odjezd. Stav rozhodnuto, provedení neověřeno, konzulární přítomnost má zůstat."
+  },
+  "italy_domestic_pressure": {
+    "assessment_time": "2026-10-22T07:06:53+02:00",
+    "next_check_by": "2026-10-23T07:06:53+02:00",
+    "event_window": "2026-10-17/2026-10-20",
+    "evidence_ids": [
+      "evt-20261020-italy-security-reinforcement",
+      "reported-20261021-italy-foreign-role-inquiry",
+      "reported-20261021-unrest-attribution-limits"
+    ],
+    "current_note": "Schválené bezpečnostní posílení je domácí reakce; foreign-role inquiry není prokázaná ruská atribuce.",
+    "would_strengthen": [
+      "Trvalé dodatečné náklady či doložené omezení pomoci kvůli domácímu tlaku.",
+      "Forenzní nebo procesní důkazy zahraničního zadání, odděleně od pouhého zesilování."
+    ],
+    "would_weaken": [
+      "Uklidnění bez trvalých nákladů a pokračující pomoc.",
+      "Vyšetřování doloží samostatné domácí příčiny bez zahraničního zadání."
+    ]
   }
 }
