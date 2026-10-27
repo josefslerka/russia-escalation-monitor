@@ -1,21 +1,21 @@
 {
   "schema_version": 2,
-  "assessment_time": "2026-10-26T07:09:53+01:00",
-  "source_cutoff": "2026-10-26T07:09:53+01:00",
+  "assessment_time": "2026-10-27T10:31:36+01:00",
+  "source_cutoff": "2026-10-27T10:31:36+01:00",
   "forecast_horizon": "2026-12-31",
-  "forecast_window_start": "2026-10-26T07:09:53+01:00",
+  "forecast_window_start": "2026-10-27T10:31:36+01:00",
   "baseline_run": false,
   "prior_available": true,
   "previous_assessment": {
-    "assessment_time": "2026-10-25T07:10:56+01:00",
-    "last_report": "reports/2026-10-25-0710.md",
+    "assessment_time": "2026-10-26T07:09:53+01:00",
+    "last_report": "reports/2026-10-26-0709.md",
     "overall_level": "ORANGE",
-    "elapsed_seconds": 86337
+    "elapsed_seconds": 98503
   },
   "overall_level": "ORANGE",
   "overall_trend": "flat",
-  "overall_level_basis": "ORANGE nadále pro materiální účinky ruské energetické kampaně a samostatné evropské sabotážní případy. Není číselným průměrem ani předpovědí bezprostřední velké války. Nová potvrzení podpory i neověřené lodní výroky posouzeny bez nové nezávislé konvergence.",
-  "one_line_judgment": "Ukrajina znovu potvrzuje obnovení zpravodajské podpory i satelitního spojení, ale dál čeká na interceptory; nová ruská tvrzení o zasažených lodích zatím neprokazují počet dalších útoků ani záměr testovat NATO.",
+  "overall_level_basis": "Materiální účinky kampaně na Ukrajině a samostatné evropské sabotážní případy. Nová rumunská atribuce podporuje vysoký prior; místní dohoda a evropský právní krok jsou omezené protiváhy, nikoli širší konec kampaně. Není skrytým číselným průměrem ani předpovědí bezprostřední velké války.",
+  "one_line_judgment": "Rumunské úřady připisují zářijový požár síti koordinované z Ruska; EU mezitím posunula financování pomoci k právnímu provedení a obě válčící strany oznámily začátek místního příměří u Olešek, nikoli konec širší útočné kampaně.",
   "hypotheses": {
     "further_sustained_conventional_escalation_ukraine_by_2026_12_31": {
       "event_definition": "Nejméně dvoutýdenní zvýšení intenzity proti srpnovému standardu nebo kvalitativní rozšíření kategorií cílů či nasazených prostředků.",
@@ -178,20 +178,18 @@
       "trend": "flat",
       "prior": 0.76,
       "delta_pp": 0.0,
-      "change_basis": "76 %: SVT je retrospektivní kompilace s překryvem; nové ruské lodní výroky nemají nezávislé ověření ani prokázaný účinek v EU.",
-      "assessment_time": "2026-10-26T07:09:53+01:00",
-      "source_cutoff": "2026-10-26T07:09:53+01:00",
+      "change_basis": "76 %: nová úřední atribuce starého rumunského činu podporuje vysoký prior; neznámé datum německých příprav a narušení sítě omezují nový dopředný přírůstek.",
+      "assessment_time": "2026-10-27T10:31:36+01:00",
+      "source_cutoff": "2026-10-27T10:31:36+01:00",
       "review_status": "reassessed",
-      "forecast_window_start": "2026-10-26T07:09:53+01:00",
+      "forecast_window_start": "2026-10-27T10:31:36+01:00",
       "forecast_window_end": "2026-12-31T23:59:59+01:00",
       "change_type": "no_material_change",
       "review_evidence_ids": [
-        "assessment-20261023-svt-ebu-hybrid-compilation",
-        "claim-20261025-26-russian-mod-merchant-strikes"
+        "evt-20261026-sri-carfil-attribution"
       ],
       "review_source_urls": [
-        "https://www.svt.se/nyheter/inrikes/granskning-sa-trappar-ryssland-upp-valdsamma-hybridattackerna",
-        "https://t.me/mod_russia/68513"
+        "https://www.sri.ro/articole/comunicat-de-presa-26-10-2026.html"
       ],
       "range_update_basis": "Prior range retained; no new precision claimed."
     },
@@ -208,18 +206,18 @@
       "trend": "flat",
       "prior": 0.71,
       "delta_pp": 0.0,
-      "change_basis": "71 %: kompilace nepřidává deduplikovaný nový fyzický pokus; jednotlivé starší případy a varování již v prioru.",
-      "assessment_time": "2026-10-26T07:09:53+01:00",
-      "source_cutoff": "2026-10-26T07:09:53+01:00",
+      "change_basis": "71 %: významná nová atribuce, nikoli automaticky nový čin v dnešním okně. Zadržení oslabuje danou buňku; datování dalších příprav a rozsah aktivní sítě otevřené.",
+      "assessment_time": "2026-10-27T10:31:36+01:00",
+      "source_cutoff": "2026-10-27T10:31:36+01:00",
       "review_status": "reassessed",
-      "forecast_window_start": "2026-10-26T07:09:53+01:00",
+      "forecast_window_start": "2026-10-27T10:31:36+01:00",
       "forecast_window_end": "2026-12-31T23:59:59+01:00",
       "change_type": "no_material_change",
       "review_evidence_ids": [
-        "assessment-20261023-svt-ebu-hybrid-compilation"
+        "evt-20261026-sri-carfil-attribution"
       ],
       "review_source_urls": [
-        "https://www.svt.se/nyheter/inrikes/granskning-sa-trappar-ryssland-upp-valdsamma-hybridattackerna"
+        "https://www.sri.ro/articole/comunicat-de-presa-26-10-2026.html"
       ],
       "range_update_basis": "Prior range retained; no new precision claimed."
     },
@@ -236,22 +234,20 @@
       "trend": "flat",
       "prior": 0.4,
       "delta_pp": 0.0,
-      "change_basis": "40 %: nové ruské výroky neprokazují záměr testovat NATO; polský závěr je konkrétní protidůkaz, nikoli důkaz bezpečí všech incidentů.",
-      "assessment_time": "2026-10-26T07:09:53+01:00",
-      "source_cutoff": "2026-10-26T07:09:53+01:00",
+      "change_basis": "40 %: rumunská sabotáž nedokazuje samostatně rozhodnutí testovat NATO; námořní tvrzení stále neověřena.",
+      "assessment_time": "2026-10-27T10:31:36+01:00",
+      "source_cutoff": "2026-10-27T10:31:36+01:00",
       "review_status": "reassessed",
-      "forecast_window_start": "2026-10-26T07:09:53+01:00",
+      "forecast_window_start": "2026-10-27T10:31:36+01:00",
       "forecast_window_end": "2026-12-31T23:59:59+01:00",
       "change_type": "no_material_change",
       "review_evidence_ids": [
-        "claim-20261025-26-russian-mod-merchant-strikes",
-        "obs-20261023-lublin-search-ended",
-        "followup-20261025-khoryv-navigation-status"
+        "evt-20261026-sri-carfil-attribution",
+        "claim-20261027-russian-mod-unnamed-cargo-strike"
       ],
       "review_source_urls": [
-        "https://t.me/mod_russia/68513",
-        "https://miastax.twoje-miasto.pl/art-na-sygnale/koniec-poszukiwan-obiektu-latajacego-pod-i1272151",
-        "https://www.dhmfn.ro/ro/informatii-de-interes-public/avize-radio-pentru-navigatori/"
+        "https://www.sri.ro/articole/comunicat-de-presa-26-10-2026.html",
+        "https://t.me/mod_russia/68576"
       ]
     },
     "baltic_limited_test_by_2026_12_31": {
@@ -267,20 +263,20 @@
       "trend": "flat",
       "prior": 0.24,
       "delta_pp": 0.0,
-      "change_basis": "24 %: bez nové atribuce lotyšského nálezu nebo konvergence úmyslu a připravenosti; cvičební rámce nejsou mimořádná ruská příprava.",
-      "assessment_time": "2026-10-26T07:09:53+01:00",
-      "source_cutoff": "2026-10-26T07:09:53+01:00",
+      "change_basis": "24 %: litevské cvičení organizátorem dokončeno, lotyšský původ/úmysl neuzavřeny; bez nové konvergence ruského úmyslu a připravenosti.",
+      "assessment_time": "2026-10-27T10:31:36+01:00",
+      "source_cutoff": "2026-10-27T10:31:36+01:00",
       "review_status": "reassessed",
-      "forecast_window_start": "2026-10-26T07:09:53+01:00",
+      "forecast_window_start": "2026-10-27T10:31:36+01:00",
       "forecast_window_end": "2026-12-31T23:59:59+01:00",
       "change_type": "no_material_change",
       "review_evidence_ids": [
-        "obs-20261023-lublin-search-ended",
-        "assessment-20261023-svt-ebu-hybrid-compilation"
+        "followup-20261026-lithuania-exercise-completed",
+        "baseline-20261026-27-belarus-command-intake"
       ],
       "review_source_urls": [
-        "https://miastax.twoje-miasto.pl/art-na-sygnale/koniec-poszukiwan-obiektu-latajacego-pod-i1272151",
-        "https://www.svt.se/nyheter/inrikes/granskning-sa-trappar-ryssland-upp-valdsamma-hybridattackerna"
+        "https://www.kariuomene.lt/naujienos/klaipedos-regione-baigesi-didziausios-komendantines-pratybos-tikrinta-kaip-valstybe-veiktu-kilus-gresmei/27221",
+        "https://t.me/modmilby/59747"
       ]
     },
     "larger_conventional_attack_on_nato_by_2026_12_31": {
@@ -296,15 +292,19 @@
       "trend": "flat",
       "prior": 0.03,
       "delta_pp": 0.0,
-      "change_basis": "3 %: nové nezávislé soustředění a útočná logistika proti NATO nezískány při omezeném veřejném pokrytí; ne úplný audit absence.",
-      "assessment_time": "2026-10-26T07:09:53+01:00",
-      "source_cutoff": "2026-10-26T07:09:53+01:00",
+      "change_basis": "3 %: konkrétní nová útočná koncentrace proti NATO neověřena při omezeném veřejném pokrytí; personální jmenování ani sezónní nástupy nejsou takovým důkazem.",
+      "assessment_time": "2026-10-27T10:31:36+01:00",
+      "source_cutoff": "2026-10-27T10:31:36+01:00",
       "review_status": "reassessed",
-      "forecast_window_start": "2026-10-26T07:09:53+01:00",
+      "forecast_window_start": "2026-10-27T10:31:36+01:00",
       "forecast_window_end": "2026-12-31T23:59:59+01:00",
       "change_type": "no_material_change",
-      "review_evidence_ids": [],
-      "review_source_urls": []
+      "review_evidence_ids": [
+        "baseline-20261026-27-belarus-command-intake"
+      ],
+      "review_source_urls": [
+        "https://t.me/modmilby/59747"
+      ]
     },
     "open_russia_nato_war_by_2026_12_31": {
       "event_definition": "Trvalejší otevřené bojové operace mezi Ruskem a alespoň jedním státem NATO, včetně eskalace z incidentu.",
@@ -319,22 +319,20 @@
       "trend": "flat",
       "prior": 0.04,
       "delta_pp": 0.0,
-      "change_basis": "4 %: další potvrzení podpory Ukrajiny není všeobecná deeskalace; neověřená námořní tvrzení neprokazují rozhodnutí o otevřené válce.",
-      "assessment_time": "2026-10-26T07:09:53+01:00",
-      "source_cutoff": "2026-10-26T07:09:53+01:00",
+      "change_basis": "4 %: místní oznámené příměří není celostátní deeskalace, zároveň ukazuje pokračující omezené vyjednávání. Bez nového dokladu otevřené války.",
+      "assessment_time": "2026-10-27T10:31:36+01:00",
+      "source_cutoff": "2026-10-27T10:31:36+01:00",
       "review_status": "reassessed",
-      "forecast_window_start": "2026-10-26T07:09:53+01:00",
+      "forecast_window_start": "2026-10-27T10:31:36+01:00",
       "forecast_window_end": "2026-12-31T23:59:59+01:00",
       "change_type": "no_material_change",
       "review_evidence_ids": [
-        "followup-20261025-zelensky-support-restoration",
-        "claim-20261025-26-russian-mod-merchant-strikes",
-        "followup-20261025-oleshky-start-statement"
+        "followup-20261027-oleshky-ceasefire-start",
+        "followup-20261026-eu-epf-eight-decisions"
       ],
       "review_source_urls": [
-        "https://t.me/V_Zelenskiy_official/21521",
-        "https://t.me/mod_russia/68513",
-        "https://t.me/V_Zelenskiy_official/21525"
+        "https://t.me/mod_russia/68570",
+        "https://www.consilium.europa.eu/en/press/press-releases/2026/10/26/eu-support-for-ukraine-council-mobilises-49-billion-under-the-european-peace-facility/"
       ]
     },
     "significant_russian_mobilization_by_2026_12_31": {
@@ -350,11 +348,11 @@
       "trend": "flat",
       "prior": 0.2,
       "delta_pp": 0.0,
-      "change_basis": "20 % v2: nový místní případ se dvěma svědky sloučen; vymáhání evidence není doložená koordinovaná vlna100000. Právní portál nepřístupný.",
-      "assessment_time": "2026-10-26T07:09:53+01:00",
-      "source_cutoff": "2026-10-26T07:09:53+01:00",
+      "change_basis": "20 % v2: 13 zářijových NGO žádostí není dnešní vlna ani měřítko 100 000 osob; právní pokrytí neúplné. Nátlakový nábor a mobilizace v2 odlišeny.",
+      "assessment_time": "2026-10-27T10:31:36+01:00",
+      "source_cutoff": "2026-10-27T10:31:36+01:00",
       "review_status": "reassessed",
-      "forecast_window_start": "2026-10-26T07:09:53+01:00",
+      "forecast_window_start": "2026-10-27T10:31:36+01:00",
       "definition_version": 2,
       "definition_effective_at": "2026-09-30T21:35:31+02:00",
       "prior_is_comparable": true,
@@ -416,10 +414,10 @@
         }
       ],
       "review_evidence_ids": [
-        "claim-20261023-stpetersburg-mall-registration"
+        "reported-20261026-iditelesom-september-foreigners"
       ],
       "review_source_urls": [
-        "https://t.me/iditelesom_help/8166"
+        "https://t.me/iditelesom_help/8169"
       ]
     },
     "belarus_direct_entry_into_war_by_2026_12_31": {
@@ -435,15 +433,19 @@
       "trend": "flat",
       "prior": 0.05,
       "delta_pp": 0.0,
-      "change_basis": "5 %: běloruská rekapitulace nepřidává novou koncentraci; návraty a konec samostatné prověrky neověřeny, nikoli vyvráceny.",
-      "assessment_time": "2026-10-26T07:09:53+01:00",
-      "source_cutoff": "2026-10-26T07:09:53+01:00",
+      "change_basis": "5 %: jmenování velitelů a sezónní nástup nejsou rozhodnutím vstoupit do války. Návraty a konec samostatné prověrky neověřeny.",
+      "assessment_time": "2026-10-27T10:31:36+01:00",
+      "source_cutoff": "2026-10-27T10:31:36+01:00",
       "review_status": "reassessed",
-      "forecast_window_start": "2026-10-26T07:09:53+01:00",
+      "forecast_window_start": "2026-10-27T10:31:36+01:00",
       "forecast_window_end": "2026-12-31T23:59:59+01:00",
       "change_type": "no_material_change",
-      "review_evidence_ids": [],
-      "review_source_urls": []
+      "review_evidence_ids": [
+        "baseline-20261026-27-belarus-command-intake"
+      ],
+      "review_source_urls": [
+        "https://t.me/modmilby/59747"
+      ]
     },
     "nuclear_posture_change_by_2026_12_31": {
       "event_definition": "Veřejně nebo nezávisle pozorovatelná neobvyklá změna jaderné pohotovosti, rozmístění nebo velitelské aktivity nad rámec cvičení a signalizace.",
@@ -458,11 +460,11 @@
       "trend": "flat",
       "prior": 0.15,
       "delta_pp": 0.0,
-      "change_basis": "15 %: alianční roční výcvik není ruská změna zbraňové pohotovosti; nový nezávislý ruský indikátor nezískán.",
-      "assessment_time": "2026-10-26T07:09:53+01:00",
-      "source_cutoff": "2026-10-26T07:09:53+01:00",
+      "change_basis": "15 %: nový nezávislý ruský zbraňový indikátor nezískán; deklarovaný plánovaný let a alianční roční výcvik nejsou novou ruskou změnou pohotovosti.",
+      "assessment_time": "2026-10-27T10:31:36+01:00",
+      "source_cutoff": "2026-10-27T10:31:36+01:00",
       "review_status": "reassessed",
-      "forecast_window_start": "2026-10-26T07:09:53+01:00",
+      "forecast_window_start": "2026-10-27T10:31:36+01:00",
       "forecast_window_end": "2026-12-31T23:59:59+01:00",
       "change_type": "no_material_change",
       "review_evidence_ids": [],
@@ -481,11 +483,11 @@
       "trend": "flat",
       "prior": 0.04,
       "delta_pp": 0.0,
-      "change_basis": "4 %: nezískán nový podklad o ruském rozhodnutí demonstrovat jadernou zbraň; rétorika a rutinní výcvik nestačí.",
-      "assessment_time": "2026-10-26T07:09:53+01:00",
-      "source_cutoff": "2026-10-26T07:09:53+01:00",
+      "change_basis": "4 %: žádný nový získaný podklad o rozhodnutí demonstrovat jadernou zbraň; rétorika a standardní patrola nepostačují.",
+      "assessment_time": "2026-10-27T10:31:36+01:00",
+      "source_cutoff": "2026-10-27T10:31:36+01:00",
       "review_status": "reassessed",
-      "forecast_window_start": "2026-10-26T07:09:53+01:00",
+      "forecast_window_start": "2026-10-27T10:31:36+01:00",
       "forecast_window_end": "2026-12-31T23:59:59+01:00",
       "change_type": "no_material_change",
       "review_evidence_ids": [],
@@ -504,11 +506,11 @@
       "trend": "flat",
       "prior": 0.01,
       "delta_pp": 0.0,
-      "change_basis": "1 %: civilní bezpečnost IAEA oddělena od zbraňového scénáře; nový doložený podklad pro použití nezískán.",
-      "assessment_time": "2026-10-26T07:09:53+01:00",
-      "source_cutoff": "2026-10-26T07:09:53+01:00",
+      "change_basis": "1 %: civilní jaderná bezpečnost oddělena; IAEA 372 není dnešní pozorování ani důkaz zbraňové přípravy.",
+      "assessment_time": "2026-10-27T10:31:36+01:00",
+      "source_cutoff": "2026-10-27T10:31:36+01:00",
       "review_status": "reassessed",
-      "forecast_window_start": "2026-10-26T07:09:53+01:00",
+      "forecast_window_start": "2026-10-27T10:31:36+01:00",
       "forecast_window_end": "2026-12-31T23:59:59+01:00",
       "change_type": "no_material_change",
       "review_evidence_ids": [],
@@ -527,34 +529,34 @@
       "trend": "flat",
       "prior": 0.26,
       "delta_pp": 0.0,
-      "change_basis": "26 %: kontrola BIS/NÚKIB bez nového kvalifikujícího připsaného českého případu; obecná evropská kompilace není české operativní varování.",
-      "assessment_time": "2026-10-26T07:09:53+01:00",
-      "source_cutoff": "2026-10-26T07:09:53+01:00",
+      "change_basis": "26 %: rumunská vyšetřovací linie neposkytuje konkrétní český indikátor; BIS/NÚKIB bez nového získaného kvalifikujícího připsaného případu.",
+      "assessment_time": "2026-10-27T10:31:36+01:00",
+      "source_cutoff": "2026-10-27T10:31:36+01:00",
       "review_status": "reassessed",
-      "forecast_window_start": "2026-10-26T07:09:53+01:00",
+      "forecast_window_start": "2026-10-27T10:31:36+01:00",
       "forecast_window_end": "2026-12-31T23:59:59+01:00",
       "change_type": "no_material_change",
       "review_evidence_ids": [
-        "assessment-20261023-svt-ebu-hybrid-compilation"
+        "evt-20261026-sri-carfil-attribution"
       ],
       "review_source_urls": [
-        "https://www.svt.se/nyheter/inrikes/granskning-sa-trappar-ryssland-upp-valdsamma-hybridattackerna"
+        "https://www.sri.ro/articole/comunicat-de-presa-26-10-2026.html"
       ]
     }
   },
   "wdpi": {
     "resource_dilution": 68,
     "domestic_pain": 52,
-    "self_deterrence": 32,
+    "self_deterrence": 30,
     "formula": "round(0.35 * resource_dilution + 0.35 * domestic_pain + 0.30 * self_deterrence)",
     "component_trend": {
       "resource_dilution": "flat",
       "domestic_pain": "flat",
-      "self_deterrence": "flat"
+      "self_deterrence": "down"
     },
     "component_basis": {
       "resource_dilution": {
-        "rationale": "68: obnovené služby jsou pozitivní, část již v prioru; stále hlášené dodávkové zpoždění bez čisté bilance.",
+        "rationale": "68: stále hlášená prodleva interceptorů, refundace staré pomoci není nová dodávka. Čistá zdrojová bilance nezískána.",
         "evidence_ids": [
           "evt-20260827-patriot-shortage-europe",
           "evt-20260922-trump-zelensky-energy-air-defense-talks",
@@ -621,11 +623,14 @@
           "obs-20261024-ukrenergo-oct25-restrictions-plan",
           "followup-20261025-zelensky-support-restoration",
           "obs-20261025-ukraine-strike-effects",
-          "obs-20261025-ukrenergo-oct26-restrictions-plan"
+          "obs-20261025-ukrenergo-oct26-restrictions-plan",
+          "followup-20261026-eu-epf-eight-decisions",
+          "followup-20261026-zelensky-interceptor-authorization-delay",
+          "obs-20261026-27-ukrenergo-new-outages"
         ]
       },
       "domestic_pain": {
-        "rationale": "52: další francouzské reportování nezměnilo obraz nákladů a převážně pokojného hlavního pochodu s lokálními střety. Nový politický ústup nezískán.",
+        "rationale": "52: pokračující francouzské sociální náklady; ACLED analyzuje už známý víkend. Nový příčinný ústup podpory Ukrajině nezískán.",
         "evidence_ids": [
           "evt-20260918-france-hybrid-protection-plan",
           "evt-20260921-vilnius-airport-restriction",
@@ -672,11 +677,12 @@
           "evt-20261023-khoryv-capsize-rescue",
           "obs-20261024-france-protests-security-costs",
           "followup-20261024-khoryv-search-continued",
-          "followup-20261025-khoryv-navigation-status"
+          "followup-20261025-khoryv-navigation-status",
+          "analysis-20261026-acled-france-protest-drivers"
         ]
       },
       "self_deterrence": {
-        "rationale": "32: další potvrzení podpory je protiváha ústupu, sporné produktové a kauzální verze restrikce zůstávají otevřené.",
+        "rationale": "30 z 32: nová právní rozhodnutí prokazují částečné překonání rozhodovací blokace. Malá úsudková korekce; ne doklad ruské příčiny či hotových plateb.",
         "evidence_ids": [
           "evt-20260922-eu-sanctions-renewal",
           "evt-20260924-eu-ukraine-facility-eighth-payment",
@@ -755,7 +761,8 @@
           "obs-20261024-starshield-official-restoration",
           "obs-20261024-france-protests-security-costs",
           "followup-20261025-zelensky-support-restoration",
-          "reported-20261024-musk-terms-dispute"
+          "reported-20261024-musk-terms-dispute",
+          "followup-20261026-eu-epf-eight-decisions"
         ]
       }
     },
@@ -765,27 +772,43 @@
       "self_deterrence": 32,
       "total": 52
     },
-    "total": 52,
-    "delta": 0,
-    "trend": "flat",
-    "change_type": "no_material_change",
+    "total": 51,
+    "delta": -1,
+    "trend": "down",
+    "change_type": "evidence_based_component_update",
     "drivers": [
       {
-        "driver": "Kumulované energetické škody",
+        "driver": "Energetická a dopravní kampaň",
         "tag": "russian_caused",
         "evidence_ids": [
-          "obs-20261025-ukraine-strike-effects",
-          "obs-20261025-ukrenergo-oct26-restrictions-plan"
+          "obs-20261026-27-ukrenergo-new-outages",
+          "obs-20261026-27-ukraine-strike-effects"
         ],
-        "effect_note": "Úředně hlášené pokračování účinků; plán není dokončený den."
+        "effect_note": "Úředně hlášené materiální účinky pokračují."
       },
       {
-        "driver": "Francouzské sociální a hospodářské příčiny",
+        "driver": "Rumunský sabotážní případ",
+        "tag": "russian_caused",
+        "evidence_ids": [
+          "evt-20261026-sri-carfil-attribution"
+        ],
+        "effect_note": "Úřední atribuce, nikoli pravomocný soud; sama neprokazuje západní politický ústupek."
+      },
+      {
+        "driver": "Evropské právní provedení",
         "tag": "independent",
         "evidence_ids": [
-          "obs-20261024-france-protests-security-costs"
+          "followup-20261026-eu-epf-eight-decisions"
         ],
-        "effect_note": "Nová CNN reportáž je follow-up, ne důkaz ruského řízení či ukrajinské politiky."
+        "effect_note": "Rozhodovací krok, neověřené platby; původní blokace nepřipsána Rusku."
+      },
+      {
+        "driver": "Francouzské domácí příčiny",
+        "tag": "independent",
+        "evidence_ids": [
+          "analysis-20261026-acled-france-protest-drivers"
+        ],
+        "effect_note": "Sociální a rozpočtová vysvětlení; žádná nová kauzální změna podpory Ukrajině."
       },
       {
         "driver": "Dříve reportované zesilování nepokojů",
@@ -793,7 +816,7 @@
         "evidence_ids": [
           "reported-20261021-unrest-attribution-limits"
         ],
-        "effect_note": "Bez nového měření účinku."
+        "effect_note": "Nový účinek nezměřen."
       },
       {
         "driver": "Ruské využívání sporů",
@@ -801,43 +824,41 @@
         "effect_note": "Prospěch není důkaz způsobení."
       },
       {
-        "driver": "Rozhodovací příčina restrikcí a případné vnější řízení nepokojů",
+        "driver": "Příčina amerického zdržení a ruské řízení protestů",
         "tag": "unknown",
         "evidence_ids": [
-          "reported-20261024-musk-terms-dispute"
+          "followup-20261026-zelensky-interceptor-authorization-delay"
         ],
-        "effect_note": "Sporné veřejné verze nejsou výsledkem kauzálního vyšetření."
+        "effect_note": "Neuzavřená kauzalita."
       }
     ],
-    "derivation": "round(0.35 * 68 + 0.35 * 52 + 0.30 * 32) = round(23.80 + 18.20 + 9.60) = round(51.60) = 52; prior52; delta0.",
-    "assessment_time": "2026-10-26T07:09:53+01:00",
+    "derivation": "round(0.35*68 + 0.35*52 + 0.30*30) = round(23.80+18.20+9.00) = 51; prior round(51.60)=52; delta=-1.",
+    "assessment_time": "2026-10-27T10:31:36+01:00",
     "review_status": "reassessed",
-    "scoring_precision_note": "Složky jsou úsudkové, reprodukovatelný je součet. Obnovu nezaměňovat s nulovým významem jen proto, že nevolíme neobhajitelně přesný bodový rozdíl.",
+    "scoring_precision_note": "Úsudkové komponenty; reprodukovatelný součet. Nízká důvěra v přesnou dvoubodovou korekci, nikoli měření strachu jednotlivých vlád.",
     "component_delta": {
       "resource_dilution": 0,
       "domestic_pain": 0,
-      "self_deterrence": 0
+      "self_deterrence": -2
     },
-    "change_confidence": "medium-low",
+    "change_confidence": "low",
     "component_update_basis": {
-      "decision": "all_components_unchanged_after_new_followups",
+      "decision": "limited_self_deterrence_decrease_after_legal_implementation",
       "evidence_ids": [
-        "followup-20261025-zelensky-support-restoration",
-        "obs-20261025-ukraine-strike-effects",
-        "obs-20261025-ukrenergo-oct26-restrictions-plan",
-        "reported-20261024-musk-terms-dispute"
+        "followup-20261026-eu-epf-eight-decisions",
+        "followup-20261026-zelensky-interceptor-authorization-delay"
       ],
-      "rationale": "Část obnovy již oceněna; nynější prezidentské potvrzení není druhý nezávislý audit. Původní výpadky neměly zvláštní číselný přírůstek. Čistá bilance zdrojů neověřena; další přesný pokles nelze obhájit. Není pravidlem, že index nemůže klesat.",
-      "alternative": "Trvalá nezávisle doložená obnova a skutečné dodávky mohou vést k poklesu; návrat omezení či kauzálně doložený ústup politiky k růstu."
+      "rationale": "Právní provedení je nový behaviorální krok oproti již oceněné politické dohodě. Snižuje hodnocení rozhodovací paralýzy, neprokazuje příčinu předchozího blokování.",
+      "alternative": "Vnitřní unijní vyjednávání bez změny ruského zastrašení. Platby a nové dodávky nepotvrzeny, proto konkurence o zdroje beze změny."
     }
   },
   "rpe": {
     "scored": false,
     "trend": "flat",
     "confidence": "medium-low",
-    "assessment": "RPE: not scored; kvalitativně vysoké beze změny. Lodní sdělení ukazují nátlakovou komunikaci, ne všechny výsledky. Nový kauzálně doložený posun západní politiky nezískán.",
+    "assessment": "RPE: not scored; kvalitativně vysoké, beze změny. Nová atribuce starého činu zpevňuje obraz úsilí, nikoli nutně dnešní intenzitu. Malý pokles WDPI není důkaz obecného selhání ruského tlaku.",
     "unscored_reason": "Ve stavu není definována reprodukovatelná komponentová metoda RPE; bez ní se celkové číslo nevytváří.",
-    "assessment_time": "2026-10-26T07:09:53+01:00",
+    "assessment_time": "2026-10-27T10:31:36+01:00",
     "review_status": "reassessed"
   },
   "nuclear": {
@@ -850,49 +871,50 @@
     "nuclear_posture_change_hypothesis": "nuclear_posture_change_by_2026_12_31",
     "nuclear_demonstration_hypothesis": "nuclear_demonstration_by_2026_12_31",
     "nuclear_use_hypothesis": "nuclear_use_by_2026_12_31",
-    "assessment": "15/4/1 % beze změny do31. prosince. Kvalitativně vysoká signalizace oddělena. Roční Global Thunder není ruská změna pohotovosti; index IAEA stále372 z23. října, nikoli nové dnešní pozorování.",
-    "assessment_time": "2026-10-26T07:09:53+01:00",
+    "assessment": "15/4/1 % do 31. prosince zachováno. Vysoká signalizace oddělena; deklarovaný plánovaný let Tu-95 a alianční výcvik nejsou novou ruskou změnou pohotovosti. IAEA 372 stále z 23. října, nepředatováno.",
+    "assessment_time": "2026-10-27T10:31:36+01:00",
     "review_status": "reassessed"
   },
   "context_manipulation": {
-    "assessment_time": "2026-10-26T07:09:53+01:00",
-    "pattern": "Výrok o porušení podmínek -> prokázané zavinění Ukrajiny -> uzavřená příčina všech satelitních omezení.",
-    "factual_truth": "partial",
+    "assessment_time": "2026-10-27T10:31:36+01:00",
+    "pattern": "Útoky hlášené před začátkem lokálního příměří -> porušení právě zahájeného příměří.",
+    "factual_truth": "unknown",
     "contextual_integrity": "distorted",
     "causal_link": "unsupported",
     "observed_effect": "unknown",
-    "assessment": "Analytický test rámování, nikoli atribuce kampaně. Produkty a sporné výroky nejsou nezávislé technické zjištění.",
+    "assessment": "Podmíněný analytický test časového rámování; ne doložená kampaň nebo změřený dosah. Původní ruské počty útoků neověřeny.",
     "evidence_ids": [
-      "reported-20261024-musk-terms-dispute"
+      "followup-20261027-oleshky-ceasefire-start"
     ]
   },
   "key_unknowns": [
-    "Úplnost a trvalost varování a konektivity, příčina původních omezení, skutečné nové dodávky interceptorů.",
-    "Identita a nezávislé ověření nepojmenovaných lodí ruských hlášení25.–26. října; oddělení od Khoryv a úmyslu testovat NATO.",
-    "Původ a úmysl lotyšského dronu a skutečné ukončení litevského výcviku po25. říjnu.",
-    "Koordinace a rozsah mobilizace v2; nereprezentativní NGO výběr, právní portál nedostupný.",
-    "Návraty běloruských kontingentů, konec oddělené prověrky, nové severokorejské posily a provedený jihokorejský odjezd.",
-    "Provedení Olešek a rozpor27./29. října; politický dopad evropských protestů; nové nezávislé provozní pozorování IAEA."
+    "Rumunský veřejný forenzní spis, německé datum dalších příprav a nezávislé procesní potvrzení; Polsko lokalizace versus zadržení.",
+    "Skutečné evropské platby, nová interceptorová bilance a příčina amerického zpoždění; trvalost podpůrných služeb.",
+    "Nezávislé ověření plnění Olešek a dokončených humanitárních výsledků.",
+    "Národní rozsah mobilizace v2; právní portál nedostupný, NGO vzorek nereprezentativní.",
+    "Lotyšská atribuce, běloruské návraty a konec oddělené prověrky, skutečné nové severokorejské posily a jihokorejský odjezd.",
+    "Identita a efekt ruských nepojmenovaných lodních hlášení, nové provozní pozorování IAEA, kauzální účinky protestů."
   ],
   "watch_24_72h": [
-    "Do 2026-10-27T07:09:53+01:00: trvalost služeb a nové interceptory; nezávislé ověření námořních tvrzení.",
-    "Do 2026-10-27T07:09:53+01:00: mobilizační dokumenty a rozsah, lotyšská identifikace, běloruské návraty.",
-    "Litevský checkpoint2026-10-26T07:21:16+01:00 zachován; při uzávěrce ukončení neověřeno, jiné akce termín neposouvají.",
-    "Olešky kontrola2026-10-27T11:09:40+01:00 při rozporu27./29. října.",
-    "Do 2026-10-28T07:09:53+01:00: IAEA a politické účinky protestů. Konec okna 2026-10-29T07:09:53+01:00; SpaceX2. listopadu zůstává."
+    "Do 2026-10-28T10:31:36+01:00: rumunská procesní a časová verifikace; skutečné platby a interceptory, trvalost služeb.",
+    "Olešky: pevný checkpoint 2026-10-27T11:09:40+01:00 zachován; zahájení deklarováno, výsledek mise neověřen.",
+    "Do 2026-10-28T10:31:36+01:00: mobilizační měřítko, lotyšská atribuce a běloruské návraty/prověrka.",
+    "Litevský checkpoint 2026-10-26T07:21:16+01:00 uzavřen dnešní následnou kontrolou zprávy o dokončení; jiné harmonogramy odděleny.",
+    "Do 2026-10-29T10:31:36+01:00: IAEA a politické důsledky protestů. Celé okno 2026-10-30T10:31:36+01:00; SpaceX 2. listopadu neměněno."
   ],
-  "last_report": "reports/2026-10-26-0709.md",
+  "last_report": "reports/2026-10-27-1031.md",
   "new_evidence_ids": [
-    "followup-20261025-zelensky-support-restoration",
-    "claim-20261025-26-russian-mod-merchant-strikes",
-    "followup-20261025-khoryv-navigation-status",
-    "claim-20261023-stpetersburg-mall-registration",
-    "followup-20261025-oleshky-start-statement",
-    "obs-20261025-ukraine-strike-effects",
-    "obs-20261025-ukrenergo-oct26-restrictions-plan",
-    "assessment-20261023-svt-ebu-hybrid-compilation",
-    "obs-20261023-lublin-search-ended",
-    "reported-20261024-musk-terms-dispute"
+    "evt-20261026-sri-carfil-attribution",
+    "followup-20261026-eu-epf-eight-decisions",
+    "followup-20261027-oleshky-ceasefire-start",
+    "followup-20261026-lithuania-exercise-completed",
+    "followup-20261026-zelensky-interceptor-authorization-delay",
+    "obs-20261026-27-ukrenergo-new-outages",
+    "obs-20261026-27-ukraine-strike-effects",
+    "claim-20261027-russian-mod-unnamed-cargo-strike",
+    "reported-20261026-iditelesom-september-foreigners",
+    "baseline-20261026-27-belarus-command-intake",
+    "analysis-20261026-acled-france-protest-drivers"
   ],
   "retrospective_corrections": [
     {
@@ -1067,39 +1089,38 @@
   ],
   "usable_as_prior": true,
   "forecast_window_end": "2026-12-31T23:59:59+01:00",
-  "probability_update_method": "12 aktivních odhadů, pásma i důvěry ponechány. Nové výpovědi a provozní follow-upy posouzeny; sdílené linie ani retrospektivní kompilace nepřidávají automatickou váhu. Bez denního ratchetu vzhůru či dolů.",
+  "probability_update_method": "12 aktivních odhadů, pásma a důvěry zachovány. Nový starší případ nepředatován; dopředná síla versus narušení sítě posouzeny. Malá korekce WDPI pouze za nový rozhodovací krok, ne opakovaný politický příslib.",
   "material_probability_deltas": [],
   "baltic_warning_layers": {
-    "assessment_time": "2026-10-26T07:09:53+01:00",
+    "assessment_time": "2026-10-27T10:31:36+01:00",
     "review_status": "reassessed",
     "narrative": {
-      "assessment": "Bez nové kvantitativní SOCINT série. Kompilace54 podezření nesmí být převáděna na54 dnešních potvrzených útoků; šíření ani účinek nezměřeny.",
+      "assessment": "Bez nové kvantitativní SOCINT série; nelze měřit nové zesílení nebo účinek podle několika veřejných postů.",
       "confidence": "low",
-      "evidence_ids": [
-        "assessment-20261023-svt-ebu-hybrid-compilation"
-      ]
+      "evidence_ids": []
     },
     "political_diplomatic": {
-      "assessment": "Nová konvergence konkrétního ultimáta a operativní přípravy nezískána; souhrnná varování nejsou nová samostatná zpravodajská vrstva.",
+      "assessment": "Nové konkrétní ultimátum propojené s neplánovanou ruskou přípravou nezískáno. Rumunská atribuce není nová specifická pobaltská hrozba.",
       "confidence": "medium",
       "evidence_ids": [
-        "assessment-20261023-svt-ebu-hybrid-compilation"
+        "evt-20261026-sri-carfil-attribution"
       ],
       "source_urls": [
-        "https://www.svt.se/nyheter/inrikes/granskning-sa-trappar-ryssland-upp-valdsamma-hybridattackerna"
+        "https://www.sri.ro/articole/comunicat-de-presa-26-10-2026.html"
       ]
     },
     "military_readiness": {
-      "assessment": "Litevský plán skončil25. října, skutečný závěr zatím neověřen. Lotyšský plán začíná26. října, nikoli prokázaná mimořádná aktivace; běloruské návraty otevřené.",
+      "assessment": "Litevské cvičení 22.–25. října organizátorem označeno za dokončené. Ostatní plánované akce odděleny; běloruská jmenování a sezónní nástup nejsou útočná koncentrace.",
       "confidence": "medium-low",
       "evidence_ids": [
+        "followup-20261026-lithuania-exercise-completed",
+        "baseline-20261026-27-belarus-command-intake",
         "baseline-20261021-latvia-resolute-reforger-schedule",
-        "baseline-20261014-lithuania-budri-peleda-schedule",
-        "obs-20261021-lithuania-scheduled-exercise"
+        "baseline-20261014-lithuania-budri-peleda-schedule"
       ]
     },
     "local_official_assessment": {
-      "assessment": "Lotyšský původ a úmysl z24. října bez nového získaného závěru; Auvere již v prioru. Staré plošné hodnocení19. října a NATO14. října nepředatovány. Polské pátrání je samostatná konkrétní linie, nikoli hodnocení Pobaltí.",
+      "assessment": "Lotyšská atribuce dronu otevřená. Nová litevská zpráva řeší pouze dokončení jednoho cvičení, ne plošné hodnocení hrozby. Staré hodnocení z 19. října a NATO ze 14. října nepředatovány.",
       "confidence": "medium",
       "evidence_ids": [
         "followup-20261019-lithuania-drone-assessment"
@@ -1131,8 +1152,8 @@
         "scope": "Auvere only; no proof of deliberate attack, origin unresolved."
       },
       "latest_index_review": {
-        "reviewed_at": "2026-10-26T07:09:53+01:00",
-        "outcome": "No new dated all-Baltic assessment or Aluksne attribution obtained; prior observation dates preserved."
+        "reviewed_at": "2026-10-27T10:31:36+01:00",
+        "outcome": "No new all-Baltic assessment or Aluksne attribution obtained; exercise completion is a separate, narrow observation."
       }
     }
   },
@@ -1437,15 +1458,15 @@
   ],
   "research_scope": {
     "scope": "full_recalibration",
-    "window_start": "2026-10-25T07:10:56+01:00",
-    "window_end": "2026-10-26T07:09:53+01:00",
-    "automation_trigger_at": "2026-10-26T06:58:29.969+01:00",
-    "first_verified_clock": "2026-10-26T06:58:38+01:00",
-    "method": "Aktuální veřejné vyhledávání, čtení primárních webů a veřejných Telegram feedů; zpětné dohledání původních publikací, alternativy a konkrétní protidůkazy.",
+    "window_start": "2026-10-26T07:09:53+01:00",
+    "window_end": "2026-10-27T10:31:36+01:00",
+    "automation_trigger_at": "2026-10-27T06:00:43.580Z",
+    "first_verified_clock": "2026-10-27T07:00:56+01:00",
+    "method": "Čerstvé veřejné vyhledávání a přímé primární weby/Telegram; závěrečné dočtení 10:28–10:31 CET. Nová atribuce odlišena od starého činu, oznámení od plnění; dokumentované alternativy a negativa.",
     "git_preflight": {
       "branch": "master",
-      "head": "f23fd33e59721bce7f11738e308c2193dedc490f",
-      "origin_master": "f23fd33e59721bce7f11738e308c2193dedc490f",
+      "head": "20c6318684e3bb71a0b4694dec9cbb48702c4b58",
+      "origin_master": "20c6318684e3bb71a0b4694dec9cbb48702c4b58",
       "ahead": 0,
       "behind": 0,
       "forecast_tree_clean": true,
@@ -1454,122 +1475,119 @@
       ]
     },
     "continuity": {
-      "last_completed_assessment": "2026-10-25T07:10:56+01:00",
-      "prior_evidence_count": 331,
-      "note": "Hash guard prioru, append-only ledger, neměnné archivy, jeden sdílený bilingvní stav."
+      "last_completed_assessment": "2026-10-26T07:09:53+01:00",
+      "prior_evidence_count": 341,
+      "note": "Hash guard, append-only, neměnné archivy, jediný bilingvní stav."
     },
     "coverage": [
       {
-        "domain": "ukraine_support_and_diplomacy",
+        "domain": "eu_sabotage",
         "sources": [
-          "https://t.me/V_Zelenskiy_official/21521",
-          "https://t.me/V_Zelenskiy_official/21525",
-          "https://au.marketscreener.com/news/ukraine-says-starlink-and-starshield-operating-at-400-kph-after-week-of-throttling-ce785cdfdf80f123",
-          "https://t.me/s/V_Zelenskiy_official"
+          "https://www.sri.ro/articole/comunicat-de-presa-26-10-2026.html",
+          "https://agerpres.ro/justitie/2026/10/26/video-diicot-si-sri-incendiul-de-la-carfil-brasov-provocat-de-o-retea-de-sabotaj-coordonata-din-rusi--1607014",
+          "https://www.marketscreener.com/news/russian-sabotage-network-believed-to-have-caused-romanian-fire-prosecutors-say-ce785cdcdf81f02c"
         ],
-        "checks": "Přímé prezidentské výňatky, Reuters spor o příčinu; X403. Obnova a původní příčina odděleny, Olešky stále prospektivní."
+        "checks": "SRI primárně, DIICOT z AGERPRES, Reuters stejná linie. Německé samostatné potvrzení nezískáno. Polský procesní rozpor uveden."
       },
       {
-        "domain": "ukraine_energy_and_black_sea",
+        "domain": "support_and_diplomacy",
         "sources": [
-          "https://t.me/mod_russia/68513",
-          "https://www.dhmfn.ro/ro/informatii-de-interes-public/avize-radio-pentru-navigatori/",
-          "https://t.me/V_Zelenskiy_official/21520",
-          "https://t.me/Ukrenergo/5578",
-          "https://t.me/mod_russia/68530",
-          "https://t.me/mod_russia/68548"
+          "https://www.consilium.europa.eu/en/press/press-releases/2026/10/26/eu-support-for-ukraine-council-mobilises-49-billion-under-the-european-peace-facility/",
+          "https://t.me/V_Zelenskiy_official/21526",
+          "https://t.me/mod_russia/68570",
+          "https://t.me/dmytro_lubinetzs/12931"
         ],
-        "checks": "Přímé ruské výroky a rumunské ARN155, ukrajinské hlášení a plán operátora. Identita lodí a účinek ruských tvrzení neověřeny; žádné operační souřadnice publikovány."
+        "checks": "Právní rozhodnutí oproti platbě; dodávkové zdržení není bez důkazu ruským zastrašením. Deklarovaný začátek příměří, ne nezávislé plnění."
+      },
+      {
+        "domain": "ukraine_energy_and_ships",
+        "sources": [
+          "https://t.me/Ukrenergo/5581",
+          "https://t.me/V_Zelenskiy_official/21532",
+          "https://t.me/mod_russia/68576",
+          "https://t.me/Ukrenergo/5579",
+          "https://t.me/Ukrenergo/5580"
+        ],
+        "checks": "Nové operátorové a vládní observace, související ruské bojové tvrzení bez nezávislého výsledku; bez publikace seznamu cílů."
       },
       {
         "domain": "mobilization",
         "sources": [
-          "https://t.me/iditelesom_help/8166",
-          "https://t.me/iditelesom_help/8167",
-          "https://t.me/iditelesom_help/8168",
-          "https://notes.citeam.org/mobilization-oct-18-25-2026",
+          "https://t.me/iditelesom_help/8169",
           "https://publication.pravo.gov.ru/"
         ],
-        "checks": "Dvě svědectví seskupena, CIT33regionů již v prioru. Nová metrohlášení bez unikátního počtu a ověřeného účelu nevážena. Právní portál timeout, nikoli důkaz absence."
+        "checks": "13 zářijových žádostí je nový nereprezentativní podvzorek, ne národní vlna. Právní portál: timeout; nelze tvrdit úplný audit absence."
       },
       {
-        "domain": "baltic_and_eu_hybrid",
+        "domain": "baltic_belarus",
         "sources": [
-          "https://www.svt.se/nyheter/inrikes/granskning-sa-trappar-ryssland-upp-valdsamma-hybridattackerna",
-          "https://miastax.twoje-miasto.pl/art-na-sygnale/koniec-poszukiwan-obiektu-latajacego-pod-i1272151",
-          "https://www.lsm.lv/raksts/zinas/latvija/24.10.2026-meza-aluksnes-novada-atrastas-arvalstu-drona-atluzas.a668930/",
-          "https://www.kariuomene.lt/naujienos/vakaru-lietuvoje-vyks-didziausios-komendantines-pratybos-perkuno-bastionas-juodas-vanagas-2026/27210",
-          "https://www.sauliusajunga.lt/naujienos/didziausios-komendantines-pratybos-vakaru-lietuvoje"
+          "https://www.kariuomene.lt/naujienos/klaipedos-regione-baigesi-didziausios-komendantines-pratybos-tikrinta-kaip-valstybe-veiktu-kilus-gresmei/27221",
+          "https://t.me/modmilby/59747",
+          "https://t.me/modmilby/59758",
+          "https://t.me/modmilby/59752",
+          "https://www.lsm.lv/raksts/zinas/latvija/24.10.2026-meza-aluksnes-novada-atrastas-arvalstu-drona-atluzas.a668930/"
         ],
-        "checks": "Původní SVT23. října ne25. října z agregátoru; PAP negativní výsledek23. října. Litevská závěrečná zpráva nenalezena; harmonogram není splnění. Lotyšský původ neuzavřen."
+        "checks": "Nové dokončení jednoho cvičení. Lotyšský původ nevyřešen. Sezónní nástup a nová velení nejsou útočná připravenost. Běloruské návraty neověřeny."
       },
       {
-        "domain": "western_domestic_effect",
+        "domain": "western_domestic_pressure",
         "sources": [
-          "https://transcripts.cnn.com/show/cnr/date/2026-10-25/segment/21",
-          "https://www.weku.org/2026-10-25/from-france-to-albania-whats-bringing-protestors-to-the-streets-in-europe"
+          "https://acleddata.com/expert-comment/what-will-it-take-end-frances-relentless-protests"
         ],
-        "checks": "Nová přímá reportáž a alternativní domácí vysvětlení, nikoli ruská atribuce. Žádná nová získaná kauzální změna podpory Ukrajiny."
+        "checks": "Nový expertní komentář ke známým protestům; domácí příčiny a plán 31.10./5.11., ne nový připsaný politický účinek."
       },
       {
-        "domain": "belarus",
-        "sources": [
-          "https://t.me/s/modmilby",
-          "https://t.me/modmilby/59735"
-        ],
-        "checks": "Týdenní rekapitulace připomíná již uloženou kontrolu a běžné odvody. Bez nového ověření návratů nebo ukončení oddělené prověrky."
-      },
-      {
-        "domain": "nuclear_and_iaea",
+        "domain": "nuclear",
         "sources": [
           "https://www.iaea.org/newscenter/pressreleases",
-          "https://www.publicnow.com/view/870980788F0DC915E8DC03181D6A8113C47E0DFC"
+          "https://t.me/mod_russia/68568"
         ],
-        "checks": "IAEA index stále372 z23. října. Indexovaný úřední text USSTRATCOM22. října roční baseline; nové ruské zbraňové změny nezískány, ne kompletní audit."
+        "checks": "IAEA stále 372 z 23. října; ruská rekapitulace tvrdí plánovaný let Tu-95. Žádný nový nezávislý zbraňový indikátor získán; ne úplný audit."
       },
       {
-        "domain": "czechia_and_cyber",
+        "domain": "czechia_cyber",
         "sources": [
           "https://www.bis.cz/aktuality/",
           "https://nukib.gov.cz/cs/infoservis/aktuality/",
-          "https://cert.lv/lv/",
           "https://cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-012/"
         ],
-        "checks": "Načtené indexy bez nového kvalifikujícího připsaného incidentu; CERT-FR revize16. října. Staré události a lotyšské volby nepředatovány."
+        "checks": "Indexy bez nového kvalifikujícího připsaného případu, revize CERT-FR z 16. října zachována."
       },
       {
-        "domain": "korean_presence",
+        "domain": "korea",
         "sources": [
-          "https://en.yna.co.kr/view/AEN20261025000353315"
+          "https://theprint.in/world/north-korea-south-korea-tensions-high-as-letters-lodged-with-un-howitzers-spotted/3081728/"
         ],
-        "checks": "Cílené hledání nedokládá nové ruské bojové posily či skutečný jihokorejský diplomatický odjezd; čínská návštěva je jiná událost."
+        "checks": "Reuters: vlastní pozorování u mezikorejské hranice, ne posily Rusku. Nový skutečný diplomatický odjezd nebo změna alokace západních zdrojů nezískány."
       }
     ],
     "duplicate_sources_excluded": [
       {
-        "source_url": "https://notes.citeam.org/mobilization-oct-18-25-2026",
-        "reason": "33regionů+Krym převzato z již oceněné Verstky; weekly není další vzorek."
+        "source_url": "https://www.marketscreener.com/news/russian-sabotage-network-believed-to-have-caused-romanian-fire-prosecutors-say-ce785cdcdf81f02c",
+        "reason": "Reuters dědí rumunské vyšetřování, není nezávislý forenzní audit."
       },
       {
-        "source_url": "https://t.me/iditelesom_help/8167",
-        "reason": "Druhý informátor stejného místa/dne seskupen s8166, ne další událost."
+        "source_url": "https://uk.marketscreener.com/news/ukraine-has-waited-nearly-a-month-for-us-to-sign-off-on-patriot-missiles-zelenskiy-says-ce785cdcda81f424",
+        "reason": "Stejné prezidentské sdělení."
       },
       {
-        "source_url": "https://t.me/modmilby/59735",
-        "reason": "Týdenní rekapitulace není nová prověrka."
-      },
-      {
-        "source_url": "https://dstld.news/europe/2026-10-25/european-broadcasters-identify-54-suspected-russia-linked-physical-attacks-in-si",
-        "reason": "Agregátor25. října dohledán na původní SVT23. října; žádná přidaná nezávislá váha."
+        "source_url": "https://t.me/mod_russia/68574",
+        "reason": "Seskupeno se 68576, nikoli další loď bez identifikace."
       }
     ],
     "limitations": [
-      "Právní portál timeout; přímý Musk X403. Reuters spor dostupný, nikoli technický audit.",
-      "Tvrzené zásahy lodí bez identity a nezávislého ověření; ministerská linie je zainteresovaná.",
-      "Veřejná absence zprávy o návratech či dokončení cvičení má slabou zápornou váhu; žádný úplný pohybový audit.",
-      "Bez nové kvantitativní SOCINT série nebo reprezentativního národního mobilizačního vzorku.",
-      "SVT23. října, PAP24. října, Musk24. října a první ruský výrok25. října předcházely prioru; dohledány až nyní."
-    ]
+      "Právní portál: timeout; plný rumunský spis nezískán, procesní neshoda o Polsku.",
+      "Primární text EU obsahuje rozpor 2025/2026; rozhodnutí jasně 26.10.2026; výplata neověřena.",
+      "Místní příměří deklarováno oběma stranami, ne nezávislé ověření plnění a evakuací.",
+      "Bez nové kvantitativní SOCINT série, tržních benchmarků, národního mobilizačního vzorku a úplného auditu pohybů."
+    ],
+    "quality_control": {
+      "semantic_translation_review": "completed_cs_en_same_claims_qualifications_sources",
+      "forecast_probabilities_changed": false,
+      "wdpi_changed": true,
+      "new_evidence_records": 11,
+      "deduplicated_investigative_groups": true
+    }
   },
   "assessment_type": "full_recalibration",
   "assessment_scope": {
@@ -1587,13 +1605,13 @@
       "nuclear_use_by_2026_12_31",
       "significant_russian_linked_hybrid_operation_czechia_by_2026_12_31"
     ],
-    "previous_full_assessment_time": "2026-10-25T07:10:56+01:00",
-    "mobilization_prior_assessment_time": "2026-10-25T07:10:56+01:00",
+    "previous_full_assessment_time": "2026-10-26T07:09:53+01:00",
+    "mobilization_prior_assessment_time": "2026-10-26T07:09:53+01:00",
     "mobilization_definition_effective_at": "2026-09-30T21:35:31+02:00",
-    "note": "Všech12 aktivních otázek znovu posouzeno; nové podklady zatím nemění čísla ani hlavní závěr. Vyřešené ukrajinské otázky a jejich časy neměněny.",
+    "note": "Všech 12 aktivních otázek znovu posouzeno, beze změny pravděpodobností. WDPI 52→51. Oba historické ukrajinské výsledky a definice v2 neměněny.",
     "adjudicated_hypotheses": []
   },
-  "overall_level_assessment_time": "2026-10-26T07:09:53+01:00",
+  "overall_level_assessment_time": "2026-10-27T10:31:36+01:00",
   "external_forecast_benchmarks": [
     {
       "platform": "Metaculus",
@@ -1621,18 +1639,33 @@
       "use": "approximate_secondary_benchmark_not_independent_intelligence"
     }
   ],
-  "index_deltas": [],
+  "index_deltas": [
+    {
+      "index": "WDPI",
+      "prior": 52,
+      "now": 51,
+      "delta": -1,
+      "component": "self_deterrence",
+      "component_prior": 32,
+      "component_now": 30,
+      "evidence_ids": [
+        "followup-20261026-eu-epf-eight-decisions"
+      ],
+      "change_confidence": "low",
+      "basis": "Právně provedený krok odblokování snižuje úsudek rozhodovací paralýzy; neověřeny platby, příčina původní blokace ani nové zdroje."
+    }
+  ],
   "context_manipulation_additional": [
     {
-      "assessment_time": "2026-10-26T07:09:53+01:00",
-      "pattern": "54 podezření ve starším období ->54 nových potvrzených ruských útoků.",
+      "assessment_time": "2026-10-27T10:31:36+01:00",
+      "pattern": "Povolené refundace již dodané pomoci -> nový balík zbraní už dorazil.",
       "factual_truth": "partial",
       "contextual_integrity": "distorted",
       "causal_link": "unsupported",
       "observed_effect": "unknown",
-      "assessment": "Smíšené kategorie, atribuce a datum; soubor nepřičítán bez deduplikace.",
+      "assessment": "Pozor na záměnu fáze financování a duplicitní přičtení do balíku 6,6 mld. EUR.",
       "evidence_ids": [
-        "assessment-20261023-svt-ebu-hybrid-compilation"
+        "followup-20261026-eu-epf-eight-decisions"
       ]
     }
   ],
