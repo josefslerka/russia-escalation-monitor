@@ -1,0 +1,1910 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-27T20:43:30+01:00",
+  "method": "editorial_review_of_saved_evidence",
+  "basis": [
+    "summary",
+    "domain",
+    "source",
+    "source_url",
+    "existing_record_context"
+  ],
+  "meaning": "Geografický předmět záznamu, nikoli automatická atribuce, přesné místo incidentu nebo měřítko hrozby.",
+  "entries": {
+    "evt-20260806-us-intel-nato-test": {
+      "areas": [
+        "NATO"
+      ],
+      "note": "Varování se týká NATO obecně; konkrétní pobaltský stát není určen."
+    },
+    "evt-20260825-ratcliffe-moscow": {
+      "areas": [
+        "NATO"
+      ],
+      "note": "Geografickým předmětem varování je NATO. Místo diplomatické schůzky není místo předpokládaného incidentu."
+    },
+    "evt-20260827-estonia-threat-unchanged": {
+      "areas": [
+        "EST"
+      ]
+    },
+    "evt-20260715-lithuania-limited-provocation-warning": {
+      "areas": [
+        "BALTICS",
+        "POL"
+      ],
+      "note": "Scénář se týká Pobaltí a Polska; nejde o pozorovaný útok v Litvě."
+    },
+    "evt-20260812-nato-airspace-violations": {
+      "areas": [
+        "POL",
+        "ROU"
+      ]
+    },
+    "evt-20260814-latvia-ukrainian-drone": {
+      "areas": [
+        "LVA",
+        "BLR"
+      ]
+    },
+    "evt-202607-ohchr-civilian-casualties": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20260827-28-russian-strike-wave": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20260828-peace-talks-deep-pause": {
+      "areas": [
+        "UKR",
+        "RUS"
+      ]
+    },
+    "evt-20260827-ukraine-mobilization-assessment": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "evt-20260731-russia-mobilization-job-ads": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "evt-20260807-russia-recruiter-bonuses": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "evt-20260825-kremlin-mobilization-denial": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "evt-20260801-belarus-russian-presence-unchanged": {
+      "areas": [
+        "BLR"
+      ]
+    },
+    "evt-20260825-belarus-air-defense-drill": {
+      "areas": [
+        "BLR",
+        "RUS"
+      ]
+    },
+    "evt-20260519-21-russia-belarus-nuclear-drill": {
+      "areas": [
+        "RUS",
+        "BLR"
+      ]
+    },
+    "evt-20260205-new-start-expiry": {
+      "areas": [
+        "GLOBAL"
+      ],
+      "note": "Bilaterální kontrola strategických zbraní má nadregionální dosah."
+    },
+    "evt-202403-202603-eurojust-incendiary-parcels": {
+      "areas": [
+        "EUROPE"
+      ]
+    },
+    "evt-20260713-eu-russian-cyber-sanctions": {
+      "areas": [
+        "EU"
+      ]
+    },
+    "evt-20260827-bis-annual-report": {
+      "areas": [
+        "CZE",
+        "EUROPE"
+      ]
+    },
+    "evt-202607-nukib-incidents": {
+      "areas": [
+        "CZE"
+      ]
+    },
+    "evt-20260810-nukib-zimbra-campaign": {
+      "areas": [
+        "GLOBAL"
+      ],
+      "note": "Mnohonárodní kybernetická kampaň; vydání varování NÚKIBem neprokazuje konkrétní český incident."
+    },
+    "evt-20260827-patriot-shortage-europe": {
+      "areas": [
+        "EUROPE",
+        "GULF"
+      ]
+    },
+    "evt-20260813-kiel-ukraine-aid": {
+      "areas": [
+        "EUROPE",
+        "UKR"
+      ]
+    },
+    "evt-20260828-30-prolonged-russian-strike-campaign": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20260829-kyiv-chernihiv-planning-claim": {
+      "areas": [
+        "UKR",
+        "BLR"
+      ]
+    },
+    "evt-20260829-stubb-nato-manpower-assessment": {
+      "areas": [
+        "NATO",
+        "RUS"
+      ]
+    },
+    "evt-20260829-tusk-provocation-warning": {
+      "areas": [
+        "NATO",
+        "POL"
+      ]
+    },
+    "evt-20260804-29-leipzig-attribution-report": {
+      "areas": [
+        "DEU"
+      ]
+    },
+    "evt-20260825-29-upper-lars-context-correction": {
+      "areas": [
+        "RUS",
+        "GEO"
+      ],
+      "note": "Přeshraniční statistika mezi Ruskem a Gruzií; obě země jsou geografickým předmětem opravy kontextu."
+    },
+    "evt-20260820-29-znpp-offsite-power-loss": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "corr-20260830-patriot-source-contradiction": {
+      "areas": [
+        "EUROPE"
+      ]
+    },
+    "evt-20260831-0901-six-day-strike-campaign": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20260830-economist-300-400k-recruitment-plan": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "evt-20260818-31-multiregion-electronic-summons": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "evt-20260901-estonia-drone-airspace-breach": {
+      "areas": [
+        "EST"
+      ]
+    },
+    "evt-20260831-leipzig-attribution-pending": {
+      "areas": [
+        "DEU"
+      ]
+    },
+    "evt-20260830-belarus-flatbed-shortage-claim": {
+      "areas": [
+        "BLR"
+      ]
+    },
+    "evt-20260827-bis-2025-sabotage-assessment": {
+      "areas": [
+        "CZE"
+      ]
+    },
+    "evt-20260902-1008-latvia-namejs-scheduled": {
+      "areas": [
+        "LVA"
+      ]
+    },
+    "evt-20260901-19-sustained-logistics-strike-campaign": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20260901-leipzig-official-russian-attribution": {
+      "areas": [
+        "DEU"
+      ]
+    },
+    "evt-20260831-poland-defense-plant-sabotage": {
+      "areas": [
+        "POL"
+      ]
+    },
+    "evt-20260908-romania-russian-sabotage-plot": {
+      "areas": [
+        "ROU"
+      ]
+    },
+    "evt-20260917-poland-intelligence-hybrid-strike-warning": {
+      "areas": [
+        "NATO"
+      ]
+    },
+    "evt-20260915-lithuania-explosive-drone-incursion": {
+      "areas": [
+        "LTU",
+        "BLR"
+      ]
+    },
+    "evt-20260914-denmark-russian-frigate-flares": {
+      "areas": [
+        "DNK"
+      ]
+    },
+    "evt-20260918-bloomberg-mobilization-behavior": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "evt-20260902-12-no-significant-belarus-buildup": {
+      "areas": [
+        "BLR"
+      ]
+    },
+    "evt-20260908-znpp-offsite-power-restored": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20260918-france-hybrid-protection-plan": {
+      "areas": [
+        "FRA"
+      ]
+    },
+    "evt-20260918-czech-security-response": {
+      "areas": [
+        "CZE"
+      ]
+    },
+    "evt-20260918-us-russia-sanctions": {
+      "areas": [
+        "USA"
+      ]
+    },
+    "evt-20260918-eu-ukraine-disbursement": {
+      "areas": [
+        "EU",
+        "UKR"
+      ]
+    },
+    "evt-20260920-ukraine-record-strike-russia": {
+      "areas": [
+        "RUS",
+        "UKR"
+      ],
+      "note": "Záznam zmiňuje Rusko i okupovaný Krym, který je územím Ukrajiny."
+    },
+    "evt-20260920-bis-no-concrete-czech-threat": {
+      "areas": [
+        "CZE"
+      ]
+    },
+    "evt-20260920-european-intelligence-chief-assessments": {
+      "areas": [
+        "NATO",
+        "LVA"
+      ],
+      "note": "Obecné hodnocení rizika pro NATO a samostatné lotyšské hodnocení; nejde o český incident."
+    },
+    "evt-20260911-nw-russia-hospital-beds-claim": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "evt-20260915-18-belarus-readiness-exercises": {
+      "areas": [
+        "BLR"
+      ]
+    },
+    "evt-20260921-no-post-election-mobilization-signature": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "evt-20260923-polish-mi8-airspace": {
+      "areas": [
+        "POL"
+      ]
+    },
+    "evt-20260910-udmurt-mobilization-course": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "evt-20260922-redzikowo-drone-clarification": {
+      "areas": [
+        "POL"
+      ]
+    },
+    "evt-20260922-23-ukraine-drone-waves": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20260922-eu-sanctions-renewal": {
+      "areas": [
+        "EU"
+      ]
+    },
+    "evt-20260922-trump-zelensky-energy-air-defense-talks": {
+      "areas": [
+        "UKR",
+        "USA"
+      ]
+    },
+    "evt-20260921-vilnius-airport-restriction": {
+      "areas": [
+        "LTU"
+      ]
+    },
+    "evt-20260923-estonian-no-border-movements": {
+      "areas": [
+        "EST"
+      ]
+    },
+    "evt-20260924-ddis-russia-threat-assessment": {
+      "areas": [
+        "NATO"
+      ],
+      "note": "Hodnocení se týká NATO; sídlo vydávající služby neurčuje místo budoucího útoku."
+    },
+    "evt-20260923-poland-telecom-fire": {
+      "areas": [
+        "POL"
+      ]
+    },
+    "evt-20260924-romania-small-drone-incursion": {
+      "areas": [
+        "ROU"
+      ]
+    },
+    "evt-20260925-romania-alert-no-breach": {
+      "areas": [
+        "ROU"
+      ]
+    },
+    "evt-20260924-macron-mobilization-scenario": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "evt-20260924-france-italy-rebut-cia-drone-warning": {
+      "areas": [
+        "FRA",
+        "ITA"
+      ]
+    },
+    "evt-20260925-arcelormittal-kryvyi-rih-shutdown": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20260925-eu-epf-political-agreement": {
+      "areas": [
+        "EU",
+        "UKR"
+      ]
+    },
+    "evt-20260924-eu-ukraine-facility-eighth-payment": {
+      "areas": [
+        "EU",
+        "UKR"
+      ]
+    },
+    "evt-20260924-nordic-qra-international-airspace": {
+      "areas": [
+        "BALTIC_SEA"
+      ],
+      "note": "Mezinárodní vzdušný prostor nad Finským zálivem; neoznačeno jako narušení finského či švédského území."
+    },
+    "evt-20260925-poland-starlink-arson-prosecutor": {
+      "areas": [
+        "POL"
+      ]
+    },
+    "evt-20260925-munich-gru-attribution-report": {
+      "areas": [
+        "DEU"
+      ]
+    },
+    "evt-20260924-estonian-threat-assessment-unchanged": {
+      "areas": [
+        "EST"
+      ]
+    },
+    "evt-20260927-romania-airspace-target": {
+      "areas": [
+        "ROU"
+      ]
+    },
+    "evt-20260927-ukraine-air-strikes": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20260926-germany-russia-fm-talks": {
+      "areas": [
+        "DEU",
+        "RUS"
+      ]
+    },
+    "evt-20260928-russia-authorized-strength-decree-700": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "evt-20260928-29-ukraine-presidential-assessment-and-air-campaign": {
+      "areas": [
+        "UKR",
+        "RUS",
+        "PRK"
+      ]
+    },
+    "evt-20260928-dorohusk-strike-no-polish-airspace-breach": {
+      "areas": [
+        "UKR",
+        "POL"
+      ]
+    },
+    "evt-20260929-belarus-annual-mobilization-readiness-training": {
+      "areas": [
+        "BLR"
+      ]
+    },
+    "evt-20260928-eu-sanctions-ukrainian-children": {
+      "areas": [
+        "EU",
+        "UKR"
+      ]
+    },
+    "evt-20260926-danwatch-perimetr-historical-modernization": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "evt-20260928-us-russia-envoy-energy-talks": {
+      "areas": [
+        "USA",
+        "RUS"
+      ]
+    },
+    "evt-20260929-estonia-milrem-russian-attribution": {
+      "areas": [
+        "EST"
+      ]
+    },
+    "evt-20260929-ukraine-nasams-delivery-disclosure": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20260929-estonia-taro-internal-security-assessment": {
+      "areas": [
+        "EST"
+      ]
+    },
+    "evt-20260930-kyiv-overnight-strikes": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20260928-29-russian-kaliningrad-conditional-threats": {
+      "areas": [
+        "RUS",
+        "NATO"
+      ],
+      "note": "Předmětem výhrůžky je ruské území a vztah k NATO, nikoli místo ambasád."
+    },
+    "evt-20260928-reuters-russia-2027-defense-budget": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "obs-20260930-metaculus-mobilization-benchmark": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "obs-20260930-polymarket-mobilization-benchmark": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "evt-20260515-kirov-forced-contract-mediazona": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "evt-20260930-iditelesom-conscription-coercion": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "corr-20260930-bloomberg-mobilization-timing": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "evt-20261001-russia-autumn-conscription-plan": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "evt-20260930-ukraine-energy-operator-restrictions": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20260930-nato-current-threat-assessment": {
+      "areas": [
+        "NATO"
+      ]
+    },
+    "obs-20260930-certlv-election-cyber-stable": {
+      "areas": [
+        "LVA"
+      ]
+    },
+    "evt-20260925-iaea-znpp-backup-fuel": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20260929-poland-2025-sabotage-preparation-verdict": {
+      "areas": [
+        "POL"
+      ]
+    },
+    "obs-20261001-ukraine-grid-restrictions-not-applied": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20261001-putin-valdai-conditional-signalling": {
+      "areas": [
+        "RUS",
+        "UKR"
+      ]
+    },
+    "evt-20260930-latvia-defence-minister-threat-assessment": {
+      "areas": [
+        "LVA"
+      ]
+    },
+    "evt-20261001-belarus-battalion-readiness-check-update": {
+      "areas": [
+        "BLR"
+      ]
+    },
+    "claim-20261001-rostov-forced-contract-iditelesom": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "evt-20261001-uk-sanctions-and-lng-licensing": {
+      "areas": [
+        "GBR",
+        "JPN",
+        "KOR"
+      ]
+    },
+    "evt-20261001-03-kyiv-transport-disruption": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "obs-20261002-ukraine-grid-outlook": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20261002-eu-ukraine-facility-payment-received": {
+      "areas": [
+        "EU",
+        "UKR"
+      ]
+    },
+    "claim-20261002-hur-europe-sabotage-warning": {
+      "areas": [
+        "EU",
+        "NATO"
+      ]
+    },
+    "evt-20260628-latvia-gru-couple-disclosed-20260930": {
+      "areas": [
+        "LVA"
+      ]
+    },
+    "evt-20261002-iaea-znpp-safety-update369": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20261003-russian-mfa-renewed-kyiv-warning": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "claim-20261003-hur-mobilization-carousel": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "obs-20261004-certlv-election-no-disruption": {
+      "areas": [
+        "LVA"
+      ]
+    },
+    "obs-20261003-ukrenergo-outlook-oct4": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "claim-20261003-zelensky-reuters-new-strike-policy": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "reported-202609-gulf-air-defence-allocation-discovered-oct4": {
+      "areas": [
+        "GULF"
+      ],
+      "note": "Záliv jako širší oblast; konkrétní hostitelská země není ve shrnutí určena."
+    },
+    "evt-20261004-germany-kyiv-visit-support": {
+      "areas": [
+        "UKR",
+        "DEU"
+      ]
+    },
+    "evt-20261004-kyiv-transport-heating-disruption": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20261004-russian-mod-intensification-statement": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20261004-belarus-csto-contingent-return": {
+      "areas": [
+        "BLR",
+        "RUS"
+      ]
+    },
+    "evt-20261002-estonia-kiviselg-threat-mobilization-assessment": {
+      "areas": [
+        "EST",
+        "RUS"
+      ]
+    },
+    "evt-20261003-lithuania-alert-unidentified-object": {
+      "areas": [
+        "LTU"
+      ]
+    },
+    "reported-20261004-eu-montenegro-diplomatic-presence": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "obs-20261004-ukrenergo-outlook-oct5": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20261005-german-intelligence-hearing": {
+      "areas": [
+        "DEU",
+        "NATO",
+        "UKR"
+      ]
+    },
+    "evt-20261005-black-sea-merchant-vessel": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "note": "Rumunská výlučná ekonomická zóna není totožná s rumunskými teritoriálními vodami."
+    },
+    "obs-20261005-ukrenergo-actual-and-oct6-outlook": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "obs-20261006-romania-alert-no-incursion": {
+      "areas": [
+        "ROU"
+      ]
+    },
+    "evt-20261005-belarus-reserve-course-end": {
+      "areas": [
+        "BLR"
+      ]
+    },
+    "reported-20261005-iditelesom-coercion-retrospective": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "followup-20261004-eu-embassies-full-interview": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "reported-20261005-rubio-kyiv-presence": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "reported-20261005-rosatom-znpp-damage": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "reported-20261006-zaporizhzhia-bridge-disruption": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20261006-ukrenergo-restrictions-return": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "claim-20261006-zelensky-mass-strike-warning": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20261006-bulgaria-two-merchant-ships": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "note": "Bulharská výlučná ekonomická zóna; bez falešného bodu uvnitř bulharského území."
+    },
+    "evt-20261006-lithuania-constitutional-first-vote": {
+      "areas": [
+        "LTU"
+      ]
+    },
+    "obs-20261006-us-ukrenergo-meeting": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "claim-20261006-moscow-contract-questionnaire": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "evt-20261007-ukraine-mass-strike-confirmed": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "obs-20261007-ukrenergo-actual-emergency-oct8-plan": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "reported-20261007-pet-sabotage-shift": {
+      "areas": [
+        "DNK"
+      ]
+    },
+    "evt-20261007-eu-defence-loan-disbursement": {
+      "areas": [
+        "EU",
+        "UKR"
+      ]
+    },
+    "followup-20261007-bulgaria-security-council": {
+      "areas": [
+        "BGR",
+        "BLACK_SEA"
+      ]
+    },
+    "evt-20261007-belarus-territorial-check": {
+      "areas": [
+        "BLR"
+      ]
+    },
+    "reported-20261007-belarus-artillery-check-scale": {
+      "areas": [
+        "BLR"
+      ]
+    },
+    "reported-202609-iditelesom-coercion-oct7-update": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "evt-20261008-uk-germany-counterhybrid-announcement": {
+      "areas": [
+        "GBR",
+        "DEU"
+      ]
+    },
+    "obs-20261008-09-ukrenergo-worsening-restrictions": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "reported-20261008-mchs-reserve-fire-service-draft": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "evt-20261008-uk-sanctions-38": {
+      "areas": [
+        "GBR"
+      ]
+    },
+    "evt-20261008-uk-visit-winter-package": {
+      "areas": [
+        "UKR",
+        "GBR"
+      ]
+    },
+    "followup-20261008-uk-germany-meeting": {
+      "areas": [
+        "DEU",
+        "GBR"
+      ]
+    },
+    "evt-20261008-eu-hybrid-sanctions-renewal": {
+      "areas": [
+        "EU"
+      ]
+    },
+    "followup-20261008-bulgaria-no-debris": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "note": "Vyšetřování námořního případu; bez určené polohy trosek."
+    },
+    "followup-20261007-bulgaria-pm-attribution-dispute": {
+      "areas": [
+        "BGR",
+        "BLACK_SEA"
+      ]
+    },
+    "review-20261009-pet-public-statements-context": {
+      "areas": [
+        "DNK"
+      ]
+    },
+    "evt-20261009-belarus-csto-arrivals": {
+      "areas": [
+        "BLR"
+      ]
+    },
+    "evt-20261008-nato-steadfast-noon-announcement": {
+      "areas": [
+        "ITA",
+        "NATO"
+      ]
+    },
+    "evt-20261008-lithuania-border-support": {
+      "areas": [
+        "LTU"
+      ]
+    },
+    "reported-20261006-latvia-armed-border-provocation": {
+      "areas": [
+        "LVA",
+        "BLR"
+      ]
+    },
+    "reported-20261008-reuters-nord-stream-talks": {
+      "areas": [
+        "BALTIC_SEA"
+      ],
+      "note": "Jednání se týká podmořského potrubního propojení v Baltském moři; neznačí nový fyzický incident."
+    },
+    "evt-20261009-us-russian-diesel-license-135": {
+      "areas": [
+        "USA",
+        "RUS"
+      ]
+    },
+    "evt-20261005-us-diesel-tax-relief-discovered-oct10": {
+      "areas": [
+        "USA"
+      ]
+    },
+    "obs-20261009-ukrenergo-partial-recovery-oct10-plan": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20261009-kyiv-partner-visits": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "reported-20261009-military-police-draft-171657": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "claim-20261009-moscow-conscription-summons": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "obs-20261009-mediazona-backlog-update": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "followup-20261009-bulgaria-ship-inspection": {
+      "areas": [
+        "BLACK_SEA"
+      ]
+    },
+    "obs-20261009-latvia-air-defence-context": {
+      "areas": [
+        "LVA"
+      ]
+    },
+    "obs-20261010-ukrenergo-kyiv-damage-oct11-plan": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "reported-20261010-trump-zelensky-diesel-pressure": {
+      "areas": [
+        "USA",
+        "UKR"
+      ]
+    },
+    "reported-20261010-russia-diesel-export-exception": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "evt-20261010-uk-ukraine-call-sanctions-position": {
+      "areas": [
+        "GBR",
+        "UKR"
+      ]
+    },
+    "followup-20261009-palloson-sabotage-effect-interview": {
+      "areas": [
+        "EST"
+      ]
+    },
+    "followup-20261009-iaea-znpp-update370": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "reported-20261008-ukraine-data-centre-strikes-claim": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "obs-20261011-12-ukrenergo-outages-oct13-plan": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20261012-eu-military-industry-listings": {
+      "areas": [
+        "EU"
+      ]
+    },
+    "evt-20261012-ukraine-conditional-energy-truce-position": {
+      "areas": [
+        "UKR",
+        "RUS"
+      ]
+    },
+    "followup-20261012-reuters-miami-support-contradiction": {
+      "areas": [
+        "USA",
+        "UKR"
+      ]
+    },
+    "followup-20261012-belarus-csto-exercise-start": {
+      "areas": [
+        "BLR"
+      ]
+    },
+    "evt-20261012-belarus-mechanized-battalion-check": {
+      "areas": [
+        "BLR"
+      ]
+    },
+    "reported-20261012-gatchina-routine-conscription-departure": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "obs-20261012-irkutsk-routine-conscription-departure": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "reported-20261012-zabaykal-reserve-summons-explanation": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "reported-20261012-nato-saceur-warsaw-assessment": {
+      "areas": [
+        "NATO"
+      ]
+    },
+    "obs-20261013-ukrenergo-outages-oct14-plan": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "reported-20261013-kyiv-energy-hit-warning-gaps": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "followup-20261013-us-intelligence-continuity-and-threat": {
+      "areas": [
+        "UKR",
+        "USA"
+      ]
+    },
+    "evt-20261013-bulgaria-new-merchant-ships": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "note": "Námořní případy v bulharské výlučné ekonomické zóně, nikoli určené body na pevnině."
+    },
+    "reported-20261013-france-refrigeration-cyber-effects": {
+      "areas": [
+        "FRA"
+      ]
+    },
+    "followup-20261012-latvia-black-rus-claim": {
+      "areas": [
+        "LVA",
+        "BLR"
+      ]
+    },
+    "reported-20261013-yakutia-reserve-summons": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "claim-20261013-regional-coercive-contracts": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "followup-20261013-belarus-planned-readiness-explanation": {
+      "areas": [
+        "BLR"
+      ]
+    },
+    "reported-20261012-france-tanker-interdiction": {
+      "areas": [
+        "FRA"
+      ]
+    },
+    "obs-20261014-ukrenergo-energy-strike-oct15-plan": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "reported-20261014-starshield-restriction-partial-recovery": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "followup-20261014-ihnat-partial-warning-coverage": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20261014-nato-estonia-current-threat-assessment": {
+      "areas": [
+        "NATO",
+        "EST"
+      ]
+    },
+    "assessment-20261013-mi5-hybrid-threat": {
+      "areas": [
+        "EUROPE"
+      ],
+      "note": "Hodnocení kampaně v Evropě; sídlo služby není automaticky místem nového incidentu."
+    },
+    "evt-20261014-romania-evening-airspace-incursion": {
+      "areas": [
+        "ROU"
+      ]
+    },
+    "reported-20261014-yara-j-fire-cause-open": {
+      "areas": [
+        "ROU"
+      ]
+    },
+    "evt-20261014-uk-air-defence-support-package": {
+      "areas": [
+        "GBR",
+        "UKR"
+      ]
+    },
+    "analysis-20261008-kluge-september-recruitment": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "followup-20261013-rferl-coercion-evidence-limits": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "claim-20261014-15-russian-maritime-strikes": {
+      "areas": [
+        "UKR",
+        "BLACK_SEA"
+      ]
+    },
+    "followup-20261015-starshield-restoration-conflicting": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "reported-20261015-ap-unit-connectivity-restored": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "reported-20261015-cnn-patriot-critical-shortage": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "obs-20261015-ukrenergo-new-damage-oct16-plan": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "followup-20261015-romania-maritime-drone-assessment": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "note": "Námořní série; přesné rozdělení mezi výlučnou ekonomickou zónu a teritoriální vody není v tomto záznamu stanoveno."
+    },
+    "reported-20261015-reuters-nato-maritime-attribution": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "note": "Atribuce námořních incidentů neurčuje nový útok na ruském území."
+    },
+    "evt-20261015-nato-black-sea-consultations": {
+      "areas": [
+        "BLACK_SEA",
+        "BGR",
+        "ROU"
+      ]
+    },
+    "obs-20261015-romania-incursion-and-later-no-breach": {
+      "areas": [
+        "ROU"
+      ]
+    },
+    "followup-20261012-poland-starlink-arrests": {
+      "areas": [
+        "POL",
+        "DEU"
+      ]
+    },
+    "reported-20261015-bulgaria-starlink-investigation": {
+      "areas": [
+        "BGR"
+      ]
+    },
+    "evt-20261015-eu-sanctions-circumvention-listings": {
+      "areas": [
+        "EU"
+      ]
+    },
+    "obs-20261015-belarus-reserve-course-completion": {
+      "areas": [
+        "BLR"
+      ]
+    },
+    "claim-20261015-job-offer-coercive-contract-cases": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "analysis-20261015-reuters-drone-capacity-construction": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "followup-20261015-ukraine-resumes-energy-strikes": {
+      "areas": [
+        "UKR",
+        "RUS"
+      ]
+    },
+    "evt-20261016-us-graham-sanctions-waiver": {
+      "areas": [
+        "USA"
+      ]
+    },
+    "reported-20261015-reuters-white-house-starshield-order": {
+      "areas": [
+        "UKR",
+        "USA"
+      ]
+    },
+    "reported-20261016-telegraph-starshield-decision": {
+      "areas": [
+        "UKR",
+        "USA"
+      ]
+    },
+    "followup-20261016-ap-starshield-cap-persistent": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20261016-european-council-ukraine-conclusions": {
+      "areas": [
+        "EU",
+        "UKR"
+      ]
+    },
+    "obs-20261016-ukrenergo-new-damage-oct17-plan": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "obs-20261016-csto-exercises-closed": {
+      "areas": [
+        "BLR"
+      ]
+    },
+    "obs-20261017-romania-alert-no-incursion": {
+      "areas": [
+        "ROU"
+      ]
+    },
+    "claim-20261016-coercive-contract-client-reports": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "followup-20261016-certfr-recommendations-update": {
+      "areas": [
+        "FRA"
+      ]
+    },
+    "obs-20261015-nukib-september-incidents": {
+      "areas": [
+        "CZE"
+      ]
+    },
+    "obs-20261016-iaea371-local-ceasefire": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20261017-romania-two-geran-interceptions": {
+      "areas": [
+        "ROU"
+      ],
+      "note": "Výslovně doložen rumunský vzdušný prostor nad teritoriálním mořem."
+    },
+    "claim-20261017-zelensky-connectivity-geographic-test": {
+      "areas": [
+        "UKR",
+        "EUROPE"
+      ]
+    },
+    "reported-20261017-rubio-connectivity-product-denial": {
+      "areas": [
+        "USA",
+        "UKR"
+      ]
+    },
+    "evt-20261016-us-senators-connectivity-inquiry-request": {
+      "areas": [
+        "USA"
+      ]
+    },
+    "reported-20261016-tusk-pre-christmas-hybrid-warning": {
+      "areas": [
+        "POL",
+        "BALTICS"
+      ]
+    },
+    "claim-20261017-zelensky-belarus-relays-missiles": {
+      "areas": [
+        "BLR"
+      ]
+    },
+    "followup-20261017-csto-closing-date-discrepancy": {
+      "areas": [
+        "BLR"
+      ]
+    },
+    "obs-20261017-ukrenergo-oct18-milder-plan": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "obs-20261016-estonia-brave-blue-scheduled-exercise": {
+      "areas": [
+        "EST"
+      ]
+    },
+    "reported-20261018-lithuania-starlink-arson-attempt": {
+      "areas": [
+        "LTU"
+      ]
+    },
+    "evt-20261018-lithuania-drone-alert": {
+      "areas": [
+        "LTU"
+      ]
+    },
+    "claim-20261018-ukraine-lithuania-drone-diversion": {
+      "areas": [
+        "LTU"
+      ]
+    },
+    "followup-20261018-19-zelensky-warning-continuity": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "reported-20261018-zelensky-patriot-delivery-delay": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "obs-20261019-ukrenergo-new-damage-weather-separation": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20261018-zelensky-us-envoys-call": {
+      "areas": [
+        "USA",
+        "UKR"
+      ]
+    },
+    "followup-20261017-18-us-sanctions-review-motives": {
+      "areas": [
+        "USA"
+      ]
+    },
+    "followup-20261019-lithuania-drone-assessment": {
+      "areas": [
+        "LTU"
+      ]
+    },
+    "followup-20261019-bulgaria-arrest-warrants": {
+      "areas": [
+        "BGR"
+      ]
+    },
+    "followup-20261019-ihnat-warning-coverage": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "followup-20261019-rubio-connectivity-account": {
+      "areas": [
+        "UKR",
+        "USA"
+      ]
+    },
+    "evt-20261019-us-senators-spacex-letter": {
+      "areas": [
+        "USA"
+      ]
+    },
+    "obs-20261019-ukrenergo-oct20-plan": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20261019-belarus-air-assault-unit-check": {
+      "areas": [
+        "BLR"
+      ]
+    },
+    "obs-20261019-iditelesom-border-enforcement": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "followup-20261018-trump-iran-sanctions-rationale": {
+      "areas": [
+        "USA",
+        "IRN"
+      ]
+    },
+    "followup-20261020-zelensky-warning-restoration": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "followup-20261020-rubio-interceptor-warning-account": {
+      "areas": [
+        "USA",
+        "UKR"
+      ]
+    },
+    "evt-20261020-france-business-relief": {
+      "areas": [
+        "FRA"
+      ]
+    },
+    "evt-20261020-norway-sanctions-implementation": {
+      "areas": [
+        "NOR"
+      ]
+    },
+    "followup-20261020-eeas-black-sea-assessment": {
+      "areas": [
+        "BLACK_SEA"
+      ]
+    },
+    "followup-20261020-lithuania-poland-drone-inquiry": {
+      "areas": [
+        "LTU",
+        "POL"
+      ]
+    },
+    "obs-20261021-romania-alert-no-incursion": {
+      "areas": [
+        "ROU"
+      ]
+    },
+    "followup-20261020-belarus-unit-check-training": {
+      "areas": [
+        "BLR"
+      ]
+    },
+    "claim-20261020-iditelesom-contract-pressure": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "obs-20261020-ukrenergo-damage-oct21-plan": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "reported-20261020-south-korea-embassy-drawdown-decision": {
+      "areas": [
+        "KOR",
+        "UKR"
+      ],
+      "note": "Politika Korejské republiky a diplomatická přítomnost na Ukrajině; nejde o incident v KLDR."
+    },
+    "evt-20261020-oslo-consultations": {
+      "areas": [
+        "NOR"
+      ]
+    },
+    "evt-20261020-nato-black-sea-surveillance": {
+      "areas": [
+        "BLACK_SEA"
+      ]
+    },
+    "obs-20261020-bulgaria-us-patrol-confirmation": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "note": "Hlídka nad Černým mořem; země původu letounu není místem zásahu."
+    },
+    "evt-20261020-italy-security-reinforcement": {
+      "areas": [
+        "ITA"
+      ]
+    },
+    "reported-20261021-italy-foreign-role-inquiry": {
+      "areas": [
+        "ITA"
+      ]
+    },
+    "reported-20261021-unrest-attribution-limits": {
+      "areas": [
+        "FRA"
+      ]
+    },
+    "obs-20261021-ukrenergo-damage-oct22-plan": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "reported-20261021-romania-debris-discovery": {
+      "areas": [
+        "ROU"
+      ]
+    },
+    "evt-20261021-putin-witkoff-meeting": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "followup-20261021-norway-support-plans": {
+      "areas": [
+        "NOR",
+        "UKR"
+      ]
+    },
+    "obs-20261021-iditelesom-monthly-coercion-sample": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "obs-20261021-lithuania-scheduled-exercise": {
+      "areas": [
+        "LTU"
+      ]
+    },
+    "obs-20261022-belarus-routine-conscript-dispatch": {
+      "areas": [
+        "BLR"
+      ]
+    },
+    "evt-20261021-germany-bundeswehr-sabotage-assessment": {
+      "areas": [
+        "DEU"
+      ]
+    },
+    "reported-20261021-wsj-sabotage-direction": {
+      "areas": [
+        "EUROPE",
+        "DEU"
+      ]
+    },
+    "reported-20261022-verstka-coercion-geography": {
+      "areas": [
+        "RUS",
+        "UKR"
+      ],
+      "note": "Ruské regiony a okupovaný Krym; Krym je anotován jako území Ukrajiny."
+    },
+    "corr-20261023-iditelesom-repeated-monthly-sample": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "context-20261022-vottak-old-mobilization-preparation-repost": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "followup-20261022-starshield-restoration-disputed": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20261022-estonia-purl-contribution": {
+      "areas": [
+        "EST",
+        "UKR"
+      ]
+    },
+    "evt-20261022-finland-ukraine-cooperation-agreements": {
+      "areas": [
+        "FIN",
+        "UKR"
+      ]
+    },
+    "obs-20261022-ukrenergo-new-damage": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20261022-belarus-russia-defence-meeting": {
+      "areas": [
+        "BLR",
+        "RUS"
+      ]
+    },
+    "evt-20261022-belarus-command-appointments": {
+      "areas": [
+        "BLR"
+      ]
+    },
+    "evt-20261022-romania-csat-maritime-response": {
+      "areas": [
+        "ROU",
+        "BLACK_SEA"
+      ]
+    },
+    "evt-20261023-khoryv-capsize-rescue": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "note": "Podklad uvádí polohu mimo teritoriální vody, proto pouze region Černé moře."
+    },
+    "analysis-20261023-ambrey-khoryv-assessment": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "note": "Analytické hodnocení námořního případu; nikoli nový incident v sídle autora."
+    },
+    "followup-20261023-starshield-restrictions-persist": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "obs-20261023-iaea372-transformer-repair": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "IAEA potvrdila opravu záložního transformátoru"
+    },
+    "obs-20261023-ukrenergo-outages-oct24-plan": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "claim-20261023-ukraine-digital-damage-september": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20261023-germany-espionage-remand": {
+      "areas": [
+        "DEU"
+      ],
+      "title": "Německá prokuratura oznámila vazbu kvůli špionáži"
+    },
+    "claim-20261023-iditelesom-document-checks": {
+      "areas": [
+        "RUS"
+      ]
+    },
+    "obs-20261022-latvia-alert-object-not-drone": {
+      "areas": [
+        "LVA"
+      ],
+      "title": "NBS: sledovaný objekt nebyl dron"
+    },
+    "evt-20261023-prisoner-exchange": {
+      "areas": [
+        "UKR",
+        "RUS"
+      ],
+      "title": "Proběhla výměna zajatců a civilistů"
+    },
+    "evt-20261023-oleshky-ceasefire-announcement": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20261023-belarus-military-attache-visit": {
+      "areas": [
+        "BLR"
+      ],
+      "title": "Běloruské ministerstvo zveřejnilo návštěvu přidělenců"
+    },
+    "evt-20261023-romania-us-defence-talks": {
+      "areas": [
+        "ROU"
+      ],
+      "title": "Rumunské ministerstvo potvrdilo obranné jednání"
+    },
+    "obs-20261024-starshield-official-restoration": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrajinské ministerstvo hlásí obnovené spojení"
+    },
+    "evt-20261024-latvia-drone-discovery": {
+      "areas": [
+        "LVA"
+      ],
+      "title": "Lotyšsko vyšetřuje nález zahraničního dronu"
+    },
+    "obs-20261023-auvere-investigation-closed": {
+      "areas": [
+        "EST"
+      ],
+      "title": "Estonská prokuratura uzavřela vyšetřování Auvere"
+    },
+    "obs-20261024-france-protests-security-costs": {
+      "areas": [
+        "FRA"
+      ]
+    },
+    "obs-20261024-ukrenergo-oct25-restrictions-plan": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "assessment-20261022-uk-parliament-hybrid-campaign": {
+      "areas": [
+        "EUROPE"
+      ]
+    },
+    "baseline-20261021-latvia-resolute-reforger-schedule": {
+      "areas": [
+        "LVA"
+      ]
+    },
+    "baseline-20261014-lithuania-budri-peleda-schedule": {
+      "areas": [
+        "LTU"
+      ]
+    },
+    "followup-20261024-khoryv-search-continued": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "note": "Pátrání na moři; oznámení rumunské služby samo neurčuje polohu na rumunském území."
+    },
+    "followup-20261025-zelensky-support-restoration": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "claim-20261025-26-russian-mod-merchant-strikes": {
+      "areas": [
+        "UKR",
+        "BLACK_SEA"
+      ]
+    },
+    "followup-20261025-khoryv-navigation-status": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "note": "Navigační aktualizace námořního případu, ne nový útok v Rumunsku."
+    },
+    "claim-20261023-stpetersburg-mall-registration": {
+      "areas": [
+        "RUS"
+      ],
+      "title": "NGO zveřejnila svědectví o nátlaku při evidenci"
+    },
+    "followup-20261025-oleshky-start-statement": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "obs-20261025-ukraine-strike-effects": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "obs-20261025-ukrenergo-oct26-restrictions-plan": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "assessment-20261023-svt-ebu-hybrid-compilation": {
+      "areas": [
+        "EUROPE"
+      ]
+    },
+    "obs-20261023-lublin-search-ended": {
+      "areas": [
+        "POL"
+      ],
+      "title": "Pátrání po hlášeném objektu skončilo bez nálezu"
+    },
+    "reported-20261024-musk-terms-dispute": {
+      "areas": [
+        "UKR"
+      ]
+    },
+    "evt-20261026-sri-carfil-attribution": {
+      "areas": [
+        "ROU",
+        "DEU",
+        "POL"
+      ],
+      "note": "Požár v Rumunsku, navazující zadržení v Německu a lokalizace podezřelého v Polsku. Více přiřazení se stále počítá jako jeden záznam.",
+      "title": "SRI zveřejňuje atribuci zářijového požáru"
+    },
+    "followup-20261026-eu-epf-eight-decisions": {
+      "areas": [
+        "EU",
+        "UKR"
+      ],
+      "title": "Rada EU přijala rozhodnutí o financování pomoci"
+    },
+    "followup-20261027-oleshky-ceasefire-start": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Obě strany oznámily začátek místního příměří"
+    },
+    "followup-20261026-lithuania-exercise-completed": {
+      "areas": [
+        "LTU"
+      ],
+      "title": "Litevská armáda oznámila dokončení cvičení"
+    },
+    "followup-20261026-zelensky-interceptor-authorization-delay": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Zelenskyj upřesňuje prodlevu v povolení interceptorů"
+    },
+    "obs-20261026-27-ukrenergo-new-outages": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo hlásí další výpadky v regionech"
+    },
+    "obs-20261026-27-ukraine-strike-effects": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Prezidentská hlášení popisují další škody"
+    },
+    "claim-20261027-russian-mod-unnamed-cargo-strike": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "note": "Nepojmenovaná loď; nepřidělovat bez ověření k případu Khoryv ani ke konkrétnímu pobřežnímu státu."
+    },
+    "reported-20261026-iditelesom-september-foreigners": {
+      "areas": [
+        "RUS"
+      ],
+      "title": "NGO zveřejňuje zářijové žádosti cizinců"
+    },
+    "baseline-20261026-27-belarus-command-intake": {
+      "areas": [
+        "BLR"
+      ],
+      "title": "Bělorusko představuje velitele a sezonní nástup"
+    },
+    "analysis-20261026-acled-france-protest-drivers": {
+      "areas": [
+        "FRA"
+      ],
+      "title": "ACLED rozebírá domácí příčiny protestů"
+    }
+  }
+}

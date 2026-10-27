@@ -6,6 +6,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 from build_site import ROOT, DATA, validate, public_text
+from signals import geography, payload as signals_payload
 from bilingual import english_path
 
 
@@ -33,7 +34,7 @@ class Links(HTMLParser):
 
 
 def check():
-    state, _, reports = validate()
+    state, evidence, reports = validate()
     site = ROOT / "_site"
     problems = []
     parsed = {}
@@ -54,6 +55,16 @@ def check():
     public_state = json.loads((site / "data/state.json").read_text())
     if public_state["hypotheses"] != state["hypotheses"]:
         problems.append("Published probabilities differ from state.json")
+    signals = json.loads((site / "data/signals.json").read_text())
+    annotations = geography(ROOT / "russia-escalation/geography.json", evidence)
+    if signals != json.loads(public_text(json.dumps(signals_payload(state, evidence, annotations), ensure_ascii=False))):
+        problems.append("Map data differ from the complete ledger and geographic annotations")
+    if json.loads((site / "data/geography.json").read_text()) != annotations:
+        problems.append("Published geography differs from source annotations")
+    if len(signals["records"]) != len(evidence) or {record["id"] for record in signals["records"]} != {record["id"] for record in evidence}:
+        problems.append("Map lost or duplicated evidence records")
+    if (site / "signals.html").resolve() not in parsed:
+        problems.append("Map and signals page is missing")
     index = json.loads((site / "data/reports.json").read_text())
     if {r["id"] for r in index} != {p.stem for p in reports}:
         problems.append("Archive index does not match the report history")

@@ -781,6 +781,41 @@ Do not append duplicate derivatives of the same source line as independent evide
 
 They may be recorded as provenance children if useful, but must not increase corroboration count.
 
+### Geographic annotations for the public map
+
+Maintain `russia-escalation/geography.json` alongside the append-only ledger.
+Its `schema_version` is `1`; `entries` maps stable evidence IDs to objects with
+`areas` and optional `note` and `title`. Area identifiers and their country/region
+types are defined in `scripts/signals.py`. Update `reviewed_at` only after reviewing
+the annotations. This is metadata maintenance, not a new forecast assessment.
+
+- Add an annotation for each genuinely new evidence item during the normal full
+  research workflow. Use an empty `areas` list and an explanatory `note` when the
+  geography is unknown. Missing annotations remain visibly unknown on the map;
+  never fabricate geography to satisfy coverage.
+- Annotate the geographic subject of the evidence, at country or regional level.
+  Do not infer an incident location from a speaker's nationality, an embassy,
+  the publishing outlet, or the location of an intelligence service.
+- Keep general NATO/EU/Baltic warnings regional unless a source specifically
+  narrows them. Do not allocate a regional record to every member country.
+- Separate exclusive economic zones from territorial waters. Use the relevant
+  sea region for offshore incidents without an established country-level scope.
+- Multiple areas may apply to one record, which still counts only once in the
+  evidence list. A geographic annotation establishes neither Russian attribution
+  nor escalation intent. Do not add tactical sites, targets, or guessed coordinates.
+- Optional short titles must preserve attribution, uncertainty and the distinction
+  between an announcement, a plan and an observed result.
+- Keep the original ledger, report and snapshot contents immutable. Correct an
+  annotation in this sidecar with a reason in `note` and normal Git history.
+  Do not advance `state.json.assessment_time`, alter probabilities, or create a
+  new report merely to update geography or the interface.
+- The map derives all temporal fields from the saved evidence. Preserve missing,
+  monthly, planned and disputed dates; do not invent an event date to fill a chart.
+
+The normal publication script includes `geography.json` in its exact data
+allowlist, validates its IDs and area identifiers, and builds the complete map
+data. Run the existing tests, build and site checks before publication.
+
 ## watchlist.json
 
 Track what would strengthen or weaken active hypotheses.

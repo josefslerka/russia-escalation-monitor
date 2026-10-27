@@ -46,3 +46,15 @@ Od zavedení automatického publikování se ukládá také samostatný JSON sn�
 Ranní rešerše je plánována na 7:00 v časovém pásmu Europe/Prague v místním Codexu. Dokončení a zveřejnění následuje po rešerši a kontrole. Počítač i aplikace musejí běžet a mít přístup k síti. Datum uzávěrky na webu vždy ukazuje poslední skutečně dokončené hodnocení.
 
 Při selhání zůstává dostupná předchozí zpráva. Starý obsah se neoznačuje novým datem. Web upozorní, pokud je poslední hodnocení starší než 48 hodin.
+
+## Mapa a geografické údaje
+
+[Mapa a signály](signals.html) propojuje úplnou uloženou evidenci s mapou, časovou osou a filtry. Čísla označují záznamy evidence, nikoli počet útoků, nezávislých potvrzení nebo velikost hrozby. Zahrnují také opravy, aktualizace, plánované kroky a důkazy proti eskalaci. Směr signálu přebíráme z původního záznamu; sám neznamená změnu pravděpodobnosti.
+
+Geografické anotace jsou uloženy [samostatně](data/geography.json) pod stálými ID důkazů. Ruční klasifikace označuje geografický předmět záznamu na úrovni zemí nebo regionů. Není novým důkazem, automatickou ruskou atribucí ani ověřenou souřadnicí incidentu. Sídlo zpravodajské služby či média neurčuje místo varovaného útoku. Obecná varování pro NATO nebo EU nerozdělujeme mezi jednotlivé státy. Výlučnou ekonomickou zónu nepovažujeme za teritoriální vody; neurčené námořní případy zůstávají u mořského regionu.
+
+Záznam může zahrnovat několik zemí: započítá se jednou v seznamu a jednou u každé přiřazené země. Součet čísel v mapě proto nemusí odpovídat počtu záznamů. Regionální a neurčené údaje se neumisťují do smyšleného bodu; stránka uvádí jejich počet zvlášť. Chybějící nová anotace zůstane označena jako neurčená geografie. Kartografické hranice jsou orientační; mapový podklad pochází z [Natural Earth](https://www.naturalearthdata.com/) prostřednictvím [d3-maps atlas](https://github.com/d3-maps/atlas).
+
+Časová osa odděluje událost či plán, zveřejnění a zařazení do monitoru. Časové značky s pásmem převádíme na kalendářní den Europe/Prague; původní údaj zůstává v detailu. Intervaly filtrujeme podle překryvu, do sloupců je řadíme jednou podle začátku. Měsíční přesnost nevytváří domnělý den: v denním či týdenním zobrazení ji uvádíme mimo sloupce. Nejednoznačné popisy a rozporné termíny zůstávají neurčené. Jejich zahrnutí do seznamu lze zapnout zvlášť. Datum události označuje předmět daného záznamu, který může být například novým závěrem vyšetřování staršího útoku; původní formulace je vždy dostupná v detailu.
+
+Mapová stránka používá stejné datum uzávěrky jako poslední skutečně dokončená rešerše. Doplnění geografie ani změna vzhledu nevytváří nové analytické hodnocení a nemění archivní zprávy či snímky.

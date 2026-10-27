@@ -6,6 +6,25 @@ Průběžná OSINT předpověď ruské eskalace s veřejným archivem.
 - Pracovní metodika: [AGENTS.md](AGENTS.md)
 - Aktuální stav a úplné zdroje: [russia-escalation/](russia-escalation/)
 
+## Mapa a signály
+
+[Mapa a signály](https://josefslerka.github.io/russia-escalation-monitor/signals.html)
+propojuje úplnou evidenci s mapou Evropy a světa, časovou osou a filtry podle oblasti,
+tématu, doložení a směru signálu. Výběr včetně konkrétního záznamu lze sdílet URL.
+Detail zachovává zdroje, alternativní vysvětlení, rozsah potvrzení a původní časové
+údaje. Stránka má také textový přehled pro případ nedostupného JavaScriptu.
+
+Geografie je anotována podle ID v `russia-escalation/geography.json`; původní
+append-only evidence zůstává beze změny. Země označují geografický předmět, regiony
+se nerozmisťují do domnělých bodů a chybějící anotace zůstávají neurčené. Mapa
+počítá záznamy, nikoli útoky nebo nezávislá potvrzení. Nový důkaz má při ranní
+aktualizaci dostat také geografickou anotaci podle `AGENTS.md`.
+
+Generátor vytváří `data/signals.json` ze všech záznamů a anotací; nejde o další
+úložiště prognóz. Knihovna D3 a mapová geometrie jsou připnuté místní soubory
+v `site/assets/` s původními licencemi. Prohlížeč při čtení mapy nekontaktuje
+externí mapové nebo analytické služby.
+
 ## Jak funguje ranní aktualizace
 
 Každý den v 7:00 Europe/Prague proběhne rešerše v místním Codexu podle `AGENTS.md`.

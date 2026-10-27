@@ -15,6 +15,7 @@ from zoneinfo import ZoneInfo
 
 from markdown_it import MarkdownIt
 from bilingual import REPORT_NAME, TRANSLATION_NAME, english_path, validate_translations
+from signals import geography as load_geography, payload as signals_payload, content as signals_content
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "russia-escalation"
@@ -119,6 +120,7 @@ def validate():
         raise ValueError("Duplicate evidence IDs")
     if not set(state.get("new_evidence_ids", [])).issubset(identifiers):
         raise ValueError("New evidence IDs are missing from evidence.jsonl")
+    load_geography(DATA / "geography.json", evidence)
     read_json(DATA / "watchlist.json")
     all_reports = list((DATA / "reports").glob("*.md"))
     reports = sorted((p for p in all_reports if REPORT_NAME.fullmatch(p.name)), reverse=True)
@@ -134,14 +136,19 @@ def badge(level: str) -> str:
     return f'<span class="badge {escape(level.lower())}">{escape(level)}</span>'
 
 
-def page(title: str, content: str, prefix: str = ".", active: str = "", lang: str = "cs", alternates=None) -> str:
+def page(title: str, content: str, prefix: str = ".", active: str = "", lang: str = "cs", alternates=None, extra_assets=()) -> str:
     css_version = sha256((ROOT / "site/assets/site.css").read_bytes()).hexdigest()[:12]
     js_version = sha256((ROOT / "site/assets/site.js").read_bytes()).hexdigest()[:12]
     en = lang == "en"
     navigation = "".join(
         f'<a href="{prefix}/{path}" hreflang="cs"' + (' aria-current="page"' if active == label else "") + f'>{english if en else label}</a>'
-        for path, label, english in (("index.html", "Přehled", "Overview (Czech)"), ("archive.html", "Archiv", "Archive (Czech)"), ("methodology.html", "Metodika", "Methodology (Czech)"))
+        for path, label, english in (("index.html", "Přehled", "Overview (Czech)"), ("signals.html", "Mapa a signály", "Map and signals (Czech)"), ("archive.html", "Archiv", "Archive (Czech)"), ("methodology.html", "Metodika", "Methodology (Czech)"))
     )
+    asset_tags = []
+    for asset in extra_assets:
+        version = sha256((ROOT / "site" / asset).read_bytes()).hexdigest()[:12]
+        url = escape(f"{prefix}/{asset}?v={version}", quote=True)
+        asset_tags.append(f'<link rel="stylesheet" href="{url}">' if asset.endswith(".css") else f'<script src="{url}" defer></script>')
     alternate_links = "".join(f'<link rel="alternate" hreflang="{language}" href="{escape(href, quote=True)}">'
                               for language, href in (alternates or {}).items())
     name = "Escalation Monitor" if en else "Monitor eskalace"
@@ -151,7 +158,7 @@ def page(title: str, content: str, prefix: str = ".", active: str = "", lang: st
 <html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{escape(title)} · {name}</title><meta name="description" content="{description}">{alternate_links}
 <meta name="color-scheme" content="light"><meta name="referrer" content="strict-origin-when-cross-origin">
-<link rel="stylesheet" href="{prefix}/assets/site.css?v={css_version}"><script src="{prefix}/assets/site.js?v={js_version}" defer></script></head>
+<link rel="stylesheet" href="{prefix}/assets/site.css?v={css_version}"><script src="{prefix}/assets/site.js?v={js_version}" defer></script>{''.join(asset_tags)}</head>
 <body><a class="skip" href="#main">{'Skip to content' if en else 'Přejít na obsah'}</a><header class="masthead"><div class="shell">
 <a class="brand" href="{prefix}/index.html"><span aria-hidden="true">◉</span> {name.upper()}</a><nav class="nav" aria-label="{'Main navigation' if en else 'Hlavní navigace'}">{navigation}</nav></div></header>
 <main id="main" class="shell">{content}</main><footer class="footer"><div class="shell">
@@ -191,8 +198,10 @@ def render_markdown(source: str, known_reports: set[str], prefix: str = "..", la
                 if lang == "en" and not target.name.endswith(".en.md") and english_path(target).name in known_reports:
                     target = english_path(target)
                 child.attrSet("href", f"{prefix}/reports/{target.stem}.html" + (f"#{parsed.fragment}" if parsed.fragment else ""))
-            elif Path(parsed.path).name in ("state.json", "watchlist.json", "evidence.jsonl"):
+            elif Path(parsed.path).name in ("state.json", "watchlist.json", "evidence.jsonl", "geography.json", "signals.json"):
                 child.attrSet("href", f"{prefix}/data/{Path(parsed.path).name}")
+            elif parsed.path in ("index.html", "signals.html", "archive.html", "methodology.html"):
+                child.attrSet("href", f"{prefix}/{parsed.path}" + (f"#{parsed.fragment}" if parsed.fragment else ""))
             elif href.startswith("#"):
                 pass
             else:
@@ -244,7 +253,7 @@ def dashboard(state, reports, evidence_count):
     latest = Path(state["last_report"]).stem
     english_link = f'<a class="button secondary" href="reports/{latest}.en.html" lang="en" hreflang="en">Read in English →</a>' if "en" in reports[0].get("languages", {}) else ""
     return f'''<div class="hero"><div><p class="eyebrow">Hodnocení k <time datetime="{escape(state['assessment_time'])}">{timestamp(state['assessment_time'])}</time></p><h1>Rizika ruské eskalace</h1>
-<p class="lede">{escape(state['one_line_judgment'])}</p><div class="actions"><a class="button" href="reports/{latest}.html">Číst aktuální zprávu →</a>{english_link}<a class="button secondary" href="archive.html">Procházet archiv</a></div></div>
+<p class="lede">{escape(state['one_line_judgment'])}</p><div class="actions"><a class="button" href="reports/{latest}.html">Číst aktuální zprávu →</a>{english_link}<a class="button secondary" href="signals.html">Mapa a signály →</a><a class="button secondary" href="archive.html">Procházet archiv</a></div></div>
 <aside class="status-card" aria-label="Celkové hodnocení"><p class="status-label">Celkový stupeň varování</p>{badge(state['overall_level'])}<span class="trend">{escape(TRENDS[state['overall_trend']])}</span><p class="meta">Kvalitativní hodnocení. Význam stupně a podklady jsou vysvětleny ve zprávě.</p></aside></div>
 <p class="freshness" data-assessment-time="{escape(state['assessment_time'])}" hidden></p>
 <div class="data-strip"><span>Odhady do <strong>{day(state['forecast_horizon'])}</strong></span><span><strong>{len(reports)}</strong> zpráv v archivu · <strong>{evidence_count}</strong> záznamů evidence</span></div>
@@ -285,6 +294,9 @@ def report_page(report, text, lang, known_reports, reports, index):
 
 def build():
     state, evidence, paths = validate()
+    annotations = load_geography(DATA / "geography.json", evidence)
+    signals = signals_payload(state, evidence, annotations)
+    signals_json = public_text(json.dumps(signals, ensure_ascii=False, separators=(",", ":")) + "\n")
     reports = [report_metadata(path) for path in paths]
     known_reports = {path.name for path in paths}
     translations = {}
@@ -298,6 +310,10 @@ def build():
             report["languages"]["en"] = {"html": f'reports/{translation.stem}.html', "markdown": f'reports/{translation.name}', "judgment": metadata["judgment"]}
     files = {}
     files["index.html"] = page("Aktuální předpověď", dashboard(state, reports, len(evidence)), active="Přehled")
+    files["signals.html"] = page("Mapa a signály", signals_content(signals, timestamp(state["assessment_time"]), sha256(signals_json.encode()).hexdigest()[:12]), active="Mapa a signály",
+                                 extra_assets=("assets/signals.css", "assets/vendor/d3-7.9.0.min.js", "assets/signals-core.js", "assets/signals.js"))
+    files["data/signals.json"] = signals_json
+    files["data/geography.json"] = public_text(json.dumps(annotations, ensure_ascii=False, indent=2) + "\n")
     files["archive.html"] = page("Archiv zpráv", f'''<div class="hero"><div><p class="eyebrow">{len(reports)} zpráv od {day(reports[-1]['time'][:10])}</p><h1>Archiv hodnocení</h1><p class="lede">Zprávy od nejnovější po nejstarší. Každá obsahuje tehdejší odhady, zdroje a zdůvodnění změn.</p></div></div>
 <div class="archive-toolbar"><label for="archive-search" class="meta">Hledat v datu a shrnutí</label><input id="archive-search" data-archive-search type="search" placeholder="Například: mobilizace, 29. 9., NATO"><span class="meta" data-archive-count aria-live="polite">{len(reports)} zpráv</span></div>
 <section class="section">{archive_cards(reports)}</section>''', active="Archiv")
@@ -317,9 +333,9 @@ def build():
         files[f"data/snapshots/{snapshot.name}"] = public_text(snapshot.read_text())
     files["data/reports.json"] = json.dumps([{k: v for k, v in r.items() if k != "text"} for r in reports], ensure_ascii=False, indent=2) + "\n"
     files[".nojekyll"] = ""
-    for asset in (ROOT / "site/assets").iterdir():
+    for asset in (ROOT / "site/assets").rglob("*"):
         if asset.is_file():
-            files[f"assets/{asset.name}"] = asset.read_text()
+            files[f"assets/{asset.relative_to(ROOT / 'site/assets').as_posix()}"] = asset.read_text()
     output = ROOT / "_site"
     for name, content in files.items():
         if re.search(r"/Users/|file://|/private/(?:tmp|var)/", content):
