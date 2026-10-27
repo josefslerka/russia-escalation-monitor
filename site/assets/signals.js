@@ -88,8 +88,9 @@
       const path = d3.geoPath(projection);
       const counts = core.countryCounts(filtered, data.areas);
       const group = svg.append('g');
-      group.append('path').datum(d3.geoGraticule().step(state.view === 'world' ? [30, 30] : [10, 10])()).attr('class', 'signals-graticule').attr('d', path);
+      group.append('path').datum(d3.geoGraticule().step(state.view === 'world' ? [30, 30] : [10, 10])()).attr('class', 'signals-graticule').attr('aria-hidden', 'true').attr('d', path);
       const paths = group.selectAll('.signals-country').data(world.features).join('path').attr('d', path)
+        .attr('aria-hidden', 'true')
         .attr('class', feature => `signals-country${counts.has(feature.properties.id) ? ' has-evidence' : ''}${state.area === feature.properties.id ? ' is-selected' : ''}`);
       paths.append('title').text(feature => `${data.areas[feature.properties.id]?.label || feature.properties.name}: záznamy ve výběru ${counts.get(feature.properties.id) || 0}`);
       paths.filter(feature => data.areas[feature.properties.id]?.kind === 'country').on('click', (_, feature) => chooseArea(feature.properties.id)).classed('is-interactive', true);
