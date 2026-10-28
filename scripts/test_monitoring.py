@@ -1,5 +1,6 @@
 """Failure cases that could turn missing coverage into false certainty or corrupt history."""
 import copy
+from datetime import timedelta
 import json
 from pathlib import Path
 import shutil
@@ -27,12 +28,15 @@ class MonitoringChecks(unittest.TestCase):
         self.validate()
         self.assertEqual(len(self.bundle['sources.json']['countries']), 36)
         self.assertTrue({'NLD','SWE','BEL','FIN','AUT','SVK','HUN','CAN','ISL','MLT','MKD','MNE','TUR'} <= AREAS.keys())
+        # Test an explicitly unvisited country, regardless of future production runs.
+        self.bundle['coverage.jsonl'] = [c for c in self.bundle['coverage.jsonl'] if 'MLT' not in c['areas']]
         data = m.payload(self.bundle, self.evidence, self.state)
         self.assertEqual(data['countries']['MLT']['status'], 'not_checked')
         self.assertIsNone(data['countries']['MLT']['last_attempt'])
         self.assertTrue({'NORTH_SEA','ARCTIC'} <= AREAS.keys())
 
     def test_selected_documents_do_not_claim_complete_country_coverage(self):
+        self.bundle['coverage.jsonl'] = [c for c in self.bundle['coverage.jsonl'] if c['scope_type'] == 'document_review']
         data = m.payload(self.bundle, self.evidence, self.state)
         self.assertEqual(data['countries']['NLD']['status'], 'partial')
         self.assertIn('readiness', data['countries']['NLD']['domains_missing'])
@@ -74,7 +78,8 @@ class MonitoringChecks(unittest.TestCase):
             self.validate()
 
     def test_new_run_is_required_and_partial_work_cannot_be_labelled_complete(self):
-        self.state['assessment_time'] = '2026-10-28T12:00:00+01:00'
+        self.state['assessment_time'] = (max(m.instant(r['finished_at']) for r in self.bundle['monitoring-runs.jsonl']) + timedelta(hours=1)).isoformat()
+        self.state.setdefault('research_scope', {}).pop('monitoring_run_id', None)
         with self.assertRaisesRegex(ValueError, 'structured monitoring run'):
             self.validate()
         self.state['research_scope']['monitoring_run_id'] = self.bundle['monitoring-runs.jsonl'][0]['id']
@@ -95,7 +100,9 @@ class MonitoringChecks(unittest.TestCase):
 
     def test_failed_case_review_preserves_deadline_and_cannot_close_case(self):
         event = next(e for e in self.bundle['events.json']['events'] if e.get('case_status') == 'open')
-        review = dict(id='test-case',event_id=event['id'],check_ids=['check-fin-supo'],checked_at='2026-10-28T09:40:00+01:00',scheduled_for=event['next_check_by'],next_check_by='2026-10-30T07:00:00+01:00',next_action='TEST retry',summary='TEST unavailable',outcome='unavailable',case_status='closed')
+        previous = next((r for r in reversed(self.bundle['case-reviews.jsonl']) if r['event_id'] == event['id']), event)
+        at = max([m.instant(self.state['assessment_time'])] + [m.instant(r['checked_at']) for r in self.bundle['case-reviews.jsonl']]) + timedelta(hours=1)
+        review = dict(id='test-case',event_id=event['id'],check_ids=['check-fin-supo'],checked_at=at.isoformat(),scheduled_for=previous['next_check_by'],next_check_by=(at+timedelta(days=1)).isoformat(),next_action='TEST retry',summary='TEST unavailable',outcome='unavailable',case_status='closed')
         self.bundle['case-reviews.jsonl'].append(review)
         with self.assertRaisesRegex(ValueError, 'cannot close'):
             self.validate()
@@ -106,10 +113,37 @@ class MonitoringChecks(unittest.TestCase):
             self.validate()
 
     def test_document_review_does_not_clear_daily_news_scan(self):
+        self.bundle['coverage.jsonl'] = [c for c in self.bundle['coverage.jsonl'] if c['scope_type'] == 'document_review']
         tasks = m.due_tasks(self.bundle, {}, m.instant('2026-10-28T10:00:00+01:00'))
         self.assertIn('source:nld-official', {t['id'] for t in tasks})
         self.assertIn('country:AUT', {t['id'] for t in tasks})
         self.assertIn('monthly:coverage', {t['id'] for t in tasks})
+
+    def test_future_check_does_not_clear_as_of_queue(self):
+        self.bundle['coverage.jsonl'] = [dict(source_ids=['nld-official'], scope_type='news_scan', outcome='no_new_relevant', checked_at='2026-10-28T11:00:00+01:00', areas=['NLD'])]
+        tasks = m.due_tasks(self.bundle, {}, m.instant('2026-10-28T10:00:00+01:00'))
+        self.assertIn('source:nld-official', {t['id'] for t in tasks})
+
+    def test_source_audit_cannot_refresh_country_coverage(self):
+        self.bundle['coverage.jsonl'] = [{**self.bundle['coverage.jsonl'][0], 'areas':['MLT'], 'scope_type':'source_audit', 'outcome':'relevant_found', 'checked_at':self.state['assessment_time'], 'domains':list(m.DOMAINS)}]
+        country = m.payload(self.bundle, self.evidence, self.state)['countries']['MLT']
+        self.assertEqual(country['status'], 'not_checked')
+        self.assertIsNone(country['last_success'])
+        self.assertEqual(set(country['domains_missing']), set(m.DOMAINS))
+
+    def test_partial_check_does_not_refresh_last_success(self):
+        self.bundle['coverage.jsonl'] = [{**self.bundle['coverage.jsonl'][0], 'areas':['MLT'], 'scope_type':'country_audit', 'outcome':'partial', 'checked_at':self.state['assessment_time'], 'domains':list(m.DOMAINS)}]
+        country = m.payload(self.bundle, self.evidence, self.state)['countries']['MLT']
+        self.assertEqual(country['status'], 'partial')
+        self.assertIsNone(country['last_success'])
+        self.assertEqual(set(country['domains_missing']), set(m.DOMAINS))
+
+    def test_unknown_metric_without_optional_status_renders_missing_reason(self):
+        series = next(s for s in self.bundle['metrics.json']['series'] if s['kind'] == 'operational')
+        self.bundle['metric-observations.jsonl'] = [dict(id='test-unknown', series_id=series['id'], method_version=series['method_version'], recorded_at=self.state['assessment_time'], period=self.state['assessment_time'][:10], value=None, stage='unknown', source_urls=['https://example.com/test'], russian_involvement='unknown', causal_basis='TEST causal limit', missing_reason='TEST missing measurement')]
+        html = m.effects_content(self.bundle, self.state, self.state['assessment_time'])
+        self.assertIn('Neznámé', html)
+        self.assertIn('TEST missing measurement', html)
 
     def test_year_only_dates_do_not_invent_a_day(self):
         self.assertEqual(temporal('2025'), dict(start='2025-01-01',end='2025-12-31',precision='year',planned=False,raw='2025'))

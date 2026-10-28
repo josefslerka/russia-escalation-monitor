@@ -311,7 +311,8 @@ def evaluation(bundle):
 
 def due_tasks(bundle, watchlist, at):
     """Deterministic queue; creating a task is never counted as completing a check."""
-    checks = bundle['coverage.jsonl']
+    # An as-of queue must not be cleared by checks performed after that time.
+    checks = [c for c in bundle['coverage.jsonl'] if instant(c['checked_at']) <= at]
     tasks = []
     for source in bundle['sources.json']['sources']:
         done = [c for c in checks if source['id'] in c['source_ids'] and c['scope_type'] == 'news_scan' and c['outcome'] in {'relevant_found', 'no_new_relevant'}]
@@ -326,7 +327,7 @@ def due_tasks(bundle, watchlist, at):
     monthly = [instant(c['checked_at']) for c in checks if c['scope_type'] == 'source_audit' and c['outcome'] in {'relevant_found', 'no_new_relevant'}]
     if not monthly or (at - max(monthly)).days >= 30:
         tasks.append({'id': 'monthly:coverage', 'kind': 'source_audit', 'priority': 1})
-    reviews = {r['event_id']: r for r in bundle['case-reviews.jsonl']}
+    reviews = {r['event_id']: r for r in bundle['case-reviews.jsonl'] if instant(r['checked_at']) <= at}
     for event in bundle['events.json']['events']:
         current = reviews.get(event['id'], event)
         if current.get('next_check_by') and current.get('case_status') != 'closed' and instant(current['next_check_by']) <= at:
@@ -344,12 +345,15 @@ def payload(bundle, evidence, state):
     at = instant(as_of)
     countries = {}
     for area, plan in bundle['sources.json']['countries'].items():
-        attempts = sorted((c for c in checks if area in c['areas']), key=lambda c: instant(c['checked_at']), reverse=True)
-        successes = [c for c in attempts if c['outcome'] != 'unavailable']
+        # A registry audit is not substantive research on every country it lists.
+        attempts = sorted((c for c in checks if area in c['areas'] and c['scope_type'] != 'source_audit'), key=lambda c: instant(c['checked_at']), reverse=True)
+        successes = [c for c in attempts if c['outcome'] in {'relevant_found', 'no_new_relevant'}]
         recent = [c for c in successes if at - instant(c['checked_at']) <= timedelta(days=plan['review_days'])]
+        recent_attempts = [c for c in attempts if at - instant(c['checked_at']) <= timedelta(days=plan['review_days'])]
         domains = set(d for c in recent for d in c['domains'])
         full = any(c['scope_type'] == 'country_audit' and c['outcome'] in {'relevant_found', 'no_new_relevant'} and set(c['domains']) == set(DOMAINS) for c in recent)
-        status = 'not_checked' if not attempts else 'unavailable' if not successes else 'stale' if not recent else 'checked' if full else 'partial'
+        status = ('not_checked' if not attempts else 'stale' if not recent_attempts else
+                  'checked' if full else 'unavailable' if all(c['outcome'] == 'unavailable' for c in recent_attempts) else 'partial')
         if attempts and attempts[0]['outcome'] == 'unavailable' and status == 'checked':
             status = 'partial'
         countries[area] = {'label': AREAS[area]['label'], 'status': status, 'status_label': STATES[status],
@@ -485,7 +489,10 @@ def effects_content(bundle, state, as_of):
             design = ' · '.join(str(last[k]) for k in ('sample_size','population','mode') if k in last)
             detail = e(last.get('note', '')) + '<p>' + e(last.get('comparability', '')) + '</p><p>' + e(design) + '</p>'
             detail += '<p>' + e(last['causal_basis']) + '</p>' + ' · '.join(source_link(url) for url in last['source_urls'])
-            rows.append([e(series['label']), e(value), e(last['period']) + ('<br><strong>Starší měření</strong>' if stale else ''), e(STAGES[last['stage']]) + ' · ' + e(STATUSES.get(last['status'], last['status'])), f'<details><summary>Význam, metodika a zdroje</summary><p>{e(series["definition"])}</p>{detail}</details>'])
+            if last.get('missing_reason'):
+                detail += '<p>' + e(last['missing_reason']) + '</p>'
+            status = last.get('status', 'unknown')
+            rows.append([e(series['label']), e(value), e(last['period']) + ('<br><strong>Starší měření</strong>' if stale else ''), e(STAGES[last['stage']]) + ' · ' + e(STATUSES.get(status, status)), f'<details><summary>Význam, metodika a zdroje</summary><p>{e(series["definition"])}</p>{detail}</details>'])
         else:
             rows.append([e(series['label']), 'Dosud nezměřeno', '—', 'Neznámý stav', e(series['definition'])])
     rubric = bundle['metrics.json']['wdpi']
