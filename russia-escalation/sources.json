@@ -1119,6 +1119,176 @@
       "priority": 1,
       "cadence_days": 1,
       "tier": 1
+    },
+    {
+      "id": "ita-prefecture-turin",
+      "name": "Prefettura di Torino",
+      "url": "https://prefettura.interno.gov.it/it/prefetture/torino",
+      "areas": [
+        "ITA"
+      ],
+      "domains": [
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2,
+      "added_at": "2026-10-28T11:04:01+01:00",
+      "note": "Doplněno pro přesné přiřazení skutečných kontrol tohoto běhu. Registrace URL není tvrzení, že byl přečten celý web."
+    },
+    {
+      "id": "lva-cert",
+      "name": "CERT.LV",
+      "url": "https://cert.lv/lv/",
+      "areas": [
+        "LVA"
+      ],
+      "domains": [
+        "incidents"
+      ],
+      "tier": 1,
+      "cadence_days": 1,
+      "priority": 1,
+      "added_at": "2026-10-28T11:04:01+01:00",
+      "note": "Doplněno pro přesné přiřazení skutečných kontrol tohoto běhu. Registrace URL není tvrzení, že byl přečten celý web."
+    },
+    {
+      "id": "ukr-ombudsman",
+      "name": "Ukrajinský ombudsman – oficiální veřejný Telegram",
+      "url": "https://t.me/s/dmytro_lubinetzs",
+      "areas": [
+        "UKR"
+      ],
+      "domains": [
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 1,
+      "cadence_days": 1,
+      "priority": 1,
+      "added_at": "2026-10-28T11:04:01+01:00",
+      "note": "Doplněno pro přesné přiřazení skutečných kontrol tohoto běhu. Registrace URL není tvrzení, že byl přečten celý web."
+    },
+    {
+      "id": "kor-mofa",
+      "name": "Jihokorejské ministerstvo zahraničí – ukrajinská diplomatická přítomnost",
+      "url": "https://www.mofa.go.kr/eng/",
+      "areas": [
+        "UKR"
+      ],
+      "domains": [
+        "policy_effect"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2,
+      "added_at": "2026-10-28T11:04:01+01:00",
+      "note": "Doplněno pro přesné přiřazení skutečných kontrol tohoto běhu. Registrace URL není tvrzení, že byl přečten celý web."
+    },
+    {
+      "id": "usa-axios",
+      "name": "Axios – přímé mezinárodní reportáže",
+      "url": "https://www.axios.com/",
+      "areas": [
+        "RUS",
+        "UKR"
+      ],
+      "domains": [
+        "readiness",
+        "policy_effect"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2,
+      "added_at": "2026-10-28T11:04:01+01:00",
+      "note": "Doplněno pro přesné přiřazení skutečných kontrol tohoto běhu. Registrace URL není tvrzení, že byl přečten celý web."
+    },
+    {
+      "id": "bgr-transport",
+      "name": "Bulharské ministerstvo dopravy",
+      "url": "https://www.mtc.government.bg/",
+      "areas": [
+        "BGR",
+        "BLACK_SEA"
+      ],
+      "domains": [
+        "incidents",
+        "readiness"
+      ],
+      "tier": 1,
+      "cadence_days": 1,
+      "priority": 1,
+      "added_at": "2026-10-28T11:04:01+01:00",
+      "note": "Doplněno pro přesné přiřazení skutečných kontrol tohoto běhu. Registrace URL není tvrzení, že byl přečten celý web."
+    },
+    {
+      "id": "bgr-bnt",
+      "name": "Bulharská veřejnoprávní BNT",
+      "url": "https://bntnews.bg/",
+      "areas": [
+        "BGR",
+        "BLACK_SEA"
+      ],
+      "domains": [
+        "incidents"
+      ],
+      "tier": 2,
+      "cadence_days": 1,
+      "priority": 1,
+      "added_at": "2026-10-28T11:04:01+01:00",
+      "note": "Doplněno pro přesné přiřazení skutečných kontrol tohoto běhu. Registrace URL není tvrzení, že byl přečten celý web."
+    },
+    {
+      "id": "bgr-bgnes",
+      "name": "Agentura BGNES",
+      "url": "https://www.bgnes.bg/",
+      "areas": [
+        "BGR",
+        "BLACK_SEA"
+      ],
+      "domains": [
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 2,
+      "cadence_days": 1,
+      "priority": 1,
+      "added_at": "2026-10-28T11:04:01+01:00",
+      "note": "Doplněno pro přesné přiřazení skutečných kontrol tohoto běhu. Registrace URL není tvrzení, že byl přečten celý web."
+    },
+    {
+      "id": "rus-mod-public",
+      "name": "Ruské ministerstvo obrany – veřejná sdělení",
+      "url": "https://t.me/s/mod_russia",
+      "areas": [
+        "RUS"
+      ],
+      "domains": [
+        "readiness"
+      ],
+      "tier": 1,
+      "cadence_days": 1,
+      "priority": 1,
+      "added_at": "2026-10-28T11:04:01+01:00",
+      "note": "Doplněno pro přesné přiřazení skutečných kontrol tohoto běhu. Registrace URL není tvrzení, že byl přečten celý web."
+    },
+    {
+      "id": "iaea-public",
+      "name": "IAEA – veřejné tiskové zprávy",
+      "url": "https://www.iaea.org/newscenter/pressreleases",
+      "areas": [
+        "UKR"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 1,
+      "cadence_days": 1,
+      "priority": 1,
+      "added_at": "2026-10-28T11:04:01+01:00",
+      "note": "Doplněno pro přesné přiřazení skutečných kontrol tohoto běhu. Registrace URL není tvrzení, že byl přečten celý web."
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",

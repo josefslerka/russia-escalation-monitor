@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-10-28T10:19:24+01:00",
+  "reviewed_at": "2026-10-28T11:04:01+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -2061,8 +2061,29 @@
       ],
       "title": "SIS: nárůst vlivových kampaní za rok 2025 bez konkrétní atribuce",
       "note": "Retrospektivní doplnění 28. října 2026. Původní událost a publikace zachovány; samotná anotace neurčuje původce."
+    },
+    "followup-20261028-khoryv-eez-report": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "note": "Subjektem je vrak v Černém moři, EEZ není teritoriální voda. Přesná poloha nezávisle neověřena.",
+      "title": "BNT: Khoryv podle hlášení vstoupil do bulharské EEZ"
+    },
+    "claim-20261028-khoryv-territorial-sea-statement": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "note": "Přesná právní zóna je neověřena a text se liší od BNT. Možný časový posun či terminologická nepřesnost; nevkládáme neověřený bod ani potvrzený útok na Bulharsko.",
+      "title": "BGNES: ministr tvrdí vstup Khoryvu do teritoriálního moře"
+    },
+    "obs-20261028-ukrenergo-morning-outages": {
+      "areas": [
+        "UKR"
+      ],
+      "note": "Geografickým předmětem jsou ukrajinské energetické účinky, nikoli sídlo zdroje. Plán zbytku dne není pozorovaný výsledek.",
+      "title": "Ukrenergo hlásí ranní výpadky; část omezení je stále plán"
     }
   },
   "review_scope": "28. října 2026: přidány anotace devíti retrospektivních podkladů. Starší anotace zůstávají beze změny.",
-  "review_note": "Zachována nejistota a původní přesnost časů; neznámé mapové přiřazení zkoušky v Ohotském moři vysvětleno."
+  "review_note": "Zkontrolovány anotace devíti historických intake a přidány tři nové záznamy. Starší položky nezměněny; sporné mořské zóny zůstávají na úrovni BLACK_SEA."
 }
