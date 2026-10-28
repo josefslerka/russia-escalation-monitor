@@ -8,6 +8,7 @@ from urllib.parse import unquote, urlsplit
 from build_site import ROOT, DATA, validate, public_text
 from signals import geography, payload as signals_payload
 from bilingual import english_path
+import monitoring
 
 
 class Links(HTMLParser):
@@ -57,7 +58,10 @@ def check():
         problems.append("Published probabilities differ from state.json")
     signals = json.loads((site / "data/signals.json").read_text())
     annotations = geography(ROOT / "russia-escalation/geography.json", evidence)
-    if signals != json.loads(public_text(json.dumps(signals_payload(state, evidence, annotations), ensure_ascii=False))):
+    source_data = ROOT / 'russia-escalation'
+    bundle = monitoring.load(source_data)
+    monitor_data = monitoring.payload(bundle, evidence, state)
+    if signals != json.loads(public_text(json.dumps(signals_payload(state, evidence, annotations, monitor_data), ensure_ascii=False))):
         problems.append("Map data differ from the complete ledger and geographic annotations")
     if json.loads((site / "data/geography.json").read_text()) != annotations:
         problems.append("Published geography differs from source annotations")
@@ -65,6 +69,15 @@ def check():
         problems.append("Map lost or duplicated evidence records")
     if (site / "signals.html").resolve() not in parsed:
         problems.append("Map and signals page is missing")
+    for name in monitoring.FILES:
+        if (site / 'data' / name).read_text() != public_text((source_data / name).read_text()):
+            problems.append(f'Monitoring source differs: {name}')
+    for name, expected in [('monitoring.json', monitor_data), ('evaluation.json', monitoring.evaluation(bundle))]:
+        if json.loads((site / 'data' / name).read_text()) != json.loads(public_text(json.dumps(expected, ensure_ascii=False))):
+            problems.append(f'Derived monitoring data differ: {name}')
+    for name in ('coverage.html', 'quality.html', 'society.html'):
+        if (site / name).resolve() not in parsed:
+            problems.append(f'Missing monitoring page: {name}')
     index = json.loads((site / "data/reports.json").read_text())
     if {r["id"] for r in index} != {p.stem for p in reports}:
         problems.append("Archive index does not match the report history")

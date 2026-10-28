@@ -27,6 +27,12 @@ externí mapové nebo analytické služby.
 
 ## Jak funguje ranní aktualizace
 
+Od 28. října 2026 má web také [pokrytí zdrojů](https://josefslerka.github.io/russia-escalation-monitor/coverage.html),
+[provenanci a vyhodnocování](https://josefslerka.github.io/russia-escalation-monitor/quality.html)
+a [účinky a české scénáře](https://josefslerka.github.io/russia-escalation-monitor/society.html).
+Mapa přepíná evidenci a pokrytí. Registr všech zemí EU/NATO neznamená kompletní
+rešerši: skutečně provedené kontroly a mezery jsou doložené zvlášť.
+
 Každý den v 7:00 Europe/Prague proběhne rešerše v místním Codexu podle `AGENTS.md`.
 Počítač a aplikace musejí být spuštěné a mít přístup k síti. Automatizace navazuje
 na předchozí stav, uloží novou zprávu, doplní skutečně nové důkazy a aktualizuje
@@ -80,6 +86,37 @@ Po dokončení nové rešerše:
 ```
 
 Bez `--push` se provede pouze kontrola, vytvoření JSON snímku a místní sestavení.
+
+Pro samotnou údržbu geografie, pokrytí a označené retrospektivní doplnění:
+
+```sh
+.venv/bin/python scripts/publish_update.py --metadata-only --push
+```
+
+Tento režim nemění stav, uzávěrku, zprávy ani snímky a může publikovat i při starší
+prognóze. Historická evidence čeká na samostatné analytické začlenění. Publikace
+hlídá neměnnou historii evidence, reportů, snímků a všech auditních JSONL protokolů.
+
+Pracovní fronta, validace a bezpečné doplnění auditního protokolu:
+
+```sh
+.venv/bin/python scripts/monitor.py due
+.venv/bin/python scripts/monitor.py validate
+.venv/bin/python scripts/monitor.py append coverage.jsonl --input /tmp/check.json
+.venv/bin/python -m unittest discover -s scripts -p 'test_*.py'
+```
+
+`sources.json` určuje denní kontroly, týdenní rotaci a měsíční audit.
+`monitoring-runs.jsonl` uchovává zamýšlené úkoly; `coverage.jsonl` skutečné výsledky.
+Události a jejich linie jsou v `events.json`, následné kontroly v
+`case-reviews.jsonl`, pozorovatelné indikátory v `indicators.json`. Měření účinků
+a jejich verze jsou v `metrics.json` a `metric-observations.jsonl`.
+`forecast-register.jsonl` zmrazuje otázky a `forecast-resolutions.jsonl`
+uchovává jejich adjudikace. Podrobné schéma, pravidla příčinného hodnocení,
+WDPI v2 a integrace do ranního běhu jsou v [AGENTS.md](AGENTS.md).
+
+Nová registrace a důkazy nevznikají samotným zobrazením fronty nebo sestavením webu.
+Nezměřené hodnoty zůstávají neznámé; historické skóre se nepřepočítává novou metodou.
 Opakovaný běh se stejným stavem nevytváří duplicitní commit. Pokud vzdálená větev
 obsahuje nezahrnuté změny, publikace se zastaví; neprovádí force push ani automatické
 přepisování. Jiné lokální commity se automaticky neposílají.

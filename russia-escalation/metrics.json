@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-28T09:43:20+01:00",
+  "series": [
+    {
+      "id": "cze-nato-support-stem",
+      "label": "Podpora členství v NATO",
+      "kind": "poll",
+      "unit": "percent",
+      "definition": "Podíl součtu určitě a spíše ano na totožnou otázku STEM; není to ochota účastnit se války.",
+      "source_ids": [
+        "cze-stem"
+      ],
+      "method_version": "stem-trendy-cawi-membership-v1",
+      "fresh_days": 45
+    },
+    {
+      "id": "cze-institutional-trust",
+      "label": "Důvěra ve veřejné instituce",
+      "kind": "poll",
+      "unit": "percent",
+      "definition": "Každá instituce a neměnná otázka vyžaduje samostatnou srovnatelnou řadu.",
+      "source_ids": [
+        "cze-cvvm"
+      ],
+      "method_version": "cvvm-institutions-v1",
+      "fresh_days": 45
+    },
+    {
+      "id": "cze-ukraine-aid-support",
+      "label": "Podpora pomoci Ukrajině",
+      "kind": "poll",
+      "unit": "percent",
+      "definition": "Vojenskou, finanční a humanitární pomoc měřit odděleně; nepřenášet obecný postoj do konkrétní politiky.",
+      "source_ids": [
+        "cze-stem",
+        "cze-cvvm"
+      ],
+      "method_version": "czech-aid-specific-question-v1",
+      "fresh_days": 45
+    },
+    {
+      "id": "cze-cost-tolerance",
+      "label": "Ochota nést náklady",
+      "kind": "poll",
+      "unit": "percent",
+      "definition": "Konkrétní cena a časové trvání v otázce; podpora NATO není náhradní měřítko.",
+      "source_ids": [
+        "cze-stem",
+        "cze-cvvm"
+      ],
+      "method_version": "czech-cost-question-v1",
+      "fresh_days": 45
+    },
+    {
+      "id": "cze-service-continuity",
+      "label": "Kontinuita základních služeb",
+      "kind": "operational",
+      "unit": "hours",
+      "definition": "Ověřená doba a rozsah narušení na úrovni sektoru; regiony a původce oddělit.",
+      "source_ids": [
+        "cze-hzs",
+        "cze-nukib"
+      ],
+      "method_version": "czech-service-incident-v1",
+      "fresh_days": 3
+    },
+    {
+      "id": "nld-rail-disruptions",
+      "label": "Provozní dopad na nizozemskou železnici",
+      "kind": "operational",
+      "unit": "faults",
+      "definition": "Poruchy na jednu událost dle správce; počet poruch není počet útoků.",
+      "source_ids": [
+        "nld-prorail"
+      ],
+      "method_version": "prorail-incident-v1",
+      "fresh_days": 7
+    },
+    {
+      "id": "ukraine-aid-delivery",
+      "label": "Realizované dodávky a platby",
+      "kind": "operational",
+      "unit": "documented_change",
+      "definition": "Příslib, závazek, skutečná dodávka a platba mají vlastní fázi; neodvozovat plnění z oznámení.",
+      "source_ids": [
+        "eu-council",
+        "nor-gov",
+        "cze-mo"
+      ],
+      "method_version": "aid-execution-v1",
+      "fresh_days": 7
+    },
+    {
+      "id": "western-restraint",
+      "label": "Omezení rozhodnutí kvůli eskalaci",
+      "kind": "operational",
+      "unit": "documented_change",
+      "definition": "Požaduje konkrétní změnu rozhodnutí i doklad příčinné vazby na eskalační obavu.",
+      "source_ids": [
+        "eu-council",
+        "cze-mo"
+      ],
+      "method_version": "restraint-causal-v1",
+      "fresh_days": 7
+    }
+  ],
+  "wdpi": {
+    "version": "anchored-v2",
+    "effective_from": "2026-10-28T09:43:20+01:00",
+    "status": "available_not_applied_to_prior",
+    "weights": {
+      "resource_dilution": 0.35,
+      "domestic_pain": 0.35,
+      "self_deterrence": 0.3
+    },
+    "anchors": {
+      "resource_dilution": {
+        "0": "Ověřený plán a realizace bez relevantního vytěsnění zdrojů.",
+        "25": "Doložená malá zpoždění; prioritní dodávky pokračují.",
+        "50": "Doložené opakované vytěsnění části plánované podpory.",
+        "75": "Zásadní doložené omezení klíčových dodávek nebo kapacit.",
+        "100": "Doložené téměř úplné vytěsnění relevantní podpory jinými potřebami."
+      },
+      "domestic_pain": {
+        "0": "Ověřené sledované služby a náklady bez relevantního mimořádného dopadu.",
+        "25": "Omezené doložené výpadky nebo náklady bez širší změny chování.",
+        "50": "Dlouhodobější měřitelné náklady a doložená reakce veřejnosti.",
+        "75": "Rozsáhlé náklady s prokázaným politickým tlakem na podporu Ukrajiny.",
+        "100": "Systémové domácí narušení s doloženou zásadní změnou politiky."
+      },
+      "self_deterrence": {
+        "0": "Ověřená rozhodnutí pokračují bez omezení z eskalačních obav.",
+        "25": "Jednotlivé doložené podmínky nebo krátká zdržení z eskalační obavy.",
+        "50": "Opakované doložené omezení konkrétních rozhodnutí z této obavy.",
+        "75": "Zásadní politická paralýza nebo dlouhodobé omezení z eskalační obavy.",
+        "100": "Doložené zastavení klíčové podpory v důsledku těchto obav."
+      }
+    },
+    "formula": "floor((35*resource_dilution + 35*domestic_pain + 30*self_deterrence + 50)/100)",
+    "missing_policy": "Chybějící komponenta znamená nevyčíslený nový index; žádná nula ani převažování vah.",
+    "selection_rule": "Analytik volí nejvyšší plně doloženou kotvu každé komponenty, odkazuje pozorování a vysvětluje příčinu. Důkazy musí pokrýt tvrzený rozsah. Mezihodnoty se v2 nepoužívají.",
+    "break_note": "Současných 68/52/30 a WDPI 51 zůstává historickým úsudkovým v1. První použití v2 vyžaduje novou plnou rekalibraci a označení metodického zlomu. Historické hodnoty nepřepočítávat."
+  }
+}

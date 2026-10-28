@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-10-28T07:05:38+01:00",
+  "reviewed_at": "2026-10-28T10:19:24+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -1998,8 +1998,71 @@
       ],
       "title": "Další americký dopis žádá odpověď do 31. října",
       "note": "Americký kontrolní postup k ukrajinské konektivitě; nejde o nové rozmístění či místní útok."
+    },
+    "backfill-20260219-nld-joint-threat": {
+      "areas": [
+        "NLD"
+      ],
+      "title": "AIVD/MIVD: přípravy sabotáží a výhled ruské hrozby v Nizozemsku",
+      "note": "Retrospektivní doplnění 28. října 2026. Původní událost a publikace zachovány; samotná anotace neurčuje původce."
+    },
+    "backfill-20260423-nld-annual-2025": {
+      "areas": [
+        "NLD"
+      ],
+      "title": "AIVD/MIVD: za rok 2025 nezjištěna akutní úspěšná ruská kybersabotáž v Nizozemsku",
+      "note": "Retrospektivní doplnění 28. října 2026. Původní událost a publikace zachovány; samotná anotace neurčuje původce."
+    },
+    "backfill-20260915-nld-rail-disruption": {
+      "areas": [
+        "NLD"
+      ],
+      "title": "Nizozemská železnice 15. září: úmyslné narušení, původce neznámý",
+      "note": "Retrospektivní doplnění 28. října 2026. Původní událost a publikace zachovány; samotná anotace neurčuje původce."
+    },
+    "backfill-20261010-nld-rail-arson": {
+      "areas": [
+        "NLD"
+      ],
+      "title": "ProRail: žhářství 10. října, oprava dokončena; ruská vazba nedoložena",
+      "note": "Retrospektivní doplnění 28. října 2026. Původní událost a publikace zachovány; samotná anotace neurčuje původce."
+    },
+    "backfill-20260318-swe-threat": {
+      "areas": [
+        "SWE"
+      ],
+      "title": "Säpo: výhled ruské hrozby a nepotvrzené atribuce podezření na sabotáž",
+      "note": "Retrospektivní doplnění 28. října 2026. Původní událost a publikace zachovány; samotná anotace neurčuje původce."
+    },
+    "backfill-20260115-bel-vsse-2025": {
+      "areas": [
+        "BEL"
+      ],
+      "title": "VSSE: hybridní hrozba; část hlášení dronů mylná, atribuce vyšetřována",
+      "note": "Retrospektivní doplnění 28. října 2026. Původní událost a publikace zachovány; samotná anotace neurčuje původce."
+    },
+    "backfill-20260206-nor-pst-2026": {
+      "areas": [
+        "NOR"
+      ],
+      "title": "PST: norský výhled sabotážní hrozby pro rok 2026",
+      "note": "Retrospektivní doplnění 28. října 2026. Původní událost a publikace zachovány; samotná anotace neurčuje původce."
+    },
+    "backfill-20260421-fin-interference": {
+      "areas": [
+        "FIN"
+      ],
+      "title": "Traficom: rušení z ruského území, změna monitoringu komplikuje meziroční srovnání",
+      "note": "Retrospektivní doplnění 28. října 2026. Původní událost a publikace zachovány; samotná anotace neurčuje původce."
+    },
+    "backfill-20260101-svk-influence-review": {
+      "areas": [
+        "SVK"
+      ],
+      "title": "SIS: nárůst vlivových kampaní za rok 2025 bez konkrétní atribuce",
+      "note": "Retrospektivní doplnění 28. října 2026. Původní událost a publikace zachovány; samotná anotace neurčuje původce."
     }
   },
-  "review_scope": "Nových 12 záznamů věcně zkontrolováno vůči otevřeným zdrojům; starých 352 anotací beze změny, ověřeno úplné pokrytí ID.",
+  "review_scope": "28. října 2026: přidány anotace devíti retrospektivních podkladů. Starší anotace zůstávají beze změny.",
   "review_note": "Zachována nejistota a původní přesnost časů; neznámé mapové přiřazení zkoušky v Ohotském moři vysvětleno."
 }

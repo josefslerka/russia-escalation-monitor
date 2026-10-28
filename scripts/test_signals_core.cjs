@@ -34,3 +34,12 @@ test('date validation rejects impossible calendar days', () => {
   assert.equal(core.validDay('2026-02-30'), false);
   assert.equal(core.validDay('2026-10-27'), true);
 });
+test('event count deduplicates repeated reports but exposes unreviewed records', () => {
+  const linked = id => ({ id, event_links: [{ event_id: 'same-incident', line_id: 'same-source' }] });
+  assert.deepEqual(core.provenanceCounts([linked('a'), linked('b'), { id: 'unreviewed' }]), { events: 1, unlinked: 1 });
+});
+test('a failed check cannot refresh stale successful coverage', () => {
+  const country = { status: 'partial', last_attempt: '2026-10-28T09:00:00Z', last_success: '2026-10-01T09:00:00Z', review_days: 7 };
+  assert.equal(core.coverageState(country, '2026-10-28T10:00:00Z'), 'stale');
+  assert.equal(core.coverageState({ status: 'unavailable', last_success: null }, '2026-10-28T10:00:00Z'), 'unavailable');
+});

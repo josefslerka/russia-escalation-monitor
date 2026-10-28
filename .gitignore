@@ -4,6 +4,7 @@ __pycache__/
 *.pyc
 _site/
 .site-build-*/
+.monitoring.lock
 .env
 .env.*
 defensive-threat-intel/

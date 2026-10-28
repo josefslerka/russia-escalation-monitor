@@ -12,6 +12,12 @@ from zoneinfo import ZoneInfo
 
 PRAGUE = ZoneInfo('Europe/Prague')
 COUNTRIES = {
+    'ALB': 'Albánie', 'AUT': 'Rakousko', 'BEL': 'Belgie', 'CAN': 'Kanada',
+    'HRV': 'Chorvatsko', 'CYP': 'Kypr', 'GRC': 'Řecko', 'HUN': 'Maďarsko',
+    'ISL': 'Island', 'IRL': 'Irsko', 'LUX': 'Lucembursko', 'MLT': 'Malta',
+    'MNE': 'Černá Hora', 'NLD': 'Nizozemsko', 'MKD': 'Severní Makedonie',
+    'PRT': 'Portugalsko', 'SVK': 'Slovensko', 'SVN': 'Slovinsko', 'ESP': 'Španělsko',
+    'SWE': 'Švédsko', 'TUR': 'Turecko',
     'BLR': 'Bělorusko', 'BGR': 'Bulharsko', 'CZE': 'Česko', 'DNK': 'Dánsko',
     'EST': 'Estonsko', 'FIN': 'Finsko', 'FRA': 'Francie', 'GEO': 'Gruzie',
     'IRN': 'Írán', 'ITA': 'Itálie', 'JPN': 'Japonsko', 'KOR': 'Korejská republika',
@@ -20,6 +26,7 @@ COUNTRIES = {
     'USA': 'Spojené státy', 'UKR': 'Ukrajina', 'GBR': 'Velká Británie',
 }
 REGIONS = {
+    'NORTH_SEA': 'Severní moře', 'ARCTIC': 'Arktida',
     'BALTICS': 'Pobaltí', 'BALTIC_SEA': 'Baltské moře', 'BLACK_SEA': 'Černé moře',
     'EU': 'EU — nadregionální', 'EUROPE': 'Evropa — nadregionální',
     'NATO': 'NATO — nadregionální', 'GULF': 'Perský záliv', 'GLOBAL': 'Globální dosah',
@@ -87,6 +94,9 @@ def temporal(raw) -> dict:
         value = value.removesuffix('_morning')
 
     def endpoint(part):
+        if re.fullmatch(r'\d{4}', part):
+            year = int(part)
+            return date(year, 1, 1), date(year, 12, 31), 'year'
         if re.fullmatch(r'\d{4}-\d{2}', part):
             year, month = map(int, part.split('-'))
             return date(year, month, 1), date(year, month, calendar.monthrange(year, month)[1]), 'month'
@@ -106,7 +116,7 @@ def temporal(raw) -> dict:
         if last[1] < first[0]:
             return result
         result.update(start=first[0].isoformat(), end=last[1].isoformat(),
-                      precision='month' if 'month' in (first[2], last[2]) else 'day')
+                      precision='year' if 'year' in (first[2], last[2]) else 'month' if 'month' in (first[2], last[2]) else 'day')
     except (ValueError, OverflowError):
         pass
     return result
@@ -129,7 +139,7 @@ def text(value) -> str:
     return value if isinstance(value, str) else json.dumps(value, ensure_ascii=False)
 
 
-def payload(state: dict, evidence: list[dict], annotations: dict) -> dict:
+def payload(state: dict, evidence: list[dict], annotations: dict, monitoring: dict | None = None) -> dict:
     records = []
     for item in evidence:
         annotation = annotations['entries'].get(item['id'], {'areas': [], 'note': 'Geografie tohoto záznamu dosud nebyla anotována.'})
@@ -165,6 +175,9 @@ def payload(state: dict, evidence: list[dict], annotations: dict) -> dict:
             'independent_source_line': text(item.get('independent_source_line')),
             'provenance_root': text(item.get('provenance_root')),
             'record_type': text(item.get('record_type')),
+            'intake_type': item.get('intake_type'),
+            'forecast_integration': item.get('forecast_integration'),
+            'event_links': (monitoring or {}).get('evidence_links', {}).get(item['id'], []),
             'areas': annotation['areas'], 'geography_note': annotation.get('note', ''),
             'times': {key: temporal(item.get(field)) for key, field in (
                 ('event', 'event_time'), ('publication', 'publication_time'), ('discovery', 'discovery_time'))},
@@ -172,7 +185,8 @@ def payload(state: dict, evidence: list[dict], annotations: dict) -> dict:
     cutoff = datetime.fromisoformat(state['assessment_time']).astimezone(PRAGUE).date()
     dates = [value for record in records for time in record['times'].values()
              for value in (time['start'], time['end']) if value]
-    return {'schema_version': 1, 'assessment_time': state['assessment_time'],
+    return {'schema_version': 2, 'assessment_time': state['assessment_time'],
+            'monitoring': monitoring or {},
             'last_report': 'reports/' + Path(state['last_report']).stem + '.html',
             'total': len(records), 'areas': AREAS,
             'topics': {key: label for key, (label, _) in TOPICS.items()},
@@ -193,12 +207,13 @@ def content(data: dict, cutoff_label: str, data_version: str = '') -> str:
     recent = sorted(data['records'], key=lambda record: record['times']['discovery']['start'] or '', reverse=True)[:20]
     fallback = ''.join(f'<li><p><strong>{escape(record["title"])}</strong></p><p>{escape(record["summary"])}</p><p>{escape(record["source"])}' +
                        (f' · <a href="{escape(record["source_url"], quote=True)}" rel="noopener noreferrer">Zdroj ↗</a>' if record['source_url'] else '') + '</p></li>' for record in recent)
-    return f'''<div class="signals-intro"><div><p class="eyebrow">Mapa a signály</p><h1>Mapa událostí a podkladů</h1><p class="meta">Úplná uložená evidence · {data['total']} záznamů</p></div>
+    return f'''<div class="signals-intro"><div><p class="eyebrow">Mapa a signály</p><h1>Mapa událostí a podkladů</h1><p class="meta">Úplná uložená evidence · {data['total']} záznamů · <a href="coverage.html">Rozsah kontrol a mezery →</a></p></div>
 <p class="signals-cutoff">Uzávěrka rešerše<br><time datetime="{escape(data['assessment_time'])}">{escape(cutoff_label)}</time><br><a href="{escape(data['last_report'])}">Aktuální hodnocení →</a></p></div>
 <p class="freshness" data-assessment-time="{escape(data['assessment_time'])}" hidden></p>
 <div id="signals-app" class="signals-app" data-signals-source="data/signals.json?v={escape(data_version, quote=True)}" data-signals-map="assets/world-110m.geojson">
 <p class="signals-loading" role="status">Načítání mapy a evidence…</p>
 <div class="signals-controls" hidden>
+<fieldset class="signals-basis signals-mode"><legend>Co mapa zobrazuje</legend><div class="signals-segment"><button type="button" data-mode="evidence" aria-pressed="true">Evidence</button><button type="button" data-mode="coverage" aria-pressed="false">Pokrytí zdrojů</button></div></fieldset>
 <div class="signals-filters">
 <label>Oblast<select name="area"><option value="all">Všechny oblasti</option><option value="baltics_all">Pobaltí společně</option><option value="unknown">Neurčená geografie</option><optgroup label="Země">{country_options}</optgroup><optgroup label="Regionální dosah">{region_options}</optgroup></select></label>
 <label>Téma<select name="topic"><option value="all">Všechna témata</option>{topic_options}</select></label>
@@ -213,11 +228,12 @@ def content(data: dict, cutoff_label: str, data_version: str = '') -> str:
 </div>
 <label class="signals-undated"><input type="checkbox" name="undated"> Zahrnout záznamy bez určeného data <span data-undated-count></span></label>
 </div>
-<p class="signals-resultbar" aria-live="polite"><span data-results></span><span>Počet záznamů ≠ počet útoků ani nezávislých potvrzení.</span></p>
+<p class="signals-resultbar" aria-live="polite"><span data-results></span><span data-count-note>Počet záznamů ≠ počet útoků ani nezávislých potvrzení.</span></p>
 <div class="signals-main" hidden>
 <section class="signals-map-panel" aria-labelledby="signals-map-title"><div class="signals-panel-heading"><h2 id="signals-map-title">Územní vztah evidence</h2><div class="signals-segment" aria-label="Rozsah mapy"><button type="button" data-view="europe" aria-pressed="true">Evropa</button><button type="button" data-view="world" aria-pressed="false">Svět</button></div></div>
 <svg class="signals-map" role="group" aria-label="Mapa přiřazení evidence k zemím"></svg>
-<p class="signals-map-summary" data-map-summary></p><p class="signals-map-note">Přiřazení k zemi neoznačuje přesné místo incidentu ani jeho původce. Jeden záznam může zahrnovat více zemí.</p></section>
+<div class="coverage-legend" data-coverage-legend hidden><span class="coverage-state checked">Zkontrolováno v plánu</span><span class="coverage-state partial">Částečné</span><span class="coverage-state unavailable">Nedostupné</span><span class="coverage-state stale">Zastaralé</span><span class="coverage-state not_checked">Bez kontroly</span></div>
+<p class="signals-map-summary" data-map-summary></p><p class="signals-map-note" data-map-note>Přiřazení k zemi neoznačuje přesné místo incidentu ani jeho původce. Jeden záznam může zahrnovat více zemí.</p></section>
 <aside class="signals-detail" aria-label="Detail vybraného záznamu" data-detail></aside>
 <section class="signals-timeline-panel" aria-labelledby="signals-time-title"><div class="signals-panel-heading"><h2 id="signals-time-title">Časová osa zveřejnění</h2><span class="meta" data-time-unit></span></div><svg class="signals-timeline" role="img" aria-label="Počty záznamů v čase podle směru signálu"></svg>
 <div class="signals-legend"><span><i class="signals-swatch" data-direction="up"></i>Pro eskalaci</span><span><i class="signals-swatch" data-direction="down"></i>Proti eskalaci</span><span><i class="signals-swatch" data-direction="neutral"></i>Bez směrového dopadu</span><span><i class="signals-swatch" data-direction="unknown"></i>Směr neurčen</span></div><p class="signals-time-note" data-time-note></p></section>

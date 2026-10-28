@@ -58,3 +58,75 @@ Záznam může zahrnovat několik zemí: započítá se jednou v seznamu a jedno
 Časová osa odděluje událost či plán, zveřejnění a zařazení do monitoru. Časové značky s pásmem převádíme na kalendářní den Europe/Prague; původní údaj zůstává v detailu. Intervaly filtrujeme podle překryvu, do sloupců je řadíme jednou podle začátku. Měsíční přesnost nevytváří domnělý den: v denním či týdenním zobrazení ji uvádíme mimo sloupce. Nejednoznačné popisy a rozporné termíny zůstávají neurčené. Jejich zahrnutí do seznamu lze zapnout zvlášť. Datum události označuje předmět daného záznamu, který může být například novým závěrem vyšetřování staršího útoku; původní formulace je vždy dostupná v detailu.
 
 Mapová stránka používá stejné datum uzávěrky jako poslední skutečně dokončená rešerše. Doplnění geografie ani změna vzhledu nevytváří nové analytické hodnocení a nemění archivní zprávy či snímky.
+
+## Pokrytí a stáří podkladů
+
+[Pokrytí](coverage.html) má vlastní protokol kontrol. Plán obsahuje všech 36 zemí
+EU nebo NATO, ale zápis zdroje do registru neznamená, že byl přečten. Denně se
+kontrolují naléhavé případy a prioritní novinky, týdně rotující hloubkové audity
+zemí a měsíčně mezery zdrojů. Provedená kontrola uvádí zdroj, období, rozsah,
+výsledek a omezení. Stav „bez strukturované kontroly“ označuje chybějící nový
+auditní záznam, nevymazává starší rešerše popsané v archivních zprávách.
+
+Mapa nabízí samostatný pohled **Pokrytí zdrojů**. Barvy nejsou stupně nebezpečí.
+Kontrola staršího dokumentu je jen část pokrytí; úplný audit zahrnuje oficiální
+hodnocení, incidenty, připravenost a politické či společenské účinky. Časové a
+tematické filtry evidence se na pohled pokrytí nevztahují. Nedostupnost zdroje
+ani neúspěšné hledání není důkazem absence hrozby. V interaktivní mapě stáří
+poslední úspěšné kontroly průběžně stárne i bez nové publikace.
+
+Datum předpovědi, datum kontroly a datum pozorované události jsou tři různé údaje.
+Roční a měsíční časová přesnost se zachovává; roční údaje se nepřevádějí na
+domnělý lednový incident v časovém grafu. Částečně provedený plán zůstává označen
+jako částečný. Nově doplněné starší podklady mají dnešní datum dohledání a původní
+datum publikace; jejich dopad na prognózu čeká na výslovnou analytickou revizi.
+
+## Události, zdrojové linie a následné kontroly
+
+[Přehled kvality](quality.html) propojuje záznamy k událostem nebo hodnocením a
+odlišuje první zprávu, nezávislé potvrzení, další vývoj, atribuci, vyvrácení,
+opravu a překryv tvrzení. Shodná URL je podnět k ruční kontrole; živý index může
+obsahovat různé události. Počet zdrojových rodin u případu není počet nezávislých
+potvrzení každé jeho části. Záchrana posádky například nepotvrzuje původce útoku.
+
+Dva záznamy výročního hodnocení BIS z 27. srpna jsou zachovány, ale sdílejí jednu
+zdrojovou rodinu. Oprava netvrdí, že dřívější pravděpodobnost byla dvakrát navýšena.
+Nerevidované záznamy jsou viditelné jako nepřiřazené; počet propojených případů
+proto zatím není úplný počet událostí. U otevřených případů zůstává původní termín
+kontroly v historii a neúspěšné načtení nemůže případ uzavřít.
+
+Negativní zjištění vyžaduje pozorovatelný očekávaný projev, zdrojově doložený běžný
+stav a dostatečný rozsah skutečně provedené kontroly. Neznámý stav se nenahrazuje
+závěrem „nic se nestalo“. Cvičení, počasí, sezónnost a změny monitorovacího systému
+jsou samostatná alternativní vysvětlení.
+
+## Měření účinků a metodický zlom WDPI
+
+[Dopady](society.html) rozlišují slib, závazek, dodávku, platbu a pozorované chování.
+U průzkumů uchováváme otázku, terénní období, velikost a složení vzorku i způsob
+sběru; rozdílné otázky nespojujeme do jedné řady. Členství v NATO, podpora konkrétní
+pomoci a ochota nést náklady jsou odlišné postoje. České společenské odolnosti
+nepřidělujeme nepodložené celkové skóre.
+
+Pro další plnou rekalibraci je připravena metoda **WDPI anchored-v2** s kotvami
+0, 25, 50, 75 a 100 pro každou komponentu a zachovanými váhami 35/35/30.
+[Definice a kotvy](data/metrics.json) uvádějí, jaké chování musí být doloženo.
+Analytik zvolí nejvyšší plně podloženou kotvu a odkáže konkrétní pozorování.
+Výpočet používá zaokrouhlení poloviny nahoru. Chybí-li komponenta, nový index se
+nevyčíslí; nula také vyžaduje důkazy. Dosavadní hodnoty zůstávají původní metodou.
+První použití v2 musí být označeno jako metodický zlom v nové zprávě, ne jako
+historický přepočet. Ruská příčinná účast se vyhodnocuje samostatně.
+
+## Vyhodnocování předpovědí
+
+[Registr](data/forecast-register.jsonl) uchovává neměnnou definici, kritéria,
+pravděpodobnost a obě meze časového okna. Výsledek je ano, ne nebo neznámý;
+„ne“ vyžaduje skončený horizont a dostatečné pozorování, „ano“ událost ve
+zmrazeném okně. Pozdější oprava adjudikace odkazuje původní rozhodnutí.
+
+Brier skóre je průměr **(p − výsledek)²**, kde ano = 1 a ne = 0; nižší hodnota
+je lepší. Počítáme jen první způsobilou registraci každé kohorty otázka × verze
+definice × konec horizontu. Denní revize stejné otázky nezvětšují počet vzorků.
+Neznámé výsledky a zpětně importované již vyřešené otázky jsou vyloučeny.
+Překrývající se otázky navíc nejsou nezávislé konflikty. Z malého souboru výsledků
+nelze prohlašovat model za kalibrovaný.

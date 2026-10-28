@@ -103,6 +103,10 @@ Do not overreact to another threatening speech, Telegram post, UVB-76 message, o
 
 For every full research or recalibration run:
 
+For assessments after 2026-10-28T09:43:20+01:00, also follow the structured
+monitoring extension at the end of this file. Load the registry and due queue
+before research; creating the queue never counts as performing checks.
+
 1. Load `russia-escalation/state.json` if it exists.
 2. Load the relevant recent evidence from `russia-escalation/evidence.jsonl`.
 3. Load `russia-escalation/watchlist.json` if it exists.
@@ -1115,3 +1119,183 @@ shareable and work without JavaScript. Older Czech-only reports remain unchanged
 do not invent backdated English reports or silently relabel old content. The
 dashboard, general archive and methodology remain Czech; English report navigation
 labels any Czech-only destination explicitly.
+
+# Structured coverage, provenance, effects and forecast evaluation
+
+This extension was introduced on 28 October 2026. It supplements the existing
+prior, ledger, watchlist and bilingual reports; it never rewrites them.
+
+## Start every research run with coverage planning
+
+Load `sources.json`, `coverage.jsonl`, `monitoring-runs.jsonl`, `events.json`,
+`case-reviews.jsonl`, `indicators.json` and their observation logs. Run:
+
+```sh
+.venv/bin/python scripts/monitor.py due
+```
+
+The queue combines daily source checks, the weekly country rotation, a monthly
+coverage audit, event followups and overdue legacy watchlist items. Prioritise
+urgent warnings and live cases, then priority-1 sources. Netherlands, Belgium,
+Sweden, Finland and Norway remain priority coverage repairs; Austria, Slovakia
+and Hungary are in the weekly rotation. All 36 EU/NATO countries have a source
+plan. A registered URL is only a planned source, not proof that it was consulted.
+
+Before research, save the intended task IDs from the queue. At completion append
+one run to `monitoring-runs.jsonl` with `id`, `kind` (daily/weekly/monthly/backfill),
+`started_at`, `finished_at`, `expected_tasks` and `note`. Do not shrink the expected
+task list after a source fails. Append actual checks to `coverage.jsonl`:
+
+- Stable `id`, `run_id`, matching `task_id`, exact timezone-aware `checked_at`.
+- `source_ids`, the actual `urls`, subject `areas`, and `domains` selected from
+  official_assessment / incidents / readiness / policy_effect.
+- `period_start` and `period_end`, `scope_type` (document_review / news_scan /
+  country_audit / source_audit), a specific `scope` and explicit `limitations`.
+- `outcome`: relevant_found / no_new_relevant / partial / unavailable.
+- Referenced `evidence_ids` and optional `observation_ids`; a relevant result
+  needs at least one. Never log a not-yet-performed check. Missing logs mean
+  not_checked in the presentation, not that previous free-text research was absent.
+
+An old document review does not satisfy a daily news scan. Opening an index does
+not satisfy a country audit. A country audit counts as complete only when all
+four domains were actually reviewed. Describe publication/search lag, paywalls,
+HTTP errors and incomplete language coverage. A failed fetch creates no negative
+evidence and does not refresh the last successful check. A complete check means
+complete **within its stated scope**, never omniscient coverage of a country.
+
+For every new assessment set `research_scope.monitoring_run_id` and
+`research_scope.coverage_status` (complete or partial). The latter must match
+the saved expected tasks and actual successful checks; validation enforces it.
+Partial work may still justify a bounded update, but disclose the gaps in both
+reports and do not describe the run as comprehensive. These fields are required
+for assessments after the extension timestamp; older state and snapshots remain
+immutable. A new top-level cutoff never changes dates of older observations.
+
+## Retrospective intake and source independence
+
+Maintain canonical cases in `events.json`. Each has a stable `id`, `kind`
+(incident/assessment/policy/series), country or region `areas`, `summary`,
+`russian_involvement`, `attribution_basis`, and `links`. Each link identifies an
+existing evidence ID, `line_id`, exact `claim`, `independence_basis` and one role:
+first_report / independent_corroboration / followup / attribution / refutation /
+correction / overlapping_claim. Same source URL is a review lead, not automatic
+merging: indexes and feeds may describe different events. One source family can
+support the occurrence while leaving attribution unconfirmed. Do not add their
+counts together as independent confirmations of every claim.
+
+The BIS annual-report records `evt-20260827-bis-annual-report` and
+`evt-20260827-bis-2025-sabotage-assessment` share one canonical source family;
+the second has an overlapping claim. Preserve both original ledger lines. This
+does not establish that earlier probability calculations were actually doubled.
+Continue the explicit review of remaining unlinked historical records; do not
+label automatically generated candidate groups as fully reviewed events.
+
+For new historical material, first distinguish missing geographic annotation,
+new evidence, and a derivative of an existing line. Append genuinely new evidence
+with the original publication/event dates, current discovery timestamp,
+`intake_type: retrospective_backfill`, and `forecast_integration: pending_review`.
+Add geographic annotations. Do not call it a new incident on discovery day and
+do not silently update probabilities. In the next relevant analytical run append
+an `evidence-reviews.jsonl` decision (reviewed_no_change / integrated / excluded),
+with evidence IDs, `reviewed_at`, report basename and rationale. The original
+intake line remains immutable. This closes the pending-review notice on the site.
+
+## Case followups and negative evidence
+
+Open cases have `case_status`, `next_check_by` and `next_action`. Append each
+check to `case-reviews.jsonl` with event ID, actual coverage check IDs,
+`checked_at`, original deadline as `scheduled_for`, outcome, summary, new deadline,
+next action and case status. Never overwrite the missed deadline or close a case
+after an unavailable/partial check. Treat legacy watchlist deadlines and their
+review_history as authoritative during gradual migration; don't reset them.
+
+`indicators.json` specifies expected signatures, baselines, alternatives, source
+IDs and freshness periods. `indicator-observations.jsonl` records present / absent /
+unknown with actual observation time, check IDs, observability and rationale.
+An absent observation requires high public observability, a sourced baseline,
+and successful adequate checks; a search with no hits alone is insufficient.
+Routine exercises, weather alerts, seasonal recruitment and monitoring-system
+changes must be tested as alternatives. An annual assessment is not fresh
+evidence of today's force posture. Preserve capability/decision distinctions.
+
+## Effects, Czech society and WDPI methods
+
+Use `metrics.json` definitions and append observations to
+`metric-observations.jsonl`. Preserve method_version, period precision,
+recorded_at, value (null when unknown), stage (announced/committed/delivered/paid/
+observed/unknown), source URLs, Russian involvement and causal basis. Numeric
+zero requires evidence, not a missing observation. Polls also require the exact
+question, fieldwork, sample size, target population, collection mode and
+comparability note. A different question or design requires a distinct series.
+
+Track realised deliveries/payments separately from promises, service disruption
+and cost separately from propaganda, and decisions separately from rhetoric.
+Keep Czech institutional trust, NATO membership support, aid support, willingness
+to bear specified costs and continuity of services as different measures. Do not
+invent an aggregate Czech-resilience score. The public scenario panel covers
+72 hours, one month and a prolonged crisis conditional on a limited NATO–Russia
+clash and Article 5; these scenarios do not change the unconditional forecast.
+
+WDPI anchored-v2 is available prospectively in `metrics.json`, with explicit
+0/25/50/75/100 anchors and unchanged 35/35/30 weights. Choose the highest fully
+supported anchor, document the scope and evidence for **every** component, and
+record causal attribution separately. Missing components mean no new total;
+never zero-fill or redistribute weights. Append component judgments and linked
+observation IDs to `wdpi-assessments.jsonl`; the validator reproduces the total
+with half-up rounding. First use must be in a new full assessment, explicitly
+label the method break, and set `state.wdpi.method_version: anchored-v2` and
+`state.wdpi.assessment_id` to its log record. Old 68/52/30 and total 51 are not
+retroactively recalculated or represented as having used the new anchors.
+
+## Freeze and resolve forecasts
+
+`forecast-register.jsonl` is append-only. The normal publisher registers each new
+active forecast once, preserving the question, exact definition and hash,
+resolution criteria, probability, window start/end, report, registration time,
+definition version and evaluation cohort. It can also be run explicitly:
+
+```sh
+.venv/bin/python scripts/monitor.py register
+```
+
+Keep resolution criteria fixed between daily revisions of the same definition.
+Changing meaning or criteria starts a new definition/cohort; old registrations
+remain untouched. Each new registration must agree with its archived report's
+state snapshot. Never import already resolved questions as prospective successes.
+
+Append adjudications to `forecast-resolutions.jsonl`: forecast_id, outcome
+(yes/no/unknown), resolved_at, evidence IDs, source URLs and rationale. Yes must
+have an event_time inside the original window; no requires an expired horizon and
+coverage_basis. Conflicting attribution or unobservable outcomes remain unknown.
+A correction names the preceding adjudication in `supersedes`; no deletion.
+
+Brier is mean((p-y)^2), y=1/0, only for definitive eligible binary outcomes.
+Select the first eligible registered forecast within each question × definition
+hash × horizon cohort; daily revisions are not additional samples. Preserve each
+registration's original start time even when later forecasts use a rolling start.
+Overlapping hypotheses still are not independent conflicts. Show the number of
+scored questions and missing outcomes; never claim calibration from a tiny sample.
+
+## Safe metadata publication and validation
+
+For pure metadata/geography work or clearly marked historical intake:
+
+```sh
+.venv/bin/python scripts/publish_update.py --metadata-only --push
+```
+
+This mode permits an older assessment but requires byte-identical state and no
+new/changed reports or snapshots. It does not register a new forecast or create
+a new snapshot. Any appended evidence must be retrospective pending-review
+intake. Other forecast updates use the normal publisher. Both modes enforce the
+same exact data allowlist and append-only audit/history checks, including against
+origin. Implementation changes need deliberate code review and a manual push;
+automatic publication must never collect experiments or unrelated files.
+
+Use `scripts/monitor.py append LOG_NAME --input /path/to/candidate.json` for a
+validated append (object or list). Append the run first, then referenced
+observations/checks, then case reviews/adjudications; don't edit log history.
+The helper validates the full candidate and publishes it atomically under a
+process lock. Invalid data blocks publication; partial research is valid data
+only when accurately labelled. Run the full unit suite, build, site checks and
+verify Pages deployment. UI/metadata updates do not justify re-dating a forecast.

@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-28T10:19:24+01:00",
+  "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
+  "events": [
+    {
+      "id": "case-bis-annual-2025",
+      "title": "BIS: výroční hodnocení roku 2025 — oprava překryvu",
+      "kind": "assessment",
+      "areas": [
+        "CZE",
+        "EU"
+      ],
+      "summary": "Dva uložené záznamy čerpají z téže výroční zprávy BIS a překrývajícího se závěru. Historie zůstává zachována, společný původ se počítá jednou.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Společný dokument a překryv tvrzení nejsou dvě nezávislá potvrzení. Z opravy nevyplývá, že dřívější číselná prognóza byla skutečně dvakrát navýšena.",
+      "links": [
+        {
+          "evidence_id": "evt-20260827-bis-annual-report",
+          "role": "first_report",
+          "line_id": "bis-annual-2025",
+          "claim": "Hrozba ruských proxy aktivit a absence spolehlivě potvrzené ruské sabotáže v ČR za rok 2025.",
+          "independence_basis": "Stejný primární dokument; druhý záznam zčásti opakuje již uložené tvrzení, nepřidává nezávislou linii."
+        },
+        {
+          "evidence_id": "evt-20260827-bis-2025-sabotage-assessment",
+          "role": "overlapping_claim",
+          "line_id": "bis-annual-2025",
+          "claim": "Hrozba ruských proxy aktivit a absence spolehlivě potvrzené ruské sabotáže v ČR za rok 2025.",
+          "independence_basis": "Stejný primární dokument; druhý záznam zčásti opakuje již uložené tvrzení, nepřidává nezávislou linii."
+        }
+      ]
+    },
+    {
+      "id": "case-20260219-nld-joint-threat",
+      "title": "AIVD/MIVD: přípravy sabotáží a výhled ruské hrozby v Nizozemsku",
+      "kind": "assessment",
+      "areas": [
+        "NLD"
+      ],
+      "summary": "AIVD/MIVD uvádějí pozorované ruské hybridní aktivity v Nizozemsku včetně příprav sabotáže. Vyšší vojenská schopnost sama neznamená rozhodnutí zahájit velkou válku.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Oficiální hodnocení hrozby; není samostatným důkazem konkrétní provedené operace.",
+      "links": [
+        {
+          "evidence_id": "backfill-20260219-nld-joint-threat",
+          "role": "first_report",
+          "line_id": "nld-official-line",
+          "claim": "AIVD/MIVD uvádějí pozorované ruské hybridní aktivity v Nizozemsku včetně příprav sabotáže. Vyšší vojenská schopnost sama neznamená rozhodnutí zahájit velkou válku.",
+          "independence_basis": "První zařazení tohoto podkladu; jeden primární dokument, nikoli počet jeho přetisků."
+        }
+      ]
+    },
+    {
+      "id": "case-20260423-nld-annual-2025",
+      "title": "AIVD/MIVD: za rok 2025 nezjištěna akutní úspěšná ruská kybersabotáž v Nizozemsku",
+      "kind": "assessment",
+      "areas": [
+        "NLD"
+      ],
+      "summary": "AIVD/MIVD ve výroční zprávě neidentifikovaly akutní úspěšnou ruskou kybersabotáž v Nizozemsku v roce 2025. Popisují špionáž a přípravy; řadu hlášení dronů nelze připsat Rusku.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Oficiální hodnocení hrozby; není samostatným důkazem konkrétní provedené operace.",
+      "links": [
+        {
+          "evidence_id": "backfill-20260423-nld-annual-2025",
+          "role": "first_report",
+          "line_id": "nld-official-line",
+          "claim": "AIVD/MIVD ve výroční zprávě neidentifikovaly akutní úspěšnou ruskou kybersabotáž v Nizozemsku v roce 2025. Popisují špionáž a přípravy; řadu hlášení dronů nelze připsat Rusku.",
+          "independence_basis": "První zařazení tohoto podkladu; jeden primární dokument, nikoli počet jeho přetisků."
+        }
+      ]
+    },
+    {
+      "id": "case-20260915-nld-rail-disruption",
+      "title": "Nizozemská železnice 15. září: úmyslné narušení, původce neznámý",
+      "kind": "incident",
+      "areas": [
+        "NLD"
+      ],
+      "summary": "ProRail potvrdil úmyslné narušení železničního provozu 15. září a odstranění 35 poruch. Původce byl podle zveřejněného vyjádření neznámý a věc vyšetřovala policie.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Potvrzen úmyslný zásah a provozní dopad; ruská vazba, motiv a pachatel neurčeni.",
+      "links": [
+        {
+          "evidence_id": "backfill-20260915-nld-rail-disruption",
+          "role": "first_report",
+          "line_id": "nld-official-line",
+          "claim": "ProRail potvrdil úmyslné narušení železničního provozu 15. září a odstranění 35 poruch. Původce byl podle zveřejněného vyjádření neznámý a věc vyšetřovala policie.",
+          "independence_basis": "První zařazení tohoto podkladu; jeden primární dokument, nikoli počet jeho přetisků."
+        }
+      ],
+      "case_status": "open",
+      "next_check_by": "2026-10-29T10:00:00+01:00",
+      "next_action": "Vyhledat nový policejní závěr o příčině, původci a motivu; oddělit provozní obnovu od atribuce."
+    },
+    {
+      "id": "case-20261010-nld-rail-arson",
+      "title": "ProRail: žhářství 10. října, oprava dokončena; ruská vazba nedoložena",
+      "kind": "incident",
+      "areas": [
+        "NLD"
+      ],
+      "summary": "ProRail popsal žhářství a omezení železničního provozu během 10.–11. října. Aktualizace oznámila dokončenou opravu a možnost obnovení provozu 11. října ve 21 hodin.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Potvrzen požár, úmysl a oprava; čas obnovy byl oznámen. Žádná doložená ruská atribuce.",
+      "links": [
+        {
+          "evidence_id": "backfill-20261010-nld-rail-arson",
+          "role": "first_report",
+          "line_id": "nld-official-line",
+          "claim": "ProRail popsal žhářství a omezení železničního provozu během 10.–11. října. Aktualizace oznámila dokončenou opravu a možnost obnovení provozu 11. října ve 21 hodin.",
+          "independence_basis": "První zařazení tohoto podkladu; jeden primární dokument, nikoli počet jeho přetisků."
+        }
+      ],
+      "case_status": "open",
+      "next_check_by": "2026-10-29T10:00:00+01:00",
+      "next_action": "Vyhledat nový policejní závěr o příčině, původci a motivu; oddělit provozní obnovu od atribuce."
+    },
+    {
+      "id": "case-20260318-swe-threat",
+      "title": "Säpo: výhled ruské hrozby a nepotvrzené atribuce podezření na sabotáž",
+      "kind": "assessment",
+      "areas": [
+        "SWE"
+      ],
+      "summary": "Säpo očekává možné zesílení ruské bezpečnostní hrozby. U několika podezření na sabotáž z předchozího roku se nepodařilo prokázat vazbu na cizí moc.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Oficiální hodnocení hrozby; není samostatným důkazem konkrétní provedené operace.",
+      "links": [
+        {
+          "evidence_id": "backfill-20260318-swe-threat",
+          "role": "first_report",
+          "line_id": "swe-official-line",
+          "claim": "Säpo očekává možné zesílení ruské bezpečnostní hrozby. U několika podezření na sabotáž z předchozího roku se nepodařilo prokázat vazbu na cizí moc.",
+          "independence_basis": "První zařazení tohoto podkladu; jeden primární dokument, nikoli počet jeho přetisků."
+        }
+      ]
+    },
+    {
+      "id": "case-20260115-bel-vsse-2025",
+      "title": "VSSE: hybridní hrozba; část hlášení dronů mylná, atribuce vyšetřována",
+      "kind": "assessment",
+      "areas": [
+        "BEL"
+      ],
+      "summary": "VSSE popisuje rostoucí ruskou hybridní hrozbu také v Belgii. U hlášení dronů z podzimu 2025 uvádí falešné poplachy i skutečné drony; ruská souvislost byla předmětem vyšetřování.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Oficiální hodnocení hrozby; není samostatným důkazem konkrétní provedené operace.",
+      "links": [
+        {
+          "evidence_id": "backfill-20260115-bel-vsse-2025",
+          "role": "first_report",
+          "line_id": "bel-official-line",
+          "claim": "VSSE popisuje rostoucí ruskou hybridní hrozbu také v Belgii. U hlášení dronů z podzimu 2025 uvádí falešné poplachy i skutečné drony; ruská souvislost byla předmětem vyšetřování.",
+          "independence_basis": "První zařazení tohoto podkladu; jeden primární dokument, nikoli počet jeho přetisků."
+        }
+      ]
+    },
+    {
+      "id": "case-20260206-nor-pst-2026",
+      "title": "PST: norský výhled sabotážní hrozby pro rok 2026",
+      "kind": "assessment",
+      "areas": [
+        "NOR"
+      ],
+      "summary": "PST v hodnocení pro rok 2026 připouští ruské sabotážní operace v Norsku a očekává růst špionáže a náboru prostředníků. Zároveň uvádí mírný pokles obdobné aktivity v Evropě v roce 2025.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Oficiální hodnocení hrozby; není samostatným důkazem konkrétní provedené operace.",
+      "links": [
+        {
+          "evidence_id": "backfill-20260206-nor-pst-2026",
+          "role": "first_report",
+          "line_id": "nor-official-line",
+          "claim": "PST v hodnocení pro rok 2026 připouští ruské sabotážní operace v Norsku a očekává růst špionáže a náboru prostředníků. Zároveň uvádí mírný pokles obdobné aktivity v Evropě v roce 2025.",
+          "independence_basis": "První zařazení tohoto podkladu; jeden primární dokument, nikoli počet jeho přetisků."
+        }
+      ]
+    },
+    {
+      "id": "case-20260421-fin-interference",
+      "title": "Traficom: rušení z ruského území, změna monitoringu komplikuje meziroční srovnání",
+      "kind": "series",
+      "areas": [
+        "FIN"
+      ],
+      "summary": "Traficom naměřil růst rušení GNSS a mobilních sítí na jaře 2026 a označil původ na ruském území. Meziroční počty částečně ovlivňuje rozšíření monitoringu a podmínky šíření signálu.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Potvrzeno měření a veřejné technické hodnocení původu; záměr nelze z monitoringu zjistit.",
+      "links": [
+        {
+          "evidence_id": "backfill-20260421-fin-interference",
+          "role": "first_report",
+          "line_id": "fin-official-line",
+          "claim": "Traficom naměřil růst rušení GNSS a mobilních sítí na jaře 2026 a označil původ na ruském území. Meziroční počty částečně ovlivňuje rozšíření monitoringu a podmínky šíření signálu.",
+          "independence_basis": "První zařazení tohoto podkladu; jeden primární dokument, nikoli počet jeho přetisků."
+        }
+      ]
+    },
+    {
+      "id": "case-20260101-svk-influence-review",
+      "title": "SIS: nárůst vlivových kampaní za rok 2025 bez konkrétní atribuce",
+      "kind": "assessment",
+      "areas": [
+        "SVK"
+      ],
+      "summary": "SIS v ohlédnutí za rokem 2025 uvedla nárůst vlivových kampaní v kybernetickém prostoru směřujících proti důvěře ve slovenské instituce.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Potvrzeno vyjádření SIS; konkrétní původce, rozsah a behaviorální účinek v citovaném textu nedoloženy.",
+      "links": [
+        {
+          "evidence_id": "backfill-20260101-svk-influence-review",
+          "role": "first_report",
+          "line_id": "svk-official-line",
+          "claim": "SIS v ohlédnutí za rokem 2025 uvedla nárůst vlivových kampaní v kybernetickém prostoru směřujících proti důvěře ve slovenské instituce.",
+          "independence_basis": "První zařazení tohoto podkladu; jeden primární dokument, nikoli počet jeho přetisků."
+        }
+      ]
+    },
+    {
+      "id": "case-khoryv-20261023",
+      "title": "Khoryv: jedna událost, záchrana, atribuce a další sledování",
+      "kind": "incident",
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "summary": "Hlášení záchrany a pozdější sledování trupu patří k jedné námořní události. Soukromé analytické hodnocení původce zůstává odlišné od pozorovaného následku.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Ambrey hodnotí ruské provedení jako vysoce pravděpodobné; nepřeměňovat analytické hodnocení na konečnou vyšetřovací atribuci.",
+      "links": [
+        {
+          "evidence_id": "evt-20261023-khoryv-capsize-rescue",
+          "role": "first_report",
+          "line_id": "line-romanian-khoryv-rescue-and-navigation-authorities",
+          "claim": "MAI potvrzuje požár a převrácení mimo teritoriální vody: 9 zachráněných, 1 mrtvý, 3 pohřešovaní k hlášení23. října. ARN153/2026 zaznamenává loď stále plující dnem vzhůru. Nový materiální incident, nikoli již ověřená konečná záchranná bilance.",
+          "independence_basis": "Stejný incident; jednotlivé linie vypovídají o odlišných tvrzeních. Následná poloha či záchrana nejsou nezávislé potvrzení původce."
+        },
+        {
+          "evidence_id": "analysis-20261023-ambrey-khoryv-assessment",
+          "role": "attribution",
+          "line_id": "line-ambrey-maritime-risk-assessment",
+          "claim": "Ambrey hodnotí ruské provedení jako vysoce pravděpodobné, navazuje je na ukrajinskou obchodní vazbu a nepovažuje přímý střet Rusko–NATO za bezprostřední.",
+          "independence_basis": "Stejný incident; jednotlivé linie vypovídají o odlišných tvrzeních. Následná poloha či záchrana nejsou nezávislé potvrzení původce."
+        },
+        {
+          "evidence_id": "followup-20261024-khoryv-search-continued",
+          "role": "followup",
+          "line_id": "line-romanian-khoryv-rescue-and-navigation-authorities",
+          "claim": "ARSVOM dle místního média pokračoval24. října v pátrání po třech pohřešovaných; večer operaci přerušil kvůli viditelnosti. Nový záchranný follow-up, ne druhý útok ani nová forenzní atribuce.",
+          "independence_basis": "Stejný incident; jednotlivé linie vypovídají o odlišných tvrzeních. Následná poloha či záchrana nejsou nezávislé potvrzení původce."
+        },
+        {
+          "evidence_id": "followup-20261025-khoryv-navigation-status",
+          "role": "followup",
+          "line_id": "line-romanian-khoryv-rescue-and-navigation-authorities",
+          "claim": "Nové navigační varování stále popisuje převrácený plovoucí trup Khoryv a tři pohřešované. Jde o novou pozorovací aktualizaci již uloženého incidentu, nikoli nový zásah či uzavřenou záchrannou bilanci.",
+          "independence_basis": "Stejný incident; jednotlivé linie vypovídají o odlišných tvrzeních. Následná poloha či záchrana nejsou nezávislé potvrzení původce."
+        },
+        {
+          "evidence_id": "followup-20261027-khoryv-bulgarian-monitoring",
+          "role": "followup",
+          "line_id": "line-bulgarian-transport-khoryv-monitoring",
+          "claim": "Ministerstvo 27. října hlásí sledování převráceného Khoryvu a očekávaný vstup do bulharské zóny odpovědnosti během následujícího dne. Námořní prohlídka je plán. Nový útok, dokončený vstup nebo atribuce doloženy nejsou.",
+          "independence_basis": "Stejný incident; jednotlivé linie vypovídají o odlišných tvrzeních. Následná poloha či záchrana nejsou nezávislé potvrzení původce."
+        }
+      ],
+      "case_status": "open",
+      "next_check_by": "2026-10-29T07:05:38+01:00",
+      "next_action": "Navázat na black_sea_maritime_incident ve watchlistu; ověřit novou prohlídku, oběti a atribuci bez přičítání další události."
+    }
+  ]
+}

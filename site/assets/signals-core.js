@@ -36,7 +36,22 @@
     const date = new Date(value + 'T00:00:00Z');
     return Number.isFinite(date.getTime()) && date.toISOString().slice(0, 10) === value;
   }
-  const api = { matchesArea, matchesCategories, matchesTime, filterRecords, countryCounts, validDay };
+  function provenanceCounts(records) {
+    const events = new Set();
+    let unlinked = 0;
+    for (const record of records) {
+      if (!record.event_links?.length) unlinked++;
+      for (const link of record.event_links || []) events.add(link.event_id);
+    }
+    return { events: events.size, unlinked };
+  }
+  function coverageState(country, now) {
+    if (!country || !country.last_success) return country?.status || 'not_checked';
+    // A failed recent attempt cannot refresh the last successful review.
+    if (Date.parse(now) - Date.parse(country.last_success) > country.review_days * 86400000) return 'stale';
+    return country.status;
+  }
+  const api = { matchesArea, matchesCategories, matchesTime, filterRecords, countryCounts, validDay, provenanceCounts, coverageState };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else scope.EscalationSignals = api;
 })(typeof window === 'undefined' ? globalThis : window);

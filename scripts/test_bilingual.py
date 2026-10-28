@@ -10,6 +10,7 @@ import bilingual
 import build_site
 import check_site
 import publish_update
+import monitoring
 
 
 def make_fixture(root):
@@ -20,6 +21,14 @@ def make_fixture(root):
     (data / "snapshots").mkdir()
     for name in ("state.json", "evidence.jsonl", "watchlist.json"):
         shutil.copyfile(build_site.DATA / name, data / name)
+    # Independent bilingual fixture: preserve schemas but not references to other reports.
+    for name in monitoring.JSON_FILES:
+        value = json.loads((build_site.DATA / name).read_text())
+        if name == 'events.json':
+            value['events'] = []
+        (data / name).write_text(json.dumps(value))
+    for name in monitoring.LOG_FILES:
+        (data / name).write_text('')
     shutil.copyfile(build_site.DATA / "reports/2026-10-21-0708.md", data / "reports/2026-10-21-0708.md")
     shutil.copytree(build_site.ROOT / "site", root / "site")
     state = json.loads((data / "state.json").read_text())

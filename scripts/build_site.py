@@ -16,6 +16,7 @@ from zoneinfo import ZoneInfo
 from markdown_it import MarkdownIt
 from bilingual import REPORT_NAME, TRANSLATION_NAME, english_path, validate_translations
 from signals import geography as load_geography, payload as signals_payload, content as signals_content
+import monitoring
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "russia-escalation"
@@ -24,6 +25,7 @@ REPOSITORY = "https://github.com/josefslerka/russia-escalation-monitor"
 TRENDS = {"baseline": "výchozí stav", "flat": "beze změny", "up": "růst", "down": "pokles"}
 CONFIDENCE = {"low": "nízká", "medium-low": "střední až nižší", "medium": "střední", "medium-high": "střední až vyšší", "high": "vysoká"}
 LABELS = {
+    "further_sustained_conventional_escalation_ukraine": "Udržitelná konvenční eskalace na Ukrajině",
     "additional_qualitative_conventional_escalation_ukraine": "Další kvalitativní eskalace na Ukrajině",
     "significant_hybrid_proxy_operation_eu": "Významná hybridní / proxy operace v EU",
     "physical_sabotage_proxy_attempt_eu": "Fyzický sabotážní / proxy pokus v EU",
@@ -122,6 +124,8 @@ def validate():
         raise ValueError("New evidence IDs are missing from evidence.jsonl")
     load_geography(DATA / "geography.json", evidence)
     read_json(DATA / "watchlist.json")
+    bundle = monitoring.validate(monitoring.load(DATA), evidence, state)
+    monitoring.validate_files(bundle, DATA)
     all_reports = list((DATA / "reports").glob("*.md"))
     reports = sorted((p for p in all_reports if REPORT_NAME.fullmatch(p.name)), reverse=True)
     if not reports or any(not (REPORT_NAME.fullmatch(p.name) or TRANSLATION_NAME.fullmatch(p.name)) for p in all_reports):
@@ -142,7 +146,7 @@ def page(title: str, content: str, prefix: str = ".", active: str = "", lang: st
     en = lang == "en"
     navigation = "".join(
         f'<a href="{prefix}/{path}" hreflang="cs"' + (' aria-current="page"' if active == label else "") + f'>{english if en else label}</a>'
-        for path, label, english in (("index.html", "Přehled", "Overview (Czech)"), ("signals.html", "Mapa a signály", "Map and signals (Czech)"), ("archive.html", "Archiv", "Archive (Czech)"), ("methodology.html", "Metodika", "Methodology (Czech)"))
+        for path, label, english in (("index.html", "Přehled", "Overview (Czech)"), ("signals.html", "Mapa a signály", "Map and signals (Czech)"), ("coverage.html", "Pokrytí", "Coverage (Czech)"), ("quality.html", "Kvalita", "Quality (Czech)"), ("society.html", "Dopady", "Effects (Czech)"), ("archive.html", "Archiv", "Archive (Czech)"), ("methodology.html", "Metodika", "Methodology (Czech)"))
     )
     asset_tags = []
     for asset in extra_assets:
@@ -198,9 +202,9 @@ def render_markdown(source: str, known_reports: set[str], prefix: str = "..", la
                 if lang == "en" and not target.name.endswith(".en.md") and english_path(target).name in known_reports:
                     target = english_path(target)
                 child.attrSet("href", f"{prefix}/reports/{target.stem}.html" + (f"#{parsed.fragment}" if parsed.fragment else ""))
-            elif Path(parsed.path).name in ("state.json", "watchlist.json", "evidence.jsonl", "geography.json", "signals.json"):
+            elif Path(parsed.path).name in ("state.json", "watchlist.json", "evidence.jsonl", "geography.json", "signals.json", "monitoring.json", *monitoring.FILES):
                 child.attrSet("href", f"{prefix}/data/{Path(parsed.path).name}")
-            elif parsed.path in ("index.html", "signals.html", "archive.html", "methodology.html"):
+            elif parsed.path in ("index.html", "signals.html", "archive.html", "methodology.html", "coverage.html", "quality.html", "society.html"):
                 child.attrSet("href", f"{prefix}/{parsed.path}" + (f"#{parsed.fragment}" if parsed.fragment else ""))
             elif href.startswith("#"):
                 pass
@@ -256,6 +260,7 @@ def dashboard(state, reports, evidence_count):
 <p class="lede">{escape(state['one_line_judgment'])}</p><div class="actions"><a class="button" href="reports/{latest}.html">Číst aktuální zprávu →</a>{english_link}<a class="button secondary" href="signals.html">Mapa a signály →</a><a class="button secondary" href="archive.html">Procházet archiv</a></div></div>
 <aside class="status-card" aria-label="Celkové hodnocení"><p class="status-label">Celkový stupeň varování</p>{badge(state['overall_level'])}<span class="trend">{escape(TRENDS[state['overall_trend']])}</span><p class="meta">Kvalitativní hodnocení. Význam stupně a podklady jsou vysvětleny ve zprávě.</p></aside></div>
 <p class="freshness" data-assessment-time="{escape(state['assessment_time'])}" hidden></p>
+<p class="note">Datum hodnocení není zárukou stejně čerstvých podkladů ve všech doménách. <a href="coverage.html">Rozsah a mezery rešerše →</a> · <a href="quality.html">Provenance a výsledky předpovědí →</a> · <a href="society.html">Účinky a česká společnost →</a></p>
 <div class="data-strip"><span>Odhady do <strong>{day(state['forecast_horizon'])}</strong></span><span><strong>{len(reports)}</strong> zpráv v archivu · <strong>{evidence_count}</strong> záznamů evidence</span></div>
 <section class="section"><div class="section-head"><h2>Aktuální pravděpodobnosti</h2><p>Odhad · pásmo nejistoty · změna vůči prioru</p></div>
 <div class="table-wrap"><table><thead><tr><th scope="col">Událost</th><th scope="col">Do kdy</th><th scope="col">Odhad / pásmo</th><th scope="col">Změna</th><th scope="col">Důvěra</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
@@ -295,7 +300,9 @@ def report_page(report, text, lang, known_reports, reports, index):
 def build():
     state, evidence, paths = validate()
     annotations = load_geography(DATA / "geography.json", evidence)
-    signals = signals_payload(state, evidence, annotations)
+    bundle = monitoring.load(DATA)
+    monitor_data = monitoring.payload(bundle, evidence, state)
+    signals = signals_payload(state, evidence, annotations, monitor_data)
     signals_json = public_text(json.dumps(signals, ensure_ascii=False, separators=(",", ":")) + "\n")
     reports = [report_metadata(path) for path in paths]
     known_reports = {path.name for path in paths}
@@ -314,6 +321,12 @@ def build():
                                  extra_assets=("assets/signals.css", "assets/vendor/d3-7.9.0.min.js", "assets/signals-core.js", "assets/signals.js"))
     files["data/signals.json"] = signals_json
     files["data/geography.json"] = public_text(json.dumps(annotations, ensure_ascii=False, indent=2) + "\n")
+    files["data/monitoring.json"] = public_text(json.dumps(monitor_data, ensure_ascii=False, indent=2) + "\n")
+    files["data/evaluation.json"] = public_text(json.dumps(monitoring.evaluation(bundle), ensure_ascii=False, indent=2) + "\n")
+    files["coverage.html"] = page("Pokrytí zdrojů", monitoring.coverage_content(monitor_data, state, bundle, read_json(DATA / 'watchlist.json')), active="Pokrytí")
+    files["quality.html"] = page("Kvalita a výsledky", monitoring.quality_content(monitor_data, bundle, state, LABELS), active="Kvalita")
+    society, _ = render_markdown((ROOT / 'site/society.md').read_text(), known_reports, '.')
+    files["society.html"] = page("Účinky a česká společnost", monitoring.effects_content(bundle, state, monitor_data['as_of']) + f'<article class="report society-scenarios">{society}</article>', active="Dopady")
     files["archive.html"] = page("Archiv zpráv", f'''<div class="hero"><div><p class="eyebrow">{len(reports)} zpráv od {day(reports[-1]['time'][:10])}</p><h1>Archiv hodnocení</h1><p class="lede">Zprávy od nejnovější po nejstarší. Každá obsahuje tehdejší odhady, zdroje a zdůvodnění změn.</p></div></div>
 <div class="archive-toolbar"><label for="archive-search" class="meta">Hledat v datu a shrnutí</label><input id="archive-search" data-archive-search type="search" placeholder="Například: mobilizace, 29. 9., NATO"><span class="meta" data-archive-count aria-live="polite">{len(reports)} zpráv</span></div>
 <section class="section">{archive_cards(reports)}</section>''', active="Archiv")
@@ -326,7 +339,7 @@ def build():
             files[f'reports/{report["id"]}.en.md'] = text
     methodology, _ = render_markdown((ROOT / "site/methodology.md").read_text(), known_reports, ".")
     files["methodology.html"] = page("Metodika", f'<article class="method report">{methodology}</article>', active="Metodika")
-    for name in ("state.json", "watchlist.json", "evidence.jsonl"):
+    for name in ("state.json", "watchlist.json", "evidence.jsonl", *monitoring.FILES):
         files[f"data/{name}"] = public_text((DATA / name).read_text())
     for snapshot in sorted((DATA / "snapshots").glob("*.json")):
         read_json(snapshot)
