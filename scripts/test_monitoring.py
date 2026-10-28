@@ -101,7 +101,9 @@ class MonitoringChecks(unittest.TestCase):
     def test_failed_case_review_preserves_deadline_and_cannot_close_case(self):
         event = next(e for e in self.bundle['events.json']['events'] if e.get('case_status') == 'open')
         previous = next((r for r in reversed(self.bundle['case-reviews.jsonl']) if r['event_id'] == event['id']), event)
-        at = max([m.instant(self.state['assessment_time'])] + [m.instant(r['checked_at']) for r in self.bundle['case-reviews.jsonl']]) + timedelta(hours=1)
+        at = max([m.instant(self.state['assessment_time'])]
+                 + [m.instant(r['checked_at']) for r in self.bundle['case-reviews.jsonl']]
+                 + [m.instant(c['checked_at']) for c in self.bundle['coverage.jsonl']]) + timedelta(hours=1)
         review = dict(id='test-case',event_id=event['id'],check_ids=['check-fin-supo'],checked_at=at.isoformat(),scheduled_for=previous['next_check_by'],next_check_by=(at+timedelta(days=1)).isoformat(),next_action='TEST retry',summary='TEST unavailable',outcome='unavailable',case_status='closed')
         self.bundle['case-reviews.jsonl'].append(review)
         with self.assertRaisesRegex(ValueError, 'cannot close'):
