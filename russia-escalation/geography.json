@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-10-27T20:43:30+01:00",
+  "reviewed_at": "2026-10-28T07:05:38+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -1905,6 +1905,101 @@
         "FRA"
       ],
       "title": "ACLED rozebírá domácí příčiny protestů"
+    },
+    "analysis-20261026-un-commission-energy-trafficking": {
+      "areas": [
+        "UKR",
+        "RUS"
+      ],
+      "title": "Komise OSN zveřejnila závěry o energetických útocích a náboru",
+      "note": "Předmětem jsou účinky na Ukrajině a nábor do ruských sil. Nerozepisujeme nezveřejněný seznam 29 zemí; sídlo komise není geografickým předmětem."
+    },
+    "reported-20261027-iditelesom-october-coercion-total": {
+      "areas": [
+        "RUS"
+      ],
+      "title": "Idite lesom hlásí říjnové podněty k donucovacímu náboru",
+      "note": "Klientské zprávy z ruských regionů; nejde o reprezentativní celostátní počet ani více nezávislých zdrojových linií."
+    },
+    "followup-20261027-oleshky-compliance-statement": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Lubinec hlásí dodržování místního příměří během 27. října",
+      "note": "Olešky a vymezený prostor mise na Ukrajině; nepřenášet na celé území Ukrajiny nebo jiné státy."
+    },
+    "evt-20261027-nordic-putin-call": {
+      "areas": [
+        "FIN",
+        "NOR",
+        "RUS",
+        "UKR",
+        "BALTIC_SEA"
+      ],
+      "title": "Finsko a Norsko jednaly s Putinem po konzultaci s Ukrajinou",
+      "note": "Státy jsou účastníci konkrétního politického jednání a Ukrajina jeho předmět; Baltské moře výslovně zmíněný region. Nerozšiřovat na jednotlivé pobaltské státy."
+    },
+    "evt-20261027-norway-energy-pledge": {
+      "areas": [
+        "NOR",
+        "UKR"
+      ],
+      "title": "Norsko oznámilo energetickou pomoc na listopad a prosinec",
+      "note": "Norské financování a ukrajinský příjemce. Událostí je oznámení 27. října, nikoli již uskutečněná budoucí výplata."
+    },
+    "baseline-20261028-russian-bulava-test-announcement": {
+      "areas": [],
+      "title": "Rusko oznámilo výcvikovou zkoušku Bulavy; průběh nezávisle neověřen",
+      "note": "Ohotské moře nemá podporovaný kód v mapovém číselníku. Bez souřadnic a doložené jurisdikce nepřiřazujeme místo k ruskému území pouze podle státní příslušnosti ponorky."
+    },
+    "obs-20261027-ukrenergo-oct28-restrictions-plan": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo oznámilo plán omezení pro 28. října",
+      "note": "Část ukrajinských oblastí bez úplného seznamu; použita pouze země, ne domnělá lokální místa."
+    },
+    "reported-20261027-musk-satellite-retaliation-rationale": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Meduza: Musk spojuje omezení útočného použití s obavou z odvety",
+      "note": "Předmětem je použití služby na Ukrajině, nikoli sídlo společnosti nebo redakce. Neznámé družicové pozice se nemapují."
+    },
+    "evt-20261027-uk-poland-defence-plan": {
+      "areas": [
+        "GBR",
+        "POL",
+        "BALTIC_SEA"
+      ],
+      "title": "Británie a Polsko uzavřely obranný plán; cvičení je plánované",
+      "note": "Konkrétní dvoustranná spolupráce, plán cvičení v Polsku a výslovně uvedená baltská námořní spolupráce. Ne plošné rozmístění v členských státech NATO."
+    },
+    "followup-20261027-khoryv-bulgarian-monitoring": {
+      "areas": [
+        "BLACK_SEA",
+        "BGR"
+      ],
+      "title": "Bulharsko sleduje Khoryv a očekává vstup do zóny odpovědnosti",
+      "note": "Černé moře; Bulharsko jako předmět konkrétního opatření a očekávaná oblast odpovědnosti. Ne tvrzení, že vrak již vstoupil do bulharského teritoriálního moře. Souřadnice neuvádíme."
+    },
+    "evt-20261022-us-psi-starshield-inquiry": {
+      "areas": [
+        "USA",
+        "UKR"
+      ],
+      "title": "Americké šetření z 22. října má vlastní listopadové lhůty",
+      "note": "Americké rozhodování o službě pro Ukrajinu, nikoli fyzický incident v USA. Datum 22. října nepředatováno na dnešní objev."
+    },
+    "evt-20261026-us-lawmakers-starshield-letter": {
+      "areas": [
+        "USA",
+        "UKR"
+      ],
+      "title": "Další americký dopis žádá odpověď do 31. října",
+      "note": "Americký kontrolní postup k ukrajinské konektivitě; nejde o nové rozmístění či místní útok."
     }
-  }
+  },
+  "review_scope": "Nových 12 záznamů věcně zkontrolováno vůči otevřeným zdrojům; starých 352 anotací beze změny, ověřeno úplné pokrytí ID.",
+  "review_note": "Zachována nejistota a původní přesnost časů; neznámé mapové přiřazení zkoušky v Ohotském moři vysvětleno."
 }
