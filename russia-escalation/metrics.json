@@ -103,6 +103,18 @@
       ],
       "method_version": "restraint-causal-v1",
       "fresh_days": 7
+    },
+    {
+      "id": "nato-reported-cumulative-deliveries-usd",
+      "label": "NATO: hlášené kumulativní dodávky PURL a FMS",
+      "kind": "operational",
+      "unit": "USD",
+      "definition": "Kumulativní hodnota vybavení podle NATO; není denní přírůstek, kompletní součet podpory ani nezávisle auditovaná platba. Počátek kumulace v oznámení neuveden.",
+      "source_ids": [
+        "nato"
+      ],
+      "method_version": "nato-purl-fms-reported-cumulative-v1",
+      "fresh_days": 7
     }
   ],
   "wdpi": {

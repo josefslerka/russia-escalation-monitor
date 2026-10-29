@@ -1289,6 +1289,208 @@
       "priority": 1,
       "added_at": "2026-10-28T11:04:01+01:00",
       "note": "Doplněno pro přesné přiřazení skutečných kontrol tohoto běhu. Registrace URL není tvrzení, že byl přečten celý web."
+    },
+    {
+      "id": "nld-government",
+      "name": "Nizozemská vláda",
+      "url": "https://www.rijksoverheid.nl/actueel/nieuws",
+      "areas": [
+        "NLD",
+        "UKR"
+      ],
+      "domains": [
+        "policy_effect"
+      ],
+      "priority": 2,
+      "cadence_days": 7,
+      "tier": 1
+    },
+    {
+      "id": "kor-yonhap",
+      "name": "Yonhap",
+      "url": "https://www.yna.co.kr/",
+      "areas": [
+        "KOR",
+        "UKR"
+      ],
+      "domains": [
+        "policy_effect"
+      ],
+      "priority": 2,
+      "cadence_days": 7,
+      "tier": 2
+    },
+    {
+      "id": "fra-government",
+      "name": "Francouzská vláda",
+      "url": "https://www.info.gouv.fr/",
+      "areas": [
+        "FRA"
+      ],
+      "domains": [
+        "policy_effect"
+      ],
+      "priority": 2,
+      "cadence_days": 7,
+      "tier": 1
+    },
+    {
+      "id": "fra-cert",
+      "name": "CERT-FR",
+      "url": "https://cert.cyber.gouv.fr/",
+      "areas": [
+        "FRA"
+      ],
+      "domains": [
+        "incidents"
+      ],
+      "priority": 2,
+      "cadence_days": 7,
+      "tier": 1
+    },
+    {
+      "id": "ukr-pravda",
+      "name": "Ukrajinska pravda",
+      "url": "https://www.pravda.com.ua/",
+      "areas": [
+        "UKR"
+      ],
+      "domains": [
+        "incidents"
+      ],
+      "priority": 2,
+      "cadence_days": 7,
+      "tier": 4
+    },
+    {
+      "id": "rus-iditelesom",
+      "name": "Idite lesom – veřejný senzor",
+      "url": "https://t.me/s/iditelesom_help",
+      "areas": [
+        "RUS"
+      ],
+      "domains": [
+        "readiness"
+      ],
+      "priority": 2,
+      "cadence_days": 7,
+      "tier": 5
+    },
+    {
+      "id": "bgr-maritime",
+      "name": "Maritime.bg",
+      "url": "https://www.maritime.bg/",
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "domains": [
+        "incidents"
+      ],
+      "priority": 2,
+      "cadence_days": 7,
+      "tier": 5
+    },
+    {
+      "id": "bgr-government",
+      "name": "Bulharská vláda",
+      "url": "https://www.government.bg/",
+      "areas": [
+        "BGR"
+      ],
+      "domains": [
+        "incidents",
+        "policy_effect"
+      ],
+      "priority": 2,
+      "cadence_days": 7,
+      "tier": 1
+    },
+    {
+      "id": "bgr-mod",
+      "name": "Bulharské ministerstvo obrany",
+      "url": "https://www.mod.bg/",
+      "areas": [
+        "BGR"
+      ],
+      "domains": [
+        "readiness",
+        "policy_effect"
+      ],
+      "priority": 2,
+      "cadence_days": 7,
+      "tier": 1
+    },
+    {
+      "id": "ita-defence",
+      "name": "Italské ministerstvo obrany",
+      "url": "https://www.difesa.it/",
+      "areas": [
+        "ITA"
+      ],
+      "domains": [
+        "readiness",
+        "policy_effect"
+      ],
+      "priority": 2,
+      "cadence_days": 7,
+      "tier": 1
+    },
+    {
+      "id": "ita-torinoggi",
+      "name": "Torino Oggi",
+      "url": "https://www.torinoggi.it/",
+      "areas": [
+        "ITA"
+      ],
+      "domains": [
+        "incidents"
+      ],
+      "priority": 2,
+      "cadence_days": 7,
+      "tier": 5
+    },
+    {
+      "id": "esp-moncloa",
+      "name": "Španělská vláda",
+      "url": "https://www.lamoncloa.gob.es/",
+      "areas": [
+        "ESP"
+      ],
+      "domains": [
+        "official_assessment",
+        "policy_effect"
+      ],
+      "priority": 2,
+      "cadence_days": 7,
+      "tier": 1
+    },
+    {
+      "id": "afp",
+      "name": "AFP – přímé zpravodajství",
+      "url": "https://www.afp.com/",
+      "areas": [
+        "EUROPE"
+      ],
+      "domains": [
+        "incidents"
+      ],
+      "priority": 2,
+      "cadence_days": 7,
+      "tier": 2
+    },
+    {
+      "id": "mkd-cirt",
+      "name": "MKD-CIRT",
+      "url": "https://mkd-cirt.mk/",
+      "areas": [
+        "MKD"
+      ],
+      "domains": [
+        "incidents"
+      ],
+      "priority": 2,
+      "cadence_days": 7,
+      "tier": 1
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",

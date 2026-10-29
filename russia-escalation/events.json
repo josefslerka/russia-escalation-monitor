@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-10-28T11:04:01+01:00",
+  "reviewed_at": "2026-10-29T07:17:55+01:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -285,12 +285,248 @@
           "line_id": "line-bgnes-direct-stoyanov-remarks",
           "claim": "BGNES cituje ministra obrany Stojanova, že Khoryv driftuje a vstupuje do bulharského teritoriálního moře. Ministr odlišuje teritoriální moře a EEZ. Tvrzení o přesné zóně není nezávisle ověřeno a liší se od ranní BNT; námořnictvo a doprava mají situaci sledovat a reagovat podle potřeby.",
           "independence_basis": "Vlastní reportér BGNES je přímá linie výroku, ne nezávislé geolokační měření. Tentýž incident Khoryv jako předchozí záznam; nesčítat jako dva útoky."
+        },
+        {
+          "evidence_id": "followup-20261028-khoryv-corvette-watch",
+          "role": "followup",
+          "line_id": "line-bulgarian-navy-khoryv-watch",
+          "claim": "Velitel bulharského námořnictva podle Maritime.bg říká, že korveta Rešitelni zůstává hlídkovat u Khoryvu. Jde o pokračující reakci na původní incident z 23. října.",
+          "independence_basis": "Nezávislost se vztahuje jen na uvedené tvrzení; stejné úřední tiskové informace a jejich přetisky se nesčítají jako další potvrzení atribuce."
         }
       ],
       "case_status": "open",
       "next_check_by": "2026-10-29T07:05:38+01:00",
       "next_action": "Navázat na black_sea_maritime_incident ve watchlistu; ověřit novou prohlídku, oběti a atribuci bez přičítání další události.",
-      "reviewed_at": "2026-10-28T11:04:01+01:00"
+      "reviewed_at": "2026-10-29T07:17:55+01:00"
+    },
+    {
+      "id": "case-evt-20261028-contship-jet-rescue",
+      "title": "Bulharské ministerstvo potvrzuje záchranu 18 členů posádky Contship Jet po hlášení zásahu námořními drony",
+      "kind": "incident",
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "summary": "Bulharské ministerstvo potvrzuje záchranu 18 členů posádky Contship Jet po hlášení zásahu námořními drony. Trasa Haifa–Constanța; zásah mimo bulharské teritoriální moře. Původce ani vojenský obsah nákladu potvrzeny nejsou.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Další útok na obchodní plavbu může souviset s válkou proti Ukrajině, aniž jeho účelem byl test NATO. Nezaměňovat námořní nebezpečí s potvrzeným ruským úmyslem.",
+      "links": [
+        {
+          "evidence_id": "evt-20261028-contship-jet-rescue",
+          "role": "first_report",
+          "line_id": "line-bulgarian-contship-rescue-authorities",
+          "claim": "Bulharské ministerstvo potvrzuje záchranu 18 členů posádky Contship Jet po hlášení zásahu námořními drony. Trasa Haifa–Constanța; zásah mimo bulharské teritoriální moře. Původce ani vojenský obsah nákladu potvrzeny nejsou.",
+          "independence_basis": "Nezávislost se vztahuje jen na uvedené tvrzení; stejné úřední tiskové informace a jejich přetisky se nesčítají jako další potvrzení atribuce."
+        }
+      ],
+      "reviewed_at": "2026-10-29T07:17:55+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-10-29T19:17:55+01:00",
+      "next_action": "Ověřit původce, přesný výsledek a účinek bez přičítání mediálních derivátů."
+    },
+    {
+      "id": "case-claim-20261029-rus-mod-maritime-strike",
+      "title": "Ruské ministerstvo ráno tvrdí noční zásah nejmenované nákladní lodi směřující do Oděsy s vojenským či dvojím nákladem",
+      "kind": "assessment",
+      "areas": [
+        "BLACK_SEA",
+        "UKR"
+      ],
+      "summary": "Ruské ministerstvo ráno tvrdí noční zásah nejmenované nákladní lodi směřující do Oděsy s vojenským či dvojím nákladem. Identita lodi, náklad a výsledek nejsou nezávisle ověřeny.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Válečná komunikace a kampaň proti ukrajinské plavbě; odlišné datum a deklarovaná destinace brání automatickému ztotožnění s Contship Jet.",
+      "links": [
+        {
+          "evidence_id": "claim-20261029-rus-mod-maritime-strike",
+          "role": "first_report",
+          "line_id": "line-russian-mod-maritime-campaign-20261029",
+          "claim": "Ruské ministerstvo ráno tvrdí noční zásah nejmenované nákladní lodi směřující do Oděsy s vojenským či dvojím nákladem. Identita lodi, náklad a výsledek nejsou nezávisle ověřeny.",
+          "independence_basis": "Nezávislost se vztahuje jen na uvedené tvrzení; stejné úřední tiskové informace a jejich přetisky se nesčítají jako další potvrzení atribuce."
+        }
+      ],
+      "reviewed_at": "2026-10-29T07:17:55+01:00"
+    },
+    {
+      "id": "case-obs-20261028-ukrenergo-repair-oct29-plan",
+      "title": "Ukrenergo hlásí pokračující opravy po útoku v Konotopu; obnovení do konce dne je očekávání",
+      "kind": "series",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Ukrenergo hlásí pokračující opravy po útoku v Konotopu; obnovení do konce dne je očekávání. Pro 29. října oznámilo regionální omezení od 06:00 do 23:59, v rozsahu 1,5–2,5 skupiny. Ranní skutečný rozsah 29. října ještě nebyl ověřen.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Odstávky mohou odrážet staré škody a omezení sítě; plán není měřený nový zásah ani dokončená oprava.",
+      "links": [
+        {
+          "evidence_id": "obs-20261028-ukrenergo-repair-oct29-plan",
+          "role": "first_report",
+          "line_id": "line-ukrenergo-grid-operator",
+          "claim": "Ukrenergo hlásí pokračující opravy po útoku v Konotopu; obnovení do konce dne je očekávání. Pro 29. října oznámilo regionální omezení od 06:00 do 23:59, v rozsahu 1,5–2,5 skupiny. Ranní skutečný rozsah 29. října ještě nebyl ověřen.",
+          "independence_basis": "Nezávislost se vztahuje jen na uvedené tvrzení; stejné úřední tiskové informace a jejich přetisky se nesčítají jako další potvrzení atribuce."
+        }
+      ],
+      "reviewed_at": "2026-10-29T07:17:55+01:00"
+    },
+    {
+      "id": "case-followup-20261028-oleshky-demining",
+      "title": "Ombudsman hlásí dodržování místního příměří a probíhající odminování pro humanitární misi u Olešek",
+      "kind": "series",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Ombudsman hlásí dodržování místního příměří a probíhající odminování pro humanitární misi u Olešek. Dokončení dodávek a evakuace toto hlášení nepotvrzuje.",
+      "russian_involvement": "independent",
+      "attribution_basis": "Omezená humanitární dohoda může být plněna souběžně s pokračující válkou jinde; výrok účastníka není nezávislý audit.",
+      "links": [
+        {
+          "evidence_id": "followup-20261028-oleshky-demining",
+          "role": "first_report",
+          "line_id": "line-ukrainian-ombudsman-oleshky",
+          "claim": "Ombudsman hlásí dodržování místního příměří a probíhající odminování pro humanitární misi u Olešek. Dokončení dodávek a evakuace toto hlášení nepotvrzuje.",
+          "independence_basis": "Nezávislost se vztahuje jen na uvedené tvrzení; stejné úřední tiskové informace a jejich přetisky se nesčítají jako další potvrzení atribuce."
+        },
+        {
+          "evidence_id": "reported-20261029-oleshky-resident-accounts",
+          "role": "independent_corroboration",
+          "line_id": "line-up-oleshky-resident-interviews",
+          "claim": "Vlastní rozhovory Ukrajinské pravdy poskytují úzkou místní oporu pro klid a přípravy evakuace. Odjezd je plánován na 30. října; množství evakuovaných a dokončení mise nejsou výsledkem zprávy.",
+          "independence_basis": "Pouze vlastní rozhovory; diplomatické pozadí je anonymní ukrajinská linie, nikoli další potvrzení splnění dohody."
+        }
+      ],
+      "reviewed_at": "2026-10-29T07:17:55+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-10-30T07:17:55+01:00",
+      "next_action": "Ověřit skutečnou dodávku a evakuaci, její rozsah a pokračování místního příměří."
+    },
+    {
+      "id": "case-obs-20261028-nato-deliveries-and-air-defence-need",
+      "title": "NATO uvádí kumulativně dodané vybavení za 10 miliard USD přes PURL a americké FMS a současně naléhavou potřebu další PVO",
+      "kind": "policy",
+      "areas": [
+        "UKR",
+        "NATO"
+      ],
+      "summary": "NATO uvádí kumulativně dodané vybavení za 10 miliard USD přes PURL a americké FMS a současně naléhavou potřebu další PVO. Druhá zpráva opakuje pokračující dodávky a vítá financování PURL z unijního úvěru.",
+      "russian_involvement": "independent",
+      "attribution_basis": "Kumulativní dodávky nevylučují konkrétní zpoždění ani nedostatek interceptorů; nejde o 10 miliard dodaných během jediného dne nebo nezávislý audit všech programů.",
+      "links": [
+        {
+          "evidence_id": "obs-20261028-nato-deliveries-and-air-defence-need",
+          "role": "first_report",
+          "line_id": "line-nato-support-reporting",
+          "claim": "NATO uvádí kumulativně dodané vybavení za 10 miliard USD přes PURL a americké FMS a současně naléhavou potřebu další PVO. Druhá zpráva opakuje pokračující dodávky a vítá financování PURL z unijního úvěru.",
+          "independence_basis": "Nezávislost se vztahuje jen na uvedené tvrzení; stejné úřední tiskové informace a jejich přetisky se nesčítají jako další potvrzení atribuce."
+        }
+      ],
+      "reviewed_at": "2026-10-29T07:17:55+01:00"
+    },
+    {
+      "id": "case-backfill-20261028-nld-nonmilitary-allocation",
+      "title": "Vláda upřesňuje nemilitární balík 1,2 miliardy EUR na tři roky: 40 milionů do energetického fondu do konce roku a 55 milionů na věcnou energetickou pomoc",
+      "kind": "policy",
+      "areas": [
+        "UKR",
+        "NLD"
+      ],
+      "summary": "Vláda upřesňuje nemilitární balík 1,2 miliardy EUR na tři roky: 40 milionů do energetického fondu do konce roku a 55 milionů na věcnou energetickou pomoc. Jde o rozpracování dřívějších příslibů, ne novou hotovou platbu.",
+      "russian_involvement": "independent",
+      "attribution_basis": "Rozpočtový příslib nemusí být vyplacen včas; již slíbených 878 a 327 milionů nesčítat podruhé s celkovým balíkem.",
+      "links": [
+        {
+          "evidence_id": "backfill-20261028-nld-nonmilitary-allocation",
+          "role": "first_report",
+          "line_id": "line-dutch-government-nonmilitary-support",
+          "claim": "Vláda upřesňuje nemilitární balík 1,2 miliardy EUR na tři roky: 40 milionů do energetického fondu do konce roku a 55 milionů na věcnou energetickou pomoc. Jde o rozpracování dřívějších příslibů, ne novou hotovou platbu.",
+          "independence_basis": "Nezávislost se vztahuje jen na uvedené tvrzení; stejné úřední tiskové informace a jejich přetisky se nesčítají jako další potvrzení atribuce."
+        }
+      ],
+      "reviewed_at": "2026-10-29T07:17:55+01:00"
+    },
+    {
+      "id": "case-backfill-20261027-kor-eight-staff-withdrawn",
+      "title": "Yonhap uvádí ministrovo potvrzení stažení osmi pracovníků ambasády z Ukrajiny",
+      "kind": "policy",
+      "areas": [
+        "UKR",
+        "KOR"
+      ],
+      "summary": "Yonhap uvádí ministrovo potvrzení stažení osmi pracovníků ambasády z Ukrajiny. Po dřívějším rozhodnutí jde o oznámené provedení částečného stažení, nikoli uzavření ambasády.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Významnou alternativní příčinou je bilaterální spor o severokorejské zajatce; bezpečnost při ruských útocích je další uvedený důvod, ne prokázaná výlučná příčina.",
+      "links": [
+        {
+          "evidence_id": "backfill-20261027-kor-eight-staff-withdrawn",
+          "role": "first_report",
+          "line_id": "line-yonhap-korean-foreign-minister-hearing",
+          "claim": "Yonhap uvádí ministrovo potvrzení stažení osmi pracovníků ambasády z Ukrajiny. Po dřívějším rozhodnutí jde o oznámené provedení částečného stažení, nikoli uzavření ambasády.",
+          "independence_basis": "Nezávislost se vztahuje jen na uvedené tvrzení; stejné úřední tiskové informace a jejich přetisky se nesčítají jako další potvrzení atribuce."
+        }
+      ],
+      "reviewed_at": "2026-10-29T07:17:55+01:00"
+    },
+    {
+      "id": "case-obs-20261028-france-domestic-security-response",
+      "title": "Vláda popisuje bezpečnostní opatření k protestům, sociální vyjednávání a podporu postižených obchodníků",
+      "kind": "policy",
+      "areas": [
+        "FRA"
+      ],
+      "summary": "Vláda popisuje bezpečnostní opatření k protestům, sociální vyjednávání a podporu postižených obchodníků. Uvádí nasazení 70 000 příslušníků dne 24. října a chystaná opatření; neuvádí kvůli tomu snížení pomoci Ukrajině.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Domácí sociální a ekonomické požadavky mají vlastní příčiny; ruské zesilování sporů samo nedokládá jejich způsobení ani změnu podpory Ukrajiny.",
+      "links": [
+        {
+          "evidence_id": "obs-20261028-france-domestic-security-response",
+          "role": "first_report",
+          "line_id": "line-french-government-domestic-response",
+          "claim": "Vláda popisuje bezpečnostní opatření k protestům, sociální vyjednávání a podporu postižených obchodníků. Uvádí nasazení 70 000 příslušníků dne 24. října a chystaná opatření; neuvádí kvůli tomu snížení pomoci Ukrajině.",
+          "independence_basis": "Nezávislost se vztahuje jen na uvedené tvrzení; stejné úřední tiskové informace a jejich přetisky se nesčítají jako další potvrzení atribuce."
+        }
+      ],
+      "reviewed_at": "2026-10-29T07:17:55+01:00"
+    },
+    {
+      "id": "case-sensor-20261028-russian-recruitment-claims",
+      "title": "Idite lesom zveřejňuje jedno podání o roznášení předvolání v Petrohradu 26",
+      "kind": "series",
+      "areas": [
+        "RUS"
+      ],
+      "summary": "Idite lesom zveřejňuje jedno podání o roznášení předvolání v Petrohradu 26. října a podání o nátlaku na studenty ve třech městech. Typ petrohradských předvolání zdroj výslovně nezná. Rozsah nové nucené mobilizace není doložen.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Sezónní odvody, evidence nebo nátlak ke kontraktu mohou vysvětlovat jednotlivé případy. Více měst v jedné sběrné linii nedokládá práh 100 000 ani nezávislé regionální potvrzení.",
+      "links": [
+        {
+          "evidence_id": "sensor-20261028-russian-recruitment-claims",
+          "role": "first_report",
+          "line_id": "line-idite-lesom-reader-submissions",
+          "claim": "Idite lesom zveřejňuje jedno podání o roznášení předvolání v Petrohradu 26. října a podání o nátlaku na studenty ve třech městech. Typ petrohradských předvolání zdroj výslovně nezná. Rozsah nové nucené mobilizace není doložen.",
+          "independence_basis": "Nezávislost se vztahuje jen na uvedené tvrzení; stejné úřední tiskové informace a jejich přetisky se nesčítají jako další potvrzení atribuce."
+        }
+      ],
+      "reviewed_at": "2026-10-29T07:17:55+01:00"
+    },
+    {
+      "id": "case-backfill-20261028-bgr-starlink-arrest-followup",
+      "title": "Bulharská vláda potvrzuje zadržení dvou německých podezřelých po zatykači z 19",
+      "kind": "incident",
+      "areas": [
+        "BGR",
+        "DEU",
+        "EU"
+      ],
+      "summary": "Bulharská vláda potvrzuje zadržení dvou německých podezřelých po zatykači z 19. října a očekává jejich předání. Ministr tvrdí obdobné jednání 18. října v jiné zemi EU, kterou nejmenuje. Ruské řízení tímto textem doloženo není.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Přeshraniční kriminalita nebo jiný zadavatel zůstávají možné. Státní příslušnost podezřelých není atribuce a nelze je zaměnit za běloruské podezřelé v kauze Carfil.",
+      "links": [
+        {
+          "evidence_id": "backfill-20261028-bgr-starlink-arrest-followup",
+          "role": "first_report",
+          "line_id": "line-bulgarian-starlink-criminal-investigation",
+          "claim": "Bulharská vláda potvrzuje zadržení dvou německých podezřelých po zatykači z 19. října a očekává jejich předání. Ministr tvrdí obdobné jednání 18. října v jiné zemi EU, kterou nejmenuje. Ruské řízení tímto textem doloženo není.",
+          "independence_basis": "Nezávislost se vztahuje jen na uvedené tvrzení; stejné úřední tiskové informace a jejich přetisky se nesčítají jako další potvrzení atribuce."
+        }
+      ],
+      "reviewed_at": "2026-10-29T07:17:55+01:00"
     }
   ],
   "review_note": "Ruční analytické posouzení devíti historických intake a Khoryvu; netvrdí úplnou kanonizaci všech starších 373 záznamů."

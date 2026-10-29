@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-10-28T11:04:01+01:00",
+  "reviewed_at": "2026-10-29T07:17:55+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -2082,8 +2082,98 @@
       ],
       "note": "Geografickým předmětem jsou ukrajinské energetické účinky, nikoli sídlo zdroje. Plán zbytku dne není pozorovaný výsledek.",
       "title": "Ukrenergo hlásí ranní výpadky; část omezení je stále plán"
+    },
+    "evt-20261028-contship-jet-rescue": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "note": "Offshore incident v širším Černém moři; zdroje uvádějí přilehlou/výlučnou ekonomickou zónu, nikoli teritoriální vody. Bez domnělých souřadnic.",
+      "title": "Bulharské ministerstvo potvrzuje záchranu 18 členů posádky Contship Jet po hlášení zásahu námořními drony"
+    },
+    "claim-20261029-rus-mod-maritime-strike": {
+      "areas": [
+        "BLACK_SEA",
+        "UKR"
+      ],
+      "note": "Geografický předmět zprávy, nikoli sídlo média; umístění neprokazuje ruskou atribuci.",
+      "title": "Ruské ministerstvo ráno tvrdí noční zásah nejmenované nákladní lodi směřující do Oděsy s vojenským či dvojím nákladem"
+    },
+    "followup-20261028-khoryv-corvette-watch": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "note": "Geografický předmět zprávy, nikoli sídlo média; umístění neprokazuje ruskou atribuci.",
+      "title": "Velitel bulharského námořnictva podle Maritime.bg říká, že korveta Rešitelni zůstává hlídkovat u Khoryvu"
+    },
+    "obs-20261028-ukrenergo-repair-oct29-plan": {
+      "areas": [
+        "UKR"
+      ],
+      "note": "Geografický předmět zprávy, nikoli sídlo média; umístění neprokazuje ruskou atribuci.",
+      "title": "Ukrenergo hlásí pokračující opravy po útoku v Konotopu; obnovení do konce dne je očekávání"
+    },
+    "followup-20261028-oleshky-demining": {
+      "areas": [
+        "UKR"
+      ],
+      "note": "Geografický předmět zprávy, nikoli sídlo média; umístění neprokazuje ruskou atribuci.",
+      "title": "Ombudsman hlásí dodržování místního příměří a probíhající odminování pro humanitární misi u Olešek"
+    },
+    "reported-20261029-oleshky-resident-accounts": {
+      "areas": [
+        "UKR"
+      ],
+      "note": "Geografický předmět zprávy, nikoli sídlo média; umístění neprokazuje ruskou atribuci.",
+      "title": "Vlastní rozhovory Ukrajinské pravdy poskytují úzkou místní oporu pro klid a přípravy evakuace"
+    },
+    "obs-20261028-nato-deliveries-and-air-defence-need": {
+      "areas": [
+        "UKR",
+        "NATO"
+      ],
+      "note": "Geografický předmět zprávy, nikoli sídlo média; umístění neprokazuje ruskou atribuci.",
+      "title": "NATO uvádí kumulativně dodané vybavení za 10 miliard USD přes PURL a americké FMS a současně naléhavou potřebu další PVO"
+    },
+    "backfill-20261028-nld-nonmilitary-allocation": {
+      "areas": [
+        "UKR",
+        "NLD"
+      ],
+      "note": "Geografický předmět zprávy, nikoli sídlo média; umístění neprokazuje ruskou atribuci.",
+      "title": "Vláda upřesňuje nemilitární balík 1,2 miliardy EUR na tři roky: 40 milionů do energetického fondu do konce roku a 55 milionů na věcnou energetickou pomoc"
+    },
+    "backfill-20261027-kor-eight-staff-withdrawn": {
+      "areas": [
+        "UKR",
+        "KOR"
+      ],
+      "note": "Geografický předmět zprávy, nikoli sídlo média; umístění neprokazuje ruskou atribuci.",
+      "title": "Yonhap uvádí ministrovo potvrzení stažení osmi pracovníků ambasády z Ukrajiny"
+    },
+    "obs-20261028-france-domestic-security-response": {
+      "areas": [
+        "FRA"
+      ],
+      "note": "Geografický předmět zprávy, nikoli sídlo média; umístění neprokazuje ruskou atribuci.",
+      "title": "Vláda popisuje bezpečnostní opatření k protestům, sociální vyjednávání a podporu postižených obchodníků"
+    },
+    "sensor-20261028-russian-recruitment-claims": {
+      "areas": [
+        "RUS"
+      ],
+      "note": "Geografický předmět zprávy, nikoli sídlo média; umístění neprokazuje ruskou atribuci.",
+      "title": "Idite lesom zveřejňuje jedno podání o roznášení předvolání v Petrohradu 26"
+    },
+    "backfill-20261028-bgr-starlink-arrest-followup": {
+      "areas": [
+        "BGR",
+        "DEU",
+        "EU"
+      ],
+      "note": "Geografický předmět zprávy, nikoli sídlo média; umístění neprokazuje ruskou atribuci.",
+      "title": "Bulharská vláda potvrzuje zadržení dvou německých podezřelých po zatykači z 19"
     }
   },
   "review_scope": "28. října 2026: přidány anotace devíti retrospektivních podkladů. Starší anotace zůstávají beze změny.",
-  "review_note": "Zkontrolovány anotace devíti historických intake a přidány tři nové záznamy. Starší položky nezměněny; sporné mořské zóny zůstávají na úrovni BLACK_SEA."
+  "review_note": "Zkontrolováno 12 nových anotací tohoto běhu a shoda všech ID; starší anotace beze změny. Offshore incidenty pouze BLACK_SEA, ne domnělé teritoriální vody."
 }
