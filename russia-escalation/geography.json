@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-10-29T07:17:55+01:00",
+  "reviewed_at": "2026-10-29T07:51:47+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -2161,8 +2161,8 @@
       "areas": [
         "RUS"
       ],
-      "note": "Geografický předmět zprávy, nikoli sídlo média; umístění neprokazuje ruskou atribuci.",
-      "title": "Idite lesom zveřejňuje jedno podání o roznášení předvolání v Petrohradu 26"
+      "note": "Geografický předmět zprávy, nikoli sídlo média; umístění neprokazuje ruskou atribuci. Redakční oprava titulku po kontrole veřejného zobrazení: původní dělení věty useklo datum za řadovou číslovkou. Geografie, evidence a hodnocení beze změny.",
+      "title": "Idite lesom: neověřená podání o předvoláních a nátlaku na studenty"
     },
     "backfill-20261028-bgr-starlink-arrest-followup": {
       "areas": [
@@ -2170,10 +2170,10 @@
         "DEU",
         "EU"
       ],
-      "note": "Geografický předmět zprávy, nikoli sídlo média; umístění neprokazuje ruskou atribuci.",
-      "title": "Bulharská vláda potvrzuje zadržení dvou německých podezřelých po zatykači z 19"
+      "note": "Geografický předmět zprávy, nikoli sídlo média; umístění neprokazuje ruskou atribuci. Redakční oprava titulku po kontrole veřejného zobrazení: původní dělení věty useklo datum za řadovou číslovkou. Geografie, evidence a hodnocení beze změny.",
+      "title": "Bulharská vláda hlásí zadržení podezřelých v kauze Plana; ruská vazba nedoložena"
     }
   },
   "review_scope": "28. října 2026: přidány anotace devíti retrospektivních podkladů. Starší anotace zůstávají beze změny.",
-  "review_note": "Zkontrolováno 12 nových anotací tohoto běhu a shoda všech ID; starší anotace beze změny. Offshore incidenty pouze BLACK_SEA, ne domnělé teritoriální vody."
+  "review_note": "Kontrola a oprava dvou zkrácených mapových titulků; geografické oblasti ani posouzení se nezměnily."
 }

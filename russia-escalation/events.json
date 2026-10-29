@@ -486,7 +486,7 @@
     },
     {
       "id": "case-sensor-20261028-russian-recruitment-claims",
-      "title": "Idite lesom zveřejňuje jedno podání o roznášení předvolání v Petrohradu 26",
+      "title": "Idite lesom: neověřená podání o předvoláních a nátlaku na studenty",
       "kind": "series",
       "areas": [
         "RUS"
@@ -503,11 +503,13 @@
           "independence_basis": "Nezávislost se vztahuje jen na uvedené tvrzení; stejné úřední tiskové informace a jejich přetisky se nesčítají jako další potvrzení atribuce."
         }
       ],
-      "reviewed_at": "2026-10-29T07:17:55+01:00"
+      "reviewed_at": "2026-10-29T07:17:55+01:00",
+      "metadata_note": "Redakční oprava titulku po kontrole veřejného zobrazení: původní dělení věty useklo datum za řadovou číslovkou. Geografie, evidence a hodnocení beze změny.",
+      "metadata_reviewed_at": "2026-10-29T07:51:47+01:00"
     },
     {
       "id": "case-backfill-20261028-bgr-starlink-arrest-followup",
-      "title": "Bulharská vláda potvrzuje zadržení dvou německých podezřelých po zatykači z 19",
+      "title": "Bulharská vláda hlásí zadržení podezřelých v kauze Plana; ruská vazba nedoložena",
       "kind": "incident",
       "areas": [
         "BGR",
@@ -526,7 +528,9 @@
           "independence_basis": "Nezávislost se vztahuje jen na uvedené tvrzení; stejné úřední tiskové informace a jejich přetisky se nesčítají jako další potvrzení atribuce."
         }
       ],
-      "reviewed_at": "2026-10-29T07:17:55+01:00"
+      "reviewed_at": "2026-10-29T07:17:55+01:00",
+      "metadata_note": "Redakční oprava titulku po kontrole veřejného zobrazení: původní dělení věty useklo datum za řadovou číslovkou. Geografie, evidence a hodnocení beze změny.",
+      "metadata_reviewed_at": "2026-10-29T07:51:47+01:00"
     }
   ],
   "review_note": "Ruční analytické posouzení devíti historických intake a Khoryvu; netvrdí úplnou kanonizaci všech starších 373 záznamů."
