@@ -119,6 +119,44 @@ historický přepočet. Ruská příčinná účast se vyhodnocuje samostatně.
 
 ## Vyhodnocování předpovědí
 
+Od **31. října 2026** používáme [pevná 7denní a 30denní okna](forecasts.html).
+Každé vydání musí být uloženo před začátkem období; obě meze se při dalších
+denních zprávách nemění. Zmeškaný termín zůstává zobrazený jako nevydaná prognóza.
+Počítáme uplynulé dny v UTC, takže délku okna nemění přechod na letní čas.
+
+[Protokol](data/forecast-protocol.json) uchovává devět konkrétních definic,
+podmínky naplnění, výluky, potřebnou sílu zdrojů a dobu na doběh hlášení.
+U oznámení sabotáže předpovídáme první kvalifikující oficiální zveřejnění v
+přesně uvedeném panelu; datum skutečného incidentu zůstává zvlášť. U ozbrojeného
+útoku, vstupu Běloruska a jaderné události rozhoduje skutečný čas události.
+Úmyslné použití zbraně se škodou je ověřitelnější otázka než domněnka o cíli
+„otestovat soudržnost NATO“. Nová mobilizační otázka se týká zveřejněného
+závazného příkazu pro nejméně 100 000 osob. Nové definice se nepoužívají zpětně
+ke skórování starých procent.
+
+„Ne“ vyžaduje skončené okno, 3 nebo 7 dnů na doběh hlášení a úspěšný audit celého
+období všech předepsaných zdrojových skupin. Částečná rešerše či neuzavřená
+atribuce znamená neznámý výsledek s termínem další kontroly. Časově neurčitý
+případ nelze zařadit do okna pomocí vymyšlené hodiny. „Ano“ může být doloženo
+už během období. Každé kritérium musí mít konkrétní podklad a případ vlastní
+provenienci. Pozdější opravy zachovávají předchozí rozhodnutí.
+
+[Vydané odhady](data/forecast-rounds.jsonl) i [výsledky](data/forecast-outcomes.jsonl)
+jsou neměnné protokoly. Skóre ukazujeme zvlášť pro 7 a 30 dnů a pro jednotlivé
+otázky; celkový počet zahrnuje i chybějící vydání a nevyhodnocené výsledky.
+Česká sabotážní a pobaltská podotázka jsou diagnostické a nezvyšují souhrnný
+počet skórovaných hlavních otázek. Další závislosti mezi událostmi přetrvávají.
+
+Brier je průměr **(p − výsledek)²**. Na stejném souboru uzavřených výsledků
+ukazujeme i předem zvolenou strategii „vždy nenastane“ a stálých 50 %.
+U vzácných událostí samotné velké množství správných záporných výsledků
+nedokládá prognostickou schopnost. Neznámé výsledky se nenahrazují nulou a
+**1 − Brier není procento přesnosti**. Skóre z malého či provázaného souboru
+neprokazuje statistickou kalibraci.
+
+Původní dlouhé prognózy jsou vedeny samostatně. Při další aktualizaci si
+zachovají původní začátek z registru; starší již uložená vydání se nepřepisují.
+
 [Registr](data/forecast-register.jsonl) uchovává neměnnou definici, kritéria,
 pravděpodobnost a obě meze časového okna. Výsledek je ano, ne nebo neznámý;
 „ne“ vyžaduje skončený horizont a dostatečné pozorování, „ano“ událost ve

@@ -1606,6 +1606,36 @@
       "priority": 2,
       "cadence_days": 7,
       "tier": 2
+    },
+    {
+      "id": "ctbto-public",
+      "name": "CTBTO – veřejná oznámení",
+      "url": "https://www.ctbto.org/",
+      "areas": [
+        "GLOBAL"
+      ],
+      "domains": [
+        "incidents"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 1
+    },
+    {
+      "id": "ukr-mod-public",
+      "name": "Ministerstvo obrany Ukrajiny – veřejná sdělení",
+      "url": "https://mod.gov.ua/en",
+      "areas": [
+        "UKR",
+        "BLR"
+      ],
+      "domains": [
+        "incidents",
+        "readiness"
+      ],
+      "tier": 1,
+      "cadence_days": 1,
+      "priority": 1
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",

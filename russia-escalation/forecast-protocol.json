@@ -1,0 +1,419 @@
+{
+  "schema_version": 1,
+  "id": "fixed-v1",
+  "introduced_at": "2026-10-30T20:49:45+01:00",
+  "enforce_after": "2026-10-31T00:00:00+01:00",
+  "anchor": "2026-10-31T07:00:00Z",
+  "horizons_days": [
+    7,
+    30
+  ],
+  "issue_lead_hours": 24,
+  "maximum_source_age_hours": 48,
+  "window_convention": "(start, end]",
+  "cadence": "Contiguous non-overlapping UTC intervals, independently for each horizon.",
+  "missing_issue_policy": "Keep the planned slot as missed; never shift its start or backdate an issue.",
+  "negative_policy": "No requires horizon plus settlement delay, successful bounded archive checks for every frozen source group covering the whole interval and checking time through settlement. Missing coverage or unresolved qualifying claims means unknown.",
+  "benchmarks": {
+    "constant_half": 0.5,
+    "always_no": 0.0
+  },
+  "question_version_policy": "Retain every old definition. A changed meaning requires a new version ID; issued contracts are immutable.",
+  "questions": [
+    {
+      "id": "eu-sabotage-disclosure-v1",
+      "version": 1,
+      "label": "Nová oficiální atribuce závažné fyzické sabotáže v EU – sledovaný panel",
+      "definition": "Ve stanoveném okně alespoň jedna instituce ve zmrazeném zdrojovém panelu nově veřejně přičte Rusku konkrétní závažný fyzický sabotážní čin nebo pokročilý zmařený pokus na území EU. Předmětem prognózy je zveřejnění splňující všechny podmínky; datum staršího incidentu se nepřepisuje.",
+      "criteria": {
+        "official_attribution": "Veřejný dokument jmenované státní instituce výslovně uvádí ruské řízení či podporu; obecné Russian-linked bez vysvětlení nestačí.",
+        "material_attempt": "Doložená fyzická škoda v kritické infrastruktuře, obraně či logistice, zranění/úmrtí, nebo pokročilý zmařený fyzický pokus s prokázaným zadáním a získanými prostředky.",
+        "first_qualifying_publication": "První veřejný podklad, který u daného případu současně naplnil všechny podmínky, má čas uvnitř okna."
+      },
+      "exclusions": [
+        "Obecné varování, špionáž, rutinní DDoS, samotné fotografování či obecná příprava bez prostředků.",
+        "Opakování již kvalifikované atribuce ani opakované zatčení ve stejném případu.",
+        "Nová atribuce staršího incidentu se počítá jako zveřejnění; není novým fyzickým útokem."
+      ],
+      "source_groups": [
+        {
+          "id": "official-panel",
+          "source_ids": [
+            "deu-official",
+            "pol-official",
+            "rou-official",
+            "fra-official",
+            "nld-official",
+            "cze-official",
+            "swe-official",
+            "fin-official"
+          ],
+          "min_sources": 8
+        },
+        {
+          "id": "wires",
+          "source_ids": [
+            "wire-reuters",
+            "wire-ap"
+          ],
+          "min_sources": 1
+        }
+      ],
+      "areas": [
+        "EU"
+      ],
+      "primary_score": true,
+      "dependency_group": "eu-sabotage",
+      "time_basis": "publication",
+      "settlement_delay_hours": 72,
+      "minimum_primary_lines": 1,
+      "active_from": "2026-10-31T07:00:00Z"
+    },
+    {
+      "id": "cze-sabotage-disclosure-v1",
+      "version": 1,
+      "label": "Nová oficiální atribuce závažné sabotáže v Česku",
+      "definition": "BIS, NÚKIB nebo Ministerstvo obrany ČR ve stanoveném okně nově veřejně přičtou Rusku konkrétní materiální sabotážní operaci nebo pokročilý zmařený fyzický pokus v Česku.",
+      "criteria": {
+        "official_attribution": "Jmenovaná česká instituce veřejně výslovně přisuzuje konkrétní případ ruskému řízení/podpoře.",
+        "material_attempt": "Fyzická škoda, zranění/úmrtí nebo konkrétní pokročilý pokus se zadáním a získanými prostředky; pouhá špionáž nestačí.",
+        "first_qualifying_publication": "První podklad společně splňující podmínky vyšel uvnitř okna."
+      },
+      "exclusions": [
+        "Zahraniční incident, obecné varování, prevence, propaganda nebo běžné DDoS.",
+        "Nové přetištění už kvalifikovaného případu."
+      ],
+      "source_groups": [
+        {
+          "id": "czech-panel",
+          "source_ids": [
+            "cze-official",
+            "cze-nukib",
+            "cze-mo"
+          ],
+          "min_sources": 3
+        },
+        {
+          "id": "wires",
+          "source_ids": [
+            "wire-reuters",
+            "wire-ap"
+          ],
+          "min_sources": 1
+        }
+      ],
+      "areas": [
+        "CZE"
+      ],
+      "primary_score": false,
+      "dependency_group": "eu-sabotage",
+      "time_basis": "publication",
+      "settlement_delay_hours": 72,
+      "minimum_primary_lines": 1,
+      "active_from": "2026-10-31T07:00:00Z"
+    },
+    {
+      "id": "nato-armed-attack-v1",
+      "version": 1,
+      "label": "Ozbrojený útok ruských sil proti členu NATO",
+      "definition": "Ve stanoveném okně ruské státní ozbrojené síly úmyslně použijí zbraň proti území, personálu nebo prostředku alespoň jednoho člena NATO a způsobí zranění, úmrtí nebo fyzickou škodu.",
+      "criteria": {
+        "state_force": "Dvě nezávislé primární linie potvrzují ruské státní ozbrojené síly a napadeného člena NATO.",
+        "deliberate_weapon_use": "Doložené úmyslné použití zbraně proti spojenci; není nutné dokazovat širší úmysl testovat soudržnost NATO.",
+        "physical_effect": "Doložené zranění/úmrtí nebo fyzická škoda.",
+        "new_occurrence": "Kvalifikující čin nastal uvnitř okna."
+      },
+      "exclusions": [
+        "Náhodný přesah války, neúmyslné zbloudění, samotné narušení vzdušného prostoru či agresivní rétorika.",
+        "Samotné sestřelení odkloněného dronu spojencem, cvičení, civilní proxy bez prokázaného státního vojenského provedení."
+      ],
+      "source_groups": [
+        {
+          "id": "nato",
+          "source_ids": [
+            "nato"
+          ],
+          "min_sources": 1
+        },
+        {
+          "id": "wires",
+          "source_ids": [
+            "wire-reuters",
+            "wire-ap"
+          ],
+          "min_sources": 1
+        }
+      ],
+      "areas": [
+        "NATO"
+      ],
+      "primary_score": true,
+      "dependency_group": "nato-armed",
+      "time_basis": "occurrence",
+      "settlement_delay_hours": 168,
+      "minimum_primary_lines": 2,
+      "active_from": "2026-10-31T07:00:00Z"
+    },
+    {
+      "id": "baltic-armed-attack-v1",
+      "version": 1,
+      "label": "Ozbrojený útok ruských sil proti pobaltskému členu NATO",
+      "definition": "Stejné vymezení jako ozbrojený útok proti NATO, ale napadeným státem je Estonsko, Lotyšsko nebo Litva.",
+      "criteria": {
+        "state_force": "Dvě nezávislé primární linie potvrzují ruské státní síly a Estonsko, Lotyšsko nebo Litvu jako napadený stát.",
+        "deliberate_weapon_use": "Doložené úmyslné použití zbraně proti spojenci.",
+        "physical_effect": "Doložené zranění/úmrtí nebo fyzická škoda.",
+        "new_occurrence": "Kvalifikující čin nastal uvnitř okna."
+      },
+      "exclusions": [
+        "Stejné výluky jako u útoku na NATO; sama ruská atribuce sabotáže není splněním této otázky."
+      ],
+      "source_groups": [
+        {
+          "id": "baltic-official",
+          "source_ids": [
+            "est-official",
+            "lva-mod",
+            "ltu-official",
+            "nato"
+          ],
+          "min_sources": 4
+        },
+        {
+          "id": "wires",
+          "source_ids": [
+            "wire-reuters",
+            "wire-ap"
+          ],
+          "min_sources": 1
+        }
+      ],
+      "areas": [
+        "EST",
+        "LVA",
+        "LTU"
+      ],
+      "primary_score": false,
+      "dependency_group": "nato-armed",
+      "time_basis": "occurrence",
+      "settlement_delay_hours": 168,
+      "minimum_primary_lines": 2,
+      "active_from": "2026-10-31T07:00:00Z"
+    },
+    {
+      "id": "rus-mobilisation-order-v1",
+      "version": 1,
+      "label": "Veřejně závazně nařízená nucená mobilizace nejméně 100 000 osob",
+      "definition": "Ve stanoveném okně ruský federální orgán nově zveřejní právně závazný příkaz k nucené mobilizační vlně nejméně 100 000 osob nad rámec běžného odvodu a průběžného smluvního náboru.",
+      "criteria": {
+        "binding_public_order": "Dostupný závazný federální akt nebo oficiální zveřejnění závazného příkazu, nikoli plán či anonymní zpráva.",
+        "threshold_100000": "Nově nařízená mobilizační kvóta je nejméně 100 000 osob; může využít dekret z roku 2022.",
+        "excludes_regular_recruitment": "Není běžným odvodem, evidencí, cvičením ani průběžným smluvním náborem.",
+        "first_qualifying_publication": "První zveřejnění příkazu je uvnitř okna."
+      },
+      "exclusions": [
+        "Neveřejná donucovací praxe bez zveřejněného závazného aktu není předmětem této konkrétní otázky.",
+        "Personální potřeba, pracovní inzeráty či obavy úředníků."
+      ],
+      "source_groups": [
+        {
+          "id": "federal-record",
+          "source_ids": [
+            "rus-law",
+            "rus-kremlin",
+            "rus-mod-public"
+          ],
+          "min_sources": 2
+        },
+        {
+          "id": "wires",
+          "source_ids": [
+            "wire-reuters",
+            "wire-ap"
+          ],
+          "min_sources": 1
+        }
+      ],
+      "areas": [
+        "RUS"
+      ],
+      "primary_score": true,
+      "dependency_group": "russian-manpower",
+      "time_basis": "publication",
+      "settlement_delay_hours": 72,
+      "minimum_primary_lines": 1,
+      "active_from": "2026-10-31T07:00:00Z"
+    },
+    {
+      "id": "belarus-combat-entry-v1",
+      "version": 1,
+      "label": "Přímý vstup běloruských jednotek do pozemních bojů na Ukrajině",
+      "definition": "Ve stanoveném okně pravidelná jednotka běloruských ozbrojených sil pod běloruským velením vstoupí do pozemních bojů proti Ukrajině.",
+      "criteria": {
+        "regular_unit": "Dvě nezávislé primární linie doloží pravidelnou běloruskou jednotku pod běloruským velením.",
+        "ground_combat": "Doložený pozemní boj proti ukrajinským silám na území Ukrajiny.",
+        "new_occurrence": "První takový vstup nastane uvnitř okna."
+      },
+      "exclusions": [
+        "Dobrovolníci, ruské síly v Bělorusku, cvičení, tranzit, poskytování území nebo základny."
+      ],
+      "source_groups": [
+        {
+          "id": "belarus-ukraine",
+          "source_ids": [
+            "blr-mod",
+            "ukr-mod-public"
+          ],
+          "min_sources": 2
+        },
+        {
+          "id": "wires",
+          "source_ids": [
+            "wire-reuters",
+            "wire-ap"
+          ],
+          "min_sources": 1
+        }
+      ],
+      "areas": [
+        "BLR",
+        "UKR"
+      ],
+      "primary_score": true,
+      "dependency_group": "belarus-combat",
+      "time_basis": "occurrence",
+      "settlement_delay_hours": 168,
+      "minimum_primary_lines": 2,
+      "active_from": "2026-10-31T07:00:00Z"
+    },
+    {
+      "id": "nuclear-demonstration-v1",
+      "version": 1,
+      "label": "Ruská jaderná demonstrační nebo zkušební detonace",
+      "definition": "Rusko ve stanoveném okně provede skutečnou zbraňovou jadernou detonaci mimo přímý útok na vojenský či obydlený cíl. Počítá se demonstrace i skutečná zbraňová jaderná zkouška; deklarovaný technický nebo nátlakový účel nemění binární výsledek.",
+      "criteria": {
+        "nuclear_detonation": "Dvě nezávislé primární linie, včetně technického nebo kompetentního státního potvrzení, potvrzují skutečnou zbraňovou jadernou detonaci.",
+        "russian_responsibility": "Doložená ruská odpovědnost; samotná geografie startu nestačí.",
+        "event_class": "Detonace není přímým útokem proti vojenskému nebo obydlenému cíli. Není nutné dovozovat politický motiv demonstrace.",
+        "new_occurrence": "Detonace nastala uvnitř okna."
+      },
+      "exclusions": [
+        "Jaderná rétorika, běžná raketová zkouška bez detonace, simulace, cvičení nebo civilní jaderná havárie."
+      ],
+      "source_groups": [
+        {
+          "id": "nuclear-official",
+          "source_ids": [
+            "ctbto-public",
+            "nato",
+            "rus-kremlin"
+          ],
+          "min_sources": 1
+        },
+        {
+          "id": "wires",
+          "source_ids": [
+            "wire-reuters",
+            "wire-ap"
+          ],
+          "min_sources": 1
+        }
+      ],
+      "areas": [
+        "GLOBAL"
+      ],
+      "primary_score": true,
+      "dependency_group": "nuclear",
+      "time_basis": "occurrence",
+      "settlement_delay_hours": 168,
+      "minimum_primary_lines": 2,
+      "active_from": "2026-10-31T07:00:00Z"
+    },
+    {
+      "id": "nuclear-use-v1",
+      "version": 1,
+      "label": "Ruské použití jaderné zbraně proti cíli",
+      "definition": "Rusko ve stanoveném okně použije skutečnou jadernou zbraň proti vojenskému nebo obydlenému cíli.",
+      "criteria": {
+        "nuclear_detonation": "Dvě nezávislé primární linie, včetně technického nebo kompetentního státního potvrzení, potvrzují skutečnou zbraňovou jadernou detonaci.",
+        "russian_responsibility": "Doložená ruská odpovědnost; samotná geografie startu nestačí.",
+        "event_class": "Doložené použití proti konkrétnímu vojenskému či obydlenému cíli.",
+        "new_occurrence": "Detonace nastala uvnitř okna."
+      },
+      "exclusions": [
+        "Jaderná rétorika, běžná raketová zkouška bez detonace, simulace, cvičení nebo civilní jaderná havárie."
+      ],
+      "source_groups": [
+        {
+          "id": "nuclear-official",
+          "source_ids": [
+            "ctbto-public",
+            "nato",
+            "rus-kremlin"
+          ],
+          "min_sources": 1
+        },
+        {
+          "id": "wires",
+          "source_ids": [
+            "wire-reuters",
+            "wire-ap"
+          ],
+          "min_sources": 1
+        }
+      ],
+      "areas": [
+        "GLOBAL"
+      ],
+      "primary_score": true,
+      "dependency_group": "nuclear",
+      "time_basis": "occurrence",
+      "settlement_delay_hours": 168,
+      "minimum_primary_lines": 2,
+      "active_from": "2026-10-31T07:00:00Z"
+    },
+    {
+      "id": "ukraine-grid-emergency-v1",
+      "version": 1,
+      "label": "Nové nouzové energetické omezení ve třech ukrajinských oblastech",
+      "definition": "Ukrenergo ve stanoveném okně nově veřejně potvrdí skutečně uplatněná nouzová omezení dodávek po ruských útocích v nejméně třech jmenovaných ukrajinských oblastech v jednom dni.",
+      "criteria": {
+        "operator_confirmation": "Veřejné sdělení Ukrenerga potvrzuje skutečné uplatnění, nikoli pouze plán.",
+        "three_regions": "Sdělení jmenuje nejméně tři různé oblasti zasažené v jednom dni.",
+        "strike_cause": "Provozovatel výslovně spojuje nouzové omezení s ruskými útoky.",
+        "first_qualifying_publication": "Nové potvrzení daného provozního dne bylo zveřejněno uvnitř okna; opakovaný přetisk téhož dne nestačí."
+      },
+      "exclusions": [
+        "Pouze plánované rozvrhy, místní distribuční porucha, počasí či opakování starého hlášení.",
+        "Tato otázka neměří obecnou kvalitativní eskalaci ani celkové civilní škody."
+      ],
+      "source_groups": [
+        {
+          "id": "operator",
+          "source_ids": [
+            "ukr-energy"
+          ],
+          "min_sources": 1
+        },
+        {
+          "id": "wires",
+          "source_ids": [
+            "wire-reuters",
+            "wire-ap"
+          ],
+          "min_sources": 1
+        }
+      ],
+      "areas": [
+        "UKR"
+      ],
+      "primary_score": true,
+      "dependency_group": "ukraine-energy",
+      "time_basis": "publication",
+      "settlement_delay_hours": 72,
+      "minimum_primary_lines": 1,
+      "active_from": "2026-10-31T07:00:00Z"
+    }
+  ],
+  "retirements": []
+}

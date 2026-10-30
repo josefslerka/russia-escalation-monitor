@@ -1249,6 +1249,10 @@ retroactively recalculated or represented as having used the new anchors.
 
 ## Freeze and resolve forecasts
 
+For new assessments on or after **31 October 2026**, the fixed-window protocol
+below supersedes rolling start dates and is the primary prospective evaluation
+track. The existing long-horizon register remains a separate legacy track.
+
 `forecast-register.jsonl` is append-only. The normal publisher registers each new
 active forecast once, preserving the question, exact definition and hash,
 resolution criteria, probability, window start/end, report, registration time,
@@ -1299,3 +1303,195 @@ The helper validates the full candidate and publishes it atomically under a
 process lock. Invalid data blocks publication; partial research is valid data
 only when accurately labelled. Run the full unit suite, build, site checks and
 verify Pages deployment. UI/metadata updates do not justify re-dating a forecast.
+
+# Fixed forecast windows — effective 31 October 2026
+
+## Scope and first issuance
+
+Read `russia-escalation/forecast-protocol.json`, `forecast-rounds.jsonl` and
+`forecast-outcomes.jsonl` on every run. The existing scheduled morning job reads
+this current AGENTS.md. No separate schedule is needed.
+
+The protocol defines nine operational questions, seven primary and two diagnostic
+subquestions (Czech sabotage disclosure and Baltic armed attack). They are new
+definitions, not a numerical conversion of the old annual questions. In
+particular, the armed-attack question tests observable deliberate weapon use and
+physical effect; it does not require inferring an intention to test NATO resolve.
+The mobilization question concerns a **public binding order** for at least
+100,000 people; it does not silently redefine the legacy question about actual
+coerced mobilization. A real non-attack nuclear weapon demonstration/test and
+weapon use against a target remain separate; motive is not inferred to classify
+a non-attack weapon detonation.
+
+The first windows start **31 October 2026 08:00 CET** (`2026-10-31T07:00:00Z`):
+
+- 7 days: through 7 November 08:00 CET;
+- 30 days: through 30 November 08:00 CET.
+
+Windows are `(start, end]`, fixed elapsed UTC intervals, contiguous and
+non-overlapping **within each horizon**. The 7- and 30-day tracks overlap each
+other and must never be pooled as independent samples. An issuance opens 24 hours
+before its window and must be saved strictly before the start. A missed issuance
+remains visibly missed; never move the window, invent an old issuance time or
+replace the missing estimate with zero.
+
+## Morning workflow and immutable judgments
+
+Before research run both:
+
+```sh
+.venv/bin/python scripts/monitor.py due
+.venv/bin/python scripts/forecast.py plan
+```
+
+Include due fixed issuance and resolution task IDs in the research plan. On the
+first morning, issue the 18 researched judgments (nine questions × two horizons)
+before 08:00 CET. Prioritize this deadline. If research cannot justify a number,
+record an explicit abstention with a reason, or report a missed slot if the
+deadline has passed. Do not rush unsupported probabilities to fill the table.
+No automated script estimates these probabilities.
+
+For each judgment use the `issue_templates` from `forecast.py plan`. Fill `p`
+(0–1), exact `source_cutoff`, substantive `rationale`, a plausible `alternative`,
+`evidence_ids`, actual `check_ids`, and `source_urls`. Its source cutoff and latest
+actual check must be no more than 48 hours old at issuance; older publications
+remain usable as historical context. A `p: null` requires `abstention_reason`; it is not
+a forecast of zero. Do not exponentiate, divide or otherwise mechanically map
+the annual probability into a shorter horizon. Explain the judgment from its
+specific question, prior and current evidence. For the same source cutoff and
+nested time windows, 30-day probability cannot be below 7-day probability.
+
+Save the actual monitoring run/checks first, then issue with:
+
+```sh
+.venv/bin/python scripts/forecast.py issue --input /tmp/researched-fixed-forecasts.json
+```
+
+The command assigns the real current issuance time, canonical ID, both window
+boundaries, immutable contract/criteria hash, settlement deadline and benchmarks.
+The validated append is atomic and refuses backdating. An already issued initial
+probability cannot be overwritten. Later commentary belongs in the current
+report; a new scored probability waits for the next predefined window.
+
+Issue before replacing state with a new assessment. Include the short forecasts,
+exact windows, any abstentions/missed slots and unresolved outcomes in both the
+full Czech report and its faithful English translation. Keep the existing long
+probability dashboard first for bilingual validation.
+
+Immediately before finalizing the assessment, rerun `forecast.py plan` and copy
+its exact `assessment_scope` into `state.research_scope.fixed_forecast_review`.
+This is a queue snapshot, not a claim that each task succeeded. It explicitly
+exposes missed issues, outstanding adjudications and still-awaited issues. The
+validator reproduces this snapshot at `reviewed_at`; new assessments cannot omit
+it. Ordinary publication includes all three protocol/log files and the public
+`forecasts.html` page.
+
+## Legacy annual windows and definition changes
+
+Before writing the next full state, run:
+
+```sh
+.venv/bin/python scripts/monitor.py origins
+```
+
+For every active legacy question, copy these original `forecast_window_start`
+and `forecast_window_end` values into its hypothesis. Do not reset the start to
+the new `assessment_time`. Update the probability against the **whole original
+window**: a qualifying event already inside it resolves that question; a question
+about another future event needs a separate version/contract. Current and
+historical saved states are not retrospectively rewritten by this method change.
+The publication validator enforces the recovered boundaries from the next run.
+
+If a legacy definition changes, require an increased `definition_version`,
+`definition_change_reason` and a new explicitly explained question. Never
+silently evaluate an old probability against newly convenient criteria. The
+fixed protocol keeps published definitions and schedule append-only; new question
+versions have a prospective `active_from`. A retirement is an appended
+`retirements` record with question ID, future `effective_at` and reason; it cannot
+erase issued forecasts or previously planned slots.
+
+## Adjudicate yes, no and unknown
+
+`forecast.py plan` and `monitor.py due` include overdue fixed outcomes, separately
+from source checks. Review active contracts whenever fresh evidence could resolve
+them positively; do not wait for the end to recognize an established yes.
+
+Prepare a candidate and run:
+
+```sh
+.venv/bin/python scripts/forecast.py resolve --input /tmp/fixed-outcomes.json
+```
+
+Every candidate needs `forecast_id`, `outcome` (yes/no/unknown), `rationale`,
+`evidence_ids`, `check_ids`, `source_urls`, and `supersedes` (null initially, the
+preceding decision ID for a correction). The command generates the actual
+`resolved_at` and a unique ID; no historical backdating or deletion.
+
+For **yes**:
+
+- Link a reviewed canonical `case_id` in `events.json` and evidence linked to it.
+  Use an individual incident/policy case, not a whole series or general threat
+  assessment. For the energy question, use the particular operational day as
+  the case; another day's measures are a distinct event, not a new publication
+  time for the same event.
+- Provide `criterion_evidence`: every key in the frozen contract's `criteria`
+  maps to nonempty evidence IDs. Meet its minimum independent primary-source
+  lines. Reprints of one source are not independent.
+- Preserve actual `event_time` (or `event_time_note` if unavailable). For a
+  disclosure question also supply `publication_time` and
+  `first_qualifying_publication: true`; its date must agree with the cited
+  publication. A subsequent derivative cannot become a new first disclosure.
+- Set `qualifying_time_start` and `qualifying_time_end` to the actual time or
+  the full uncertainty interval. Occurrence questions use the real event time
+  and `timing_basis: occurrence`, not discovery/publication. Date-only values
+  need `qualifying_timezone`; use that entire calendar day, not a guessed hour.
+  The complete interval must lie inside the original window. Uncertain boundary
+  cases remain unknown.
+
+For **no**, all of the following are required:
+
+- The horizon and the contract's 72-hour or 168-hour reporting delay have elapsed.
+- Dedicated `coverage.jsonl` checks have `scope_type: forecast_audit`, the exact
+  `forecast_id`, and cover the **whole original window**. Use date-precision
+  `period_start` and `period_end`, and actually search the specified archives for
+  that range. Their `checked_at` must be after the reporting delay and no later
+  than the outcome decision.
+- Every frozen source group is successfully covered to its required threshold.
+  `partial`/`unavailable`, an isolated document review or an unrelated daily scan
+  cannot establish no. Such a forecast audit does not refresh country or daily
+  news-scan coverage.
+- Where a group permits alternative sources, cite the successful checks meeting
+  that threshold and keep failed attempts in the coverage ledger with their
+  limitations. Do not silently lower a group's predefined minimum.
+- Supply a specific `coverage_basis` and `open_claim_ids: []`. Unresolved
+  potentially qualifying claims block no. A disclosure question's no means no
+  qualifying public announcement in the defined source panel and period, not
+  proof that no covert operation occurred anywhere.
+
+For **unknown**, explain the unresolved attribution, timing, scope or retrieval
+gap and provide `next_check_by` after the decision. The next check becomes due;
+unknown remains in the public denominator and is never recoded to zero. A later
+discovered primary publication can trigger an explicit superseding correction.
+
+The first possible negative outcomes are 10 November 08:00 CET for 72-hour
+contracts, or 14 November 08:00 CET for 168-hour contracts. This delay supports
+source checking; it is not evidence of absence by itself.
+
+## Prospective scores and denominators
+
+Use `forecast.py evaluate` or `forecasts.html`. Show issued, abstained, missed,
+yes, no, unknown, open, settling and overdue results for each 7/30-day horizon,
+plus results per question. Planned slots persist even when no forecast is issued.
+
+Brier is mean `(p-y)^2` on definitive issued forecasts only; no score is produced
+for missing/unknown outcomes. Compare on the exact same resolved set with the
+predeclared constant 50% and always-no baselines. Never express `1-Brier` as an
+accuracy percentage. A skill ratio against always-no is undefined when that
+baseline has zero loss, and is not shown until both outcome classes exist.
+
+Keep the primary/diagnostic designation frozen. Czech and Baltic subquestions
+remain visible but do not double-count the broader primary questions. Nuclear
+and other war-related questions still have dependencies; the number of scored
+contracts is not a count of independent conflicts. Do not claim calibration or
+statistically established forecasting skill merely because a score exists.
+The retrospective audit remains separate from these prospective results.

@@ -11,6 +11,7 @@ import subprocess
 
 from build_site import DATA, ROOT, PRAGUE, build, validate
 from monitoring import FILES as MONITOR_FILES, LOG_FILES
+import forecasting
 
 EXPECTED_REMOTES = {
     "https://github.com/josefslerka/russia-escalation-monitor.git",
@@ -25,6 +26,9 @@ def git(*args, check=True):
 
 
 def preserve_history(ref="HEAD"):
+    old_protocol = git('show', f'{ref}:russia-escalation/{forecasting.PROTOCOL}', check=False)
+    if old_protocol.returncode == 0:
+        forecasting.preserve_protocol(json.loads(old_protocol.stdout), json.loads((DATA / forecasting.PROTOCOL).read_text()), datetime.now(PRAGUE))
     for name in ('evidence.jsonl', *LOG_FILES):
         old = git("show", f"{ref}:russia-escalation/{name}", check=False)
         if old.returncode == 0:

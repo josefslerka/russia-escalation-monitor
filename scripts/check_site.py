@@ -9,6 +9,7 @@ from build_site import ROOT, DATA, validate, public_text
 from signals import geography, payload as signals_payload
 from bilingual import english_path
 import monitoring
+import forecasting
 
 
 class Links(HTMLParser):
@@ -72,10 +73,11 @@ def check():
     for name in monitoring.FILES:
         if (site / 'data' / name).read_text() != public_text((source_data / name).read_text()):
             problems.append(f'Monitoring source differs: {name}')
-    for name, expected in [('monitoring.json', monitor_data), ('evaluation.json', monitoring.evaluation(bundle))]:
+    for name, expected in [('monitoring.json', monitor_data), ('evaluation.json', monitoring.evaluation(bundle)),
+                           ('fixed-evaluation.json', forecasting.evaluate(bundle, forecasting.instant(forecasting.as_of(bundle, state))))]:
         if json.loads((site / 'data' / name).read_text()) != json.loads(public_text(json.dumps(expected, ensure_ascii=False))):
             problems.append(f'Derived monitoring data differ: {name}')
-    for name in ('coverage.html', 'quality.html', 'society.html'):
+    for name in ('coverage.html', 'quality.html', 'society.html', 'forecasts.html'):
         if (site / name).resolve() not in parsed:
             problems.append(f'Missing monitoring page: {name}')
     index = json.loads((site / "data/reports.json").read_text())

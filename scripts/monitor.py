@@ -11,6 +11,7 @@ import tempfile
 
 from build_site import DATA, PRAGUE
 import monitoring
+import forecasting
 
 
 def context():
@@ -39,6 +40,13 @@ def append_records(name, rows):
                 continue
             additions.append(row)
             known[row['id']] = row
+        if name in {forecasting.ROUNDS, forecasting.OUTCOMES}:
+            field = 'issued_at' if name == forecasting.ROUNDS else 'resolved_at'
+            now = datetime.now(PRAGUE)
+            if any(not 0 <= (now - forecasting.instant(row[field])).total_seconds() <= 300 for row in additions):
+                raise ValueError('New forecast writes must use the actual current time; no backdating')
+            if name == forecasting.ROUNDS and any(now >= forecasting.instant(row['window_start']) for row in additions):
+                raise ValueError('Actual issuance deadline passed; no backdating into a closed window')
         bundle[name] += additions
         monitoring.validate(bundle, evidence, state)
         monitoring.validate_files(bundle, DATA)
@@ -86,6 +94,7 @@ def main():
     due.add_argument('--at', help='Timezone-aware date for a reproducible queue; default now')
     sub.add_parser('validate')
     sub.add_parser('register', help='Freeze current active forecast definitions and probabilities once')
+    sub.add_parser('origins', help='Print the original fixed boundaries for the next long-horizon assessment')
     append = sub.add_parser('append', help='Append a JSON object or array after validating all references')
     append.add_argument('log', choices=monitoring.LOG_FILES)
     append.add_argument('--input', required=True, type=Path)
@@ -99,6 +108,8 @@ def main():
         bundle, _, _ = context()
         if args.command == 'validate':
             print('Monitoring metadata and audit references valid')
+        elif args.command == 'origins':
+            print(json.dumps(forecasting.legacy_origins(bundle, state), ensure_ascii=False, indent=2))
         else:
             at = monitoring.instant(args.at) if args.at else datetime.now(PRAGUE)
             watchlist = json.loads((DATA / 'watchlist.json').read_text())

@@ -17,6 +17,7 @@ from markdown_it import MarkdownIt
 from bilingual import REPORT_NAME, TRANSLATION_NAME, english_path, validate_translations
 from signals import geography as load_geography, payload as signals_payload, content as signals_content
 import monitoring
+import forecasting
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "russia-escalation"
@@ -146,7 +147,7 @@ def page(title: str, content: str, prefix: str = ".", active: str = "", lang: st
     en = lang == "en"
     navigation = "".join(
         f'<a href="{prefix}/{path}" hreflang="cs"' + (' aria-current="page"' if active == label else "") + f'>{english if en else label}</a>'
-        for path, label, english in (("index.html", "Přehled", "Overview (Czech)"), ("signals.html", "Mapa a signály", "Map and signals (Czech)"), ("coverage.html", "Pokrytí", "Coverage (Czech)"), ("quality.html", "Kvalita", "Quality (Czech)"), ("society.html", "Dopady", "Effects (Czech)"), ("archive.html", "Archiv", "Archive (Czech)"), ("methodology.html", "Metodika", "Methodology (Czech)"))
+        for path, label, english in (("index.html", "Přehled", "Overview (Czech)"), ("signals.html", "Mapa a signály", "Map and signals (Czech)"), ("forecasts.html", "Prognózy", "Forecast evaluation (Czech)"), ("coverage.html", "Pokrytí", "Coverage (Czech)"), ("quality.html", "Kvalita", "Quality (Czech)"), ("society.html", "Dopady", "Effects (Czech)"), ("archive.html", "Archiv", "Archive (Czech)"), ("methodology.html", "Metodika", "Methodology (Czech)"))
     )
     asset_tags = []
     for asset in extra_assets:
@@ -323,6 +324,9 @@ def build():
     files["data/geography.json"] = public_text(json.dumps(annotations, ensure_ascii=False, indent=2) + "\n")
     files["data/monitoring.json"] = public_text(json.dumps(monitor_data, ensure_ascii=False, indent=2) + "\n")
     files["data/evaluation.json"] = public_text(json.dumps(monitoring.evaluation(bundle), ensure_ascii=False, indent=2) + "\n")
+    fixed_data = forecasting.evaluate(bundle, forecasting.instant(forecasting.as_of(bundle, state)))
+    files["data/fixed-evaluation.json"] = public_text(json.dumps(fixed_data, ensure_ascii=False, indent=2) + "\n")
+    files["forecasts.html"] = page("Pevné prognózy a výsledky", forecasting.content(bundle, fixed_data), active="Prognózy")
     files["coverage.html"] = page("Pokrytí zdrojů", monitoring.coverage_content(monitor_data, state, bundle, read_json(DATA / 'watchlist.json')), active="Pokrytí")
     files["quality.html"] = page("Kvalita a výsledky", monitoring.quality_content(monitor_data, bundle, state, LABELS), active="Kvalita")
     society, _ = render_markdown((ROOT / 'site/society.md').read_text(), known_reports, '.')

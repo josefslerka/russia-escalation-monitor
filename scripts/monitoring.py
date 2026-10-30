@@ -9,12 +9,14 @@ import json
 import math
 from pathlib import Path
 
+import forecasting
 from signals import AREAS, TOPICS, STATUSES, safe_url, temporal
 
-JSON_FILES = ('sources.json', 'events.json', 'indicators.json', 'metrics.json')
+JSON_FILES = ('sources.json', 'events.json', 'indicators.json', 'metrics.json', forecasting.PROTOCOL)
 LOG_FILES = ('coverage.jsonl', 'monitoring-runs.jsonl', 'case-reviews.jsonl',
              'indicator-observations.jsonl', 'metric-observations.jsonl',
-             'wdpi-assessments.jsonl', 'forecast-register.jsonl', 'forecast-resolutions.jsonl', 'evidence-reviews.jsonl')
+             'wdpi-assessments.jsonl', 'forecast-register.jsonl', 'forecast-resolutions.jsonl', 'evidence-reviews.jsonl',
+             forecasting.ROUNDS, forecasting.OUTCOMES)
 FILES = JSON_FILES + LOG_FILES
 DOMAINS = {'official_assessment': 'Oficiální hodnocení', 'incidents': 'Incidenty',
            'readiness': 'Připravenost', 'policy_effect': 'Politické a společenské účinky'}
@@ -77,6 +79,18 @@ def definition_hash(definition, criteria):
     return sha256(json.dumps([definition, criteria], ensure_ascii=False, sort_keys=True).encode()).hexdigest()
 
 
+def completed_tasks(bundle, run_id, at):
+    checks = {c['id']:c for c in bundle['coverage.jsonl'] if c['run_id'] == run_id and instant(c['checked_at']) <= at}
+    completed = {c['task_id'] for c in checks.values() if c['outcome'] in {'relevant_found','no_new_relevant'}}
+    for forecast in bundle[forecasting.ROUNDS]:
+        if instant(forecast['issued_at']) <= at and set(forecast['check_ids']) & checks.keys():
+            completed.add('forecast:issue:'+forecast['id'])
+    for outcome in bundle[forecasting.OUTCOMES]:
+        if instant(outcome['resolved_at']) <= at and set(outcome['check_ids']) & checks.keys():
+            completed.add('forecast:resolve:'+outcome['forecast_id'])
+    return completed
+
+
 def validate(bundle, evidence, state):
     evidence_ids = {e['id'] for e in evidence}
     sources = index(bundle['sources.json']['sources'], 'source')
@@ -103,7 +117,7 @@ def validate(bundle, evidence, state):
         refs(check['evidence_ids'], evidence_ids, 'checked evidence')
         urls(check['urls'])
         require(check['outcome'] in OUTCOMES, 'Invalid check outcome')
-        require(check['scope_type'] in {'document_review', 'news_scan', 'country_audit', 'source_audit'}, 'Invalid check scope')
+        require(check['scope_type'] in {'document_review', 'news_scan', 'country_audit', 'source_audit', 'forecast_audit'}, 'Invalid check scope')
         require(bool(check['scope']) and isinstance(check['limitations'], str), 'Check requires scope and limitations')
         require(check['run_id'] in runs, 'Unknown coverage run')
         run = runs[check['run_id']]
@@ -254,9 +268,11 @@ def validate(bundle, evidence, state):
         require(scope.get('monitoring_run_id') in runs, 'New assessment requires a structured monitoring run')
         run = runs[scope['monitoring_run_id']]
         require(instant(run['finished_at']) <= instant(state['assessment_time']), 'Assessment precedes its monitoring run')
-        completed = {c['task_id'] for c in checks.values() if c['run_id'] == run['id'] and c['outcome'] in {'relevant_found', 'no_new_relevant'}}
+        completed = completed_tasks(bundle, run['id'], instant(state['assessment_time']))
         status = 'complete' if set(run['expected_tasks']) <= completed else 'partial'
         require(scope.get('coverage_status') == status, 'Assessment coverage status must expose incomplete tasks')
+    forecasting.validate(bundle, evidence)
+    forecasting.validate_legacy_windows(bundle, state)
     return bundle
 
 
@@ -335,18 +351,20 @@ def due_tasks(bundle, watchlist, at):
     for key, value in watchlist.items():
         if isinstance(value, dict) and value.get('next_check_by') and instant(value['next_check_by']) <= at:
             tasks.append({'id': 'watch:' + key, 'kind': 'legacy_watchlist', 'scheduled_for': value['next_check_by'], 'priority': 0})
+    tasks.extend(forecasting.tasks(bundle, at))
     return sorted(tasks, key=lambda t: (t['priority'], t['id']))
 
 
 def payload(bundle, evidence, state):
     checks = bundle['coverage.jsonl']
     times = [state['assessment_time']] + [c['checked_at'] for c in checks] + [r['finished_at'] for r in bundle['monitoring-runs.jsonl']]
+    times += [forecasting.as_of(bundle, state)]
     as_of = max(times, key=instant)
     at = instant(as_of)
     countries = {}
     for area, plan in bundle['sources.json']['countries'].items():
         # A registry audit is not substantive research on every country it lists.
-        attempts = sorted((c for c in checks if area in c['areas'] and c['scope_type'] != 'source_audit'), key=lambda c: instant(c['checked_at']), reverse=True)
+        attempts = sorted((c for c in checks if area in c['areas'] and c['scope_type'] not in {'source_audit', 'forecast_audit'}), key=lambda c: instant(c['checked_at']), reverse=True)
         successes = [c for c in attempts if c['outcome'] in {'relevant_found', 'no_new_relevant'}]
         recent = [c for c in successes if at - instant(c['checked_at']) <= timedelta(days=plan['review_days'])]
         recent_attempts = [c for c in attempts if at - instant(c['checked_at']) <= timedelta(days=plan['review_days'])]
@@ -374,7 +392,7 @@ def payload(bundle, evidence, state):
     candidates = [{'url': url, 'evidence_ids': ids} for url, ids in sorted(groups.items()) if len(ids) > 1 and any(i not in links for i in ids)]
     runs = []
     for run in bundle['monitoring-runs.jsonl']:
-        completed = {c['task_id'] for c in checks if c['run_id'] == run['id'] and c['outcome'] in {'relevant_found', 'no_new_relevant'}}
+        completed = completed_tasks(bundle, run['id'], at)
         missing = sorted(set(run['expected_tasks']) - completed)
         runs.append({**run, 'status': 'partial' if missing else 'complete', 'incomplete_tasks': missing})
     reviewed = {i for r in bundle['evidence-reviews.jsonl'] for i in r['evidence_ids']}
@@ -467,7 +485,7 @@ def quality_content(data, bundle, state, labels=None):
 <section class="section"><h2>Propojené případy</h2>{table(['Případ', 'Záznamy / zdrojové rodiny', 'Atribuce a nejistota', 'Další kontrola'], event_rows)}</section>
 <section class="section"><h2>Kandidáti k prověření duplicit</h2><p>{len(data['duplicate_candidates'])} skupin se stejnou URL a dosud neúplnou revizí. Živý index nebo Telegram feed může obsahovat různé události; shoda URL není automatické sloučení.</p><details><summary>Otevřít seznam</summary><ul>{''.join('<li>' + source_link(c['url']) + ' · ' + e(', '.join(c['evidence_ids'])) + '</li>' for c in data['duplicate_candidates'])}</ul></details></section>
 <section class="section"><h2>Očekávané a chybějící indikátory</h2><p class="note">Absenci lze vyhodnotit jen tam, kde měla být změna pozorovatelná a proběhla dostatečná kontrola. Chybějící měření znamená neznámý stav.</p>{table(['Indikátor', 'Očekávaný projev', 'Baseline a alternativa', 'Poslední pozorování'], indicator_rows)}</section>
-<section class="section"><h2>Vyhodnocování předpovědí</h2><p><strong>Brier: {score}</strong> · {evaluation_data['scored_questions']} vyhodnocených otázek. Brier = průměr (p − výsledek)²; ano = 1, ne = 0. Neznámé výsledky se nepočítají.</p><p class="note">{e(evaluation_data['rule'])} Malý vzorek nedokládá kalibraci. Dříve uzavřené otázky nejsou zpětně registrované úspěšné předpovědi.</p>{table(['Otázka', 'Odhad', 'Zmrazené okno', 'Výsledek', 'Brier', 'Způsobilost'], forecast_rows)}</section>
+<section class="section"><h2>Původní dlouhé prognózy</h2><p><a href="forecasts.html">Nové 7denní a 30denní prognózy s pevnými okny a úplným přehledem výsledků →</a></p><p><strong>Brier původního registru: {score}</strong> · {evaluation_data['scored_questions']} vyhodnocených otázek. Brier = průměr (p − výsledek)²; ano = 1, ne = 0. Neznámé výsledky se nepočítají.</p><p class="note">{e(evaluation_data['rule'])} Starší vydání používala posouvané počátky; jejich hodnoty se zpětně nemění. Nový protokol je vyhodnocován zvlášť. Malý vzorek nedokládá kalibraci. Dříve uzavřené otázky nejsou zpětně registrované úspěšné předpovědi.</p>{table(['Otázka', 'Odhad', 'Zmrazené okno', 'Výsledek', 'Brier', 'Způsobilost'], forecast_rows)}</section>
 <p><a href="data/events.json">Registr událostí</a> · <a href="data/forecast-register.jsonl">Registr předpovědí</a> · <a href="data/forecast-resolutions.jsonl">Adjudikace</a> · <a href="coverage.html">Pokrytí zdrojů →</a></p>'''
 
 

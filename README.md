@@ -33,6 +33,14 @@ a [účinky a české scénáře](https://josefslerka.github.io/russia-escalatio
 Mapa přepíná evidenci a pokrytí. Registr všech zemí EU/NATO neznamená kompletní
 rešerši: skutečně provedené kontroly a mezery jsou doložené zvlášť.
 
+Od 31. října 2026 se [krátké prognózy](https://josefslerka.github.io/russia-escalation-monitor/forecasts.html)
+vydávají před začátkem pevných 7denních a 30denních oken. První začínají
+31. října v 08:00 CET. Devět otázek má předem uložená kritéria, zdrojový panel
+a termín vyhodnocení; dvě související podotázky jsou pouze diagnostické.
+Stránka ukazuje také nevydané odhady, neznámé výsledky a negativní výsledky po
+úplném auditu okna. Skóre se počítá samostatně podle horizontu a srovnává se
+se strategií „vždy nenastane“. Číselné odhady vytváří skutečná ranní rešerše.
+
 Každý den v 7:00 Europe/Prague proběhne rešerše v místním Codexu podle `AGENTS.md`.
 Počítač a aplikace musejí být spuštěné a mít přístup k síti. Automatizace navazuje
 na předchozí stav, uloží novou zprávu, doplní skutečně nové důkazy a aktualizuje
@@ -102,6 +110,11 @@ Pracovní fronta, validace a bezpečné doplnění auditního protokolu:
 ```sh
 .venv/bin/python scripts/monitor.py due
 .venv/bin/python scripts/monitor.py validate
+.venv/bin/python scripts/monitor.py origins
+.venv/bin/python scripts/forecast.py plan
+.venv/bin/python scripts/forecast.py issue --input /tmp/researched-fixed-forecasts.json
+.venv/bin/python scripts/forecast.py resolve --input /tmp/fixed-outcomes.json
+.venv/bin/python scripts/forecast.py evaluate
 .venv/bin/python scripts/monitor.py append coverage.jsonl --input /tmp/check.json
 .venv/bin/python -m unittest discover -s scripts -p 'test_*.py'
 ```
@@ -112,7 +125,12 @@ Události a jejich linie jsou v `events.json`, následné kontroly v
 `case-reviews.jsonl`, pozorovatelné indikátory v `indicators.json`. Měření účinků
 a jejich verze jsou v `metrics.json` a `metric-observations.jsonl`.
 `forecast-register.jsonl` zmrazuje otázky a `forecast-resolutions.jsonl`
-uchovává jejich adjudikace. Podrobné schéma, pravidla příčinného hodnocení,
+uchovává jejich adjudikace v původním dlouhém registru.
+`forecast-protocol.json` stanovuje neměnná krátká okna a kritéria;
+`forecast-rounds.jsonl` a `forecast-outcomes.jsonl` uchovávají skutečná vydání a
+výsledky. `plan` nabízí prázdné vstupní šablony, neodhaduje pravděpodobnosti.
+Zpětné vydání, posun okna, změna staré definice nebo nepodložené „ne“ zablokují
+validaci. Podrobné schéma, pravidla příčinného hodnocení,
 WDPI v2 a integrace do ranního běhu jsou v [AGENTS.md](AGENTS.md).
 
 Nová registrace a důkazy nevznikají samotným zobrazením fronty nebo sestavením webu.

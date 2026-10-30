@@ -12,3 +12,4 @@
 @media(max-width:520px){.report-toolbar{justify-content:flex-start}.nav{flex-wrap:wrap}}
 @media print{.report-toolbar{display:none}}
 .masthead .shell{flex-wrap:wrap}.nav{flex-wrap:wrap;gap:16px}.table-wrap td{overflow-wrap:anywhere}.table-wrap details{min-width:180px;max-width:560px}.table-wrap details p{line-height:1.6}.table-wrap details li{margin-bottom:12px}.table-wrap td p{line-height:1.6}.society-scenarios{max-width:1000px;margin:0 auto 54px}.coverage-state{display:inline-block;padding:4px 8px;border-radius:3px;font-size:12px;background:#e5e4df;line-height:1.5}.coverage-state.checked{background:#c4dce2}.coverage-state.partial{background:#f2e4c5}.coverage-state.unavailable{background:#e2d6e1}.coverage-state.stale{background:#e7d5cb}
+.forecast-time{white-space:nowrap;font-variant-numeric:tabular-nums}
