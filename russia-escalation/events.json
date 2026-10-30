@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-10-30T08:08:44+01:00",
+  "reviewed_at": "2026-10-30T21:43:10+01:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -798,6 +798,99 @@
         }
       ],
       "reviewed_at": "2026-10-30T08:08:44+01:00"
+    },
+    {
+      "id": "case-obs-20261030-ukrenergo-operational-update",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Ranní provozní hlášení uvádí po ruských útocích odpojené odběratele v Kyjevě a čtyřech oblastech a řízená omezení. Jmenovaná odpojení nejsou automaticky nouzovým odpojováním; plán na 31. října není jeho provedení.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Ukrenergo přisuzuje provozní důsledky ruským útokům; druh odpojování oddělen.",
+      "links": [
+        {
+          "evidence_id": "obs-20261030-ukrenergo-operational-update",
+          "line_id": "line-ukrenergo-grid-operator",
+          "claim": "Ranní provozní hlášení uvádí po ruských útocích odpojené odběratele v Kyjevě a čtyřech oblastech a řízená omezení. Jmenovaná odpojení nejsou automaticky nouzovým odpojováním; plán na 31. října není jeho provedení.",
+          "role": "first_report",
+          "independence_basis": "Nový provozní den stejného operátora; nejde o další nezávislou atribuci."
+        }
+      ],
+      "case_status": "monitoring",
+      "next_check_by": "2026-10-31T07:00:00+01:00",
+      "next_action": "Ověřit nový provozní den, zda jde o skutečná nouzová opatření alespoň ve třech jmenovaných oblastech. Předstartovní dny se nepočítají do fixed-v1.",
+      "title": "Ukrenergo: ranní výpadky a řízená omezení"
+    },
+    {
+      "id": "case-obs-20261030-russian-mod-contract-route",
+      "kind": "assessment",
+      "areas": [
+        "RUS"
+      ],
+      "summary": "Veřejný příspěvek propaguje vstup do jednotek bezpilotních systémů přes smluvní nábor. Dokládá zveřejnění náborové výzvy, nikoli počet skutečně přijatých osob nebo závazný mobilizační příkaz pro 100 000 lidí.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Potvrzeno pouze zveřejnění dané informace; ruské řízení sabotážního činu ani bezprostřední útočné rozhodnutí tím nejsou doloženy.",
+      "links": [
+        {
+          "evidence_id": "obs-20261030-russian-mod-contract-route",
+          "line_id": "line-russian-mod-public-recruitment",
+          "claim": "Veřejný příspěvek propaguje vstup do jednotek bezpilotních systémů přes smluvní nábor. Dokládá zveřejnění náborové výzvy, nikoli počet skutečně přijatých osob nebo závazný mobilizační příkaz pro 100 000 lidí.",
+          "role": "first_report",
+          "independence_basis": "Přímé sdělení instituce; opakování, přetisky a stejné zdrojové rodiny nejsou další potvrzení."
+        }
+      ],
+      "case_status": "closed",
+      "next_check_by": null,
+      "next_action": "Zaznamenaná publikace; žádný další operační výsledek se tím nepředpokládá.",
+      "title": "Ruské MO propaguje smluvní nábor"
+    },
+    {
+      "id": "case-backfill-20261028-aivd-insider-risk-guidance",
+      "kind": "assessment",
+      "areas": [
+        "NLD"
+      ],
+      "summary": "AIVD upozorňuje na vnitřní hrozby v organizacích včetně sabotáží. Text neoznamuje konkrétní materiální ruský sabotážní případ. Hlavička uvádí 28. října 09:30, přestože cesta URL obsahuje 27. říjen.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Potvrzeno pouze zveřejnění dané informace; ruské řízení sabotážního činu ani bezprostřední útočné rozhodnutí tím nejsou doloženy.",
+      "links": [
+        {
+          "evidence_id": "backfill-20261028-aivd-insider-risk-guidance",
+          "line_id": "line-aivd-insider-guidance-20261028",
+          "claim": "AIVD upozorňuje na vnitřní hrozby v organizacích včetně sabotáží. Text neoznamuje konkrétní materiální ruský sabotážní případ. Hlavička uvádí 28. října 09:30, přestože cesta URL obsahuje 27. říjen.",
+          "role": "first_report",
+          "independence_basis": "Přímé sdělení instituce; opakování, přetisky a stejné zdrojové rodiny nejsou další potvrzení."
+        }
+      ],
+      "case_status": "closed",
+      "next_check_by": null,
+      "next_action": "Zaznamenaná publikace; žádný další operační výsledek se tím nepředpokládá.",
+      "title": "AIVD vydala obecnou metodiku vnitřních hrozeb"
+    },
+    {
+      "id": "case-announced-20261030-eu-drone-centres",
+      "kind": "policy",
+      "areas": [
+        "LVA",
+        "NLD"
+      ],
+      "summary": "Resort oznamuje evropská dronová centra v Lotyšsku a Nizozemsku. Jde o plán rozvoje kapacit, nikoli potvrzené otevření, hotové operační nasazení nebo krizovou pohotovost.",
+      "russian_involvement": "independent",
+      "attribution_basis": "Potvrzeno pouze zveřejnění dané informace; ruské řízení sabotážního činu ani bezprostřední útočné rozhodnutí tím nejsou doloženy.",
+      "links": [
+        {
+          "evidence_id": "announced-20261030-eu-drone-centres",
+          "line_id": "line-latvian-mod-eu-drone-centres-20261030",
+          "claim": "Resort oznamuje evropská dronová centra v Lotyšsku a Nizozemsku. Jde o plán rozvoje kapacit, nikoli potvrzené otevření, hotové operační nasazení nebo krizovou pohotovost.",
+          "role": "first_report",
+          "independence_basis": "Přímé sdělení instituce; opakování, přetisky a stejné zdrojové rodiny nejsou další potvrzení."
+        }
+      ],
+      "case_status": "closed",
+      "next_check_by": null,
+      "next_action": "Zaznamenaná publikace; žádný další operační výsledek se tím nepředpokládá.",
+      "title": "Oznámena evropská dronová centra v Lotyšsku a Nizozemsku"
     }
   ],
   "review_note": "Ruční analytické posouzení devíti historických intake a Khoryvu; netvrdí úplnou kanonizaci všech starších 373 záznamů."

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "assessment_time": "2026-10-30T08:08:44+01:00",
+  "assessment_time": "2026-10-30T21:49:26+01:00",
   "ukraine_additional_conventional_escalation": {
     "would_strengthen": [
       "Další nezávislá časová řada potvrzuje již vyhodnocenou soustavnost energetické kampaně; nezakládá novou budoucí pravděpodobnost."
@@ -2233,5 +2233,18 @@
       }
     ],
     "review_status": "reviewed_within_stated_scope"
+  },
+  "fixed_forecast_windows": {
+    "would_strengthen": [
+      "Nové kvalifikující veřejné zveřejnění či skutečný čin uvnitř příslušného pevného okna."
+    ],
+    "would_weaken": [
+      "Naplno provedený audit zdrojového panelu po konci okna a publikačním doběhu bez kvalifikujícího případu."
+    ],
+    "next_check_by": "2026-10-31T07:00:00+01:00",
+    "note": "První sada už vydána 30. října; počáteční p neměnit. Starší watchlistové termíny a review_history nejsou přepsány.",
+    "first_window_start": "2026-10-31T08:00:00+01:00",
+    "first_7d_end": "2026-11-07T08:00:00+01:00",
+    "first_30d_end": "2026-11-30T08:00:00+01:00"
   }
 }

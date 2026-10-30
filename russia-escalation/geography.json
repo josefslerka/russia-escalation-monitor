@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-10-30T08:27:10+01:00",
+  "reviewed_at": "2026-10-30T21:43:10+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -2295,8 +2295,37 @@
       ],
       "title": "Putin spojil hrozby Evropě s nabídkou dialogu",
       "note": "Geografický předmět tohoto tvrzení; nejde o dodatečný nezávislý důkaz nebo potvrzení ruského původce."
+    },
+    "obs-20261030-ukrenergo-operational-update": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo: ranní výpadky a řízená omezení",
+      "note": "Provozní stav 30. října. Neprokazuje nouzové omezení podle fixed-v1; plán 31. října není provedení."
+    },
+    "obs-20261030-russian-mod-contract-route": {
+      "areas": [
+        "RUS"
+      ],
+      "title": "Ruské MO propaguje smluvní nábor",
+      "note": "Veřejná náborová komunikace, nikoli závazný příkaz k nucené mobilizaci nebo doložený počet přijatých."
+    },
+    "backfill-20261028-aivd-insider-risk-guidance": {
+      "areas": [
+        "NLD"
+      ],
+      "title": "AIVD vydala obecnou metodiku vnitřních hrozeb",
+      "note": "Nově dohledaná publikace z 28. října pro nizozemské organizace; konkrétní sabotáž ani ruská atribuce neoznámeny."
+    },
+    "announced-20261030-eu-drone-centres": {
+      "areas": [
+        "LVA",
+        "NLD"
+      ],
+      "title": "Oznámena evropská dronová centra v Lotyšsku a Nizozemsku",
+      "note": "Zdroj výslovně uvádí oba státy. Jde o oznámený rozvoj kapacit, nikoli potvrzené otevření nebo operační pohotovost."
     }
   },
-  "review_scope": "28. října 2026: přidány anotace devíti retrospektivních podkladů. Starší anotace zůstávají beze změny.",
-  "review_note": "Kontrola a oprava dvou zkrácených mapových titulků; geografické oblasti ani posouzení se nezměnily."
+  "review_scope": "Doplněny čtyři skutečně přezkoumané nové záznamy; historické anotace beze změny.",
+  "review_note": "Nizozemsko uvedeno jen u metodiky AIVD a výslovného evropského projektu; Ukrajina u provozního hlášení, Rusko u náborové komunikace."
 }
