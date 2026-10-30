@@ -9,3 +9,6 @@ _site/
 .env.*
 defensive-threat-intel/
 
+# Local exploratory audits are outside the public forecast dataset.
+/russia-escalation/audits/
+
