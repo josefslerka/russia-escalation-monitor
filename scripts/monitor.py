@@ -105,7 +105,7 @@ def main():
         rows = json.loads(args.input.read_text())
         print(f'Appended {append_records(args.log, rows if isinstance(rows, list) else [rows])} records')
     else:
-        bundle, _, _ = context()
+        bundle, _, state = context()
         if args.command == 'validate':
             print('Monitoring metadata and audit references valid')
         elif args.command == 'origins':

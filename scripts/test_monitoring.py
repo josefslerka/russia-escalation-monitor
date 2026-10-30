@@ -24,6 +24,18 @@ class MonitoringChecks(unittest.TestCase):
     def validate(self):
         return m.validate(self.bundle, self.evidence, self.state)
 
+    def test_case_without_display_title_is_rejected_before_rendering(self):
+        del self.bundle['events.json']['events'][0]['title']
+        with self.assertRaisesRegex(ValueError, 'display title'):
+            self.validate()
+
+    def test_closed_case_renders_without_a_followup_deadline(self):
+        event = self.bundle['events.json']['events'][0]
+        event.update(case_status='closed', next_check_by=None, next_action=None)
+        self.bundle['case-reviews.jsonl'] = [r for r in self.bundle['case-reviews.jsonl'] if r['event_id'] != event['id']]
+        content = m.quality_content(m.payload(self.bundle, self.evidence, self.state), self.bundle, self.state)
+        self.assertIn('Bez otevřeného případu', content)
+
     def test_complete_eu_nato_plan_and_explicit_unknown_countries(self):
         self.validate()
         self.assertEqual(len(self.bundle['sources.json']['countries']), 36)

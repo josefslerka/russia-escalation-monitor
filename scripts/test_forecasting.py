@@ -29,6 +29,17 @@ class FixedForecastTests(unittest.TestCase):
     def validate(self):
         m.validate(self.bundle, self.evidence, self.state)
 
+    def test_origins_cli_outputs_original_registered_boundaries(self):
+        with patch('sys.argv', ['monitor.py', 'origins']), \
+                patch.object(monitor, 'context', return_value=(self.bundle, self.evidence, self.state)), \
+                patch('builtins.print') as output:
+            monitor.main()
+        origins = json.loads(output.call_args.args[0])
+        self.assertEqual(origins, f.legacy_origins(self.bundle, self.state))
+        self.assertTrue(origins)
+        self.assertTrue(all(f.instant(row['forecast_window_start']) < f.instant(self.state['assessment_time'])
+                            for row in origins.values()))
+
     def check(self, at, sources, start, end, forecast_id=None, outcome='no_new_relevant'):
         self.counter += 1
         ident = 'TEST-fixed-check-' + str(self.counter)
@@ -274,6 +285,9 @@ class FixedForecastTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             data=Path(folder)/'russia-escalation'
             shutil.copytree(build_site.DATA,data)
+            (data/f.ROUNDS).write_text('')
+            (data/f.OUTCOMES).write_text('')
+            (data/'state.json').write_text(json.dumps(self.state))
             before=(data/f.ROUNDS).read_bytes()
             forecast['issued_at']='2026-10-29T07:00:00+01:00'
             with patch.object(monitor,'DATA',data),self.assertRaisesRegex(ValueError,'no backdating'):
@@ -296,6 +310,9 @@ class FixedForecastTests(unittest.TestCase):
         forecast['issued_at']=(self.start-timedelta(seconds=10)).isoformat()
         with tempfile.TemporaryDirectory() as folder:
             data=Path(folder)/'russia-escalation';shutil.copytree(build_site.DATA,data)
+            (data/f.ROUNDS).write_text('')
+            (data/f.OUTCOMES).write_text('')
+            (data/'state.json').write_text(json.dumps(self.state))
             with patch.object(monitor,'DATA',data),patch.object(monitor,'datetime') as clock:
                 clock.now.return_value=self.start+timedelta(seconds=10)
                 with self.assertRaisesRegex(ValueError,'Actual issuance deadline passed'):

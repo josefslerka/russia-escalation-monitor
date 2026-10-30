@@ -135,6 +135,7 @@ def validate(bundle, evidence, state):
     events = index(bundle['events.json']['events'], 'event')
     seen_links = set()
     for event in events.values():
+        require(isinstance(event.get('title'), str) and bool(event['title'].strip()), 'Event requires a display title')
         refs(event['areas'], AREAS, 'event areas', empty=False)
         require(event['kind'] in {'incident', 'assessment', 'policy', 'series'}, 'Invalid event kind')
         require(event['russian_involvement'] in INVOLVEMENT, 'Invalid Russian involvement')
@@ -463,7 +464,7 @@ def quality_content(data, bundle, state, labels=None):
         families = len({link['line_id'] for link in event['links']})
         event_rows.append([f'<span id="{e(event["id"], quote=True)}">{e(event["title"])}</span><p>{e(event["summary"])}</p>',
                            f'{len(event["links"])} / {families}<details><summary>Provenance</summary>{links}</details>',
-                           e(event['attribution_basis']), e(current.get('next_check_by', 'Bez otevřeného případu')) + '<p>' + e(current.get('next_action', '')) + '</p>'])
+                           e(event['attribution_basis']), e(current.get('next_check_by') or 'Bez otevřeného případu') + '<p>' + e(current.get('next_action') or '') + '</p>'])
     evaluation_data = evaluation(bundle)
     forecast_rows = []
     for forecast in evaluation_data['rows']:
