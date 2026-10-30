@@ -1491,6 +1491,121 @@
       "priority": 2,
       "cadence_days": 7,
       "tier": 1
+    },
+    {
+      "id": "wire-reuters",
+      "name": "Reuters – přímé reportování a označené přetisky",
+      "url": "https://www.reuters.com/",
+      "areas": [
+        "EUROPE"
+      ],
+      "domains": [
+        "incidents",
+        "policy_effect"
+      ],
+      "priority": 2,
+      "cadence_days": 7,
+      "tier": 2
+    },
+    {
+      "id": "wire-ap",
+      "name": "Associated Press",
+      "url": "https://apnews.com/",
+      "areas": [
+        "EUROPE"
+      ],
+      "domains": [
+        "incidents"
+      ],
+      "priority": 2,
+      "cadence_days": 7,
+      "tier": 2
+    },
+    {
+      "id": "bgr-prosecution",
+      "name": "Bulharská prokuratura",
+      "url": "https://prb.bg/",
+      "areas": [
+        "BGR"
+      ],
+      "domains": [
+        "incidents"
+      ],
+      "priority": 2,
+      "cadence_days": 7,
+      "tier": 1
+    },
+    {
+      "id": "lva-vdd",
+      "name": "Lotyšská VDD",
+      "url": "https://vdd.gov.lv/en/",
+      "areas": [
+        "LVA"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents"
+      ],
+      "priority": 2,
+      "cadence_days": 7,
+      "tier": 1
+    },
+    {
+      "id": "lva-mod",
+      "name": "Lotyšské ministerstvo obrany",
+      "url": "https://www.mod.gov.lv/en",
+      "areas": [
+        "LVA"
+      ],
+      "domains": [
+        "readiness",
+        "policy_effect"
+      ],
+      "priority": 2,
+      "cadence_days": 7,
+      "tier": 1
+    },
+    {
+      "id": "lva-saeima",
+      "name": "Lotyšský parlament",
+      "url": "https://www.saeima.lv/",
+      "areas": [
+        "LVA"
+      ],
+      "domains": [
+        "policy_effect"
+      ],
+      "priority": 2,
+      "cadence_days": 7,
+      "tier": 1
+    },
+    {
+      "id": "rus-kremlin",
+      "name": "Kreml – veřejné přepisy",
+      "url": "http://kremlin.ru/events/president/news",
+      "areas": [
+        "RUS"
+      ],
+      "domains": [
+        "official_assessment"
+      ],
+      "priority": 2,
+      "cadence_days": 7,
+      "tier": 1
+    },
+    {
+      "id": "deu-br",
+      "name": "Bayerischer Rundfunk",
+      "url": "https://www.br.de/",
+      "areas": [
+        "DEU"
+      ],
+      "domains": [
+        "incidents"
+      ],
+      "priority": 2,
+      "cadence_days": 7,
+      "tier": 2
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",

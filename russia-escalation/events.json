@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-10-29T07:17:55+01:00",
+  "reviewed_at": "2026-10-30T08:08:44+01:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -316,9 +316,37 @@
           "line_id": "line-bulgarian-contship-rescue-authorities",
           "claim": "Bulharské ministerstvo potvrzuje záchranu 18 členů posádky Contship Jet po hlášení zásahu námořními drony. Trasa Haifa–Constanța; zásah mimo bulharské teritoriální moře. Původce ani vojenský obsah nákladu potvrzeny nejsou.",
           "independence_basis": "Nezávislost se vztahuje jen na uvedené tvrzení; stejné úřední tiskové informace a jejich přetisky se nesčítají jako další potvrzení atribuce."
+        },
+        {
+          "evidence_id": "followup-20261029-contship-sinking-confirmed",
+          "role": "followup",
+          "line_id": "line-bulgarian-contship-rescue-authorities",
+          "claim": "Námořní správa podle AP potvrdila potopení Contship Jet po útoku z 28. října. Všech 18 členů posádky bylo zachráněno. Jde o aktualizaci stejného incidentu.",
+          "independence_basis": "Nezávislost se vztahuje pouze k popsanému tvrzení; přetisky a další fáze téže události nejsou další incidenty nebo potvrzení ruského řízení."
+        },
+        {
+          "evidence_id": "analysis-20261029-contship-drone-design",
+          "role": "attribution",
+          "line_id": "line-ambrey-contship-video-analysis",
+          "claim": "Reuters ověřila video plavidla a exploze. Analytik Ambrey hodnotí dron jako pravděpodobnou variantu nebo odvozeninu Murena-300S. Jde o odbornou interpretaci konstrukce.",
+          "independence_basis": "Nová technická analýza téhož útoku, nikoli další útok; Reuters přetisky tvoří jednu linii."
+        },
+        {
+          "evidence_id": "followup-20261029-contship-investigation",
+          "role": "followup",
+          "line_id": "line-followup-20261029-contship-investigation",
+          "claim": "Prokuratura zahájila trestní vyšetřování útoku v bulharské výlučné ekonomické zóně. Text nejmenuje původce; obsah nákladu a rozsah škod jsou předmětem vyšetřování.",
+          "independence_basis": "Nezávislost se vztahuje pouze k popsanému tvrzení; přetisky a další fáze téže události nejsou další incidenty nebo potvrzení ruského řízení."
+        },
+        {
+          "evidence_id": "obs-20261030-black-sea-pollution-monitoring",
+          "role": "followup",
+          "line_id": "line-obs-20261030-black-sea-pollution-monitoring",
+          "claim": "Ředitel správy povodí uvádí, že dosavadní monitoring nezjistil překročení sledovaných ukazatelů přičitatelné lodním incidentům. Výjimku u amoniakálního dusíku nelze přímo spojit s nimi; nejnovější výsledky ještě nejsou hotové.",
+          "independence_basis": "Samostatná environmentální měření; ne nezávislé potvrzení útočníka."
         }
       ],
-      "reviewed_at": "2026-10-29T07:17:55+01:00",
+      "reviewed_at": "2026-10-30T08:08:44+01:00",
       "case_status": "open",
       "next_check_by": "2026-10-29T19:17:55+01:00",
       "next_action": "Ověřit původce, přesný výsledek a účinek bez přičítání mediálních derivátů."
@@ -362,9 +390,16 @@
           "line_id": "line-ukrenergo-grid-operator",
           "claim": "Ukrenergo hlásí pokračující opravy po útoku v Konotopu; obnovení do konce dne je očekávání. Pro 29. října oznámilo regionální omezení od 06:00 do 23:59, v rozsahu 1,5–2,5 skupiny. Ranní skutečný rozsah 29. října ještě nebyl ověřen.",
           "independence_basis": "Nezávislost se vztahuje jen na uvedené tvrzení; stejné úřední tiskové informace a jejich přetisky se nesčítají jako další potvrzení atribuce."
+        },
+        {
+          "evidence_id": "obs-20261029-ukrenergo-damage-repair-oct30-plan",
+          "role": "followup",
+          "line_id": "line-ukrenergo-grid-operator",
+          "claim": "Operátor hlásí nové odpojené odběratele ve třech oblastech a omezení po útocích. Zároveň byla obnovena dodávka všem odběratelům v Konotopu střídavě. Rozpis na 30. října je plán, nikoli celodenní skutečná bilance.",
+          "independence_basis": "Nezávislost se vztahuje pouze k popsanému tvrzení; přetisky a další fáze téže události nejsou další incidenty nebo potvrzení ruského řízení."
         }
       ],
-      "reviewed_at": "2026-10-29T07:17:55+01:00"
+      "reviewed_at": "2026-10-30T08:08:44+01:00"
     },
     {
       "id": "case-followup-20261028-oleshky-demining",
@@ -390,9 +425,23 @@
           "line_id": "line-up-oleshky-resident-interviews",
           "claim": "Vlastní rozhovory Ukrajinské pravdy poskytují úzkou místní oporu pro klid a přípravy evakuace. Odjezd je plánován na 30. října; množství evakuovaných a dokončení mise nejsou výsledkem zprávy.",
           "independence_basis": "Pouze vlastní rozhovory; diplomatické pozadí je anonymní ukrajinská linie, nikoli další potvrzení splnění dohody."
+        },
+        {
+          "evidence_id": "followup-20261029-oleshky-demining-complete",
+          "role": "followup",
+          "line_id": "line-ukrainian-ombudsman-oleshky",
+          "claim": "Lubinec uvádí dokončení odminování, připravený konvoj a koordinaci tří delegací. Plán pomoci a evakuace tím ještě není dokončeným výsledkem. Jiné hlášení o pěti evakuovaných výslovně patří oddělené misi.",
+          "independence_basis": "Nezávislost se vztahuje pouze k popsanému tvrzení; přetisky a další fáze téže události nejsou další incidenty nebo potvrzení ruského řízení."
+        },
+        {
+          "evidence_id": "reported-20261030-oleshky-convoy-departure",
+          "role": "followup",
+          "line_id": "line-izvestia-oleshky-convoy-departure",
+          "claim": "Reuters s odkazem na Izvestija hlásí noční vyjetí konvoje. Dostupné záběry a popis neprokazují dokončení distribuce ani počet skutečně evakuovaných.",
+          "independence_basis": "Jedna linie Izvestija → Reuters → přetisky; není nezávislou Reuters verifikací všech výsledků."
         }
       ],
-      "reviewed_at": "2026-10-29T07:17:55+01:00",
+      "reviewed_at": "2026-10-30T08:08:44+01:00",
       "case_status": "open",
       "next_check_by": "2026-10-30T07:17:55+01:00",
       "next_action": "Ověřit skutečnou dodávku a evakuaci, její rozsah a pokračování místního příměří."
@@ -531,6 +580,224 @@
       "reviewed_at": "2026-10-29T07:17:55+01:00",
       "metadata_note": "Redakční oprava titulku po kontrole veřejného zobrazení: původní dělení věty useklo datum za řadovou číslovkou. Geografie, evidence a hodnocení beze změny.",
       "metadata_reviewed_at": "2026-10-29T07:51:47+01:00"
+    },
+    {
+      "id": "case-reported-20261029-ukraine-refinery-restraint",
+      "title": "WSJ hlásí dočasné omezení útoků na rafinerie",
+      "kind": "policy",
+      "areas": [
+        "UKR",
+        "RUS",
+        "USA"
+      ],
+      "summary": "WSJ hlásí faktickou přestávku pod americkým tlakem. Reuters zprávu nezávisle neověřila. Zelenskyj podle téhož reportování popírá formální zákaz; přesný rozsah a trvání zůstávají otevřené.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Americké ceny paliv, domácí politika a vyjednávací taktika nejsou automaticky ruské sebeodstrašení Západu. Ukrajinské chování není samo o sobě omezením západních dodávek.",
+      "links": [
+        {
+          "evidence_id": "reported-20261029-ukraine-refinery-restraint",
+          "role": "first_report",
+          "line_id": "line-reported-20261029-ukraine-refinery-restraint",
+          "claim": "WSJ hlásí faktickou přestávku pod americkým tlakem. Reuters zprávu nezávisle neověřila. Zelenskyj podle téhož reportování popírá formální zákaz; přesný rozsah a trvání zůstávají otevřené.",
+          "independence_basis": "Nezávislost se vztahuje pouze k popsanému tvrzení; přetisky a další fáze téže události nejsou další incidenty nebo potvrzení ruského řízení."
+        }
+      ],
+      "reviewed_at": "2026-10-30T08:08:44+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-10-31T08:08:44+01:00",
+      "next_action": "Ověřit veřejné úřední upřesnění, skutečný rozsah a kauzální atribuci; nesčítat přetisky."
+    },
+    {
+      "id": "case-reported-20261030-pentagon-baltic-messaging",
+      "title": "Reuters: USA žádaly Pobaltí o mírnější veřejnou rétoriku",
+      "kind": "policy",
+      "areas": [
+        "EST",
+        "LVA",
+        "LTU",
+        "USA"
+      ],
+      "summary": "Reuters uvádí neveřejné americké žádosti Estonsku, Lotyšsku a Litvě o zdrženlivější komunikaci. Pentagon nekomentuje soukromé hovory; NATO a pobaltské resorty nepotvrdily popis.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Koordinace odstrašující komunikace a omezení paniky jsou alternativou k ústupu obranné politiky. Zpráva nedokládá změnu dodávek nebo skutečné stažení jednotek.",
+      "links": [
+        {
+          "evidence_id": "reported-20261030-pentagon-baltic-messaging",
+          "role": "first_report",
+          "line_id": "line-reported-20261030-pentagon-baltic-messaging",
+          "claim": "Reuters uvádí neveřejné americké žádosti Estonsku, Lotyšsku a Litvě o zdrženlivější komunikaci. Pentagon nekomentuje soukromé hovory; NATO a pobaltské resorty nepotvrdily popis.",
+          "independence_basis": "Nezávislost se vztahuje pouze k popsanému tvrzení; přetisky a další fáze téže události nejsou další incidenty nebo potvrzení ruského řízení."
+        }
+      ],
+      "reviewed_at": "2026-10-30T08:08:44+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-02T08:08:44+01:00",
+      "next_action": "Ověřit veřejné úřední upřesnění, skutečný rozsah a kauzální atribuci; nesčítat přetisky."
+    },
+    {
+      "id": "case-reported-20261029-us-freezer-investigation",
+      "title": "USA vyšetřují srpnové poruchy chlazení jako možný kyberútok",
+      "kind": "incident",
+      "areas": [
+        "USA",
+        "FRA"
+      ],
+      "summary": "Reuters nově hlásí podezření na kyberútok u srpnových poruch chlazení na amerických základnách. Úřady potvrzují spolupráci vyšetřovatelů s Francií, nikoli společného pachatele.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Technická příčina není konečně vyloučena. Podobnost s francouzským případem neprokazuje jednu síť ani ruské řízení; nejde o nový útok v EU.",
+      "links": [
+        {
+          "evidence_id": "reported-20261029-us-freezer-investigation",
+          "role": "first_report",
+          "line_id": "line-reported-20261029-us-freezer-investigation",
+          "claim": "Reuters nově hlásí podezření na kyberútok u srpnových poruch chlazení na amerických základnách. Úřady potvrzují spolupráci vyšetřovatelů s Francií, nikoli společného pachatele.",
+          "independence_basis": "Nezávislost se vztahuje pouze k popsanému tvrzení; přetisky a další fáze téže události nejsou další incidenty nebo potvrzení ruského řízení."
+        }
+      ],
+      "reviewed_at": "2026-10-30T08:08:44+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-02T08:08:44+01:00",
+      "next_action": "Ověřit veřejné úřední upřesnění, skutečný rozsah a kauzální atribuci; nesčítat přetisky."
+    },
+    {
+      "id": "case-backfill-20261028-nuremberg-plot-investigation",
+      "title": "Německá prokuratura potvrdila podezření na starší sabotážní plán",
+      "kind": "incident",
+      "areas": [
+        "DEU",
+        "ROU"
+      ],
+      "summary": "Dva podezřelí jsou ve vazbě od 7. října; plán měl vzniknout před 30. zářím. Prokuratura hovoří o zahraničním zadání či odměně, zemi nejmenuje. Ruské zadání konkrétního německého plánu uvádí Spiegel.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Překryv podezřelých s již uloženou kauzou Carfil neznamená dvě nezávislá potvrzení ruského řízení; zmařený starší plán není nový dnešní útok.",
+      "links": [
+        {
+          "evidence_id": "evt-20261026-sri-carfil-attribution",
+          "role": "overlapping_claim",
+          "line_id": "line-romanian-carfil-joint-investigation",
+          "claim": "SRI 26. října připisuje požár 14. září na průmyslové platformě u Carfilu síti koordinované z Ruska. DIICOT podle AGERPRES uvádí dva obviněné ve vazbě v Německu při údajné přípravě podobných činů; třetí lokalizován v Polsku, vydán zatykač. Datum německých příprav neznámé. Veřejný spis ani zničení zbrojní výroby doloženy nejsou.",
+          "independence_basis": "Nezávislost se vztahuje pouze k popsanému tvrzení; přetisky a další fáze téže události nejsou další incidenty nebo potvrzení ruského řízení."
+        },
+        {
+          "evidence_id": "backfill-20261028-nuremberg-plot-investigation",
+          "role": "first_report",
+          "line_id": "line-munich-prosecutor-nuremberg-plot",
+          "claim": "Dva podezřelí jsou ve vazbě od 7. října; plán měl vzniknout před 30. zářím. Prokuratura hovoří o zahraničním zadání či odměně, zemi nejmenuje. Ruské zadání konkrétního německého plánu uvádí Spiegel.",
+          "independence_basis": "Nezávislost se vztahuje pouze k popsanému tvrzení; přetisky a další fáze téže události nejsou další incidenty nebo potvrzení ruského řízení."
+        }
+      ],
+      "reviewed_at": "2026-10-30T08:08:44+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-02T08:08:44+01:00",
+      "next_action": "Ověřit veřejné úřední upřesnění, skutečný rozsah a kauzální atribuci; nesčítat přetisky."
+    },
+    {
+      "id": "case-sensor-20261029-fake-mobilization-email",
+      "title": "Idite lesom varuje před falešným mobilizačním e-mailem",
+      "kind": "series",
+      "areas": [
+        "RUS"
+      ],
+      "summary": "Organizace označuje konkrétní zprávy z Krasnodaru za falešné mobilizační předvolání. Jiné její hlášení popisuje nátlak ke smlouvě v Permi. Ani jedno nedokládá celostátní nucenou vlnu.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Jednotlivá podání mohou být neúplná; běžné odvody a smluvní nábor se nesmějí sloučit s mobilizací podle definice v2.",
+      "links": [
+        {
+          "evidence_id": "sensor-20261029-fake-mobilization-email",
+          "role": "first_report",
+          "line_id": "line-sensor-20261029-fake-mobilization-email",
+          "claim": "Organizace označuje konkrétní zprávy z Krasnodaru za falešné mobilizační předvolání. Jiné její hlášení popisuje nátlak ke smlouvě v Permi. Ani jedno nedokládá celostátní nucenou vlnu.",
+          "independence_basis": "Nezávislost se vztahuje pouze k popsanému tvrzení; přetisky a další fáze téže události nejsou další incidenty nebo potvrzení ruského řízení."
+        }
+      ],
+      "reviewed_at": "2026-10-30T08:08:44+01:00"
+    },
+    {
+      "id": "case-evt-20261029-diana-ukraine-mou",
+      "title": "NATO DIANA a Ukrajina podepsaly memorandum",
+      "kind": "policy",
+      "areas": [
+        "NATO",
+        "UKR"
+      ],
+      "summary": "NATO DIANA a Ukrajina podepsaly memorandum o spolupráci ve vývoji a testování technologií. Jde o uskutečněný institucionální krok, ne dodávku interceptorů.",
+      "russian_involvement": "independent",
+      "attribution_basis": "Dlouhodobá spolupráce může pokračovat současně s konkrétním nedostatkem nebo omezením jiné podpory.",
+      "links": [
+        {
+          "evidence_id": "evt-20261029-diana-ukraine-mou",
+          "role": "first_report",
+          "line_id": "line-evt-20261029-diana-ukraine-mou",
+          "claim": "NATO DIANA a Ukrajina podepsaly memorandum o spolupráci ve vývoji a testování technologií. Jde o uskutečněný institucionální krok, ne dodávku interceptorů.",
+          "independence_basis": "Nezávislost se vztahuje pouze k popsanému tvrzení; přetisky a další fáze téže události nejsou další incidenty nebo potvrzení ruského řízení."
+        }
+      ],
+      "reviewed_at": "2026-10-30T08:08:44+01:00"
+    },
+    {
+      "id": "case-announced-20261029-france-oct31-policing",
+      "title": "Francie oznámila bezpečnostní opatření na 31. října",
+      "kind": "policy",
+      "areas": [
+        "FRA"
+      ],
+      "summary": "Ministr oznámil nasazení 70 000 policistů a četníků na sobotní demonstrace. Nejde o konečný účet či uskutečněnou sobotní událost.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Domácí bezpečnostní problém není sám důkazem ruského vyvolání ani změny podpory Ukrajině.",
+      "links": [
+        {
+          "evidence_id": "announced-20261029-france-oct31-policing",
+          "role": "first_report",
+          "line_id": "line-announced-20261029-france-oct31-policing",
+          "claim": "Ministr oznámil nasazení 70 000 policistů a četníků na sobotní demonstrace. Nejde o konečný účet či uskutečněnou sobotní událost.",
+          "independence_basis": "Nezávislost se vztahuje pouze k popsanému tvrzení; přetisky a další fáze téže události nejsou další incidenty nebo potvrzení ruského řízení."
+        }
+      ],
+      "reviewed_at": "2026-10-30T08:08:44+01:00"
+    },
+    {
+      "id": "case-evt-20261029-latvia-border-guard-law",
+      "title": "Lotyšský parlament přijal změny pravomocí pohraničníků",
+      "kind": "policy",
+      "areas": [
+        "LVA"
+      ],
+      "summary": "Saeima přijala změny pravomocí k ochraně hraniční infrastruktury proti hybridním útokům. Doložena je právní kapacita, nikoli nový ruský útok či neplánovaná vojenská pohotovost.",
+      "russian_involvement": "independent",
+      "attribution_basis": "Dlouhodobá obranná adaptace může vysvětlit právní změnu bez bezprostředně rostoucího útočného záměru Ruska.",
+      "links": [
+        {
+          "evidence_id": "evt-20261029-latvia-border-guard-law",
+          "role": "first_report",
+          "line_id": "line-evt-20261029-latvia-border-guard-law",
+          "claim": "Saeima přijala změny pravomocí k ochraně hraniční infrastruktury proti hybridním útokům. Doložena je právní kapacita, nikoli nový ruský útok či neplánovaná vojenská pohotovost.",
+          "independence_basis": "Nezávislost se vztahuje pouze k popsanému tvrzení; přetisky a další fáze téže události nejsou další incidenty nebo potvrzení ruského řízení."
+        }
+      ],
+      "reviewed_at": "2026-10-30T08:08:44+01:00"
+    },
+    {
+      "id": "case-evt-20261029-putin-europe-baltic-signalling",
+      "title": "Putin spojil hrozby Evropě s nabídkou dialogu",
+      "kind": "assessment",
+      "areas": [
+        "RUS",
+        "EUROPE",
+        "BALTIC_SEA"
+      ],
+      "summary": "Putin prohlásil připravenost na válku, zároveň řekl, že ji nechce, a podpořil dialog. V baltském kontextu varoval před obdobou Hormuzu a sliboval odpověď na výzvu.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Podmíněná odstrašující rétorika není příkaz k válce, oznámení blokády ani doložená změna jaderné pohotovosti.",
+      "links": [
+        {
+          "evidence_id": "evt-20261029-putin-europe-baltic-signalling",
+          "role": "first_report",
+          "line_id": "line-evt-20261029-putin-europe-baltic-signalling",
+          "claim": "Putin prohlásil připravenost na válku, zároveň řekl, že ji nechce, a podpořil dialog. V baltském kontextu varoval před obdobou Hormuzu a sliboval odpověď na výzvu.",
+          "independence_basis": "Nezávislost se vztahuje pouze k popsanému tvrzení; přetisky a další fáze téže události nejsou další incidenty nebo potvrzení ruského řízení."
+        }
+      ],
+      "reviewed_at": "2026-10-30T08:08:44+01:00"
     }
   ],
   "review_note": "Ruční analytické posouzení devíti historických intake a Khoryvu; netvrdí úplnou kanonizaci všech starších 373 záznamů."

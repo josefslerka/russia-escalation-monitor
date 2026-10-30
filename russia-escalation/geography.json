@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-10-29T07:51:47+01:00",
+  "reviewed_at": "2026-10-30T08:27:10+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -2172,6 +2172,129 @@
       ],
       "note": "Geografický předmět zprávy, nikoli sídlo média; umístění neprokazuje ruskou atribuci. Redakční oprava titulku po kontrole veřejného zobrazení: původní dělení věty useklo datum za řadovou číslovkou. Geografie, evidence a hodnocení beze změny.",
       "title": "Bulharská vláda hlásí zadržení podezřelých v kauze Plana; ruská vazba nedoložena"
+    },
+    "followup-20261029-contship-sinking-confirmed": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "title": "Úřady potvrzují potopení Contship Jet",
+      "note": "Černé moře, bulharská výlučná ekonomická zóna mimo teritoriální moře. Regionální poloha neprokazuje ruskou atribuci ani útok na území NATO."
+    },
+    "analysis-20261029-contship-drone-design": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "title": "Ambrey: dron mohl vycházet z ruské konstrukce",
+      "note": "Černé moře, bulharská výlučná ekonomická zóna mimo teritoriální moře. Regionální poloha neprokazuje ruskou atribuci ani útok na území NATO."
+    },
+    "followup-20261029-contship-investigation": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "title": "Bulharsko zahájilo vyšetřování útoku na Contship Jet",
+      "note": "Černé moře, bulharská výlučná ekonomická zóna mimo teritoriální moře. Regionální poloha neprokazuje ruskou atribuci ani útok na území NATO."
+    },
+    "obs-20261030-black-sea-pollution-monitoring": {
+      "areas": [
+        "BLACK_SEA",
+        "BGR"
+      ],
+      "title": "Monitoring zatím neprokázal znečištění související s lodními incidenty",
+      "note": "Geografický předmět tohoto tvrzení; nejde o dodatečný nezávislý důkaz nebo potvrzení ruského původce."
+    },
+    "obs-20261029-ukrenergo-damage-repair-oct30-plan": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo hlásí nové výpadky i dílčí obnovu",
+      "note": "Geografický předmět tohoto tvrzení; nejde o dodatečný nezávislý důkaz nebo potvrzení ruského původce."
+    },
+    "followup-20261029-oleshky-demining-complete": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ombudsman: odminování dokončeno, konvoj připraven",
+      "note": "Geografický předmět tohoto tvrzení; nejde o dodatečný nezávislý důkaz nebo potvrzení ruského původce."
+    },
+    "reported-20261030-oleshky-convoy-departure": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Izvestija hlásí odjezd konvoje do Olešek",
+      "note": "Geografický předmět tohoto tvrzení; nejde o dodatečný nezávislý důkaz nebo potvrzení ruského původce."
+    },
+    "reported-20261029-ukraine-refinery-restraint": {
+      "areas": [
+        "UKR",
+        "RUS",
+        "USA"
+      ],
+      "title": "WSJ hlásí dočasné omezení útoků na rafinerie",
+      "note": "Geografický předmět tohoto tvrzení; nejde o dodatečný nezávislý důkaz nebo potvrzení ruského původce."
+    },
+    "reported-20261030-pentagon-baltic-messaging": {
+      "areas": [
+        "EST",
+        "LVA",
+        "LTU",
+        "USA"
+      ],
+      "title": "Reuters: USA žádaly Pobaltí o mírnější veřejnou rétoriku",
+      "note": "Geografický předmět tohoto tvrzení; nejde o dodatečný nezávislý důkaz nebo potvrzení ruského původce."
+    },
+    "reported-20261029-us-freezer-investigation": {
+      "areas": [
+        "USA",
+        "FRA"
+      ],
+      "title": "USA vyšetřují srpnové poruchy chlazení jako možný kyberútok",
+      "note": "Geografický předmět tohoto tvrzení; nejde o dodatečný nezávislý důkaz nebo potvrzení ruského původce."
+    },
+    "backfill-20261028-nuremberg-plot-investigation": {
+      "areas": [
+        "DEU",
+        "ROU"
+      ],
+      "title": "Německá prokuratura potvrdila podezření na starší sabotážní plán",
+      "note": "Německá příprava a procesní návaznost na rumunskou kauzu; národnost podezřelých nezakládá geografii Běloruska ani atribuci."
+    },
+    "sensor-20261029-fake-mobilization-email": {
+      "areas": [
+        "RUS"
+      ],
+      "title": "Idite lesom varuje před falešným mobilizačním e-mailem",
+      "note": "Geografický předmět tohoto tvrzení; nejde o dodatečný nezávislý důkaz nebo potvrzení ruského původce."
+    },
+    "evt-20261029-diana-ukraine-mou": {
+      "areas": [
+        "NATO",
+        "UKR"
+      ],
+      "title": "NATO DIANA a Ukrajina podepsaly memorandum",
+      "note": "Geografický předmět tohoto tvrzení; nejde o dodatečný nezávislý důkaz nebo potvrzení ruského původce."
+    },
+    "announced-20261029-france-oct31-policing": {
+      "areas": [
+        "FRA"
+      ],
+      "title": "Francie oznámila bezpečnostní opatření na 31. října",
+      "note": "Francie; datum 31. října označuje plánované opatření, nikoli uskutečněný protest. Publikace 29. října."
+    },
+    "evt-20261029-latvia-border-guard-law": {
+      "areas": [
+        "LVA"
+      ],
+      "title": "Lotyšský parlament přijal změny pravomocí pohraničníků",
+      "note": "Geografický předmět tohoto tvrzení; nejde o dodatečný nezávislý důkaz nebo potvrzení ruského původce."
+    },
+    "evt-20261029-putin-europe-baltic-signalling": {
+      "areas": [
+        "RUS",
+        "EUROPE",
+        "BALTIC_SEA"
+      ],
+      "title": "Putin spojil hrozby Evropě s nabídkou dialogu",
+      "note": "Geografický předmět tohoto tvrzení; nejde o dodatečný nezávislý důkaz nebo potvrzení ruského původce."
     }
   },
   "review_scope": "28. října 2026: přidány anotace devíti retrospektivních podkladů. Starší anotace zůstávají beze změny.",
