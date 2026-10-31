@@ -382,7 +382,9 @@ class FixedForecastTests(unittest.TestCase):
 
     def test_next_bilingual_assessment_must_freeze_origins_and_expose_the_queue(self):
         # Disposable labelled reports test the real site validator, not a public assessment.
-        at=self.start-timedelta(minutes=30)
+        # Keep this synthetic assessment newer than the copied live archive.
+        latest=f.instant(json.loads((build_site.DATA / "state.json").read_text())["assessment_time"])
+        at=max(self.start-timedelta(minutes=30),latest+timedelta(minutes=1))
         self.check(at-timedelta(minutes=1),['wire-reuters'],at.date().isoformat(),at.date().isoformat())
         run=self.bundle['monitoring-runs.jsonl'][-1]
         previous_time=self.state['assessment_time']
