@@ -408,7 +408,7 @@
       "areas": [
         "UKR"
       ],
-      "summary": "Ombudsman hlásí dodržování místního příměří a probíhající odminování pro humanitární misi u Olešek. Dokončení dodávek a evakuace toto hlášení nepotvrzuje.",
+      "summary": "Lubinec 30. října uvádí, že pomoc byla doručena a lidé, kteří chtěli odjet na ukrajinskou stranu, opustili Olešky a jsou na cestě. Hlásí 87 hodin bez porušení místního příměří.",
       "russian_involvement": "independent",
       "attribution_basis": "Omezená humanitární dohoda může být plněna souběžně s pokračující válkou jinde; výrok účastníka není nezávislý audit.",
       "links": [
@@ -439,9 +439,16 @@
           "line_id": "line-izvestia-oleshky-convoy-departure",
           "claim": "Reuters s odkazem na Izvestija hlásí noční vyjetí konvoje. Dostupné záběry a popis neprokazují dokončení distribuce ani počet skutečně evakuovaných.",
           "independence_basis": "Jedna linie Izvestija → Reuters → přetisky; není nezávislou Reuters verifikací všech výsledků."
+        },
+        {
+          "evidence_id": "followup-20261030-oleshky-aid-and-departure",
+          "role": "followup",
+          "line_id": "line-ukrainian-ombudsman-oleshky",
+          "claim": "Lubinec 30. října uvádí, že pomoc byla doručena a lidé, kteří chtěli odjet na ukrajinskou stranu, opustili Olešky a jsou na cestě. Hlásí 87 hodin bez porušení místního příměří.",
+          "independence_basis": "Nová obsahová fáze existujícího případu; přetisky nejsou další potvrzení."
         }
       ],
-      "reviewed_at": "2026-10-30T08:08:44+01:00",
+      "reviewed_at": "2026-10-31T07:32:25+01:00",
       "case_status": "open",
       "next_check_by": "2026-10-30T07:17:55+01:00",
       "next_action": "Ověřit skutečnou dodávku a evakuaci, její rozsah a pokračování místního příměří."
@@ -891,6 +898,156 @@
       "next_check_by": null,
       "next_action": "Zaznamenaná publikace; žádný další operační výsledek se tím nepředpokládá.",
       "title": "Oznámena evropská dronová centra v Lotyšsku a Nizozemsku"
+    },
+    {
+      "id": "case-20261030-refinery-strikes",
+      "title": "Fire Point podle NV hlásí zásah rafinerie; rozsah škod nezávisle neověřen.",
+      "kind": "incident",
+      "areas": [
+        "RUS"
+      ],
+      "summary": "Fire Point podle NV tvrdí, že jeho drony zasáhly rafinerii v Novokujbyševsku 30. října. NV rovněž přebírá místní hlášení požáru.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Výrobce má zájem zdůrazňovat účinnost; jednotlivý útok nevylučuje předchozí přestávku ani selektivní omezení jiných operací.",
+      "links": [
+        {
+          "evidence_id": "reported-20261030-firepoint-refinery-strike",
+          "role": "first_report",
+          "line_id": "line-firepoint-refinery-20261030",
+          "claim": "Fire Point podle NV tvrdí, že jeho drony zasáhly rafinerii v Novokujbyševsku 30. října. NV rovněž přebírá místní hlášení požáru.",
+          "independence_basis": "Jedna označená primární nebo redakční linie; nezávislost se nepřenáší na nezjištěnou atribuci nebo kauzální účinek."
+        },
+        {
+          "evidence_id": "reported-20261030-novak-refinery-attacks-resumed",
+          "role": "independent_corroboration",
+          "line_id": "line-novak-refinery-20261030",
+          "claim": "Novak podle citace TASS v Moskva24 uvádí obnovení útoků po přestávce, tři rafinerie a jeden petrochemický komplex; u jednoho podniku popisuje malé poškození.",
+          "independence_basis": "Omezeno na přesný popsaný fakt. Výrobce a ruský představitel jsou odlišné původy tvrzení o útocích; konkrétní škody nebyly společně ověřeny."
+        }
+      ],
+      "reviewed_at": "2026-10-31T07:32:25+01:00"
+    },
+    {
+      "id": "case-20261030-patriot-sale",
+      "title": "USA schválily možný prodej 500 interceptorů; nejde o potvrzení dodávky.",
+      "kind": "policy",
+      "areas": [
+        "UKR",
+        "USA"
+      ],
+      "summary": "State Department schválil možný prodej 500 PAC-3 MSE Ukrajině za odhadovaných 2,1 miliardy USD. Financování má pocházet od partnerů a z ukrajinských prostředků s evropským financováním; americké prostředky se nepoužijí. Datum dodání oznámení neuvádí.",
+      "russian_involvement": "independent",
+      "attribution_basis": "Administrativní souhlas může být významný, i když fyzické dodání přijde až později; nelze z něj odvodit odstranění zimního nedostatku.",
+      "links": [
+        {
+          "evidence_id": "evt-20261030-us-patriot-sale-approval",
+          "role": "first_report",
+          "line_id": "line-us-state-patriot-26-113",
+          "claim": "State Department schválil možný prodej 500 PAC-3 MSE Ukrajině za odhadovaných 2,1 miliardy USD. Financování má pocházet od partnerů a z ukrajinských prostředků s evropským financováním; americké prostředky se nepoužijí. Datum dodání oznámení neuvádí.",
+          "independence_basis": "Jedna označená primární nebo redakční linie; nezávislost se nepřenáší na nezjištěnou atribuci nebo kauzální účinek."
+        },
+        {
+          "evidence_id": "followup-20261030-zelensky-patriot-delivery-timing",
+          "role": "followup",
+          "line_id": "line-ukrainian-presidential-interceptor-delay",
+          "claim": "Zelenskyj vítá souhlas s 500 PAC-3, ale tvrdí, že dodání může začít až za několik let. Žádá letošní zimní dodávky ze zásob a jejich pozdější doplnění; uvádí požadavek 100 interceptorů měsíčně.",
+          "independence_basis": "Nová obsahová fáze existujícího případu; přetisky nejsou další potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-10-31T07:32:25+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-01T07:32:25+01:00",
+      "next_action": "Ověřit další primární výsledek, čas realizace a neuzavřenou atribuci; zachovat nejistotu."
+    },
+    {
+      "id": "case-reported-20261030-grynkewich-ongoing-deliveries",
+      "title": "Velitel NATO podle Bloomberg uvádí pokračující dodávky; množství a typy neupřesňuje.",
+      "kind": "policy",
+      "areas": [
+        "UKR",
+        "NATO"
+      ],
+      "summary": "Grynkewich podle Bloomberg řekl, že dodávky pokračují a poslední proběhla v uplynulém týdnu. Množství ani typy raket neuvedl.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Může mluvit o jiné části dodávkového řetězce než ukrajinské stížnosti na prodlevy. Potvrzení nějakých dodávek neprokazuje splnění celé potřeby.",
+      "links": [
+        {
+          "evidence_id": "reported-20261030-grynkewich-ongoing-deliveries",
+          "role": "first_report",
+          "line_id": "line-grynkewich-riga-deliveries-20261030",
+          "claim": "Grynkewich podle Bloomberg řekl, že dodávky pokračují a poslední proběhla v uplynulém týdnu. Množství ani typy raket neuvedl.",
+          "independence_basis": "Jedna označená primární nebo redakční linie; nezávislost se nepřenáší na nezjištěnou atribuci nebo kauzální účinek."
+        }
+      ],
+      "reviewed_at": "2026-10-31T07:32:25+01:00"
+    },
+    {
+      "id": "case-evt-20261030-eu-canada-summit-conclusions",
+      "title": "EU a Kanada znovu potvrzují podporu Ukrajině; výsledek summitu není uskutečněná dodávka.",
+      "kind": "policy",
+      "areas": [
+        "EU",
+        "CAN",
+        "UKR"
+      ],
+      "summary": "Závěry summitu potvrzují pokračující podporu Ukrajině a závazek zvyšovat tlak na Rusko. Jde o zveřejněný politický výsledek oproti dřívější agendě, nikoli ověřenou novou platbu nebo dodávku.",
+      "russian_involvement": "independent",
+      "attribution_basis": "Deklarovaná shoda může koexistovat s průtahy realizace nebo omezenými výrobními kapacitami.",
+      "links": [
+        {
+          "evidence_id": "evt-20261030-eu-canada-summit-conclusions",
+          "role": "first_report",
+          "line_id": "line-eu-canada-summit-20261030",
+          "claim": "Závěry summitu potvrzují pokračující podporu Ukrajině a závazek zvyšovat tlak na Rusko. Jde o zveřejněný politický výsledek oproti dřívější agendě, nikoli ověřenou novou platbu nebo dodávku.",
+          "independence_basis": "Jedna označená primární nebo redakční linie; nezávislost se nepřenáší na nezjištěnou atribuci nebo kauzální účinek."
+        }
+      ],
+      "reviewed_at": "2026-10-31T07:32:25+01:00"
+    },
+    {
+      "id": "case-backfill-20261029-iaea-reported-worker-death",
+      "title": "IAEA podle Hromadske obdržela zprávu o úmrtí pracovníka ZNPP; původce útoku neurčila.",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "IAEA uvedla, že obdržela zprávu o úmrtí zaměstnance ZNPP po útoku dronu 29. října. Neurčila původce; neprezentovala to jako vlastní terénní ověření.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Konvenční bezpečnostní ohrožení personálu není použití jaderné zbraně. Převzaté hlášení může být neúplné; opakování agenturního sdělení není druhá nezávislá linie.",
+      "links": [
+        {
+          "evidence_id": "backfill-20261029-iaea-reported-worker-death",
+          "role": "first_report",
+          "line_id": "line-iaea-received-znpp-worker-report-20261029",
+          "claim": "IAEA uvedla, že obdržela zprávu o úmrtí zaměstnance ZNPP po útoku dronu 29. října. Neurčila původce; neprezentovala to jako vlastní terénní ověření.",
+          "independence_basis": "Jedna označená primární nebo redakční linie; nezávislost se nepřenáší na nezjištěnou atribuci nebo kauzální účinek."
+        }
+      ],
+      "reviewed_at": "2026-10-31T07:32:25+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-01T07:32:25+01:00",
+      "next_action": "Ověřit další primární výsledek, čas realizace a neuzavřenou atribuci; zachovat nejistotu."
+    },
+    {
+      "id": "case-reported-20261030-italy-strike-observed-effects",
+      "title": "ANSA popisuje skutečné protesty, dopravní omezení a střety; ruské řízení ani změna podpory Ukrajině nedoloženy.",
+      "kind": "incident",
+      "areas": [
+        "ITA"
+      ],
+      "summary": "ANSA popisuje uskutečněné protesty proti válkám a životním nákladům, dopravní narušení a střety. Rozsah účasti je částečně tvrzením organizátorů; zpravodajství nedokládá ruské zadání ani změnu politiky podpory Ukrajiny.",
+      "russian_involvement": "independent",
+      "attribution_basis": "Domácí náklady, odborová a propalestinská mobilizace vysvětlují protesty bez ruského řízení. Není nová úplná účetní bilance ani národní měření účinku.",
+      "links": [
+        {
+          "evidence_id": "reported-20261030-italy-strike-observed-effects",
+          "role": "first_report",
+          "line_id": "line-ansa-italy-strikes-20261030",
+          "claim": "ANSA popisuje uskutečněné protesty proti válkám a životním nákladům, dopravní narušení a střety. Rozsah účasti je částečně tvrzením organizátorů; zpravodajství nedokládá ruské zadání ani změnu politiky podpory Ukrajiny.",
+          "independence_basis": "Jedna označená primární nebo redakční linie; nezávislost se nepřenáší na nezjištěnou atribuci nebo kauzální účinek."
+        }
+      ],
+      "reviewed_at": "2026-10-31T07:32:25+01:00"
     }
   ],
   "review_note": "Ruční analytické posouzení devíti historických intake a Khoryvu; netvrdí úplnou kanonizaci všech starších 373 záznamů."

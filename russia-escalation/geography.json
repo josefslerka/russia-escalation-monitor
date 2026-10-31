@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-10-30T21:43:10+01:00",
+  "reviewed_at": "2026-10-31T07:32:25+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -2324,8 +2324,86 @@
       ],
       "title": "Oznámena evropská dronová centra v Lotyšsku a Nizozemsku",
       "note": "Zdroj výslovně uvádí oba státy. Jde o oznámený rozvoj kapacit, nikoli potvrzené otevření nebo operační pohotovost."
+    },
+    "followup-20261030-oleshky-aid-and-departure": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Lubinec uvádí doručení pomoci a odjezd lidí z Olešek; konečný počet a příjezd na místo určení neověřeny.",
+      "note": "Geografický předmět uvedeného tvrzení; původní datum v evidenci. Více oblastí nepřidává nezávislé zdrojové linie ani ruskou atribuci."
+    },
+    "reported-20261030-firepoint-refinery-strike": {
+      "areas": [
+        "RUS"
+      ],
+      "title": "Fire Point podle NV hlásí zásah rafinerie; rozsah škod nezávisle neověřen.",
+      "note": "Geografický předmět uvedeného tvrzení; původní datum v evidenci. Více oblastí nepřidává nezávislé zdrojové linie ani ruskou atribuci."
+    },
+    "reported-20261030-novak-refinery-attacks-resumed": {
+      "areas": [
+        "RUS"
+      ],
+      "title": "Novak podle TASS/Moskva24 uvádí obnovené útoky na rafinerie po přestávce.",
+      "note": "Geografický předmět uvedeného tvrzení; původní datum v evidenci. Více oblastí nepřidává nezávislé zdrojové linie ani ruskou atribuci."
+    },
+    "evt-20261030-us-patriot-sale-approval": {
+      "areas": [
+        "UKR",
+        "USA"
+      ],
+      "title": "USA schválily možný prodej 500 interceptorů; nejde o potvrzení dodávky.",
+      "note": "Geografický předmět uvedeného tvrzení; původní datum v evidenci. Více oblastí nepřidává nezávislé zdrojové linie ani ruskou atribuci."
+    },
+    "reported-20261030-grynkewich-ongoing-deliveries": {
+      "areas": [
+        "UKR",
+        "NATO"
+      ],
+      "title": "Velitel NATO podle Bloomberg uvádí pokračující dodávky; množství a typy neupřesňuje.",
+      "note": "Geografický předmět uvedeného tvrzení; původní datum v evidenci. Více oblastí nepřidává nezávislé zdrojové linie ani ruskou atribuci."
+    },
+    "followup-20261030-zelensky-patriot-delivery-timing": {
+      "areas": [
+        "UKR",
+        "USA"
+      ],
+      "title": "Zelenskyj vítá souhlas s prodejem, ale uvádí dodávky až za několik let a žádá zásoby pro zimu.",
+      "note": "Geografický předmět uvedeného tvrzení; původní datum v evidenci. Více oblastí nepřidává nezávislé zdrojové linie ani ruskou atribuci."
+    },
+    "evt-20261030-eu-canada-summit-conclusions": {
+      "areas": [
+        "EU",
+        "CAN",
+        "UKR"
+      ],
+      "title": "EU a Kanada znovu potvrzují podporu Ukrajině; výsledek summitu není uskutečněná dodávka.",
+      "note": "Geografický předmět uvedeného tvrzení; původní datum v evidenci. Více oblastí nepřidává nezávislé zdrojové linie ani ruskou atribuci."
+    },
+    "backfill-20261029-iaea-reported-worker-death": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "IAEA podle Hromadske obdržela zprávu o úmrtí pracovníka ZNPP; původce útoku neurčila.",
+      "note": "Geografický předmět uvedeného tvrzení; původní datum v evidenci. Více oblastí nepřidává nezávislé zdrojové linie ani ruskou atribuci."
+    },
+    "reported-20261030-italy-strike-observed-effects": {
+      "areas": [
+        "ITA"
+      ],
+      "title": "ANSA popisuje skutečné protesty, dopravní omezení a střety; ruské řízení ani změna podpory Ukrajině nedoloženy.",
+      "note": "Geografický předmět uvedeného tvrzení; původní datum v evidenci. Více oblastí nepřidává nezávislé zdrojové linie ani ruskou atribuci."
     }
   },
-  "review_scope": "Doplněny čtyři skutečně přezkoumané nové záznamy; historické anotace beze změny.",
-  "review_note": "Nizozemsko uvedeno jen u metodiky AIVD a výslovného evropského projektu; Ukrajina u provozního hlášení, Rusko u náborové komunikace."
+  "review_scope": [
+    "followup-20261030-oleshky-aid-and-departure",
+    "reported-20261030-firepoint-refinery-strike",
+    "reported-20261030-novak-refinery-attacks-resumed",
+    "evt-20261030-us-patriot-sale-approval",
+    "reported-20261030-grynkewich-ongoing-deliveries",
+    "followup-20261030-zelensky-patriot-delivery-timing",
+    "evt-20261030-eu-canada-summit-conclusions",
+    "backfill-20261029-iaea-reported-worker-death",
+    "reported-20261030-italy-strike-observed-effects"
+  ],
+  "review_note": "Zkontrolováno devět nových anotací; stará metadata ponechána beze změny. Nové datum přezkumu neaktualizuje data starších událostí."
 }

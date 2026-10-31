@@ -1636,6 +1636,114 @@
       "tier": 1,
       "cadence_days": 1,
       "priority": 1
+    },
+    {
+      "id": "usa-state-arms",
+      "name": "US State Department — foreign military sales",
+      "url": "https://www.state.gov/releases/bureau-of-political-military-affairs/2026/10/ukraine-patriot-advanced-capability-3-pac-3-missiles/",
+      "areas": [
+        "USA",
+        "UKR"
+      ],
+      "domains": [
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "ukr-presidency",
+      "name": "Ukrajinský prezident — veřejná prohlášení",
+      "url": "https://t.me/s/V_Zelenskiy_official",
+      "areas": [
+        "UKR"
+      ],
+      "domains": [
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "wire-bloomberg",
+      "name": "Bloomberg — přímé reportování",
+      "url": "https://www.bloomberg.com/",
+      "areas": [
+        "NATO",
+        "UKR"
+      ],
+      "domains": [
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "rus-m24",
+      "name": "Moskva24 — sledování původu státních výroků",
+      "url": "https://www.m24.ru/",
+      "areas": [
+        "RUS"
+      ],
+      "domains": [
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "ukr-nv",
+      "name": "NV — ukrajinské přímé reportování",
+      "url": "https://english.nv.ua/",
+      "areas": [
+        "UKR",
+        "RUS"
+      ],
+      "domains": [
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 4,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "ukr-hromadske",
+      "name": "Hromadske — reportování a odkazování primárních zdrojů",
+      "url": "https://hromadske.ua/en/",
+      "areas": [
+        "UKR"
+      ],
+      "domains": [
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 4,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "ita-ansa",
+      "name": "ANSA — domácí náklady a veřejný pořádek",
+      "url": "https://www.ansa.it/",
+      "areas": [
+        "ITA"
+      ],
+      "domains": [
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",
