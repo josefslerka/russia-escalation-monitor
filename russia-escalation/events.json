@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-10-30T21:43:10+01:00",
+  "reviewed_at": "2026-11-01T07:14:08+01:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -446,9 +446,37 @@
           "line_id": "line-ukrainian-ombudsman-oleshky",
           "claim": "Lubinec 30. října uvádí, že pomoc byla doručena a lidé, kteří chtěli odjet na ukrajinskou stranu, opustili Olešky a jsou na cestě. Hlásí 87 hodin bez porušení místního příměří.",
           "independence_basis": "Nová obsahová fáze existujícího případu; přetisky nejsou další potvrzení."
+        },
+        {
+          "evidence_id": "followup-20261031-oleshky-arrival",
+          "role": "followup",
+          "line_id": "line-ukrainian-ombudsman-oleshky",
+          "claim": "Lubinec uvedl, že evakuovaní přešli hranici a jsou v bezpečí. Příměří podle něj platí do 1. listopadu 22:59; časové pásmo ve zprávě není výslovné. Konečný celkový počet nesděluje.",
+          "independence_basis": "Jedna označená zdrojová linie; její další přetisky nezvyšují počet potvrzení."
+        },
+        {
+          "evidence_id": "reported-20261031-ap-oleshky-arrival",
+          "role": "independent_corroboration",
+          "line_id": "line-ap-field-oleshky-arrival-20261031",
+          "claim": "Reportéři AP popsali vystupování evakuovaných z autobusů na ukrajinsko-běloruské hranici, setkání s rodinami a pořídili vlastní fotografie. Úřady konečný počet nezveřejnily.",
+          "independence_basis": "AP má vlastní přímé pozorování příjezdu; tato nezávislost se nevztahuje na počet všech lidí nebo průběh příměří."
+        },
+        {
+          "evidence_id": "claim-20261031-miroshnik-oleshky-violation",
+          "role": "followup",
+          "line_id": "line-miroshnik-local-authorities-oleshky-20261031",
+          "claim": "Mirošnik s odvoláním na místní Ruskem dosazené úřady tvrdí zásah civilního automobilu ukrajinským dronem a dvě zranění. Čas útoku není přesně doložen.",
+          "independence_basis": "Jedna označená zdrojová linie; její další přetisky nezvyšují počet potvrzení."
+        },
+        {
+          "evidence_id": "claim-20261031-ukraine-oleshky-violation",
+          "role": "followup",
+          "line_id": "line-ukraine-south-kravchuk-oleshky-20261031",
+          "claim": "Podle ISW ukrajinský mluvčí uvádí průzkumné drony, shozy a využití humanitární pauzy k rotacím a zásobování. Jde o účastnické tvrzení o období místního příměří, nikoli nezávisle potvrzený soubor porušení.",
+          "independence_basis": "Jedna označená zdrojová linie; její další přetisky nezvyšují počet potvrzení."
         }
       ],
-      "reviewed_at": "2026-10-31T07:32:25+01:00",
+      "reviewed_at": "2026-11-01T07:14:08+01:00",
       "case_status": "open",
       "next_check_by": "2026-10-30T07:17:55+01:00",
       "next_action": "Ověřit skutečnou dodávku a evakuaci, její rozsah a pokračování místního příměří."
@@ -634,9 +662,16 @@
           "line_id": "line-reported-20261030-pentagon-baltic-messaging",
           "claim": "Reuters uvádí neveřejné americké žádosti Estonsku, Lotyšsku a Litvě o zdrženlivější komunikaci. Pentagon nekomentuje soukromé hovory; NATO a pobaltské resorty nepotvrdily popis.",
           "independence_basis": "Nezávislost se vztahuje pouze k popsanému tvrzení; přetisky a další fáze téže události nejsou další incidenty nebo potvrzení ruského řízení."
+        },
+        {
+          "evidence_id": "backfill-20261030-lithuania-rhetoric-response",
+          "role": "followup",
+          "line_id": "line-elta-matulionis-response-20261030",
+          "claim": "Matulionis v rozhovoru ELTA řekl, že prezidentská kancelář takovou výzvu nedostala a rétorika se nezměnila. Současně hájí klidné vystupování a konkrétní obranné kroky.",
+          "independence_basis": "Jedna označená zdrojová linie; její další přetisky nezvyšují počet potvrzení."
         }
       ],
-      "reviewed_at": "2026-10-30T08:08:44+01:00",
+      "reviewed_at": "2026-11-01T07:14:08+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-02T08:08:44+01:00",
       "next_action": "Ověřit veřejné úřední upřesnění, skutečný rozsah a kauzální atribuci; nesčítat přetisky."
@@ -1048,7 +1083,172 @@
         }
       ],
       "reviewed_at": "2026-10-31T07:32:25+01:00"
+    },
+    {
+      "id": "case-obs-20261031-ukrenergo-system-damage",
+      "title": "Ukrenergo hlásí obtížný stav sítě; zpráva neurčuje nouzová omezení ve třech oblastech.",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Ukrenergo uvádí rozsáhlé poškození, pokračující obnovu a obtížnou situaci v mnoha regionech včetně Kyjeva. Text nevyjmenovává alespoň tři oblasti se skutečně zavedenými nouzovými omezeními.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Provozní stav může odrážet souběh nových útoků a neopravených dřívějších škod; není sám důkaz nové kvalitativní změny kampaně.",
+      "links": [
+        {
+          "evidence_id": "obs-20261031-ukrenergo-system-damage",
+          "role": "first_report",
+          "line_id": "line-ukrenergo-operational-20261031",
+          "claim": "Ukrenergo uvádí rozsáhlé poškození, pokračující obnovu a obtížnou situaci v mnoha regionech včetně Kyjeva. Text nevyjmenovává alespoň tři oblasti se skutečně zavedenými nouzovými omezeními.",
+          "independence_basis": "Jedna označená zdrojová linie; její další přetisky nezvyšují počet potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-01T07:14:08+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-02T07:14:08+01:00",
+      "next_action": "Ověřit skutečný výsledek a zbývající kritéria; plán a tvrzení nepovažovat za uskutečněnou událost."
+    },
+    {
+      "id": "case-announced-20261101-ukrenergo-hourly-schedules",
+      "title": "Ukrenergo plánuje na 1. listopadu hodinové odstávky; realizace a nouzový režim z toho neplynou.",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Pro 1. listopad byly oznámeny limity pro průmysl a hodinové odstávky v některých oblastech od 06:00 do 23:59. Jde o plánovaný rozpis, nikoli potvrzení skutečných nouzových omezení ve třech jmenovaných oblastech.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Plánované řízení spotřeby může pomoci zabránit nouzovým omezením; zveřejnění rozpisu neprokazuje jeho provedení ani splnění fixed-v1.",
+      "links": [
+        {
+          "evidence_id": "announced-20261101-ukrenergo-hourly-schedules",
+          "role": "first_report",
+          "line_id": "line-ukrenergo-operational-20261101",
+          "claim": "Pro 1. listopad byly oznámeny limity pro průmysl a hodinové odstávky v některých oblastech od 06:00 do 23:59. Jde o plánovaný rozpis, nikoli potvrzení skutečných nouzových omezení ve třech jmenovaných oblastech.",
+          "independence_basis": "Jedna označená zdrojová linie; její další přetisky nezvyšují počet potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-01T07:14:08+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-02T07:14:08+01:00",
+      "next_action": "Ověřit skutečný výsledek a zbývající kritéria; plán a tvrzení nepovažovat za uskutečněnou událost."
+    },
+    {
+      "id": "case-reported-20261031-france-protest-provisional-tally",
+      "title": "Francouzské ministerstvo podle Le Monde hlásí 565 zadržení k 21:00; příčinný dopad na Ukrajinu nedoložen.",
+      "kind": "incident",
+      "areas": [
+        "FRA"
+      ],
+      "summary": "Le Monde ve 22:05 uvádí ministerskou bilanci 565 zadržení k 21:00 po protestech 31. října. Je to pozdější průběžný součet než 422 oznámených večer, nikoli konečná bilance celé noci.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Domácí ceny a sociální spory jsou samostatným vysvětlením. Počet zadržení neměří počet ruských operací, veřejné postoje ani změnu pomoci Ukrajině.",
+      "links": [
+        {
+          "evidence_id": "reported-20261031-france-protest-provisional-tally",
+          "role": "first_report",
+          "line_id": "line-french-interior-protest-tally-20261031",
+          "claim": "Le Monde ve 22:05 uvádí ministerskou bilanci 565 zadržení k 21:00 po protestech 31. října. Je to pozdější průběžný součet než 422 oznámených večer, nikoli konečná bilance celé noci.",
+          "independence_basis": "Jedna označená zdrojová linie; její další přetisky nezvyšují počet potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-01T07:14:08+01:00"
+    },
+    {
+      "id": "case-claim-20261031-1101-russian-mod-maritime-strikes",
+      "title": "Ruské MO tvrdí nové zásahy nejmenovaných lodí; identita, škody a nezávislé potvrzení chybí.",
+      "kind": "series",
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "summary": "Příspěvky /68670 a /68678 tvrdí zásahy nejmenovaných nákladních lodí u ukrajinského pobřeží 31. října a v následující noci. Nelze ověřit, zda jde o různé lodě, jejich vlajku, náklad ani účinek.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Hlášení může opakovat stejnou událost nebo zveličovat výsledek. Nelze je ztotožnit s Contship Jet/Khoryv ani prohlásit za úmyslný útok proti NATO.",
+      "links": [
+        {
+          "evidence_id": "claim-20261031-1101-russian-mod-maritime-strikes",
+          "role": "first_report",
+          "line_id": "line-russian-mod-maritime-claims-20261031-1101",
+          "claim": "Příspěvky /68670 a /68678 tvrdí zásahy nejmenovaných nákladních lodí u ukrajinského pobřeží 31. října a v následující noci. Nelze ověřit, zda jde o různé lodě, jejich vlajku, náklad ani účinek.",
+          "independence_basis": "Jedna označená zdrojová linie; její další přetisky nezvyšují počet potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-01T07:14:08+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-02T07:14:08+01:00",
+      "next_action": "Ověřit skutečný výsledek a zbývající kritéria; plán a tvrzení nepovažovat za uskutečněnou událost."
+    },
+    {
+      "id": "case-announced-20261031-ukraine-turkey-cooperation",
+      "title": "Zelenskyj oznamuje spolupráci na obilném koridoru a očekávané generátory; zatím jde o závazek.",
+      "kind": "policy",
+      "areas": [
+        "UKR",
+        "TUR",
+        "BLACK_SEA"
+      ],
+      "summary": "Zelenskyj po jednání s Erdoganem uvedl dohodu pracovat na černomořském obilném koridoru a očekávání zvýšených dodávek generátorů a energetického vybavení v příštím týdnu.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Diplomatická dohoda a očekávání dodávek nemusí přinést bezpečný funkční koridor ani realizované dodávky v uvedeném týdnu.",
+      "links": [
+        {
+          "evidence_id": "announced-20261031-ukraine-turkey-cooperation",
+          "role": "first_report",
+          "line_id": "line-zelensky-turkey-meeting-20261031",
+          "claim": "Zelenskyj po jednání s Erdoganem uvedl dohodu pracovat na černomořském obilném koridoru a očekávání zvýšených dodávek generátorů a energetického vybavení v příštím týdnu.",
+          "independence_basis": "Jedna označená zdrojová linie; její další přetisky nezvyšují počet potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-01T07:14:08+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-02T07:14:08+01:00",
+      "next_action": "Ověřit skutečný výsledek a zbývající kritéria; plán a tvrzení nepovažovat za uskutečněnou událost."
+    },
+    {
+      "id": "case-obs-20261031-nld-overhead-line-failure",
+      "title": "ProRail uvádí přerušené trakční vedení; příčina ani ruská účast nejsou určeny.",
+      "kind": "incident",
+      "areas": [
+        "NLD"
+      ],
+      "summary": "ProRail uvádí večerní zastavení provozu na jednom nizozemském úseku kvůli přerušení trakčního vedení, evakuaci stojícího vlaku a plán opravy. Oznámení neurčuje příčinu přerušení.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Technická závada je reálné alternativní vysvětlení; nelze bez vyšetření předpokládat sabotáž. Nová porucha neobjasňuje starší zářijový ani říjnový případ.",
+      "links": [
+        {
+          "evidence_id": "obs-20261031-nld-overhead-line-failure",
+          "role": "first_report",
+          "line_id": "line-prorail-overhead-line-20261031",
+          "claim": "ProRail uvádí večerní zastavení provozu na jednom nizozemském úseku kvůli přerušení trakčního vedení, evakuaci stojícího vlaku a plán opravy. Oznámení neurčuje příčinu přerušení.",
+          "independence_basis": "Jedna označená zdrojová linie; její další přetisky nezvyšují počet potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-01T07:14:08+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-02T07:14:08+01:00",
+      "next_action": "Ověřit skutečný výsledek a zbývající kritéria; plán a tvrzení nepovažovat za uskutečněnou událost."
+    },
+    {
+      "id": "case-backfill-20261028-uk-support-package",
+      "title": "Británie oznámila další financování a úvěrové záruky; nejde o nově uskutečněnou dodávku.",
+      "kind": "policy",
+      "areas": [
+        "GBR",
+        "UKR"
+      ],
+      "summary": "Britské ministerstvo financí oznámilo balík 10 miliard GBP, zahrnující víceleté ekonomické nástroje, záruky a kapacitu exportního financování; zmiňuje také 500 milionů GBP dodatečné vojenské podpory PVO na zimu.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Oznámené objemy zahrnují záruky a víceleté kapacity, nikoli okamžité výdaje či fyzicky dodané zbraně. Příslib nevylučuje nedostatky a prodlevy.",
+      "links": [
+        {
+          "evidence_id": "backfill-20261028-uk-support-package",
+          "role": "first_report",
+          "line_id": "line-uk-treasury-support-20261028",
+          "claim": "Britské ministerstvo financí oznámilo balík 10 miliard GBP, zahrnující víceleté ekonomické nástroje, záruky a kapacitu exportního financování; zmiňuje také 500 milionů GBP dodatečné vojenské podpory PVO na zimu.",
+          "independence_basis": "Jedna označená zdrojová linie; její další přetisky nezvyšují počet potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-01T07:14:08+01:00"
     }
   ],
-  "review_note": "Ruční analytické posouzení devíti historických intake a Khoryvu; netvrdí úplnou kanonizaci všech starších 373 záznamů."
+  "review_note": "Dnešní nové záznamy propojeny s konkrétními případy; starší evidence a závěry nepřepsány. Ukrajinské provozní dny vedeny odděleně."
 }

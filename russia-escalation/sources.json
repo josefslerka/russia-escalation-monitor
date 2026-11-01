@@ -1744,6 +1744,89 @@
       "tier": 2,
       "cadence_days": 7,
       "priority": 2
+    },
+    {
+      "id": "gbr-treasury",
+      "name": "HM Treasury — podpora Ukrajiny",
+      "url": "https://www.gov.uk/government/organisations/hm-treasury",
+      "areas": [
+        "GBR",
+        "UKR"
+      ],
+      "domains": [
+        "incidents",
+        "policy_effect",
+        "official_assessment"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "fra-lemonde",
+      "name": "Le Monde — přímé reportování veřejného pořádku",
+      "url": "https://www.lemonde.fr/",
+      "areas": [
+        "FRA"
+      ],
+      "domains": [
+        "incidents",
+        "policy_effect",
+        "official_assessment"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "lit-elta-lrt",
+      "name": "ELTA / LRT — přímá litevská vyjádření",
+      "url": "https://archyvai.lrt.lt/",
+      "areas": [
+        "LTU"
+      ],
+      "domains": [
+        "incidents",
+        "policy_effect",
+        "official_assessment"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "isw-ctp",
+      "name": "ISW / CTP — přehled s identifikovanými původními liniemi",
+      "url": "https://www.criticalthreats.org/",
+      "areas": [
+        "UKR",
+        "RUS"
+      ],
+      "domains": [
+        "incidents",
+        "policy_effect",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "meduza",
+      "name": "Meduza — dohledání ruských tvrzení",
+      "url": "https://meduza.io/",
+      "areas": [
+        "RUS",
+        "UKR"
+      ],
+      "domains": [
+        "incidents",
+        "policy_effect",
+        "official_assessment"
+      ],
+      "tier": 4,
+      "cadence_days": 7,
+      "priority": 2
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",

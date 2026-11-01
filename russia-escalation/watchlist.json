@@ -8,9 +8,9 @@
     "would_weaken": [
       "Zjištěná chyba data, duplicita nebo jiné vysvětlení podstatné části řady zpochybní splnění; případnou opravu uvést v nové zprávě, ne přepisovat archiv."
     ],
-    "next_check_by": "2026-10-31T08:08:44+01:00",
-    "current_note": "Operátor stále končí stavem 30. října a plánem 31. října. Nové ruské hlášení dalších úderů není nezávislé potvrzení jejich účinků; staré splněné otázky neotevřeny.",
-    "assessment_time": "2026-10-31T07:32:25+01:00",
+    "next_check_by": "2026-11-02T07:14:08+01:00",
+    "current_note": "Ukrenergo dokládá pokračující poškození a plán hodinových odstávek. Místní evakuace se uskutečnila; námořní útoky jsou jednostranná tvrzení. Ani plán odstávek, ani hlášení domácností bez proudu není automaticky nouzový režim ve třech jmenovaných oblastech.",
+    "assessment_time": "2026-11-01T07:14:08+01:00",
     "met_indicators": [
       {
         "date": "2026-10-07",
@@ -105,7 +105,11 @@
       "reported-20261029-oleshky-resident-accounts",
       "obs-20261029-ukrenergo-damage-repair-oct30-plan",
       "followup-20261029-oleshky-demining-complete",
-      "followup-20261030-zelensky-patriot-delivery-timing"
+      "followup-20261030-zelensky-patriot-delivery-timing",
+      "obs-20261031-ukrenergo-system-damage",
+      "announced-20261101-ukrenergo-hourly-schedules",
+      "claim-20261031-1101-russian-mod-maritime-strikes",
+      "followup-20261031-oleshky-arrival"
     ],
     "adjudication_review_by": "2026-10-16T08:05:57+02:00",
     "adjudication_review_rule": "Sestavit datovanou řadu skutečných nových zásahů a porovnat s definicí po 19. září. Explicitně zaznamenat splněno / nesplněno / zatím nedoložitelné, nikoli jen znovu posunout checkpoint. Série starých výpadků není náhrada.",
@@ -269,9 +273,24 @@
           "https://t.me/mod_russia/68662",
           "https://t.me/V_Zelenskiy_official/21573"
         ]
+      },
+      {
+        "reviewed_at": "2026-11-01T07:14:08+01:00",
+        "scheduled_for": "2026-10-31T08:08:44+01:00",
+        "outcome": "relevant_found",
+        "summary": "Ukrenergo dokládá pokračující poškození a plán hodinových odstávek. Místní evakuace se uskutečnila; námořní útoky jsou jednostranná tvrzení. Ani plán odstávek, ani hlášení domácností bez proudu není automaticky nouzový režim ve třech jmenovaných oblastech.",
+        "check_ids": [
+          "check-20261101-watch-ukraine_additional_conventional_escalation"
+        ],
+        "source_urls": [
+          "https://t.me/Ukrenergo/5600",
+          "https://t.me/Ukrenergo/5601",
+          "https://t.me/dmytro_lubinetzs/12964",
+          "https://t.me/mod_russia/68678"
+        ]
       }
     ],
-    "review_status": "reassessed_partial_public_coverage",
+    "review_status": "reviewed_within_stated_scope",
     "next_attempt_by": "2026-10-31T19:32:25+01:00"
   },
   "hybrid_and_sabotage_eu": {
@@ -297,8 +316,8 @@
       "Vyšetřování doloží starší nebo nesabotážní původ nálezů, ochrana prokazatelně zmaří nové pokusy a aktuální oficiální posouzení hrozby klesne."
     ],
     "next_check_by": "2026-10-29T07:05:38+01:00",
-    "current_note": "Staré případy znovu porovnány s dostupnými výpisy a vyhledáváním. Nizozemská atribuce a společný původ kyberútoků zůstávají otevřené; absence nové nalezené atribuce není absence operace.",
-    "assessment_time": "2026-10-31T07:32:25+01:00",
+    "current_note": "Nová nizozemská porucha je potvrzená, příčina otevřená; není kvalifikující ruská sabotáž. Starší německé, rumunské a polské případy nelze přičíst novému oknu. Úplná panelová atribuce chybí.",
+    "assessment_time": "2026-11-01T07:14:08+01:00",
     "evidence_ids": [
       "followup-20261020-eeas-black-sea-assessment",
       "reported-20261018-lithuania-starlink-arson-attempt",
@@ -315,7 +334,8 @@
       "evt-20261026-sri-carfil-attribution",
       "backfill-20261028-bgr-starlink-arrest-followup",
       "backfill-20261028-nuremberg-plot-investigation",
-      "reported-20261029-us-freezer-investigation"
+      "reported-20261029-us-freezer-investigation",
+      "obs-20261031-nld-overhead-line-failure"
     ],
     "bulgaria_proceedings": {
       "event_date_reported_by_court": "2026-10-09",
@@ -384,6 +404,22 @@
           "https://www.abw.gov.pl/",
           "https://cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-012/"
         ]
+      },
+      {
+        "reviewed_at": "2026-11-01T07:14:08+01:00",
+        "scheduled_for": "2026-10-29T07:05:38+01:00",
+        "outcome": "partial",
+        "summary": "Nová nizozemská porucha je potvrzená, příčina otevřená; není kvalifikující ruská sabotáž. Starší německé, rumunské a polské případy nelze přičíst novému oknu. Úplná panelová atribuce chybí.",
+        "check_ids": [
+          "check-20261101-watch-hybrid_and_sabotage_eu"
+        ],
+        "source_urls": [
+          "https://www.prorail.nl/nieuws/geen-treinverkeer-tussen-nijmegen-en-oss-vanwege-bovenleidingbreuk",
+          "https://www.politie.nl/nieuws",
+          "https://www.abw.gov.pl/",
+          "https://www.sri.ro/",
+          "https://cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-012/"
+        ]
       }
     ],
     "carfil_inquiry": {
@@ -397,7 +433,7 @@
       "check": "Veřejné procesní potvrzení, datum dalších příprav, rozsah aktivní části sítě; ne seznam cílů."
     },
     "review_status": "reassessed_partial_public_coverage",
-    "next_attempt_by": "2026-10-31T19:32:25+01:00"
+    "next_attempt_by": "2026-11-01T19:14:08+01:00"
   },
   "limited_nato_and_baltic_test": {
     "would_strengthen": [
@@ -418,8 +454,8 @@
       "Forenzní šetření potvrdí ukrajinský stroj s nezáměrným odklonem a bez ruského záměru zasáhnout NATO."
     ],
     "next_check_by": "2026-10-29T07:05:38+01:00",
-    "current_note": "NATO oznámilo obranné bulharské memorandum; lotyšská centra jsou plán. Nezískána nová konvergence ruského rozhodnutí a operační pohotovosti. Chybí nové plošné místní hodnocení.",
-    "assessment_time": "2026-10-31T07:32:25+01:00",
+    "current_note": "Nově dohledané litevské vyjádření omezuje závěr o změně rétoriky; nevylučuje soukromé americké kontakty. Nová nezávislá konvergence rozhodnutí a připravenosti nezískána; některé místní primární zdroje nedostupné.",
+    "assessment_time": "2026-11-01T07:14:08+01:00",
     "evidence_ids": [
       "followup-20261020-lithuania-poland-drone-inquiry",
       "obs-20261021-romania-alert-no-incursion",
@@ -450,7 +486,8 @@
       "analysis-20261029-contship-drone-design",
       "reported-20261030-pentagon-baltic-messaging",
       "evt-20261029-latvia-border-guard-law",
-      "evt-20261029-putin-europe-baltic-signalling"
+      "evt-20261029-putin-europe-baltic-signalling",
+      "backfill-20261030-lithuania-rhetoric-response"
     ],
     "scheduled_observation": {
       "date": "2026-10-14",
@@ -642,15 +679,32 @@
           "https://vdd.gov.lv/en/",
           "https://www.nato.int/en/news-and-events/articles/news/2026/10/30/bulgaria-to-join-natos-initiative-against-lower-level-air-threats"
         ]
+      },
+      {
+        "reviewed_at": "2026-11-01T07:14:08+01:00",
+        "scheduled_for": "2026-10-29T07:05:38+01:00",
+        "outcome": "partial",
+        "summary": "Nově dohledané litevské vyjádření omezuje závěr o změně rétoriky; nevylučuje soukromé americké kontakty. Nová nezávislá konvergence rozhodnutí a připravenosti nezískána; některé místní primární zdroje nedostupné.",
+        "check_ids": [
+          "check-20261101-watch-limited_nato_and_baltic_test"
+        ],
+        "source_urls": [
+          "https://www.nato.int/",
+          "https://vdd.gov.lv/en/",
+          "https://www.sab.gov.lv/",
+          "https://kapo.ee/en/",
+          "https://www.vsd.lt/en/",
+          "https://archyvai.lrt.lt/naujienos/lietuvoje/2/3098378/matulionis-apie-retorika-rusijos-atzvilgiu-samoningai-provokuoti-ar-erzinti-nereikia"
+        ]
       }
     ],
     "review_status": "reassessed_partial_public_coverage",
-    "next_attempt_by": "2026-10-31T19:32:25+01:00"
+    "next_attempt_by": "2026-11-01T19:14:08+01:00"
   },
   "russian_mobilization": {
     "definition_version": 2,
     "forecast_hypothesis": "significant_russian_mobilization_by_2026_12_31",
-    "assessment_time": "2026-10-31T07:32:25+01:00",
+    "assessment_time": "2026-11-01T07:14:08+01:00",
     "would_strengthen": [
       "Nový ověřený závazný mobilizační příkaz alespoň pro 100 000 lidí, i podle starého dekretu; nebo důvěryhodně doložená faktická nucená vlna stejného rozsahu.",
       "Nezávislé regionální linie ukážou současně nové nucené rozkazy a příjem/výcvik nad normál; samotné dvě regionální anekdoty nedokazují celostátní počet.",
@@ -668,7 +722,7 @@
     "next_check_by": "2026-10-29T11:04:01+01:00",
     "checkpoint_72h": "2026-10-03T21:35:31+02:00",
     "next_review_rule": "Další kontrola navazuje na skutečně provedený 72h audit. Původní checkpoint 3. října 21:35:31 nepřepisovat. Rutinní odesílání branců od 10. října oddělit od nové nucené vlny; opakované nenalezení v neúplném vzorku není další nezávislý záporný důkaz.",
-    "current_note": "Právní portál timeout; Kreml a MO čitelné. Smolenské svědectví NGO /8218 se týká jednotlivého brance, nikoli koordinované nucené vlny nebo příkazu pro 100 000 lidí. Hledání tvrzení o listopadové mobilizaci nepřineslo ověřený primární příkaz.",
+    "current_note": "Přečten Kreml, MO a NGO a vyhledány nové příkazy. Portál právních aktů nedostupný. Výsledek hledání obsahoval ukrajinskou mobilizaci a starý ruský běžný odvod; ani jedno není nový ruský mobilizační příkaz pro 100 000. Vlnu nucené mobilizace nelze odvodit z jedné odvodní stížnosti.",
     "checkpoint_review": {
       "scheduled_for": "2026-10-03T21:35:31+02:00",
       "reviewed_at": "2026-10-04T09:15:45+02:00",
@@ -781,10 +835,25 @@
           "http://kremlin.ru/events/president/news",
           "https://t.me/s/iditelesom_help"
         ]
+      },
+      {
+        "reviewed_at": "2026-11-01T07:14:08+01:00",
+        "scheduled_for": "2026-10-29T11:04:01+01:00",
+        "outcome": "partial",
+        "summary": "Přečten Kreml, MO a NGO a vyhledány nové příkazy. Portál právních aktů nedostupný. Výsledek hledání obsahoval ukrajinskou mobilizaci a starý ruský běžný odvod; ani jedno není nový ruský mobilizační příkaz pro 100 000. Vlnu nucené mobilizace nelze odvodit z jedné odvodní stížnosti.",
+        "check_ids": [
+          "check-20261101-watch-russian_mobilization"
+        ],
+        "source_urls": [
+          "https://publication.pravo.gov.ru/",
+          "http://kremlin.ru/events/president/news",
+          "https://t.me/s/mod_russia",
+          "https://t.me/s/iditelesom_help"
+        ]
       }
     ],
     "review_status": "reassessed_partial_public_coverage",
-    "next_attempt_by": "2026-10-31T19:32:25+01:00"
+    "next_attempt_by": "2026-11-01T19:14:08+01:00"
   },
   "belarus_and_nuclear": {
     "would_strengthen": [
@@ -800,8 +869,8 @@
       "Resortní praporní kontrola prokazatelně skončí a síly se vrátí do běžného režimu, bez nové koncentrace."
     ],
     "next_check_by": "2026-10-29T11:04:01+01:00",
-    "current_note": "Veřejné běloruské příspěvky popisují absolventy, prapor jednotky a odchod branců do zálohy, ne přímý pozemní vstup. Index CTBTO není živá jaderná telemetrie. ZNPP je bezpečnost elektrárny, nikoli zbraňová detonace.",
-    "assessment_time": "2026-10-31T07:32:25+01:00",
+    "current_note": "Běloruský kanál obsahuje den otevřených dveří, mediální sport a výročí zdravotnického centra; není dokladem pozemního vstupu. CTBTO přímé zdroje blokované. Nezískány dvě nezávislé primární linie zbraňové detonace či běloruského boje.",
+    "assessment_time": "2026-11-01T07:14:08+01:00",
     "source_urls": [
       "https://t.me/modmilby/59598",
       "https://t.me/modmilby/59592"
@@ -1087,6 +1156,21 @@
           "https://mod.gov.ua/en",
           "https://www.ctbto.org/"
         ]
+      },
+      {
+        "reviewed_at": "2026-11-01T07:14:08+01:00",
+        "scheduled_for": "2026-10-29T11:04:01+01:00",
+        "outcome": "partial",
+        "summary": "Běloruský kanál obsahuje den otevřených dveří, mediální sport a výročí zdravotnického centra; není dokladem pozemního vstupu. CTBTO přímé zdroje blokované. Nezískány dvě nezávislé primární linie zbraňové detonace či běloruského boje.",
+        "check_ids": [
+          "check-20261101-watch-belarus_and_nuclear"
+        ],
+        "source_urls": [
+          "https://www.mil.by/",
+          "https://mod.gov.ua/en",
+          "https://www.ctbto.org/",
+          "https://t.me/s/modmilby"
+        ]
       }
     ],
     "bulava_test_review": {
@@ -1099,7 +1183,7 @@
       "would_weaken": "Ověření běžného výcvikového rámce a nepřítomnosti změn tam, kde by musely být veřejně pozorovatelné."
     },
     "review_status": "reassessed_partial_public_coverage",
-    "next_attempt_by": "2026-10-31T19:32:25+01:00"
+    "next_attempt_by": "2026-11-01T19:14:08+01:00"
   },
   "czechia": {
     "would_strengthen": [
@@ -1111,8 +1195,8 @@
       "Veřejné české hodnocení zůstane na obecné dlouhodobé hrozbě bez nové readiness vrstvy."
     ],
     "next_check_by": "2026-10-29T07:05:38+01:00",
-    "current_note": "České institucionální výpisy a běžné zásahy HZS porovnány. Nezískán nový kvalifikující ruský fyzický případ; chybí úplná provozní a srovnatelná sociální bilance.",
-    "assessment_time": "2026-10-31T07:32:25+01:00",
+    "current_note": "BIS/NÚKIB/MO prohlédnuty; nová položka NÚKIB je vzhled webu. HZS zvolený odkaz 404. Bez úplné nové bilance provozu a sociálních měření nelze vyhlásit absenci narušení.",
+    "assessment_time": "2026-11-01T07:14:08+01:00",
     "evidence_ids": [
       "obs-20261015-nukib-september-incidents",
       "evt-20261021-germany-bundeswehr-sabotage-assessment",
@@ -1172,10 +1256,25 @@
           "https://nukib.gov.cz/cs/infoservis/aktuality/",
           "https://hzscr.gov.cz/"
         ]
+      },
+      {
+        "reviewed_at": "2026-11-01T07:14:08+01:00",
+        "scheduled_for": "2026-10-29T07:05:38+01:00",
+        "outcome": "partial",
+        "summary": "BIS/NÚKIB/MO prohlédnuty; nová položka NÚKIB je vzhled webu. HZS zvolený odkaz 404. Bez úplné nové bilance provozu a sociálních měření nelze vyhlásit absenci narušení.",
+        "check_ids": [
+          "check-20261101-watch-czechia"
+        ],
+        "source_urls": [
+          "https://www.bis.cz/aktuality/",
+          "https://nukib.gov.cz/cs/infoservis/aktuality/",
+          "https://mocr.mo.gov.cz/",
+          "https://hzscr.gov.cz/clanek/informacni-servis-zpravodajstvi-zpravodajstvi.aspx"
+        ]
       }
     ],
     "review_status": "reassessed_partial_public_coverage",
-    "next_attempt_by": "2026-10-31T19:32:25+01:00"
+    "next_attempt_by": "2026-11-01T19:14:08+01:00"
   },
   "znpp_nuclear_safety": {
     "would_strengthen": [
@@ -1190,7 +1289,7 @@
     ],
     "next_check_by": "2026-11-01T07:32:25+01:00",
     "note": "Nová kontrola indexu, stále bulletin372 z23. října; není nová terénní observace.",
-    "assessment_time": "2026-10-31T07:32:25+01:00",
+    "assessment_time": "2026-11-01T07:14:08+01:00",
     "last_dated_observation": "2026-10-23",
     "evidence_ids": [
       "evt-20261002-iaea-znpp-safety-update369",
@@ -1265,12 +1364,26 @@
           "https://hromadske.ua/en/war/273473-zaporizhzhia-nuclear-plant-worker-killed-in-drone-attack-iaea-says",
           "https://x.com/iaeaorg/status/2115916434136248531?s=20"
         ]
+      },
+      {
+        "reviewed_at": "2026-11-01T07:14:08+01:00",
+        "scheduled_for": "2026-11-01T07:32:25+01:00",
+        "outcome": "partial",
+        "summary": "Cíleně hledána aktualizace hlášení o úmrtí pracovníka; primární IAEA nedostupná. Staré přijaté hlášení není dnešní přímé pozorování a nezakládá jadernou detonaci.",
+        "check_ids": [
+          "check-20261101-watch-znpp_nuclear_safety"
+        ],
+        "source_urls": [
+          "https://www.iaea.org/newscenter/pressreleases",
+          "https://hromadske.ua/en/war/273473-zaporizhzhia-nuclear-plant-worker-killed-in-drone-attack-iaea-says"
+        ]
       }
     ],
-    "current_note": "Zpětně dohledáno převzaté hlášení IAEA o úmrtí pracovníka 29. října. Žádná přisouzená vina ani jaderná detonace; primární X nepřístupné.",
-    "review_status": "reviewed_within_stated_scope",
+    "current_note": "Cíleně hledána aktualizace hlášení o úmrtí pracovníka; primární IAEA nedostupná. Staré přijaté hlášení není dnešní přímé pozorování a nezakládá jadernou detonaci.",
+    "review_status": "reassessed_partial_public_coverage",
     "last_dated_report": "2026-10-29",
-    "latest_report_status": "received_report_not_direct_observation"
+    "latest_report_status": "received_report_not_direct_observation",
+    "next_attempt_by": "2026-11-01T19:14:08+01:00"
   },
   "western_decision_pressure": {
     "would_strengthen": [
@@ -1304,9 +1417,9 @@
       "Nezávislé provozní potvrzení21.–23. října doloží trvalé obnovení varování; nezaměnit se Starshield nebo novou dodávkou.",
       "Zklidnění francouzských nepokojů a provedené kompenzace omezí další náklady při nezměněné podpoře Ukrajině."
     ],
-    "next_check_by": "2026-11-01T07:32:25+01:00",
-    "current_note": "Oddělen administrativní souhlas s prodejem, hlášené již uskutečněné dodávky, prezidentské tvrzení o budoucím termínu a politické závěry. Dvě odlišné linie o rafineriích oslabují tezi trvající plošné pauzy, nevyvracejí minulou přestávku.",
-    "assessment_time": "2026-10-31T07:32:25+01:00",
+    "next_check_by": "2026-11-02T07:14:08+01:00",
+    "current_note": "Britský starší příslib a nová ukrajinsko-turecká dohoda jsou podpora, nikoli prokázané dodávky. Litevské vyjádření nedokládá změnu politiky. Francouzské skutečné protestní náklady nemají doloženou ruskou příčinu nebo dopad na pomoc. Chybí úplné kotvy WDPI v2.",
+    "assessment_time": "2026-11-01T07:14:08+01:00",
     "met_indicators": [
       {
         "date": "2026-10-02",
@@ -1547,7 +1660,11 @@
       "followup-20261030-zelensky-patriot-delivery-timing",
       "evt-20261030-eu-canada-summit-conclusions",
       "reported-20261030-firepoint-refinery-strike",
-      "reported-20261030-novak-refinery-attacks-resumed"
+      "reported-20261030-novak-refinery-attacks-resumed",
+      "backfill-20261028-uk-support-package",
+      "announced-20261031-ukraine-turkey-cooperation",
+      "backfill-20261030-lithuania-rhetoric-response",
+      "reported-20261031-france-protest-provisional-tally"
     ],
     "spacex_letter": {
       "issued_on": "2026-10-19",
@@ -1677,6 +1794,21 @@
           "https://www.m24.ru/news/30102026/958852",
           "https://abcnews.com/amp/US/wireStory/us-approves-proposed-21-billion-sale-patriot-interceptors-137720328"
         ]
+      },
+      {
+        "reviewed_at": "2026-11-01T07:14:08+01:00",
+        "scheduled_for": "2026-11-01T07:32:25+01:00",
+        "outcome": "relevant_found",
+        "summary": "Britský starší příslib a nová ukrajinsko-turecká dohoda jsou podpora, nikoli prokázané dodávky. Litevské vyjádření nedokládá změnu politiky. Francouzské skutečné protestní náklady nemají doloženou ruskou příčinu nebo dopad na pomoc. Chybí úplné kotvy WDPI v2.",
+        "check_ids": [
+          "check-20261101-watch-western_decision_pressure"
+        ],
+        "source_urls": [
+          "https://www.gov.uk/government/news/uk-boosts-support-to-ukraine-with-10-billion-package",
+          "https://t.me/V_Zelenskiy_official/21587",
+          "https://archyvai.lrt.lt/naujienos/lietuvoje/2/3098378/matulionis-apie-retorika-rusijos-atzvilgiu-samoningai-provokuoti-ar-erzinti-nereikia",
+          "https://www.lemonde.fr/societe/live/2026/10/31/en-direct-manifestations-du-31-octobre-plusieurs-centaines-de-milliers-de-personnes-ont-defile-contre-la-vie-chere-en-france-des-couvre-feux-partiels-prevus-cette-nuit-dans-certaines-grandes-villes_6803391_3224.html"
+        ]
       }
     ],
     "epf_implementation_review": {
@@ -1744,8 +1876,8 @@
       "Výběr a výcvik se nepromění v nasazení, čísla se opraví nebo půjde o rotaci místo čistého posílení."
     ],
     "next_check_by": "2026-10-29T11:04:01+01:00",
-    "current_note": "Vyhledání a dostupné rezortní kanály neposkytly novou potvrzenou posilovou vlnu. MOFA přesměrování selhalo a Yonhap vrátil nevyplněný hledací výpis.",
-    "assessment_time": "2026-10-31T07:32:25+01:00",
+    "current_note": "MOFA přesměrování selhalo; Yonhap hledací obal bez čerstvého úplného výpisu. Dostupné rezortní výpisy nedokládají novou nezávisle potvrzenou severokorejskou posilovou vlnu.",
+    "assessment_time": "2026-11-01T07:14:08+01:00",
     "review_status": "reassessed_partial_public_coverage",
     "review_history": [
       {
@@ -1807,14 +1939,29 @@
           "https://t.me/s/mod_russia",
           "https://en.yna.co.kr/search/index?query=Russia%20Ukraine"
         ]
+      },
+      {
+        "reviewed_at": "2026-11-01T07:14:08+01:00",
+        "scheduled_for": "2026-10-29T11:04:01+01:00",
+        "outcome": "partial",
+        "summary": "MOFA přesměrování selhalo; Yonhap hledací obal bez čerstvého úplného výpisu. Dostupné rezortní výpisy nedokládají novou nezávisle potvrzenou severokorejskou posilovou vlnu.",
+        "check_ids": [
+          "check-20261101-watch-north_korean_reinforcements"
+        ],
+        "source_urls": [
+          "https://mod.gov.ua/en",
+          "https://www.mofa.go.kr/eng/",
+          "https://t.me/s/mod_russia",
+          "https://en.yna.co.kr/search/index?query=Ukraine"
+        ]
       }
     ],
-    "next_attempt_by": "2026-10-31T19:32:25+01:00"
+    "next_attempt_by": "2026-11-01T19:14:08+01:00"
   },
   "assessment_scope": "Plná analytická aktualizace s částečným veřejným pokrytím; staré zmeškané termíny zachovány.",
   "watch_window_end": "2026-11-02T08:08:44+01:00",
   "latvian_election_cyber_effect": {
-    "assessment_time": "2026-10-31T07:32:25+01:00",
+    "assessment_time": "2026-11-01T07:14:08+01:00",
     "would_strengthen": [
       "CERT.LV doloží incident s materiálním dopadem na volební proces; ruskou atribuci a samotný účinek posuzovat odděleně."
     ],
@@ -1822,7 +1969,7 @@
       "Aktivní monitorování přes volební období doloží zachování funkcí bez materiálního narušení; nesčítat opakované bezincidentní aktualizace jako nezávislé důkazy."
     ],
     "next_check_by": "2026-10-29T11:04:01+01:00",
-    "current_note": "Prohlédnuté nové obecné kybernetické a parlamentní zprávy nepřidávají audit voleb. Závěr VDD z 5. října zůstává starým datovaným závěrem.",
+    "current_note": "Novinky CERT jsou zranitelnosti a doporučení; výpis VDD neobsahuje nový volební audit. Hodnocení z 5. října zůstává staré.",
     "review_status": "reassessed_partial_public_coverage",
     "met_indicators": [
       {
@@ -1893,12 +2040,25 @@
           "https://cert.lv/lv/",
           "https://www.saeima.lv/"
         ]
+      },
+      {
+        "reviewed_at": "2026-11-01T07:14:08+01:00",
+        "scheduled_for": "2026-10-29T11:04:01+01:00",
+        "outcome": "partial",
+        "summary": "Novinky CERT jsou zranitelnosti a doporučení; výpis VDD neobsahuje nový volební audit. Hodnocení z 5. října zůstává staré.",
+        "check_ids": [
+          "check-20261101-watch-latvian_election_cyber_effect"
+        ],
+        "source_urls": [
+          "https://vdd.gov.lv/en/",
+          "https://cert.lv/lv/"
+        ]
       }
     ],
-    "next_attempt_by": "2026-10-31T19:32:25+01:00"
+    "next_attempt_by": "2026-11-01T19:14:08+01:00"
   },
   "black_sea_maritime_incident": {
-    "assessment_time": "2026-10-31T07:32:25+01:00",
+    "assessment_time": "2026-11-01T07:14:08+01:00",
     "next_check_by": "2026-10-31T08:08:44+01:00",
     "would_strengthen": [
       "Veřejný datovaný forenzní nebo zpravodajský závěr určí konkrétního původce jednotlivých útoků; přetisky jedné anonymní atribuce nesčítat.",
@@ -1911,7 +2071,7 @@
       "Při ruské atribuci se doloží cíl proti ukrajinské logistice bez záměru testovat soudržnost NATO.",
       "Obranná opatření zajistí pokračování plavby bez dalšího materiálního zásahu; nepřítomnost jedné radarové stopy sama příčinu nevyvrací."
     ],
-    "current_note": "Znovu hledána nová bilance a atribuce Contship Jet/Khoryv. Dostupné úřední výpisy nepřinesly uzavřenou atribuci. Ruské nové tvrzení o nejmenované lodi nelze přiřadit ke starším konkrétním incidentům.",
+    "current_note": "Nová ruská tvrzení o nejmenovaných lodích nelze propojit se staršími případy Contship Jet a Khoryv. Znovu čtené bulharské dokumenty zachovávají stará data a neposkytují uzavřenou atribuci.",
     "evidence_ids": [
       "followup-20261020-eeas-black-sea-assessment",
       "obs-20261021-romania-alert-no-incursion",
@@ -1935,7 +2095,8 @@
       "followup-20261029-contship-sinking-confirmed",
       "analysis-20261029-contship-drone-design",
       "followup-20261029-contship-investigation",
-      "obs-20261030-black-sea-pollution-monitoring"
+      "obs-20261030-black-sea-pollution-monitoring",
+      "claim-20261031-1101-russian-mod-maritime-strikes"
     ],
     "related_distinct_incident": "evt-20261017-romania-two-geran-interceptions",
     "latest_khoryv_observation": {
@@ -2026,6 +2187,22 @@
           "https://bntnews.bg/",
           "https://t.me/mod_russia/68662"
         ]
+      },
+      {
+        "reviewed_at": "2026-11-01T07:14:08+01:00",
+        "scheduled_for": "2026-10-31T08:08:44+01:00",
+        "outcome": "partial",
+        "summary": "Nová ruská tvrzení o nejmenovaných lodích nelze propojit se staršími případy Contship Jet a Khoryv. Znovu čtené bulharské dokumenty zachovávají stará data a neposkytují uzavřenou atribuci.",
+        "check_ids": [
+          "check-20261101-watch-black_sea_maritime_incident"
+        ],
+        "source_urls": [
+          "https://www.mtc.government.bg/bg/category/1/18-chlenniyat-ekipazh-na-konteynerovoza-contship-jet-e-spasen",
+          "https://www.mtc.government.bg/bg/category/1/instituciite-sledyat-dvizhenieto-na-preobrnatiya-korab-khoryv-i-sa-gotovi-s-merki-za-sigurnostta-na-koraboplavaneto",
+          "https://prb.bg/",
+          "https://t.me/mod_russia/68678",
+          "https://t.me/mod_russia/68670"
+        ]
       }
     ],
     "unverified_claim_history": [
@@ -2052,11 +2229,11 @@
       }
     ],
     "review_status": "reassessed_partial_public_coverage",
-    "next_attempt_by": "2026-10-31T19:32:25+01:00"
+    "next_attempt_by": "2026-11-01T19:14:08+01:00"
   },
   "french_refrigeration_cyber_incident": {
-    "assessment_time": "2026-10-31T07:32:25+01:00",
-    "next_check_by": "2026-11-01T07:32:25+01:00",
+    "assessment_time": "2026-11-01T07:14:08+01:00",
+    "next_check_by": "2026-11-02T07:14:08+01:00",
     "event_time": "2026-10-11/2026-10-12",
     "evidence_ids": [
       "reported-20261013-france-refrigeration-cyber-effects",
@@ -2070,7 +2247,7 @@
     "would_weaken": [
       "Vyšetřování doloží jiného původce, rozsah se zúží nebo škody budou odstraněny bez širšího dopadu."
     ],
-    "current_note": "Přímo znovu přečten správný alert CERTFR-2026-ALE-012; poslední verze stále 16. října. Žádná nová atribuce ani nová bilanční čísla v tomto dokumentu.",
+    "current_note": "Konkrétní alert CERTFR-2026-ALE-012 má poslední změnu 16. října. Bez nového závěru o původci v tomto dokumentu; společná technologie neprokazuje společného pachatele.",
     "review_history": [
       {
         "reviewed_at": "2026-10-27T10:31:36+01:00",
@@ -2119,13 +2296,26 @@
           "https://cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-012/",
           "https://www.sgdsn.gouv.fr/"
         ]
+      },
+      {
+        "reviewed_at": "2026-11-01T07:14:08+01:00",
+        "scheduled_for": "2026-11-01T07:32:25+01:00",
+        "outcome": "no_new_relevant",
+        "summary": "Konkrétní alert CERTFR-2026-ALE-012 má poslední změnu 16. října. Bez nového závěru o původci v tomto dokumentu; společná technologie neprokazuje společného pachatele.",
+        "check_ids": [
+          "check-20261101-watch-french_refrigeration_cyber_incident"
+        ],
+        "source_urls": [
+          "https://cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-012/",
+          "https://www.sgdsn.gouv.fr/"
+        ]
       }
     ],
     "review_status": "reviewed_within_stated_scope"
   },
   "france_domestic_pressure": {
-    "assessment_time": "2026-10-31T07:32:25+01:00",
-    "next_check_by": "2026-10-31T08:08:44+01:00",
+    "assessment_time": "2026-11-01T07:14:08+01:00",
+    "next_check_by": "2026-11-02T07:14:08+01:00",
     "event_window": "2026-10-17/2026-10-24",
     "evidence_ids": [
       "evt-20261020-france-business-relief",
@@ -2134,7 +2324,8 @@
       "obs-20261024-france-protests-security-costs",
       "analysis-20261026-acled-france-protest-drivers",
       "obs-20261028-france-domestic-security-response",
-      "announced-20261029-france-oct31-policing"
+      "announced-20261029-france-oct31-policing",
+      "reported-20261031-france-protest-provisional-tally"
     ],
     "russian_role": "independent",
     "would_strengthen": [
@@ -2143,7 +2334,7 @@
     "would_weaken": [
       "Ověřené zklidnění a obnovení provozu při nezměněné podpořeUkrajině; odlišit pouhé oznámení kompenzací od vyplacení."
     ],
-    "current_note": "Dnešní AP popisuje přípravy sobotního protestu a policejní nasazení; plán 70 000 již v prioru. Ranní text není konečná bilance dne ani příčinný dopad na podporu Ukrajiny.",
+    "current_note": "Ministerská bilance přes Le Monde stoupla z průběžných 422 na 565 k 21:00; nikoli konečný celonoční součet. Oficiální stránka o nasazení 70 000 je plán. Dopad na ukrajinskou politiku nedoložen.",
     "review_history": [
       {
         "reviewed_at": "2026-10-27T10:31:36+01:00",
@@ -2192,6 +2383,19 @@
           "https://apnews.com/article/362a7cb69871ab21bd894290dad639f5",
           "https://www.tf1info.fr/societe/manifestations-du-31-octobre-2026-70-000-forces-de-l-ordre-mobilisees-risque-tres-eleve-le-dispositif-securitaire-pour-ce-31-octobre-atypique-devoile-2472797.html"
         ]
+      },
+      {
+        "reviewed_at": "2026-11-01T07:14:08+01:00",
+        "scheduled_for": "2026-10-31T08:08:44+01:00",
+        "outcome": "relevant_found",
+        "summary": "Ministerská bilance přes Le Monde stoupla z průběžných 422 na 565 k 21:00; nikoli konečný celonoční součet. Oficiální stránka o nasazení 70 000 je plán. Dopad na ukrajinskou politiku nedoložen.",
+        "check_ids": [
+          "check-20261101-watch-france_domestic_pressure"
+        ],
+        "source_urls": [
+          "https://www.lemonde.fr/societe/live/2026/10/31/en-direct-manifestations-du-31-octobre-plusieurs-centaines-de-milliers-de-personnes-ont-defile-contre-la-vie-chere-en-france-des-couvre-feux-partiels-prevus-cette-nuit-dans-certaines-grandes-villes_6803391_3224.html",
+          "https://www.interieur.gouv.fr/actualites/actualites-du-ministere/mobilisation-nationale-du-31-octobre-fermete-face-aux-troubles-pour-preserver-liberte-de-manifester"
+        ]
       }
     ],
     "announced_future_protest_dates": [
@@ -2199,11 +2403,11 @@
       "2026-11-05"
     ],
     "future_dates_status": "reported_plans_not_completed_events",
-    "review_status": "reassessed_partial_public_coverage",
+    "review_status": "reviewed_within_stated_scope",
     "next_attempt_by": "2026-10-31T19:32:25+01:00"
   },
   "south_korea_diplomatic_presence": {
-    "assessment_time": "2026-10-31T07:32:25+01:00",
+    "assessment_time": "2026-11-01T07:14:08+01:00",
     "next_check_by": "2026-10-29T11:04:01+01:00",
     "evidence_ids": [
       "reported-20261020-south-korea-embassy-drawdown-decision",
@@ -2216,7 +2420,7 @@
     "would_weaken": [
       "Omezení či zrušení plánovaného stažení, udržení funkcí a vysvětlení dominantně bilaterálním sporem."
     ],
-    "current_note": "Přímé ministerstvo opět nedostupné; alternativa bez úplné čerstvé bilance. Dřívější odchod osmi zaměstnanců nelze přepsat na uzavření ambasády.",
+    "current_note": "Přímé ministerstvo nedostupné a alternativní hledání bez úplného nového přehledu. Starší přesun zaměstnanců není důkazem uzavření ambasády.",
     "review_history": [
       {
         "reviewed_at": "2026-10-27T10:31:36+01:00",
@@ -2275,13 +2479,26 @@
           "https://www.mofa.go.kr/eng/",
           "https://en.yna.co.kr/search/index?query=Russia%20Ukraine"
         ]
+      },
+      {
+        "reviewed_at": "2026-11-01T07:14:08+01:00",
+        "scheduled_for": "2026-10-29T11:04:01+01:00",
+        "outcome": "partial",
+        "summary": "Přímé ministerstvo nedostupné a alternativní hledání bez úplného nového přehledu. Starší přesun zaměstnanců není důkazem uzavření ambasády.",
+        "check_ids": [
+          "check-20261101-watch-south_korea_diplomatic_presence"
+        ],
+        "source_urls": [
+          "https://www.mofa.go.kr/eng/",
+          "https://en.yna.co.kr/search/index?query=Ukraine"
+        ]
       }
     ],
     "review_status": "reassessed_partial_public_coverage",
-    "next_attempt_by": "2026-10-31T19:32:25+01:00"
+    "next_attempt_by": "2026-11-01T19:14:08+01:00"
   },
   "italy_domestic_pressure": {
-    "assessment_time": "2026-10-31T07:32:25+01:00",
+    "assessment_time": "2026-11-01T07:14:08+01:00",
     "next_check_by": "2026-11-01T07:32:25+01:00",
     "event_window": "2026-10-17/2026-10-20",
     "evidence_ids": [
@@ -2290,7 +2507,7 @@
       "reported-20261021-unrest-attribution-limits",
       "reported-20261030-italy-strike-observed-effects"
     ],
-    "current_note": "ANSA dokládá uskutečněné protesty a dopravní omezení; starší plán nyní oddělen od průběhu. Arriva rozlišovala normální jízdní řád a riziko faktického odmítnutí práce. Ruské řízení a změna ukrajinské pomoci nezjištěny.",
+    "current_note": "ANSA přehled a rezortní pokusy prohlédnuty; nezískána nová úplná bilance italských protestů ani změna pomoci Ukrajině. Starší páteční pozorování zůstává odděleno od dnešního vyhodnocení.",
     "would_strengthen": [
       "Trvalé dodatečné náklady či doložené omezení pomoci kvůli domácímu tlaku.",
       "Forenzní nebo procesní důkazy zahraničního zadání, odděleně od pouhého zesilování."
@@ -2360,14 +2577,29 @@
           "https://prefettura.interno.gov.it/it/prefetture/torino",
           "https://torino.arriva.it/notice/sciopero-generale-di-24-ore-del-30-ottobre-2026-revoca/"
         ]
+      },
+      {
+        "reviewed_at": "2026-11-01T07:14:08+01:00",
+        "scheduled_for": "2026-11-01T07:32:25+01:00",
+        "outcome": "partial",
+        "summary": "ANSA přehled a rezortní pokusy prohlédnuty; nezískána nová úplná bilance italských protestů ani změna pomoci Ukrajině. Starší páteční pozorování zůstává odděleno od dnešního vyhodnocení.",
+        "check_ids": [
+          "check-20261101-watch-italy_domestic_pressure"
+        ],
+        "source_urls": [
+          "https://www.ansa.it/",
+          "https://www.sicurezzanazionale.gov.it/",
+          "https://www.difesa.it/"
+        ]
       }
     ],
-    "review_status": "reviewed_within_stated_scope"
+    "review_status": "reassessed_partial_public_coverage",
+    "next_attempt_by": "2026-11-01T19:14:08+01:00"
   },
   "oleshky_local_ceasefire": {
-    "assessment_time": "2026-10-31T07:32:25+01:00",
-    "next_check_by": "2026-11-01T07:32:25+01:00",
-    "status": "aid_delivery_and_departure_reported_final_arrival_and_count_open",
+    "assessment_time": "2026-11-01T07:14:08+01:00",
+    "next_check_by": "2026-11-02T07:14:08+01:00",
+    "status": "arrival_confirmed_count_and_ceasefire_claims_open",
     "announced_start_white_house": "2026-10-29",
     "reported_start_reuters": "2026-10-27",
     "evidence_ids": [
@@ -2379,7 +2611,11 @@
       "reported-20261029-oleshky-resident-accounts",
       "followup-20261029-oleshky-demining-complete",
       "reported-20261030-oleshky-convoy-departure",
-      "followup-20261030-oleshky-aid-and-departure"
+      "followup-20261030-oleshky-aid-and-departure",
+      "followup-20261031-oleshky-arrival",
+      "reported-20261031-ap-oleshky-arrival",
+      "claim-20261031-miroshnik-oleshky-violation",
+      "claim-20261031-ukraine-oleshky-violation"
     ],
     "would_strengthen": [
       "Nové útoky, neprovedená dohoda nebo odepřený přístup vyvrátí očekávaný lokální pokrok."
@@ -2387,7 +2623,7 @@
     "would_weaken": [
       "Nezávislé pozorování skutečně zastavených bojů a provedené humanitární pomoci, nejen oznámení."
     ],
-    "current_note": "Primární ombudsman uvádí doručení pomoci a odjezd lidí. Reuters uvádí odvolaný předběžný počet. Konečný počet a příjezd všech na místo určení neověřeny.",
+    "current_note": "Příjezd potvrzuje účastník a nezávislá terénní reportáž AP. Konečný počet nepublikován. Tvrzení obou válečných stran o porušování nejsou nezávisle ověřena a neruší potvrzení konkrétní evakuace.",
     "latest_statement_review": {
       "reviewed_at": "2026-10-28T07:05:38+01:00",
       "statement_date": "2026-10-27",
@@ -2489,6 +2725,21 @@
           "https://t.me/dmytro_lubinetzs/12960",
           "https://whbl.com/2026/10/30/number-of-residents-leaving-oleshky-still-unclear-kyiv-says/"
         ]
+      },
+      {
+        "reviewed_at": "2026-11-01T07:14:08+01:00",
+        "scheduled_for": "2026-11-01T07:32:25+01:00",
+        "outcome": "relevant_found",
+        "summary": "Příjezd potvrzuje účastník a nezávislá terénní reportáž AP. Konečný počet nepublikován. Tvrzení obou válečných stran o porušování nejsou nezávisle ověřena a neruší potvrzení konkrétní evakuace.",
+        "check_ids": [
+          "check-20261101-watch-oleshky_local_ceasefire"
+        ],
+        "source_urls": [
+          "https://t.me/dmytro_lubinetzs/12964",
+          "https://www.ksl.com/article/51642723/residents-evacuated-from-russian-occupied-oleshky-reach-ukraine-after-localized-ceasefire",
+          "https://meduza.io/news/2026/10/31/v-mid-rossii-obvinili-ukrainu-v-narushenii-rezhima-prekraschenii-ognya-v-aleshkah",
+          "https://www.criticalthreats.org/analysis/russian-offensive-campaign-assessment-october-31-2026"
+        ]
       }
     ],
     "review_status": "reviewed_within_stated_scope"
@@ -2523,14 +2774,40 @@
           "https://www.bis.cz/aktuality/",
           "https://www.consilium.europa.eu/en/press/press-releases/"
         ]
+      },
+      {
+        "reviewed_at": "2026-11-01T07:14:08+01:00",
+        "scheduled_for": "2026-11-01T07:32:25+01:00",
+        "outcome": "partial",
+        "summary": "Všech devět otázek prověřeno na možné ano od 31. října 08:00 CET. Energetický dokument nedokládá skutečná nouzová omezení ve třech jmenovaných oblastech; ruské námořní tvrzení nemá potvrzenou identitu ani dvě primární linie. Žádné splněné kritérium pro ano, nikoli důkaz ne. Úvodních 18 p je neměnných, vydání ani konečné záporné výsledky dnes nejsou splatné.",
+        "check_ids": [
+          "check-20261101-watch-fixed_forecast_windows"
+        ],
+        "source_urls": [
+          "https://t.me/s/Ukrenergo",
+          "https://publication.pravo.gov.ru/",
+          "https://www.nato.int/",
+          "https://www.bis.cz/aktuality/",
+          "https://www.ctbto.org/",
+          "https://mod.gov.ua/en",
+          "https://t.me/mod_russia/68678",
+          "https://t.me/Ukrenergo/5600",
+          "https://t.me/Ukrenergo/5601"
+        ]
       }
     ],
-    "assessment_time": "2026-10-31T07:32:25+01:00",
-    "current_note": "Zkontrolováno všech devět smluv a již uložených 18 vydání. Při této uzávěrce první okna ještě nezačala; žádné starší hlášení nemůže založit ano. Aktuální fronta neobsahuje vydání ani vyhodnocení. Prvotní p se neopakují ani nemění.",
-    "review_status": "reviewed_within_stated_scope",
+    "assessment_time": "2026-11-01T07:14:08+01:00",
+    "current_note": "Všech devět otázek prověřeno na možné ano od 31. října 08:00 CET. Energetický dokument nedokládá skutečná nouzová omezení ve třech jmenovaných oblastech; ruské námořní tvrzení nemá potvrzenou identitu ani dvě primární linie. Žádné splněné kritérium pro ano, nikoli důkaz ne. Úvodních 18 p je neměnných, vydání ani konečné záporné výsledky dnes nejsou splatné.",
+    "review_status": "reassessed_partial_public_coverage",
     "next_issue_opens": "2026-11-06T08:00:00+01:00",
     "next_7d_start": "2026-11-07T08:00:00+01:00",
     "next_30d_issue_opens": "2026-11-29T08:00:00+01:00",
-    "next_30d_start": "2026-11-30T08:00:00+01:00"
+    "next_30d_start": "2026-11-30T08:00:00+01:00",
+    "next_attempt_by": "2026-11-01T19:14:08+01:00",
+    "evidence_ids": [
+      "obs-20261031-ukrenergo-system-damage",
+      "announced-20261101-ukrenergo-hourly-schedules",
+      "claim-20261031-1101-russian-mod-maritime-strikes"
+    ]
   }
 }

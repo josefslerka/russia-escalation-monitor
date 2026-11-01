@@ -1,21 +1,21 @@
 {
   "schema_version": 2,
-  "assessment_time": "2026-10-31T07:39:26+01:00",
-  "source_cutoff": "2026-10-31T07:32:25+01:00",
+  "assessment_time": "2026-11-01T07:17:21+01:00",
+  "source_cutoff": "2026-11-01T07:14:08+01:00",
   "forecast_horizon": "2026-12-31",
   "forecast_window_start": "2026-10-28T07:05:38+01:00",
   "baseline_run": false,
   "prior_available": true,
   "previous_assessment": {
-    "assessment_time": "2026-10-30T21:49:26+01:00",
-    "last_report": "reports/2026-10-30-2149.md",
+    "assessment_time": "2026-10-31T07:39:26+01:00",
+    "last_report": "reports/2026-10-31-0739.md",
     "overall_level": "ORANGE",
-    "elapsed_seconds": 35400
+    "elapsed_seconds": 85075
   },
   "overall_level": "ORANGE",
   "overall_trend": "flat",
-  "overall_level_basis": "ORANGE: již doložené materiální účinky pokračující konvenční kampaně na Ukrajině a dřívější evropské sabotážní případy. Nové humanitární plnění je lokální; nové schválení podpory není hotová dodávka. Nejde o tvrzení bezprostředního velkého útoku na NATO. Veřejné pokrytí je částečné.",
-  "one_line_judgment": "USA schválily možný prodej interceptorů, nikoli jejich okamžité dodání; v Oleškách je hlášen skutečný humanitární výsledek a útoky na rafinerie zpochybňují trvání plošné pauzy. Dlouhé odhady zůstávají stejné, prvotní pevné odhady se nepřepisují.",
+  "overall_level_basis": "ORANGE kvůli doloženým materiálním účinkům konvenční kampaně na Ukrajině a dřívějším evropským sabotážním případům. Místní humanitární plnění je skutečné, neprokazuje širší příměří. Nová konvergence pro bezprostřední velký útok na NATO nezískána; pokrytí je částečné.",
+  "one_line_judgment": "Příjezd evakuovaných z Olešek je doložen; pokračující energetické škody a neověřená námořní tvrzení zatím nemění dlouhé odhady ani neuzavírají pevná prognostická okna.",
   "hypotheses": {
     "further_sustained_conventional_escalation_ukraine_by_2026_12_31": {
       "event_definition": "Nejméně dvoutýdenní zvýšení intenzity proti srpnovému standardu nebo kvalitativní rozšíření kategorií cílů či nasazených prostředků.",
@@ -178,22 +178,24 @@
       "trend": "flat",
       "prior": 0.76,
       "delta_pp": 0,
-      "change_basis": "Staré případy znovu porovnány s dostupnými výpisy a vyhledáváním. Nizozemská atribuce a společný původ kyberútoků zůstávají otevřené; absence nové nalezené atribuce není absence operace. Přezkoumáno celé původní okno od 28. října, bez nově doloženého splnění přesné definice či konvergence ospravedlňující číselnou změnu. 0 p. b. není důkaz nulového rizika.",
-      "assessment_time": "2026-10-31T07:39:26+01:00",
-      "source_cutoff": "2026-10-31T07:32:25+01:00",
+      "change_basis": "Nová nizozemská porucha je potvrzená, příčina otevřená; není kvalifikující ruská sabotáž. Starší německé, rumunské a polské případy nelze přičíst novému oknu. Úplná panelová atribuce chybí. Celé původní okno zachováno. Nové podklady nedokládají splnění definice ani dostatečnou změnu důkazní váhy; 0 p. b. není nulové riziko.",
+      "assessment_time": "2026-11-01T07:17:21+01:00",
+      "source_cutoff": "2026-11-01T07:14:08+01:00",
       "review_status": "reassessed_partial_public_coverage",
       "forecast_window_start": "2026-10-28T07:05:38+01:00",
       "forecast_window_end": "2026-12-31T23:59:59+01:00",
       "change_type": "no_material_change",
-      "review_evidence_ids": [],
+      "review_evidence_ids": [
+        "obs-20261031-nld-overhead-line-failure"
+      ],
       "review_source_urls": [
-        "https://www.aivd.nl/actueel/nieuws",
+        "https://www.prorail.nl/nieuws/geen-treinverkeer-tussen-nijmegen-en-oss-vanwege-bovenleidingbreuk",
         "https://www.politie.nl/nieuws",
-        "https://www.verfassungsschutz.de/",
         "https://www.abw.gov.pl/",
+        "https://www.sri.ro/",
         "https://cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-012/"
       ],
-      "range_update_basis": "Pásmo a důvěra zachovány; omezené veřejné podklady nepřinášejí vyšší přesnost."
+      "range_update_basis": "Pásmo a důvěra zachovány; dílčí nové podklady nezvyšují přesnost celého odhadu."
     },
     "physical_sabotage_proxy_attempt_eu_by_2026_12_31": {
       "event_definition": "Příprava, zmařený pokus nebo provedení významné fyzické sabotážní či proxy operace v EU s alespoň střední důvěrou v ruskou vazbu.",
@@ -208,22 +210,24 @@
       "trend": "flat",
       "prior": 0.71,
       "delta_pp": 0,
-      "change_basis": "Staré případy znovu porovnány s dostupnými výpisy a vyhledáváním. Nizozemská atribuce a společný původ kyberútoků zůstávají otevřené; absence nové nalezené atribuce není absence operace. Přezkoumáno celé původní okno od 28. října, bez nově doloženého splnění přesné definice či konvergence ospravedlňující číselnou změnu. 0 p. b. není důkaz nulového rizika.",
-      "assessment_time": "2026-10-31T07:39:26+01:00",
-      "source_cutoff": "2026-10-31T07:32:25+01:00",
+      "change_basis": "Nová nizozemská porucha je potvrzená, příčina otevřená; není kvalifikující ruská sabotáž. Starší německé, rumunské a polské případy nelze přičíst novému oknu. Úplná panelová atribuce chybí. Celé původní okno zachováno. Nové podklady nedokládají splnění definice ani dostatečnou změnu důkazní váhy; 0 p. b. není nulové riziko.",
+      "assessment_time": "2026-11-01T07:17:21+01:00",
+      "source_cutoff": "2026-11-01T07:14:08+01:00",
       "review_status": "reassessed_partial_public_coverage",
       "forecast_window_start": "2026-10-28T07:05:38+01:00",
       "forecast_window_end": "2026-12-31T23:59:59+01:00",
       "change_type": "no_material_change",
-      "review_evidence_ids": [],
+      "review_evidence_ids": [
+        "obs-20261031-nld-overhead-line-failure"
+      ],
       "review_source_urls": [
-        "https://www.aivd.nl/actueel/nieuws",
+        "https://www.prorail.nl/nieuws/geen-treinverkeer-tussen-nijmegen-en-oss-vanwege-bovenleidingbreuk",
         "https://www.politie.nl/nieuws",
-        "https://www.verfassungsschutz.de/",
         "https://www.abw.gov.pl/",
+        "https://www.sri.ro/",
         "https://cert.cyber.gouv.fr/alerte/CERTFR-2026-ALE-012/"
       ],
-      "range_update_basis": "Pásmo a důvěra zachovány; omezené veřejné podklady nepřinášejí vyšší přesnost."
+      "range_update_basis": "Pásmo a důvěra zachovány; dílčí nové podklady nezvyšují přesnost celého odhadu."
     },
     "limited_deliberate_nato_test_by_2026_12_31": {
       "event_definition": "Záměrná ruská akce pod prahem velké války s cílem testovat soudržnost či reakci NATO; běžné DDoS, špionáž a neprokázaný přesah války se nepočítají.",
@@ -238,22 +242,25 @@
       "trend": "flat",
       "prior": 0.4,
       "delta_pp": 0,
-      "change_basis": "NATO oznámilo obranné bulharské memorandum; lotyšská centra jsou plán. Nezískána nová konvergence ruského rozhodnutí a operační pohotovosti. Chybí nové plošné místní hodnocení. Přezkoumáno celé původní okno od 28. října, bez nově doloženého splnění přesné definice či konvergence ospravedlňující číselnou změnu. 0 p. b. není důkaz nulového rizika.",
-      "assessment_time": "2026-10-31T07:39:26+01:00",
-      "source_cutoff": "2026-10-31T07:32:25+01:00",
+      "change_basis": "Nově dohledané litevské vyjádření omezuje závěr o změně rétoriky; nevylučuje soukromé americké kontakty. Nová nezávislá konvergence rozhodnutí a připravenosti nezískána; některé místní primární zdroje nedostupné. Celé původní okno zachováno. Nové podklady nedokládají splnění definice ani dostatečnou změnu důkazní váhy; 0 p. b. není nulové riziko.",
+      "assessment_time": "2026-11-01T07:17:21+01:00",
+      "source_cutoff": "2026-11-01T07:14:08+01:00",
       "review_status": "reassessed_partial_public_coverage",
       "forecast_window_start": "2026-10-28T07:05:38+01:00",
       "forecast_window_end": "2026-12-31T23:59:59+01:00",
       "change_type": "no_material_change",
-      "review_evidence_ids": [],
+      "review_evidence_ids": [
+        "backfill-20261030-lithuania-rhetoric-response"
+      ],
       "review_source_urls": [
         "https://www.nato.int/",
+        "https://vdd.gov.lv/en/",
+        "https://www.sab.gov.lv/",
         "https://kapo.ee/en/",
         "https://www.vsd.lt/en/",
-        "https://vdd.gov.lv/en/",
-        "https://www.nato.int/en/news-and-events/articles/news/2026/10/30/bulgaria-to-join-natos-initiative-against-lower-level-air-threats"
+        "https://archyvai.lrt.lt/naujienos/lietuvoje/2/3098378/matulionis-apie-retorika-rusijos-atzvilgiu-samoningai-provokuoti-ar-erzinti-nereikia"
       ],
-      "range_update_basis": "Pásmo a důvěra zachovány; omezené veřejné podklady nepřinášejí vyšší přesnost."
+      "range_update_basis": "Pásmo a důvěra zachovány; dílčí nové podklady nezvyšují přesnost celého odhadu."
     },
     "baltic_limited_test_by_2026_12_31": {
       "event_definition": "Omezený záměrný test NATO zaměřený na Estonsko, Lotyšsko nebo Litvu, včetně závažné operace pod falešnou vlajkou.",
@@ -268,22 +275,25 @@
       "trend": "flat",
       "prior": 0.24,
       "delta_pp": 0,
-      "change_basis": "NATO oznámilo obranné bulharské memorandum; lotyšská centra jsou plán. Nezískána nová konvergence ruského rozhodnutí a operační pohotovosti. Chybí nové plošné místní hodnocení. Přezkoumáno celé původní okno od 28. října, bez nově doloženého splnění přesné definice či konvergence ospravedlňující číselnou změnu. 0 p. b. není důkaz nulového rizika.",
-      "assessment_time": "2026-10-31T07:39:26+01:00",
-      "source_cutoff": "2026-10-31T07:32:25+01:00",
+      "change_basis": "Nově dohledané litevské vyjádření omezuje závěr o změně rétoriky; nevylučuje soukromé americké kontakty. Nová nezávislá konvergence rozhodnutí a připravenosti nezískána; některé místní primární zdroje nedostupné. Celé původní okno zachováno. Nové podklady nedokládají splnění definice ani dostatečnou změnu důkazní váhy; 0 p. b. není nulové riziko.",
+      "assessment_time": "2026-11-01T07:17:21+01:00",
+      "source_cutoff": "2026-11-01T07:14:08+01:00",
       "review_status": "reassessed_partial_public_coverage",
       "forecast_window_start": "2026-10-28T07:05:38+01:00",
       "forecast_window_end": "2026-12-31T23:59:59+01:00",
       "change_type": "no_material_change",
-      "review_evidence_ids": [],
+      "review_evidence_ids": [
+        "backfill-20261030-lithuania-rhetoric-response"
+      ],
       "review_source_urls": [
         "https://www.nato.int/",
+        "https://vdd.gov.lv/en/",
+        "https://www.sab.gov.lv/",
         "https://kapo.ee/en/",
         "https://www.vsd.lt/en/",
-        "https://vdd.gov.lv/en/",
-        "https://www.nato.int/en/news-and-events/articles/news/2026/10/30/bulgaria-to-join-natos-initiative-against-lower-level-air-threats"
+        "https://archyvai.lrt.lt/naujienos/lietuvoje/2/3098378/matulionis-apie-retorika-rusijos-atzvilgiu-samoningai-provokuoti-ar-erzinti-nereikia"
       ],
-      "range_update_basis": "Pásmo a důvěra zachovány; omezené veřejné podklady nepřinášejí vyšší přesnost."
+      "range_update_basis": "Pásmo a důvěra zachovány; dílčí nové podklady nezvyšují přesnost celého odhadu."
     },
     "larger_conventional_attack_on_nato_by_2026_12_31": {
       "event_definition": "Otevřený konvenční útok větší než omezený incident či lokální test.",
@@ -298,22 +308,25 @@
       "trend": "flat",
       "prior": 0.03,
       "delta_pp": 0,
-      "change_basis": "NATO oznámilo obranné bulharské memorandum; lotyšská centra jsou plán. Nezískána nová konvergence ruského rozhodnutí a operační pohotovosti. Chybí nové plošné místní hodnocení. Přezkoumáno celé původní okno od 28. října, bez nově doloženého splnění přesné definice či konvergence ospravedlňující číselnou změnu. 0 p. b. není důkaz nulového rizika.",
-      "assessment_time": "2026-10-31T07:39:26+01:00",
-      "source_cutoff": "2026-10-31T07:32:25+01:00",
+      "change_basis": "Nově dohledané litevské vyjádření omezuje závěr o změně rétoriky; nevylučuje soukromé americké kontakty. Nová nezávislá konvergence rozhodnutí a připravenosti nezískána; některé místní primární zdroje nedostupné. Celé původní okno zachováno. Nové podklady nedokládají splnění definice ani dostatečnou změnu důkazní váhy; 0 p. b. není nulové riziko.",
+      "assessment_time": "2026-11-01T07:17:21+01:00",
+      "source_cutoff": "2026-11-01T07:14:08+01:00",
       "review_status": "reassessed_partial_public_coverage",
       "forecast_window_start": "2026-10-28T07:05:38+01:00",
       "forecast_window_end": "2026-12-31T23:59:59+01:00",
       "change_type": "no_material_change",
-      "review_evidence_ids": [],
+      "review_evidence_ids": [
+        "backfill-20261030-lithuania-rhetoric-response"
+      ],
       "review_source_urls": [
         "https://www.nato.int/",
+        "https://vdd.gov.lv/en/",
+        "https://www.sab.gov.lv/",
         "https://kapo.ee/en/",
         "https://www.vsd.lt/en/",
-        "https://vdd.gov.lv/en/",
-        "https://www.nato.int/en/news-and-events/articles/news/2026/10/30/bulgaria-to-join-natos-initiative-against-lower-level-air-threats"
+        "https://archyvai.lrt.lt/naujienos/lietuvoje/2/3098378/matulionis-apie-retorika-rusijos-atzvilgiu-samoningai-provokuoti-ar-erzinti-nereikia"
       ],
-      "range_update_basis": "Pásmo a důvěra zachovány; omezené veřejné podklady nepřinášejí vyšší přesnost."
+      "range_update_basis": "Pásmo a důvěra zachovány; dílčí nové podklady nezvyšují přesnost celého odhadu."
     },
     "open_russia_nato_war_by_2026_12_31": {
       "event_definition": "Trvalejší otevřené bojové operace mezi Ruskem a alespoň jedním státem NATO, včetně eskalace z incidentu.",
@@ -328,22 +341,25 @@
       "trend": "flat",
       "prior": 0.04,
       "delta_pp": 0,
-      "change_basis": "NATO oznámilo obranné bulharské memorandum; lotyšská centra jsou plán. Nezískána nová konvergence ruského rozhodnutí a operační pohotovosti. Chybí nové plošné místní hodnocení. Přezkoumáno celé původní okno od 28. října, bez nově doloženého splnění přesné definice či konvergence ospravedlňující číselnou změnu. 0 p. b. není důkaz nulového rizika.",
-      "assessment_time": "2026-10-31T07:39:26+01:00",
-      "source_cutoff": "2026-10-31T07:32:25+01:00",
+      "change_basis": "Nově dohledané litevské vyjádření omezuje závěr o změně rétoriky; nevylučuje soukromé americké kontakty. Nová nezávislá konvergence rozhodnutí a připravenosti nezískána; některé místní primární zdroje nedostupné. Celé původní okno zachováno. Nové podklady nedokládají splnění definice ani dostatečnou změnu důkazní váhy; 0 p. b. není nulové riziko.",
+      "assessment_time": "2026-11-01T07:17:21+01:00",
+      "source_cutoff": "2026-11-01T07:14:08+01:00",
       "review_status": "reassessed_partial_public_coverage",
       "forecast_window_start": "2026-10-28T07:05:38+01:00",
       "forecast_window_end": "2026-12-31T23:59:59+01:00",
       "change_type": "no_material_change",
-      "review_evidence_ids": [],
+      "review_evidence_ids": [
+        "backfill-20261030-lithuania-rhetoric-response"
+      ],
       "review_source_urls": [
         "https://www.nato.int/",
+        "https://vdd.gov.lv/en/",
+        "https://www.sab.gov.lv/",
         "https://kapo.ee/en/",
         "https://www.vsd.lt/en/",
-        "https://vdd.gov.lv/en/",
-        "https://www.nato.int/en/news-and-events/articles/news/2026/10/30/bulgaria-to-join-natos-initiative-against-lower-level-air-threats"
+        "https://archyvai.lrt.lt/naujienos/lietuvoje/2/3098378/matulionis-apie-retorika-rusijos-atzvilgiu-samoningai-provokuoti-ar-erzinti-nereikia"
       ],
-      "range_update_basis": "Pásmo a důvěra zachovány; omezené veřejné podklady nepřinášejí vyšší přesnost."
+      "range_update_basis": "Pásmo a důvěra zachovány; dílčí nové podklady nezvyšují přesnost celého odhadu."
     },
     "significant_russian_mobilization_by_2026_12_31": {
       "event_definition": "Verze 2 od 30. 9. 2026: do 31. 12. 2026 23:59:59 Europe/Prague ruské federální orgány po uzávěrce této revize nově závazně nařídí mobilizační povolání nejméně 100 000 osob, nebo je do tohoto termínu doloženo jejich skutečné nucené povolání v nové koordinované vlně. Platí i využití dekretu z roku 2022; nový veřejný dekret není podmínkou. Nejde o běžný odvod ani průběžný smluvní nábor.",
@@ -358,9 +374,9 @@
       "trend": "flat",
       "prior": 0.2,
       "delta_pp": 0,
-      "change_basis": "Právní portál timeout; Kreml a MO čitelné. Smolenské svědectví NGO /8218 se týká jednotlivého brance, nikoli koordinované nucené vlny nebo příkazu pro 100 000 lidí. Hledání tvrzení o listopadové mobilizaci nepřineslo ověřený primární příkaz. Přezkoumáno celé původní okno od 28. října, bez nově doloženého splnění přesné definice či konvergence ospravedlňující číselnou změnu. 0 p. b. není důkaz nulového rizika.",
-      "assessment_time": "2026-10-31T07:39:26+01:00",
-      "source_cutoff": "2026-10-31T07:32:25+01:00",
+      "change_basis": "Přečten Kreml, MO a NGO a vyhledány nové příkazy. Portál právních aktů nedostupný. Výsledek hledání obsahoval ukrajinskou mobilizaci a starý ruský běžný odvod; ani jedno není nový ruský mobilizační příkaz pro 100 000. Vlnu nucené mobilizace nelze odvodit z jedné odvodní stížnosti. Celé původní okno zachováno. Nové podklady nedokládají splnění definice ani dostatečnou změnu důkazní váhy; 0 p. b. není nulové riziko.",
+      "assessment_time": "2026-11-01T07:17:21+01:00",
+      "source_cutoff": "2026-11-01T07:14:08+01:00",
       "review_status": "reassessed_partial_public_coverage",
       "forecast_window_start": "2026-10-28T07:05:38+01:00",
       "definition_version": 2,
@@ -426,11 +442,11 @@
       "review_evidence_ids": [],
       "review_source_urls": [
         "https://publication.pravo.gov.ru/",
-        "https://t.me/s/mod_russia",
         "http://kremlin.ru/events/president/news",
+        "https://t.me/s/mod_russia",
         "https://t.me/s/iditelesom_help"
       ],
-      "range_update_basis": "Pásmo a důvěra zachovány; omezené veřejné podklady nepřinášejí vyšší přesnost."
+      "range_update_basis": "Pásmo a důvěra zachovány; dílčí nové podklady nezvyšují přesnost celého odhadu."
     },
     "belarus_direct_entry_into_war_by_2026_12_31": {
       "event_definition": "Přímé nasazení běloruských ozbrojených sil do rozsáhlejších bojových operací proti Ukrajině.",
@@ -445,21 +461,21 @@
       "trend": "flat",
       "prior": 0.05,
       "delta_pp": 0,
-      "change_basis": "Veřejné běloruské příspěvky popisují absolventy, prapor jednotky a odchod branců do zálohy, ne přímý pozemní vstup. Index CTBTO není živá jaderná telemetrie. ZNPP je bezpečnost elektrárny, nikoli zbraňová detonace. Přezkoumáno celé původní okno od 28. října, bez nově doloženého splnění přesné definice či konvergence ospravedlňující číselnou změnu. 0 p. b. není důkaz nulového rizika.",
-      "assessment_time": "2026-10-31T07:39:26+01:00",
-      "source_cutoff": "2026-10-31T07:32:25+01:00",
+      "change_basis": "Běloruský kanál obsahuje den otevřených dveří, mediální sport a výročí zdravotnického centra; není dokladem pozemního vstupu. CTBTO přímé zdroje blokované. Nezískány dvě nezávislé primární linie zbraňové detonace či běloruského boje. Celé původní okno zachováno. Nové podklady nedokládají splnění definice ani dostatečnou změnu důkazní váhy; 0 p. b. není nulové riziko.",
+      "assessment_time": "2026-11-01T07:17:21+01:00",
+      "source_cutoff": "2026-11-01T07:14:08+01:00",
       "review_status": "reassessed_partial_public_coverage",
       "forecast_window_start": "2026-10-28T07:05:38+01:00",
       "forecast_window_end": "2026-12-31T23:59:59+01:00",
       "change_type": "no_material_change",
       "review_evidence_ids": [],
       "review_source_urls": [
-        "https://t.me/s/modmilby",
         "https://www.mil.by/",
         "https://mod.gov.ua/en",
-        "https://www.ctbto.org/"
+        "https://www.ctbto.org/",
+        "https://t.me/s/modmilby"
       ],
-      "range_update_basis": "Pásmo a důvěra zachovány; omezené veřejné podklady nepřinášejí vyšší přesnost."
+      "range_update_basis": "Pásmo a důvěra zachovány; dílčí nové podklady nezvyšují přesnost celého odhadu."
     },
     "nuclear_posture_change_by_2026_12_31": {
       "event_definition": "Veřejně nebo nezávisle pozorovatelná neobvyklá změna jaderné pohotovosti, rozmístění nebo velitelské aktivity nad rámec cvičení a signalizace.",
@@ -474,21 +490,21 @@
       "trend": "flat",
       "prior": 0.15,
       "delta_pp": 0,
-      "change_basis": "Veřejné běloruské příspěvky popisují absolventy, prapor jednotky a odchod branců do zálohy, ne přímý pozemní vstup. Index CTBTO není živá jaderná telemetrie. ZNPP je bezpečnost elektrárny, nikoli zbraňová detonace. Přezkoumáno celé původní okno od 28. října, bez nově doloženého splnění přesné definice či konvergence ospravedlňující číselnou změnu. 0 p. b. není důkaz nulového rizika.",
-      "assessment_time": "2026-10-31T07:39:26+01:00",
-      "source_cutoff": "2026-10-31T07:32:25+01:00",
+      "change_basis": "Běloruský kanál obsahuje den otevřených dveří, mediální sport a výročí zdravotnického centra; není dokladem pozemního vstupu. CTBTO přímé zdroje blokované. Nezískány dvě nezávislé primární linie zbraňové detonace či běloruského boje. Celé původní okno zachováno. Nové podklady nedokládají splnění definice ani dostatečnou změnu důkazní váhy; 0 p. b. není nulové riziko.",
+      "assessment_time": "2026-11-01T07:17:21+01:00",
+      "source_cutoff": "2026-11-01T07:14:08+01:00",
       "review_status": "reassessed_partial_public_coverage",
       "forecast_window_start": "2026-10-28T07:05:38+01:00",
       "forecast_window_end": "2026-12-31T23:59:59+01:00",
       "change_type": "no_material_change",
       "review_evidence_ids": [],
       "review_source_urls": [
-        "https://t.me/s/modmilby",
         "https://www.mil.by/",
         "https://mod.gov.ua/en",
-        "https://www.ctbto.org/"
+        "https://www.ctbto.org/",
+        "https://t.me/s/modmilby"
       ],
-      "range_update_basis": "Pásmo a důvěra zachovány; omezené veřejné podklady nepřinášejí vyšší přesnost."
+      "range_update_basis": "Pásmo a důvěra zachovány; dílčí nové podklady nezvyšují přesnost celého odhadu."
     },
     "nuclear_demonstration_by_2026_12_31": {
       "event_definition": "Záměrná jaderná detonace mimo přímý útok na obydlený nebo vojenský cíl, určená především k nátlakové demonstraci.",
@@ -503,21 +519,21 @@
       "trend": "flat",
       "prior": 0.04,
       "delta_pp": 0,
-      "change_basis": "Veřejné běloruské příspěvky popisují absolventy, prapor jednotky a odchod branců do zálohy, ne přímý pozemní vstup. Index CTBTO není živá jaderná telemetrie. ZNPP je bezpečnost elektrárny, nikoli zbraňová detonace. Přezkoumáno celé původní okno od 28. října, bez nově doloženého splnění přesné definice či konvergence ospravedlňující číselnou změnu. 0 p. b. není důkaz nulového rizika.",
-      "assessment_time": "2026-10-31T07:39:26+01:00",
-      "source_cutoff": "2026-10-31T07:32:25+01:00",
+      "change_basis": "Běloruský kanál obsahuje den otevřených dveří, mediální sport a výročí zdravotnického centra; není dokladem pozemního vstupu. CTBTO přímé zdroje blokované. Nezískány dvě nezávislé primární linie zbraňové detonace či běloruského boje. Celé původní okno zachováno. Nové podklady nedokládají splnění definice ani dostatečnou změnu důkazní váhy; 0 p. b. není nulové riziko.",
+      "assessment_time": "2026-11-01T07:17:21+01:00",
+      "source_cutoff": "2026-11-01T07:14:08+01:00",
       "review_status": "reassessed_partial_public_coverage",
       "forecast_window_start": "2026-10-28T07:05:38+01:00",
       "forecast_window_end": "2026-12-31T23:59:59+01:00",
       "change_type": "no_material_change",
       "review_evidence_ids": [],
       "review_source_urls": [
-        "https://t.me/s/modmilby",
         "https://www.mil.by/",
         "https://mod.gov.ua/en",
-        "https://www.ctbto.org/"
+        "https://www.ctbto.org/",
+        "https://t.me/s/modmilby"
       ],
-      "range_update_basis": "Pásmo a důvěra zachovány; omezené veřejné podklady nepřinášejí vyšší přesnost."
+      "range_update_basis": "Pásmo a důvěra zachovány; dílčí nové podklady nezvyšují přesnost celého odhadu."
     },
     "nuclear_use_by_2026_12_31": {
       "event_definition": "Použití jaderné zbraně proti cíli v probíhajícím konfliktu.",
@@ -532,21 +548,21 @@
       "trend": "flat",
       "prior": 0.01,
       "delta_pp": 0,
-      "change_basis": "Veřejné běloruské příspěvky popisují absolventy, prapor jednotky a odchod branců do zálohy, ne přímý pozemní vstup. Index CTBTO není živá jaderná telemetrie. ZNPP je bezpečnost elektrárny, nikoli zbraňová detonace. Přezkoumáno celé původní okno od 28. října, bez nově doloženého splnění přesné definice či konvergence ospravedlňující číselnou změnu. 0 p. b. není důkaz nulového rizika.",
-      "assessment_time": "2026-10-31T07:39:26+01:00",
-      "source_cutoff": "2026-10-31T07:32:25+01:00",
+      "change_basis": "Běloruský kanál obsahuje den otevřených dveří, mediální sport a výročí zdravotnického centra; není dokladem pozemního vstupu. CTBTO přímé zdroje blokované. Nezískány dvě nezávislé primární linie zbraňové detonace či běloruského boje. Celé původní okno zachováno. Nové podklady nedokládají splnění definice ani dostatečnou změnu důkazní váhy; 0 p. b. není nulové riziko.",
+      "assessment_time": "2026-11-01T07:17:21+01:00",
+      "source_cutoff": "2026-11-01T07:14:08+01:00",
       "review_status": "reassessed_partial_public_coverage",
       "forecast_window_start": "2026-10-28T07:05:38+01:00",
       "forecast_window_end": "2026-12-31T23:59:59+01:00",
       "change_type": "no_material_change",
       "review_evidence_ids": [],
       "review_source_urls": [
-        "https://t.me/s/modmilby",
         "https://www.mil.by/",
         "https://mod.gov.ua/en",
-        "https://www.ctbto.org/"
+        "https://www.ctbto.org/",
+        "https://t.me/s/modmilby"
       ],
-      "range_update_basis": "Pásmo a důvěra zachovány; omezené veřejné podklady nepřinášejí vyšší přesnost."
+      "range_update_basis": "Pásmo a důvěra zachovány; dílčí nové podklady nezvyšují přesnost celého odhadu."
     },
     "significant_russian_linked_hybrid_operation_czechia_by_2026_12_31": {
       "event_definition": "Ruskem řízená nebo podporovaná hybridní či proxy operace v Česku s materiálním účinkem nebo pokročilou zmařenou přípravou; běžné DDoS a špionáž se samy o sobě nepočítají.",
@@ -561,9 +577,9 @@
       "trend": "flat",
       "prior": 0.26,
       "delta_pp": 0,
-      "change_basis": "České institucionální výpisy a běžné zásahy HZS porovnány. Nezískán nový kvalifikující ruský fyzický případ; chybí úplná provozní a srovnatelná sociální bilance. Přezkoumáno celé původní okno od 28. října, bez nově doloženého splnění přesné definice či konvergence ospravedlňující číselnou změnu. 0 p. b. není důkaz nulového rizika.",
-      "assessment_time": "2026-10-31T07:39:26+01:00",
-      "source_cutoff": "2026-10-31T07:32:25+01:00",
+      "change_basis": "BIS/NÚKIB/MO prohlédnuty; nová položka NÚKIB je vzhled webu. HZS zvolený odkaz 404. Bez úplné nové bilance provozu a sociálních měření nelze vyhlásit absenci narušení. Celé původní okno zachováno. Nové podklady nedokládají splnění definice ani dostatečnou změnu důkazní váhy; 0 p. b. není nulové riziko.",
+      "assessment_time": "2026-11-01T07:17:21+01:00",
+      "source_cutoff": "2026-11-01T07:14:08+01:00",
       "review_status": "reassessed_partial_public_coverage",
       "forecast_window_start": "2026-10-28T07:05:38+01:00",
       "forecast_window_end": "2026-12-31T23:59:59+01:00",
@@ -571,11 +587,11 @@
       "review_evidence_ids": [],
       "review_source_urls": [
         "https://www.bis.cz/aktuality/",
-        "https://mocr.mo.gov.cz/",
         "https://nukib.gov.cz/cs/infoservis/aktuality/",
-        "https://hzscr.gov.cz/"
+        "https://mocr.mo.gov.cz/",
+        "https://hzscr.gov.cz/clanek/informacni-servis-zpravodajstvi-zpravodajstvi.aspx"
       ],
-      "range_update_basis": "Pásmo a důvěra zachovány; omezené veřejné podklady nepřinášejí vyšší přesnost."
+      "range_update_basis": "Pásmo a důvěra zachovány; dílčí nové podklady nezvyšují přesnost celého odhadu."
     }
   },
   "wdpi": {
@@ -859,7 +875,7 @@
         "effect_note": "Retrospektivní zdůvodnění a kontrolní žádosti nejsou uzavřená kauzalita."
       }
     ],
-    "derivation": "Historický úsudkový v1: round(0.35*68 + 0.35*52 + 0.30*30) = round(23.80+18.20+9.00) = 51. Poslední skórování 2026-10-28T07:05:38+01:00; dnes kvalitativně přezkoumáno, nikoli nově změřeno. Anchored-v2 nevyčísleno.",
+    "derivation": "Historický úsudkový v1: round(0.35*68 + 0.35*52 + 0.30*30) = round(23.80+18.20+9.00) = 51. Poslední skórování 2026-10-28T07:05:38+01:00; dnešní přezkum není nové měření. Anchored-v2 nevyčísleno.",
     "assessment_time": "2026-10-28T07:05:38+01:00",
     "review_status": "reviewed_historical_v1_not_rescored",
     "scoring_precision_note": "Komponenty jsou úsudkové, součet reprodukovatelný; žádná nová měřicí přesnost netvrzena.",
@@ -872,24 +888,24 @@
     "component_update_basis": {
       "decision": "carry_forward_historical_v1_no_new_v2_total",
       "observation_ids": [
-        "metric-20261031-patriot-approval",
-        "metric-20261031-reported-delivery-unquantified",
-        "metric-20261031-restraint-causal-unknown"
+        "metric-20261101-uk-commitment",
+        "metric-20261101-turkey-energy-commitment",
+        "metric-20261101-restraint-unknown"
       ],
-      "rationale": "Nový souhlas s možným prodejem a hlášení pokračujících dodávek jsou protiváha plošnému ústupu; termín pro nový balík a čistá bilance zůstávají otevřené. Zjištěny skutečné italské protesty, nikoli jejich ruská příčina nebo změna pomoci. Chybí všechny úplné kotvy v2.",
-      "alternative": "Výrobní lhůty a administrativní postup se mohou lišit od eskalačního sebeomezování; domácí protesty mají i nezávislé příčiny."
+      "rationale": "Britský finanční příslib a turecká spolupráce jsou protiváhy plošnému ústupu, ne realizované dodávky. Francouzská průběžná bilance nákladů a litevská rétorická reakce neprokazují kauzální omezení podpory. Všechny tři kotvy v2 plně nepokryty.",
+      "alternative": "Domácí sociální příčiny, výrobní kapacita a rozpočtové nástroje se liší od ruského vynuceného sebeomezování."
     },
     "method_version": "judgmental-v1",
-    "reviewed_at": "2026-10-31T07:39:26+01:00",
+    "reviewed_at": "2026-11-01T07:17:21+01:00",
     "method_note": "Anchored-v2 nebylo aplikováno: chybí úplná doložená komponentová evidence. 68/52/30 a 51 jsou převzatý úsudkový v1, nikoli nové ukotvené měření."
   },
   "rpe": {
     "scored": false,
     "trend": "flat",
     "confidence": "medium-low",
-    "assessment": "Pokračující ruská válečná aktivita a tlak neznamenají automaticky účinek na západní podporu. Souhlas s prodejem, hlášené dodávky a politická podpora jsou protiváhy; skutečný čistý efekt nevyčíslen. Bez komponentové metody RPE nečíslováno.",
+    "assessment": "Ruská válečná činnost pokračuje; neověřená tvrzení nesčítána jako potvrzené zásahy. Nové podklady nedokládají příčinné snížení západní podpory. Reprodukovatelná komponentová metoda RPE chybí, proto nečíslováno.",
     "unscored_reason": "Ve stavu není definována reprodukovatelná komponentová metoda RPE; bez ní se celkové číslo nevytváří.",
-    "assessment_time": "2026-10-31T07:39:26+01:00",
+    "assessment_time": "2026-11-01T07:17:21+01:00",
     "review_status": "reassessed_partial_public_coverage"
   },
   "nuclear": {
@@ -902,44 +918,47 @@
     "nuclear_posture_change_hypothesis": "nuclear_posture_change_by_2026_12_31",
     "nuclear_demonstration_hypothesis": "nuclear_demonstration_by_2026_12_31",
     "nuclear_use_hypothesis": "nuclear_use_by_2026_12_31",
-    "assessment": "15/4/1 % v původních dlouhých oknech beze změny. Nově dohledaná zpráva IAEA o úmrtí pracovníka je oddělené konvenční ohrožení bezpečnosti ZNPP; není důkaz změny jaderné pohotovosti, demonstrace ani použití zbraně.",
-    "assessment_time": "2026-10-31T07:39:26+01:00",
+    "assessment": "15/4/1 % v původních dlouhých oknech zachováno. Čerstvá nezávislá změna pohotovosti nebo zbraňová detonace nedoložena; technické zdroje částečně nedostupné, proto nelze odvodit nepřítomnost. ZNPP zůstává oddělenou bezpečnostní otázkou.",
+    "assessment_time": "2026-11-01T07:17:21+01:00",
     "review_status": "reassessed_partial_public_coverage"
   },
   "context_manipulation": {
-    "assessment_time": "2026-10-31T07:39:26+01:00",
-    "case": "Schválení možného prodeje 500 PAC-3 → 500 raket již dodáno → zimní nedostatek odstraněn",
+    "assessment_time": "2026-11-01T07:17:21+01:00",
+    "case": "Plánované hodinové odstávky → potvrzené nouzové omezení ve třech oblastech",
     "factual_truth": "partial",
     "contextual_integrity": "distorted",
     "causal_link": "unsupported",
     "observed_effect": "unknown",
-    "note": "Skutečné schválení nelze bez dalšího převést na dodávku. Ukrajinský odhad víceletého termínu a hlášení jiných probíhajících dodávek se mohou týkat různých toků. Nejde o prokázanou vlivovou operaci."
+    "note": "Plán, skutečná realizace a přesná kritéria nouzového režimu jsou odlišné; toto zkrácení by nesprávně uzavřelo pevnou prognózu. Nejde samo o důkaz koordinované vlivové operace."
   },
   "key_unknowns": [
-    "Skutečný termín a objem dalších dodávek interceptorů; souhlas, kontrakt, expedice a převzetí nejsou totožné.",
-    "Ruské řízení otevřených námořních, železničních a kybernetických incidentů.",
-    "Konečný počet a příjezd evakuovaných z Olešek; přesná atribuce útoku na pracovníka ZNPP.",
-    "Chybějící právní a operační pokrytí, souhrn skutečných domácích nákladů a příčinný účinek na podporu Ukrajiny."
+    "Konečný počet evakuovaných a nezávislé ověření tvrzení o porušování místního příměří.",
+    "Identita a škody nejmenovaných lodí; atribuce starších případů Contship Jet, Khoryv, železnice a kyberincidentů.",
+    "Skutečný rozsah nouzových omezení podle Ukrenerga a termíny fyzických dodávek podpory.",
+    "Neveřejné ruské rozhodování, nedostupné právní a technické zdroje, úplné domácí náklady a kauzální změny západní politiky."
   ],
   "watch_24_72h": [
-    "Nové skutečné nouzové hlášení Ukrenerga se třemi jmenovanými oblastmi uvnitř fixed okna; nový provozní den = nový případ.",
-    "Doložené dodání interceptorů a upřesnění termínu nového prodeje.",
-    "Nové primární atribuce v EU a v Černém moři; samotný typ dronu nestačí.",
-    "Příjezd a konečný počet evakuovaných z Olešek; nezávislý přezkum zprávy o pracovníkovi ZNPP.",
-    "Výsledná sobotní francouzská bilance a konkrétní změny politiky; plán není výsledek.",
-    "Opravit dostupnost pramenů; příští vydávání 7denních prognóz se otevře 6. listopadu v 08:00 CET."
+    "Ukrenergo: skutečně zavedená nouzová omezení v nejméně třech jmenovaných oblastech v jednom provozním dni; každý den vlastní případ.",
+    "Nezávislé ověření námořních tvrzení, příslušnost lodi a případný fyzický účinek proti NATO.",
+    "Závěr místní mise v Oleškách, konečný počet a ověření obou tvrzení o porušení příměří.",
+    "Skutečné dodávky PVO a tureckého energetického vybavení, nikoli jen oznámení.",
+    "Konečná francouzská bilance a případné explicitní změny pomoci Ukrajině.",
+    "Další 7denní vydávání otevře 6. listopadu 08:00 CET; průběžně kontrolovat kladné výsledky současných oken."
   ],
-  "last_report": "reports/2026-10-31-0739.md",
+  "last_report": "reports/2026-11-01-0717.md",
   "new_evidence_ids": [
-    "followup-20261030-oleshky-aid-and-departure",
-    "reported-20261030-firepoint-refinery-strike",
-    "reported-20261030-novak-refinery-attacks-resumed",
-    "evt-20261030-us-patriot-sale-approval",
-    "reported-20261030-grynkewich-ongoing-deliveries",
-    "followup-20261030-zelensky-patriot-delivery-timing",
-    "evt-20261030-eu-canada-summit-conclusions",
-    "backfill-20261029-iaea-reported-worker-death",
-    "reported-20261030-italy-strike-observed-effects"
+    "followup-20261031-oleshky-arrival",
+    "reported-20261031-ap-oleshky-arrival",
+    "claim-20261031-miroshnik-oleshky-violation",
+    "claim-20261031-ukraine-oleshky-violation",
+    "obs-20261031-ukrenergo-system-damage",
+    "announced-20261101-ukrenergo-hourly-schedules",
+    "reported-20261031-france-protest-provisional-tally",
+    "claim-20261031-1101-russian-mod-maritime-strikes",
+    "announced-20261031-ukraine-turkey-cooperation",
+    "obs-20261031-nld-overhead-line-failure",
+    "backfill-20261028-uk-support-package",
+    "backfill-20261030-lithuania-rhetoric-response"
   ],
   "retrospective_corrections": [
     {
@@ -1120,18 +1139,18 @@
   ],
   "usable_as_prior": true,
   "forecast_window_end": "2026-12-31T23:59:59+01:00",
-  "probability_update_method": "Prior a přesná původní dlouhá okna z registru. Každá aktivní otázka znovu posouzena podle relevantních nových i protichůdných podkladů; žádný automatický denní příplatek ani mechanický přepočet mezi horizonty. Fixed-v1 prvotní p zůstávají neměnné.",
+  "probability_update_method": "Zachovaný prior a původní dlouhá okna z monitor.py origins. Podklady posouzeny podle hypotéz, bez denního příplatku a bez převodu ročních procent. Počáteční fixed-v1 odhady se nemění.",
   "material_probability_deltas": [],
   "baltic_warning_layers": {
-    "assessment_time": "2026-10-31T07:39:26+01:00",
+    "assessment_time": "2026-11-01T07:17:21+01:00",
     "review_status": "reassessed_partial_public_coverage",
     "narrative": {
-      "assessment": "Bez nové kvantitativní SOCINT série; počet kanálů ani publikum nezaměněny za nezávislé důkazy nebo účinek.",
+      "assessment": "Nová kvantitativní SOCINT série neprovedena; opakování Reuters není další zdrojová linie.",
       "confidence": "low",
       "evidence_ids": []
     },
     "political_diplomatic": {
-      "assessment": "Z dostupných nových podkladů není specifické nové ultimátum. Starší sdělení o americké komunikaci zůstává odděleno od rozkazů silám.",
+      "assessment": "Nově dohledaná litevská odpověď rozlišuje soukromé americké kontakty, přijetí formální výzvy a skutečnou změnu rétoriky; ani jedno není nový rozkaz silám.",
       "confidence": "medium",
       "evidence_ids": [
         "evt-20261027-nordic-putin-call"
@@ -1141,7 +1160,7 @@
       ]
     },
     "military_readiness": {
-      "assessment": "Oznámení obranných center a bulharské memorandum NATO jsou rozvoj schopností, nikoli nová potvrzená ruská operační příprava.",
+      "assessment": "Nová nezávislá operační konvergence nezískána. Veřejné indexy a stará obranná memoranda nenahrazují čerstvé posouzení rozvinutí sil.",
       "confidence": "medium-low",
       "evidence_ids": [
         "evt-20261027-uk-poland-defence-plan"
@@ -1180,94 +1199,57 @@
         "scope": "Auvere only; no proof of deliberate attack, origin unresolved."
       },
       "latest_index_review": {
-        "reviewed_at": "2026-10-31T07:39:26+01:00",
-        "outcome": "VDD a lotyšské výpisy přečteny; KAPO/VSD blokovány. Chybí nové úplné místní hodnocení; nelze tvrdit, že je dnešní hrozba výslovně nezměněná."
+        "reviewed_at": "2026-11-01T07:17:21+01:00",
+        "outcome": "VDD/SAB přehledy přečteny; estonský, litevský a některé severské zdroje nedostupné. Není doloženo dnešní výslovné potvrzení nezměněné hrozby."
       }
     }
   },
   "retrospective_discoveries": [
     {
-      "evidence_id": "followup-20261030-oleshky-aid-and-departure",
-      "publication_time": "2026-10-30T16:33:08+00:00",
-      "discovery_time": "2026-10-31T07:32:25+01:00",
-      "impact": "Historický podklad výslovně posouzen bez změny dlouhých p; původní datum zachováno."
+      "evidence_id": "backfill-20261028-uk-support-package",
+      "publication_time": "2026-10-28",
+      "discovery_time": "2026-11-01T07:14:08+01:00",
+      "impact": "Historický podklad přezkoumán bez změny p; původní datum zachováno."
     },
     {
-      "evidence_id": "reported-20261030-firepoint-refinery-strike",
+      "evidence_id": "backfill-20261030-lithuania-rhetoric-response",
       "publication_time": "2026-10-30",
-      "discovery_time": "2026-10-31T07:32:25+01:00",
-      "impact": "Historický podklad výslovně posouzen bez změny dlouhých p; původní datum zachováno."
-    },
-    {
-      "evidence_id": "reported-20261030-novak-refinery-attacks-resumed",
-      "publication_time": "2026-10-30",
-      "discovery_time": "2026-10-31T07:32:25+01:00",
-      "impact": "Historický podklad výslovně posouzen bez změny dlouhých p; původní datum zachováno."
-    },
-    {
-      "evidence_id": "evt-20261030-us-patriot-sale-approval",
-      "publication_time": "2026-10-30",
-      "discovery_time": "2026-10-31T07:32:25+01:00",
-      "impact": "Historický podklad výslovně posouzen bez změny dlouhých p; původní datum zachováno."
-    },
-    {
-      "evidence_id": "reported-20261030-grynkewich-ongoing-deliveries",
-      "publication_time": "2026-10-30T11:14:00+00:00",
-      "discovery_time": "2026-10-31T07:32:25+01:00",
-      "impact": "Historický podklad výslovně posouzen bez změny dlouhých p; původní datum zachováno."
-    },
-    {
-      "evidence_id": "evt-20261030-eu-canada-summit-conclusions",
-      "publication_time": "2026-10-30",
-      "discovery_time": "2026-10-31T07:32:25+01:00",
-      "impact": "Historický podklad výslovně posouzen bez změny dlouhých p; původní datum zachováno."
-    },
-    {
-      "evidence_id": "backfill-20261029-iaea-reported-worker-death",
-      "publication_time": "2026-10-30",
-      "discovery_time": "2026-10-31T07:32:25+01:00",
-      "impact": "Historický podklad výslovně posouzen bez změny dlouhých p; původní datum zachováno."
-    },
-    {
-      "evidence_id": "reported-20261030-italy-strike-observed-effects",
-      "publication_time": "2026-10-30",
-      "discovery_time": "2026-10-31T07:32:25+01:00",
-      "impact": "Historický podklad výslovně posouzen bez změny dlouhých p; původní datum zachováno."
+      "discovery_time": "2026-11-01T07:14:08+01:00",
+      "impact": "Historický podklad přezkoumán bez změny p; původní datum zachováno."
     }
   ],
   "research_scope": {
     "scope": "full_recalibration",
-    "window_start": "2026-10-30T08:08:44+01:00",
-    "previous_focused_assessment": "2026-10-30T21:49:26+01:00",
-    "window_end": "2026-10-31T07:32:25+01:00",
-    "first_verified_clock": "2026-10-31T07:17:43+01:00",
-    "monitoring_run_id": "run-20261031-morning",
+    "window_start": "2026-10-31T07:32:25+01:00",
+    "window_end": "2026-11-01T07:14:08+01:00",
+    "first_verified_clock": "2026-11-01T07:00:49+01:00",
+    "monitoring_run_id": "run-20261101-morning",
     "coverage_status": "partial",
-    "expected_tasks": 76,
-    "attempted_research_tasks": 76,
+    "expected_tasks": 95,
+    "attempted_research_tasks": 95,
     "coverage_counts": {
-      "relevant_found": 5,
-      "no_new_relevant": 14,
-      "partial": 36,
-      "unavailable": 21
+      "relevant_found": 10,
+      "no_new_relevant": 7,
+      "partial": 53,
+      "unavailable": 25
     },
     "country_audits_completed": 0,
     "fixed_forecast_review": {
-      "reviewed_at": "2026-10-31T06:39:25.028096+00:00",
+      "reviewed_at": "2026-11-01T06:17:20.570836+00:00",
       "missed_issue_ids": [],
       "pending_outcome_ids": [],
       "awaiting_issue_ids": []
     },
-    "method": "Před rešerší zmrazen plán 48 zdrojových, 17 watchlistových, 6 případových a 5 zemských kontrol. Skutečné kontroly zaznamenány s rozsahem a mezerami. Osm zpětně doplněných podkladů nese původní data. Před dokončením načteny plan a origins.",
+    "method": "Plán před rešerší: 62 zdrojových, 17 watchlistových, 11 případových a pět zemských kontrol. Dva historické podklady nově přezkoumány s původními daty; před dokončením znovu načteny plan a origins.",
     "limitations": [
-      "36 kontrol částečných, 21 nedostupných; pět zemských auditů nedokončeno.",
-      "Žádná neúspěšná kontrola není negativním důkazem. Žádné nové úplné místní hodnocení Pobaltí nebo živé jaderné měření.",
-      "WDPI v1 historicky přenesen; chybí kompletní komponenty pro anchored-v2."
+      "53 kontrol částečných a 25 nedostupných; pět zemských auditů nedokončeno.",
+      "Neúspěšné přístupy nejsou negativním důkazem; chybí nové úplné místní hodnocení Pobaltí a živé jaderné měření.",
+      "WDPI v1 přenesen jako historický; bez kompletních komponent nevznikl nový v2 součet."
     ],
     "git_preflight": {
       "branch": "master",
-      "head": "8f9c391e2f22031b4e5c4eb4d13ddf0f72f98133",
-      "origin_master": "8f9c391e2f22031b4e5c4eb4d13ddf0f72f98133",
+      "head": "1e857806c23d3d552ac880edfc547ce011b8d50a",
+      "origin_master": "1e857806c23d3d552ac880edfc547ce011b8d50a",
       "ahead": 0,
       "behind": 0,
       "forecast_tree_clean": true,
@@ -1296,10 +1278,10 @@
     "carried_forward_hypotheses": [],
     "issued_fixed_forecasts": [],
     "adjudicated_hypotheses": [],
-    "previous_full_assessment_time": "2026-10-30T08:08:44+01:00",
-    "note": "Plný tematický přezkum s výslovně částečným veřejným pokrytím. Dlouhá okna zachována; 18 prvotních fixed-v1 vydání z 30. října se nemění. Dvě dříve splněné ukrajinské otázky neotevřeny."
+    "previous_full_assessment_time": "2026-10-31T07:39:26+01:00",
+    "note": "Všech devět aktivních fixed otázek zkontrolováno na možné kladné výsledky. Žádné úplné splnění kritérií ani splatné vydání; 18 původních p neměnných. Dvě dříve splněné dlouhé ukrajinské otázky neotevřeny."
   },
-  "overall_level_assessment_time": "2026-10-31T07:39:26+01:00",
+  "overall_level_assessment_time": "2026-11-01T07:17:21+01:00",
   "external_forecast_benchmarks": [
     {
       "platform": "Metaculus",
@@ -1330,12 +1312,12 @@
   "index_deltas": [],
   "context_manipulation_additional": [
     {
-      "case": "Hlášená minulá pauza → zákaz trvá i po nových útocích",
+      "case": "Protesty a porucha železnice → ruská sabotáž → omezení podpory Ukrajině",
       "factual_truth": "partial",
       "contextual_integrity": "distorted",
       "causal_link": "unsupported",
       "observed_effect": "unknown",
-      "note": "Dvě novější linie hlásí obnovení útoků. Nevyvrací to minulou přestávku; neopravňují tvrdit její pokračování jako současný fakt."
+      "note": "Fyzické či sociální dopady jsou reálné; ruský původ a politický účinek vyžadují samostatné důkazy."
     }
   ],
   "publication_languages": [

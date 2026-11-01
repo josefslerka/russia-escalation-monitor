@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-10-31T07:32:25+01:00",
+  "reviewed_at": "2026-11-01T07:14:08+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -2392,6 +2392,95 @@
       ],
       "title": "ANSA popisuje skutečné protesty, dopravní omezení a střety; ruské řízení ani změna podpory Ukrajině nedoloženy.",
       "note": "Geografický předmět uvedeného tvrzení; původní datum v evidenci. Více oblastí nepřidává nezávislé zdrojové linie ani ruskou atribuci."
+    },
+    "followup-20261031-oleshky-arrival": {
+      "areas": [
+        "UKR",
+        "BLR"
+      ],
+      "title": "Ombudsman potvrzuje příjezd evakuovaných z Olešek na ukrajinskou stranu.",
+      "note": "Geografický předmět události či oznámení; neprokazuje ruskou atribuci. Čas i jeho neurčitost se přebírají z evidenčního záznamu."
+    },
+    "reported-20261031-ap-oleshky-arrival": {
+      "areas": [
+        "UKR",
+        "BLR"
+      ],
+      "title": "AP nezávisle pozorovala příjezd evakuovaných; celkový počet zůstává neznámý.",
+      "note": "Geografický předmět události či oznámení; neprokazuje ruskou atribuci. Čas i jeho neurčitost se přebírají z evidenčního záznamu."
+    },
+    "claim-20261031-miroshnik-oleshky-violation": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Mirošnik tvrdí porušení příměří; událost a původce nezávisle neověřeny.",
+      "note": "Geografický předmět události či oznámení; neprokazuje ruskou atribuci. Čas i jeho neurčitost se přebírají z evidenčního záznamu."
+    },
+    "claim-20261031-ukraine-oleshky-violation": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrajinský mluvčí tvrdí ruské využívání příměří; ISW tvrzení neověřil.",
+      "note": "Geografický předmět události či oznámení; neprokazuje ruskou atribuci. Čas i jeho neurčitost se přebírají z evidenčního záznamu."
+    },
+    "obs-20261031-ukrenergo-system-damage": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo hlásí obtížný stav sítě; zpráva neurčuje nouzová omezení ve třech oblastech.",
+      "note": "Geografický předmět události či oznámení; neprokazuje ruskou atribuci. Čas i jeho neurčitost se přebírají z evidenčního záznamu."
+    },
+    "announced-20261101-ukrenergo-hourly-schedules": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo plánuje na 1. listopadu hodinové odstávky; realizace a nouzový režim z toho neplynou.",
+      "note": "Geografický předmět události či oznámení; neprokazuje ruskou atribuci. Čas i jeho neurčitost se přebírají z evidenčního záznamu."
+    },
+    "reported-20261031-france-protest-provisional-tally": {
+      "areas": [
+        "FRA"
+      ],
+      "title": "Francouzské ministerstvo podle Le Monde hlásí 565 zadržení k 21:00; příčinný dopad na Ukrajinu nedoložen.",
+      "note": "Geografický předmět události či oznámení; neprokazuje ruskou atribuci. Čas i jeho neurčitost se přebírají z evidenčního záznamu."
+    },
+    "claim-20261031-1101-russian-mod-maritime-strikes": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "title": "Ruské MO tvrdí nové zásahy nejmenovaných lodí; identita, škody a nezávislé potvrzení chybí.",
+      "note": "Geografický předmět události či oznámení; neprokazuje ruskou atribuci. Mořský region; státní teritoriální vody ani vlajka lodí nedoloženy."
+    },
+    "announced-20261031-ukraine-turkey-cooperation": {
+      "areas": [
+        "UKR",
+        "TUR",
+        "BLACK_SEA"
+      ],
+      "title": "Zelenskyj oznamuje spolupráci na obilném koridoru a očekávané generátory; zatím jde o závazek.",
+      "note": "Geografický předmět události či oznámení; neprokazuje ruskou atribuci. Čas i jeho neurčitost se přebírají z evidenčního záznamu."
+    },
+    "obs-20261031-nld-overhead-line-failure": {
+      "areas": [
+        "NLD"
+      ],
+      "title": "ProRail uvádí přerušené trakční vedení; příčina ani ruská účast nejsou určeny.",
+      "note": "Geografický předmět události či oznámení; neprokazuje ruskou atribuci. Čas i jeho neurčitost se přebírají z evidenčního záznamu."
+    },
+    "backfill-20261028-uk-support-package": {
+      "areas": [
+        "GBR",
+        "UKR"
+      ],
+      "title": "Británie oznámila další financování a úvěrové záruky; nejde o nově uskutečněnou dodávku.",
+      "note": "Geografický předmět události či oznámení; neprokazuje ruskou atribuci. Čas i jeho neurčitost se přebírají z evidenčního záznamu."
+    },
+    "backfill-20261030-lithuania-rhetoric-response": {
+      "areas": [
+        "LTU"
+      ],
+      "title": "Litevský poradce podle ELTA popírá přijetí výzvy a změnu rétoriky; nevylučuje neveřejné kontakty.",
+      "note": "Geografický předmět události či oznámení; neprokazuje ruskou atribuci. Čas i jeho neurčitost se přebírají z evidenčního záznamu."
     }
   },
   "review_scope": [
