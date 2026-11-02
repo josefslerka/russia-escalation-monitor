@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-01T07:14:08+01:00",
+  "reviewed_at": "2026-11-02T07:20:41+01:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -474,9 +474,16 @@
           "line_id": "line-ukraine-south-kravchuk-oleshky-20261031",
           "claim": "Podle ISW ukrajinský mluvčí uvádí průzkumné drony, shozy a využití humanitární pauzy k rotacím a zásobování. Jde o účastnické tvrzení o období místního příměří, nikoli nezávisle potvrzený soubor porušení.",
           "independence_basis": "Jedna označená zdrojová linie; její další přetisky nezvyšují počet potvrzení."
+        },
+        {
+          "evidence_id": "followup-20261101-oleshky-truce-ended",
+          "role": "followup",
+          "line_id": "line-ukrainian-ombudsman-oleshky",
+          "claim": "Lubinec oznámil konec místního příměří a splnění závazků oběma stranami. Tvrzení je v napětí s dřívějšími obviněními z porušení; konečný počet evakuovaných neuvádí.",
+          "independence_basis": "Jedna označená zdrojová rodina; přetisky a pokračování nejsou nové nezávislé potvrzení. U Lotyšska přímé NBS ověřuje vlastní interceptor, LSM zprostředkovává vojenský popis objektu."
         }
       ],
-      "reviewed_at": "2026-11-01T07:14:08+01:00",
+      "reviewed_at": "2026-11-02T07:20:41+01:00",
       "case_status": "open",
       "next_check_by": "2026-10-30T07:17:55+01:00",
       "next_action": "Ověřit skutečnou dodávku a evakuaci, její rozsah a pokračování místního příměří."
@@ -635,9 +642,16 @@
           "line_id": "line-reported-20261029-ukraine-refinery-restraint",
           "claim": "WSJ hlásí faktickou přestávku pod americkým tlakem. Reuters zprávu nezávisle neověřila. Zelenskyj podle téhož reportování popírá formální zákaz; přesný rozsah a trvání zůstávají otevřené.",
           "independence_basis": "Nezávislost se vztahuje pouze k popsanému tvrzení; přetisky a další fáze téže události nejsou další incidenty nebo potvrzení ruského řízení."
+        },
+        {
+          "evidence_id": "reported-20261101-zelensky-conditional-refinery-pause",
+          "role": "followup",
+          "line_id": "line-zelensky-fox-refinery-interview-20261101",
+          "claim": "Podle RFE/RL Zelenskyj spojil pauzu úderů na rafinerie buď s ruským zastavením energetických útoků, nebo s americkými dodávkami Patriotů na odpovídající měsíc.",
+          "independence_basis": "Jedna označená zdrojová rodina; přetisky a pokračování nejsou nové nezávislé potvrzení. U Lotyšska přímé NBS ověřuje vlastní interceptor, LSM zprostředkovává vojenský popis objektu."
         }
       ],
-      "reviewed_at": "2026-10-30T08:08:44+01:00",
+      "reviewed_at": "2026-11-02T07:20:41+01:00",
       "case_status": "open",
       "next_check_by": "2026-10-31T08:08:44+01:00",
       "next_action": "Ověřit veřejné úřední upřesnění, skutečný rozsah a kauzální atribuci; nesčítat přetisky."
@@ -1149,9 +1163,16 @@
           "line_id": "line-french-interior-protest-tally-20261031",
           "claim": "Le Monde ve 22:05 uvádí ministerskou bilanci 565 zadržení k 21:00 po protestech 31. října. Je to pozdější průběžný součet než 422 oznámených večer, nikoli konečná bilance celé noci.",
           "independence_basis": "Jedna označená zdrojová linie; její další přetisky nezvyšují počet potvrzení."
+        },
+        {
+          "evidence_id": "followup-20261101-france-combined-tally",
+          "role": "followup",
+          "line_id": "line-french-interior-protest-tally-20261031",
+          "claim": "Ministerstvo uvádí 779 zadržení dohromady: 565 do 21:00 a 214 poté při Halloweenu. Účast 320 000 je nižší než 410 000 před týdnem.",
+          "independence_basis": "Jedna označená zdrojová rodina; přetisky a pokračování nejsou nové nezávislé potvrzení. U Lotyšska přímé NBS ověřuje vlastní interceptor, LSM zprostředkovává vojenský popis objektu."
         }
       ],
-      "reviewed_at": "2026-11-01T07:14:08+01:00"
+      "reviewed_at": "2026-11-02T07:20:41+01:00"
     },
     {
       "id": "case-claim-20261031-1101-russian-mod-maritime-strikes",
@@ -1170,9 +1191,16 @@
           "line_id": "line-russian-mod-maritime-claims-20261031-1101",
           "claim": "Příspěvky /68670 a /68678 tvrdí zásahy nejmenovaných nákladních lodí u ukrajinského pobřeží 31. října a v následující noci. Nelze ověřit, zda jde o různé lodě, jejich vlajku, náklad ani účinek.",
           "independence_basis": "Jedna označená zdrojová linie; její další přetisky nezvyšují počet potvrzení."
+        },
+        {
+          "evidence_id": "claim-20261101-1102-russian-mod-maritime-strikes",
+          "role": "followup",
+          "line_id": "line-russian-mod-maritime-claims-20261031-1101",
+          "claim": "Hlášení /68696 a /68705 tvrdí zásahy nákladních lodí u ukrajinského pobřeží. Chybí nezávislá identifikace, vlajka i škody a jistota, zda jde o různé lodě.",
+          "independence_basis": "Jedna označená zdrojová rodina; přetisky a pokračování nejsou nové nezávislé potvrzení. U Lotyšska přímé NBS ověřuje vlastní interceptor, LSM zprostředkovává vojenský popis objektu."
         }
       ],
-      "reviewed_at": "2026-11-01T07:14:08+01:00",
+      "reviewed_at": "2026-11-02T07:20:41+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-02T07:14:08+01:00",
       "next_action": "Ověřit skutečný výsledek a zbývající kritéria; plán a tvrzení nepovažovat za uskutečněnou událost."
@@ -1220,9 +1248,16 @@
           "line_id": "line-prorail-overhead-line-20261031",
           "claim": "ProRail uvádí večerní zastavení provozu na jednom nizozemském úseku kvůli přerušení trakčního vedení, evakuaci stojícího vlaku a plán opravy. Oznámení neurčuje příčinu přerušení.",
           "independence_basis": "Jedna označená zdrojová linie; její další přetisky nezvyšují počet potvrzení."
+        },
+        {
+          "evidence_id": "followup-20261101-nld-rail-restored",
+          "role": "followup",
+          "line_id": "line-prorail-overhead-line-20261031",
+          "claim": "Aktualizovaný úvod ProRail uvádí obnovení provozu v neděli ráno 1. listopadu po nočních opravách. Stránka ponechává původní datum 31. října a starší plánovací text.",
+          "independence_basis": "Jedna označená zdrojová rodina; přetisky a pokračování nejsou nové nezávislé potvrzení. U Lotyšska přímé NBS ověřuje vlastní interceptor, LSM zprostředkovává vojenský popis objektu."
         }
       ],
-      "reviewed_at": "2026-11-01T07:14:08+01:00",
+      "reviewed_at": "2026-11-02T07:20:41+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-02T07:14:08+01:00",
       "next_action": "Ověřit skutečný výsledek a zbývající kritéria; plán a tvrzení nepovažovat za uskutečněnou událost."
@@ -1248,7 +1283,127 @@
         }
       ],
       "reviewed_at": "2026-11-01T07:14:08+01:00"
+    },
+    {
+      "id": "case-obs-20261102-ukrenergo-actual-emergency",
+      "title": "Ukrenergo potvrzuje nouzová omezení; tři jmenované oblasti zatím chybí.",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Ukrenergo potvrzuje skutečná nouzová omezení v některých regionech kvůli ruským úderům. Názvy oblastí neuvádí. DTEK uvádí Kyjev a Kyjevskou oblast, nikoli tři oblasti.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Kumulované starší škody i nové údery mohou vyvolat tentýž provozní režim; nejde automaticky o nový kvalitativní stupeň kampaně.",
+      "links": [
+        {
+          "evidence_id": "obs-20261102-ukrenergo-actual-emergency",
+          "role": "first_report",
+          "line_id": "line-ukrenergo-operational-20261102",
+          "claim": "Ukrenergo potvrzuje skutečná nouzová omezení v některých regionech kvůli ruským úderům. Názvy oblastí neuvádí. DTEK uvádí Kyjev a Kyjevskou oblast, nikoli tři oblasti.",
+          "independence_basis": "Jedna označená zdrojová rodina; přetisky a pokračování nejsou nové nezávislé potvrzení. U Lotyšska přímé NBS ověřuje vlastní interceptor, LSM zprostředkovává vojenský popis objektu."
+        }
+      ],
+      "reviewed_at": "2026-11-02T07:20:41+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-02T19:20:41+01:00",
+      "next_action": "Ověřit neurčený rozsah, příčinu a skutečný výsledek. Bez potvrzení nepřevádět na ano nebo ne."
+    },
+    {
+      "id": "case-reported-20261101-ukraine-energy-strikes",
+      "title": "Zelenskyj hlásí energetické údery ve čtyřech oblastech 1. listopadu.",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Prezident uvádí energetické škody v Dněpropetrovské, Vinnycké, Žytomyrské a Chmelnycké oblasti a rozsáhlé výpadky. Není to sdělení Ukrenerga o třech nouzových omezeních 2. listopadu.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Rozsah výpadků není totožný s definicí nouzového režimu. Účastnické počty nebyly nezávisle auditovány.",
+      "links": [
+        {
+          "evidence_id": "reported-20261101-ukraine-energy-strikes",
+          "role": "first_report",
+          "line_id": "line-zelensky-energy-strikes-20261101",
+          "claim": "Prezident uvádí energetické škody v Dněpropetrovské, Vinnycké, Žytomyrské a Chmelnycké oblasti a rozsáhlé výpadky. Není to sdělení Ukrenerga o třech nouzových omezeních 2. listopadu.",
+          "independence_basis": "Jedna označená zdrojová rodina; přetisky a pokračování nejsou nové nezávislé potvrzení. U Lotyšska přímé NBS ověřuje vlastní interceptor, LSM zprostředkovává vojenský popis objektu."
+        }
+      ],
+      "reviewed_at": "2026-11-02T07:20:41+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-02T19:20:41+01:00",
+      "next_action": "Ověřit neurčený rozsah, příčinu a skutečný výsledek. Bez potvrzení nepřevádět na ano nebo ne."
+    },
+    {
+      "id": "case-obs-20261101-ukraine-alert-app-compromise",
+      "title": "Ukrajinská varovná aplikace napadena; letectvo popírá radiační hrozbu.",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Provozovatel potvrdil zásah do aplikace a dočasné vypnutí. Následně oznámil postupný návrat mapy a oznámení s částí funkcí pozastavenou. Letectvo popřelo radiační hrozbu.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Falešná výstraha není zbraňová detonace. Technická atribuce útočníka ani spojení s ruským incidentem nebyly zveřejněny.",
+      "links": [
+        {
+          "evidence_id": "obs-20261101-ukraine-alert-app-compromise",
+          "role": "first_report",
+          "line_id": "line-ukraine-alert-app-incident-20261101",
+          "claim": "Provozovatel potvrdil zásah do aplikace a dočasné vypnutí. Následně oznámil postupný návrat mapy a oznámení s částí funkcí pozastavenou. Letectvo popřelo radiační hrozbu.",
+          "independence_basis": "Jedna označená zdrojová rodina; přetisky a pokračování nejsou nové nezávislé potvrzení. U Lotyšska přímé NBS ověřuje vlastní interceptor, LSM zprostředkovává vojenský popis objektu."
+        }
+      ],
+      "reviewed_at": "2026-11-02T07:20:41+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-02T19:20:41+01:00",
+      "next_action": "Ověřit neurčený rozsah, příčinu a skutečný výsledek. Bez potvrzení nepřevádět na ano nebo ne."
+    },
+    {
+      "id": "case-obs-20261102-russian-emergency-app-compromise",
+      "title": "MČS hlásí falešné zprávy přes napadenou aplikaci; hlavní výstražný systém podle něj funguje.",
+      "kind": "incident",
+      "areas": [
+        "RUS"
+      ],
+      "summary": "MČS potvrdilo napadení mobilní aplikace a rozesílání falešných informací. Později uvedlo, že hlavní systém varování funguje normálně a aplikace je pomocná služba.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Potvrzení kompromitace neprokazuje pachatele, společné řízení dvou incidentů ani skutečnou jadernou událost.",
+      "links": [
+        {
+          "evidence_id": "obs-20261102-russian-emergency-app-compromise",
+          "role": "first_report",
+          "line_id": "line-russian-mchs-app-incident-20261102",
+          "claim": "MČS potvrdilo napadení mobilní aplikace a rozesílání falešných informací. Později uvedlo, že hlavní systém varování funguje normálně a aplikace je pomocná služba.",
+          "independence_basis": "Jedna označená zdrojová rodina; přetisky a pokračování nejsou nové nezávislé potvrzení. U Lotyšska přímé NBS ověřuje vlastní interceptor, LSM zprostředkovává vojenský popis objektu."
+        }
+      ],
+      "reviewed_at": "2026-11-02T07:20:41+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-02T19:20:41+01:00",
+      "next_action": "Ověřit neurčený rozsah, příčinu a skutečný výsledek. Bez potvrzení nepřevádět na ano nebo ne."
+    },
+    {
+      "id": "case-obs-20261101-latvia-airspace-intrusion",
+      "title": "Lotyšsko hlásí neidentifikovaný objekt a sebezničení vlastního interceptoru.",
+      "kind": "incident",
+      "areas": [
+        "LVA"
+      ],
+      "summary": "NBS podle LSM potvrdily krátké narušení prostoru neidentifikovaným objektem. NBS přímo uvedly, že slyšený výbuch způsobilo sebezničení vlastního záchytného dronu, aby nepřeletěl hranici.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Původ objektu a úmysl zůstávají neurčené; vlastní obranné opatření není ruský ozbrojený útok ani důkaz úmyslného testu NATO.",
+      "links": [
+        {
+          "evidence_id": "obs-20261101-latvia-airspace-intrusion",
+          "role": "first_report",
+          "line_id": "line-latvian-nbs-airspace-20261101",
+          "claim": "NBS podle LSM potvrdily krátké narušení prostoru neidentifikovaným objektem. NBS přímo uvedly, že slyšený výbuch způsobilo sebezničení vlastního záchytného dronu, aby nepřeletěl hranici.",
+          "independence_basis": "Jedna označená zdrojová rodina; přetisky a pokračování nejsou nové nezávislé potvrzení. U Lotyšska přímé NBS ověřuje vlastní interceptor, LSM zprostředkovává vojenský popis objektu."
+        }
+      ],
+      "reviewed_at": "2026-11-02T07:20:41+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-02T19:20:41+01:00",
+      "next_action": "Ověřit neurčený rozsah, příčinu a skutečný výsledek. Bez potvrzení nepřevádět na ano nebo ne."
     }
   ],
-  "review_note": "Dnešní nové záznamy propojeny s konkrétními případy; starší evidence a závěry nepřepsány. Ukrajinské provozní dny vedeny odděleně."
+  "review_note": "Nové záznamy zkontrolovány a propojeny; nový provozní den má vlastní případ. Dvě kompromitace aplikací nesloučeny bez důkazu. Staré termíny zachovány v revizních záznamech."
 }

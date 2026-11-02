@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-01T07:14:08+01:00",
+  "reviewed_at": "2026-11-02T07:20:41+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -2481,6 +2481,78 @@
       ],
       "title": "Litevský poradce podle ELTA popírá přijetí výzvy a změnu rétoriky; nevylučuje neveřejné kontakty.",
       "note": "Geografický předmět události či oznámení; neprokazuje ruskou atribuci. Čas i jeho neurčitost se přebírají z evidenčního záznamu."
+    },
+    "obs-20261102-ukrenergo-actual-emergency": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo potvrzuje nouzová omezení; tři jmenované oblasti zatím chybí.",
+      "note": "Geografický předmět; nikoli sídlo zdroje nebo potvrzení ruské atribuce. Původní neurčitost časů zachována."
+    },
+    "reported-20261101-ukraine-energy-strikes": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Zelenskyj hlásí energetické údery ve čtyřech oblastech 1. listopadu.",
+      "note": "Geografický předmět; nikoli sídlo zdroje nebo potvrzení ruské atribuce. Původní neurčitost časů zachována."
+    },
+    "obs-20261101-ukraine-alert-app-compromise": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrajinská varovná aplikace napadena; letectvo popírá radiační hrozbu.",
+      "note": "Geografický předmět; nikoli sídlo zdroje nebo potvrzení ruské atribuce. Původní neurčitost časů zachována."
+    },
+    "obs-20261102-russian-emergency-app-compromise": {
+      "areas": [
+        "RUS"
+      ],
+      "title": "MČS hlásí falešné zprávy přes napadenou aplikaci; hlavní výstražný systém podle něj funguje.",
+      "note": "Geografický předmět; nikoli sídlo zdroje nebo potvrzení ruské atribuce. Původní neurčitost časů zachována."
+    },
+    "obs-20261101-latvia-airspace-intrusion": {
+      "areas": [
+        "LVA"
+      ],
+      "title": "Lotyšsko hlásí neidentifikovaný objekt a sebezničení vlastního interceptoru.",
+      "note": "Geografický předmět; nikoli sídlo zdroje nebo potvrzení ruské atribuce. Původní neurčitost časů zachována."
+    },
+    "followup-20261101-oleshky-truce-ended": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ombudsman oznámil konec místní dohody a tvrdí splnění závazků oběma stranami.",
+      "note": "Geografický předmět; nikoli sídlo zdroje nebo potvrzení ruské atribuce. Původní neurčitost časů zachována."
+    },
+    "followup-20261101-france-combined-tally": {
+      "areas": [
+        "FRA"
+      ],
+      "title": "Francouzská bilance slučuje protestní den a Halloween; účast protestů poklesla.",
+      "note": "Geografický předmět; nikoli sídlo zdroje nebo potvrzení ruské atribuce. Původní neurčitost časů zachována."
+    },
+    "followup-20261101-nld-rail-restored": {
+      "areas": [
+        "NLD"
+      ],
+      "title": "ProRail potvrzuje obnovení provozu; příčina poruchy není určena.",
+      "note": "Geografický předmět; nikoli sídlo zdroje nebo potvrzení ruské atribuce. Původní neurčitost časů zachována."
+    },
+    "claim-20261101-1102-russian-mod-maritime-strikes": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "title": "Ruské MO tvrdí další zásahy lodí; identita a účinek neověřeny.",
+      "note": "Geografický předmět; nikoli sídlo zdroje nebo potvrzení ruské atribuce. Černé moře; konkrétní teritoriální vody, EEZ ani státní příslušnost plavidla neurčeny."
+    },
+    "reported-20261101-zelensky-conditional-refinery-pause": {
+      "areas": [
+        "UKR",
+        "RUS",
+        "USA"
+      ],
+      "title": "Zelenskyj nabízí podmíněnou pauzu úderů; dohoda ani dodávka tím nevznikla.",
+      "note": "Geografický předmět; nikoli sídlo zdroje nebo potvrzení ruské atribuce. Původní neurčitost časů zachována."
     }
   },
   "review_scope": [

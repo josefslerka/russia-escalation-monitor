@@ -1827,6 +1827,119 @@
       "tier": 4,
       "cadence_days": 7,
       "priority": 2
+    },
+    {
+      "id": "ukr-airforce",
+      "name": "Ukrajinské letectvo — veřejné vyjádření",
+      "url": "https://t.me/s/kpszsu",
+      "areas": [
+        "UKR"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment",
+        "policy_effect"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "ukr-air-alert",
+      "name": "Provozovatel varovné aplikace",
+      "url": "https://t.me/s/air_alert_ua",
+      "areas": [
+        "UKR"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment",
+        "policy_effect"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "rus-mchs",
+      "name": "MČS — veřejný kanál",
+      "url": "https://t.me/s/mchs_official",
+      "areas": [
+        "RUS"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment",
+        "policy_effect"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "lva-nbs-public",
+      "name": "Lotyšské NBS — veřejné výroky",
+      "url": "https://x.com/Latvijas_armija",
+      "areas": [
+        "LVA"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment",
+        "policy_effect"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "lva-lsm",
+      "name": "Lotyšský veřejnoprávní rozhlas a televize",
+      "url": "https://www.lsm.lv/",
+      "areas": [
+        "LVA"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment",
+        "policy_effect"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "rferl",
+      "name": "RFE/RL — konkrétní přepis rozhovoru",
+      "url": "https://www.rferl.org/",
+      "areas": [
+        "UKR",
+        "RUS"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment",
+        "policy_effect"
+      ],
+      "tier": 4,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "ukr-dtek",
+      "name": "DTEK — distribuční oznámení",
+      "url": "https://t.me/s/dtek_ua",
+      "areas": [
+        "UKR"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment",
+        "policy_effect"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",
