@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-02T07:20:41+01:00",
+  "reviewed_at": "2026-11-03T08:45:22+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -2553,6 +2553,79 @@
       ],
       "title": "Zelenskyj nabízí podmíněnou pauzu úderů; dohoda ani dodávka tím nevznikla.",
       "note": "Geografický předmět; nikoli sídlo zdroje nebo potvrzení ruské atribuce. Původní neurčitost časů zachována."
+    },
+    "obs-20261102-polish-border-security-operation": {
+      "areas": [
+        "POL"
+      ],
+      "title": "Polská policie potvrzuje preventivní operaci po varování před sabotáží.",
+      "note": "Anotace předmětu; nikoli sídla média nebo potvrzení ruské atribuce. Neurčitost původního event_time zachována."
+    },
+    "followup-20261102-ukrenergo-nine-region-outages": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo jmenuje devět oblastí s novými výpadky; to není seznam nouzových omezení.",
+      "note": "Anotace předmětu; nikoli sídla média nebo potvrzení ruské atribuce. Neurčitost původního event_time zachována."
+    },
+    "obs-20261103-dtek-emergency-two-oblasts": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "DTEK hlásí nouzová omezení ve dvou oblastech a v Kyjevě.",
+      "note": "Anotace předmětu; nikoli sídla média nebo potvrzení ruské atribuce. Neurčitost původního event_time zachována."
+    },
+    "reported-20261102-komyshuvakha-aid-site-strikes": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Zelenskyj hlásí 26 mrtvých po úderech na místo humanitární pomoci.",
+      "note": "Anotace předmětu; nikoli sídla média nebo potvrzení ruské atribuce. Neurčitost původního event_time zachována."
+    },
+    "reported-20261102-penza-coerced-contracts": {
+      "areas": [
+        "RUS"
+      ],
+      "title": "NGO uvádí tři nové podněty k nuceným kontraktům v Penze.",
+      "note": "Anotace předmětu; nikoli sídla média nebo potvrzení ruské atribuce. Neurčitost původního event_time zachována."
+    },
+    "obs-20261103-latvia-unidentified-object-fall": {
+      "areas": [
+        "LVA"
+      ],
+      "title": "NBS hlásí další neidentifikovaný objekt; podle prvních údajů spadl v Lotyšsku.",
+      "note": "Anotace předmětu; nikoli sídla média nebo potvrzení ruské atribuce. Neurčitost původního event_time zachována."
+    },
+    "reported-20261102-europe-refrigeration-cyber-incidents": {
+      "areas": [
+        "SWE",
+        "BEL",
+        "LUX",
+        "IRL"
+      ],
+      "title": "Reuters dokládá novou vlnu poruch chlazení a ztrát potravin; pachatel neurčen.",
+      "note": "Anotace předmětu; nikoli sídla média nebo potvrzení ruské atribuce. Pouze země konkrétně doložené citovaným textem Reuters; jiné země z širších přehledů nepřidány."
+    },
+    "obs-20261102-sweden-ncsc-refrigeration-response": {
+      "areas": [
+        "SWE"
+      ],
+      "title": "Švédské NCSC potvrzuje kontakt s postiženými provozy; původce neuvádí.",
+      "note": "Anotace předmětu; nikoli sídla média nebo potvrzení ruské atribuce. Neurčitost původního event_time zachována."
+    },
+    "obs-20261102-nato-fuse-experimentation-concluded": {
+      "areas": [
+        "LVA"
+      ],
+      "title": "NATO popisuje dokončené říjnové experimenty FUSE v Lotyšsku.",
+      "note": "Anotace předmětu; nikoli sídla média nebo potvrzení ruské atribuce. Neurčitost původního event_time zachována."
+    },
+    "followup-20261102-mchs-app-33-regions": {
+      "areas": [
+        "RUS"
+      ],
+      "title": "MČS uvádí falešná oznámení ve 33 regionech a plán obnovy aplikace.",
+      "note": "Anotace předmětu; nikoli sídla média nebo potvrzení ruské atribuce. Neurčitost původního event_time zachována."
     }
   },
   "review_scope": [

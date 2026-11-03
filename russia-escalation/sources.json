@@ -1940,6 +1940,54 @@
       "tier": 1,
       "cadence_days": 7,
       "priority": 2
+    },
+    {
+      "id": "pol-police",
+      "name": "Polská policie",
+      "url": "https://policja.pl/",
+      "areas": [
+        "POL"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "readiness"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "pol-rmf",
+      "name": "RMF, přímé rozhovory",
+      "url": "https://www.rmf24.pl/fakty/polska/news-operacja-specjalna-sluzb-mundurowych-przy-granicy-szef-kgp-u,nIdn,1024387",
+      "areas": [
+        "POL"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "readiness"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "swe-ncsc",
+      "name": "Švédské NCSC",
+      "url": "https://www.ncsc.se/sv/",
+      "areas": [
+        "SWE"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "readiness"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",

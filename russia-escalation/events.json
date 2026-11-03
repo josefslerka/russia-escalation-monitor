@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-02T07:20:41+01:00",
+  "reviewed_at": "2026-11-03T08:45:22+01:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -1301,9 +1301,16 @@
           "line_id": "line-ukrenergo-operational-20261102",
           "claim": "Ukrenergo potvrzuje skutečná nouzová omezení v některých regionech kvůli ruským úderům. Názvy oblastí neuvádí. DTEK uvádí Kyjev a Kyjevskou oblast, nikoli tři oblasti.",
           "independence_basis": "Jedna označená zdrojová rodina; přetisky a pokračování nejsou nové nezávislé potvrzení. U Lotyšska přímé NBS ověřuje vlastní interceptor, LSM zprostředkovává vojenský popis objektu."
+        },
+        {
+          "evidence_id": "followup-20261102-ukrenergo-nine-region-outages",
+          "role": "followup",
+          "line_id": "line-ukrenergo-operational-20261102",
+          "claim": "Ukrenergo uvádí nové výpadky po úderech v devíti oblastech. Pro řízená omezení popisuje hodinové rozvrhy, zatímco předchozí skutečný nouzový režim /5603 oblasti nejmenuje. Nelze automaticky spojit oba seznamy do kvalifikujícího sdělení.",
+          "independence_basis": "Vlastní publikace daného původce. U NCSC nezávislé potvrzení reakce na incidenty, nikoli atribuce. Přetisky a pokračování se nepřičítají jako další nezávislý důkaz téhož tvrzení."
         }
       ],
-      "reviewed_at": "2026-11-02T07:20:41+01:00",
+      "reviewed_at": "2026-11-03T08:45:22+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-02T19:20:41+01:00",
       "next_action": "Ověřit neurčený rozsah, příčinu a skutečný výsledek. Bez potvrzení nepřevádět na ano nebo ne."
@@ -1373,9 +1380,16 @@
           "line_id": "line-russian-mchs-app-incident-20261102",
           "claim": "MČS potvrdilo napadení mobilní aplikace a rozesílání falešných informací. Později uvedlo, že hlavní systém varování funguje normálně a aplikace je pomocná služba.",
           "independence_basis": "Jedna označená zdrojová rodina; přetisky a pokračování nejsou nové nezávislé potvrzení. U Lotyšska přímé NBS ověřuje vlastní interceptor, LSM zprostředkovává vojenský popis objektu."
+        },
+        {
+          "evidence_id": "followup-20261102-mchs-app-33-regions",
+          "role": "followup",
+          "line_id": "line-russian-mchs-app-incident-20261102",
+          "claim": "MČS upřesňuje kompromitaci správy aplikace a rozeslání falešných zpráv do 33 regionů; hlavní systém podle něj funguje. Úplnou obnovu slibuje do konce 2. listopadu. Nejde o měření skutečného zásahu lidí ani doložené dokončení slíbené obnovy.",
+          "independence_basis": "Vlastní publikace daného původce. U NCSC nezávislé potvrzení reakce na incidenty, nikoli atribuce. Přetisky a pokračování se nepřičítají jako další nezávislý důkaz téhož tvrzení."
         }
       ],
-      "reviewed_at": "2026-11-02T07:20:41+01:00",
+      "reviewed_at": "2026-11-03T08:45:22+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-02T19:20:41+01:00",
       "next_action": "Ověřit neurčený rozsah, příčinu a skutečný výsledek. Bez potvrzení nepřevádět na ano nebo ne."
@@ -1403,7 +1417,185 @@
       "case_status": "open",
       "next_check_by": "2026-11-02T19:20:41+01:00",
       "next_action": "Ověřit neurčený rozsah, příčinu a skutečný výsledek. Bez potvrzení nepřevádět na ano nebo ne."
+    },
+    {
+      "id": "case-obs-20261102-polish-border-security-operation",
+      "title": "Polská policie potvrzuje preventivní operaci po varování před sabotáží.",
+      "kind": "incident",
+      "areas": [
+        "POL"
+      ],
+      "summary": "Boroń pro RMF potvrdil posily a zvláštní policejní operaci u ruské hranice. Dopis KGP z 1. listopadu spojuje pokyn z 29. října s východními službami, nikoli sporem o ústavní soud. RMF navíc uvádí zpravodajské varování před možným průnikem ozbrojených skupin; podklad není veřejný.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Preventivní posílení ochrany může hrozbu odradit. Nepotvrzuje uskutečněný průnik, ruskou útočnou logistiku ani nezávislost zmiňovaných spojeneckých varování.",
+      "links": [
+        {
+          "evidence_id": "obs-20261102-polish-border-security-operation",
+          "role": "first_report",
+          "line_id": "line-police-boron-border-warning-20261102",
+          "claim": "Boroń pro RMF potvrdil posily a zvláštní policejní operaci u ruské hranice. Dopis KGP z 1. listopadu spojuje pokyn z 29. října s východními službami, nikoli sporem o ústavní soud. RMF navíc uvádí zpravodajské varování před možným průnikem ozbrojených skupin; podklad není veřejný.",
+          "independence_basis": "Vlastní publikace daného původce. U NCSC nezávislé potvrzení reakce na incidenty, nikoli atribuce. Přetisky a pokračování se nepřičítají jako další nezávislý důkaz téhož tvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-03T08:45:22+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-04T08:45:22+01:00",
+      "next_action": "Ověřit nový stav, rozsah, atribuci a chybějící kritéria; nejistotu neuzavírat jako ne."
+    },
+    {
+      "id": "case-obs-20261103-dtek-emergency-two-oblasts",
+      "title": "DTEK hlásí nouzová omezení ve dvou oblastech a v Kyjevě.",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "DTEK uvádí nouzová omezení na pokyn Ukrenerga v Kyjevě, Kyjevské a Dněpropetrovské oblasti. Zvlášť hlásí škodu po útoku v Oděské oblasti. Plán Ukrenerga pro 3. listopad rozšiřuje hodinové rozvrhy na celý den; jde o plán, nikoli potvrzení tří oblastí v nouzovém režimu.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Kyjev není třetí oblast; poškození v Oděské oblasti není důkaz jejího nouzového režimu. Distribuční zpráva nenahrazuje explicitní podmínku zdroje Ukrenergo.",
+      "links": [
+        {
+          "evidence_id": "obs-20261103-dtek-emergency-two-oblasts",
+          "role": "first_report",
+          "line_id": "line-dtek-operational-20261103",
+          "claim": "DTEK uvádí nouzová omezení na pokyn Ukrenerga v Kyjevě, Kyjevské a Dněpropetrovské oblasti. Zvlášť hlásí škodu po útoku v Oděské oblasti. Plán Ukrenerga pro 3. listopad rozšiřuje hodinové rozvrhy na celý den; jde o plán, nikoli potvrzení tří oblastí v nouzovém režimu.",
+          "independence_basis": "Vlastní publikace daného původce. U NCSC nezávislé potvrzení reakce na incidenty, nikoli atribuce. Přetisky a pokračování se nepřičítají jako další nezávislý důkaz téhož tvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-03T08:45:22+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-04T08:45:22+01:00",
+      "next_action": "Ověřit nový stav, rozsah, atribuci a chybějící kritéria; nejistotu neuzavírat jako ne."
+    },
+    {
+      "id": "case-reported-20261102-komyshuvakha-aid-site-strikes",
+      "title": "Zelenskyj hlásí 26 mrtvých po úderech na místo humanitární pomoci.",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Prezident uvádí dva sledy leteckých úderů na bývalou školu a úkryt používané pro humanitární pomoc v Komyšuvaše, 26 mrtvých a pokračující záchranu. Počet je předběžný; AP přebírá ukrajinské úřední údaje, nikoli nezávislý audit obětí či vědomého cílení.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Pokračování již probíhající kampaně je slučitelné s ukončenou místní dohodou v Oleškách; toto jiné místo nebylo doloženou součástí té dohody.",
+      "links": [
+        {
+          "evidence_id": "reported-20261102-komyshuvakha-aid-site-strikes",
+          "role": "first_report",
+          "line_id": "line-ukrainian-authorities-komyshuvakha-20261102",
+          "claim": "Prezident uvádí dva sledy leteckých úderů na bývalou školu a úkryt používané pro humanitární pomoc v Komyšuvaše, 26 mrtvých a pokračující záchranu. Počet je předběžný; AP přebírá ukrajinské úřední údaje, nikoli nezávislý audit obětí či vědomého cílení.",
+          "independence_basis": "Vlastní publikace daného původce. U NCSC nezávislé potvrzení reakce na incidenty, nikoli atribuce. Přetisky a pokračování se nepřičítají jako další nezávislý důkaz téhož tvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-03T08:45:22+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-04T08:45:22+01:00",
+      "next_action": "Ověřit nový stav, rozsah, atribuci a chybějící kritéria; nejistotu neuzavírat jako ne."
+    },
+    {
+      "id": "case-reported-20261102-penza-coerced-contracts",
+      "title": "NGO uvádí tři nové podněty k nuceným kontraktům v Penze.",
+      "kind": "incident",
+      "areas": [
+        "RUS"
+      ],
+      "summary": "Idite lesom uvádí tři nové podněty za dva dny z Penzy, včetně otce a syna údajně donucených podepsat kontrakt. Veřejně nepublikuje úplné ověřitelné spisy ani reprezentativní počty; tři podněty neznamenají tři nezávislé regionální linie.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Lokální nátlak při smluvním náboru není důkaz koordinované významné nucené vlny ani veřejného závazného příkazu pro 100 000 lidí.",
+      "links": [
+        {
+          "evidence_id": "reported-20261102-penza-coerced-contracts",
+          "role": "first_report",
+          "line_id": "line-iditelesom-penza-complaints-20261102",
+          "claim": "Idite lesom uvádí tři nové podněty za dva dny z Penzy, včetně otce a syna údajně donucených podepsat kontrakt. Veřejně nepublikuje úplné ověřitelné spisy ani reprezentativní počty; tři podněty neznamenají tři nezávislé regionální linie.",
+          "independence_basis": "Vlastní publikace daného původce. U NCSC nezávislé potvrzení reakce na incidenty, nikoli atribuce. Přetisky a pokračování se nepřičítají jako další nezávislý důkaz téhož tvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-03T08:45:22+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-04T08:45:22+01:00",
+      "next_action": "Ověřit nový stav, rozsah, atribuci a chybějící kritéria; nejistotu neuzavírat jako ne."
+    },
+    {
+      "id": "case-obs-20261103-latvia-unidentified-object-fall",
+      "title": "NBS hlásí další neidentifikovaný objekt; podle prvních údajů spadl v Lotyšsku.",
+      "kind": "incident",
+      "areas": [
+        "LVA"
+      ],
+      "summary": "LSM uvádí výstrahu NBS 00:07–00:33 místního času a aktivaci spojeneckých stíhaček. Podle předběžných informací objekt spadl; pátrání a identifikace pokračují. Jde o jiný incident než 1. listopadu.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Zbloudilý dron a vedlejší účinek války zůstávají alternativou. Původ, úmyslné použití zbraně, zranění či kvalifikující fyzická škoda nejsou doloženy.",
+      "links": [
+        {
+          "evidence_id": "obs-20261103-latvia-unidentified-object-fall",
+          "role": "first_report",
+          "line_id": "line-nbs-latvia-airspace-20261103",
+          "claim": "LSM uvádí výstrahu NBS 00:07–00:33 místního času a aktivaci spojeneckých stíhaček. Podle předběžných informací objekt spadl; pátrání a identifikace pokračují. Jde o jiný incident než 1. listopadu.",
+          "independence_basis": "Vlastní publikace daného původce. U NCSC nezávislé potvrzení reakce na incidenty, nikoli atribuce. Přetisky a pokračování se nepřičítají jako další nezávislý důkaz téhož tvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-03T08:45:22+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-04T08:45:22+01:00",
+      "next_action": "Ověřit nový stav, rozsah, atribuci a chybějící kritéria; nejistotu neuzavírat jako ne."
+    },
+    {
+      "id": "case-europe-refrigeration-20261102",
+      "title": "Reuters dokládá novou vlnu poruch chlazení a ztrát potravin; pachatel neurčen.",
+      "kind": "incident",
+      "areas": [
+        "SWE",
+        "BEL",
+        "LUX",
+        "IRL"
+      ],
+      "summary": "Reuters přímo popisuje škody ve švédské prodejně a vyjádření řetězců v Belgii, Lucembursku a Irsku. Belgický kyberúřad nezná pachatele; Reuters neověřil vazbu na říjnové francouzské případy. Různé součty prodejen a pozdější geografická rozšíření nejsou sloučeny do jediného ověřeného součtu.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Široce rozšířená technická slabina může vysvětlovat podobnost bez jediného státního řízení. Materiální škoda sama neprokazuje ruskou atribuci ani změnu politiky vůči Ukrajině.",
+      "links": [
+        {
+          "evidence_id": "reported-20261102-europe-refrigeration-cyber-incidents",
+          "role": "first_report",
+          "line_id": "line-reuters-europe-refrigeration-20261102",
+          "claim": "Reuters přímo popisuje škody ve švédské prodejně a vyjádření řetězců v Belgii, Lucembursku a Irsku. Belgický kyberúřad nezná pachatele; Reuters neověřil vazbu na říjnové francouzské případy. Různé součty prodejen a pozdější geografická rozšíření nejsou sloučeny do jediného ověřeného součtu.",
+          "independence_basis": "Vlastní publikace daného původce. U NCSC nezávislé potvrzení reakce na incidenty, nikoli atribuce. Přetisky a pokračování se nepřičítají jako další nezávislý důkaz téhož tvrzení."
+        },
+        {
+          "evidence_id": "obs-20261102-sweden-ncsc-refrigeration-response",
+          "role": "independent_corroboration",
+          "line_id": "line-swedish-ncsc-refrigeration-20261102",
+          "claim": "NCSC uvádí, že sleduje incidenty chladicích systémů, jedná s postiženými a evropskými protějšky. Zveřejňuje obecná ochranná doporučení, nikoli ruskou atribuci, součet škod nebo výsledek vyšetřování.",
+          "independence_basis": "Vlastní publikace daného původce. U NCSC nezávislé potvrzení reakce na incidenty, nikoli atribuce. Přetisky a pokračování se nepřičítají jako další nezávislý důkaz téhož tvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-03T08:45:22+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-04T08:45:22+01:00",
+      "next_action": "Ověřit nový stav, rozsah, atribuci a chybějící kritéria; nejistotu neuzavírat jako ne."
+    },
+    {
+      "id": "case-obs-20261102-nato-fuse-experimentation-concluded",
+      "title": "NATO popisuje dokončené říjnové experimenty FUSE v Lotyšsku.",
+      "kind": "assessment",
+      "areas": [
+        "LVA"
+      ],
+      "summary": "ACT uvádí završení téměř dvou týdnů experimentování s komunikací a protidronovou obranou. Nová listopadová publikace popisuje říjnový výcvik a demonstrace, nikoli novou pohotovost v reakci na dnešní incident.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Výcvik vysvětluje část alianční aktivity; nevysvětluje automaticky každý vzdušný incident ani nevylučuje jiné přípravy.",
+      "links": [
+        {
+          "evidence_id": "obs-20261102-nato-fuse-experimentation-concluded",
+          "role": "first_report",
+          "line_id": "line-nato-act-fuse-2026",
+          "claim": "ACT uvádí završení téměř dvou týdnů experimentování s komunikací a protidronovou obranou. Nová listopadová publikace popisuje říjnový výcvik a demonstrace, nikoli novou pohotovost v reakci na dnešní incident.",
+          "independence_basis": "Vlastní publikace daného původce. U NCSC nezávislé potvrzení reakce na incidenty, nikoli atribuce. Přetisky a pokračování se nepřičítají jako další nezávislý důkaz téhož tvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-03T08:45:22+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-04T08:45:22+01:00",
+      "next_action": "Ověřit nový stav, rozsah, atribuci a chybějící kritéria; nejistotu neuzavírat jako ne."
     }
   ],
-  "review_note": "Nové záznamy zkontrolovány a propojeny; nový provozní den má vlastní případ. Dvě kompromitace aplikací nesloučeny bez důkazu. Staré termíny zachovány v revizních záznamech."
+  "review_note": "Nové anotace a vazby zkontrolovány; provozní dny i lotyšské incidenty vedeny odděleně, staré záznamy a termíny zachovány."
 }
