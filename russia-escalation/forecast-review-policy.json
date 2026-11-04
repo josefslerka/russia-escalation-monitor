@@ -1,0 +1,256 @@
+{
+  "schema_version": 1,
+  "id": "evaluation-audit-v2",
+  "introduced_at": "2026-11-04T17:33:15+01:00",
+  "legacy_negative_guard_effective_at": "2026-11-04T17:33:15+01:00",
+  "long_update_effective_at": "2026-11-05T00:00:00+01:00",
+  "preserve_existing_contracts": true,
+  "legacy_unknown_has_no_new_deadline": true,
+  "legacy_candidate_filters": {
+    "eu-sabotage-disclosure-v1": {
+      "domains": [
+        "hybrid",
+        "hybrid_eu",
+        "sabotage",
+        "sabotage_eu",
+        "physical_sabotage",
+        "physical_sabotage_eu",
+        "eu_hybrid",
+        "eu_physical_sabotage"
+      ],
+      "areas": [
+        "AUT",
+        "BEL",
+        "BGR",
+        "HRV",
+        "CYP",
+        "CZE",
+        "DNK",
+        "EST",
+        "FIN",
+        "FRA",
+        "DEU",
+        "GRC",
+        "HUN",
+        "IRL",
+        "ITA",
+        "LVA",
+        "LTU",
+        "LUX",
+        "MLT",
+        "NLD",
+        "POL",
+        "PRT",
+        "ROU",
+        "SVK",
+        "SVN",
+        "ESP",
+        "SWE",
+        "EU",
+        "EUROPE"
+      ],
+      "keywords": [
+        "sabot",
+        "žhář",
+        "arson",
+        "diverz",
+        "диверс",
+        "подпал"
+      ]
+    },
+    "cze-sabotage-disclosure-v1": {
+      "domains": [
+        "hybrid",
+        "physical_sabotage",
+        "sabotage",
+        "czechia"
+      ],
+      "areas": [
+        "CZE"
+      ],
+      "keywords": [
+        "sabot",
+        "žhář",
+        "arson",
+        "diverz"
+      ]
+    },
+    "nato-armed-attack-v1": {
+      "domains": [
+        "nato",
+        "limited_nato_test",
+        "baltic",
+        "baltic_test",
+        "nato_test",
+        "nato_war",
+        "larger_nato_attack"
+      ],
+      "areas": [
+        "ALB",
+        "BEL",
+        "BGR",
+        "CAN",
+        "HRV",
+        "CZE",
+        "DNK",
+        "EST",
+        "FIN",
+        "FRA",
+        "DEU",
+        "GRC",
+        "HUN",
+        "ISL",
+        "ITA",
+        "LVA",
+        "LTU",
+        "LUX",
+        "MNE",
+        "NLD",
+        "MKD",
+        "NOR",
+        "POL",
+        "PRT",
+        "ROU",
+        "SVK",
+        "SVN",
+        "ESP",
+        "SWE",
+        "TUR",
+        "GBR",
+        "USA",
+        "NATO",
+        "BALTICS",
+        "BALTIC_SEA"
+      ],
+      "keywords": [
+        "ozbrojen",
+        "incursion",
+        "inciden",
+        "armed",
+        "dron",
+        "drone",
+        "provok"
+      ]
+    },
+    "baltic-armed-attack-v1": {
+      "domains": [
+        "baltic",
+        "baltic_test",
+        "limited_nato_test",
+        "nato"
+      ],
+      "areas": [
+        "EST",
+        "LVA",
+        "LTU",
+        "BALTICS",
+        "BALTIC_SEA"
+      ],
+      "keywords": [
+        "ozbrojen",
+        "inciden",
+        "armed",
+        "dron",
+        "drone",
+        "provok"
+      ]
+    },
+    "rus-mobilisation-order-v1": {
+      "domains": [
+        "mobilization"
+      ],
+      "areas": [
+        "RUS"
+      ],
+      "keywords": [
+        "mobiliz",
+        "mobilis",
+        "мобилиз",
+        "povolání"
+      ]
+    },
+    "belarus-combat-entry-v1": {
+      "domains": [
+        "belarus"
+      ],
+      "areas": [
+        "BLR",
+        "UKR"
+      ],
+      "keywords": [
+        "bělor",
+        "belarus",
+        "белорус",
+        "білорус"
+      ]
+    },
+    "nuclear-demonstration-v1": {
+      "domains": [
+        "nuclear",
+        "nuclear_posture",
+        "nuclear_signalling"
+      ],
+      "areas": [
+        "GLOBAL",
+        "RUS",
+        "BLR"
+      ],
+      "keywords": [
+        "deton",
+        "jadern",
+        "nuclear",
+        "ядер"
+      ]
+    },
+    "nuclear-use-v1": {
+      "domains": [
+        "nuclear",
+        "nuclear_posture",
+        "nuclear_signalling"
+      ],
+      "areas": [
+        "GLOBAL",
+        "RUS",
+        "BLR",
+        "UKR",
+        "NATO"
+      ],
+      "keywords": [
+        "deton",
+        "jadern",
+        "nuclear",
+        "ядер"
+      ]
+    },
+    "ukraine-grid-emergency-v1": {
+      "domains": [
+        "ukraine_conventional",
+        "ukraine",
+        "western_decision_pressure"
+      ],
+      "areas": [
+        "UKR"
+      ],
+      "keywords": [
+        "energe",
+        "електро",
+        "енерго",
+        "відключ",
+        "знеструм",
+        "grid",
+        "electric",
+        "nouzov"
+      ]
+    }
+  },
+  "score_policy": "Display original definitive Brier unchanged and, separately, a headline on fully matured windows. Publish missingness, voids, per-contract best/worst Brier bounds and an abstention-at-0.5 sensitivity. Never pool protocol versions or horizons.",
+  "no_policy": "For new adjudications cross-check open_claim_ids against source-dated candidate cases/evidence and forecast-specific reviews. A generic closed case is not proof of nonqualification; every relevant_found item in a negative closure needs an explicit exclusion.",
+  "correction_classes": [
+    "new_evidence",
+    "source_correction",
+    "factual_error",
+    "adjudication_error"
+  ],
+  "dependency_policy": "Report distinct dependency groups and windows. Groups are not proven independent; effective sample size is not computed by multiplying counts.",
+  "provenance_note": "CLI issuance times are local records, not an independent trusted timestamp. Git/public deployment history provides the external publication trail; do not claim cryptographic notarisation."
+}

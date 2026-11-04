@@ -168,3 +168,124 @@ definice × konec horizontu. Denní revize stejné otázky nezvětšují počet 
 Neznámé výsledky a zpětně importované již vyřešené otázky jsou vyloučeny.
 Překrývající se otázky navíc nejsou nezávislé konflikty. Z malého souboru výsledků
 nelze prohlašovat model za kalibrovaný.
+
+## Změna metodiky 4. listopadu 2026 — fixed-v2
+
+Metodický audit vedl k nové [verzi pravidel](data/forecast-protocol-v2.json)
+a [politice kontroly výsledků](data/forecast-review-policy.json).
+**Původních 18 vydání fixed-v1, jejich procenta, okna, definice i dosavadní
+rozhodnutí zůstávají zachována.** V1 a v2 se vykazují samostatně.
+Změna metodiky není novou analytickou zprávou: uzávěrka posledního odhadu
+zůstává 4. listopadu v 08:16 CET.
+
+První 7denní okno v2 začíná **7. listopadu 2026 v 08:00 CET**, první 30denní
+**30. listopadu v 08:00 CET**. Vydávání se otevírá 24 hodin předem. Nová okna
+navazují na původní UTC rozvrh; již běžící období se neposouvají.
+
+### Datum známé pouze dnem
+
+Přesný čas se nadále posuzuje podle intervalu **(začátek, konec]**. Známe-li
+jen datum, v2 přiřadí **celý kalendářní den v časovém pásmu zdroje** tomu oknu,
+s nímž má největší časový překryv; při přesné shodě pozdějšímu oknu. Uchováváme
+původní datum, pásmo i celý interval nejistoty. Jde o předem zvolenou klasifikaci,
+nikoli zjištění hodiny události. Známý přesný čas nelze nahradit pouhým datem.
+Neznámé pásmo nevyplňujeme odhadem. Hranice o půlnoci by sama problém neřešila:
+celý den začíná přesně na dolní, otevřené mezi a zdroj může mít jiné pásmo.
+
+Ve v1 musí celý nejistý interval ležet uvnitř okna. Hraniční den proto může
+zůstat nevyhodnotitelný v obou sousedních obdobích. Tuto slabinu zveřejňujeme;
+novou konvencí nepřiřazujeme staré výsledky. Starý kontrolní toleranční posun
+14 hodin při porovnávání dne incidentu se zveřejněním pokrývá možné rozdíly
+kalendářního dne mezi časovými pásmy. Neopravňuje k posunu události do okna
+a není tolerancí pro samotné splnění prognózy.
+
+### Kdy výsledek uzavřeme
+
+V2 má konečný termín **14 dní po původním 72hodinovém či 168hodinovém doběhu
+hlášení**. Do něj může být výsledek průběžně unknown; potom musí následovat
+ano, ne nebo **void — konečně nevyhodnotitelné**, s důvodem a doloženou závěrečnou
+kontrolou. Chybějící rozhodnutí po termínu zůstává viditelně po termínu a vrací
+se do pracovní fronty. Samotné uplynutí času nevytvoří „ne“.
+V1 nový konečný termín ani stav void zpětně nedostává.
+
+Při novém záporném rozhodnutí se seznam otevřených tvrzení porovnává s případy
+a časově relevantní evidencí. Kandidát potřebuje posouzení vůči konkrétní otázce
+a jejím původním kritériím. Obecně uzavřené vyšetřování nestačí. Relevantní nález
+použitý při auditu pro „ne“ musí mít doložené vysvětlení, proč nevyhovuje.
+Tato kontrola zpřesňuje dokládání již platných pravidel i u dosud otevřených v1;
+jejich definice a časové podmínky nemění.
+
+Opravy konečného ano/ne dostanou výslovnou kategorii příčiny: nový důkaz,
+oprava zdroje, věcná chyba nebo chyba posouzení. Připojí se nový záznam s odkazem
+na předchozí; původní rozhodnutí se nemaže. Historie oprav je veřejná.
+
+### Co vstupuje do skóre
+
+Skóre jednotlivého rozhodnutého případu a původní průběžný Brier zůstávají
+dohledatelné. Hlavní souhrn navíc čeká na **dospění celé kohorty**: sady hlavních
+otázek se stejnou verzí, délkou a počátkem okna, včetně nejdelšího doběhu hlášení.
+Tím dřívější potvrzená „ano“ nepředbíhají ve hlavním souhrnu pozdější „ne“.
+Ani dospění sady nezaručuje vyřešení všech otázek; vedle skóre vždy ukazujeme
+počet vyřešených, nevyřešených, nevydaných odhadů a zdržení se odhadu.
+
+Pro všechny vydané číselné odhady v dospělých kohortách počítáme citlivost:
+všechny unknown/void jako ano, všechny jako ne a také skutečné nejlepší
+a nejhorší možné Brierovo skóre, **volené pro každý nevyřešený případ zvlášť**.
+Scénáře „vše ano“ a „vše ne“ nejsou obecně krajní meze. Jde o hypotetické
+výsledky, nikoli náhradu chybějícího pozorování. Ve zvláštní citlivosti
+hodnotíme zdržení se odhadu jako p = 0,5 se ztrátou 0,25; primární skóre se
+nemění. Nevydanému odhadu pravděpodobnost nedoplňujeme.
+
+Počet smluv, skupin závislosti a různých oken ukazujeme zvlášť. Skupiny nejsou
+prokázaně nezávislé a jejich násobení počtem oken **nedává efektivní velikost
+vzorku**. Tu zatím neodhadujeme. Verze ani 7denní a 30denní výsledky neslučujeme.
+
+### Jak vzniknou nová procenta
+
+Číselný odhad v2 musí obsahovat **3–5 samostatně zaznamenaných postupů**:
+referenční třídu, současné indikátory a alternativní scénář. U referenční třídy
+uvedeme měřený počet případů a zdroje, nebo výslovně přiznáme, že spolehlivá
+základní četnost chybí. Publikované p je medián původních hodnot; viditelné je
+i jejich minimum a maximum. Rozpětí není interval spolehlivosti a stejné zdroje
+či model z těchto postupů nedělají nezávislé prognostiky.
+
+Vlastní číslo se nejprve uloží. Až potom hledáme srovnatelný externí odhad.
+Srovnávací benchmark potřebuje shodné definice i obě meze okna, záznam před
+začátkem okna a nejvýše hodinu po vlastním vydání. Jinak jde pouze o kontext;
+nenalezený benchmark se přizná. Režim blind/informed a případný vliv dříve
+viděných externích hodnot jsou výslovně uvedeny. Lokální čas vydání není
+nezávislé časové razítko; veřejnou stopou jsou commity a nasazení webu.
+
+Kontrolujeme logické vztahy, například pobaltský ozbrojený útok ≤ útok na NATO
+při stejném okně a uzávěrce. Hodnota **1 − (1 − P7)^(30/7)** slouží pouze jako
+srovnání s konstantním rizikem. P7 = 55 % a P30 = 80 % není logický rozpor:
+znamená 55 % v prvním týdnu, dalších 25 % ve zbytku měsíce a 20 % bez události.
+V2 ukládá vysvětlení časového profilu. Různě definované dlouhé a krátké otázky
+se mechanicky nepřepočítávají. Kalibrační korekci z voleb na geopolitické
+události nepřenášíme; případná budoucí kalibrace vyžaduje vlastní výsledky.
+
+Energetická otázka v2 nyní předpovídá **potvrzení skutečně zavedených nouzových
+omezení po ruských útocích přímo Ukrenergem**, bez podmínky tří jmenovaných
+oblastí. [Primární zprávy Ukrenerga](https://t.me/s/Ukrenergo) takové skutečné
+zavedení popisují i bez seznamu oblastí. Plánovaná či běžná harmonogramová omezení
+nestačí. Jde o novou otázku; původní přísnější v1 se podle ní nevyhodnocuje.
+
+### Dlouhé prognózy a čas
+
+Od dalšího analytického běhu se změna dlouhého p rozloží na **časovou složku
+a složku nových důkazů**. Každá má důvod; součet musí reprodukovat nové p.
+Konstantní riziko je volitelný model, použitelný jen tehdy, když je nenastání
+dostatečně pozorovatelné a skutečně ověřené. Jinak se časová složka neaplikuje
+a uvede se důvod. „Beze změny důkazů“ tedy samo neurčuje časovou složku.
+
+Před další revizí se konkrétní kandidátní případy porovnají s původní definicí
+a původním začátkem dlouhého okna. Samotná přítomnost říjnové sabotáže v evidenci
+neříká, že nastala po 28. říjnu nebo splnila všechna kritéria. Nástroj nabízí
+kandidáty, nikoli automaticky kladné výsledky. Denní revize zůstávají v historii,
+ale do skóre vstupuje jen první způsobilá registrace otázky a verze.
+
+Starší konvenční otázky už probíhaly nebo byly naplněné před způsobilou
+registrací; do prospektivního skóre nepatří. Původní mobilizační otázka v1
+(60 %) byla nahrazena jinou definicí v2 (20 %) a zůstává **neskórovanou historickou
+prognózou**, nikoli opraveným odhadem stejné události. Nezměněné archivní zprávy
+a snímky uchovávají i tyto starší hodnoty.

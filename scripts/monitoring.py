@@ -10,13 +10,14 @@ import math
 from pathlib import Path
 
 import forecasting
+import forecast_methods
 from signals import AREAS, TOPICS, STATUSES, safe_url, temporal
 
-JSON_FILES = ('sources.json', 'events.json', 'indicators.json', 'metrics.json', forecasting.PROTOCOL)
+JSON_FILES = ('sources.json', 'events.json', 'indicators.json', 'metrics.json', forecasting.PROTOCOL, *forecast_methods.EXTRA_JSON)
 LOG_FILES = ('coverage.jsonl', 'monitoring-runs.jsonl', 'case-reviews.jsonl',
              'indicator-observations.jsonl', 'metric-observations.jsonl',
              'wdpi-assessments.jsonl', 'forecast-register.jsonl', 'forecast-resolutions.jsonl', 'evidence-reviews.jsonl',
-             forecasting.ROUNDS, forecasting.OUTCOMES)
+             forecasting.ROUNDS, forecasting.OUTCOMES, *forecast_methods.EXTRA_LOGS)
 FILES = JSON_FILES + LOG_FILES
 DOMAINS = {'official_assessment': 'Oficiální hodnocení', 'incidents': 'Incidenty',
            'readiness': 'Připravenost', 'policy_effect': 'Politické a společenské účinky'}
@@ -72,6 +73,8 @@ def load(data: Path):
     for name in LOG_FILES:
         result[name] = [json.loads(line) for line in (data / name).read_text().splitlines() if line.strip()]
         index(result[name], name)
+    if (data / 'geography.json').is_file():
+        result['_geography'] = json.loads((data / 'geography.json').read_text())
     return result
 
 
@@ -88,6 +91,9 @@ def completed_tasks(bundle, run_id, at):
     for outcome in bundle[forecasting.OUTCOMES]:
         if instant(outcome['resolved_at']) <= at and set(outcome['check_ids']) & checks.keys():
             completed.add('forecast:resolve:'+outcome['forecast_id'])
+    for record in bundle.get(forecast_methods.BENCHMARKS, []):
+        if record.get('run_id') == run_id and instant(record['recorded_at']) <= at:
+            completed.add('forecast:benchmark:'+record['forecast_id'])
     return completed
 
 
@@ -236,6 +242,7 @@ def validate(bundle, evidence, state):
         require(Path(forecast['report']).name == forecast['report'] and forecast['report'].endswith('.md'), 'Unsafe registration report path')
     resolutions = index(bundle['forecast-resolutions.jsonl'], 'forecast resolution')
     last_resolution = {}
+    last_definitive = {}
     for resolution in resolutions.values():
         require(resolution['forecast_id'] in registrations, 'Unknown resolved forecast')
         forecast = registrations[resolution['forecast_id']]
@@ -246,6 +253,11 @@ def validate(bundle, evidence, state):
         urls(resolution['source_urls'])
         require(resolution['rationale'], 'Resolution needs adjudication rationale')
         require(resolution.get('supersedes') == last_resolution.get(forecast['id']), 'Resolution corrections must name preceding adjudication')
+        prior=last_definitive.get(forecast['id'])
+        policy=bundle.get(forecast_methods.POLICY)
+        if (policy and resolved >= instant(policy['introduced_at']) and prior
+                and resolution['outcome'] in {'yes','no'} and prior['outcome'] != resolution['outcome']):
+            require(resolution.get('correction_reason_class') in policy['correction_classes'] and resolution.get('correction_note'), 'Definitive long outcome flip needs a classified correction reason')
         if resolution['outcome'] == 'yes':
             event = instant(resolution['event_time'])
             require(instant(forecast['window_start']) < event <= instant(forecast['window_end']) and event <= resolved, 'Resolved event outside forecast window')
@@ -253,6 +265,8 @@ def validate(bundle, evidence, state):
         if resolution['outcome'] == 'no':
             require(resolved >= instant(forecast['window_end']) and resolution.get('coverage_basis'), 'No needs closed horizon and adequate observation coverage')
         last_resolution[forecast['id']] = resolution['id']
+        if resolution['outcome'] in {'yes','no'}:
+            last_definitive[forecast['id']] = resolution
     for item in evidence:
         if item.get('intake_type') == 'retrospective_backfill':
             require(item.get('forecast_integration') in {'pending_review', 'reviewed_no_change', 'integrated'}, 'Backfill needs integration status')
@@ -274,6 +288,7 @@ def validate(bundle, evidence, state):
         require(scope.get('coverage_status') == status, 'Assessment coverage status must expose incomplete tasks')
     forecasting.validate(bundle, evidence)
     forecasting.validate_legacy_windows(bundle, state)
+    forecast_methods.validate_long_updates(bundle, evidence, state)
     return bundle
 
 
@@ -481,12 +496,17 @@ def quality_content(data, bundle, state, labels=None):
         indicator_rows.append([e(i['label']), e(i['expected_signature']), e(i['baseline']) + '<p>' + e(i['alternative']) + '</p>',
                                e(last['observed_at'] + ' · ' + last['result'] if last else 'Bez strukturovaného pozorování')])
     score = f'{evaluation_data["brier"]:.4f}' if evaluation_data['brier'] is not None else 'Zatím nevyčíslujeme'
+    long_corrections=''.join('<li>'+e(r['forecast_id'])+' · '+e(r['correction_reason_class'])+' · '+e(r['correction_note'])+' '+
+                             ' · '.join(source_link(u) for u in r['source_urls'])+'</li>'
+                             for r in bundle['forecast-resolutions.jsonl'] if r.get('correction_reason_class'))
+    long_history='<details><summary>Opravy konečných výsledků dlouhých otázek</summary>'+('<ul>'+long_corrections+'</ul>' if long_corrections else '<p>Dosud žádné zaznamenané opravy konečného ano/ne.</p>')+'</details>'
     return f'''<div class="hero"><div><p class="eyebrow">Kontrola kvality</p><h1>Události, důkazy a výsledky</h1><p class="lede">Více článků nemusí znamenat více událostí ani více nezávislých potvrzení.</p></div></div>
 <div class="archive-notice">Ruční propojení: {len(data['events'])} událostí či hodnocení. {data['unlinked_records']} záznamů ještě nemá revidované přiřazení. Přehled není úplný počet útoků. Zdrojové rodiny se počítají uvnitř případu, nikoli jako potvrzení každého jeho tvrzení.</div>
 <section class="section"><h2>Propojené případy</h2>{table(['Případ', 'Záznamy / zdrojové rodiny', 'Atribuce a nejistota', 'Další kontrola'], event_rows)}</section>
 <section class="section"><h2>Kandidáti k prověření duplicit</h2><p>{len(data['duplicate_candidates'])} skupin se stejnou URL a dosud neúplnou revizí. Živý index nebo Telegram feed může obsahovat různé události; shoda URL není automatické sloučení.</p><details><summary>Otevřít seznam</summary><ul>{''.join('<li>' + source_link(c['url']) + ' · ' + e(', '.join(c['evidence_ids'])) + '</li>' for c in data['duplicate_candidates'])}</ul></details></section>
 <section class="section"><h2>Očekávané a chybějící indikátory</h2><p class="note">Absenci lze vyhodnotit jen tam, kde měla být změna pozorovatelná a proběhla dostatečná kontrola. Chybějící měření znamená neznámý stav.</p>{table(['Indikátor', 'Očekávaný projev', 'Baseline a alternativa', 'Poslední pozorování'], indicator_rows)}</section>
 <section class="section"><h2>Původní dlouhé prognózy</h2><p><a href="forecasts.html">Nové 7denní a 30denní prognózy s pevnými okny a úplným přehledem výsledků →</a></p><p><strong>Brier původního registru: {score}</strong> · {evaluation_data['scored_questions']} vyhodnocených otázek. Brier = průměr (p − výsledek)²; ano = 1, ne = 0. Neznámé výsledky se nepočítají.</p><p class="note">{e(evaluation_data['rule'])} Starší vydání používala posouvané počátky; jejich hodnoty se zpětně nemění. Nový protokol je vyhodnocován zvlášť. Malý vzorek nedokládá kalibraci. Dříve uzavřené otázky nejsou zpětně registrované úspěšné předpovědi.</p>{table(['Otázka', 'Odhad', 'Zmrazené okno', 'Výsledek', 'Brier', 'Způsobilost'], forecast_rows)}</section>
+<section class="section"><h2>Metodický audit a opravy</h2><p><a href="methodology.html#metodika-v2">Změny metodiky od 4. listopadu 2026</a> · <a href="forecasts.html#opravy">Historie oprav konečných výsledků krátkých prognóz</a></p><p>Starší mobilizační otázka v1 (60 %) byla nahrazena jinou definicí v2 (20 %). Zůstává neskórovanou historickou prognózou. Dříve probíhající konvenční eskalace do prospektivního skóre nevstupují. Původní archiv uchovává jejich hodnoty i pravidla.</p>{long_history}</section>
 <p><a href="data/events.json">Registr událostí</a> · <a href="data/forecast-register.jsonl">Registr předpovědí</a> · <a href="data/forecast-resolutions.jsonl">Adjudikace</a> · <a href="coverage.html">Pokrytí zdrojů →</a></p>'''
 
 

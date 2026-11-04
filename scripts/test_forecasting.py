@@ -19,6 +19,8 @@ class FixedForecastTests(unittest.TestCase):
         self.bundle = m.load(build_site.DATA)
         self.bundle[f.ROUNDS] = []
         self.bundle[f.OUTCOMES] = []
+        for name in f.methods().EXTRA_LOGS:
+            self.bundle[name] = []
         self.state = json.loads((build_site.DATA / 'snapshots/2026-10-30-0808.json').read_text())
         self.evidence = [json.loads(line) for line in (build_site.DATA / 'evidence.jsonl').read_text().splitlines() if line.strip()]
         self.protocol = self.bundle[f.PROTOCOL]
@@ -68,6 +70,14 @@ class FixedForecastTests(unittest.TestCase):
         row = dict(id='TEST-outcome-'+str(self.counter),forecast_id=forecast['id'],resolved_at=at.isoformat(),outcome=result,
                    evidence_ids=[],check_ids=[check],source_urls=['https://example.com/TEST'],rationale='TEST adjudication',supersedes=None,
                    open_claim_ids=[],coverage_basis='TEST checked full source panel and full time interval')
+        if result == 'no':
+            # This synthetic complete-negative fixture explicitly screens live cases.
+            # Dedicated method-v2 tests below exercise missing/incorrect screenings.
+            for n,candidate in enumerate(f.methods().candidate_universe(self.bundle,self.evidence,forecast,at).values()):
+                self.bundle[f.methods().CANDIDATES].append(dict(id=f'TEST-screen-{self.counter}-{n}',forecast_id=forecast['id'],
+                    candidate_id=candidate['id'],reviewed_at=at.isoformat(),decision='non_qualifying',
+                    failed_criteria=['outside_scope'],evidence_ids=candidate['evidence_ids'],check_ids=[check],
+                    source_urls=['https://example.com/TEST'],supersedes=None,rationale='TEST fixture excludes production cases from this synthetic question outcome.'))
         if result == 'unknown':
             row['next_check_by'] = (at+timedelta(days=1)).isoformat()
         if result == 'yes':

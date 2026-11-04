@@ -29,12 +29,26 @@ def preserve_history(ref="HEAD"):
     old_protocol = git('show', f'{ref}:russia-escalation/{forecasting.PROTOCOL}', check=False)
     if old_protocol.returncode == 0:
         forecasting.preserve_protocol(json.loads(old_protocol.stdout), json.loads((DATA / forecasting.PROTOCOL).read_text()), datetime.now(PRAGUE))
+    for name in forecasting.methods().EXTRA_JSON:
+        old = git('show', f'{ref}:russia-escalation/{name}', check=False)
+        current = json.loads((DATA / name).read_text())
+        if old.returncode == 0:
+            if name == forecasting.methods().V2:
+                forecasting.preserve_protocol(json.loads(old.stdout), current, datetime.now(PRAGUE))
+            elif json.loads(old.stdout) != current:
+                raise ValueError('Published review policy is immutable; introduce a new version')
+        elif name == forecasting.methods().V2:
+            now = datetime.now(PRAGUE)
+            if forecasting.instant(current['active_from']) <= now:
+                raise ValueError('A new methodology must be published before its future windows')
     for name in ('evidence.jsonl', *LOG_FILES):
         old = git("show", f"{ref}:russia-escalation/{name}", check=False)
         if old.returncode == 0:
             current = (DATA / name).read_text()
             if not current.startswith(old.stdout):
                 raise ValueError(f"Evidence/audit history changed in {name}; append new records instead of rewriting old ones")
+            if name == 'evidence.jsonl':
+                forecasting.methods().validate_new_evidence_labels([json.loads(line) for line in current[len(old.stdout):].splitlines() if line.strip()])
     historic_paths = git("ls-tree", "-r", "--name-only", ref, "russia-escalation/reports", "russia-escalation/snapshots", check=False)
     for name in historic_paths.stdout.splitlines():
         before = git("show", f"{ref}:{name}").stdout

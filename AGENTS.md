@@ -1495,3 +1495,215 @@ and other war-related questions still have dependencies; the number of scored
 contracts is not a count of independent conflicts. Do not claim calibration or
 statistically established forecasting skill merely because a score exists.
 The retrospective audit remains separate from these prospective results.
+
+# Methodological audit v2 — introduced 4 November 2026
+
+This extension supersedes conflicting issuance instructions above **only for
+future fixed-v2 contracts**, and adds evidence checks for future adjudications.
+It does not change any issued probability, window, criterion, source threshold,
+old outcome row, archived report or snapshot. Do not rewrite `forecast-protocol.json`.
+Read `forecast-protocol-v2.json` and `forecast-review-policy.json` alongside the
+original protocol and all forecast logs on every run. The current code selects
+the applicable version; do not hard-code fixed-v1 in a new issuance request.
+
+## Transition and research
+
+The UTC anchor and elapsed lengths remain unchanged. The first v2 7-day window
+starts **7 November 2026 08:00 CET**; the first v2 30-day window starts
+**30 November 2026 08:00 CET**. Each issuance opens 24 hours before its start.
+Running v1 windows retain their old rules through adjudication. Never create a
+replacement v2 issue for a window already issued as v1. `forecast.py plan`
+reproduces historical queues before the version announcement as well.
+
+Before research run `monitor.py due`, `forecast.py plan`,
+`forecast.py coherence` and `forecast.py long-review`. Loading a queue is not
+performing a source check or adjudication. Use the original long windows from
+`monitor.py origins`. Keep the existing daily schedule and publication workflow.
+
+For each v2 numerical estimate fill the plan's template with:
+
+- `estimation_passes`: 3–5 raw records, each with unique `id`, `approach`, `p`,
+  substantive `rationale`, actual `completed_at` no later than `source_cutoff`,
+  and `check_ids` already performed by that time. Include all three approaches:
+  `reference_class`, `indicators`, `alternative_scenario`. Record each judgment
+  before aggregation; do not manufacture three numbers around a chosen median.
+- In each reference-class pass, `base_rate` has `status: available|unavailable`
+  and `note`. Available rates also need positive integer `trials`, integer
+  `events` within 0..trials and `source_urls`. If no defensible empirical sample
+  exists, say so. Do not label an intuitive prior as a measured base rate.
+- Set issued `p` to the median of raw values. The CLI freezes min/max as
+  `estimate_spread`; it is not a confidence interval. Store actual source checks,
+  the alternative explanation and provenance as before. Do not mechanically map
+  a long-horizon probability or apply an election-derived calibration transform.
+- `estimation_mode: blind|informed`, `dependence_note`; informed also requires
+  `external_influence_note`. Same-model approaches and shared sources are not
+  statistically independent forecasters. Do not claim blind mode if external
+  probabilities already influenced the estimate. Abstentions remain legitimate
+  but need a substantive reason, mode/dependence and the notes below.
+- `temporal_profile: {shape, rationale}`, where shape is `constant`,
+  `front_loaded`, `back_loaded`, `mixture` or `uncertain`. Explain the judgment.
+- `related_question_note`: compare related long questions available in
+  `plan.related_question_context`, acknowledging exact definitions, different
+  horizons and source cutoffs. No match is also an explicit finding. A long
+  coercive nuclear demonstration differs from a short actual non-attack test;
+  a public mobilisation order differs from actual coerced mobilisation.
+
+The constant-hazard P30 diagnostic `1-(1-P7)^(30/7)` is not a validity law.
+P7 <= P30 is required only for truly nested windows and the same cutoff.
+The v2 Baltic armed-attack question is a subset of the NATO armed-attack
+question for equal windows/cutoffs. Czech and EU disclosure panels differ;
+their probabilities are not mechanically ordered. Explain divergences; never
+change a number merely to look smoother. Do not pool 7/30 days or versions.
+
+The new energy question concerns Ukrenergo's confirmation of **actual emergency
+restrictions after Russian attacks**, without the three-named-oblast threshold.
+Scheduled/planned restrictions do not qualify. Distinct operational days use
+distinct incident cases. The original grid-v1 question keeps its original
+threshold; do not use the new definition to resolve old forecasts.
+
+## Source-day convention — v2 only
+
+Precise times still use `(start, end]`. For a source that gives only YYYY-MM-DD,
+retain the whole day and its actual source timezone. Assign it to the elapsed
+UTC window with greatest overlap; an exact tie belongs to the later window.
+Use `forecast_methods.assigned_day_window` and `forecasting.timing_bounds`.
+Store `date_assignment` with `policy: source-day-majority-v2`, `window_number`
+and `source_timezone`, plus the unchanged raw date, `qualifying_timezone` and
+the entire `qualifying_time_start/end`. This is classification, not an invented
+hour. The source day must already be complete when adjudicated. A known precise
+timestamp takes precedence; unknown timezone means unresolved timing.
+
+V1 still requires its full uncertainty interval inside the original window.
+Its boundary-day blind spot is a published limitation, not grounds to invent
+a time, reject a potentially qualifying case or silently return no.
+
+## Candidate checks before a new negative outcome
+
+Run `forecast.py candidates --forecast-id ID` to inspect source-dated candidate
+cases and evidence. The candidate filter is a conservative lead generator,
+not a decision that every item qualifies. A generic `case_status: closed`
+does not establish nonqualification for a particular forecast. Do not omit
+relevant candidates because their attribution or time remains inconvenient.
+New evidence or a later relevant case review makes an older nonqualification
+stale; reassess it before using that exclusion to close no.
+
+Use `forecast.py review-candidate --input /tmp/candidate-reviews.json` with:
+
+```json
+{"forecast_id":"ISSUED_ID","candidate_id":"CASE_ID_OR_evidence:ID",
+ "decision":"unresolved|non_qualifying|qualifying","rationale":"...",
+ "failed_criteria":["FROZEN_CRITERION_KEY"],"evidence_ids":["..."],
+ "check_ids":["ACTUAL_CHECK_ID"],"source_urls":["https://..."],"supersedes":null}
+```
+
+The CLI generates actual review ID/time. Later review of the same
+forecast/candidate supersedes its preceding record. Nonqualification must name
+a frozen failed criterion, `outside_scope`, `outside_window` or
+`not_new_disclosure`, with a substantive rationale. Ambiguous boundary timing
+cannot be dismissed as outside the window. For a v2 date-only exclusion
+assigned to another window, attach `date_assignments` keyed by evidence ID,
+using the same policy, source timezone and computed number as above.
+
+For **new no decisions, including still-open v1**, the validator compares
+`open_claim_ids` to candidates and requires none unresolved or qualifying.
+Every relevant_found item in closure checks also needs an entry in outcome
+`non_qualifying_evidence`, keyed by evidence ID with `failed_criteria` and
+`rationale`, and must be in outcome `evidence_ids`. Meet every original bounded
+source-group audit requirement. These are supporting checks for the original
+no rule, not a changed event definition or reduced source threshold.
+
+## Final adjudication — v2 only
+
+The issue record freezes `final_adjudication_by = settle_after + 14 days`.
+Before that, unknown needs a next check no later than this deadline. At or
+after it, append yes, no or **void**. Void requires `void_reason_class` from
+the contract, a substantive rationale, `coverage_basis`, attempted `check_ids`
+and an actual forecast-specific final audit at/after the deadline. Do not
+choose void early to avoid a difficult question. A missed final decision is
+visible as `awaiting_final_resolution` and remains due; no result is invented.
+V1 has no newly imposed final deadline or void outcome.
+
+For future definitive yes/no flips, include `correction_reason_class`:
+`new_evidence`, `source_correction`, `factual_error`, `adjudication_error`, plus
+`correction_note` and `supersedes`. Preserve all preceding rows. A correction
+does not produce another independent sample.
+
+## Scores and external comparison
+
+Keep original per-case Brier and definitive-only running score available.
+The additional headline uses fully matured cohorts: same protocol, horizon
+and window start, after the **maximum settlement delay of all primary
+questions** in that set. This is a presentation diagnostic, not rescoring old
+answers. Show missingness alongside it. Do not treat early yes as evidence
+of skill before the rest of the set can be resolved negatively.
+
+For numeric issues in matured cohorts show definitive-only scores and
+sensitivity with all unknown/void as yes, all as no, and per-contract best/worst
+loss. Uniform all-yes/all-no are not general extrema. Separately show a
+sensitivity counting abstention as p=.5/loss=.25. Primary scores remain
+unchanged; missed issuance never becomes a zero probability.
+
+Show distinct scored dependency groups and windows next to scored contracts.
+Also keep planned counts. Groups are not proven independent and effective
+sample size is `null`, not windows multiplied by groups. Retain the first
+eligible long registration per cohort; daily revisions never inflate n.
+
+After own issuance, actually seek an external benchmark. Use
+`forecast.py benchmark --input /tmp/external-benchmarks.json` with `forecast_id`,
+`provider`, `status: matched|context_only|not_found`, `p` (null for not_found),
+`rationale`, `source_urls` and optional `run_id`. The CLI stamps actual receipt
+times. Matched additionally needs `criteria_match: true`, substantive
+`definition_match`, and exact `window_start/end`; it must be received before
+window start and within one hour of own issue. Otherwise use context_only.
+Do not retrofit a later market probability as an issuance benchmark or invent
+a comparable market. Record an unsuccessful search explicitly. Compare the
+first eligible quote per provider on the same matured resolved subset only.
+The benchmark task is part of the run; preserve own raw estimates first.
+CLI timestamps are local records. Public commit/deployment history supplies
+the external publication trail, not an independent trusted timestamp service.
+
+## Long revisions from 5 November 2026
+
+Before revising an active long hypothesis use `forecast.py long-review` at
+the intended real assessment time. Its candidates must be checked against the
+**original** definition/window, not the fixed-v2 definitions. Its
+`adjudication_forecast_id` selects the first eligible registration. A genuinely
+qualifying event resolves that original question; do not keep calling it an
+unrealised risk or register a replacement without a new question version.
+
+Copy the per-question template into `hypothesis.revision_decomposition`:
+`prior_p`, `previous_as_of`, `as_of`, `time_model`, `delta_time_pp`,
+`delta_evidence_pp`, `time_rationale`, `evidence_rationale`,
+`no_qualifying_event_confirmed`, `check_ids`. The prior and previous time must
+match the last saved revision, and both deltas must reproduce new p exactly.
+
+Default to `time_model: not_applied`, zero time delta and an honest reason
+where observable survival is not established. Constant hazard is **optional**,
+not a universal assumption. `constant_hazard_conditional_survival` requires
+`observability: high`, checked absence, successful current `check_ids`, and no
+unresolved candidate. Its conditional remaining p is
+`1-(1-prior_p)^((end-as_of)/(end-previous_as_of))`; compute the time delta from
+that value. Record new evidence separately. Do not condition on unobserved
+absence or treat constant hazard as evidence about intent.
+
+Copy and actually fill `candidate_audit`: each candidate has its ID,
+`decision: unresolved|non_qualifying`, evidence IDs and rationale. Unresolved
+also needs `missing_evidence`; non_qualifying needs `failed_criterion` stated
+against the original long definition. Do not invent completed checks from a
+template. An active question cannot mark a qualifying event as ignored.
+If open-war p exceeds larger-conventional-attack p, give its hypothesis a
+`coherence_note` explaining the distinct definitions/pathways; do not force an
+unsupported subset relation. Preserve all old snapshots and percentages.
+
+For newly appended evidence use stored statuses `confirmed`, `reported`,
+`unverified_claim`, `analytical_inference`, `scenario`; signal types `intent`,
+`capability`, `opportunity`, `readiness`, `rhetoric/signalling`, `effect`.
+Historical variants remain unchanged. Publication validates new label spellings.
+Continue to use Brier; no new log score or clipping is introduced.
+
+Before publication run the existing tests, build validation, complete build
+and site checks. Publication keeps all new method files/logs in the exact
+allowlist and guards every original contract and log prefix. A method-only
+release must preserve `state.json`, report/snapshot contents and assessment
+time, use the metadata guard, and verify the deployed method/evaluation pages
+and raw data. No new forecast is implied by this release.

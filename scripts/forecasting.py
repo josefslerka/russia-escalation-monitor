@@ -5,7 +5,6 @@ from collections import defaultdict
 from copy import deepcopy
 from datetime import datetime, timedelta, timezone
 from hashlib import sha256
-from html import escape
 import json
 import math
 import re
@@ -17,6 +16,12 @@ PROTOCOL = 'forecast-protocol.json'
 ROUNDS = 'forecast-rounds.jsonl'
 OUTCOMES = 'forecast-outcomes.jsonl'
 UTC = timezone.utc
+
+
+def methods():
+    # Lazy import keeps the legacy helpers reusable by the versioned methods module.
+    import forecast_methods
+    return forecast_methods
 
 
 def instant(value):
@@ -92,15 +97,22 @@ def make_issue(protocol, request, at):
     """Freeze a researched judgment before a predefined window; never scale an annual p."""
     allowed = {'question_id', 'horizon_days', 'window_number', 'p', 'source_cutoff',
                'rationale', 'alternative', 'evidence_ids', 'check_ids', 'source_urls', 'abstention_reason'}
+    if protocol['id'] == 'fixed-v2':
+        allowed |= {'estimation_passes','estimation_mode','external_influence_note','dependence_note','temporal_profile','related_question_note'}
     require(set(request) <= allowed, 'Unknown issue fields; timestamps/contracts are generated')
     q = question_map(protocol)[request['question_id']]
     start, end = window(protocol, request['horizon_days'], request['window_number'])
-    return {**deepcopy(request), 'id': identifier(q['id'], request['horizon_days'], start),
+    result = {**deepcopy(request), 'id': identifier(q['id'], request['horizon_days'], start),
             'protocol': protocol['id'], 'issued_at': at.isoformat(),
             'window_start': start.isoformat(), 'window_end': end.isoformat(),
             'settle_after': (end + timedelta(hours=q['settlement_delay_hours'])).isoformat(),
             'contract': deepcopy(q), 'contract_hash': digest(q),
             'benchmarks': deepcopy(protocol['benchmarks'])}
+    if protocol['id'] == 'fixed-v2':
+        result['final_adjudication_by'] = (instant(result['settle_after']) + timedelta(days=q['adjudication_policy']['final_delay_days'])).isoformat()
+        estimates = [p['p'] for p in request.get('estimation_passes', [])]
+        result['estimate_spread'] = [min(estimates),max(estimates)] if estimates else []
+    return result
 
 
 def timing_bounds(raw, zone=None):
@@ -125,8 +137,11 @@ def validate(bundle, evidence):
     checks = {c['id']: c for c in bundle['coverage.jsonl']}
     evid = {e['id']: e for e in evidence}
     events = {e['id']: e for e in bundle['events.json']['events']}
-    questions = question_map(p)
-    require(len(questions) == len(p['questions']), 'Duplicate fixed question')
+    methods().validate_v2_protocol(bundle)
+    all_protocols = methods().protocols(bundle)
+    questions = {q['id']:q for protocol in all_protocols for q in protocol['questions']}
+    protocol_by_question = {q['id']:protocol for protocol in all_protocols for q in protocol['questions']}
+    require(len(questions) == sum(len(protocol['questions']) for protocol in all_protocols), 'Duplicate fixed question')
     for q in questions.values():
         require(q['label'] and q['definition'] and q['version'] >= 1, 'Incomplete fixed definition')
         require(instant(q['active_from']) >= epoch, 'Question activity precedes fixed protocol')
@@ -141,14 +156,17 @@ def validate(bundle, evidence):
             require(0 < group['min_sources'] <= len(group['source_ids']), 'Invalid closure source threshold')
         require(bool(group_ids), 'Missing closure source groups')
     retired = {}
-    for retirement in p['retirements']:
+    for retirement in [r for protocol in all_protocols for r in protocol['retirements']]:
         qid = retirement['question_id']
         require(qid in questions and qid not in retired, 'Invalid/repeated question retirement')
         retired[qid] = instant(retirement['effective_at'])
         require(retired[qid] > instant(questions[qid]['active_from']) and retirement['reason'], 'Invalid retirement timing/reason')
     rounds = {f['id']: f for f in bundle[ROUNDS]}
     for f in rounds.values():
-        require(f['question_id'] in questions and f['protocol'] == p['id'], 'Unknown forecast question/protocol')
+        require(f['question_id'] in questions, 'Unknown forecast question/protocol')
+        p = protocol_by_question[f['question_id']]
+        introduced = instant(p['introduced_at'])
+        require(f['protocol'] == p['id'], 'Unknown forecast question/protocol')
         q = questions[f['question_id']]
         require(f['contract'] == q and f['contract_hash'] == digest(q), 'Issued contract differs from frozen definition; retain old version')
         require(type(f['window_number']) is int and f['window_number'] >= 0 and f['horizon_days'] in p['horizons_days'], 'Invalid fixed window number/horizon')
@@ -158,6 +176,9 @@ def validate(bundle, evidence):
         require(f['id'] == identifier(q['id'], f['horizon_days'], start), 'Noncanonical fixed forecast ID')
         require(instant(f['settle_after']) == end + timedelta(hours=q['settlement_delay_hours']), 'Settlement deadline changed')
         issued, cutoff = instant(f['issued_at']), instant(f['source_cutoff'])
+        successor = bundle.get(methods().V2)
+        if p['id'] == 'fixed-v1' and successor and issued >= instant(successor['introduced_at']):
+            require(start < instant(successor['transition'][str(f['horizon_days'])]), 'Retired issuance slot belongs to the new methodology')
         require(introduced <= issued < start and start - issued <= timedelta(hours=p['issue_lead_hours']), 'Issue must precede its fixed window, inside issuance period')
         require(cutoff <= issued and issued - cutoff <= timedelta(hours=p['maximum_source_age_hours']), 'Invalid/stale issue source cutoff')
         require((f['p'] is None and bool(f.get('abstention_reason'))) or probability(f['p']), 'Invalid probability; abstention requires reason')
@@ -169,6 +190,7 @@ def validate(bundle, evidence):
         require(max(instant(checks[c]['checked_at']) for c in f['check_ids']) >= issued - timedelta(hours=p['maximum_source_age_hours']), 'Issue relies only on stale checks')
         require(f['p'] is None or any(checks[c]['outcome'] != 'unavailable' for c in f['check_ids']), 'All sources unavailable: record abstention instead of a numeric forecast')
         require(f['source_urls'] and all(safe_url(u) for u in f['source_urls']), 'Issue source links missing')
+        methods().validate_estimate(f, checks)
     # Same cutoff and nested event windows should not reverse their probabilities.
     paired = defaultdict(dict)
     for f in rounds.values():
@@ -176,8 +198,11 @@ def validate(bundle, evidence):
             paired[(f['question_id'], f['window_start'], f['source_cutoff'])][f['horizon_days']] = f['p']
     for values in paired.values():
         require(not {7, 30} <= values.keys() or values[7] <= values[30], 'Thirty-day probability below nested seven-day probability at same cutoff')
+    methods().validate_relations(list(rounds.values()))
+    methods().validate_auxiliary(bundle, evidence)
     previous = {}
     previous_times = {}
+    previous_definitive = {}
     for r in bundle[OUTCOMES]:
         require(r['forecast_id'] in rounds, 'Unknown fixed forecast outcome')
         f = rounds[r['forecast_id']]
@@ -188,7 +213,8 @@ def validate(bundle, evidence):
         require(f['id'] not in previous_times or at >= previous_times[f['id']], 'Outcome corrections out of time order')
         previous[f['id']] = r['id']
         previous_times[f['id']] = at
-        require(r['outcome'] in {'yes', 'no', 'unknown'} and r['rationale'], 'Missing outcome/rationale')
+        allowed_outcomes = {'yes','no','unknown'} | ({'void'} if f['protocol'] == 'fixed-v2' else set())
+        require(r['outcome'] in allowed_outcomes and r['rationale'], 'Missing outcome/rationale')
         require(isinstance(r['evidence_ids'], list) and set(r['evidence_ids']) <= set(evid), 'Unknown outcome evidence')
         require(isinstance(r['check_ids'], list) and set(r['check_ids']) <= set(checks), 'Unknown outcome checks')
         require(all(instant(checks[c]['checked_at']) <= at for c in r['check_ids']), 'Outcome precedes its checks')
@@ -198,17 +224,21 @@ def validate(bundle, evidence):
             require(events[r['case_id']]['kind'] in {'incident','policy'}, 'Yes needs an event-level case, not a series or general assessment')
             require(set(r['evidence_ids']) & {l['evidence_id'] for l in events[r['case_id']]['links']}, 'Outcome evidence is not linked to its case')
             lo, hi = instant(r['qualifying_time_start']), instant(r['qualifying_time_end'])
-            require(instant(f['window_start']) < lo <= hi <= instant(f['window_end']) and hi <= at, 'Qualifying time uncertainty crosses fixed window boundary')
+            if f['protocol'] == 'fixed-v1':
+                require(instant(f['window_start']) < lo <= hi <= instant(f['window_end']) and hi <= at, 'Qualifying time uncertainty crosses fixed window boundary')
             require(r.get('event_time') or r.get('event_time_note'), 'Preserve actual incident time or explain its absence')
             if q['time_basis'] == 'publication':
                 require(r.get('publication_time') and r.get('first_qualifying_publication') is True, 'Disclosure outcome requires first qualifying publication')
                 raw_time = r['publication_time']
                 event_period = temporal(r.get('event_time'))
-                require(not event_period['start'] or event_period['start'] <= (hi + timedelta(hours=14)).date().isoformat(), 'Disclosure cannot attest a future physical incident')
+                if f['protocol'] == 'fixed-v1':
+                    require(not event_period['start'] or event_period['start'] <= (hi + timedelta(hours=14)).date().isoformat(), 'Disclosure cannot attest a future physical incident')
             else:
                 require(r.get('event_time') and r.get('timing_basis') == 'occurrence', 'Occurrence outcome cannot use disclosure date')
                 raw_time = r['event_time']
             require((lo, hi) == timing_bounds(raw_time, r.get('qualifying_timezone')), 'Qualifying bounds differ from original event/publication time precision')
+            if f['protocol'] == 'fixed-v2':
+                methods().validate_v2_time(bundle,evidence,f,r,raw_time,lo,hi)
             answers = r['criterion_evidence']
             require(set(answers) == set(q['criteria']) and all(isinstance(v, list) and v and set(v) <= set(r['evidence_ids']) for v in answers.values()), 'Every frozen criterion needs evidence')
             if q['time_basis'] == 'publication':
@@ -233,8 +263,11 @@ def validate(bundle, evidence):
             require(r['check_ids'], 'No needs successful source checks')
             for group in q['source_groups']:
                 require(len(covered & set(group['source_ids'])) >= group['min_sources'], 'Closure source group incompletely checked')
-        else:
+        elif r['outcome'] == 'unknown':
             require(instant(r['next_check_by']) > at, 'Unknown outcome needs a new check deadline')
+        methods().validate_outcome(bundle,evidence,f,r,previous_definitive.get(f['id']))
+        if r['outcome'] in {'yes','no'}:
+            previous_definitive[f['id']] = r
     # A later derivative cannot manufacture another first publication of the same case.
     case_times = {}
     for r in latest(bundle[OUTCOMES]).values():
@@ -288,36 +321,47 @@ def assessment_scope(bundle, at):
     data = evaluate(bundle, at)
     return {'reviewed_at': at.isoformat(),
             'missed_issue_ids': sorted(r['id'] for r in data['rows'] if r['status'] == 'missed'),
-            'pending_outcome_ids': sorted(r['id'] for r in data['rows'] if r['status'] in {'awaiting_resolution', 'unknown'}),
+            'pending_outcome_ids': sorted(r['id'] for r in data['rows'] if r['status'] in {'awaiting_resolution', 'unknown', 'awaiting_final_resolution'}),
             'awaiting_issue_ids': sorted(r['id'] for r in data['rows'] if r['status'] == 'awaiting_issue')}
 
 
 def tasks(bundle, at):
-    p, rounds, outcomes = bundle[PROTOCOL], {f['id']: f for f in bundle[ROUNDS]}, latest(bundle[OUTCOMES])
+    rounds = {f['id']:f for f in bundle[ROUNDS] if instant(f['issued_at']) <= at}
+    outcomes = latest([r for r in bundle[OUTCOMES] if instant(r['resolved_at']) <= at])
     result = []
-    for slot in slots(p, at):
+    for slot in methods().planned_slots(bundle, at):
         if slot['id'] not in rounds and instant(slot['issue_opens']) <= at < instant(slot['window_start']):
             result.append({'id': 'forecast:issue:' + slot['id'], 'kind': 'forecast_issue', 'priority': 0, **{k:v for k,v in slot.items() if k != 'id'}})
     for f in rounds.values():
         outcome = outcomes.get(f['id'])
         deadline = outcome['next_check_by'] if outcome and outcome['outcome'] == 'unknown' else f['settle_after']
+        final = f.get('final_adjudication_by')
+        if final and instant(final) < instant(deadline):
+            deadline = final
         if f['p'] is not None and (not outcome or outcome['outcome'] == 'unknown') and at >= instant(deadline):
             result.append({'id': 'forecast:resolve:' + f['id'], 'kind': 'forecast_resolution', 'priority': 0,
-                           'forecast_id': f['id'], 'scheduled_for': deadline, 'window_end': f['window_end']})
+                           'forecast_id': f['id'], 'scheduled_for': deadline, 'window_end': f['window_end'],
+                           'must_finalize': bool(final and at >= instant(final))})
+        if f['protocol'] == 'fixed-v2' and f['p'] is not None and not any(r['forecast_id']==f['id'] and instant(r['recorded_at'])<=at for r in bundle.get(methods().BENCHMARKS,[])):
+            result.append(dict(id='forecast:benchmark:'+f['id'],kind='forecast_benchmark',priority=1,forecast_id=f['id'],
+                               instruction='Own estimate is frozen. Record a comparable pre-window quote or an explicit unsuccessful search; later quotes are context only.'))
     return result
 
 
 def as_of(bundle, state):
-    values = [state['assessment_time'], bundle[PROTOCOL]['introduced_at']]
+    values = [state['assessment_time']] + [p['introduced_at'] for p in methods().protocols(bundle)]
     values += [f['issued_at'] for f in bundle[ROUNDS]] + [r['resolved_at'] for r in bundle[OUTCOMES]]
+    values += [r['reviewed_at'] for r in bundle.get(methods().CANDIDATES,[])]
+    values += [r['recorded_at'] for r in bundle.get(methods().BENCHMARKS,[])]
     return max(values, key=instant)
 
 
 def evaluate(bundle, at):
-    p = bundle[PROTOCOL]
+    all_protocols = methods().protocols(bundle)
+    questions = {q['id']:q for p in all_protocols for q in p['questions']}
     rounds, outcomes = {f['id']: f for f in bundle[ROUNDS]}, latest(bundle[OUTCOMES])
     rows = []
-    for slot in slots(p, at):
+    for slot in methods().planned_slots(bundle, at):
         if instant(slot['issue_opens']) > at:
             continue
         f = rounds.get(slot['id'])
@@ -329,86 +373,52 @@ def evaluate(bundle, at):
             outcome = next((r for r in reversed(bundle[OUTCOMES]) if r['forecast_id'] == slot['id'] and instant(r['resolved_at']) <= at), None)
         status = ('missed' if at >= instant(slot['window_start']) else 'awaiting_issue') if not f else (
             'abstained' if f['p'] is None else outcome['outcome'] if outcome else 'awaiting_resolution' if at >= instant(slot['settle_after']) else 'settling' if at >= instant(slot['window_end']) else 'open')
+        if f and f.get('final_adjudication_by') and f['p'] is not None and status in {'unknown','awaiting_resolution'} and at >= instant(f['final_adjudication_by']):
+            status = 'awaiting_final_resolution'
         y = int(status == 'yes') if status in {'yes', 'no'} and f and f['p'] is not None else None
-        q = question_map(p)[slot['question_id']]
+        q = questions[slot['question_id']]
         rows.append({**slot, 'label': q['label'], 'primary_score': q['primary_score'],
                      'dependency_group': q['dependency_group'], 'status': status,
                      'p': f['p'] if f else None, 'issued_at': f['issued_at'] if f else None,
+                     'final_adjudication_by': f.get('final_adjudication_by') if f else None,
                      'outcome': outcome, 'brier': (f['p'] - y)**2 if y is not None else None,
                      'always_no_brier': y**2 if y is not None else None, 'constant_half_brier': .25 if y is not None else None})
+    cohort_ends = {}
+    for r in rows:
+        key=(r['protocol'],r['horizon_days'],r['window_start'])
+        if r['primary_score']:
+            cohort_ends[key]=max(cohort_ends.get(key,r['settle_after']),r['settle_after'],key=instant)
+    for r in rows:
+        key=(r['protocol'],r['horizon_days'],r['window_start'])
+        r['cohort_ready_after']=cohort_ends.get(key,r['settle_after'])
     def summarize(selected, days):
         scored = [r for r in selected if r['brier'] is not None]
         counts = {status: sum(r['status'] == status for r in selected) for status in
-                  ('yes','no','unknown','open','settling','awaiting_resolution','awaiting_issue','missed','abstained')}
+                  ('yes','no','unknown','void','open','settling','awaiting_resolution','awaiting_final_resolution','awaiting_issue','missed','abstained')}
         brier = sum(r['brier'] for r in scored)/len(scored) if scored else None
         ref = sum(r['always_no_brier'] for r in scored)/len(scored) if scored else None
         return {'horizon_days': days, 'planned': len(selected), 'issued': sum(r['issued_at'] is not None for r in selected),
                           'scored': len(scored), 'counts': counts, 'brier': brier, 'always_no_brier': ref,
                           'constant_half_brier': .25 if scored else None,
                           'skill_vs_always_no': 1-brier/ref if ref and counts['yes'] and counts['no'] else None,
-                          'interpretation': 'Descriptive scores; related questions and successive windows remain correlated. No calibration claim.'}
-    summaries = [summarize([r for r in rows if r['horizon_days']==days and r['primary_score']],days) for days in p['horizons_days']]
+                          'interpretation': 'Descriptive scores; related questions and successive windows remain correlated. No calibration claim.',
+                          **methods().score_diagnostics(selected,at)}
+    visible_protocols=[p for p in all_protocols if instant(p['introduced_at'])<=at]
+    summaries = [{**summarize([r for r in rows if r['protocol']==p['id'] and r['horizon_days']==days and r['primary_score']],days),'protocol':p['id']}
+                 for p in visible_protocols for days in p['horizons_days']]
     by_question = [{**summarize([r for r in rows if r['question_id']==q['id'] and r['horizon_days']==days],days),
                     'question_id':q['id'],'label':q['label'],'primary_score':q['primary_score']}
-                   for q in p['questions'] for days in p['horizons_days']]
-    return {'as_of': at.isoformat(), 'protocol': p['id'], 'rows': rows, 'summaries': summaries, 'by_question':by_question,
+                   for p in visible_protocols for q in p['questions'] for days in p['horizons_days']]
+    return {'as_of': at.isoformat(), 'protocol': bundle[PROTOCOL]['id'], 'protocols':[p['id'] for p in visible_protocols],
+            'methodology_updated_at':bundle.get(methods().V2,{}).get('introduced_at'),
+            'coherence':methods().coherence([r for r in bundle[ROUNDS] if instant(r['issued_at'])<=at]),
+            'related_forecasts':methods().related_comparisons(bundle,at),
+            'external_comparisons':methods().benchmark_scores(bundle,rows,at),
+            'corrections':[r for r in bundle[OUTCOMES] if instant(r['resolved_at'])<=at and r.get('correction_reason_class')],
+            'rows': rows, 'summaries': summaries, 'by_question':by_question,
             'rule': 'Samostatně 7 a 30 dnů; první vydání před začátkem pevného okna. České a pobaltské podotázky jsou diagnostické a nevstupují do souhrnu. Nevydané, neznámé a nevyhodnocené otázky zůstávají viditelné.'}
 
 
 def content(bundle, data):
-    from monitoring import table
-    e = escape
-    p = bundle[PROTOCOL]
-    source_names = {s['id']:s['name'] for s in bundle['sources.json']['sources']}
-    def show_time(value, compact=False):
-        dt = instant(value).astimezone(ZoneInfo('Europe/Prague'))
-        day = f'{dt.day}. {dt.month}. {dt.year}'
-        clock = f'{dt:%H:%M} {dt.tzname()}'
-        if compact:
-            return f'<time datetime="{e(value,quote=True)}"><span class="forecast-time">{day}</span><br><span class="forecast-time">{clock}</span></time>'
-        return day+' '+clock
-    states = {'awaiting_issue':'Čeká na vydání','missed':'Nevydáno před začátkem','abstained':'Zdržení se odhadu',
-              'open':'Otevřeno','settling':'Čeká na doběh hlášení','awaiting_resolution':'Splatné vyhodnocení',
-              'yes':'Ano','no':'Ne','unknown':'Neznámé – další kontrola'}
-    issued = {r['id']:r for r in bundle[ROUNDS]}
-    def result_cell(row):
-        result = e(states[row['status']])
-        original = issued.get(row['id'])
-        if original is None:
-            return result
-        sources = ' · '.join(f'<a href="{e(url, quote=True)}">Zdroj</a>' for url in original['source_urls'])
-        details = f'<p>Vydáno {e(show_time(original["issued_at"]))}; uzávěrka zdrojů {e(show_time(original["source_cutoff"]))}.</p><p>{e(original["rationale"])}</p><p>Alternativa: {e(original["alternative"])}</p><p>{sources}</p>'
-        if row['outcome']:
-            decision = row['outcome']
-            details += '<p>Posouzeno '+e(show_time(decision['resolved_at']))+': '+e(decision['rationale'])+'</p>'
-            details += '<p>'+e(decision.get('coverage_basis',''))+'</p>'
-            details += '<p>'+' · '.join(f'<a href="{e(url,quote=True)}">Podklad výsledku</a>' for url in decision['source_urls'])+'</p>'
-        return result+'<details><summary>Podklady a posouzení</summary>'+details+'</details>'
-    rows = [[e(r['label']) + ('<br><small>Diagnostická podotázka</small>' if not r['primary_score'] else ''),
-             f'{r["horizon_days"]} dnů', show_time(r['window_start'],True)+'<br>→ '+show_time(r['window_end'],True),
-             'Dosud nevydáno' if r['issued_at'] is None else 'Bez odhadu' if r['p'] is None else f'{r["p"]*100:g} %',
-             result_cell(r), show_time(r['settle_after'],True), f'{r["brier"]:.4f}' if r['brier'] is not None else '—'] for r in data['rows']]
-    summaries = [[f'{s["horizon_days"]} dnů', str(s['planned']), str(s['issued']),
-                  f'{s["counts"]["yes"]} / {s["counts"]["no"]}',
-                  str(s['counts']['unknown']), str(s['counts']['missed']+s['counts']['abstained']),
-                  f'{s["brier"]:.4f}' if s['brier'] is not None else 'Dosud bez výsledků',
-                  f'{s["always_no_brier"]:.4f}' if s['always_no_brier'] is not None else '—'] for s in data['summaries']]
-    definitions = []
-    for q in p['questions']:
-        criteria = '<ul>'+''.join('<li>'+e(text)+'</li>' for text in q['criteria'].values())+'</ul>'
-        exclusions = '<ul>'+''.join('<li>'+e(text)+'</li>' for text in q['exclusions'])+'</ul>'
-        groups = '<br>'.join(f'Alespoň {g["min_sources"]} z {len(g["source_ids"])}: '+e(', '.join(source_names[sid] for sid in g['source_ids'])) for g in q['source_groups'])
-        definitions.append([e(q['label']), e(q['definition'])+criteria+'<details><summary>Výluky</summary>'+exclusions+'</details>',
-                            'První kvalifikující zveřejnění' if q['time_basis']=='publication' else 'Skutečný čas události',
-                            ('3 dny' if q['settlement_delay_hours']==72 else '7 dnů')+'<br>'+groups])
-    detailed_scores = [[e(s['label']),f'{s["horizon_days"]} dnů',f'{s["counts"]["yes"]} / {s["counts"]["no"]}',
-                        str(s['counts']['unknown']),str(s['counts']['missed']),
-                        f'{s["brier"]:.4f}' if s['brier'] is not None else '—',
-                        f'{s["always_no_brier"]:.4f}' if s['always_no_brier'] is not None else '—'] for s in data['by_question']]
-    return f'''<div class="hero"><div><p class="eyebrow">Pevná prognostická okna · {e(show_time(data['as_of']))}</p><h1>Krátké prognózy a jejich výsledky</h1><p class="lede">Každý odhad se vztahuje ke konkrétnímu, předem známému období. Vyhodnocujeme naplnění i nenaplnění a ukazujeme chybějící výsledky.</p></div></div>
-<div class="archive-notice">První okna začínají 31. října 2026 v 08:00 CET. Odhady musí vzniknout před začátkem na základě skutečné rešerše. Dosud nevydané pravděpodobnosti zůstávají výslovně nevydané; nepřepočítávají se z ročních procent.</div>
-<section class="section"><h2>Okna a termíny</h2><p>Navazující 7denní a 30denní intervaly začínají od {e(show_time(p['anchor']))}. Obě meze jsou pevné; patří sem událost po začátku a nejpozději na konci, tedy (začátek, konec]. Vydávání se otevírá 24 hodin předem. Zmeškané okno se neposouvá. Pevná délka se počítá v UTC i přes změnu letního času.</p>{table(['Otázka','Horizont','Pevné okno','Odhad','Stav','Nejdříve „ne“','Brier'],rows)}</section>
-<section class="section"><h2>Úplný přehled vyhodnocování</h2><p>{e(data['rule'])}</p>{table(['Horizont','Plánováno','Vydáno','Ano / ne','Neznámé','Nevydáno / bez odhadu','Brier','Vždy nenastane'],summaries)}<p>Brier = průměr (p − výsledek)²; nižší je lepší. Srovnání „vždy nenastane“ dostává stejný soubor výsledků. Stálých 50 % má skóre 0,25. U vzácných událostí může být velké procento správných „ne“ snadné; samo nedokládá prognostickou schopnost. Sedmidenní a třicetidenní výsledky neslučujeme do jednoho skóre.</p><details><summary>Výsledky po jednotlivých otázkách</summary>{table(['Otázka','Horizont','Ano / ne','Neznámé','Nevydáno','Brier','Vždy nenastane'],detailed_scores)}</details></section>
-<section class="section"><h2>Předem stanovené definice</h2><p>U zveřejňovacích otázek předpovídáme první nové oficiální zveřejnění splňující kritéria ve vyjmenovaném panelu zdrojů. Starší fyzický incident tak může mít novou atribuci; oba časy se uchovávají samostatně. U událostních otázek musí skutečná událost spadat celá do okna i při nejistém časovém údaji.</p>{table(['Otázka','Podmínky ano','Rozhodný čas','Doběh a povinné zdrojové skupiny'],definitions)}</section>
-<section class="section"><h2>Kdy lze uzavřít nenastání</h2><p>„Ne“ vyžaduje konec okna, 3denní nebo 7denní doběh hlášení podle otázky a doložený audit celého období všech zmrazených zdrojových skupin. Částečně dostupný zdroj ani neuzavřené tvrzení nepostačují: výsledek zůstane neznámý s termínem další kontroly. U zveřejňovacích otázek „ne“ znamená nenalezené kvalifikující zveřejnění v definovaném panelu a období; nevylučuje skrytou operaci.</p><p>První 7denní okno končí 7. listopadu v 08:00 CET; první výsledky „ne“ lze podle otázky posoudit od 10. nebo 14. listopadu. První 30denní okno končí 30. listopadu v 08:00 CET. Kladný výsledek lze doložit dříve.</p></section>
-<p><a href="data/forecast-protocol.json">Definice a pravidla</a> · <a href="data/forecast-rounds.jsonl">Neměnná vydání</a> · <a href="data/forecast-outcomes.jsonl">Výsledky a opravy</a> · <a href="data/fixed-evaluation.json">Odvozené skóre</a> · <a href="quality.html">Starší dlouhé prognózy a provenience</a></p>'''
+    from forecast_pages import content as render
+    return render(bundle, data)

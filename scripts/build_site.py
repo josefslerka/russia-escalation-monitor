@@ -181,14 +181,14 @@ def report_metadata(path: Path):
             "level": level.group(1) if level else "", "judgment": judgment.group(1).strip() if judgment else "Otevřít úplné hodnocení", "text": text}
 
 
-def render_markdown(source: str, known_reports: set[str], prefix: str = "..", lang: str = "cs"):
+def render_markdown(source: str, known_reports: set[str], prefix: str = "..", lang: str = "cs", heading_ids=None):
     md = MarkdownIt("commonmark", {"html": False}).enable("table")
     tokens = md.parse(source)
     contents = []
     for i, token in enumerate(tokens):
         if token.type == "heading_open" and token.tag == "h2":
             heading = tokens[i + 1].content
-            identifier = f"section-{len(contents) + 1}"
+            identifier = (heading_ids or {}).get(heading, f"section-{len(contents) + 1}")
             token.attrSet("id", identifier)
             contents.append((identifier, SECTION_NAMES.get(heading, heading) if lang == "cs" else heading))
         for child in token.children or []:
@@ -205,7 +205,7 @@ def render_markdown(source: str, known_reports: set[str], prefix: str = "..", la
                 child.attrSet("href", f"{prefix}/reports/{target.stem}.html" + (f"#{parsed.fragment}" if parsed.fragment else ""))
             elif Path(parsed.path).name in ("state.json", "watchlist.json", "evidence.jsonl", "geography.json", "signals.json", "monitoring.json", *monitoring.FILES):
                 child.attrSet("href", f"{prefix}/data/{Path(parsed.path).name}")
-            elif parsed.path in ("index.html", "signals.html", "archive.html", "methodology.html", "coverage.html", "quality.html", "society.html"):
+            elif parsed.path in ("index.html", "signals.html", "forecasts.html", "archive.html", "methodology.html", "coverage.html", "quality.html", "society.html"):
                 child.attrSet("href", f"{prefix}/{parsed.path}" + (f"#{parsed.fragment}" if parsed.fragment else ""))
             elif href.startswith("#"):
                 pass
@@ -341,7 +341,8 @@ def build():
             text = translations[report["id"]]
             files[f'reports/{report["id"]}.en.html'] = report_page(report, text, "en", known_reports, reports, i)
             files[f'reports/{report["id"]}.en.md'] = text
-    methodology, _ = render_markdown((ROOT / "site/methodology.md").read_text(), known_reports, ".")
+    methodology, _ = render_markdown((ROOT / "site/methodology.md").read_text(), known_reports, ".",
+                                     heading_ids={"Změna metodiky 4. listopadu 2026 — fixed-v2":"metodika-v2"})
     files["methodology.html"] = page("Metodika", f'<article class="method report">{methodology}</article>', active="Metodika")
     for name in ("state.json", "watchlist.json", "evidence.jsonl", *monitoring.FILES):
         files[f"data/{name}"] = public_text((DATA / name).read_text())

@@ -40,8 +40,10 @@ def append_records(name, rows):
                 continue
             additions.append(row)
             known[row['id']] = row
-        if name in {forecasting.ROUNDS, forecasting.OUTCOMES}:
-            field = 'issued_at' if name == forecasting.ROUNDS else 'resolved_at'
+        timestamp_fields = {forecasting.ROUNDS:'issued_at', forecasting.OUTCOMES:'resolved_at',
+                            forecasting.methods().CANDIDATES:'reviewed_at', forecasting.methods().BENCHMARKS:'recorded_at'}
+        if name in timestamp_fields:
+            field = timestamp_fields[name]
             now = datetime.now(PRAGUE)
             if any(not 0 <= (now - forecasting.instant(row[field])).total_seconds() <= 300 for row in additions):
                 raise ValueError('New forecast writes must use the actual current time; no backdating')

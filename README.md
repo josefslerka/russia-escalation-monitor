@@ -115,6 +115,11 @@ Pracovní fronta, validace a bezpečné doplnění auditního protokolu:
 .venv/bin/python scripts/forecast.py issue --input /tmp/researched-fixed-forecasts.json
 .venv/bin/python scripts/forecast.py resolve --input /tmp/fixed-outcomes.json
 .venv/bin/python scripts/forecast.py evaluate
+.venv/bin/python scripts/forecast.py coherence
+.venv/bin/python scripts/forecast.py long-review
+.venv/bin/python scripts/forecast.py candidates --forecast-id ID
+.venv/bin/python scripts/forecast.py review-candidate --input /tmp/candidate-reviews.json
+.venv/bin/python scripts/forecast.py benchmark --input /tmp/external-benchmarks.json
 .venv/bin/python scripts/monitor.py append coverage.jsonl --input /tmp/check.json
 .venv/bin/python -m unittest discover -s scripts -p 'test_*.py'
 ```
@@ -132,6 +137,19 @@ výsledky. `plan` nabízí prázdné vstupní šablony, neodhaduje pravděpodobn
 Zpětné vydání, posun okna, změna staré definice nebo nepodložené „ne“ zablokují
 validaci. Podrobné schéma, pravidla příčinného hodnocení,
 WDPI v2 a integrace do ranního běhu jsou v [AGENTS.md](AGENTS.md).
+
+Metodika **fixed-v2** byla zavedena 4. listopadu 2026 pro další nevydaná okna:
+7denní od 7. listopadu 08:00 CET, 30denní od 30. listopadu 08:00 CET.
+`forecast-protocol-v2.json` je samostatný kontrakt; původní protokol a všechna
+vydání v1 zůstávají beze změny. V2 ukládá 3–5 původních odhadů, jejich medián,
+časový profil, přiřazení dat známých jen dnem a konečný termín adjudikace.
+`forecast-review-policy.json` popisuje novou kontrolu výsledků,
+`forecast-candidate-reviews.jsonl` posouzení jednotlivých kandidátů a
+`forecast-benchmarks.jsonl` externí srovnání po zmrazení vlastního čísla.
+`plan` vybírá správnou verzi podle okna; starý input v1 nepoužívejte pro v2.
+`long-review` nabízí kandidáty a rozklad změny dlouhých odhadů na čas a důkazy.
+Veřejné skóre ukazuje zvlášť dospělé kohorty, nevyřešené výsledky a citlivost.
+Podrobnosti a omezení jsou na [stránce metodiky](https://josefslerka.github.io/russia-escalation-monitor/methodology.html#metodika-v2).
 
 Nová registrace a důkazy nevznikají samotným zobrazením fronty nebo sestavením webu.
 Nezměřené hodnoty zůstávají neznámé; historické skóre se nepřepočítává novou metodou.
