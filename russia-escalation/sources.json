@@ -1988,6 +1988,92 @@
       "tier": 1,
       "cadence_days": 7,
       "priority": 2
+    },
+    {
+      "id": "ita-acn",
+      "name": "ACN / CSIRT Italia",
+      "url": "https://www.acn.gov.it/portale/w/misure-urgenti-di-verifica-e-mitigazione-per-operatori-della-distribuzione-alimentare-e-della-filiera-del-freddo",
+      "areas": [
+        "ITA"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "readiness",
+        "policy_effect"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "euronews",
+      "name": "Euronews",
+      "url": "https://www.euronews.com/2026/11/03/italy-holds-emergency-talks-as-supermarket-fridge-attacks-spread-across-europe",
+      "areas": [
+        "EU"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "readiness",
+        "policy_effect"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "pol-premier",
+      "name": "Polská vláda",
+      "url": "https://www.gov.pl/web/premier/bezpieczenstwo-polski-nie-moze-byc-przedmiotem-politycznej-gry",
+      "areas": [
+        "POL"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "readiness",
+        "policy_effect"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "pol-mod",
+      "name": "Polské ministerstvo obrany",
+      "url": "https://www.gov.pl/web/obrona-narodowa/sojusznicy-wzmacniaja-przygotowania-do-pokoju-w-ukrainie-duzymi-cwiczeniami-w-polsce2",
+      "areas": [
+        "POL"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "readiness",
+        "policy_effect"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "gbr-mod",
+      "name": "Britské ministerstvo obrany",
+      "url": "https://www.gov.uk/guidance/the-multinational-force-ukraine",
+      "areas": [
+        "NATO",
+        "UKR"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "readiness",
+        "policy_effect"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",

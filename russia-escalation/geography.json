@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-03T08:45:22+01:00",
+  "reviewed_at": "2026-11-04T08:01:31+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -2626,6 +2626,102 @@
       ],
       "title": "MČS uvádí falešná oznámení ve 33 regionech a plán obnovy aplikace.",
       "note": "Anotace předmětu; nikoli sídla média nebo potvrzení ruské atribuce. Neurčitost původního event_time zachována."
+    },
+    "followup-20261103-nbs-differentiates-two-incidents": {
+      "areas": [
+        "LVA"
+      ],
+      "title": "NBS: 1. listopadu nejspíše ruský Geran, 3. listopadu objekt podobný ukrajinskému dronu.",
+      "note": "Geografický předmět tvrzení, nikoli sídlo média ani potvrzení ruské atribuce. Dvě oddělené události 1. a 3. listopadu Europe/Riga; interval neznamená nepřetržitý incident. Nové společné posouzení publikováno 3. listopadu bez času."
+    },
+    "followup-20261103-polish-suspected-border-provocation": {
+      "areas": [
+        "POL"
+      ],
+      "title": "Tusk hlásí reakci na podezřelý pohyb; úmysl provokace zůstává podmíněný.",
+      "note": "Geografický předmět tvrzení, nikoli sídlo média ani potvrzení ruské atribuce. Neurčitost času zachována."
+    },
+    "obs-20261103-dtek-three-plants-generation-stopped": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "DTEK hlásí zastavení výroby tří tepelných elektráren po útoku.",
+      "note": "Geografický předmět tvrzení, nikoli sídlo média ani potvrzení ruské atribuce. Neurčitost času zachována."
+    },
+    "obs-20261103-ukrenergo-emergency-unspecified-regions": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo potvrzuje nouzová omezení, nejmenuje však tři oblasti.",
+      "note": "Geografický předmět tvrzení, nikoli sídlo média ani potvrzení ruské atribuce. Neurčitost času zachována."
+    },
+    "reported-20261103-iditelesom-october-61-contacts": {
+      "areas": [
+        "RUS"
+      ],
+      "title": "NGO: v říjnu 61 podnětů ke kontraktům, z toho 33 starších případů.",
+      "note": "Geografický předmět tvrzení, nikoli sídlo média ani potvrzení ruské atribuce. Říjnové přijaté podněty zahrnují i starší smlouvy; nejde o 61 událostí z data publikace."
+    },
+    "reported-20261103-iditelesom-three-contract-cancellations": {
+      "areas": [
+        "RUS"
+      ],
+      "title": "NGO hlásí tři zrušené kontrakty po stížnostech na nátlak.",
+      "note": "Geografický předmět tvrzení, nikoli sídlo média ani potvrzení ruské atribuce. Zrušení v říjnu a hlášení dvou výsledků začátkem listopadu; přesné dny rozhodnutí nezjištěny."
+    },
+    "followup-20261103-ukraine-alert-app-two-hour-recovery": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Provozovatel: základní funkce varovné aplikace obnoveny do dvou hodin.",
+      "note": "Geografický předmět tvrzení, nikoli sídlo média ani potvrzení ruské atribuce. Neurčitost času zachována."
+    },
+    "announced-20261103-german-winter-support": {
+      "areas": [
+        "DEU",
+        "UKR"
+      ],
+      "title": "Merz přislíbil zimní pomoc Ukrajině; dodání balíku zatím nedoloženo.",
+      "note": "Geografický předmět tvrzení, nikoli sídlo média ani potvrzení ruské atribuce. Neurčitost času zachována."
+    },
+    "announced-20261103-trilateral-talks-november-10-11": {
+      "areas": [
+        "RUS",
+        "UKR"
+      ],
+      "title": "Rusko i Ukrajina oznamují plán jednání týmů 10.–11. listopadu.",
+      "note": "Geografický předmět tvrzení, nikoli sídlo média ani potvrzení ruské atribuce. Plánované období, nikoli potvrzené uskutečnění; datum oznámení je samostatně publication_time."
+    },
+    "announced-20261103-koalicja-26-2-exercise": {
+      "areas": [
+        "POL",
+        "FRA",
+        "TUR",
+        "UKR"
+      ],
+      "title": "Koalice oznámila výcvik 9.–22. listopadu; mise na Ukrajině je podmíněná.",
+      "note": "Geografický předmět tvrzení, nikoli sídlo média ani potvrzení ruské atribuce. Plánované období, nikoli potvrzené uskutečnění; datum oznámení je samostatně publication_time."
+    },
+    "followup-20261103-acn-domestic-refrigeration-incidents": {
+      "areas": [
+        "ITA"
+      ],
+      "title": "ACN aktualizovala říjnový bulletin kvůli novým domácím incidentům.",
+      "note": "Geografický předmět tvrzení, nikoli sídlo média ani potvrzení ruské atribuce. Přesná data domácích incidentů nejsou v aktualizaci uvedena; datum události ponecháno neznámé. Původní bulletin 13. října, aktualizace 3. listopadu."
+    },
+    "reported-20261103-romanian-cyber-chief-nonstate-assessment": {
+      "areas": [
+        "ROU"
+      ],
+      "title": "Ředitel DNSC podle Euronews nepodezírá státního aktéra; vyšetřování pokračují.",
+      "note": "Geografický předmět tvrzení, nikoli sídlo média ani potvrzení ruské atribuce. Neurčitost času zachována."
+    },
+    "reported-20261103-yaroslavl-refinery-strike": {
+      "areas": [
+        "RUS"
+      ],
+      "title": "Gubernátor hlásí požár rafinerie po ukrajinském dronovém útoku.",
+      "note": "Geografický předmět tvrzení, nikoli sídlo média ani potvrzení ruské atribuce. Neurčitost času zachována."
     }
   },
   "review_scope": [

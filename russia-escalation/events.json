@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-03T08:45:22+01:00",
+  "reviewed_at": "2026-11-04T08:01:31+01:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -649,6 +649,13 @@
           "line_id": "line-zelensky-fox-refinery-interview-20261101",
           "claim": "Podle RFE/RL Zelenskyj spojil pauzu úderů na rafinerie buď s ruským zastavením energetických útoků, nebo s americkými dodávkami Patriotů na odpovídající měsíc.",
           "independence_basis": "Jedna označená zdrojová rodina; přetisky a pokračování nejsou nové nezávislé potvrzení. U Lotyšska přímé NBS ověřuje vlastní interceptor, LSM zprostředkovává vojenský popis objektu."
+        },
+        {
+          "evidence_id": "reported-20261103-yaroslavl-refinery-strike",
+          "role": "followup",
+          "line_id": "line-yaroslavl-governor-refinery-20261103",
+          "claim": "Nový hlášený útok omezuje tvrzení o pokračující úplné pauze, neřeší její předchozí trvání či příčinu.",
+          "independence_basis": "Nové přímé sdělení ruského gubernátora přes Reuters; není nezávislý audit původní WSJ informace."
         }
       ],
       "reviewed_at": "2026-11-02T07:20:41+01:00",
@@ -1356,9 +1363,16 @@
           "line_id": "line-ukraine-alert-app-incident-20261101",
           "claim": "Provozovatel potvrdil zásah do aplikace a dočasné vypnutí. Následně oznámil postupný návrat mapy a oznámení s částí funkcí pozastavenou. Letectvo popřelo radiační hrozbu.",
           "independence_basis": "Jedna označená zdrojová rodina; přetisky a pokračování nejsou nové nezávislé potvrzení. U Lotyšska přímé NBS ověřuje vlastní interceptor, LSM zprostředkovává vojenský popis objektu."
+        },
+        {
+          "evidence_id": "followup-20261103-ukraine-alert-app-two-hour-recovery",
+          "role": "followup",
+          "line_id": "line-ukraine-air-alert-app-20261101",
+          "claim": "Provozovatel vysvětluje nedělní falešné výstrahy neoprávněným přístupem k rozhraní obsluhy. Základní oznámení a rozhraní měl obnovit do dvou hodin; audit a obnova zobrazení cílů na mapě pokračují. Pachatele neurčuje.",
+          "independence_basis": "Vlastní zdrojová rodina pro vymezené tvrzení. Přetisky a další publikace stejného původce nepřidávají nezávislé potvrzení; státní a jiné atribuce jsou odděleny od účinku."
         }
       ],
-      "reviewed_at": "2026-11-02T07:20:41+01:00",
+      "reviewed_at": "2026-11-04T08:01:31+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-02T19:20:41+01:00",
       "next_action": "Ověřit neurčený rozsah, příčinu a skutečný výsledek. Bez potvrzení nepřevádět na ano nebo ne."
@@ -1411,6 +1425,13 @@
           "line_id": "line-latvian-nbs-airspace-20261101",
           "claim": "NBS podle LSM potvrdily krátké narušení prostoru neidentifikovaným objektem. NBS přímo uvedly, že slyšený výbuch způsobilo sebezničení vlastního záchytného dronu, aby nepřeletěl hranici.",
           "independence_basis": "Jedna označená zdrojová rodina; přetisky a pokračování nejsou nové nezávislé potvrzení. U Lotyšska přímé NBS ověřuje vlastní interceptor, LSM zprostředkovává vojenský popis objektu."
+        },
+        {
+          "evidence_id": "followup-20261103-nbs-differentiates-two-incidents",
+          "role": "attribution",
+          "line_id": "line-nbs-latvia-airspace-assessment-20261103",
+          "claim": "NBS nyní považují objekt z 1. listopadu za nejspíše ruský Geran; náplň neurčena, výbuch z vlastního záchytného dronu.",
+          "independence_basis": "Stejná NBS rodina jako původní incident, nikoli další nezávislá linie."
         }
       ],
       "reviewed_at": "2026-11-02T07:20:41+01:00",
@@ -1435,9 +1456,16 @@
           "line_id": "line-police-boron-border-warning-20261102",
           "claim": "Boroń pro RMF potvrdil posily a zvláštní policejní operaci u ruské hranice. Dopis KGP z 1. listopadu spojuje pokyn z 29. října s východními službami, nikoli sporem o ústavní soud. RMF navíc uvádí zpravodajské varování před možným průnikem ozbrojených skupin; podklad není veřejný.",
           "independence_basis": "Vlastní publikace daného původce. U NCSC nezávislé potvrzení reakce na incidenty, nikoli atribuce. Přetisky a pokračování se nepřičítají jako další nezávislý důkaz téhož tvrzení."
+        },
+        {
+          "evidence_id": "followup-20261103-polish-suspected-border-provocation",
+          "role": "followup",
+          "line_id": "line-polish-government-border-warning-20261103",
+          "claim": "Premiér uvedl noční podezřelý pohyb a rychlou ochrannou reakci. Vládní shrnutí mluví o zmařené provokaci; přímý výrok podle PAP obsahuje podmínku, zda takový úmysl skutečně existoval. Veřejně není doložena konkrétní ozbrojená skupina, provedený útok ani jeho ruské řízení.",
+          "independence_basis": "Vlastní zdrojová rodina pro vymezené tvrzení. Přetisky a další publikace stejného původce nepřidávají nezávislé potvrzení; státní a jiné atribuce jsou odděleny od účinku."
         }
       ],
-      "reviewed_at": "2026-11-03T08:45:22+01:00",
+      "reviewed_at": "2026-11-04T08:01:31+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-04T08:45:22+01:00",
       "next_action": "Ověřit nový stav, rozsah, atribuci a chybějící kritéria; nejistotu neuzavírat jako ne."
@@ -1531,9 +1559,16 @@
           "line_id": "line-nbs-latvia-airspace-20261103",
           "claim": "LSM uvádí výstrahu NBS 00:07–00:33 místního času a aktivaci spojeneckých stíhaček. Podle předběžných informací objekt spadl; pátrání a identifikace pokračují. Jde o jiný incident než 1. listopadu.",
           "independence_basis": "Vlastní publikace daného původce. U NCSC nezávislé potvrzení reakce na incidenty, nikoli atribuce. Přetisky a pokračování se nepřičítají jako další nezávislý důkaz téhož tvrzení."
+        },
+        {
+          "evidence_id": "followup-20261103-nbs-differentiates-two-incidents",
+          "role": "followup",
+          "line_id": "line-nbs-latvia-airspace-assessment-20261103",
+          "claim": "NBS po analýze sensorů a konzultaci s Ukrajinou označují objekt z 1. listopadu za nejspíše ruský Geran; výbušnou náplň určit nelze. Výbuch patřil vlastnímu záchytnému dronu. Objekt z 3. listopadu vizuálně připomíná ukrajinský dron, ale typ i původ jsou nepotvrzené a pátrání pokračuje.",
+          "independence_basis": "Vlastní zdrojová rodina pro vymezené tvrzení. Přetisky a další publikace stejného původce nepřidávají nezávislé potvrzení; státní a jiné atribuce jsou odděleny od účinku."
         }
       ],
-      "reviewed_at": "2026-11-03T08:45:22+01:00",
+      "reviewed_at": "2026-11-04T08:01:31+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-04T08:45:22+01:00",
       "next_action": "Ověřit nový stav, rozsah, atribuci a chybějící kritéria; nejistotu neuzavírat jako ne."
@@ -1546,9 +1581,11 @@
         "SWE",
         "BEL",
         "LUX",
-        "IRL"
+        "IRL",
+        "ITA",
+        "ROU"
       ],
-      "summary": "Reuters přímo popisuje škody ve švédské prodejně a vyjádření řetězců v Belgii, Lucembursku a Irsku. Belgický kyberúřad nezná pachatele; Reuters neověřil vazbu na říjnové francouzské případy. Různé součty prodejen a pozdější geografická rozšíření nejsou sloučeny do jediného ověřeného součtu.",
+      "summary": "Reuters přímo popisuje škody ve švédské prodejně a vyjádření řetězců v Belgii, Lucembursku a Irsku. Belgický kyberúřad nezná pachatele; Reuters neověřil vazbu na říjnové francouzské případy. Různé součty prodejen a pozdější geografická rozšíření nejsou sloučeny do jediného ověřeného součtu. Následné zdroje 3. listopadu doplňují Itálii a Rumunsko; společná ruská atribuce není doložena.",
       "russian_involvement": "unknown",
       "attribution_basis": "Široce rozšířená technická slabina může vysvětlovat podobnost bez jediného státního řízení. Materiální škoda sama neprokazuje ruskou atribuci ani změnu politiky vůči Ukrajině.",
       "links": [
@@ -1565,9 +1602,23 @@
           "line_id": "line-swedish-ncsc-refrigeration-20261102",
           "claim": "NCSC uvádí, že sleduje incidenty chladicích systémů, jedná s postiženými a evropskými protějšky. Zveřejňuje obecná ochranná doporučení, nikoli ruskou atribuci, součet škod nebo výsledek vyšetřování.",
           "independence_basis": "Vlastní publikace daného původce. U NCSC nezávislé potvrzení reakce na incidenty, nikoli atribuce. Přetisky a pokračování se nepřičítají jako další nezávislý důkaz téhož tvrzení."
+        },
+        {
+          "evidence_id": "followup-20261103-acn-domestic-refrigeration-incidents",
+          "role": "followup",
+          "line_id": "line-acn-refrigeration-20261103",
+          "claim": "Změnový záznam verze 1.1 ze 3. listopadu uvádí nově zaznamenané domácí incidenty. Původní bulletin byl vydán 13. října; jeho technický obsah není novým listopadovým útokem. Ruská atribuce ani přesný rozsah nejsou stanoveny.",
+          "independence_basis": "Vlastní zdrojová rodina pro vymezené tvrzení. Přetisky a další publikace stejného původce nepřidávají nezávislé potvrzení; státní a jiné atribuce jsou odděleny od účinku."
+        },
+        {
+          "evidence_id": "reported-20261103-romanian-cyber-chief-nonstate-assessment",
+          "role": "followup",
+          "line_id": "line-dnsc-cimpean-refrigeration-assessment-20261103",
+          "claim": "Euronews uvádí šest rumunských provozů a jmenované hodnocení Dana Cimpeana, který útok považuje za poloamatérský a nepodezírá státního aktéra. Je to veřejné průběžné posouzení, nikoli konečný důkaz původu všech evropských incidentů.",
+          "independence_basis": "Vlastní zdrojová rodina pro vymezené tvrzení. Přetisky a další publikace stejného původce nepřidávají nezávislé potvrzení; státní a jiné atribuce jsou odděleny od účinku."
         }
       ],
-      "reviewed_at": "2026-11-03T08:45:22+01:00",
+      "reviewed_at": "2026-11-04T08:01:31+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-04T08:45:22+01:00",
       "next_action": "Ověřit nový stav, rozsah, atribuci a chybějící kritéria; nejistotu neuzavírat jako ne."
@@ -1595,7 +1646,194 @@
       "case_status": "open",
       "next_check_by": "2026-11-04T08:45:22+01:00",
       "next_action": "Ověřit nový stav, rozsah, atribuci a chybějící kritéria; nejistotu neuzavírat jako ne."
+    },
+    {
+      "id": "case-ukraine-energy-operational-20261103",
+      "title": "DTEK hlásí zastavení výroby tří tepelných elektráren po útoku.",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Provozní den 3. listopadu: DTEK hlásí zastavení tří elektráren a omezení ve dvou oblastech a městě; Ukrenergo potvrzuje nouzová omezení bez výčtu tří oblastí. Jednotlivá provozní kritéria zůstávají oddělena.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Omezeno deklarovaným zdrojem; nezaměňovat důkaz účinku a původce. Materiální účinek pokračující kampaně; není sám novým prahem strategické změny ani splněním odlišné otázky Ukrenerga.",
+      "links": [
+        {
+          "evidence_id": "obs-20261103-dtek-three-plants-generation-stopped",
+          "role": "first_report",
+          "line_id": "line-dtek-operational-20261103",
+          "claim": "DTEK oznámil, že tři tepelná zařízení po nočních a ranních úderech 3. listopadu zastavila výrobu. Doba odstávky a ztracený výkon nejsou vyčísleny. Tři elektrárny neznamenají tři oblasti v nouzovém režimu.",
+          "independence_basis": "Vlastní zdrojová rodina pro vymezené tvrzení. Přetisky a další publikace stejného původce nepřidávají nezávislé potvrzení; státní a jiné atribuce jsou odděleny od účinku."
+        },
+        {
+          "evidence_id": "obs-20261103-ukrenergo-emergency-unspecified-regions",
+          "role": "independent_corroboration",
+          "line_id": "line-ukrenergo-operational-20261103",
+          "claim": "Ukrenergo uvádí skutečná nouzová omezení po úderech v řadě regionů včetně Kyjeva. Ranní seznam pěti oblastí popisuje nové výpadky, nikoli nouzový režim. Odděleně jsou čtyři obce na Poltavsku bez proudu kvůli počasí.",
+          "independence_basis": "Vlastní zdrojová rodina pro vymezené tvrzení. Přetisky a další publikace stejného původce nepřidávají nezávislé potvrzení; státní a jiné atribuce jsou odděleny od účinku."
+        },
+        {
+          "evidence_id": "obs-20261103-dtek-emergency-two-oblasts",
+          "role": "overlapping_claim",
+          "line_id": "line-dtek-operational-20261103",
+          "claim": "Původní DTEK oznámení téhož provozního dne: dvě oblasti a město Kyjev.",
+          "independence_basis": "Stejná DTEK zdrojová rodina, ne další nezávislý důkaz."
+        }
+      ],
+      "reviewed_at": "2026-11-04T08:01:31+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-05T08:01:31+01:00",
+      "next_action": "Ověřit chybějící rozsah, realizaci, nezávislou atribuci či výsledky."
+    },
+    {
+      "id": "case-reported-20261103-iditelesom-october-61-contacts",
+      "title": "NGO: v říjnu 61 podnětů ke kontraktům, z toho 33 starších případů.",
+      "kind": "series",
+      "areas": [
+        "RUS"
+      ],
+      "summary": "NGO uvádí 61 říjnových podnětů proti 55 v září: 25 nedávno podepsaných kontraktů, 33 starších a tři dosud nepodepsané. Pět případů se má týkat nátlaku krátce po nástupu. Jde o podněty o podpisu či donucování, nikoli 61 nově prokázaných nucených povolání.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Omezeno deklarovaným zdrojem; nezaměňovat důkaz účinku a původce. Výběrový soubor závisí na hlášení, není reprezentativní mírou náboru ani dokladem koordinované vlny 100 000 osob. Nelze přičíst jiné soubory NGO s neznámým překryvem.",
+      "links": [
+        {
+          "evidence_id": "reported-20261103-iditelesom-october-61-contacts",
+          "role": "first_report",
+          "line_id": "line-iditelesom-monthly-contacts-202610",
+          "claim": "NGO uvádí 61 říjnových podnětů proti 55 v září: 25 nedávno podepsaných kontraktů, 33 starších a tři dosud nepodepsané. Pět případů se má týkat nátlaku krátce po nástupu. Jde o podněty o podpisu či donucování, nikoli 61 nově prokázaných nucených povolání.",
+          "independence_basis": "Vlastní zdrojová rodina pro vymezené tvrzení. Přetisky a další publikace stejného původce nepřidávají nezávislé potvrzení; státní a jiné atribuce jsou odděleny od účinku."
+        }
+      ],
+      "reviewed_at": "2026-11-04T08:01:31+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-05T08:01:31+01:00",
+      "next_action": "Ověřit chybějící rozsah, realizaci, nezávislou atribuci či výsledky."
+    },
+    {
+      "id": "case-reported-20261103-iditelesom-three-contract-cancellations",
+      "title": "NGO hlásí tři zrušené kontrakty po stížnostech na nátlak.",
+      "kind": "series",
+      "areas": [
+        "RUS"
+      ],
+      "summary": "Rodiny podle NGO oznámily zrušení tří kontraktů, jednoho soudem a dalších po podáních. Jeden případ spadá do října, dva byly oznámeny rodinami začátkem listopadu. Úplná rozhodnutí nebyla zveřejněna.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Omezeno deklarovaným zdrojem; nezaměňovat důkaz účinku a původce. Jednotlivé úspěšné námitky omezují tvrzení o nevratnosti nátlaku; nevyvracejí existenci jiných nucených kontraktů a nejsou reprezentativním podílem úspěchu.",
+      "links": [
+        {
+          "evidence_id": "reported-20261103-iditelesom-three-contract-cancellations",
+          "role": "first_report",
+          "line_id": "line-iditelesom-contract-cancellations-20261103",
+          "claim": "Rodiny podle NGO oznámily zrušení tří kontraktů, jednoho soudem a dalších po podáních. Jeden případ spadá do října, dva byly oznámeny rodinami začátkem listopadu. Úplná rozhodnutí nebyla zveřejněna.",
+          "independence_basis": "Vlastní zdrojová rodina pro vymezené tvrzení. Přetisky a další publikace stejného původce nepřidávají nezávislé potvrzení; státní a jiné atribuce jsou odděleny od účinku."
+        }
+      ],
+      "reviewed_at": "2026-11-04T08:01:31+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-05T08:01:31+01:00",
+      "next_action": "Ověřit chybějící rozsah, realizaci, nezávislou atribuci či výsledky."
+    },
+    {
+      "id": "case-announced-20261103-german-winter-support",
+      "title": "Merz přislíbil zimní pomoc Ukrajině; dodání balíku zatím nedoloženo.",
+      "kind": "policy",
+      "areas": [
+        "DEU",
+        "UKR"
+      ],
+      "summary": "Při jednání v Berlíně Merz podle oficiálního záznamu přislíbil zimní balík. Probíraly se další protiletadlové střely a podpora F-16. Text dokládá závazek, nikoli dnešní uskutečněnou dodávku nebo její objem.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Omezeno deklarovaným zdrojem; nezaměňovat důkaz účinku a původce. Pokračující politická podpora odporuje plošnému sebeodstrašení, sama však neměří skutečné dodávky, výrobu a rozpočtové omezení.",
+      "links": [
+        {
+          "evidence_id": "announced-20261103-german-winter-support",
+          "role": "first_report",
+          "line_id": "line-merz-zelensky-berlin-20261103",
+          "claim": "Při jednání v Berlíně Merz podle oficiálního záznamu přislíbil zimní balík. Probíraly se další protiletadlové střely a podpora F-16. Text dokládá závazek, nikoli dnešní uskutečněnou dodávku nebo její objem.",
+          "independence_basis": "Vlastní zdrojová rodina pro vymezené tvrzení. Přetisky a další publikace stejného původce nepřidávají nezávislé potvrzení; státní a jiné atribuce jsou odděleny od účinku."
+        }
+      ],
+      "reviewed_at": "2026-11-04T08:01:31+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-05T08:01:31+01:00",
+      "next_action": "Ověřit chybějící rozsah, realizaci, nezávislou atribuci či výsledky."
+    },
+    {
+      "id": "case-announced-20261103-trilateral-talks-november-10-11",
+      "title": "Rusko i Ukrajina oznamují plán jednání týmů 10.–11. listopadu.",
+      "kind": "policy",
+      "areas": [
+        "RUS",
+        "UKR"
+      ],
+      "summary": "Reuters cituje Peskovovo potvrzení plánovaných jednání Ruska, Ukrajiny a USA v Abú Zabí 10.–11. listopadu; Zelenskyj samostatně potvrzuje týmový formát. Summit lídrů je očekávání, nikoli dohodnutý výsledek.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Omezeno deklarovaným zdrojem; nezaměňovat důkaz účinku a původce. Diplomacie může pokračovat souběžně s údery. Oznámený termín není uskutečněné jednání, příměří ani změna vojenských rozhodnutí.",
+      "links": [
+        {
+          "evidence_id": "announced-20261103-trilateral-talks-november-10-11",
+          "role": "first_report",
+          "line_id": "line-kremlin-trilateral-announcement-20261103",
+          "claim": "Reuters cituje Peskovovo potvrzení plánovaných jednání Ruska, Ukrajiny a USA v Abú Zabí 10.–11. listopadu; Zelenskyj samostatně potvrzuje týmový formát. Summit lídrů je očekávání, nikoli dohodnutý výsledek.",
+          "independence_basis": "Vlastní zdrojová rodina pro vymezené tvrzení. Přetisky a další publikace stejného původce nepřidávají nezávislé potvrzení; státní a jiné atribuce jsou odděleny od účinku."
+        }
+      ],
+      "reviewed_at": "2026-11-04T08:01:31+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-05T08:01:31+01:00",
+      "next_action": "Ověřit chybějící rozsah, realizaci, nezávislou atribuci či výsledky."
+    },
+    {
+      "id": "case-announced-20261103-koalicja-26-2-exercise",
+      "title": "Koalice oznámila výcvik 9.–22. listopadu; mise na Ukrajině je podmíněná.",
+      "kind": "policy",
+      "areas": [
+        "POL",
+        "FRA",
+        "TUR",
+        "UKR"
+      ],
+      "summary": "Polský rezort oznámil KOALICJA 26.2 pro 9.–22. listopad, především v Polsku, se štábními prvky ve Francii a Turecku. Britský rezort výslovně podmiňuje budoucí nasazení pozváním Ukrajiny a koncem bojů; síla není součástí NATO.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Omezeno deklarovaným zdrojem; nezaměňovat důkaz účinku a původce. Předem ohlášený výcvik vysvětluje část budoucích přesunů. Nelze jej označit za právě probíhající vstup NATO do války nebo za náhlou reakci na konkrétní incident.",
+      "links": [
+        {
+          "evidence_id": "announced-20261103-koalicja-26-2-exercise",
+          "role": "first_report",
+          "line_id": "line-coalition-koalicja-26-2-announcement",
+          "claim": "Polský rezort oznámil KOALICJA 26.2 pro 9.–22. listopad, především v Polsku, se štábními prvky ve Francii a Turecku. Britský rezort výslovně podmiňuje budoucí nasazení pozváním Ukrajiny a koncem bojů; síla není součástí NATO.",
+          "independence_basis": "Vlastní zdrojová rodina pro vymezené tvrzení. Přetisky a další publikace stejného původce nepřidávají nezávislé potvrzení; státní a jiné atribuce jsou odděleny od účinku."
+        }
+      ],
+      "reviewed_at": "2026-11-04T08:01:31+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-05T08:01:31+01:00",
+      "next_action": "Ověřit chybějící rozsah, realizaci, nezávislou atribuci či výsledky."
+    },
+    {
+      "id": "case-reported-20261103-yaroslavl-refinery-strike",
+      "title": "Gubernátor hlásí požár rafinerie po ukrajinském dronovém útoku.",
+      "kind": "incident",
+      "areas": [
+        "RUS"
+      ],
+      "summary": "Reuters cituje gubernátora o poškození rafinerie a dvou zraněných. Ukrajina se v článku nevyjádřila a záběry nebyly ověřeny. Nové hlášení oslabuje představu trvající úplné pauzy úderů na rafinerie.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Omezeno deklarovaným zdrojem; nezaměňovat důkaz účinku a původce. Jednotlivý útok nevyvrací možnost dřívější dočasné přestávky ani neveřejného amerického tlaku; rozsah škod a důvody operační volby nejsou nezávisle ověřeny.",
+      "links": [
+        {
+          "evidence_id": "reported-20261103-yaroslavl-refinery-strike",
+          "role": "first_report",
+          "line_id": "line-yaroslavl-governor-refinery-20261103",
+          "claim": "Reuters cituje gubernátora o poškození rafinerie a dvou zraněných. Ukrajina se v článku nevyjádřila a záběry nebyly ověřeny. Nové hlášení oslabuje představu trvající úplné pauzy úderů na rafinerie.",
+          "independence_basis": "Vlastní zdrojová rodina pro vymezené tvrzení. Přetisky a další publikace stejného původce nepřidávají nezávislé potvrzení; státní a jiné atribuce jsou odděleny od účinku."
+        }
+      ],
+      "reviewed_at": "2026-11-04T08:01:31+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-05T08:01:31+01:00",
+      "next_action": "Ověřit chybějící rozsah, realizaci, nezávislou atribuci či výsledky."
     }
   ],
-  "review_note": "Nové anotace a vazby zkontrolovány; provozní dny i lotyšské incidenty vedeny odděleně, staré záznamy a termíny zachovány."
+  "review_note": "Dnešní nové vazby přezkoumány. NBS společné posouzení propojeno se dvěma oddělenými incidenty; energetika po provozních dnech. Starý ledger a snímky beze změny."
 }
