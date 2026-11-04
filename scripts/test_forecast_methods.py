@@ -21,6 +21,10 @@ class MethodologyV2Tests(unittest.TestCase):
         self.base=legacy_tests.FixedForecastTests('test_late_or_backdated_issue_cannot_become_a_prospective_forecast')
         self.base.setUp()
         self.bundle=self.base.bundle;self.evidence=self.base.evidence
+        self.audit_state=json.loads((build_site.DATA/'snapshots/2026-11-04-0816.json').read_text())
+        # Later daily revisions must not change this audit's synthetic priors.
+        self.bundle['forecast-register.jsonl']=[r for r in self.bundle['forecast-register.jsonl']
+                                              if f.instant(r['forecast_time'])<=f.instant(self.audit_state['assessment_time'])]
         self.protocol=self.bundle[fm.V2]
         self.start=f.window(self.protocol,7,1)[0]
         self.base.start=self.start
@@ -91,7 +95,7 @@ class MethodologyV2Tests(unittest.TestCase):
 
     def test_historical_queue_is_unchanged_before_v2_announcement(self):
         current=m.load(build_site.DATA)
-        old=json.loads((build_site.DATA/'state.json').read_text())
+        old=self.audit_state
         expected=old['research_scope']['fixed_forecast_review']
         self.assertEqual(f.assessment_scope(current,f.instant(expected['reviewed_at'])),expected)
 
@@ -321,7 +325,7 @@ class MethodologyV2Tests(unittest.TestCase):
         self.assertEqual(len(data['corrections']),1)
 
     def new_long_state(self):
-        state=json.loads((build_site.DATA/'state.json').read_text())
+        state=copy.deepcopy(self.audit_state)
         state['assessment_time']='2026-11-05T07:30:00+01:00'
         review=fm.long_review(self.bundle,self.evidence,state,f.instant(state['assessment_time']))
         for key,r in review.items():
