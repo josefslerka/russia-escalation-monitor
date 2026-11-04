@@ -106,7 +106,7 @@ def validate_estimate(issue, checks):
     f.require(issue.get('estimation_mode') in {'blind', 'informed'} and issue.get('dependence_note'), 'V2 must disclose estimation mode and dependence')
     f.require(issue.get('related_question_note'), 'V2 needs a related-question coherence explanation')
     f.require(issue['estimation_mode'] != 'informed' or issue.get('external_influence_note'), 'Informed estimate needs an influence note')
-    if issue['p'] is None:
+    if issue['p'] is None and not issue.get('estimation_passes'):
         return
     passes = issue.get('estimation_passes', [])
     policy = q['estimation_policy']
@@ -123,7 +123,8 @@ def validate_estimate(issue, checks):
             f.require(rate.get('status') in {'available','unavailable'} and rate.get('note'), 'Reference-class pass must disclose its base-rate evidence or its absence')
             if rate['status']=='available':
                 f.require(type(rate.get('trials')) is int and type(rate.get('events')) is int and 0<=rate['events']<=rate['trials'] and rate['trials']>0 and rate.get('source_urls'), 'Invalid empirical reference-class count')
-    f.require(abs(issue['p'] - median(p['p'] for p in passes)) < 1e-12, 'Issued probability must be the raw-pass median')
+    if issue['p'] is not None:
+        f.require(abs(issue['p'] - median(p['p'] for p in passes)) < 1e-12, 'Issued probability must be the raw-pass median')
     f.require(issue['estimate_spread'] == [min(p['p'] for p in passes), max(p['p'] for p in passes)], 'Raw spread differs from passes')
 
 

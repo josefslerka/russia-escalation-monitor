@@ -151,6 +151,13 @@ vydání v1 zůstávají beze změny. V2 ukládá 3–5 původních odhadů, jej
 Veřejné skóre ukazuje zvlášť dospělé kohorty, nevyřešené výsledky a citlivost.
 Podrobnosti a omezení jsou na [stránce metodiky](https://josefslerka.github.io/russia-escalation-monitor/methodology.html#metodika-v2).
 
+Celý technický průchod ranního běhu lze ověřit příkazem
+`.venv/bin/python -m unittest discover -s scripts -p 'test_morning_workflow.py' -v`.
+Zkouška používá kopii dat, testovací hodiny a místní Git; neprovádí živou rešerši
+ani veřejné vydání. Projde denní aktualizaci, 7/30denní vydání v2, zdržení,
+vyhodnocení v1 podle původních pravidel, český/anglický report, sestavení,
+publikační ochrany a opakování bez duplicit. Produkční data se nemění.
+
 Nová registrace a důkazy nevznikají samotným zobrazením fronty nebo sestavením webu.
 Nezměřené hodnoty zůstávají neznámé; historické skóre se nepřepočítává novou metodou.
 Opakovaný běh se stejným stavem nevytváří duplicitní commit. Pokud vzdálená větev

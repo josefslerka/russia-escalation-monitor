@@ -1515,6 +1515,14 @@ Running v1 windows retain their old rules through adjudication. Never create a
 replacement v2 issue for a window already issued as v1. `forecast.py plan`
 reproduces historical queues before the version announcement as well.
 
+At the start of a morning run, check issuance deadlines immediately after loading
+the prior and queue. If issuance is open, use its exact saved window_start
+(currently 08:00 CET) and do its focused research, estimation passes and actual
+issuance **before** the rest of the daily research.
+Do not use the whole issuance hour on the long report. If evidence does not
+support a number, save an honest abstention before the deadline; an already
+missed deadline remains missed. Keep the 07:00 schedule unchanged.
+
 Before research run `monitor.py due`, `forecast.py plan`,
 `forecast.py coherence` and `forecast.py long-review`. Loading a queue is not
 performing a source check or adjudication. Use the original long windows from

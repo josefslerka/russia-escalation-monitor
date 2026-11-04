@@ -110,7 +110,12 @@ def make_issue(protocol, request, at):
             'benchmarks': deepcopy(protocol['benchmarks'])}
     if protocol['id'] == 'fixed-v2':
         result['final_adjudication_by'] = (instant(result['settle_after']) + timedelta(days=q['adjudication_policy']['final_delay_days'])).isoformat()
-        estimates = [p['p'] for p in request.get('estimation_passes', [])]
+        passes = result.get('estimation_passes', [])
+        if result['p'] is None and passes and all(p.get('p') is None for p in passes):
+            # An unfilled plan template is a valid abstention, not three raw estimates.
+            result['estimation_passes'] = passes = []
+        estimates = [p['p'] for p in passes]
+        require(all(probability(p) for p in estimates), 'Raw estimates must be numeric; fill every pass or use an explicit abstention')
         result['estimate_spread'] = [min(estimates),max(estimates)] if estimates else []
     return result
 
