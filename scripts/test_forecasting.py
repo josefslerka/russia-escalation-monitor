@@ -417,6 +417,19 @@ class FixedForecastTests(unittest.TestCase):
             with patch.object(build_site,'DATA',data):
                 with self.assertRaisesRegex(ValueError,'Legacy forecast window rolls'):build_site.validate()
                 for key,bounds in f.legacy_origins(self.bundle,self.state).items():self.state['hypotheses'][key].update(bounds)
+                # Moving this disposable fixture past v2 activation also requires a
+                # matching synthetic long review; production validation stays enabled.
+                for key, review in f.methods().long_review(self.bundle, self.evidence, self.state, at).items():
+                    h = self.state['hypotheses'][key]
+                    h['prior'] = review['template']['prior_p']
+                    h['coherence_note'] = 'TEST ONLY distinct war and larger-attack definitions'
+                    h['revision_decomposition'] = {**review['template'],
+                        'delta_evidence_pp': 100 * (h['p'] - h['prior']),
+                        'time_rationale': 'TEST ONLY no verified absence or time adjustment',
+                        'evidence_rationale': 'TEST ONLY retain the synthetic fixture probability'}
+                    h['candidate_audit'] = [{**c, 'rationale': 'TEST ONLY unresolved candidate',
+                        'missing_evidence': 'TEST ONLY original criteria not adjudicated'}
+                        for c in review['candidate_audit']]
                 save()
                 with self.assertRaisesRegex(ValueError,'must review fixed forecast tasks'):build_site.validate()
                 self.state['research_scope']['fixed_forecast_review']=f.assessment_scope(self.bundle,at)

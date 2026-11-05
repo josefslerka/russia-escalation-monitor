@@ -91,6 +91,20 @@ class MonitoringChecks(unittest.TestCase):
 
     def test_new_run_is_required_and_partial_work_cannot_be_labelled_complete(self):
         self.state['assessment_time'] = (max(m.instant(r['finished_at']) for r in self.bundle['monitoring-runs.jsonl']) + timedelta(hours=1)).isoformat()
+        # Keep the unrelated v2 review coherent with this test's changed clock.
+        import forecast_methods as fm
+        at = m.instant(self.state['assessment_time'])
+        for key, review in fm.long_review(self.bundle, self.evidence, self.state, at).items():
+            h = self.state['hypotheses'][key]
+            h['prior'] = review['template']['prior_p']
+            h['coherence_note'] = 'TEST ONLY distinct war and larger-attack definitions'
+            h['revision_decomposition'] = {**review['template'],
+                'delta_evidence_pp': 100 * (h['p'] - h['prior']),
+                'time_rationale': 'TEST ONLY no verified absence or time adjustment',
+                'evidence_rationale': 'TEST ONLY retain the synthetic fixture probability'}
+            h['candidate_audit'] = [{**c, 'rationale': 'TEST ONLY unresolved candidate',
+                'missing_evidence': 'TEST ONLY original criteria not adjudicated'}
+                for c in review['candidate_audit']]
         self.state.setdefault('research_scope', {}).pop('monitoring_run_id', None)
         with self.assertRaisesRegex(ValueError, 'structured monitoring run'):
             self.validate()
