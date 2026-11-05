@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-04T08:01:31+01:00",
+  "reviewed_at": "2026-11-05T07:28:57+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -2722,6 +2722,97 @@
       ],
       "title": "Gubernátor hlásí požár rafinerie po ukrajinském dronovém útoku.",
       "note": "Geografický předmět tvrzení, nikoli sídlo média ani potvrzení ruské atribuce. Neurčitost času zachována."
+    },
+    "obs-20261104-ukrenergo-partial-stabilisation": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo: částečná stabilizace; v okamžiku hlášení nouzový režim jen na Charkovsku.",
+      "note": "Geografický předmět; nejde o atribuci ani další nezávislé důkazy."
+    },
+    "obs-20261104-dtek-emergency-reintroduced": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "DTEK: nouzová omezení znovu v Kyjevě a Kyjevské oblasti; dříve i ve městě Dnipro.",
+      "note": "Geografický předmět; nejde o atribuci ani další nezávislé důkazy."
+    },
+    "sensor-20261104-employer-military-registration": {
+      "areas": [
+        "RUS"
+      ],
+      "title": "NGO: zaměstnavatelé sbírají vojenské evidenční údaje; příkaz k mobilizaci nedoložen.",
+      "note": "Geografický předmět; nejde o atribuci ani další nezávislé důkazy."
+    },
+    "obs-20261104-belarus-logistics-training": {
+      "areas": [
+        "BLR"
+      ],
+      "title": "Běloruský rezort ukazuje výcvik příjmu doplnění a logistického zabezpečení.",
+      "note": "Geografický předmět; nejde o atribuci ani další nezávislé důkazy."
+    },
+    "followup-20261103-starlink-organiser-arrest": {
+      "areas": [
+        "DEU",
+        "POL"
+      ],
+      "title": "Německé zatčení údajného organizátora zářijového útoku; nově nalezený následný vývoj.",
+      "note": "Geografický předmět; nejde o atribuci ani další nezávislé důkazy."
+    },
+    "obs-20261104-osce-minsk-dialogue": {
+      "areas": [
+        "BLR",
+        "RUS",
+        "UKR"
+      ],
+      "title": "OBSE potvrzuje uskutečněná jednání v Minsku a návaznost na humanitární kontakty.",
+      "note": "Geografický předmět; nejde o atribuci ani další nezávislé důkazy."
+    },
+    "announced-20261104-uk-netherlands-defence-cooperation": {
+      "areas": [
+        "GBR",
+        "NLD",
+        "NATO",
+        "UKR"
+      ],
+      "title": "Británie a Nizozemsko potvrzují obrannou spolupráci a podporu Ukrajiny.",
+      "note": "Geografický předmět; nejde o atribuci ani další nezávislé důkazy."
+    },
+    "decision-20261104-swiss-sanctions-adoption": {
+      "areas": [
+        "RUS",
+        "BLR"
+      ],
+      "title": "Švýcarsko přijalo další sankční opatření; nejde o nový listopadový balík EU.",
+      "note": "Sankce vůči Rusku a Bělorusku. Švýcarsko není podporovanou oblastí mapy; není zaměněno za EU. Rozhodnutí a účinnost jsou různé dny."
+    },
+    "followup-20261104-oleshky-evacuee-support": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ombudsman hlásí pomoc evakuovaným; prodloužení lokálního příměří nedoloženo.",
+      "note": "Geografický předmět; nejde o atribuci ani další nezávislé důkazy."
+    },
+    "followup-20261104-enisa-refrigeration-response": {
+      "areas": [
+        "EU"
+      ],
+      "title": "Společné evropské sdělení potvrzuje novou vlnu kyberincidentů; pachatele neurčuje.",
+      "note": "Geografický předmět; nejde o atribuci ani další nezávislé důkazy."
+    },
+    "claim-20261104-prorussian-refrigeration-video": {
+      "areas": [
+        "EU"
+      ],
+      "title": "Rai uvádí přihlášení proruských skupin k útokům; nezávislá atribuce chybí.",
+      "note": "Geografický předmět; nejde o atribuci ani další nezávislé důkazy."
+    },
+    "reported-20261102-efs-refrigeration-protected": {
+      "areas": [
+        "FRA"
+      ],
+      "title": "EFS: zásah do chlazení tří pracovišť, bez ztráty krevních produktů.",
+      "note": "Geografický předmět; nejde o atribuci ani další nezávislé důkazy."
     }
   },
   "review_scope": [

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-04T08:01:31+01:00",
+  "reviewed_at": "2026-11-05T07:28:57+01:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -408,7 +408,7 @@
       "areas": [
         "UKR"
       ],
-      "summary": "Lubinec 30. října uvádí, že pomoc byla doručena a lidé, kteří chtěli odjet na ukrajinskou stranu, opustili Olešky a jsou na cestě. Hlásí 87 hodin bez porušení místního příměří.",
+      "summary": "Lubinec 30. října uvádí, že pomoc byla doručena a lidé, kteří chtěli odjet na ukrajinskou stranu, opustili Olešky a jsou na cestě. Hlásí 87 hodin bez porušení místního příměří. Následná péče 4. listopadu neprokazuje prodloužení klidu.",
       "russian_involvement": "independent",
       "attribution_basis": "Omezená humanitární dohoda může být plněna souběžně s pokračující válkou jinde; výrok účastníka není nezávislý audit.",
       "links": [
@@ -481,9 +481,16 @@
           "line_id": "line-ukrainian-ombudsman-oleshky",
           "claim": "Lubinec oznámil konec místního příměří a splnění závazků oběma stranami. Tvrzení je v napětí s dřívějšími obviněními z porušení; konečný počet evakuovaných neuvádí.",
           "independence_basis": "Jedna označená zdrojová rodina; přetisky a pokračování nejsou nové nezávislé potvrzení. U Lotyšska přímé NBS ověřuje vlastní interceptor, LSM zprostředkovává vojenský popis objektu."
+        },
+        {
+          "evidence_id": "followup-20261104-oleshky-evacuee-support",
+          "role": "followup",
+          "line_id": "line-ukraine-ombudsman-oleshky-support-20261104",
+          "claim": "Ombudsman uvádí předané potřeby a charitativní peněžní pomoc evakuovaným z Olešek. Žádosti o další sociální dávky a varianty bydlení jsou v řešení. Přesné dny jednotlivých úkonů nejsou uvedeny.",
+          "independence_basis": "Samostatně nové upřesnění vymezeného tvrzení. Odkazy od stejného původce, přetisky a společná prohlášení se nedají sčítat jako nezávislá potvrzení."
         }
       ],
-      "reviewed_at": "2026-11-02T07:20:41+01:00",
+      "reviewed_at": "2026-11-05T07:28:57+01:00",
       "case_status": "open",
       "next_check_by": "2026-10-30T07:17:55+01:00",
       "next_action": "Ověřit skutečnou dodávku a evakuaci, její rozsah a pokračování místního příměří."
@@ -1585,7 +1592,7 @@
         "ITA",
         "ROU"
       ],
-      "summary": "Reuters přímo popisuje škody ve švédské prodejně a vyjádření řetězců v Belgii, Lucembursku a Irsku. Belgický kyberúřad nezná pachatele; Reuters neověřil vazbu na říjnové francouzské případy. Různé součty prodejen a pozdější geografická rozšíření nejsou sloučeny do jediného ověřeného součtu. Následné zdroje 3. listopadu doplňují Itálii a Rumunsko; společná ruská atribuce není doložena.",
+      "summary": "Reuters přímo popisuje škody ve švédské prodejně a vyjádření řetězců v Belgii, Lucembursku a Irsku. Belgický kyberúřad nezná pachatele; Reuters neověřil vazbu na říjnové francouzské případy. Různé součty prodejen a pozdější geografická rozšíření nejsou sloučeny do jediného ověřeného součtu. Následné zdroje 3. listopadu doplňují Itálii a Rumunsko; společná ruská atribuce není doložena. ENISA, Komise a evropské sítě popisují novou vlnu incidentů 1.–2. listopadu a probíhající společnou výměnu informací. Text nepřipisuje operaci Rusku ani neurčuje společného pachatele všech případů. Rai/Tg1 informuje o videu připisovaném NoName057(16) a Z-Pentest, které si nárokuje evropské útoky. Čas původního zveřejnění videa a technické propojení s jednotlivými incidenty nebyly nezávisle ověřeny.",
       "russian_involvement": "unknown",
       "attribution_basis": "Široce rozšířená technická slabina může vysvětlovat podobnost bez jediného státního řízení. Materiální škoda sama neprokazuje ruskou atribuci ani změnu politiky vůči Ukrajině.",
       "links": [
@@ -1616,9 +1623,23 @@
           "line_id": "line-dnsc-cimpean-refrigeration-assessment-20261103",
           "claim": "Euronews uvádí šest rumunských provozů a jmenované hodnocení Dana Cimpeana, který útok považuje za poloamatérský a nepodezírá státního aktéra. Je to veřejné průběžné posouzení, nikoli konečný důkaz původu všech evropských incidentů.",
           "independence_basis": "Vlastní zdrojová rodina pro vymezené tvrzení. Přetisky a další publikace stejného původce nepřidávají nezávislé potvrzení; státní a jiné atribuce jsou odděleny od účinku."
+        },
+        {
+          "evidence_id": "followup-20261104-enisa-refrigeration-response",
+          "role": "followup",
+          "line_id": "line-eu-enisa-refrigeration-statement-20261104",
+          "claim": "ENISA, Komise a evropské sítě popisují novou vlnu incidentů 1.–2. listopadu a probíhající společnou výměnu informací. Text nepřipisuje operaci Rusku ani neurčuje společného pachatele všech případů.",
+          "independence_basis": "Samostatně nové upřesnění vymezeného tvrzení. Odkazy od stejného původce, přetisky a společná prohlášení se nedají sčítat jako nezávislá potvrzení."
+        },
+        {
+          "evidence_id": "claim-20261104-prorussian-refrigeration-video",
+          "role": "followup",
+          "line_id": "line-noname-zpentest-claim-video-20261104",
+          "claim": "Rai/Tg1 informuje o videu připisovaném NoName057(16) a Z-Pentest, které si nárokuje evropské útoky. Čas původního zveřejnění videa a technické propojení s jednotlivými incidenty nebyly nezávisle ověřeny.",
+          "independence_basis": "Samostatně nové upřesnění vymezeného tvrzení. Odkazy od stejného původce, přetisky a společná prohlášení se nedají sčítat jako nezávislá potvrzení."
         }
       ],
-      "reviewed_at": "2026-11-04T08:01:31+01:00",
+      "reviewed_at": "2026-11-05T07:28:57+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-04T08:45:22+01:00",
       "next_action": "Ověřit nový stav, rozsah, atribuci a chybějící kritéria; nejistotu neuzavírat jako ne."
@@ -1833,7 +1854,227 @@
       "case_status": "open",
       "next_check_by": "2026-11-05T08:01:31+01:00",
       "next_action": "Ověřit chybějící rozsah, realizaci, nezávislou atribuci či výsledky."
+    },
+    {
+      "id": "case-ukraine-energy-operational-20261104",
+      "title": "Ukrenergo: částečná stabilizace; v okamžiku hlášení nouzový režim jen na Charkovsku.",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Samostatný provozní den 4. listopadu: Ukrenergo dopoledne hlásí částečnou stabilizaci, DTEK později návrat nouzových omezení. Tři oblasti výslovně od Ukrenerga nedoloženy.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Jde o časově omezené zlepšení; pozdější DTEK oznámil návrat nouzových omezení. Nový plán hodinových rozvrhů na 5. listopad nedokládá jejich skutečné provedení ani nouzový režim.",
+      "links": [
+        {
+          "evidence_id": "obs-20261104-ukrenergo-partial-stabilisation",
+          "role": "first_report",
+          "line_id": "line-ukrenergo-operational-20261104",
+          "claim": "Ukrenergo po opravách uvádí návrat většiny regionů včetně Kyjeva k hodinovým rozvrhům; v okamžiku zprávy trvala nouzová omezení jen v Charkovské oblasti. Šest jiných vyjmenovaných oblastí popisuje výpadky zákazníků z nových i starších škod, nikoli šest oblastí v nouzovém režimu.",
+          "independence_basis": "Samostatně nové upřesnění vymezeného tvrzení. Odkazy od stejného původce, přetisky a společná prohlášení se nedají sčítat jako nezávislá potvrzení."
+        },
+        {
+          "evidence_id": "obs-20261104-dtek-emergency-reintroduced",
+          "role": "followup",
+          "line_id": "line-dtek-operational-20261104",
+          "claim": "DTEK oznámil návrat nouzových omezení v Kyjevě a Kyjevské oblasti po jejich předchozím odvolání; samostatně téhož dne uvedl město Dnipro. Připisuje pokyn Ukrenergu. Nejde o vlastní zprávu Ukrenerga s výčtem tří oblastí.",
+          "independence_basis": "Samostatně nové upřesnění vymezeného tvrzení. Odkazy od stejného původce, přetisky a společná prohlášení se nedají sčítat jako nezávislá potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-05T07:28:57+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-06T07:28:57+01:00",
+      "next_action": "Ověřit čas, rozsah, nezávislé podklady, realizaci a atribuci podle povahy tvrzení."
+    },
+    {
+      "id": "case-sensor-20261104-employer-military-registration",
+      "title": "NGO: zaměstnavatelé sbírají vojenské evidenční údaje; příkaz k mobilizaci nedoložen.",
+      "kind": "incident",
+      "areas": [
+        "RUS"
+      ],
+      "summary": "NGO zveřejnila podněty z Novosibirsku, Stavropolského kraje a Petrohradu o údajích zaměstnanců a jejich rodin a podpisu evidenčních povinností. Přesné dny úkonů ani souhrnný počet osob nejsou známé.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Sama NGO popisuje běžné povinnosti vojenské evidence zaměstnavatelů. Podpis poučení není nucené povolání; tři města nejsou tři nezávisle ověřené linie ani doklad koordinované vlny.",
+      "links": [
+        {
+          "evidence_id": "sensor-20261104-employer-military-registration",
+          "role": "first_report",
+          "line_id": "line-iditelesom-employer-registration-20261104",
+          "claim": "NGO zveřejnila podněty z Novosibirsku, Stavropolského kraje a Petrohradu o údajích zaměstnanců a jejich rodin a podpisu evidenčních povinností. Přesné dny úkonů ani souhrnný počet osob nejsou známé.",
+          "independence_basis": "Samostatně nové upřesnění vymezeného tvrzení. Odkazy od stejného původce, přetisky a společná prohlášení se nedají sčítat jako nezávislá potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-05T07:28:57+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-06T07:28:57+01:00",
+      "next_action": "Ověřit čas, rozsah, nezávislé podklady, realizaci a atribuci podle povahy tvrzení."
+    },
+    {
+      "id": "case-obs-20261104-belarus-logistics-training",
+      "title": "Běloruský rezort ukazuje výcvik příjmu doplnění a logistického zabezpečení.",
+      "kind": "assessment",
+      "areas": [
+        "BLR"
+      ],
+      "summary": "Rezort ve zprávách z operačního shromáždění popisuje ukázky oprav techniky, příjmu doplnění a logistického zabezpečení. Velitelé mluví o budoucím zavedení poznatků do výcviku; samostatný přesný den ukázek není doložen.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Demonstrovaná výcviková kapacita není pozorovaná útočná koncentrace, mobilizační rozhodnutí ani vstup běloruských pozemních jednotek do války. Zmíněná dřívější překvapivá kontrola se neodehrála nutně dnes.",
+      "links": [
+        {
+          "evidence_id": "obs-20261104-belarus-logistics-training",
+          "role": "first_report",
+          "line_id": "line-belarus-operational-gathering-20261104",
+          "claim": "Rezort ve zprávách z operačního shromáždění popisuje ukázky oprav techniky, příjmu doplnění a logistického zabezpečení. Velitelé mluví o budoucím zavedení poznatků do výcviku; samostatný přesný den ukázek není doložen.",
+          "independence_basis": "Samostatně nové upřesnění vymezeného tvrzení. Odkazy od stejného původce, přetisky a společná prohlášení se nedají sčítat jako nezávislá potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-05T07:28:57+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-06T07:28:57+01:00",
+      "next_action": "Ověřit čas, rozsah, nezávislé podklady, realizaci a atribuci podle povahy tvrzení."
+    },
+    {
+      "id": "case-poland-starlink-20260923",
+      "title": "Německé zatčení údajného organizátora zářijového útoku; nově nalezený následný vývoj.",
+      "kind": "incident",
+      "areas": [
+        "DEU",
+        "POL"
+      ],
+      "summary": "Zářijový útok v Polsku; další zatčení údajného organizátora 3. listopadu je procesní následný vývoj. Není novým útokem ani prvním zveřejněním ruské atribuce.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Nové procesní opatření není nový útok ani první zveřejnění ruské atribuce. Německé a polské úřady spolupracují; starší ABW výslovně připisuje původ důkazů polské straně. Přímý nový německý tiskový text se nepodařilo získat.",
+      "links": [
+        {
+          "evidence_id": "followup-20261103-starlink-organiser-arrest",
+          "role": "first_report",
+          "line_id": "line-lka-stuttgart-starlink-arrest-20261103",
+          "claim": "SWR uvádí zatčení údajného zadavatele 3. listopadu v Německu v již známé polské kauze Starlink ze září. Zpráva nalezena až dnes, ne nová sabotáž 4. či 5. listopadu. Polské podezření ruské vazby bylo veřejné už před současnými okny.",
+          "independence_basis": "Samostatně nové upřesnění vymezeného tvrzení. Odkazy od stejného původce, přetisky a společná prohlášení se nedají sčítat jako nezávislá potvrzení."
+        },
+        {
+          "evidence_id": "evt-20260925-poland-starlink-arson-prosecutor",
+          "role": "overlapping_claim",
+          "line_id": "line-polish-national-prosecution-arson-and-russian-tasking-investigation",
+          "claim": "Dřívější hlášení téhož útoku z 23. září a atribuce před začátkem aktuálních oken.",
+          "independence_basis": "Starý případ nově kanonicky propojen; ledger a původní tvrzení se nemění."
+        },
+        {
+          "evidence_id": "followup-20261012-poland-starlink-arrests",
+          "role": "overlapping_claim",
+          "line_id": "line-polish-national-prosecution-arson-and-russian-tasking-investigation",
+          "claim": "Dřívější hlášení téhož útoku z 23. září a atribuce před začátkem aktuálních oken.",
+          "independence_basis": "Starý případ nově kanonicky propojen; ledger a původní tvrzení se nemění."
+        }
+      ],
+      "reviewed_at": "2026-11-05T07:28:57+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-06T07:28:57+01:00",
+      "next_action": "Ověřit čas, rozsah, nezávislé podklady, realizaci a atribuci podle povahy tvrzení."
+    },
+    {
+      "id": "case-obs-20261104-osce-minsk-dialogue",
+      "title": "OBSE potvrzuje uskutečněná jednání v Minsku a návaznost na humanitární kontakty.",
+      "kind": "assessment",
+      "areas": [
+        "BLR",
+        "RUS",
+        "UKR"
+      ],
+      "summary": "Generální tajemník OBSE dokončil návštěvu Minsku a jednal s běloruským vedením i Lavrovem. Uvítal humanitární opatření vyjednávaná ruskou a ukrajinskou stranou.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Uskutečněný diplomatický kontakt omezuje tezi úplného přerušení komunikace; není příměřím, zárukou budoucí dohody ani potvrzením vojenské deeskalace.",
+      "links": [
+        {
+          "evidence_id": "obs-20261104-osce-minsk-dialogue",
+          "role": "first_report",
+          "line_id": "line-osce-minsk-visit-20261104",
+          "claim": "Generální tajemník OBSE dokončil návštěvu Minsku a jednal s běloruským vedením i Lavrovem. Uvítal humanitární opatření vyjednávaná ruskou a ukrajinskou stranou.",
+          "independence_basis": "Samostatně nové upřesnění vymezeného tvrzení. Odkazy od stejného původce, přetisky a společná prohlášení se nedají sčítat jako nezávislá potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-05T07:28:57+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-06T07:28:57+01:00",
+      "next_action": "Ověřit čas, rozsah, nezávislé podklady, realizaci a atribuci podle povahy tvrzení."
+    },
+    {
+      "id": "case-announced-20261104-uk-netherlands-defence-cooperation",
+      "title": "Británie a Nizozemsko potvrzují obrannou spolupráci a podporu Ukrajiny.",
+      "kind": "assessment",
+      "areas": [
+        "GBR",
+        "NLD",
+        "NATO",
+        "UKR"
+      ],
+      "summary": "Společné prohlášení potvrzuje pokračování obranné a průmyslové spolupráce a podpory Ukrajiny; zmiňuje rovněž námořní misi v Hormuzu.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Prohlášení nevyčísluje novou dodávku Ukrajině. Zmínka o Hormuzu sama neprokazuje přesun prostředků na úkor Ukrajiny ani ruské způsobení této krize.",
+      "links": [
+        {
+          "evidence_id": "announced-20261104-uk-netherlands-defence-cooperation",
+          "role": "first_report",
+          "line_id": "line-uk-nl-joint-statement-20261104",
+          "claim": "Společné prohlášení potvrzuje pokračování obranné a průmyslové spolupráce a podpory Ukrajiny; zmiňuje rovněž námořní misi v Hormuzu.",
+          "independence_basis": "Samostatně nové upřesnění vymezeného tvrzení. Odkazy od stejného původce, přetisky a společná prohlášení se nedají sčítat jako nezávislá potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-05T07:28:57+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-06T07:28:57+01:00",
+      "next_action": "Ověřit čas, rozsah, nezávislé podklady, realizaci a atribuci podle povahy tvrzení."
+    },
+    {
+      "id": "case-decision-20261104-swiss-sanctions-adoption",
+      "title": "Švýcarsko přijalo další sankční opatření; nejde o nový listopadový balík EU.",
+      "kind": "assessment",
+      "areas": [
+        "RUS",
+        "BLR"
+      ],
+      "summary": "Spolková rada 4. listopadu přijala opatření navazující na červencový 21. balík EU. Změny seznamů nabývají účinnosti 4. listopadu ve 23:00, sektorová opatření 5. listopadu. Některé subjekty výslovně nezahrnula.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Právní krok není měřený hospodářský dopad; převzetí červencového balíku není nová listopadová eskalace EU. Výjimky nelze vydávat za úplné převzetí.",
+      "links": [
+        {
+          "evidence_id": "decision-20261104-swiss-sanctions-adoption",
+          "role": "first_report",
+          "line_id": "line-swiss-council-sanctions-20261104",
+          "claim": "Spolková rada 4. listopadu přijala opatření navazující na červencový 21. balík EU. Změny seznamů nabývají účinnosti 4. listopadu ve 23:00, sektorová opatření 5. listopadu. Některé subjekty výslovně nezahrnula.",
+          "independence_basis": "Samostatně nové upřesnění vymezeného tvrzení. Odkazy od stejného původce, přetisky a společná prohlášení se nedají sčítat jako nezávislá potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-05T07:28:57+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-06T07:28:57+01:00",
+      "next_action": "Ověřit čas, rozsah, nezávislé podklady, realizaci a atribuci podle povahy tvrzení."
+    },
+    {
+      "id": "case-reported-20261102-efs-refrigeration-protected",
+      "title": "EFS: zásah do chlazení tří pracovišť, bez ztráty krevních produktů.",
+      "kind": "incident",
+      "areas": [
+        "FRA"
+      ],
+      "summary": "Podle přetlumočeného sdělení EFS zasáhl incident u dodavatele tři pracoviště v noci 1.–2. listopadu. Zásah personálu uchránil krevní produkty a distribuce pokračovala. Coolworld obecně potvrzuje omezený počet zasažených jednotek, neidentifikuje jednotlivé zákazníky.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Zvýšená nastavená teplota není dosažená teplota krve. Původce a vztah k ostatním evropským incidentům zůstávají neprokázané; citace stejného EFS sdělení nepřidávají nezávislé potvrzení.",
+      "links": [
+        {
+          "evidence_id": "reported-20261102-efs-refrigeration-protected",
+          "role": "first_report",
+          "line_id": "line-efs-operator-statement-20261103",
+          "claim": "Podle přetlumočeného sdělení EFS zasáhl incident u dodavatele tři pracoviště v noci 1.–2. listopadu. Zásah personálu uchránil krevní produkty a distribuce pokračovala. Coolworld obecně potvrzuje omezený počet zasažených jednotek, neidentifikuje jednotlivé zákazníky.",
+          "independence_basis": "Samostatně nové upřesnění vymezeného tvrzení. Odkazy od stejného původce, přetisky a společná prohlášení se nedají sčítat jako nezávislá potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-05T07:28:57+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-06T07:28:57+01:00",
+      "next_action": "Ověřit čas, rozsah, nezávislé podklady, realizaci a atribuci podle povahy tvrzení."
     }
   ],
-  "review_note": "Dnešní nové vazby přezkoumány. NBS společné posouzení propojeno se dvěma oddělenými incidenty; energetika po provozních dnech. Starý ledger a snímky beze změny."
+  "review_note": "Přezkoumány nové anotace a vazby: provozní den 4. listopadu, zvláštní případ EFS a zářijová polská kauza s listopadovým procesním pokračováním. Staré anotace a ledger zachovány."
 }

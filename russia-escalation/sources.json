@@ -2074,6 +2074,186 @@
       "tier": 1,
       "cadence_days": 7,
       "priority": 2
+    },
+    {
+      "id": "eu-enisa",
+      "name": "ENISA, veřejná sdělení",
+      "url": "https://www.enisa.europa.eu/news/joint-statement-on-cyber-incidents-in-refrigeration-systems-across-the-eu",
+      "areas": [
+        "EU"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment",
+        "policy_effect"
+      ],
+      "tier": 1,
+      "cadence_days": 1,
+      "priority": 1
+    },
+    {
+      "id": "fra-efs",
+      "name": "EFS, tisková sdělení",
+      "url": "https://presse.efs.sante.fr/actualites/l-efs-confirme-l-incident-de-cybersecurite-impactant-un-de-ces-prestataires-d-equipement-frigorifique-2c07c-08a0a.html",
+      "areas": [
+        "FRA"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment",
+        "policy_effect"
+      ],
+      "tier": 1,
+      "cadence_days": 1,
+      "priority": 1
+    },
+    {
+      "id": "doc-source-118",
+      "name": "www.ksl.com",
+      "url": "https://www.ksl.com/article/51642723/residents-evacuated-from-russian-occupied-oleshky-reach-ukraine-after-localized-ceasefire",
+      "areas": [
+        "UKR"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-source-119",
+      "name": "www.marketscreener.com",
+      "url": "https://www.marketscreener.com/news/ukrainian-drones-set-fire-to-major-russian-oil-refinery-local-governor-says--ce785fd9df88f521",
+      "areas": [
+        "UKR",
+        "RUS",
+        "USA"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-source-120",
+      "name": "uk.marketscreener.com",
+      "url": "https://uk.marketscreener.com/news/pentagon-tells-europeans-to-cool-their-rhetoric-on-russia-sources-say-ce785fdad081f627",
+      "areas": [
+        "EST",
+        "LVA",
+        "LTU",
+        "USA"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-source-121",
+      "name": "www.investing.com",
+      "url": "https://www.investing.com/news/world-news/exclusivepentagon-treating-military-base-freezer-malfunctions-as-suspectedcyberattack-officials-say-4982294",
+      "areas": [
+        "USA",
+        "FRA"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-source-122",
+      "name": "www.internazionale.it",
+      "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/10/28/german-police-arrest-two-suspected-of-planning-sabotage-attacks-for-russia-spiegel-says",
+      "areas": [
+        "DEU",
+        "ROU"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-source-123",
+      "name": "www.mil.lv",
+      "url": "https://www.mil.lv/lv/zinas/nacionalie-brunotie-speki-sniedza-papildu-informaciju-par-1-un-3-novembra-incidentiem",
+      "areas": [
+        "LVA"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-source-124",
+      "name": "new.streetinsider.com",
+      "url": "https://new.streetinsider.com/Reuters/European%2Bsupermarkets%2Bhit%2Bby%2Bnew%2Bfridge%2Bcyber%2Battack/27268259.html",
+      "areas": [
+        "SWE",
+        "BEL",
+        "LUX",
+        "IRL",
+        "ITA",
+        "ROU"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-source-125",
+      "name": "www.act.nato.int",
+      "url": "https://www.act.nato.int/article/nato-fuses-emergent-technologies-battlefield-advantage/",
+      "areas": [
+        "LVA"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-source-126",
+      "name": "www.president.gov.ua",
+      "url": "https://www.president.gov.ua/en/news/nimechchina-nadast-ukrayini-zimovij-paket-pidtrimki-volodimi-107125",
+      "areas": [
+        "DEU",
+        "UKR"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",
