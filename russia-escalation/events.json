@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-05T07:28:57+01:00",
+  "reviewed_at": "2026-11-06T08:09:13+01:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -306,7 +306,7 @@
       "areas": [
         "BLACK_SEA"
       ],
-      "summary": "Bulharské ministerstvo potvrzuje záchranu 18 členů posádky Contship Jet po hlášení zásahu námořními drony. Trasa Haifa–Constanța; zásah mimo bulharské teritoriální moře. Původce ani vojenský obsah nákladu potvrzeny nejsou.",
+      "summary": "Bulharské ministerstvo potvrzuje záchranu 18 členů posádky Contship Jet po hlášení zásahu námořními drony. Trasa Haifa–Constanța; zásah mimo bulharské teritoriální moře. Původce ani vojenský obsah nákladu potvrzeny nejsou. Factcheck.bg porovnal sdílené obrazové varianty s původním záznamem. Vyhodnotil verzi s ruským znakem jako upravenou a záběry s ukrajinským znakem jako generované. Dostupný záznam útoku sám původce neurčuje.",
       "russian_involvement": "unknown",
       "attribution_basis": "Další útok na obchodní plavbu může souviset s válkou proti Ukrajině, aniž jeho účelem byl test NATO. Nezaměňovat námořní nebezpečí s potvrzeným ruským úmyslem.",
       "links": [
@@ -344,9 +344,16 @@
           "line_id": "line-obs-20261030-black-sea-pollution-monitoring",
           "claim": "Ředitel správy povodí uvádí, že dosavadní monitoring nezjistil překročení sledovaných ukazatelů přičitatelné lodním incidentům. Výjimku u amoniakálního dusíku nelze přímo spojit s nimi; nejnovější výsledky ještě nejsou hotové.",
           "independence_basis": "Samostatná environmentální měření; ne nezávislé potvrzení útočníka."
+        },
+        {
+          "evidence_id": "followup-20261105-contship-symbol-images-altered",
+          "role": "followup",
+          "line_id": "line-factcheck-bg-contship-visual-comparison-20261105",
+          "claim": "Factcheck.bg porovnal sdílené obrazové varianty s původním záznamem. Vyhodnotil verzi s ruským znakem jako upravenou a záběry s ukrajinským znakem jako generované. Dostupný záznam útoku sám původce neurčuje.",
+          "independence_basis": "Nová informace této zdrojové linie. Přetisk, překlad nebo převzetí výroku se započítá jen jednou."
         }
       ],
-      "reviewed_at": "2026-10-30T08:08:44+01:00",
+      "reviewed_at": "2026-11-06T08:09:13+01:00",
       "case_status": "open",
       "next_check_by": "2026-10-29T19:17:55+01:00",
       "next_action": "Ověřit původce, přesný výsledek a účinek bez přičítání mediálních derivátů."
@@ -1453,7 +1460,7 @@
       "areas": [
         "POL"
       ],
-      "summary": "Boroń pro RMF potvrdil posily a zvláštní policejní operaci u ruské hranice. Dopis KGP z 1. listopadu spojuje pokyn z 29. října s východními službami, nikoli sporem o ústavní soud. RMF navíc uvádí zpravodajské varování před možným průnikem ozbrojených skupin; podklad není veřejný.",
+      "summary": "Boroń pro RMF potvrdil posily a zvláštní policejní operaci u ruské hranice. Dopis KGP z 1. listopadu spojuje pokyn z 29. října s východními službami, nikoli sporem o ústavní soud. RMF navíc uvádí zpravodajské varování před možným průnikem ozbrojených skupin; podklad není veřejný. Reportáž LRT z 3. listopadu popisuje výměnu informací mezi Litvou a Polskem a dodatečné sledování německou brigádou v Litvě. Přesný začátek opatření není uveden.",
       "russian_involvement": "unknown",
       "attribution_basis": "Preventivní posílení ochrany může hrozbu odradit. Nepotvrzuje uskutečněný průnik, ruskou útočnou logistiku ani nezávislost zmiňovaných spojeneckých varování.",
       "links": [
@@ -1470,9 +1477,16 @@
           "line_id": "line-polish-government-border-warning-20261103",
           "claim": "Premiér uvedl noční podezřelý pohyb a rychlou ochrannou reakci. Vládní shrnutí mluví o zmařené provokaci; přímý výrok podle PAP obsahuje podmínku, zda takový úmysl skutečně existoval. Veřejně není doložena konkrétní ozbrojená skupina, provedený útok ani jeho ruské řízení.",
           "independence_basis": "Vlastní zdrojová rodina pro vymezené tvrzení. Přetisky a další publikace stejného původce nepřidávají nezávislé potvrzení; státní a jiné atribuce jsou odděleny od účinku."
+        },
+        {
+          "evidence_id": "reported-20261103-lithuania-allied-monitoring",
+          "role": "followup",
+          "line_id": "line-lrt-lithuanian-allied-monitoring-20261103",
+          "claim": "Reportáž LRT z 3. listopadu popisuje výměnu informací mezi Litvou a Polskem a dodatečné sledování německou brigádou v Litvě. Přesný začátek opatření není uveden.",
+          "independence_basis": "Nová informace této zdrojové linie. Přetisk, překlad nebo převzetí výroku se započítá jen jednou."
         }
       ],
-      "reviewed_at": "2026-11-04T08:01:31+01:00",
+      "reviewed_at": "2026-11-06T08:09:13+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-04T08:45:22+01:00",
       "next_action": "Ověřit nový stav, rozsah, atribuci a chybějící kritéria; nejistotu neuzavírat jako ne."
@@ -1508,7 +1522,7 @@
       "areas": [
         "UKR"
       ],
-      "summary": "Prezident uvádí dva sledy leteckých úderů na bývalou školu a úkryt používané pro humanitární pomoc v Komyšuvaše, 26 mrtvých a pokračující záchranu. Počet je předběžný; AP přebírá ukrajinské úřední údaje, nikoli nezávislý audit obětí či vědomého cílení.",
+      "summary": "Prezident uvádí dva sledy leteckých úderů na bývalou školu a úkryt používané pro humanitární pomoc v Komyšuvaše, 26 mrtvých a pokračující záchranu. Počet je předběžný; AP přebírá ukrajinské úřední údaje, nikoli nezávislý audit obětí či vědomého cílení. Prezident uvedl 43 nalezených mrtvých a 53 pohřešovaných po útoku z 2. listopadu. Nové je průběžné vyhodnocení následků, nikoli nový útok.",
       "russian_involvement": "unknown",
       "attribution_basis": "Pokračování již probíhající kampaně je slučitelné s ukončenou místní dohodou v Oleškách; toto jiné místo nebylo doloženou součástí té dohody.",
       "links": [
@@ -1518,9 +1532,16 @@
           "line_id": "line-ukrainian-authorities-komyshuvakha-20261102",
           "claim": "Prezident uvádí dva sledy leteckých úderů na bývalou školu a úkryt používané pro humanitární pomoc v Komyšuvaše, 26 mrtvých a pokračující záchranu. Počet je předběžný; AP přebírá ukrajinské úřední údaje, nikoli nezávislý audit obětí či vědomého cílení.",
           "independence_basis": "Vlastní publikace daného původce. U NCSC nezávislé potvrzení reakce na incidenty, nikoli atribuce. Přetisky a pokračování se nepřičítají jako další nezávislý důkaz téhož tvrzení."
+        },
+        {
+          "evidence_id": "followup-20261105-komyshuvakha-rescue-toll",
+          "role": "followup",
+          "line_id": "line-ukraine-presidency-komyshuvakha-20261105",
+          "claim": "Prezident uvedl 43 nalezených mrtvých a 53 pohřešovaných po útoku z 2. listopadu. Nové je průběžné vyhodnocení následků, nikoli nový útok.",
+          "independence_basis": "Nová informace této zdrojové linie. Přetisk, překlad nebo převzetí výroku se započítá jen jednou."
         }
       ],
-      "reviewed_at": "2026-11-03T08:45:22+01:00",
+      "reviewed_at": "2026-11-06T08:09:13+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-04T08:45:22+01:00",
       "next_action": "Ověřit nový stav, rozsah, atribuci a chybějící kritéria; nejistotu neuzavírat jako ne."
@@ -1592,7 +1613,7 @@
         "ITA",
         "ROU"
       ],
-      "summary": "Reuters přímo popisuje škody ve švédské prodejně a vyjádření řetězců v Belgii, Lucembursku a Irsku. Belgický kyberúřad nezná pachatele; Reuters neověřil vazbu na říjnové francouzské případy. Různé součty prodejen a pozdější geografická rozšíření nejsou sloučeny do jediného ověřeného součtu. Následné zdroje 3. listopadu doplňují Itálii a Rumunsko; společná ruská atribuce není doložena. ENISA, Komise a evropské sítě popisují novou vlnu incidentů 1.–2. listopadu a probíhající společnou výměnu informací. Text nepřipisuje operaci Rusku ani neurčuje společného pachatele všech případů. Rai/Tg1 informuje o videu připisovaném NoName057(16) a Z-Pentest, které si nárokuje evropské útoky. Čas původního zveřejnění videa a technické propojení s jednotlivými incidenty nebyly nezávisle ověřeny.",
+      "summary": "Reuters přímo popisuje škody ve švédské prodejně a vyjádření řetězců v Belgii, Lucembursku a Irsku. Belgický kyberúřad nezná pachatele; Reuters neověřil vazbu na říjnové francouzské případy. Různé součty prodejen a pozdější geografická rozšíření nejsou sloučeny do jediného ověřeného součtu. Následné zdroje 3. listopadu doplňují Itálii a Rumunsko; společná ruská atribuce není doložena. ENISA, Komise a evropské sítě popisují novou vlnu incidentů 1.–2. listopadu a probíhající společnou výměnu informací. Text nepřipisuje operaci Rusku ani neurčuje společného pachatele všech případů. Rai/Tg1 informuje o videu připisovaném NoName057(16) a Z-Pentest, které si nárokuje evropské útoky. Čas původního zveřejnění videa a technické propojení s jednotlivými incidenty nebyly nezávisle ověřeny. NÚKIB vydal doporučení provozovatelům v reakci na evropské změny konfigurace chladicích systémů. Výslovně uvádí, že v Česku takový případ k datu zprávy neevidoval.",
       "russian_involvement": "unknown",
       "attribution_basis": "Široce rozšířená technická slabina může vysvětlovat podobnost bez jediného státního řízení. Materiální škoda sama neprokazuje ruskou atribuci ani změnu politiky vůči Ukrajině.",
       "links": [
@@ -1637,9 +1658,16 @@
           "line_id": "line-noname-zpentest-claim-video-20261104",
           "claim": "Rai/Tg1 informuje o videu připisovaném NoName057(16) a Z-Pentest, které si nárokuje evropské útoky. Čas původního zveřejnění videa a technické propojení s jednotlivými incidenty nebyly nezávisle ověřeny.",
           "independence_basis": "Samostatně nové upřesnění vymezeného tvrzení. Odkazy od stejného původce, přetisky a společná prohlášení se nedají sčítat jako nezávislá potvrzení."
+        },
+        {
+          "evidence_id": "assessment-20261105-nukib-refrigeration-czech-scope",
+          "role": "followup",
+          "line_id": "line-nukib-czech-scope-20261105",
+          "claim": "NÚKIB vydal doporučení provozovatelům v reakci na evropské změny konfigurace chladicích systémů. Výslovně uvádí, že v Česku takový případ k datu zprávy neevidoval.",
+          "independence_basis": "Nová informace této zdrojové linie. Přetisk, překlad nebo převzetí výroku se započítá jen jednou."
         }
       ],
-      "reviewed_at": "2026-11-05T07:28:57+01:00",
+      "reviewed_at": "2026-11-06T08:09:13+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-04T08:45:22+01:00",
       "next_action": "Ověřit nový stav, rozsah, atribuci a chybějící kritéria; nejistotu neuzavírat jako ne."
@@ -1713,7 +1741,7 @@
       "areas": [
         "RUS"
       ],
-      "summary": "NGO uvádí 61 říjnových podnětů proti 55 v září: 25 nedávno podepsaných kontraktů, 33 starších a tři dosud nepodepsané. Pět případů se má týkat nátlaku krátce po nástupu. Jde o podněty o podpisu či donucování, nikoli 61 nově prokázaných nucených povolání.",
+      "summary": "NGO uvádí 61 říjnových podnětů proti 55 v září: 25 nedávno podepsaných kontraktů, 33 starších a tři dosud nepodepsané. Pět případů se má týkat nátlaku krátce po nástupu. Jde o podněty o podpisu či donucování, nikoli 61 nově prokázaných nucených povolání. Organizace Iditě lesom uvádí za říjen 18 případů náboru přes nabídky práce. Popisuje rozdílné situace včetně tvrzení o nátlaku a nesouladu mezi slíbenou a skutečnou činností.",
       "russian_involvement": "unknown",
       "attribution_basis": "Omezeno deklarovaným zdrojem; nezaměňovat důkaz účinku a původce. Výběrový soubor závisí na hlášení, není reprezentativní mírou náboru ani dokladem koordinované vlny 100 000 osob. Nelze přičíst jiné soubory NGO s neznámým překryvem.",
       "links": [
@@ -1723,9 +1751,16 @@
           "line_id": "line-iditelesom-monthly-contacts-202610",
           "claim": "NGO uvádí 61 říjnových podnětů proti 55 v září: 25 nedávno podepsaných kontraktů, 33 starších a tři dosud nepodepsané. Pět případů se má týkat nátlaku krátce po nástupu. Jde o podněty o podpisu či donucování, nikoli 61 nově prokázaných nucených povolání.",
           "independence_basis": "Vlastní zdrojová rodina pro vymezené tvrzení. Přetisky a další publikace stejného původce nepřidávají nezávislé potvrzení; státní a jiné atribuce jsou odděleny od účinku."
+        },
+        {
+          "evidence_id": "reported-202610-iditelesom-deceptive-job-contacts",
+          "role": "followup",
+          "line_id": "line-iditelesom-october-hotline-2026",
+          "claim": "Organizace Iditě lesom uvádí za říjen 18 případů náboru přes nabídky práce. Popisuje rozdílné situace včetně tvrzení o nátlaku a nesouladu mezi slíbenou a skutečnou činností.",
+          "independence_basis": "Nová informace této zdrojové linie. Přetisk, překlad nebo převzetí výroku se započítá jen jednou."
         }
       ],
-      "reviewed_at": "2026-11-04T08:01:31+01:00",
+      "reviewed_at": "2026-11-06T08:09:13+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-05T08:01:31+01:00",
       "next_action": "Ověřit chybějící rozsah, realizaci, nezávislou atribuci či výsledky."
@@ -1917,7 +1952,7 @@
       "areas": [
         "BLR"
       ],
-      "summary": "Rezort ve zprávách z operačního shromáždění popisuje ukázky oprav techniky, příjmu doplnění a logistického zabezpečení. Velitelé mluví o budoucím zavedení poznatků do výcviku; samostatný přesný den ukázek není doložen.",
+      "summary": "Rezort ve zprávách z operačního shromáždění popisuje ukázky oprav techniky, příjmu doplnění a logistického zabezpečení. Velitelé mluví o budoucím zavedení poznatků do výcviku; samostatný přesný den ukázek není doložen. Běloruské ministerstvo obrany uvedlo, že shromáždění velitelů skončilo jednáním kolegia, které vyhodnotilo výcvikový rok 2025/2026. Jde o následný vývoj již sledované výcvikové akce.",
       "russian_involvement": "unknown",
       "attribution_basis": "Demonstrovaná výcviková kapacita není pozorovaná útočná koncentrace, mobilizační rozhodnutí ani vstup běloruských pozemních jednotek do války. Zmíněná dřívější překvapivá kontrola se neodehrála nutně dnes.",
       "links": [
@@ -1927,9 +1962,16 @@
           "line_id": "line-belarus-operational-gathering-20261104",
           "claim": "Rezort ve zprávách z operačního shromáždění popisuje ukázky oprav techniky, příjmu doplnění a logistického zabezpečení. Velitelé mluví o budoucím zavedení poznatků do výcviku; samostatný přesný den ukázek není doložen.",
           "independence_basis": "Samostatně nové upřesnění vymezeného tvrzení. Odkazy od stejného původce, přetisky a společná prohlášení se nedají sčítat jako nezávislá potvrzení."
+        },
+        {
+          "evidence_id": "obs-20261105-belarus-command-course-concluded",
+          "role": "followup",
+          "line_id": "line-belarus-mod-command-training-november-2026",
+          "claim": "Běloruské ministerstvo obrany uvedlo, že shromáždění velitelů skončilo jednáním kolegia, které vyhodnotilo výcvikový rok 2025/2026. Jde o následný vývoj již sledované výcvikové akce.",
+          "independence_basis": "Nová informace této zdrojové linie. Přetisk, překlad nebo převzetí výroku se započítá jen jednou."
         }
       ],
-      "reviewed_at": "2026-11-05T07:28:57+01:00",
+      "reviewed_at": "2026-11-06T08:09:13+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-06T07:28:57+01:00",
       "next_action": "Ověřit čas, rozsah, nezávislé podklady, realizaci a atribuci podle povahy tvrzení."
@@ -2074,7 +2116,229 @@
       "case_status": "open",
       "next_check_by": "2026-11-06T07:28:57+01:00",
       "next_action": "Ověřit čas, rozsah, nezávislé podklady, realizaci a atribuci podle povahy tvrzení."
+    },
+    {
+      "id": "case-ukraine-energy-operational-20261105",
+      "title": "Ukrenergo potvrdilo nouzová omezení ve čtyřech oblastech a v Kyjevě.",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Ukrenergo potvrdilo skutečně zavedená nouzová vypínání kvůli následkům ruského ostřelování v Kyjevské, Žytomyrské, Černihivské a Čerkaské oblasti a ve městě Kyjev. V dotčených místech plánovaný rozvrh přestal platit.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Krátkodobé nouzové řízení po souhrnných škodách; samo o sobě neprokazuje novou strategii útoků ani úmysl poškodit NATO. Pokles teploty může měnit poptávku, nezpochybňuje výslovnou příčinu uvedenou operátorem.",
+      "links": [
+        {
+          "evidence_id": "obs-20261105-ukrenergo-four-oblast-emergency",
+          "role": "first_report",
+          "line_id": "line-ukrenergo-emergency-20261105",
+          "claim": "Ukrenergo potvrdilo skutečně zavedená nouzová vypínání kvůli následkům ruského ostřelování v Kyjevské, Žytomyrské, Černihivské a Čerkaské oblasti a ve městě Kyjev. V dotčených místech plánovaný rozvrh přestal platit.",
+          "independence_basis": "Ukrenergo je pro rozsah a příčinu jediná rozhodná linie. Místní zprávy DTEK provádějí pokyn operátora, nejsou jeho nezávislým celostátním potvrzením."
+        }
+      ],
+      "reviewed_at": "2026-11-06T07:11:34+01:00",
+      "case_status": "closed",
+      "next_check_by": null,
+      "next_action": null
+    },
+    {
+      "id": "case-fitburg-20251231",
+      "title": "Finský soud shledal úmyslné poškození dvou kabelů z prosince 2025. Rozsudek není pravomocný.",
+      "kind": "incident",
+      "areas": [
+        "BALTIC_SEA"
+      ],
+      "summary": "Helsinský soud v nepravomocném rozsudku z 5. listopadu odsoudil kapitána a loďmistra plavidla Fitburg za úmyslné poškození dvou kabelů 31. prosince 2025 ve Finském zálivu mimo finské teritoriální vody. Kapitán dostal tři roky a šest měsíců, loďmistr dva roky a deset měsíců.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Soudní zjištění úmyslného jednání posádky neurčuje státního zadavatele. Dokládá starší skutek a nový rozsudek, nikoli další listopadový útok.",
+      "links": [
+        {
+          "evidence_id": "followup-20261105-fitburg-helsinki-verdict",
+          "role": "first_report",
+          "line_id": "line-helsinki-district-court-fitburg-20261105",
+          "claim": "Helsinský soud v nepravomocném rozsudku z 5. listopadu odsoudil kapitána a loďmistra plavidla Fitburg za úmyslné poškození dvou kabelů 31. prosince 2025 ve Finském zálivu mimo finské teritoriální vody. Kapitán dostal tři roky a šest měsíců, loďmistr dva roky a deset měsíců.",
+          "independence_basis": "Nová informace této zdrojové linie. Přetisk, překlad nebo převzetí výroku se započítá jen jednou."
+        }
+      ],
+      "reviewed_at": "2026-11-06T08:09:13+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-07T08:09:13+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-abw-components-20261105",
+      "title": "ABW oznámila šest zadržení a podezření na vývoz vojenských součástek do Ruska.",
+      "kind": "incident",
+      "areas": [
+        "POL",
+        "RUS"
+      ],
+      "summary": "ABW uvádí šest zadržených a prohlídky na 21 místech mezi 21. říjnem a 2. listopadem. Čtyři osoby čelí obvinění ze špionáže a byly vzaty do vazby. Vyšetřovatelé podezírají skupinu z práce pro ruské služby a dodávek vojenských komponentů do Ruska.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Zadržení a obvinění jsou procesní kroky. Přesné datum a dopad údajných dodávek zůstávají neurčeny. Oznámení nepopisuje fyzický útok.",
+      "links": [
+        {
+          "evidence_id": "reported-20261105-abw-military-component-network",
+          "role": "first_report",
+          "line_id": "line-abw-components-20261105",
+          "claim": "ABW uvádí šest zadržených a prohlídky na 21 místech mezi 21. říjnem a 2. listopadem. Čtyři osoby čelí obvinění ze špionáže a byly vzaty do vazby. Vyšetřovatelé podezírají skupinu z práce pro ruské služby a dodávek vojenských komponentů do Ruska.",
+          "independence_basis": "Nová informace této zdrojové linie. Přetisk, překlad nebo převzetí výroku se započítá jen jednou."
+        }
+      ],
+      "reviewed_at": "2026-11-06T08:09:13+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-07T08:09:13+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-eu-payment-20261105",
+      "title": "Komise vyplatila Ukrajině 4,36 miliardy eur z již schváleného úvěru.",
+      "kind": "policy",
+      "areas": [
+        "EU",
+        "UKR"
+      ],
+      "summary": "Evropská komise oznámila skutečnou platbu 4,36 miliardy eur Ukrajině z dříve schváleného úvěru ve výši 90 miliard eur. Z platby připadá 3,7 miliardy eur na makrofinanční pomoc.",
+      "russian_involvement": "independent",
+      "attribution_basis": "Uskutečnění dřívějšího závazku ukazuje pokračování části podpory. Nevypovídá samo o všech dodávkách, veřejném mínění nebo vlivu ruského tlaku na jiné rozpočty.",
+      "links": [
+        {
+          "evidence_id": "paid-20261105-commission-ukraine-support-loan",
+          "role": "first_report",
+          "line_id": "line-european-commission-loan-disbursement-20261105",
+          "claim": "Evropská komise oznámila skutečnou platbu 4,36 miliardy eur Ukrajině z dříve schváleného úvěru ve výši 90 miliard eur. Z platby připadá 3,7 miliardy eur na makrofinanční pomoc.",
+          "independence_basis": "Nová informace této zdrojové linie. Přetisk, překlad nebo převzetí výroku se započítá jen jednou."
+        }
+      ],
+      "reviewed_at": "2026-11-06T08:09:13+01:00",
+      "case_status": "closed",
+      "next_check_by": null,
+      "next_action": null
+    },
+    {
+      "id": "case-northern-groupings-20261105",
+      "title": "Ukrajinský generální štáb 5. listopadu v 08:00 místního času nezjistil formování útočné skupiny na dvou severních směrech.",
+      "kind": "assessment",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "V hlášení k 08:00 místního času generální štáb uvádí na volyňském a poliském směru situaci bez významných změn a bez pozorovaných známek vytváření útočných uskupení. Jde o omezené pozorování z ukrajinské strany.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Hlášení není úplným průzkumem území Běloruska a neprokazuje neveřejné úmysly. ArmyInform přebírá štáb, nevytváří další nezávislé potvrzení.",
+      "links": [
+        {
+          "evidence_id": "assessment-20261105-ukraine-northern-groupings",
+          "role": "first_report",
+          "line_id": "line-ukrainian-general-staff-north-20261105",
+          "claim": "V hlášení k 08:00 místního času generální štáb uvádí na volyňském a poliském směru situaci bez významných změn a bez pozorovaných známek vytváření útočných uskupení. Jde o omezené pozorování z ukrajinské strany.",
+          "independence_basis": "Nová informace této zdrojové linie. Přetisk, překlad nebo převzetí výroku se započítá jen jednou."
+        }
+      ],
+      "reviewed_at": "2026-11-06T08:09:13+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-07T08:09:13+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-brussels-security-consultations-20261105",
+      "title": "V Bruselu probíhala jednání o bezpečnostních zárukách. Podmínky případné dohody zůstaly otevřené.",
+      "kind": "policy",
+      "areas": [
+        "UKR",
+        "EU",
+        "NATO"
+      ],
+      "summary": "Druhý den bruselských konzultací se týkal financování, obnovy a bezpečnostních záruk. Ukrajinský prezident popsal účast evropských, amerických a aliančních zástupců i práci na podrobnostech. Ohlášené další jednání v Emirátech 10.–11. listopadu má teprve proběhnout.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Uskutečněná konzultace dokládá diplomatickou činnost. Konkrétní záruka, ratifikace nebo obecné příměří vyžadují další rozhodnutí a realizaci.",
+      "links": [
+        {
+          "evidence_id": "obs-20261105-brussels-security-guarantee-talks",
+          "role": "first_report",
+          "line_id": "line-brussels-security-guarantee-consultations-20261105",
+          "claim": "Druhý den bruselských konzultací se týkal financování, obnovy a bezpečnostních záruk. Ukrajinský prezident popsal účast evropských, amerických a aliančních zástupců i práci na podrobnostech. Ohlášené další jednání v Emirátech 10.–11. listopadu má teprve proběhnout.",
+          "independence_basis": "Nová informace této zdrojové linie. Přetisk, překlad nebo převzetí výroku se započítá jen jednou."
+        }
+      ],
+      "reviewed_at": "2026-11-06T08:09:13+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-07T08:09:13+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-ukrenergo-seps-agreement-20261105",
+      "title": "Ukrenergo a slovenský SEPS pracují na obnovení dohody o nouzové pomoci.",
+      "kind": "policy",
+      "areas": [
+        "UKR",
+        "SVK"
+      ],
+      "summary": "Podle Ukrenerga oba provozovatelé pracují na obnovení smlouvy umožňující vzájemnou nouzovou pomoc. Provozovatel potvrzuje probíhající práci, nikoli dokončený převod elektřiny.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Aktivace smlouvy, konkrétní dodávka a její množství potřebují samostatné potvrzení.",
+      "links": [
+        {
+          "evidence_id": "announced-20261105-ukrenergo-seps-assistance-restoration",
+          "role": "first_report",
+          "line_id": "line-ukrenergo-seps-consultation-20261105",
+          "claim": "Podle Ukrenerga oba provozovatelé pracují na obnovení smlouvy umožňující vzájemnou nouzovou pomoc. Provozovatel potvrzuje probíhající práci, nikoli dokončený převod elektřiny.",
+          "independence_basis": "Nová informace této zdrojové linie. Přetisk, překlad nebo převzetí výroku se započítá jen jednou."
+        }
+      ],
+      "reviewed_at": "2026-11-06T08:09:13+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-07T08:09:13+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-ua-airforce-20261106",
+      "title": "Ukrajinské letectvo hlásí v noci 227 dronů a zásahy na 14 místech.",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Letectvo uvádí 227 nasazených dronů, z nich 196 sestřelených nebo potlačených k 08:00 ukrajinského času. Uvádí zásahy na 14 místech a dopad trosek na osmi, asi 15 dronů bylo ještě ve vzduchu. Jde o průběžnou operační bilanci jednoho velení.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Součást pokračující kampaně. Jediná noc neprokazuje novou cílovou kategorii nebo úmysl vůči NATO a ani sama neprokazuje nový nouzový pokyn operátora.",
+      "links": [
+        {
+          "evidence_id": "reported-20261106-ukraine-airforce-overnight-drones",
+          "role": "first_report",
+          "line_id": "line-ukr-airforce-20261106",
+          "claim": "Letectvo uvádí 227 nasazených dronů, z nich 196 sestřelených nebo potlačených k 08:00 ukrajinského času. Uvádí zásahy na 14 místech a dopad trosek na osmi, asi 15 dronů bylo ještě ve vzduchu. Jde o průběžnou operační bilanci jednoho velení.",
+          "independence_basis": "Nová informace této zdrojové linie. Přetisk, překlad nebo převzetí výroku se započítá jen jednou."
+        }
+      ],
+      "reviewed_at": "2026-11-06T08:09:13+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-07T08:09:13+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-canada-naval-mission-return-20261105",
+      "title": "Kanadské námořnictvo oznámilo návrat dvou lodí po dokončení alianční mise v Evropě.",
+      "kind": "assessment",
+      "areas": [
+        "CAN",
+        "NATO"
+      ],
+      "summary": "Kanadské ministerstvo oznámilo návrat dvou lodí po evropské protiminové misi, v níž působily od července do listopadu.",
+      "russian_involvement": "independent",
+      "attribution_basis": "Dokončení známé mise vysvětluje pohyb vlastních lodí. Tento návrat sám neurčuje ruskou pohotovost ani změnu podpory Ukrajině.",
+      "links": [
+        {
+          "evidence_id": "obs-20261105-canada-naval-mission-return",
+          "role": "first_report",
+          "line_id": "line-can-dnd-mcm-return-20261105",
+          "claim": "Kanadské ministerstvo oznámilo návrat dvou lodí po evropské protiminové misi, v níž působily od července do listopadu.",
+          "independence_basis": "Nová informace této zdrojové linie. Přetisk, překlad nebo převzetí výroku se započítá jen jednou."
+        }
+      ],
+      "reviewed_at": "2026-11-06T08:09:13+01:00",
+      "case_status": "closed",
+      "next_check_by": null,
+      "next_action": null
     }
   ],
-  "review_note": "Přezkoumány nové anotace a vazby: provozní den 4. listopadu, zvláštní případ EFS a zářijová polská kauza s listopadovým procesním pokračováním. Staré anotace a ledger zachovány."
+  "review_note": "Kontrola nově připojených zdrojových linií dne 6. listopadu. Staré anotace a historie evidence zachovány."
 }

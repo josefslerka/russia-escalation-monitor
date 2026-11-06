@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-05T07:28:57+01:00",
+  "reviewed_at": "2026-11-06T08:09:13+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -2813,6 +2813,119 @@
       ],
       "title": "EFS: zásah do chlazení tří pracovišť, bez ztráty krevních produktů.",
       "note": "Geografický předmět; nejde o atribuci ani další nezávislé důkazy."
+    },
+    "obs-20261105-ukrenergo-four-oblast-emergency": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo potvrdilo nouzová omezení ve čtyřech oblastech a v Kyjevě.",
+      "note": "Ukrajinská elektrická síť. Město Kyjev není pátá oblast."
+    },
+    "followup-20261105-fitburg-helsinki-verdict": {
+      "areas": [
+        "BALTIC_SEA"
+      ],
+      "title": "Finský soud shledal úmyslné poškození dvou kabelů z prosince 2025. Rozsudek není pravomocný.",
+      "note": "Finský záliv mimo finské teritoriální vody. Poloha soudu není polohou incidentu. Výlučná ekonomická zóna nebyla odvozena jen z označení mimo teritoriální vody."
+    },
+    "reported-20261105-abw-military-component-network": {
+      "areas": [
+        "POL",
+        "RUS"
+      ],
+      "title": "ABW oznámila šest zadržení a podezření na vývoz vojenských součástek do Ruska.",
+      "note": "Polsko je předmětem vyšetřované činnosti, Rusko tvrzeným příjemcem dodávek. Uvedený interval patří policejní práci, nikoli automaticky údajným dodávkám."
+    },
+    "assessment-20261105-nukib-refrigeration-czech-scope": {
+      "areas": [
+        "CZE",
+        "EU"
+      ],
+      "title": "NÚKIB k evropským útokům na chlazení: v Česku obdobný případ k 5. listopadu neevidoval.",
+      "note": "Český výrok o evidovaných domácích případech a širší evropská vlna. Český záznam neoznačuje místo potvrzeného útoku."
+    },
+    "paid-20261105-commission-ukraine-support-loan": {
+      "areas": [
+        "EU",
+        "UKR"
+      ],
+      "title": "Komise vyplatila Ukrajině 4,36 miliardy eur z již schváleného úvěru.",
+      "note": "EU jako plátce, Ukrajina jako příjemce. Jedna platba."
+    },
+    "reported-202610-iditelesom-deceptive-job-contacts": {
+      "areas": [
+        "RUS"
+      ],
+      "title": "Ruská poradna uvádí 18 říjnových podnětů ke klamavému náboru přes pracovní nabídky.",
+      "note": "Rusko jako předmět náborové praxe. Události mají přesnost měsíce a podněty jsou z jedné poradny."
+    },
+    "obs-20261105-belarus-command-course-concluded": {
+      "areas": [
+        "BLR"
+      ],
+      "title": "Běloruské MO ukončilo shromáždění velitelů hodnocením výcvikového roku.",
+      "note": "Předmětem hlášení je běloruský výcvik. Zpráva neurčuje žádný vstup jednotky na ukrajinské území."
+    },
+    "assessment-20261105-ukraine-northern-groupings": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrajinský generální štáb 5. listopadu v 08:00 místního času nezjistil formování útočné skupiny na dvou severních směrech.",
+      "note": "Hodnocené směry jsou na ukrajinské straně. Geografie není odhadem pohybu jednotek v Bělorusku."
+    },
+    "obs-20261105-brussels-security-guarantee-talks": {
+      "areas": [
+        "UKR",
+        "EU",
+        "NATO"
+      ],
+      "title": "V Bruselu probíhala jednání o bezpečnostních zárukách. Podmínky případné dohody zůstaly otevřené.",
+      "note": "Předmětem jsou záruky Ukrajině a role EU a NATO. Sídlo jednání nepředstavuje místo vojenské události."
+    },
+    "announced-20261105-ukrenergo-seps-assistance-restoration": {
+      "areas": [
+        "UKR",
+        "SVK"
+      ],
+      "title": "Ukrenergo a slovenský SEPS pracují na obnovení dohody o nouzové pomoci.",
+      "note": "Ukrajinský a slovenský provozovatel. Předmětem je připravovaná dohoda."
+    },
+    "reported-20261106-ukraine-airforce-overnight-drones": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrajinské letectvo hlásí v noci 227 dronů a zásahy na 14 místech.",
+      "note": "Ukrajina je předmětem hlášené kampaně. Bez taktických souřadnic nebo seznamu míst."
+    },
+    "followup-20261105-komyshuvakha-rescue-toll": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Podle Zelenského bylo po útoku na Komyšuvachu vyproštěno 43 obětí a 53 lidí se stále pohřešovalo.",
+      "note": "Následky staršího útoku na Ukrajině. Počet pohřešovaných není konečný počet mrtvých."
+    },
+    "followup-20261105-contship-symbol-images-altered": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "title": "Factcheck.bg označuje snímky s ruským či ukrajinským znakem na dronu u Contship Jet za upravené.",
+      "note": "Černé moře, podle zdroje bulharská výlučná ekonomická zóna, nikoli doložené teritoriální vody. Země původu dronu neurčena."
+    },
+    "reported-20261103-lithuania-allied-monitoring": {
+      "areas": [
+        "LTU",
+        "POL"
+      ],
+      "title": "LRT popisuje doplnění spojeneckého sledování v Litvě. Nezjišťuje úmysl Ruska k útoku.",
+      "note": "Litva je předmětem popsaného sledování a Polsko partnerem při výměně informací. Datum zveřejnění není přesné datum zahájení."
+    },
+    "obs-20261105-canada-naval-mission-return": {
+      "areas": [
+        "CAN",
+        "NATO"
+      ],
+      "title": "Kanadské námořnictvo oznámilo návrat dvou lodí po dokončení alianční mise v Evropě.",
+      "note": "Kanada a alianční mise v Evropě. Návrat do Kanady dne 5. listopadu výslovně uvádí ministerstvo."
     }
   },
   "review_scope": [

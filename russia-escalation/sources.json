@@ -2254,6 +2254,260 @@
       "tier": 2,
       "cadence_days": 7,
       "priority": 2
+    },
+    {
+      "id": "doc-8814326b4d9d",
+      "name": "pentrupatrie.mai.gov.ro",
+      "url": "https://pentrupatrie.mai.gov.ro/structurile-mai-participa-la-operatiunea-de-cautare-si-salvare-a-persoanelor-disparute-in-urma-unui-incident-naval-produs-in-marea-neagra/",
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-5577777ef2d7",
+      "name": "ambrey.com",
+      "url": "https://ambrey.com/operations/event/western-black-sea-uav-attacks-romanian-waters/",
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-51b1787e680a",
+      "name": "ziarulamprenta.ro",
+      "url": "https://ziarulamprenta.ro/stirile-zilei/echipajele-arsvom-i-au-cautat-si-astazi-pe-marinarii-disparuti-de-pe-nava-lovita-de-drona/596899/",
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-de5863e0088f",
+      "name": "dhmfn.ro",
+      "url": "https://www.dhmfn.ro/ro/informatii-de-interes-public/avize-radio-pentru-navigatori/",
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-3a7196530af2",
+      "name": "gcaptain.com",
+      "url": "https://gcaptain.com/greek-containership-sunk-by-naval-drones-off-bulgaria-as-black-sea-attacks-escalate/",
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-325a8fc1f499",
+      "name": "factcheck.bg",
+      "url": "https://factcheck.bg/kadrite-s-ruski-ili-ukrainski-simvoli-varhu-drona-atakuval-korab-v-cherno-more-sa-manipulirani/",
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-c22cfa842338",
+      "name": "aol.com",
+      "url": "https://www.aol.com/articles/aid-convoy-sets-off-russian-043145000.html",
+      "areas": [
+        "UKR"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-abf19f632ea7",
+      "name": "arabnews.pk",
+      "url": "https://www.arabnews.pk/world/ukraine-pauses-refinery-strikes-after-trump-pressure-as-russian-attacks-kill-at-least-20-3005618",
+      "areas": [
+        "UKR",
+        "RUS",
+        "USA"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-9cdc14b04ef1",
+      "name": "lrt.lt",
+      "url": "https://www.lrt.lt/naujienos/lietuvoje/2/3102402/lenkijai-pranesus-apie-galima-provokacija-vokietijos-brigada-lietuvoje-imasi-stebejimo",
+      "areas": [
+        "EST",
+        "LVA",
+        "LTU",
+        "USA"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-0594a2f96846",
+      "name": "rainews.it",
+      "url": "https://www.rainews.it/amp/video/2026/11/la-guerra-ibrida-dei-russi-hacker-noname05716-e-z-pentest-rivendicano-gli-attacchi-ai-frigoriferi-b9917ac8-c702-426a-940d-23b5a7049c3c.html",
+      "areas": [
+        "SWE",
+        "BEL",
+        "LUX",
+        "IRL",
+        "ITA",
+        "ROU"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-d41370f44a12",
+      "name": "t.me/modmilby",
+      "url": "https://t.me/modmilby/59947",
+      "areas": [
+        "BLR"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-d44cd8efe898",
+      "name": "armyinform.com.ua",
+      "url": "https://armyinform.com.ua/2026/11/05/na-fronti-vidbulos-ponad-180-boyezitknen-za-dobu-najbilshe-na-pokrovskomu-napryamku/",
+      "areas": [
+        "BLR"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-e5ee1bb0df56",
+      "name": "tagesschau.de",
+      "url": "https://www.tagesschau.de/inland/regional/badenwuerttemberg/swr-mann-aus-kreis-reutlingen-soll-brandanschlag-auf-starlink-in-polen-beauftragt-haben-100.html",
+      "areas": [
+        "DEU",
+        "POL"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-dd7c2f9c3ffd",
+      "name": "resources.osce.org",
+      "url": "https://resources.osce.org/secretariat/669441",
+      "areas": [
+        "BLR",
+        "RUS",
+        "UKR"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-b51ad4cb232b",
+      "name": "admin.ch",
+      "url": "https://www.admin.ch/en/newnsb/KsmEWk4E-bHM",
+      "areas": [
+        "RUS",
+        "BLR"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-28acee5d3d37",
+      "name": "bleepingcomputer.com",
+      "url": "https://www.bleepingcomputer.com/news/security/cyberattack-disrupts-blood-storage-refrigeration-systems-in-france/",
+      "areas": [
+        "FRA"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",
