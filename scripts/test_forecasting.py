@@ -290,14 +290,19 @@ class FixedForecastTests(unittest.TestCase):
         self.state['research_scope']['fixed_forecast_review']=f.assessment_scope(self.bundle,f.instant(self.state['assessment_time']))
         f.validate_legacy_windows(self.bundle,self.state)
 
+    def empty_fixed_fixture(self, folder):
+        data = Path(folder) / 'russia-escalation'
+        shutil.copytree(build_site.DATA, data, ignore=shutil.ignore_patterns('audits'))
+        # Benchmarks and candidate reviews refer to issues in the same fixture.
+        for name in (f.ROUNDS, f.OUTCOMES, *f.methods().EXTRA_LOGS):
+            (data / name).write_text('')
+        (data / 'state.json').write_text(json.dumps(self.state))
+        return data
+
     def test_atomic_writer_rejects_backdating_without_changing_the_log(self):
         forecast=self.issue()
         with tempfile.TemporaryDirectory() as folder:
-            data=Path(folder)/'russia-escalation'
-            shutil.copytree(build_site.DATA,data)
-            (data/f.ROUNDS).write_text('')
-            (data/f.OUTCOMES).write_text('')
-            (data/'state.json').write_text(json.dumps(self.state))
+            data=self.empty_fixed_fixture(folder)
             before=(data/f.ROUNDS).read_bytes()
             forecast['issued_at']='2026-10-29T07:00:00+01:00'
             with patch.object(monitor,'DATA',data),self.assertRaisesRegex(ValueError,'no backdating'):
@@ -319,10 +324,7 @@ class FixedForecastTests(unittest.TestCase):
         forecast=self.issue()
         forecast['issued_at']=(self.start-timedelta(seconds=10)).isoformat()
         with tempfile.TemporaryDirectory() as folder:
-            data=Path(folder)/'russia-escalation';shutil.copytree(build_site.DATA,data)
-            (data/f.ROUNDS).write_text('')
-            (data/f.OUTCOMES).write_text('')
-            (data/'state.json').write_text(json.dumps(self.state))
+            data=self.empty_fixed_fixture(folder)
             with patch.object(monitor,'DATA',data),patch.object(monitor,'datetime') as clock:
                 clock.now.return_value=self.start+timedelta(seconds=10)
                 with self.assertRaisesRegex(ValueError,'Actual issuance deadline passed'):

@@ -368,7 +368,10 @@ TEST ONLY. Synthetic evidence and estimates; no real research was performed.
 
     def test_v1_negative_waits_for_original_delay_panel_and_candidate_reviews(self):
         old=self.old_grid()
-        # Future real outcomes must not invalidate an earlier synthetic-time test.
+        # This fixture deliberately models a negative outcome. Start this one
+        # contract before any real adjudication so the scenario is independent
+        # of the real grid result; the disposable copy alone is changed.
+        self.freeze_legacy_time_fixture(old, f.instant(old['window_start']))
         self.now=max(f.instant(self.initial_state['assessment_time']),f.instant(old['settle_after']))+timedelta(days=10)
         self.cli(forecast,'resolve',payload=self.outcome_request(old))
         self.now=f.instant(old['settle_after'])-timedelta(hours=1)
