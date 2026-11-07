@@ -2508,6 +2508,100 @@
       "tier": 3,
       "cadence_days": 7,
       "priority": 2
+    },
+    {
+      "id": "doc-bf4fc269601a",
+      "name": "radioolsztyn.pl",
+      "url": "https://radioolsztyn.pl/zalew-w-goldapi-stracil-sporo-wody-przyczyna-awaria-jazu/01900057",
+      "areas": [
+        "POL"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-ed6e044c84b1",
+      "name": "mapn.ro",
+      "url": "https://www.mapn.ro/cpresa/19468_informa%C8%9Bie-de-presa",
+      "areas": [
+        "ROU",
+        "UKR"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-ffb01b9ef682",
+      "name": "unit42.paloaltonetworks.com",
+      "url": "https://unit42.paloaltonetworks.com/europes-refrigeration-systems-attacks/",
+      "areas": [
+        "EU",
+        "FRA"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-535e0da32cac",
+      "name": "live.euronext.com",
+      "url": "https://live.euronext.com/en/financial-news/newsroom-bomb-threats-follow-escalating-european-flight-hoaxes",
+      "areas": [
+        "EU",
+        "CZE",
+        "GBR"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-ebd98cca59f4",
+      "name": "agerpres.ro",
+      "url": "https://agerpres.ro/2026/11/05/mandat-de-arestare-in-lipsa-pentru-un-cubanez-legat-de-serviciile-de-informatii-ruse-care-a-comandat--1610392",
+      "areas": [
+        "ROU"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-636352be1cc6",
+      "name": "tuomioistuimet.fi",
+      "url": "https://www.tuomioistuimet.fi/ajankohtaista/tiedotteet/karajaoikeus-on-antanut-tuomion-ns-fitburg-asiassa/",
+      "areas": [
+        "BALTIC_SEA"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",

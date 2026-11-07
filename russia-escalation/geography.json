@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-06T08:09:13+01:00",
+  "reviewed_at": "2026-11-07T08:54:51+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -2926,6 +2926,96 @@
       ],
       "title": "Kanadské námořnictvo oznámilo návrat dvou lodí po dokončení alianční mise v Evropě.",
       "note": "Kanada a alianční mise v Evropě. Návrat do Kanady dne 5. listopadu výslovně uvádí ministerstvo."
+    },
+    "obs-20261106-ukrenergo-emergency-operational-day": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo: nouzová omezení 6. listopadu",
+      "note": "Tento provozní den předchází novému oknu od 7. listopadu 08:00 CET. Plán hodinových odstávek na 7. listopad v příspěvku 5621 není potvrzením skutečných nouzových omezení."
+    },
+    "obs-20261107-ukraine-airforce-night-attack": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Letectvo hlásí další smíšený nálet",
+      "note": "Součet čtyř zachycených střel neudává celkový počet vypuštěných střel. Další smíšená vlna potvrzuje pokračování kampaně, sama nedokládá další kvalitativní fázi nebo útok na NATO."
+    },
+    "reported-20261106-iditelesom-october-15-forced-recruitment": {
+      "areas": [
+        "RUS"
+      ],
+      "title": "Poradna hlásí 15 říjnových podnětů",
+      "note": "Výběrová data nejsou reprezentativní četností ani nezávisle ověřeným počtem povolaných. Nelze je sčítat s dřívějšími říjnovými statistikami bez kontroly překryvu; neprokazují koordinovanou vlnu 100 000 osob."
+    },
+    "obs-20261106-belarus-training-centre-modernisation": {
+      "areas": [
+        "BLR"
+      ],
+      "title": "Bělorusko představilo výcvikové zázemí",
+      "note": "Modernizace výcviku a kapacity není dokladem rozhodnutí vstoupit do bojů na Ukrajině, soustředění útočné sestavy nebo jaderné pohotovosti."
+    },
+    "reported-20261106-goldap-reservoir-technical-fault": {
+      "areas": [
+        "POL"
+      ],
+      "title": "Policie: porucha nádrže nebyla sabotáž",
+      "note": "Blízkost ruské hranice a současné bezpečnostní napětí nedokládají příčinnou vazbu. Policejní závěr se týká tohoto případu, ne všech pohraničních rizik."
+    },
+    "obs-20261106-romania-alert-no-incursion": {
+      "areas": [
+        "ROU",
+        "UKR"
+      ],
+      "title": "Rumunsko: poplach bez zjištěného vpádu",
+      "note": "Omezené úřední pozorování této noci je protidůkaz k tvrzení o konkrétním vpádu, nikoli záruka nenastání všech budoucích incidentů."
+    },
+    "assessment-20261106-unit42-refrigeration-attribution-limits": {
+      "areas": [
+        "EU",
+        "FRA"
+      ],
+      "title": "Unit 42: nároky skupin zůstávají neověřené",
+      "note": "Vlastní telemetrie je nová analytická linie o expozici, ne potvrzení stejného pachatele. Popis již známých útoků převzatý z veřejných zpráv není další nezávislý doklad útoku."
+    },
+    "reported-20261106-flight-newsroom-bomb-threats": {
+      "areas": [
+        "EU",
+        "CZE",
+        "GBR"
+      ],
+      "title": "Bombové výhrůžky: původce neprokázán",
+      "note": "Provozní zásah je skutečný, společná operace a ruská vazba nejsou doloženy. Možní jsou napodobitelé i jiné motivy. Výhrůžka sama neprokazuje fyzickou sabotáž nebo pokročilý fyzický pokus."
+    },
+    "followup-20261106-kremlin-confirms-talks-preparation": {
+      "areas": [
+        "UKR",
+        "RUS"
+      ],
+      "title": "Kreml potvrdil přípravu jednání",
+      "note": "Potvrzení jednacího plánu není příměří ani uskutečněný výsledek a nepopírá souběžné útoky. Samotné zasedání bezpečnostní rady neprokazuje mobilizaci."
+    },
+    "announced-20261106-spain-ukraine-support": {
+      "areas": [
+        "ESP",
+        "UKR"
+      ],
+      "title": "Ukrajina oznámila španělský obranný balík",
+      "note": "Jde o oznámení a požadované urychlení, nikoli doložené zaplacení nebo dodání. Příslib sám nestačí ke změření všech složek západního rozhodovacího tlaku."
+    },
+    "obs-20261105-nato-counter-drone-procurement": {
+      "areas": [
+        "NATO"
+      ],
+      "title": "NATO urychluje nákup protidronových systémů",
+      "note": "Nové je nákupní uspořádání, ne důkaz okamžitého dodání celého balíku nebo konkrétní přípravy ruského útoku. Navazuje na dřívější dlouhodobou iniciativu."
+    },
+    "followup-20261105-romania-2024-plot-warrant": {
+      "areas": [
+        "ROU"
+      ],
+      "title": "Nový zatykač ve věci plánu z roku 2024",
+      "note": "Nová právní fáze není nový pokus v říjnu či listopadu 2026 ani první kvalifikující zveřejnění. Přímé nové sdělení DIICOT nebylo dostupné; starší primární text SRI je dostupný."
     }
   },
   "review_scope": [

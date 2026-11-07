@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-06T08:09:13+01:00",
+  "reviewed_at": "2026-11-07T08:54:51+01:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -1613,7 +1613,7 @@
         "ITA",
         "ROU"
       ],
-      "summary": "Reuters přímo popisuje škody ve švédské prodejně a vyjádření řetězců v Belgii, Lucembursku a Irsku. Belgický kyberúřad nezná pachatele; Reuters neověřil vazbu na říjnové francouzské případy. Různé součty prodejen a pozdější geografická rozšíření nejsou sloučeny do jediného ověřeného součtu. Následné zdroje 3. listopadu doplňují Itálii a Rumunsko; společná ruská atribuce není doložena. ENISA, Komise a evropské sítě popisují novou vlnu incidentů 1.–2. listopadu a probíhající společnou výměnu informací. Text nepřipisuje operaci Rusku ani neurčuje společného pachatele všech případů. Rai/Tg1 informuje o videu připisovaném NoName057(16) a Z-Pentest, které si nárokuje evropské útoky. Čas původního zveřejnění videa a technické propojení s jednotlivými incidenty nebyly nezávisle ověřeny. NÚKIB vydal doporučení provozovatelům v reakci na evropské změny konfigurace chladicích systémů. Výslovně uvádí, že v Česku takový případ k datu zprávy neevidoval.",
+      "summary": "Reuters přímo popisuje škody ve švédské prodejně a vyjádření řetězců v Belgii, Lucembursku a Irsku. Belgický kyberúřad nezná pachatele; Reuters neověřil vazbu na říjnové francouzské případy. Různé součty prodejen a pozdější geografická rozšíření nejsou sloučeny do jediného ověřeného součtu. Následné zdroje 3. listopadu doplňují Itálii a Rumunsko; společná ruská atribuce není doložena. ENISA, Komise a evropské sítě popisují novou vlnu incidentů 1.–2. listopadu a probíhající společnou výměnu informací. Text nepřipisuje operaci Rusku ani neurčuje společného pachatele všech případů. Rai/Tg1 informuje o videu připisovaném NoName057(16) a Z-Pentest, které si nárokuje evropské útoky. Čas původního zveřejnění videa a technické propojení s jednotlivými incidenty nebyly nezávisle ověřeny. NÚKIB vydal doporučení provozovatelům v reakci na evropské změny konfigurace chladicích systémů. Výslovně uvádí, že v Česku takový případ k datu zprávy neevidoval. Unit 42 zveřejnila vlastní měření viditelnosti zařízení a výslovně oddělila viditelnost od zranitelnosti či kompromitace. Nároky proruských skupin označila za neověřené; neuvádí důkaz znehodnocení krevních produktů.",
       "russian_involvement": "unknown",
       "attribution_basis": "Široce rozšířená technická slabina může vysvětlovat podobnost bez jediného státního řízení. Materiální škoda sama neprokazuje ruskou atribuci ani změnu politiky vůči Ukrajině.",
       "links": [
@@ -1665,9 +1665,16 @@
           "line_id": "line-nukib-czech-scope-20261105",
           "claim": "NÚKIB vydal doporučení provozovatelům v reakci na evropské změny konfigurace chladicích systémů. Výslovně uvádí, že v Česku takový případ k datu zprávy neevidoval.",
           "independence_basis": "Nová informace této zdrojové linie. Přetisk, překlad nebo převzetí výroku se započítá jen jednou."
+        },
+        {
+          "evidence_id": "assessment-20261106-unit42-refrigeration-attribution-limits",
+          "role": "followup",
+          "line_id": "line-assessment-20261106-unit42-refrigeration-attribution-limits",
+          "claim": "Unit 42 zveřejnila vlastní měření viditelnosti zařízení a výslovně oddělila viditelnost od zranitelnosti či kompromitace. Nároky proruských skupin označila za neověřené; neuvádí důkaz znehodnocení krevních produktů.",
+          "independence_basis": "Samostatná nová informace této linie. Přetisky a citace téhož výroku nejsou další nezávislé potvrzení."
         }
       ],
-      "reviewed_at": "2026-11-06T08:09:13+01:00",
+      "reviewed_at": "2026-11-07T08:54:51+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-04T08:45:22+01:00",
       "next_action": "Ověřit nový stav, rozsah, atribuci a chybějící kritéria; nejistotu neuzavírat jako ne."
@@ -1741,7 +1748,7 @@
       "areas": [
         "RUS"
       ],
-      "summary": "NGO uvádí 61 říjnových podnětů proti 55 v září: 25 nedávno podepsaných kontraktů, 33 starších a tři dosud nepodepsané. Pět případů se má týkat nátlaku krátce po nástupu. Jde o podněty o podpisu či donucování, nikoli 61 nově prokázaných nucených povolání. Organizace Iditě lesom uvádí za říjen 18 případů náboru přes nabídky práce. Popisuje rozdílné situace včetně tvrzení o nátlaku a nesouladu mezi slíbenou a skutečnou činností.",
+      "summary": "NGO uvádí 61 říjnových podnětů proti 55 v září: 25 nedávno podepsaných kontraktů, 33 starších a tři dosud nepodepsané. Pět případů se má týkat nátlaku krátce po nástupu. Jde o podněty o podpisu či donucování, nikoli 61 nově prokázaných nucených povolání. Organizace Iditě lesom uvádí za říjen 18 případů náboru přes nabídky práce. Popisuje rozdílné situace včetně tvrzení o nátlaku a nesouladu mezi slíbenou a skutečnou činností. Organizace uvádí za říjen 15 podnětů k nucenému náboru oproti 33 v září, včetně tvrzení z Omské oblasti. Jde o podněty přijaté jednou poradnou.",
       "russian_involvement": "unknown",
       "attribution_basis": "Omezeno deklarovaným zdrojem; nezaměňovat důkaz účinku a původce. Výběrový soubor závisí na hlášení, není reprezentativní mírou náboru ani dokladem koordinované vlny 100 000 osob. Nelze přičíst jiné soubory NGO s neznámým překryvem.",
       "links": [
@@ -1758,9 +1765,16 @@
           "line_id": "line-iditelesom-october-hotline-2026",
           "claim": "Organizace Iditě lesom uvádí za říjen 18 případů náboru přes nabídky práce. Popisuje rozdílné situace včetně tvrzení o nátlaku a nesouladu mezi slíbenou a skutečnou činností.",
           "independence_basis": "Nová informace této zdrojové linie. Přetisk, překlad nebo převzetí výroku se započítá jen jednou."
+        },
+        {
+          "evidence_id": "reported-20261106-iditelesom-october-15-forced-recruitment",
+          "role": "followup",
+          "line_id": "line-reported-20261106-iditelesom-october-15-forced-recruitment",
+          "claim": "Organizace uvádí za říjen 15 podnětů k nucenému náboru oproti 33 v září, včetně tvrzení z Omské oblasti. Jde o podněty přijaté jednou poradnou.",
+          "independence_basis": "Samostatná nová informace této linie. Přetisky a citace téhož výroku nejsou další nezávislé potvrzení."
         }
       ],
-      "reviewed_at": "2026-11-06T08:09:13+01:00",
+      "reviewed_at": "2026-11-07T08:54:51+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-05T08:01:31+01:00",
       "next_action": "Ověřit chybějící rozsah, realizaci, nezávislou atribuci či výsledky."
@@ -1822,7 +1836,7 @@
         "RUS",
         "UKR"
       ],
-      "summary": "Reuters cituje Peskovovo potvrzení plánovaných jednání Ruska, Ukrajiny a USA v Abú Zabí 10.–11. listopadu; Zelenskyj samostatně potvrzuje týmový formát. Summit lídrů je očekávání, nikoli dohodnutý výsledek.",
+      "summary": "Reuters cituje Peskovovo potvrzení plánovaných jednání Ruska, Ukrajiny a USA v Abú Zabí 10.–11. listopadu; Zelenskyj samostatně potvrzuje týmový formát. Summit lídrů je očekávání, nikoli dohodnutý výsledek. Putin při zasedání bezpečnostní rady potvrdil přípravu týmových jednání v Emirátech v úterý. Hlavním zveřejněným tématem zasedání byla potravinová bezpečnost.",
       "russian_involvement": "unknown",
       "attribution_basis": "Omezeno deklarovaným zdrojem; nezaměňovat důkaz účinku a původce. Diplomacie může pokračovat souběžně s údery. Oznámený termín není uskutečněné jednání, příměří ani změna vojenských rozhodnutí.",
       "links": [
@@ -1832,9 +1846,16 @@
           "line_id": "line-kremlin-trilateral-announcement-20261103",
           "claim": "Reuters cituje Peskovovo potvrzení plánovaných jednání Ruska, Ukrajiny a USA v Abú Zabí 10.–11. listopadu; Zelenskyj samostatně potvrzuje týmový formát. Summit lídrů je očekávání, nikoli dohodnutý výsledek.",
           "independence_basis": "Vlastní zdrojová rodina pro vymezené tvrzení. Přetisky a další publikace stejného původce nepřidávají nezávislé potvrzení; státní a jiné atribuce jsou odděleny od účinku."
+        },
+        {
+          "evidence_id": "followup-20261106-kremlin-confirms-talks-preparation",
+          "role": "followup",
+          "line_id": "line-followup-20261106-kremlin-confirms-talks-preparation",
+          "claim": "Putin při zasedání bezpečnostní rady potvrdil přípravu týmových jednání v Emirátech v úterý. Hlavním zveřejněným tématem zasedání byla potravinová bezpečnost.",
+          "independence_basis": "Samostatná nová informace této linie. Přetisky a citace téhož výroku nejsou další nezávislé potvrzení."
         }
       ],
-      "reviewed_at": "2026-11-04T08:01:31+01:00",
+      "reviewed_at": "2026-11-07T08:54:51+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-05T08:01:31+01:00",
       "next_action": "Ověřit chybějící rozsah, realizaci, nezávislou atribuci či výsledky."
@@ -2338,7 +2359,227 @@
       "case_status": "closed",
       "next_check_by": null,
       "next_action": null
+    },
+    {
+      "id": "case-ukraine-energy-operational-20261106",
+      "title": "Ukrenergo: nouzová omezení 6. listopadu",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Ukrenergo potvrdilo 6. listopadu skutečné nouzové vypínání v Kyjevě a čtyřech jmenovaných oblastech po ruských útocích. Jde o další provozní den, nikoli opakované zveřejnění dne 5. listopadu.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Tento provozní den předchází novému oknu od 7. listopadu 08:00 CET. Plán hodinových odstávek na 7. listopad v příspěvku 5621 není potvrzením skutečných nouzových omezení.",
+      "links": [
+        {
+          "evidence_id": "obs-20261106-ukrenergo-emergency-operational-day",
+          "role": "first_report",
+          "line_id": "line-obs-20261106-ukrenergo-emergency-operational-day",
+          "claim": "Ukrenergo potvrdilo 6. listopadu skutečné nouzové vypínání v Kyjevě a čtyřech jmenovaných oblastech po ruských útocích. Jde o další provozní den, nikoli opakované zveřejnění dne 5. listopadu.",
+          "independence_basis": "Samostatná nová informace této linie. Přetisky a citace téhož výroku nejsou další nezávislé potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-07T08:54:51+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-08T08:54:51+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-ua-airforce-20261107",
+      "title": "Letectvo hlásí další smíšený nálet",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Letectvo uvádí v noci na 7. listopadu 172 nasazených dronů, včetně 137 proudových; sestřeleno či potlačeno 149 dronů a čtyři střely. Hlášeny zásahy na 24 místech a trosky na deseti. Bilance k 09:00 kyjevského času je průběžná.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Součet čtyř zachycených střel neudává celkový počet vypuštěných střel. Další smíšená vlna potvrzuje pokračování kampaně, sama nedokládá další kvalitativní fázi nebo útok na NATO.",
+      "links": [
+        {
+          "evidence_id": "obs-20261107-ukraine-airforce-night-attack",
+          "role": "first_report",
+          "line_id": "line-obs-20261107-ukraine-airforce-night-attack",
+          "claim": "Letectvo uvádí v noci na 7. listopadu 172 nasazených dronů, včetně 137 proudových; sestřeleno či potlačeno 149 dronů a čtyři střely. Hlášeny zásahy na 24 místech a trosky na deseti. Bilance k 09:00 kyjevského času je průběžná.",
+          "independence_basis": "Samostatná nová informace této linie. Přetisky a citace téhož výroku nejsou další nezávislé potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-07T08:54:51+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-08T08:54:51+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-obs-20261106-belarus-training-centre-modernisation",
+      "title": "Bělorusko představilo výcvikové zázemí",
+      "kind": "policy",
+      "areas": [
+        "BLR"
+      ],
+      "summary": "Ministerstvo představilo modernizované výcvikové zázemí vojenské akademie včetně ubytovací kapacity a výcviku bezpilotních prostředků.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Modernizace výcviku a kapacity není dokladem rozhodnutí vstoupit do bojů na Ukrajině, soustředění útočné sestavy nebo jaderné pohotovosti.",
+      "links": [
+        {
+          "evidence_id": "obs-20261106-belarus-training-centre-modernisation",
+          "role": "first_report",
+          "line_id": "line-obs-20261106-belarus-training-centre-modernisation",
+          "claim": "Ministerstvo představilo modernizované výcvikové zázemí vojenské akademie včetně ubytovací kapacity a výcviku bezpilotních prostředků.",
+          "independence_basis": "Samostatná nová informace této linie. Přetisky a citace téhož výroku nejsou další nezávislé potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-07T08:54:51+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-08T08:54:51+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-reported-20261106-goldap-reservoir-technical-fault",
+      "title": "Policie: porucha nádrže nebyla sabotáž",
+      "kind": "incident",
+      "areas": [
+        "POL"
+      ],
+      "summary": "Policie podle veřejnoprávního rozhlasu uvedla, že znalec vyloučil úmyslné cizí zavinění poklesu hladiny nádrže Gołdap. Příčinou byla technická porucha, která byla odstraněna. Událost nastala ve středu 4. listopadu.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Blízkost ruské hranice a současné bezpečnostní napětí nedokládají příčinnou vazbu. Policejní závěr se týká tohoto případu, ne všech pohraničních rizik.",
+      "links": [
+        {
+          "evidence_id": "reported-20261106-goldap-reservoir-technical-fault",
+          "role": "first_report",
+          "line_id": "line-reported-20261106-goldap-reservoir-technical-fault",
+          "claim": "Policie podle veřejnoprávního rozhlasu uvedla, že znalec vyloučil úmyslné cizí zavinění poklesu hladiny nádrže Gołdap. Příčinou byla technická porucha, která byla odstraněna. Událost nastala ve středu 4. listopadu.",
+          "independence_basis": "Samostatná nová informace této linie. Přetisky a citace téhož výroku nejsou další nezávislé potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-07T08:54:51+01:00",
+      "case_status": "closed",
+      "next_check_by": null,
+      "next_action": null
+    },
+    {
+      "id": "case-obs-20261106-romania-alert-no-incursion",
+      "title": "Rumunsko: poplach bez zjištěného vpádu",
+      "kind": "assessment",
+      "areas": [
+        "ROU",
+        "UKR"
+      ],
+      "summary": "Ministerstvo uvedlo, že při ruských úderech na ukrajinské dunajské přístavy v noci na 6. listopadu vydalo varování od 00:19 do 00:41 místního času; narušení rumunského vzdušného prostoru nezaznamenalo.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Omezené úřední pozorování této noci je protidůkaz k tvrzení o konkrétním vpádu, nikoli záruka nenastání všech budoucích incidentů.",
+      "links": [
+        {
+          "evidence_id": "obs-20261106-romania-alert-no-incursion",
+          "role": "first_report",
+          "line_id": "line-obs-20261106-romania-alert-no-incursion",
+          "claim": "Ministerstvo uvedlo, že při ruských úderech na ukrajinské dunajské přístavy v noci na 6. listopadu vydalo varování od 00:19 do 00:41 místního času; narušení rumunského vzdušného prostoru nezaznamenalo.",
+          "independence_basis": "Samostatná nová informace této linie. Přetisky a citace téhož výroku nejsou další nezávislé potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-07T08:54:51+01:00",
+      "case_status": "closed",
+      "next_check_by": null,
+      "next_action": null
+    },
+    {
+      "id": "case-reported-20261106-flight-newsroom-bomb-threats",
+      "title": "Bombové výhrůžky: původce neprokázán",
+      "kind": "incident",
+      "areas": [
+        "EU",
+        "CZE",
+        "GBR"
+      ],
+      "summary": "Reuters popsala evakuace médií a další bombové výhrůžky letům v Evropě, včetně devíti pražských letů. Zpráva uvádí bezpečné přistání letadel a neprokázanou totožnost či společný původ rozesílatele.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Provozní zásah je skutečný, společná operace a ruská vazba nejsou doloženy. Možní jsou napodobitelé i jiné motivy. Výhrůžka sama neprokazuje fyzickou sabotáž nebo pokročilý fyzický pokus.",
+      "links": [
+        {
+          "evidence_id": "reported-20261106-flight-newsroom-bomb-threats",
+          "role": "first_report",
+          "line_id": "line-reported-20261106-flight-newsroom-bomb-threats",
+          "claim": "Reuters popsala evakuace médií a další bombové výhrůžky letům v Evropě, včetně devíti pražských letů. Zpráva uvádí bezpečné přistání letadel a neprokázanou totožnost či společný původ rozesílatele.",
+          "independence_basis": "Samostatná nová informace této linie. Přetisky a citace téhož výroku nejsou další nezávislé potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-07T08:54:51+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-08T08:54:51+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-announced-20261106-spain-ukraine-support",
+      "title": "Ukrajina oznámila španělský obranný balík",
+      "kind": "policy",
+      "areas": [
+        "ESP",
+        "UKR"
+      ],
+      "summary": "Prezident oznámil španělský obranný balík ve výši 437 milionů eur a práci na urychlení dalších spojeneckých dodávek.",
+      "russian_involvement": "independent",
+      "attribution_basis": "Jde o oznámení a požadované urychlení, nikoli doložené zaplacení nebo dodání. Příslib sám nestačí ke změření všech složek západního rozhodovacího tlaku.",
+      "links": [
+        {
+          "evidence_id": "announced-20261106-spain-ukraine-support",
+          "role": "first_report",
+          "line_id": "line-announced-20261106-spain-ukraine-support",
+          "claim": "Prezident oznámil španělský obranný balík ve výši 437 milionů eur a práci na urychlení dalších spojeneckých dodávek.",
+          "independence_basis": "Samostatná nová informace této linie. Přetisky a citace téhož výroku nejsou další nezávislé potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-07T08:54:51+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-08T08:54:51+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-obs-20261105-nato-counter-drone-procurement",
+      "title": "NATO urychluje nákup protidronových systémů",
+      "kind": "policy",
+      "areas": [
+        "NATO"
+      ],
+      "summary": "NATO spustilo nákupní mechanismus pro protidronové technologie a popsalo výběr řešení a financování zkoušek.",
+      "russian_involvement": "independent",
+      "attribution_basis": "Nové je nákupní uspořádání, ne důkaz okamžitého dodání celého balíku nebo konkrétní přípravy ruského útoku. Navazuje na dřívější dlouhodobou iniciativu.",
+      "links": [
+        {
+          "evidence_id": "obs-20261105-nato-counter-drone-procurement",
+          "role": "first_report",
+          "line_id": "line-obs-20261105-nato-counter-drone-procurement",
+          "claim": "NATO spustilo nákupní mechanismus pro protidronové technologie a popsalo výběr řešení a financování zkoušek.",
+          "independence_basis": "Samostatná nová informace této linie. Přetisky a citace téhož výroku nejsou další nezávislé potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-07T08:54:51+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-08T08:54:51+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-romania-sabotage-20240730",
+      "title": "Nový zatykač ve věci plánu z roku 2024",
+      "kind": "incident",
+      "areas": [
+        "ROU"
+      ],
+      "summary": "Rumunská prokuratura oznámila zatykač z 2. listopadu na údajného zadavatele spojeného s ruskými službami. Základním skutkem je zmařený plán z července 2024, který SRI veřejně připsala ruskému řízení již 17. ledna 2025.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Nová právní fáze není nový pokus v říjnu či listopadu 2026 ani první kvalifikující zveřejnění. Přímé nové sdělení DIICOT nebylo dostupné; starší primární text SRI je dostupný.",
+      "links": [
+        {
+          "evidence_id": "followup-20261105-romania-2024-plot-warrant",
+          "role": "first_report",
+          "line_id": "line-followup-20261105-romania-2024-plot-warrant",
+          "claim": "Rumunská prokuratura oznámila zatykač z 2. listopadu na údajného zadavatele spojeného s ruskými službami. Základním skutkem je zmařený plán z července 2024, který SRI veřejně připsala ruskému řízení již 17. ledna 2025.",
+          "independence_basis": "Samostatná nová informace této linie. Přetisky a citace téhož výroku nejsou další nezávislé potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-07T08:54:51+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-08T08:54:51+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
     }
   ],
-  "review_note": "Kontrola nově připojených zdrojových linií dne 6. listopadu. Staré anotace a historie evidence zachovány."
+  "review_note": "Kontrola nově připojených zdrojových linií dne 7. listopadu. Staré anotace a historie evidence zachovány."
 }
