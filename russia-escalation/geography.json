@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-07T08:54:51+01:00",
+  "reviewed_at": "2026-11-08T07:19:47+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -3016,6 +3016,84 @@
       ],
       "title": "Nový zatykač ve věci plánu z roku 2024",
       "note": "Nová právní fáze není nový pokus v říjnu či listopadu 2026 ani první kvalifikující zveřejnění. Přímé nové sdělení DIICOT nebylo dostupné; starší primární text SRI je dostupný."
+    },
+    "followup-20261107-presidency-ballistic-shortage": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Prezident popsal nedostatek střel PVO",
+      "note": "Jde o upřesnění již započítané noci, nikoli druhý útok. Bilance a předběžná identifikace zbraně nejsou nezávisle ověřeny. Požadované urychlení dodávek není uskutečněná dodávka ani automaticky politické sebeodstrašení."
+    },
+    "obs-20261108-ukraine-airforce-night-attack": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Letectvo: další noční útok pokračoval ráno",
+      "note": "Průběžná bilance není konečný počet zásahů. Uvedených 137 se týká dronů, nikoli součtu s raketami. Další noc dokládá pokračování kampaně; sama nesplňuje smlouvu o nouzových omezeních Ukrenerga."
+    },
+    "reported-20261107-dtek-emergency-kyiv-region": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "DTEK potvrdil nouzová vypínání 7. listopadu",
+      "note": "DTEK je přímý provozní zdroj, avšak zmrazená smlouva fixed-v2 vyžaduje výslovné potvrzení přímo od Ukrenerga. V dostupném kanálu Ukrenerga bylo nalezeno plánované hodinové omezení na 8. listopad, nikoli takové potvrzení; web provozovatele vrátil 403. Chybějící přístup není důkaz nenastání."
+    },
+    "obs-20261108-dtek-dnipropetrovsk-outages": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "DTEK: přes 600 tisíc obyvatel bez elektřiny",
+      "note": "Počet označuje obyvatele, nikoli domácnosti. Skutečné výpadky po poškození nejsou totožné s výslovným potvrzením nouzových omezení Ukrenergem. Jde o nový provozní den, ale stejnou provozní zdrojovou rodinu jako předchozí hlášení DTEK."
+    },
+    "obs-20261107-italy-personal-data-g7-request": {
+      "areas": [
+        "ITA"
+      ],
+      "title": "Itálie řeší šíření osobních údajů a žádá jednání G7",
+      "note": "Veřejné dokumenty nedokládají technickou ruskou atribuci, původ dat nebo průnik do systémů ministerstva. Tajaniho politický výklad není technický důkaz. Doložena je žádost o spojeneckou koordinaci, nikoli již přijaté rozhodnutí G7 nebo omezení pomoci."
+    },
+    "followup-20261107-france-prosecutor-bomb-hoaxes": {
+      "areas": [
+        "FRA",
+        "EU"
+      ],
+      "title": "Francouzská prokuratura prověřuje původ výhrůžek",
+      "note": "Nové je vyšetřovací sdělení k již evidované vlně, nikoli další nezávislý incident. Podpis e-mailu ani zahájení prověřování nepotvrzují státní zadání. Možné jsou koordinované hoaxy, napodobitelé i jiné motivace."
+    },
+    "obs-20261107-krakow-shooting-attribution-open": {
+      "areas": [
+        "POL"
+      ],
+      "title": "Krakov: střelba, ruská vazba nedoložena",
+      "note": "Ve zveřejněných podkladech není doložena účast ruských státních sil nebo zadání Ruska. Občanství pachatele samo zahraniční vazbu nevylučuje, samotné místo v zemi NATO ji však také neprokazuje."
+    },
+    "reported-20261107-moscow-raid-summons-contracts": {
+      "areas": [
+        "RUS"
+      ],
+      "title": "Moskva: svědci hlásí předvolání po razii",
+      "note": "Počet zadržených není počtem mobilizovaných. Lokální předvolání a nabídky smluv mohou být běžným odvodem či nátlakovým náborem; není doloženo přijetí do armády, koordinovaná nová celostátní vlna ani závazná kvóta 100 000."
+    },
+    "backfill-20261105-latvia-scheduled-training-nov6-8": {
+      "areas": [
+        "LVA"
+      ],
+      "title": "Lotyšsko předem ohlásilo pravidelné cvičení",
+      "note": "Konkrétní předem oznámené cvičení je alternativním vysvětlením místní vojenské aktivity. Nedokládá dokončení všech plánovaných činností ani nepřítomnost jiné pohotovosti v celém Pobaltí."
+    },
+    "backfill-20261106-znpp-radiation-nov2-6": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Energoatom: radiační pozadí 2.–6. listopadu v normě",
+      "note": "Měření se vztahuje k uvedenému období a okolí elektrárny. Nevypovídá o stavu napájení a chlazení ráno 8. listopadu ani nevylučuje zbraňové události jinde. Přímá dnešní kontrola IAEA byla nedostupná."
+    },
+    "backfill-20261106-cert-lv-warehouse-refrigeration": {
+      "areas": [
+        "LVA"
+      ],
+      "title": "CERT.LV: jeden skladový incident, minimální ztráty",
+      "note": "Konkrétní den skladového incidentu a pachatel nejsou určeni. Potenciálně exponovaná zařízení nejsou počtem obětí. Obecné podezření na sabotážní motiv a pozdější nároky jiných skupin neurčují ruské řízení tohoto případu."
     }
   },
   "review_scope": [

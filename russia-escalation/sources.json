@@ -2602,6 +2602,175 @@
       "tier": 3,
       "cadence_days": 7,
       "priority": 2
+    },
+    {
+      "id": "doc-026308d72036",
+      "name": "esteri.it",
+      "url": "https://www.esteri.it/it/sala_stampa/archivionotizie/comunicati/2026/11/tajani-dati-personali-diffusi-sul-dark-web-chiesto-di-trattare-minacce-ibride-al-prossimo-g7-esteri-solidarieta-a-lo-voi-gabrielli-e-tassan-zanin/",
+      "areas": [
+        "ITA"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-2bd59cee83ac",
+      "name": "garanteprivacy.it",
+      "url": "https://garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/10318166",
+      "areas": [
+        "ITA"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-c4f579cbe5c3",
+      "name": "aol.co.uk",
+      "url": "https://www.aol.co.uk/articles/france-probes-bomb-threats-against-163353000.html",
+      "areas": [
+        "FRA",
+        "EU"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-a6629c97001f",
+      "name": "krakow.pl",
+      "url": "https://krakow.pl/aktualnosci/345151%2C29%2Ckomunikat%2Cstrzelanina_w_centrum_krakowa__sa_zabici_i_ranni.html",
+      "areas": [
+        "POL"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-6b00e88333ff",
+      "name": "t.me/ostorozhno_novosti",
+      "url": "https://t.me/ostorozhno_novosti/56955",
+      "areas": [
+        "RUS"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 5,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-aef9c7e7b6c6",
+      "name": "energoatom.com.ua",
+      "url": "https://www.energoatom.com.ua/en/news/radiaciinii-stan-na-zaporizkii-aes-z-02-listopada-po-06-listopada-2026-roku-u-mezax-prirodnogo-radiaciinogo-fonu",
+      "areas": [
+        "UKR"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-bf23a5c4b2cc",
+      "name": "ua.energy",
+      "url": "https://ua.energy/",
+      "areas": [
+        "UKR"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-834ed5b4bfb5",
+      "name": "consultant.ru",
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_548122/",
+      "areas": [
+        "RUS"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-7c286792aff2",
+      "name": "t.me/generalstaffzsu",
+      "url": "https://t.me/s/GeneralStaffZSU",
+      "areas": [
+        "BLR",
+        "UKR",
+        "RUS"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-520bd5df5bdf",
+      "name": "policie.gov.cz",
+      "url": "https://policie.gov.cz/",
+      "areas": [
+        "CZE",
+        "EU"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-e1f37864d1a2",
+      "name": "tribunal-de-paris.justice.fr",
+      "url": "https://www.tribunal-de-paris.justice.fr/75/communiques-de-presse-du-parquet-de-paris",
+      "areas": [
+        "FRA"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",

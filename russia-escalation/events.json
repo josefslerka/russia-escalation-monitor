@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-07T08:54:51+01:00",
+  "reviewed_at": "2026-11-08T07:19:47+01:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -2391,7 +2391,7 @@
       "areas": [
         "UKR"
       ],
-      "summary": "Letectvo uvádí v noci na 7. listopadu 172 nasazených dronů, včetně 137 proudových; sestřeleno či potlačeno 149 dronů a čtyři střely. Hlášeny zásahy na 24 místech a trosky na deseti. Bilance k 09:00 kyjevského času je průběžná.",
+      "summary": "Letectvo uvádí v noci na 7. listopadu 172 nasazených dronů, včetně 137 proudových; sestřeleno či potlačeno 149 dronů a čtyři střely. Hlášeny zásahy na 24 místech a trosky na deseti. Bilance k 09:00 kyjevského času je průběžná. Prezident upřesnil noční útok na 7. listopadu: podle jeho zprávy Rusko vypustilo 36 střel s balistickou trajektorií a čtyři byly zneškodněny. Uvedl nedostatek střel Patriot a jednání o urychlení dodávek. Předběžně označil jeden nález za severokorejskou KN-23.",
       "russian_involvement": "russian_caused",
       "attribution_basis": "Součet čtyř zachycených střel neudává celkový počet vypuštěných střel. Další smíšená vlna potvrzuje pokračování kampaně, sama nedokládá další kvalitativní fázi nebo útok na NATO.",
       "links": [
@@ -2401,9 +2401,16 @@
           "line_id": "line-obs-20261107-ukraine-airforce-night-attack",
           "claim": "Letectvo uvádí v noci na 7. listopadu 172 nasazených dronů, včetně 137 proudových; sestřeleno či potlačeno 149 dronů a čtyři střely. Hlášeny zásahy na 24 místech a trosky na deseti. Bilance k 09:00 kyjevského času je průběžná.",
           "independence_basis": "Samostatná nová informace této linie. Přetisky a citace téhož výroku nejsou další nezávislé potvrzení."
+        },
+        {
+          "evidence_id": "followup-20261107-presidency-ballistic-shortage",
+          "role": "followup",
+          "line_id": "line-followup-20261107-presidency-ballistic-shortage",
+          "claim": "Prezident upřesnil noční útok na 7. listopadu: podle jeho zprávy Rusko vypustilo 36 střel s balistickou trajektorií a čtyři byly zneškodněny. Uvedl nedostatek střel Patriot a jednání o urychlení dodávek. Předběžně označil jeden nález za severokorejskou KN-23.",
+          "independence_basis": "Nový detail prezidentské linie k témuž náletu jako obs-20261107-ukraine-airforce-night-attack. S letectvem může sdílet podklad; nejde o další nezávisle potvrzený útok."
         }
       ],
-      "reviewed_at": "2026-11-07T08:54:51+01:00",
+      "reviewed_at": "2026-11-08T07:19:47+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-08T08:54:51+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
@@ -2490,7 +2497,7 @@
         "CZE",
         "GBR"
       ],
-      "summary": "Reuters popsala evakuace médií a další bombové výhrůžky letům v Evropě, včetně devíti pražských letů. Zpráva uvádí bezpečné přistání letadel a neprokázanou totožnost či společný původ rozesílatele.",
+      "summary": "Reuters popsala evakuace médií a další bombové výhrůžky letům v Evropě, včetně devíti pražských letů. Zpráva uvádí bezpečné přistání letadel a neprokázanou totožnost či společný původ rozesílatele. Pařížská prokuratura podle AFP vyšetřuje autory bombových výhrůžek a případné vazby na cizí moc. AFP uvádí, že výbušniny nalezeny nebyly a pachatelé nejsou identifikováni. Podpis odkazující na ruskou skupinu nebyl ověřen.",
       "russian_involvement": "unknown",
       "attribution_basis": "Provozní zásah je skutečný, společná operace a ruská vazba nejsou doloženy. Možní jsou napodobitelé i jiné motivy. Výhrůžka sama neprokazuje fyzickou sabotáž nebo pokročilý fyzický pokus.",
       "links": [
@@ -2500,9 +2507,16 @@
           "line_id": "line-reported-20261106-flight-newsroom-bomb-threats",
           "claim": "Reuters popsala evakuace médií a další bombové výhrůžky letům v Evropě, včetně devíti pražských letů. Zpráva uvádí bezpečné přistání letadel a neprokázanou totožnost či společný původ rozesílatele.",
           "independence_basis": "Samostatná nová informace této linie. Přetisky a citace téhož výroku nejsou další nezávislé potvrzení."
+        },
+        {
+          "evidence_id": "followup-20261107-france-prosecutor-bomb-hoaxes",
+          "role": "followup",
+          "line_id": "line-followup-20261107-france-prosecutor-bomb-hoaxes",
+          "claim": "Pařížská prokuratura podle AFP vyšetřuje autory bombových výhrůžek a případné vazby na cizí moc. AFP uvádí, že výbušniny nalezeny nebyly a pachatelé nejsou identifikováni. Podpis odkazující na ruskou skupinu nebyl ověřen.",
+          "independence_basis": "AFP přímo cituje prokuraturu: nová linie pro stav vyšetřování. Výhrůžky překrývají případ zveřejněný Reuters 6. listopadu; nejsou znovu počítány jako další operace."
         }
       ],
-      "reviewed_at": "2026-11-07T08:54:51+01:00",
+      "reviewed_at": "2026-11-08T07:19:47+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-08T08:54:51+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
@@ -2579,7 +2593,223 @@
       "case_status": "open",
       "next_check_by": "2026-11-08T08:54:51+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-ua-airforce-20261108",
+      "title": "Letectvo: další noční útok pokračoval ráno",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Letectvo v bilanci k 08:00 kyjevského času hlásí tři řízené střely Ch-59/69 a 164 dronů, z toho 112 proudových, od večera 7. listopadu. Uvádí zneškodnění či potlačení 137 dronů, zásahy na 23 místech a trosky na šesti; útok ještě pokračoval.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Průběžná bilance není konečný počet zásahů. Uvedených 137 se týká dronů, nikoli součtu s raketami. Další noc dokládá pokračování kampaně; sama nesplňuje smlouvu o nouzových omezeních Ukrenerga.",
+      "links": [
+        {
+          "evidence_id": "obs-20261108-ukraine-airforce-night-attack",
+          "role": "first_report",
+          "line_id": "line-obs-20261108-ukraine-airforce-night-attack",
+          "claim": "Letectvo v bilanci k 08:00 kyjevského času hlásí tři řízené střely Ch-59/69 a 164 dronů, z toho 112 proudových, od večera 7. listopadu. Uvádí zneškodnění či potlačení 137 dronů, zásahy na 23 místech a trosky na šesti; útok ještě pokračoval.",
+          "independence_basis": "Jedna zdrojová rodina pro uvedené konkrétní tvrzení; přetisky nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-08T07:19:47+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-09T07:19:47+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-ukraine-energy-operational-20261107",
+      "title": "DTEK potvrdil nouzová vypínání 7. listopadu",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "DTEK 7. listopadu oznámil skutečná nouzová vypínání v Kyjevské oblasti na příkaz Ukrenerga; pozdější vysvětlení je spojilo s nočními ruskými útoky. Nouzová vypínání odlišil od běžných hodinových rozpisů.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "DTEK je přímý provozní zdroj, avšak zmrazená smlouva fixed-v2 vyžaduje výslovné potvrzení přímo od Ukrenerga. V dostupném kanálu Ukrenerga bylo nalezeno plánované hodinové omezení na 8. listopad, nikoli takové potvrzení; web provozovatele vrátil 403. Chybějící přístup není důkaz nenastání.",
+      "links": [
+        {
+          "evidence_id": "reported-20261107-dtek-emergency-kyiv-region",
+          "role": "first_report",
+          "line_id": "line-dtek-20261107",
+          "claim": "DTEK 7. listopadu oznámil skutečná nouzová vypínání v Kyjevské oblasti na příkaz Ukrenerga; pozdější vysvětlení je spojilo s nočními ruskými útoky. Nouzová vypínání odlišil od běžných hodinových rozpisů.",
+          "independence_basis": "Dva příspěvky stejné provozní skupiny k jednomu dni; nepředstavují dvě nezávislá potvrzení ani přímé publikované sdělení Ukrenerga."
+        }
+      ],
+      "reviewed_at": "2026-11-08T07:19:47+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-09T07:19:47+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-ukraine-energy-operational-20261108",
+      "title": "DTEK: přes 600 tisíc obyvatel bez elektřiny",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "DTEK po nočním útoku na 8. listopadu hlásí poškození energetických zařízení v Dněpropetrovské oblasti a přes 600 tisíc obyvatel bez elektřiny. Opravy podle společnosti komplikují opakované útoky.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Počet označuje obyvatele, nikoli domácnosti. Skutečné výpadky po poškození nejsou totožné s výslovným potvrzením nouzových omezení Ukrenergem. Jde o nový provozní den, ale stejnou provozní zdrojovou rodinu jako předchozí hlášení DTEK.",
+      "links": [
+        {
+          "evidence_id": "obs-20261108-dtek-dnipropetrovsk-outages",
+          "role": "first_report",
+          "line_id": "line-dtek-20261108",
+          "claim": "DTEK po nočním útoku na 8. listopadu hlásí poškození energetických zařízení v Dněpropetrovské oblasti a přes 600 tisíc obyvatel bez elektřiny. Opravy podle společnosti komplikují opakované útoky.",
+          "independence_basis": "Nový provozní den jedné zdrojové rodiny DTEK; nezvyšuje počet nezávislých potvrzení původce celé kampaně."
+        }
+      ],
+      "reviewed_at": "2026-11-08T07:19:47+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-09T07:19:47+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-obs-20261107-italy-personal-data-g7-request",
+      "title": "Itálie řeší šíření osobních údajů a žádá jednání G7",
+      "kind": "incident",
+      "areas": [
+        "ITA"
+      ],
+      "summary": "Italské ministerstvo potvrdilo nalezení osobních údajů ministra Tajaniho na internetu v předchozích dnech. Tajani požádal o zařazení hybridních hrozeb na jednání G7 9.–10. listopadu. Úřad na ochranu osobních údajů samostatně reagoval na neoprávněné šíření dat.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Veřejné dokumenty nedokládají technickou ruskou atribuci, původ dat nebo průnik do systémů ministerstva. Tajaniho politický výklad není technický důkaz. Doložena je žádost o spojeneckou koordinaci, nikoli již přijaté rozhodnutí G7 nebo omezení pomoci.",
+      "links": [
+        {
+          "evidence_id": "obs-20261107-italy-personal-data-g7-request",
+          "role": "first_report",
+          "line_id": "line-obs-20261107-italy-personal-data-g7-request",
+          "claim": "Italské ministerstvo potvrdilo nalezení osobních údajů ministra Tajaniho na internetu v předchozích dnech. Tajani požádal o zařazení hybridních hrozeb na jednání G7 9.–10. listopadu. Úřad na ochranu osobních údajů samostatně reagoval na neoprávněné šíření dat.",
+          "independence_basis": "Ministerstvo je primární linie pro vlastní zjištění a žádost. Reakce regulátora potvrzuje ochrannou reakci, nikoli pachatele nebo další nezávislý útok."
+        }
+      ],
+      "reviewed_at": "2026-11-08T07:19:47+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-09T07:19:47+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-krakow-shooting-20261107",
+      "title": "Krakov: střelba, ruská vazba nedoložena",
+      "kind": "incident",
+      "areas": [
+        "POL"
+      ],
+      "summary": "Městský úřad potvrzuje střelbu 7. listopadu krátce po 15:00 místního času, šest mrtvých a patnáct zraněných. Policie zadržela střelce; podle úředního sdělení jde o polského občana. Vyšetřování pokračuje.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Ve zveřejněných podkladech není doložena účast ruských státních sil nebo zadání Ruska. Občanství pachatele samo zahraniční vazbu nevylučuje, samotné místo v zemi NATO ji však také neprokazuje.",
+      "links": [
+        {
+          "evidence_id": "obs-20261107-krakow-shooting-attribution-open",
+          "role": "first_report",
+          "line_id": "line-obs-20261107-krakow-shooting-attribution-open",
+          "claim": "Městský úřad potvrzuje střelbu 7. listopadu krátce po 15:00 místního času, šest mrtvých a patnáct zraněných. Policie zadržela střelce; podle úředního sdělení jde o polského občana. Vyšetřování pokračuje.",
+          "independence_basis": "Městský text přebírá policejní bilanci; město a citovaná policie nejsou dvě nezávislé primární linie pro ruskou atribuci."
+        }
+      ],
+      "reviewed_at": "2026-11-08T07:19:47+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-09T07:19:47+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-reported-20261107-moscow-raid-summons-contracts",
+      "title": "Moskva: svědci hlásí předvolání po razii",
+      "kind": "incident",
+      "areas": [
+        "RUS"
+      ],
+      "summary": "Ostorožno novosti od propuštěných z moskevské razie získaly tvrzení o předávání povolávacích předvolání dospělým a nabídkách smluv s ministerstvem obrany. Meduza shrnuje odhad 100–150 zadržených včetně nezletilých a policejní vysvětlení kontrolami veřejného pořádku.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Počet zadržených není počtem mobilizovaných. Lokální předvolání a nabídky smluv mohou být běžným odvodem či nátlakovým náborem; není doloženo přijetí do armády, koordinovaná nová celostátní vlna ani závazná kvóta 100 000.",
+      "links": [
+        {
+          "evidence_id": "reported-20261107-moscow-raid-summons-contracts",
+          "role": "first_report",
+          "line_id": "line-reported-20261107-moscow-raid-summons-contracts",
+          "claim": "Ostorožno novosti od propuštěných z moskevské razie získaly tvrzení o předávání povolávacích předvolání dospělým a nabídkách smluv s ministerstvem obrany. Meduza shrnuje odhad 100–150 zadržených včetně nezletilých a policejní vysvětlení kontrolami veřejného pořádku.",
+          "independence_basis": "Dvě zprávy téhož média z rozhovorů v jednom místním případu. Meduza je zčásti přebírá a doplňuje policejní kontext; nejde o nezávislé regionální potvrzení nové mobilizační vlny."
+        }
+      ],
+      "reviewed_at": "2026-11-08T07:19:47+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-09T07:19:47+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-backfill-20261105-latvia-scheduled-training-nov6-8",
+      "title": "Lotyšsko předem ohlásilo pravidelné cvičení",
+      "kind": "policy",
+      "areas": [
+        "LVA"
+      ],
+      "summary": "Ozbrojené síly 5. listopadu předem oznámily pravidelné cvičení jednotek Zemessardze na 6.–8. listopadu včetně vozidel, dronů a cvičné munice.",
+      "russian_involvement": "independent",
+      "attribution_basis": "Konkrétní předem oznámené cvičení je alternativním vysvětlením místní vojenské aktivity. Nedokládá dokončení všech plánovaných činností ani nepřítomnost jiné pohotovosti v celém Pobaltí.",
+      "links": [
+        {
+          "evidence_id": "backfill-20261105-latvia-scheduled-training-nov6-8",
+          "role": "first_report",
+          "line_id": "line-backfill-20261105-latvia-scheduled-training-nov6-8",
+          "claim": "Ozbrojené síly 5. listopadu předem oznámily pravidelné cvičení jednotek Zemessardze na 6.–8. listopadu včetně vozidel, dronů a cvičné munice.",
+          "independence_basis": "Jedna zdrojová rodina pro uvedené konkrétní tvrzení; přetisky nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-08T07:19:47+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-09T07:19:47+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-backfill-20261106-znpp-radiation-nov2-6",
+      "title": "Energoatom: radiační pozadí 2.–6. listopadu v normě",
+      "kind": "assessment",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Energoatom pro období 2.–6. listopadu uvádí radiační stav v okolí Záporožské elektrárny v mezích přirozeného pozadí a nezjištěné radiační ohrožení pracovníků či obyvatel.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Měření se vztahuje k uvedenému období a okolí elektrárny. Nevypovídá o stavu napájení a chlazení ráno 8. listopadu ani nevylučuje zbraňové události jinde. Přímá dnešní kontrola IAEA byla nedostupná.",
+      "links": [
+        {
+          "evidence_id": "backfill-20261106-znpp-radiation-nov2-6",
+          "role": "first_report",
+          "line_id": "line-backfill-20261106-znpp-radiation-nov2-6",
+          "claim": "Energoatom pro období 2.–6. listopadu uvádí radiační stav v okolí Záporožské elektrárny v mezích přirozeného pozadí a nezjištěné radiační ohrožení pracovníků či obyvatel.",
+          "independence_basis": "Jedna zdrojová rodina pro uvedené konkrétní tvrzení; přetisky nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-08T07:19:47+01:00",
+      "case_status": "closed",
+      "next_check_by": null,
+      "next_action": null
+    },
+    {
+      "id": "case-latvia-refrigeration-202610-11",
+      "title": "CERT.LV: jeden skladový incident, minimální ztráty",
+      "kind": "incident",
+      "areas": [
+        "LVA"
+      ],
+      "summary": "CERT.LV potvrdil jeden incident chlazení v lotyšském skladu, rychlé zastavení útoku a minimální ztráty; obchodní řetězce podle tehdejších zjištění zasaženy nebyly. Aktualizovaná stránka obsahuje odpovědi z 4. listopadu; měsíční přehled uvádí pokusy na konci října a začátku listopadu.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Konkrétní den skladového incidentu a pachatel nejsou určeni. Potenciálně exponovaná zařízení nejsou počtem obětí. Obecné podezření na sabotážní motiv a pozdější nároky jiných skupin neurčují ruské řízení tohoto případu.",
+      "links": [
+        {
+          "evidence_id": "backfill-20261106-cert-lv-warehouse-refrigeration",
+          "role": "first_report",
+          "line_id": "line-backfill-20261106-cert-lv-warehouse-refrigeration",
+          "claim": "CERT.LV potvrdil jeden incident chlazení v lotyšském skladu, rychlé zastavení útoku a minimální ztráty; obchodní řetězce podle tehdejších zjištění zasaženy nebyly. Aktualizovaná stránka obsahuje odpovědi z 4. listopadu; měsíční přehled uvádí pokusy na konci října a začátku listopadu.",
+          "independence_basis": "Dva dokumenty CERT.LV tvoří jednu primární linii o lotyšském případu. Zmínky o jiných zemích jsou odvozené a nepřidávají nové nezávislé útoky."
+        }
+      ],
+      "reviewed_at": "2026-11-08T07:19:47+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-09T07:19:47+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
     }
   ],
-  "review_note": "Kontrola nově připojených zdrojových linií dne 7. listopadu. Staré anotace a historie evidence zachovány."
+  "review_note": "Kontrola nově připojených zdrojových linií dne 8. listopadu. Staré anotace a historie evidence zachovány."
 }
