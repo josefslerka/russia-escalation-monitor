@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-08T07:19:47+01:00",
+  "reviewed_at": "2026-11-09T07:13:28+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -3094,6 +3094,67 @@
       ],
       "title": "CERT.LV: jeden skladový incident, minimální ztráty",
       "note": "Konkrétní den skladového incidentu a pachatel nejsou určeni. Potenciálně exponovaná zařízení nejsou počtem obětí. Obecné podezření na sabotážní motiv a pozdější nároky jiných skupin neurčují ruské řízení tohoto případu."
+    },
+    "obs-20261108-ukrenergo-actual-emergency": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo potvrdilo nouzová vypínání 8. listopadu",
+      "note": "Nouzový režim je skutečný a liší se od běžného rozpisu. Očekávaná obnova dodávek do konce dne je odhad provozovatele, ne ověřené dokončení opravy. Sdělení o plánu na 9. listopad samo nedokládá další skutečnou nouzovou událost."
+    },
+    "obs-20261108-dtek-evening-odesa-damage": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "DTEK: večerní poškození energetiky v Oděské oblasti",
+      "note": "Počet postižených a rozsah opravy nejsou zveřejněny. Jde o další zásah téhož provozního dne a stejné rodiny DTEK, nikoli nezávislé potvrzení celé kampaně ani nový ukrenergovský den."
+    },
+    "followup-20261108-presidency-recovery-transport": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Prezident: obnova elektřiny a příprava náhradní dopravy",
+      "note": "Prezident počítá odběratele včetně podniků a infrastruktury, zatímco ranní DTEK uvedl obyvatele. Jednotky nelze sjednotit ani počty sčítat. Návrh dopravy a příprava pomoci nejsou uskutečněné opatření či dodávka; postupná obnova není potvrzení plného obnovení."
+    },
+    "followup-20261108-italy-g7-agenda-ukraine-support": {
+      "areas": [
+        "EU",
+        "ITA",
+        "UKR"
+      ],
+      "title": "Itálie: agenda G7 a připravovaná podpora Ukrajině",
+      "note": "Jde o potvrzení agendy a oznámení zamýšlené podpory, nikoli výsledek G7 nebo uskutečněnou dodávku. Politické označení incidentů za hybridní válku neuzavírá technickou ruskou atribuci každého z nich."
+    },
+    "reported-20261108-knighton-risk-warning": {
+      "areas": [
+        "NATO",
+        "EUROPE",
+        "GBR"
+      ],
+      "title": "Knightonovo varování: rozhovor, nikoli nový operační důkaz",
+      "note": "Varování může být odstrašováním a obhajobou obranných investic. Neobsahuje veřejný nový konkrétní důkaz operační přípravy útoku na NATO. Přetisky rozhovoru FT nejsou nezávislé zpravodajské linie a obecná tvrzení o dřívějších operacích neatribuují aktuální výhrůžky."
+    },
+    "backfill-20261107-pistorius-patriot-capacity": {
+      "areas": [
+        "DEU",
+        "UKR"
+      ],
+      "title": "Pistorius podle rozhovoru: omezená kapacita dalších Patriotů",
+      "note": "Uváděný důvod je kapacita a nahrazení vlastních zásob, nikoli doložený strach z ruské eskalace. Není to důkaz zrušení veškeré vojenské pomoci ani konkrétně slíbené dodávky. Původní rozhovor nebyl získán přímo; odvozené texty tvoří jednu linii."
+    },
+    "correction-20261109-krakow-injured-count": {
+      "areas": [
+        "POL"
+      ],
+      "title": "Krakov: oprava bilance na 16 zraněných",
+      "note": "Jde o opravu bilance téhož činu, nikoli nový incident nebo novou nezávislou linii. Občanství pachatele samo nepotvrzuje ani nevylučuje zahraniční zadání. Nové datum načtení se nezaměňuje za datum útoku."
+    },
+    "obs-20261109-ukraine-airforce-night-attack": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Letectvo: noc na 9. listopadu, bilance ještě průběžná",
+      "note": "Jde o předběžné vojenské hlášení, nikoli nezávisle ověřené zásahy. Kategorie S8000/ostatních typů se nesmí dvojitě sčítat; celkových 276 je titulek zdroje. Další silný nálet je pokračování kampaně, ne sám o sobě nová strategická změna či potvrzení nouzového režimu Ukrenerga."
     }
   },
   "review_scope": [

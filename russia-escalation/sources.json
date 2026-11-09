@@ -2771,6 +2771,71 @@
       "tier": 3,
       "cadence_days": 7,
       "priority": 2
+    },
+    {
+      "id": "doc-890bc934507d",
+      "name": "the-independent.com",
+      "url": "https://www.the-independent.com/news/world/europe/uk-military-chief-russian-threat-b3081171.html",
+      "areas": [
+        "NATO",
+        "EUROPE",
+        "GBR"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-656338ddcfe4",
+      "name": "ft.com",
+      "url": "https://www.ft.com/content/9d49deb8-33f6-4375-9216-a95dbb915576",
+      "areas": [
+        "NATO",
+        "EUROPE",
+        "GBR"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-8196e6614d61",
+      "name": "focus.de",
+      "url": "https://www.focus.de/politik/deutschland/deutschland-kann-ukraine-keine-patriot-systeme-mehr-liefern_71076a37-1994-4d04-98fa-a49d77b04b81.html",
+      "areas": [
+        "DEU",
+        "UKR"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-71bec38f74ca",
+      "name": "diplomatie.gouv.fr",
+      "url": "https://www.diplomatie.gouv.fr/en/presse-et-ressources/decouvrir-et-informer/actualites/quelles-priorites-pour-la-reunion-des-ministres-des-affaires-etrangeres-du-g7-a-paris",
+      "areas": [
+        "FRA"
+      ],
+      "domains": [
+        "incidents",
+        "official_assessment"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",

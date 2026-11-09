@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-08T07:19:47+01:00",
+  "reviewed_at": "2026-11-09T07:13:28+01:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -2649,7 +2649,7 @@
       "areas": [
         "UKR"
       ],
-      "summary": "DTEK po nočním útoku na 8. listopadu hlásí poškození energetických zařízení v Dněpropetrovské oblasti a přes 600 tisíc obyvatel bez elektřiny. Opravy podle společnosti komplikují opakované útoky.",
+      "summary": "DTEK po nočním útoku na 8. listopadu hlásí poškození energetických zařízení v Dněpropetrovské oblasti a přes 600 tisíc obyvatel bez elektřiny. Opravy podle společnosti komplikují opakované útoky. Ukrenergo 8. listopadu výslovně potvrdilo již zavedená nouzová vypínání v Charkovské, Sumské a Poltavské oblasti kvůli pokračujícím nepřátelským útokům na energetiku; běžné rozpisy tam v té chvíli neplatily. Večerní sdělení 5624 příčinu omezení výslovně označuje za následky ruských útoků, ale jeho rozpis na 9. listopad je plánovaný hodinový režim. DTEK oznámil večerní útok na energetické zařízení v Oděské oblasti, výpadky u části rodin a zahájení prohlídky zařízení a odklízení následků. Opravy podle společnosti komplikují další poplachy. Prezident hlásí postupné obnovování elektřiny v Dněpropetrovské oblasti a více než 600 tisíc odběratelů bez proudu v nejhorší fázi. Vládě uložil připravit rezervní pozemní dopravu, program bezplatného jízdného a autobusovou rezervu pro Kyjev. Další energetická pomoc se připravuje.",
       "russian_involvement": "russian_caused",
       "attribution_basis": "Počet označuje obyvatele, nikoli domácnosti. Skutečné výpadky po poškození nejsou totožné s výslovným potvrzením nouzových omezení Ukrenergem. Jde o nový provozní den, ale stejnou provozní zdrojovou rodinu jako předchozí hlášení DTEK.",
       "links": [
@@ -2659,9 +2659,30 @@
           "line_id": "line-dtek-20261108",
           "claim": "DTEK po nočním útoku na 8. listopadu hlásí poškození energetických zařízení v Dněpropetrovské oblasti a přes 600 tisíc obyvatel bez elektřiny. Opravy podle společnosti komplikují opakované útoky.",
           "independence_basis": "Nový provozní den jedné zdrojové rodiny DTEK; nezvyšuje počet nezávislých potvrzení původce celé kampaně."
+        },
+        {
+          "evidence_id": "obs-20261108-ukrenergo-actual-emergency",
+          "role": "followup",
+          "line_id": "line-ukrenergo-20261108",
+          "claim": "Ukrenergo 8. listopadu výslovně potvrdilo již zavedená nouzová vypínání v Charkovské, Sumské a Poltavské oblasti kvůli pokračujícím nepřátelským útokům na energetiku; běžné rozpisy tam v té chvíli neplatily. Večerní sdělení 5624 příčinu omezení výslovně označuje za následky ruských útoků, ale jeho rozpis na 9. listopad je plánovaný hodinový režim.",
+          "independence_basis": "První nalezené přímé potvrzení skutečného nouzového režimu tohoto provozního dne od Ukrenerga, odlišné od dřívějšího plánu 5622. DTEK je již evidován ve stejném denním případu. Dva příspěvky Ukrenerga nejsou dvě nezávislé linie."
+        },
+        {
+          "evidence_id": "obs-20261108-dtek-evening-odesa-damage",
+          "role": "followup",
+          "line_id": "line-dtek-20261108",
+          "claim": "DTEK oznámil večerní útok na energetické zařízení v Oděské oblasti, výpadky u části rodin a zahájení prohlídky zařízení a odklízení následků. Opravy podle společnosti komplikují další poplachy.",
+          "independence_basis": "Nový místní následek z již započítané denní rodiny DTEK; sdílí linii s ranním hlášením Dněpropetrovské oblasti a nepřidává druhou nezávislou provozní rodinu."
+        },
+        {
+          "evidence_id": "followup-20261108-presidency-recovery-transport",
+          "role": "followup",
+          "line_id": "line-followup-20261108-presidency-recovery-transport",
+          "claim": "Prezident hlásí postupné obnovování elektřiny v Dněpropetrovské oblasti a více než 600 tisíc odběratelů bez proudu v nejhorší fázi. Vládě uložil připravit rezervní pozemní dopravu, program bezplatného jízdného a autobusovou rezervu pro Kyjev. Další energetická pomoc se připravuje.",
+          "independence_basis": "Prezidentská následná zpráva může čerpat z provozních hlášení; nepočítá se jako nezávislý audit celého rozsahu výpadků."
         }
       ],
-      "reviewed_at": "2026-11-08T07:19:47+01:00",
+      "reviewed_at": "2026-11-09T07:13:28+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-09T07:19:47+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
@@ -2673,7 +2694,7 @@
       "areas": [
         "ITA"
       ],
-      "summary": "Italské ministerstvo potvrdilo nalezení osobních údajů ministra Tajaniho na internetu v předchozích dnech. Tajani požádal o zařazení hybridních hrozeb na jednání G7 9.–10. listopadu. Úřad na ochranu osobních údajů samostatně reagoval na neoprávněné šíření dat.",
+      "summary": "Italské ministerstvo potvrdilo nalezení osobních údajů ministra Tajaniho na internetu v předchozích dnech. Tajani požádal o zařazení hybridních hrozeb na jednání G7 9.–10. listopadu. Úřad na ochranu osobních údajů samostatně reagoval na neoprávněné šíření dat. Ministerstvo před jednáním G7 9.–10. listopadu potvrdilo zařazení hybridních hrozeb na žádost Tajaniho a záměr požadovat společnou reakci. Současně deklaruje pokračování podpory Ukrajině včetně připravovaného 13. balíku vojenské pomoci.",
       "russian_involvement": "unknown",
       "attribution_basis": "Veřejné dokumenty nedokládají technickou ruskou atribuci, původ dat nebo průnik do systémů ministerstva. Tajaniho politický výklad není technický důkaz. Doložena je žádost o spojeneckou koordinaci, nikoli již přijaté rozhodnutí G7 nebo omezení pomoci.",
       "links": [
@@ -2683,9 +2704,16 @@
           "line_id": "line-obs-20261107-italy-personal-data-g7-request",
           "claim": "Italské ministerstvo potvrdilo nalezení osobních údajů ministra Tajaniho na internetu v předchozích dnech. Tajani požádal o zařazení hybridních hrozeb na jednání G7 9.–10. listopadu. Úřad na ochranu osobních údajů samostatně reagoval na neoprávněné šíření dat.",
           "independence_basis": "Ministerstvo je primární linie pro vlastní zjištění a žádost. Reakce regulátora potvrzuje ochrannou reakci, nikoli pachatele nebo další nezávislý útok."
+        },
+        {
+          "evidence_id": "followup-20261108-italy-g7-agenda-ukraine-support",
+          "role": "followup",
+          "line_id": "line-followup-20261108-italy-g7-agenda-ukraine-support",
+          "claim": "Ministerstvo před jednáním G7 9.–10. listopadu potvrdilo zařazení hybridních hrozeb na žádost Tajaniho a záměr požadovat společnou reakci. Současně deklaruje pokračování podpory Ukrajině včetně připravovaného 13. balíku vojenské pomoci.",
+          "independence_basis": "Následná reakce stejného ministerstva na již evidované hrozby. Nejde o novou nezávislou útočnou operaci."
         }
       ],
-      "reviewed_at": "2026-11-08T07:19:47+01:00",
+      "reviewed_at": "2026-11-09T07:13:28+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-09T07:19:47+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
@@ -2697,7 +2725,7 @@
       "areas": [
         "POL"
       ],
-      "summary": "Městský úřad potvrzuje střelbu 7. listopadu krátce po 15:00 místního času, šest mrtvých a patnáct zraněných. Policie zadržela střelce; podle úředního sdělení jde o polského občana. Vyšetřování pokračuje.",
+      "summary": "Městský úřad potvrzuje střelbu 7. listopadu krátce po 15:00 místního času, šest mrtvých a patnáct zraněných. Policie zadržela střelce; podle úředního sdělení jde o polského občana. Vyšetřování pokračuje. Aktuálně načtený městský text uvádí šest mrtvých a šestnáct zraněných při střelbě 7. listopadu. Opravuje se patnáct zraněných uvedených v hodnocení 2026-11-08-0723. Město uvádí zadržení pachatele a obnovení tramvajového provozu; ruské zadání tento text nedokládá.",
       "russian_involvement": "unknown",
       "attribution_basis": "Ve zveřejněných podkladech není doložena účast ruských státních sil nebo zadání Ruska. Občanství pachatele samo zahraniční vazbu nevylučuje, samotné místo v zemi NATO ji však také neprokazuje.",
       "links": [
@@ -2707,9 +2735,16 @@
           "line_id": "line-obs-20261107-krakow-shooting-attribution-open",
           "claim": "Městský úřad potvrzuje střelbu 7. listopadu krátce po 15:00 místního času, šest mrtvých a patnáct zraněných. Policie zadržela střelce; podle úředního sdělení jde o polského občana. Vyšetřování pokračuje.",
           "independence_basis": "Městský text přebírá policejní bilanci; město a citovaná policie nejsou dvě nezávislé primární linie pro ruskou atribuci."
+        },
+        {
+          "evidence_id": "correction-20261109-krakow-injured-count",
+          "role": "correction",
+          "line_id": "line-krakow-city-police-20261107",
+          "claim": "Aktuálně načtený městský text uvádí šest mrtvých a šestnáct zraněných při střelbě 7. listopadu. Opravuje se patnáct zraněných uvedených v hodnocení 2026-11-08-0723. Město uvádí zadržení pachatele a obnovení tramvajového provozu; ruské zadání tento text nedokládá.",
+          "independence_basis": "Stejný městský dokument s policejní bilancí; dřívější ledger ani report se nepřepisují. Zdroj uvádí datum poslední aktualizace 8. listopadu, nikoli hodinu opravy."
         }
       ],
-      "reviewed_at": "2026-11-08T07:19:47+01:00",
+      "reviewed_at": "2026-11-09T07:13:28+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-09T07:19:47+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
@@ -2809,7 +2844,82 @@
       "case_status": "open",
       "next_check_by": "2026-11-09T07:19:47+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-reported-20261108-knighton-risk-warning",
+      "title": "Knightonovo varování: rozhovor, nikoli nový operační důkaz",
+      "kind": "assessment",
+      "areas": [
+        "NATO",
+        "EUROPE",
+        "GBR"
+      ],
+      "summary": "The Independent přebírá Knightonovo varování pro FT před rostoucí ruskou ochotou riskovat a výzvu k větší britské a evropské připravenosti. Tentýž text uvádí, že vyšetřování evropských bombových výhrůžek dosud není blízko uzavřené atribuci.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Varování může být odstrašováním a obhajobou obranných investic. Neobsahuje veřejný nový konkrétní důkaz operační přípravy útoku na NATO. Přetisky rozhovoru FT nejsou nezávislé zpravodajské linie a obecná tvrzení o dřívějších operacích neatribuují aktuální výhrůžky.",
+      "links": [
+        {
+          "evidence_id": "reported-20261108-knighton-risk-warning",
+          "role": "first_report",
+          "line_id": "line-ft-knighton-20261108",
+          "claim": "The Independent přebírá Knightonovo varování pro FT před rostoucí ruskou ochotou riskovat a výzvu k větší britské a evropské připravenosti. Tentýž text uvádí, že vyšetřování evropských bombových výhrůžek dosud není blízko uzavřené atribuci.",
+          "independence_basis": "Dostupný text Independent výslovně přebírá FT. FT při přímém pokusu 403; původní plný rozhovor nebyl načten. Verze Independent byla aktualizována 9. listopadu v 00:54 EST, první indexovaná publikace je 8. listopadu."
+        }
+      ],
+      "reviewed_at": "2026-11-09T07:13:28+01:00",
+      "case_status": "closed",
+      "next_check_by": null,
+      "next_action": null
+    },
+    {
+      "id": "case-backfill-20261107-pistorius-patriot-capacity",
+      "title": "Pistorius podle rozhovoru: omezená kapacita dalších Patriotů",
+      "kind": "policy",
+      "areas": [
+        "DEU",
+        "UKR"
+      ],
+      "summary": "FOCUS 7. listopadu převzal Pistoriovo sdělení, že další systémy Patriot z německých zásob nyní nelze předat bez neúnosných mezer ve vlastní obraně, protože by nebyly včas nahrazeny. Ministr žádá větší příspěvek ostatních států a projednání v kontaktní skupině v polovině listopadu.",
+      "russian_involvement": "independent",
+      "attribution_basis": "Uváděný důvod je kapacita a nahrazení vlastních zásob, nikoli doložený strach z ruské eskalace. Není to důkaz zrušení veškeré vojenské pomoci ani konkrétně slíbené dodávky. Původní rozhovor nebyl získán přímo; odvozené texty tvoří jednu linii.",
+      "links": [
+        {
+          "evidence_id": "backfill-20261107-pistorius-patriot-capacity",
+          "role": "first_report",
+          "line_id": "line-funke-pistorius-20261107",
+          "claim": "FOCUS 7. listopadu převzal Pistoriovo sdělení, že další systémy Patriot z německých zásob nyní nelze předat bez neúnosných mezer ve vlastní obraně, protože by nebyly včas nahrazeny. Ministr žádá větší příspěvek ostatních států a projednání v kontaktní skupině v polovině listopadu.",
+          "independence_basis": "Jedna doložená zdrojová linie pro konkrétní tvrzení; opakování a překlady nepřidávají nezávislé důkazy."
+        }
+      ],
+      "reviewed_at": "2026-11-09T07:13:28+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-10T07:13:28+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-ua-airforce-20261109",
+      "title": "Letectvo: noc na 9. listopadu, bilance ještě průběžná",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Letectvo pro noc na 9. listopadu hlásí 317 útočných prostředků v uvedených dronových kategoriích včetně 105 proudových. V předběžné bilanci k 08:00 kyjevského času uvádí 276 zneškodněných či potlačených cílů, zásahy na 31 místech a trosky na devíti. Několik prostředků zůstávalo ve vzduchu.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Jde o předběžné vojenské hlášení, nikoli nezávisle ověřené zásahy. Kategorie S8000/ostatních typů se nesmí dvojitě sčítat; celkových 276 je titulek zdroje. Další silný nálet je pokračování kampaně, ne sám o sobě nová strategická změna či potvrzení nouzového režimu Ukrenerga.",
+      "links": [
+        {
+          "evidence_id": "obs-20261109-ukraine-airforce-night-attack",
+          "role": "first_report",
+          "line_id": "line-obs-20261109-ukraine-airforce-night-attack",
+          "claim": "Letectvo pro noc na 9. listopadu hlásí 317 útočných prostředků v uvedených dronových kategoriích včetně 105 proudových. V předběžné bilanci k 08:00 kyjevského času uvádí 276 zneškodněných či potlačených cílů, zásahy na 31 místech a trosky na devíti. Několik prostředků zůstávalo ve vzduchu.",
+          "independence_basis": "Jedna doložená zdrojová linie pro konkrétní tvrzení; opakování a překlady nepřidávají nezávislé důkazy."
+        }
+      ],
+      "reviewed_at": "2026-11-09T07:13:28+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-10T07:13:28+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
     }
   ],
-  "review_note": "Kontrola nově připojených zdrojových linií dne 8. listopadu. Staré anotace a historie evidence zachovány."
+  "review_note": "Kontrola nově připojených zdrojových linií dne 9. listopadu. Staré anotace a historie evidence zachovány."
 }
