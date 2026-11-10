@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-09T07:13:28+01:00",
+  "reviewed_at": "2026-11-10T07:16:46+01:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -2756,7 +2756,7 @@
       "areas": [
         "RUS"
       ],
-      "summary": "Ostorožno novosti od propuštěných z moskevské razie získaly tvrzení o předávání povolávacích předvolání dospělým a nabídkách smluv s ministerstvem obrany. Meduza shrnuje odhad 100–150 zadržených včetně nezletilých a policejní vysvětlení kontrolami veřejného pořádku.",
+      "summary": "Ostorožno novosti od propuštěných z moskevské razie získaly tvrzení o předávání povolávacích předvolání dospělým a nabídkách smluv s ministerstvem obrany. Meduza shrnuje odhad 100–150 zadržených včetně nezletilých a policejní vysvětlení kontrolami veřejného pořádku. Idite lesom přidává třetí klientské svědectví o razii u Kitaj-gorodu a předvolání k aktualizaci vojenské evidence na 9. listopadu, údajně i při odkladu. Neuvádí prokázané následné nastoupení tohoto studenta do bojové služby.",
       "russian_involvement": "unknown",
       "attribution_basis": "Počet zadržených není počtem mobilizovaných. Lokální předvolání a nabídky smluv mohou být běžným odvodem či nátlakovým náborem; není doloženo přijetí do armády, koordinovaná nová celostátní vlna ani závazná kvóta 100 000.",
       "links": [
@@ -2766,9 +2766,16 @@
           "line_id": "line-reported-20261107-moscow-raid-summons-contracts",
           "claim": "Ostorožno novosti od propuštěných z moskevské razie získaly tvrzení o předávání povolávacích předvolání dospělým a nabídkách smluv s ministerstvem obrany. Meduza shrnuje odhad 100–150 zadržených včetně nezletilých a policejní vysvětlení kontrolami veřejného pořádku.",
           "independence_basis": "Dvě zprávy téhož média z rozhovorů v jednom místním případu. Meduza je zčásti přebírá a doplňuje policejní kontext; nejde o nezávislé regionální potvrzení nové mobilizační vlny."
+        },
+        {
+          "evidence_id": "followup-20261109-idite-moscow-raid-third-witness",
+          "role": "followup",
+          "line_id": "line-iditelesom-client-raid-20261107",
+          "claim": "Idite lesom přidává třetí klientské svědectví o razii u Kitaj-gorodu a předvolání k aktualizaci vojenské evidence na 9. listopadu, údajně i při odkladu. Neuvádí prokázané následné nastoupení tohoto studenta do bojové služby.",
+          "independence_basis": "Jeden podpůrný projekt uvádí třetího klienta; překryv s dřívějšími mediálními svědky nelze vyloučit. Žádné násobení potvrzení počtem přetisků."
         }
       ],
-      "reviewed_at": "2026-11-08T07:19:47+01:00",
+      "reviewed_at": "2026-11-10T07:16:46+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-09T07:19:47+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
@@ -2919,7 +2926,223 @@
       "case_status": "open",
       "next_check_by": "2026-11-10T07:13:28+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-france-refrigeration-20261011-12",
+      "title": "Francie připisuje říjnové útoky na chlazení Íránu",
+      "kind": "incident",
+      "areas": [
+        "FRA"
+      ],
+      "summary": "Francie připisuje sabotáž chlazení z noci 11.–12. října jednotce Shahid Kaveh napojené na íránské revoluční gardy. Ministerstvo uvádí přes 700 míst, materiální škody, počátky požárů a potravinové ztráty v desítkách milionů eur. Oznámeno předvolání velvyslance a návrh nových sankcí EU; přijetí sankcí se netvrdí.",
+      "russian_involvement": "independent",
+      "attribution_basis": "Oficiální francouzské připsání Íránu dne 9. listopadu. Rozsah omezen na kampaň 11.–12. října; žádná odvozená atribuce listopadových případů.",
+      "links": [
+        {
+          "evidence_id": "followup-20261016-certfr-recommendations-update",
+          "line_id": "line-french-anssi-finance-judicial-response",
+          "role": "followup",
+          "claim": "Verze z 16. října aktualizuje obranná doporučení. Neobsahuje novou ruskou atribuci ani samostatnou novou bilanci poškození.",
+          "independence_basis": "Stejná francouzská technická/úřední linie a stejná říjnová kampaň; historický záznam nepřepsán."
+        },
+        {
+          "evidence_id": "reported-20261013-france-refrigeration-cyber-effects",
+          "line_id": "line-french-anssi-finance-judicial-response",
+          "role": "first_report",
+          "claim": "Kybernetický incident má fyzický dopad na chlazení části francouzských supermarketů. AP cituje ministra: asi 700 z 10 000 prodejen, bez ohrožení celostátního zásobování. Vyšetřuje se poškození potravin a další možné následky; pachatel nezjištěn.",
+          "independence_basis": "Stejná francouzská technická/úřední linie a stejná říjnová kampaň; historický záznam nepřepsán."
+        },
+        {
+          "evidence_id": "attribution-20261109-france-october-refrigeration-iran",
+          "role": "attribution",
+          "line_id": "line-french-anssi-finance-judicial-response",
+          "claim": "Francie připisuje sabotáž chlazení z noci 11.–12. října jednotce Shahid Kaveh napojené na íránské revoluční gardy. Ministerstvo uvádí přes 700 míst, materiální škody, počátky požárů a potravinové ztráty v desítkách milionů eur. Oznámeno předvolání velvyslance a návrh nových sankcí EU; přijetí sankcí se netvrdí.",
+          "independence_basis": "Jedna společná francouzská vládní/C4 atribuční linie. MFA, ANSSI a CERT nejsou tři nezávislé forenzní audity; nové je rozhodnutí o atribuci."
+        }
+      ],
+      "reviewed_at": "2026-11-10T07:16:46+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-11T07:16:46+01:00",
+      "next_action": "Sledovat nové forenzní nebo soudní podklady a případné vymezení vztahu k listopadovým incidentům."
+    },
+    {
+      "id": "case-cologne-rail-20261107",
+      "title": "Policie vyšetřuje sabotáž železnice; původce neurčen",
+      "kind": "incident",
+      "areas": [
+        "DEU"
+      ],
+      "summary": "Kolínská policie oznámila přerušení železničních signalizačních kabelů 7. listopadu kolem 07:30 a významné narušení osobní i nákladní dopravy. Vyšetřuje sabotáž; pachatel a případné státní zadání nejsou určeni.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Vandalismus, domácí extremismus nebo jiný původ zůstávají možné. Policejní kvalifikace sabotáž sama neurčuje Rusko; více přetisků je jedna policejní linie.",
+      "links": [
+        {
+          "evidence_id": "obs-20261109-cologne-rail-sabotage-disclosure",
+          "role": "first_report",
+          "line_id": "line-obs-20261109-cologne-rail-sabotage-disclosure",
+          "claim": "Kolínská policie oznámila přerušení železničních signalizačních kabelů 7. listopadu kolem 07:30 a významné narušení osobní i nákladní dopravy. Vyšetřuje sabotáž; pachatel a případné státní zadání nejsou určeni.",
+          "independence_basis": "Přímý dokument uvedené instituce. Přetisky nejsou další nezávislé potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-10T07:16:46+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-11T07:16:46+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-ukraine-energy-operational-20261109",
+      "title": "Ukrenergo: skutečná nouzová vypínání 9. listopadu",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Ukrenergo potvrzuje skutečná nouzová vypínání 9. listopadu v Sumské, Poltavské a Charkovské oblasti, kde běžné rozpisy neplatí. Úvod hlášení spojuje výpadky a poškození s útoky na energetiku; běžná hodinová omezení v dalších oblastech jsou odlišena. DTEK ráno 9. listopadu hlásil stabilizaci většiny Dněpropetrovské oblasti s lokálními nouzovými omezeními. Večer oznámil nové poškození energetického zařízení a rozsáhlé výpadky včetně kritických služeb.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Nouzová omezení mohou řešit kumulované škody více útoků, ne nutně nový zlom celé kampaně. Sdělení 5628 je plán běžných omezení na 10. listopad, ne důkaz jejich nouzového režimu.",
+      "links": [
+        {
+          "evidence_id": "obs-20261109-ukrenergo-actual-emergency",
+          "role": "first_report",
+          "line_id": "line-ukrenergo-20261109",
+          "claim": "Ukrenergo potvrzuje skutečná nouzová vypínání 9. listopadu v Sumské, Poltavské a Charkovské oblasti, kde běžné rozpisy neplatí. Úvod hlášení spojuje výpadky a poškození s útoky na energetiku; běžná hodinová omezení v dalších oblastech jsou odlišena.",
+          "independence_basis": "Přímý dokument uvedené instituce. Přetisky nejsou další nezávislé potvrzení."
+        },
+        {
+          "evidence_id": "obs-20261109-dtek-recovery-renewed-damage",
+          "role": "followup",
+          "line_id": "line-dtek-distribution-20261109",
+          "claim": "DTEK ráno 9. listopadu hlásil stabilizaci většiny Dněpropetrovské oblasti s lokálními nouzovými omezeními. Večer oznámil nové poškození energetického zařízení a rozsáhlé výpadky včetně kritických služeb.",
+          "independence_basis": "DTEK popisuje vlastní distribuční provoz; jde o další perspektivu téhož provozního dne, ne další nezávislou událost nebo přímé potvrzení provozovatele Ukrenergo."
+        }
+      ],
+      "reviewed_at": "2026-11-10T07:16:46+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-11T07:16:46+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-ua-airforce-20261110",
+      "title": "Letectvo hlásí pokračující noční útok; bilance předběžná",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Letectvo předběžně hlásí jednu balistickou raketu a 162 dronů, z toho 96 proudových; 135 dronů sestřeleno nebo potlačeno. Uvádí zásahy na 19 místech a pokračující útok. Podkategorie se nepřičítají k celku.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Nižší průběžný počet než včera sám nedokládá změnu strategického záměru. Jeden nálet není samostatné potvrzení další kvalitativní eskalace.",
+      "links": [
+        {
+          "evidence_id": "reported-20261110-ukraine-airforce-preliminary-strike",
+          "role": "first_report",
+          "line_id": "line-reported-20261110-ukraine-airforce-preliminary-strike",
+          "claim": "Letectvo předběžně hlásí jednu balistickou raketu a 162 dronů, z toho 96 proudových; 135 dronů sestřeleno nebo potlačeno. Uvádí zásahy na 19 místech a pokračující útok. Podkategorie se nepřičítají k celku.",
+          "independence_basis": "Přímý dokument uvedené instituce. Přetisky nejsou další nezávislé potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-10T07:16:46+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-11T07:16:46+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-eumam-extension-20261109",
+      "title": "EU prodloužila výcvikovou misi a schválila její rozpočet",
+      "kind": "policy",
+      "areas": [
+        "EU",
+        "UKR"
+      ],
+      "summary": "Rada prodloužila výcvikovou misi EUMAM do 15. listopadu 2028 s přiděleným rozpočtem téměř 300 milionů eur a rozhodla o koordinační přítomnosti na Ukrajině. Jde o přijaté rozhodnutí; skutečné vyplacení peněz nebo nasazení bojové jednotky text nepotvrzuje.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Plánovaný strategický přezkum a pokračování podpory mohou proběhnout bez vztahu ke konkrétní ruské hrozbě. Rozhodnutí je protidůkazem plošného ústupu, nikoli měřením všech západních reakcí.",
+      "links": [
+        {
+          "evidence_id": "decision-20261109-eu-eumam-extension",
+          "role": "first_report",
+          "line_id": "line-decision-20261109-eu-eumam-extension",
+          "claim": "Rada prodloužila výcvikovou misi EUMAM do 15. listopadu 2028 s přiděleným rozpočtem téměř 300 milionů eur a rozhodla o koordinační přítomnosti na Ukrajině. Jde o přijaté rozhodnutí; skutečné vyplacení peněz nebo nasazení bojové jednotky text nepotvrzuje.",
+          "independence_basis": "Přímý dokument uvedené instituce. Přetisky nejsou další nezávislé potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-10T07:16:46+01:00",
+      "case_status": "closed",
+      "next_check_by": null,
+      "next_action": null
+    },
+    {
+      "id": "case-ua-eu-diplomacy-20261109",
+      "title": "Kyjev oznamuje přípravu nouzové pomoci a rozhovorů",
+      "kind": "policy",
+      "areas": [
+        "UKR",
+        "EU"
+      ],
+      "summary": "Prezidentství oznámilo dohodu s předsedkyní Komise o nouzovém mechanismu pomoci, na jehož parametrech týmy pracují. Večerní projev uvádí přítomnost ukrajinské delegace v SAE a první třístrannou schůzku 10. listopadu. Nejde o potvrzenou platbu ani dosažené příměří.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Příprava pomoci a rozhovorů může souběžně pokračovat s útoky; samotná diplomatická schůzka nedokládá ruský souhlas s omezením války.",
+      "links": [
+        {
+          "evidence_id": "announced-20261109-ukraine-eu-emergency-talks",
+          "role": "first_report",
+          "line_id": "line-announced-20261109-ukraine-eu-emergency-talks",
+          "claim": "Prezidentství oznámilo dohodu s předsedkyní Komise o nouzovém mechanismu pomoci, na jehož parametrech týmy pracují. Večerní projev uvádí přítomnost ukrajinské delegace v SAE a první třístrannou schůzku 10. listopadu. Nejde o potvrzenou platbu ani dosažené příměří.",
+          "independence_basis": "Dva dokumenty jedné prezidentské linie; nejsou dva nezávislé důkazy výsledku jednání."
+        }
+      ],
+      "reviewed_at": "2026-11-10T07:16:46+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-11T07:16:46+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-sapo-tt-warning-20261104",
+      "title": "Historické varování Säpo: vyšší sabotážní hrozba",
+      "kind": "assessment",
+      "areas": [
+        "SWE"
+      ],
+      "summary": "Ředitelka Säpo v rozhovoru TT uvádí zvýšení ruské sabotážní hrozby ve Švédsku a větší zájem o omezení pomoci Ukrajině. Konkrétní operativní podklady či plán neodhaluje; rozhovor neoznamuje prokázaný nový ruský sabotážní čin ve Švédsku.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Jde o regionálně konkrétnější veřejné hodnocení a preventivní doporučení, nikoli oznámení uskutečněné operace nebo jejího bezprostředního termínu.",
+      "links": [
+        {
+          "evidence_id": "backfill-20261104-sapo-tt-sabotage-warning",
+          "role": "first_report",
+          "line_id": "line-backfill-20261104-sapo-tt-sabotage-warning",
+          "claim": "Ředitelka Säpo v rozhovoru TT uvádí zvýšení ruské sabotážní hrozby ve Švédsku a větší zájem o omezení pomoci Ukrajině. Konkrétní operativní podklady či plán neodhaluje; rozhovor neoznamuje prokázaný nový ruský sabotážní čin ve Švédsku.",
+          "independence_basis": "Rozhovor TT je jedna původní linie. Aftonbladet, Metal Supply a pozdější Aktuell Säkerhet se nesčítají jako nezávislé výstrahy."
+        }
+      ],
+      "reviewed_at": "2026-11-10T07:16:46+01:00",
+      "case_status": "closed",
+      "next_check_by": null,
+      "next_action": null
+    },
+    {
+      "id": "case-dynamic-merlin-20261109",
+      "title": "Předem ohlášené cvičení Dynamic Merlin",
+      "kind": "assessment",
+      "areas": [
+        "SWE",
+        "BALTIC_SEA"
+      ],
+      "summary": "Švédsko 5. listopadu předem oznámilo alianční protiponorkové cvičení Dynamic Merlin od 9. listopadu, s osmi účastnickými zeměmi. Jde o opakované cvičení, nikoli doklad nově vyhlášené krizové pohotovosti.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Plánovaný výcvik vysvětluje část očekávané alianční námořní aktivity; nevylučuje jinou souběžnou hrozbu a není potvrzením uskutečnění všech plánovaných pohybů.",
+      "links": [
+        {
+          "evidence_id": "backfill-20261105-sweden-dynamic-merlin-schedule",
+          "role": "first_report",
+          "line_id": "line-backfill-20261105-sweden-dynamic-merlin-schedule",
+          "claim": "Švédsko 5. listopadu předem oznámilo alianční protiponorkové cvičení Dynamic Merlin od 9. listopadu, s osmi účastnickými zeměmi. Jde o opakované cvičení, nikoli doklad nově vyhlášené krizové pohotovosti.",
+          "independence_basis": "Přímý dokument uvedené instituce. Přetisky nejsou další nezávislé potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-10T07:16:46+01:00",
+      "case_status": "closed",
+      "next_check_by": null,
+      "next_action": null
     }
   ],
-  "review_note": "Kontrola nově připojených zdrojových linií dne 9. listopadu. Staré anotace a historie evidence zachovány."
+  "review_note": "Kontrola nově připojených zdrojových linií dne 10. listopadu. Staré anotace a historie evidence zachovány."
 }

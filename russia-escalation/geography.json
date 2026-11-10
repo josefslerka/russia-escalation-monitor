@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-09T07:13:28+01:00",
+  "reviewed_at": "2026-11-10T07:16:46+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -3155,6 +3155,79 @@
       ],
       "title": "Letectvo: noc na 9. listopadu, bilance ještě průběžná",
       "note": "Jde o předběžné vojenské hlášení, nikoli nezávisle ověřené zásahy. Kategorie S8000/ostatních typů se nesmí dvojitě sčítat; celkových 276 je titulek zdroje. Další silný nálet je pokračování kampaně, ne sám o sobě nová strategická změna či potvrzení nouzového režimu Ukrenerga."
+    },
+    "attribution-20261109-france-october-refrigeration-iran": {
+      "areas": [
+        "FRA"
+      ],
+      "title": "Francie připisuje říjnové útoky na chlazení Íránu",
+      "note": "Geografický předmět zdroje na úrovni země/regionu; bez konkrétních provozoven. Umístění není ruská atribuce."
+    },
+    "obs-20261109-cologne-rail-sabotage-disclosure": {
+      "areas": [
+        "DEU"
+      ],
+      "title": "Policie vyšetřuje sabotáž železnice; původce neurčen",
+      "note": "Geografický předmět zdroje na úrovni země/regionu; bez konkrétních provozoven. Umístění není ruská atribuce."
+    },
+    "obs-20261109-ukrenergo-actual-emergency": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo: skutečná nouzová vypínání 9. listopadu",
+      "note": "Geografický předmět zdroje na úrovni země/regionu; bez konkrétních provozoven. Umístění není ruská atribuce."
+    },
+    "obs-20261109-dtek-recovery-renewed-damage": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "DTEK: po částečné obnově další energetické škody",
+      "note": "Geografický předmět zdroje na úrovni země/regionu; bez konkrétních provozoven. Umístění není ruská atribuce."
+    },
+    "reported-20261110-ukraine-airforce-preliminary-strike": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Letectvo hlásí pokračující noční útok; bilance předběžná",
+      "note": "Geografický předmět zdroje na úrovni země/regionu; bez konkrétních provozoven. Umístění není ruská atribuce."
+    },
+    "decision-20261109-eu-eumam-extension": {
+      "areas": [
+        "EU",
+        "UKR"
+      ],
+      "title": "EU prodloužila výcvikovou misi a schválila její rozpočet",
+      "note": "Geografický předmět zdroje na úrovni země/regionu; bez konkrétních provozoven. Umístění není ruská atribuce."
+    },
+    "announced-20261109-ukraine-eu-emergency-talks": {
+      "areas": [
+        "UKR",
+        "EU"
+      ],
+      "title": "Kyjev oznamuje přípravu nouzové pomoci a rozhovorů",
+      "note": "Geografický předmět zdroje na úrovni země/regionu; bez konkrétních provozoven. Umístění není ruská atribuce."
+    },
+    "followup-20261109-idite-moscow-raid-third-witness": {
+      "areas": [
+        "RUS"
+      ],
+      "title": "Další svědectví o stejné moskevské razii",
+      "note": "Geografický předmět zdroje na úrovni země/regionu; bez konkrétních provozoven. Umístění není ruská atribuce."
+    },
+    "backfill-20261104-sapo-tt-sabotage-warning": {
+      "areas": [
+        "SWE"
+      ],
+      "title": "Historické varování Säpo: vyšší sabotážní hrozba",
+      "note": "Geografický předmět zdroje na úrovni země/regionu; bez konkrétních provozoven. Umístění není ruská atribuce."
+    },
+    "backfill-20261105-sweden-dynamic-merlin-schedule": {
+      "areas": [
+        "SWE",
+        "BALTIC_SEA"
+      ],
+      "title": "Předem ohlášené cvičení Dynamic Merlin",
+      "note": "Geografický předmět zdroje na úrovni země/regionu; bez konkrétních provozoven. Umístění není ruská atribuce."
     }
   },
   "review_scope": [

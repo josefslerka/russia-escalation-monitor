@@ -2836,6 +2836,90 @@
       "tier": 3,
       "cadence_days": 7,
       "priority": 2
+    },
+    {
+      "id": "doc-b2201917536b",
+      "name": "presseportal.de",
+      "url": "https://www.presseportal.de/blaulicht/pm/12415/6387183",
+      "areas": [
+        "EU",
+        "FRA",
+        "DEU",
+        "SWE"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-f69dfd74422e",
+      "name": "aftonbladet.se",
+      "url": "https://www.aftonbladet.se/nyheter/a/BMoB6v/sapo-varnar-risken-for-ryskt-sabotage-har-okat",
+      "areas": [
+        "EU",
+        "FRA",
+        "DEU",
+        "SWE"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-21b86ada1d3a",
+      "name": "metal-supply.se",
+      "url": "https://www.metal-supply.se/article/view/1254888/sapo_varnar_svenska_forsvarsforetag",
+      "areas": [
+        "EU",
+        "FRA",
+        "DEU",
+        "SWE"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-92037b1980c0",
+      "name": "finlandabroad.fi",
+      "url": "https://finlandabroad.fi/web/un/current-affairs/-/asset_publisher/TMs3SoX45i0K/content/nordic-statement-at-the-security-council-session-on-ukraine-10267th-meeting/384951",
+      "areas": [
+        "FIN"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-d4a8769e0252",
+      "name": "forsvaret.no",
+      "url": "https://www.forsvaret.no/forskning/arrangementer/total-defence--ellisiv-forum-26",
+      "areas": [
+        "NOR"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",
