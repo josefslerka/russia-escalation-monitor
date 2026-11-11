@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-10T07:16:46+01:00",
+  "reviewed_at": "2026-11-11T21:35:20.742146+00:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -3142,6 +3142,30 @@
       "case_status": "closed",
       "next_check_by": null,
       "next_action": null
+    },
+    {
+      "id": "case-abw-vehicle-arson-20261103",
+      "title": "ABW oznamuje podezření na ruské zadání žhářství; závažnost podle prognózy neurčena",
+      "kind": "incident",
+      "areas": [
+        "POL"
+      ],
+      "summary": "ABW 10. listopadu zveřejnila zadržení dvou ukrajinských občanů 3. listopadu. Podle vyšetřovatelů plnili placené úkoly pro ruské služby, prováděli průzkum infrastruktury a podpalovali vozidla s upravenými značkami. Potvrzeno je oznámení těchto podezření, nikoli pravomocné odsouzení. Text neprokazuje, že požáry způsobily škodu v kritické infrastruktuře, obraně či logistice, zranění, nebo že průzkum přešel v pokročilý fyzický pokus se získanými prostředky.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "ABW výslovně přisuzuje podezřelé placené úkoly ruským službám. Je to jedna oficiální vyšetřovací linie; rozsah fyzické škody v požadovaných sektorech a přesné dny požárů nejsou zveřejněny.",
+      "links": [
+        {
+          "evidence_id": "backfill-20261111-abw-vehicle-arson-disclosure",
+          "role": "first_report",
+          "line_id": "line-abw-vehicle-arson-investigation",
+          "claim": "ABW 10. listopadu zveřejnila zadržení dvou ukrajinských občanů 3. listopadu. Podle vyšetřovatelů plnili placené úkoly pro ruské služby, prováděli průzkum infrastruktury a podpalovali vozidla s upravenými značkami. Potvrzeno je oznámení těchto podezření, nikoli pravomocné odsouzení. Text neprokazuje, že požáry způsobily škodu v kritické infrastruktuře, obraně či logistice, zranění, nebo že průzkum přešel v pokročilý fyzický pokus se získanými prostředky.",
+          "independence_basis": "Přímá publikace ABW; přetisky a výrok ministra o stejné věci nejsou další nezávislé linie."
+        }
+      ],
+      "reviewed_at": "2026-11-11T21:35:20.742146+00:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-13T08:00:00+01:00",
+      "next_action": "Dohledat věcný rozsah škody a původní první zveřejnění; nepovažovat fotografování za pokročilý fyzický pokus."
     }
   ],
   "review_note": "Kontrola nově připojených zdrojových linií dne 10. listopadu. Staré anotace a historie evidence zachovány."

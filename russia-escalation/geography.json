@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-10T07:16:46+01:00",
+  "reviewed_at": "2026-11-11T21:35:20.742146+00:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -3228,6 +3228,13 @@
       ],
       "title": "Předem ohlášené cvičení Dynamic Merlin",
       "note": "Geografický předmět zdroje na úrovni země/regionu; bez konkrétních provozoven. Umístění není ruská atribuce."
+    },
+    "backfill-20261111-abw-vehicle-arson-disclosure": {
+      "areas": [
+        "POL"
+      ],
+      "note": "Geografie předmětu vyšetřování ABW, nikoli státní příslušnost podezřelých nebo potvrzení ruské atribuce.",
+      "title": "ABW: podezření na placené ruské úkoly a žhářství; věcná závažnost neurčena"
     }
   },
   "review_scope": [
@@ -3241,5 +3248,5 @@
     "backfill-20261029-iaea-reported-worker-death",
     "reported-20261030-italy-strike-observed-effects"
   ],
-  "review_note": "Zkontrolováno devět nových anotací; stará metadata ponechána beze změny. Nové datum přezkumu neaktualizuje data starších událostí."
+  "review_note": "Doplněn pouze nově přijatý polský podklad; dosavadní anotace a analytická uzávěrka beze změny."
 }
