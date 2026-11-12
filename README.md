@@ -56,6 +56,19 @@ Publikace nikdy nevytváří nové datum pro staré hodnocení. Zdrojové zpráv
 se nepřepisují; opravy patří do nového hodnocení. Úplné JSON snímky jsou k dispozici
 od zavedení webu, nikoli zpětně pro všechny starší zprávy.
 
+Supo se kontroluje přes finský archiv zpráv; při chybě či neúplném rozsahu se
+použije jeho oficiální RSS. Ranní úloha spouští `scripts/fetch_supo.py` s daty
+požadovanými aktuální kontrolou. Například pro první týdenní okno:
+
+```sh
+.venv/bin/python scripts/fetch_supo.py --start 2026-10-31 --end 2026-11-07
+```
+
+Skript vrací JSON s položkami, jejich skutečným časem zveřejnění, rozsahem seznamu
+a výsledkem každého pokusu. Prázdnou bezpečnostní stránku odmítne; selhání obou
+cest či neúplný rozsah vrací nenulový návratový kód. Výstup je podklad k rešerši,
+nevytváří evidenci ani výsledek prognózy. Archiv a RSS nejsou dvě nezávislá potvrzení.
+
 ## Dvě jazykové verze zpráv
 
 Od **22. října 2026** vzniká každá zpráva česky i anglicky. Na stránce zprávy

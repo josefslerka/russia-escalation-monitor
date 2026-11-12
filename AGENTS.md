@@ -1171,6 +1171,29 @@ reports and do not describe the run as comprehensive. These fields are required
 for assessments after the extension timestamp; older state and snapshots remain
 immutable. A new top-level cutoff never changes dates of older observations.
 
+## Finnish Supo archive access
+
+For `fin-official`, use the Finnish news archive `https://supo.fi/uutiset`, not
+the static English national-security overview. Run the read-only helper
+`.venv/bin/python scripts/fetch_supo.py --start YYYY-MM-DD --end YYYY-MM-DD`
+with the actual publication-date range required by the current task. For a
+forecast audit, use the original window's boundary dates, then apply its exact
+times and frozen v1/v2 rules to the returned publications.
+
+The helper first fetches the public archive directly with normal HTTPS. If that
+route fails, returns only a security/empty page, or does not extend before the
+requested start day, it tries Supo's own RSS from `fin-official.fallback_urls`. It records
+each actual URL, retrieval time, HTTP result and readable list boundaries. An
+`available` list still requires reading relevant original articles and saving
+the actual source check; running the helper never writes evidence, completes a
+country audit, or resolves a forecast. Preserve the failed route in coverage
+with its limitation and cite only the successful route toward the source group.
+The archive and RSS are one institution and one provenance line, not independent
+corroboration. A nonzero exit or `partial`/`unavailable` result requires another
+genuine source check or an explicit gap/unknown; it cannot establish `no`.
+Do not retry a blocked English URL indefinitely, solve a CAPTCHA, disable TLS
+verification, or replace the frozen institution with a different Finnish body.
+
 ## Retrospective intake and source independence
 
 Maintain canonical cases in `events.json`. Each has a stable `id`, `kind`

@@ -459,7 +459,10 @@
     {
       "id": "fin-official",
       "name": "SUPO",
-      "url": "https://supo.fi/en/national-security-overview",
+      "url": "https://supo.fi/uutiset",
+      "fallback_urls": [
+        "https://supo.fi/uutiset/-/asset_publisher/yQeKxbecV9k4/rss"
+      ],
       "areas": [
         "FIN"
       ],
