@@ -380,7 +380,10 @@ TEST ONLY. Synthetic evidence and estimates; no real research was performed.
         row=self.outcome_request(old,'no')
         row.update(check_ids=[check],coverage_basis='TEST original complete panel',open_claim_ids=[])
         with self.assertRaisesRegex(ValueError,'closed horizon plus reporting delay'):self.cli(forecast,'resolve',payload=row)
-        self.now=f.instant(old['settle_after'])+timedelta(days=1)
+        # Keep the successful decision after both the reporting delay and the
+        # copied assessment. Otherwise a later real fixture makes this test
+        # insert an outcome into that assessment's already-frozen queue.
+        self.now=max(f.instant(old['settle_after']),f.instant(self.initial_state['assessment_time']))+timedelta(days=1)
         check=self.record_check(source_ids=['wire-reuters'],issue=old)
         row.update(check_ids=[check])
         with self.assertRaisesRegex(ValueError,'source group incompletely checked'):self.cli(forecast,'resolve',payload=row)
