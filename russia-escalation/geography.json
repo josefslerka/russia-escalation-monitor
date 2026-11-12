@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-11T21:35:20.742146+00:00",
+  "reviewed_at": "2026-11-12T07:09:16+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -3235,6 +3235,50 @@
       ],
       "note": "Geografie předmětu vyšetřování ABW, nikoli státní příslušnost podezřelých nebo potvrzení ruské atribuce.",
       "title": "ABW: podezření na placené ruské úkoly a žhářství; věcná závažnost neurčena"
+    },
+    "obs-20261111-latvia-three-drones": {
+      "areas": [
+        "LVA"
+      ],
+      "title": "NBS potvrzují tři průlety; původ neuzavřen",
+      "note": "Geografický předmět události; bez konkrétních obranných stanovišť. Anotace neprokazuje ruskou atribuci."
+    },
+    "obs-20261111-estonia-airspace-cabinet": {
+      "areas": [
+        "EST"
+      ],
+      "title": "Estonsko potvrzuje narušení a jedná s ukrajinským velvyslancem",
+      "note": "Geografický předmět události; bez konkrétních obranných stanovišť. Anotace neprokazuje ruskou atribuci."
+    },
+    "obs-20261111-ukrenergo-actual-emergency": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo: nouzová omezení 11. listopadu",
+      "note": "Geografický předmět události; bez konkrétních obranných stanovišť. Anotace neprokazuje ruskou atribuci."
+    },
+    "announced-20261111-abu-dhabi-prisoner-exchange": {
+      "areas": [
+        "UKR",
+        "RUS"
+      ],
+      "title": "Dohoda připravit výměnu zajatců; příměří nedoloženo",
+      "note": "Geografický předmět události; bez konkrétních obranných stanovišť. Anotace neprokazuje ruskou atribuci."
+    },
+    "announced-20261111-lithuania-energy-equipment": {
+      "areas": [
+        "LTU",
+        "UKR"
+      ],
+      "title": "Kyjev uvádí litevské rozhodnutí o pomoci; dodávky čeká",
+      "note": "Geografický předmět události; bez konkrétních obranných stanovišť. Anotace neprokazuje ruskou atribuci."
+    },
+    "reported-20261111-belarus-mobilization-officials-training": {
+      "areas": [
+        "BLR"
+      ],
+      "title": "Běloruské MO oznamuje školení mobilizačních úředníků",
+      "note": "Geografický předmět události; bez konkrétních obranných stanovišť. Anotace neprokazuje ruskou atribuci."
     }
   },
   "review_scope": [

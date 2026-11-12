@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-11T21:35:20.742146+00:00",
+  "reviewed_at": "2026-11-12T07:09:16+01:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -1836,7 +1836,7 @@
         "RUS",
         "UKR"
       ],
-      "summary": "Reuters cituje Peskovovo potvrzení plánovaných jednání Ruska, Ukrajiny a USA v Abú Zabí 10.–11. listopadu; Zelenskyj samostatně potvrzuje týmový formát. Summit lídrů je očekávání, nikoli dohodnutý výsledek. Putin při zasedání bezpečnostní rady potvrdil přípravu týmových jednání v Emirátech v úterý. Hlavním zveřejněným tématem zasedání byla potravinová bezpečnost.",
+      "summary": "Reuters cituje Peskovovo potvrzení plánovaných jednání Ruska, Ukrajiny a USA v Abú Zabí 10.–11. listopadu; Zelenskyj samostatně potvrzuje týmový formát. Summit lídrů je očekávání, nikoli dohodnutý výsledek. Putin při zasedání bezpečnostní rady potvrdil přípravu týmových jednání v Emirátech v úterý. Hlavním zveřejněným tématem zasedání byla potravinová bezpečnost. Prezident po rozhovorech v Abú Zabí oznamuje dohodu připravit novou výměnu zajatců a další koordinaci. Reuters uvádí přetrvávající zásadní rozdíly včetně území. Dohoda o výměně není doklad jejího dokončení ani dosaženého všeobecného příměří.",
       "russian_involvement": "unknown",
       "attribution_basis": "Omezeno deklarovaným zdrojem; nezaměňovat důkaz účinku a původce. Diplomacie může pokračovat souběžně s údery. Oznámený termín není uskutečněné jednání, příměří ani změna vojenských rozhodnutí.",
       "links": [
@@ -1853,9 +1853,16 @@
           "line_id": "line-followup-20261106-kremlin-confirms-talks-preparation",
           "claim": "Putin při zasedání bezpečnostní rady potvrdil přípravu týmových jednání v Emirátech v úterý. Hlavním zveřejněným tématem zasedání byla potravinová bezpečnost.",
           "independence_basis": "Samostatná nová informace této linie. Přetisky a citace téhož výroku nejsou další nezávislé potvrzení."
+        },
+        {
+          "evidence_id": "announced-20261111-abu-dhabi-prisoner-exchange",
+          "role": "followup",
+          "line_id": "line-announced-20261111-abu-dhabi-prisoner-exchange",
+          "claim": "Prezident po rozhovorech v Abú Zabí oznamuje dohodu připravit novou výměnu zajatců a další koordinaci. Reuters uvádí přetrvávající zásadní rozdíly včetně území. Dohoda o výměně není doklad jejího dokončení ani dosaženého všeobecného příměří.",
+          "independence_basis": "Primární oznámení Kyjeva a zprostředkované výroky dalších účastníků od Reuters. Převzaté prezidentské výroky nejsou novou nezávislou linií a výměna nebyla ověřena jako uskutečněná."
         }
       ],
-      "reviewed_at": "2026-11-07T08:54:51+01:00",
+      "reviewed_at": "2026-11-12T07:09:16+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-05T08:01:31+01:00",
       "next_action": "Ověřit chybějící rozsah, realizaci, nezávislou atribuci či výsledky."
@@ -3166,7 +3173,112 @@
       "case_status": "open",
       "next_check_by": "2026-11-13T08:00:00+01:00",
       "next_action": "Dohledat věcný rozsah škody a původní první zveřejnění; nepovažovat fotografování za pokročilý fyzický pokus."
+    },
+    {
+      "id": "case-baltic-drone-incursions-20261111",
+      "title": "NBS potvrzují tři průlety; původ neuzavřen",
+      "kind": "incident",
+      "areas": [
+        "LVA",
+        "EST"
+      ],
+      "summary": "NBS potvrzují tři narušení lotyšského vzdušného prostoru v noci 10.–11. listopadu: dvě krátká na východě a jeden průlet od Litvy směrem k Estonsku. Byly aktivovány obranné prostředky a alianční letouny. Některé další sledované objekty hranici nepřekročily. NBS neuvádějí původ těchto dronů ani ruský úmyslný útok či materiální škodu. Estonská vláda potvrzuje krátká narušení vzdušného prostoru během ukrajinských náletů na ruské cíle, reakci aliančních letounů a svolání bezpečnostního kabinetu. Premiér odmítl povolení využívat estonský vzdušný prostor; ministerstvo tento postoj znovu sdělilo ukrajinskému velvyslanci.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Lotyšská a estonská pozorování vlastního území téže noční epizody. Ruský původ či úmysl nejsou uzavřeny; souvislost s ukrajinskou operací zůstává alternativou.",
+      "links": [
+        {
+          "evidence_id": "obs-20261111-latvia-three-drones",
+          "role": "first_report",
+          "line_id": "line-obs-20261111-latvia-three-drones",
+          "claim": "NBS potvrzují tři narušení lotyšského vzdušného prostoru v noci 10.–11. listopadu: dvě krátká na východě a jeden průlet od Litvy směrem k Estonsku. Byly aktivovány obranné prostředky a alianční letouny. Některé další sledované objekty hranici nepřekročily. NBS neuvádějí původ těchto dronů ani ruský úmyslný útok či materiální škodu.",
+          "independence_basis": "NBS a rozhovor velitele v LTV/LSM tvoří jednu lotyšskou institucionální linii. Výstrahy, zaznamenané stopy a tři průlety se nesčítají jako další incidenty."
+        },
+        {
+          "evidence_id": "obs-20261111-estonia-airspace-cabinet",
+          "role": "followup",
+          "line_id": "line-obs-20261111-estonia-airspace-cabinet",
+          "claim": "Estonská vláda potvrzuje krátká narušení vzdušného prostoru během ukrajinských náletů na ruské cíle, reakci aliančních letounů a svolání bezpečnostního kabinetu. Premiér odmítl povolení využívat estonský vzdušný prostor; ministerstvo tento postoj znovu sdělilo ukrajinskému velvyslanci.",
+          "independence_basis": "Samostatné estonské úřední pozorování vlastního vzdušného prostoru v téže noční regionální epizodě. Není druhým nezávislým potvrzením ruské atribuce lotyšských dronů."
+        }
+      ],
+      "reviewed_at": "2026-11-12T07:09:16+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-13T07:09:16+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-ukraine-energy-operational-20261111",
+      "title": "Ukrenergo: nouzová omezení 11. listopadu",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Ukrenergo po nočních a ranních ruských útocích potvrzuje výpadky v osmi oblastech a skutečná nouzová omezení ráno 11. listopadu v Charkovské a Dněpropetrovské oblasti. Jiné části používají pravidelné hodinové rozpisy a opravy pokračují.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Opakované nouzové omezení může odrážet kumulované škody a obnovu, nikoli samostatný strategický zlom. Příspěvek 5632 oznamuje běžné rozpisy na 12. listopadu; není důkaz jejich nouzového režimu.",
+      "links": [
+        {
+          "evidence_id": "obs-20261111-ukrenergo-actual-emergency",
+          "role": "first_report",
+          "line_id": "line-obs-20261111-ukrenergo-actual-emergency",
+          "claim": "Ukrenergo po nočních a ranních ruských útocích potvrzuje výpadky v osmi oblastech a skutečná nouzová omezení ráno 11. listopadu v Charkovské a Dněpropetrovské oblasti. Jiné části používají pravidelné hodinové rozpisy a opravy pokračují.",
+          "independence_basis": "Přímé sdělení instituce; přetisky nejsou další nezávislé potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-12T07:09:16+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-13T07:09:16+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-lithuania-energy-equipment-20261111",
+      "title": "Kyjev uvádí litevské rozhodnutí o pomoci; dodávky čeká",
+      "kind": "policy",
+      "areas": [
+        "LTU",
+        "UKR"
+      ],
+      "summary": "Ukrajinský prezident uvádí, že Litva rozhodla poskytnout část energetického vybavení a Kyjev očekává dodávky. Text neprokazuje jejich uskutečnění.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Pokračování podpory odporuje paušálnímu závěru o západním ústupu. Dosud neprovedené dodávky však neměří obnovenou kapacitu ani všechny složky rozhodovacího tlaku.",
+      "links": [
+        {
+          "evidence_id": "announced-20261111-lithuania-energy-equipment",
+          "role": "first_report",
+          "line_id": "line-announced-20261111-lithuania-energy-equipment",
+          "claim": "Ukrajinský prezident uvádí, že Litva rozhodla poskytnout část energetického vybavení a Kyjev očekává dodávky. Text neprokazuje jejich uskutečnění.",
+          "independence_basis": "Jedna prezidentská linie o samostatném rozhodnutí; opakovaná zmínka o výměně zajatců se znovu nezapočítává."
+        }
+      ],
+      "reviewed_at": "2026-11-12T07:09:16+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-13T07:09:16+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-belarus-mobilization-training-20261111",
+      "title": "Běloruské MO oznamuje školení mobilizačních úředníků",
+      "kind": "assessment",
+      "areas": [
+        "BLR"
+      ],
+      "summary": "Ministerstvo oznámilo účast náčelníka štábu na mobilizačním sběru úředníků a komisariátů. Program zahrnuje automatizaci evidence a přidělování zdrojů a vyhodnocení výcvikového roku 2025/2026; zpráva neoznamuje povolání nové masy osob ani bojový vstup do Ukrajiny.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Úřední školení a roční vyhodnocení jsou přímou alternativou k interpretaci, že začala mobilizace. Administrativní schopnost neprokazuje rozhodnutí, velikost skutečného povolávání ani přesun bojových sil.",
+      "links": [
+        {
+          "evidence_id": "reported-20261111-belarus-mobilization-officials-training",
+          "role": "first_report",
+          "line_id": "line-reported-20261111-belarus-mobilization-officials-training",
+          "claim": "Ministerstvo oznámilo účast náčelníka štábu na mobilizačním sběru úředníků a komisariátů. Program zahrnuje automatizaci evidence a přidělování zdrojů a vyhodnocení výcvikového roku 2025/2026; zpráva neoznamuje povolání nové masy osob ani bojový vstup do Ukrajiny.",
+          "independence_basis": "Přímé sdělení instituce; přetisky nejsou další nezávislé potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-12T07:09:16+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-13T07:09:16+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
     }
   ],
-  "review_note": "Kontrola nově připojených zdrojových linií dne 10. listopadu. Staré anotace a historie evidence zachovány."
+  "review_note": "Kontrola nově připojených zdrojových linií dne 12. listopadu. Staré anotace a historie evidence zachovány."
 }

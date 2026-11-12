@@ -2923,6 +2923,72 @@
       "tier": 3,
       "cadence_days": 7,
       "priority": 2
+    },
+    {
+      "id": "doc-3e9f37a0761e",
+      "name": "Estonian Government — security cabinet, 11 November",
+      "url": "https://valitsus.ee/uudised/valitsuse-julgeolekukabinet-saab-ohtul-ulevaate-droonijuhtumitest-eesti-piiride-lahistel",
+      "areas": [
+        "LVA",
+        "EST",
+        "NATO"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-fe11a4286a1a",
+      "name": "State Border Guard Service of Ukraine — public channel",
+      "url": "https://t.me/s/DPSUkr",
+      "areas": [
+        "BLR",
+        "UKR",
+        "RUS"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-106d4aeace41",
+      "name": "Reuters — Abu Dhabi talks, syndicated full report",
+      "url": "https://ae.marketscreener.com/news/us-russia-and-ukraine-start-second-day-of-abu-dhabi-peace-talks-ce785edbda81fe22",
+      "areas": [
+        "UKR",
+        "LTU",
+        "EU"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-592971dbf18e",
+      "name": "CERT-FR / ANSSI — official alert",
+      "url": "https://www.cert.ssi.gouv.fr/alerte/CERTFR-2026-ALE-012/",
+      "areas": [
+        "FRA"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",
