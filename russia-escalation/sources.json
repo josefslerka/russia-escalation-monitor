@@ -2989,6 +2989,57 @@
       "tier": 1,
       "cadence_days": 7,
       "priority": 2
+    },
+    {
+      "id": "doc-5b846b2cc7fa",
+      "name": "ssu.gov.ua",
+      "url": "https://ssu.gov.ua/novyny/sbu-spilno-z-inshymy-skladovymy-syl-oborony-urazyla-portovu-ta-naftovu-infrastrukturu-rf-v-ustluzi-a-takozh-raketnyi-korabel-buianm",
+      "areas": [
+        "NATO",
+        "BALTICS",
+        "BALTIC_SEA"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-6e70a0fe8178",
+      "name": "yle.fi",
+      "url": "https://yle.fi/a/74-20256468",
+      "areas": [
+        "NATO",
+        "BALTICS",
+        "BALTIC_SEA"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-dd972d298432",
+      "name": "vm.ee",
+      "url": "https://www.vm.ee/en/news/tsahkna-nb8-meeting-russia-must-agree-ceasefire-first-step",
+      "areas": [
+        "NATO",
+        "BALTICS",
+        "BALTIC_SEA"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-12T07:09:16+01:00",
+  "reviewed_at": "2026-11-13T07:15:32+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -3279,6 +3279,71 @@
       ],
       "title": "Běloruské MO oznamuje školení mobilizačních úředníků",
       "note": "Geografický předmět události; bez konkrétních obranných stanovišť. Anotace neprokazuje ruskou atribuci."
+    },
+    "obs-20261112-ukrenergo-hourly-outages": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo: výpadky a hodinová omezení 12. listopadu",
+      "note": "Geografický předmět podkladu, nikoli sídlo média. Umístění neprokazuje atribuci."
+    },
+    "reported-20261112-starshield-renewed-disruption": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Kyjev znovu hlásí omezení Starshieldu; příčina sporná",
+      "note": "Geografický předmět podkladu, nikoli sídlo média. Umístění neprokazuje atribuci."
+    },
+    "reported-20261112-spacex-starshield-denial": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "SpaceX popírá změnu služby",
+      "note": "Geografický předmět podkladu, nikoli sídlo média. Umístění neprokazuje atribuci."
+    },
+    "assessment-20261112-pst-sabotage-threat": {
+      "areas": [
+        "NOR"
+      ],
+      "title": "PST zvyšuje varování před sabotáží; pokus neodhalila",
+      "note": "Geografický předmět podkladu, nikoli sídlo média. Umístění neprokazuje atribuci."
+    },
+    "reported-20261111-sbu-baltic-warship-strike": {
+      "areas": [
+        "BALTIC_SEA"
+      ],
+      "title": "SBU hlásí zásah ruské lodi; rozsah škod neuzavřen",
+      "note": "Geografický předmět podkladu, nikoli sídlo média. Umístění neprokazuje atribuci."
+    },
+    "reported-20261111-yle-warship-explosion-observation": {
+      "areas": [
+        "BALTIC_SEA"
+      ],
+      "title": "Yle: úřední pozorování výbuchu u ruské lodi",
+      "note": "Geografický předmět podkladu, nikoli sídlo média. Umístění neprokazuje atribuci."
+    },
+    "assessment-20261112-estonia-nb8-drone-origin": {
+      "areas": [
+        "EST",
+        "BALTIC_SEA"
+      ],
+      "title": "Estonsko uvádí směr příletu roje; provozovatel neuzavřen",
+      "note": "Geografický předmět podkladu, nikoli sídlo média. Umístění neprokazuje atribuci."
+    },
+    "reported-20261112-belarus-territorial-exercise": {
+      "areas": [
+        "BLR"
+      ],
+      "title": "Běloruské MO popisuje cvičení teritoriální obrany",
+      "note": "Geografický předmět podkladu, nikoli sídlo média. Umístění neprokazuje atribuci."
+    },
+    "announced-20261112-dublin-followup-talks": {
+      "areas": [
+        "UKR",
+        "RUS"
+      ],
+      "title": "Kyjev po jednání očekává výměnu a další rozhovory",
+      "note": "Geografický předmět podkladu, nikoli sídlo média. Umístění neprokazuje atribuci."
     }
   },
   "review_scope": [

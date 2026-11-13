@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-12T07:09:16+01:00",
+  "reviewed_at": "2026-11-13T07:15:32+01:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -1836,7 +1836,7 @@
         "RUS",
         "UKR"
       ],
-      "summary": "Reuters cituje Peskovovo potvrzení plánovaných jednání Ruska, Ukrajiny a USA v Abú Zabí 10.–11. listopadu; Zelenskyj samostatně potvrzuje týmový formát. Summit lídrů je očekávání, nikoli dohodnutý výsledek. Putin při zasedání bezpečnostní rady potvrdil přípravu týmových jednání v Emirátech v úterý. Hlavním zveřejněným tématem zasedání byla potravinová bezpečnost. Prezident po rozhovorech v Abú Zabí oznamuje dohodu připravit novou výměnu zajatců a další koordinaci. Reuters uvádí přetrvávající zásadní rozdíly včetně území. Dohoda o výměně není doklad jejího dokončení ani dosaženého všeobecného příměří.",
+      "summary": "Reuters cituje Peskovovo potvrzení plánovaných jednání Ruska, Ukrajiny a USA v Abú Zabí 10.–11. listopadu; Zelenskyj samostatně potvrzuje týmový formát. Summit lídrů je očekávání, nikoli dohodnutý výsledek. Putin při zasedání bezpečnostní rady potvrdil přípravu týmových jednání v Emirátech v úterý. Hlavním zveřejněným tématem zasedání byla potravinová bezpečnost. Prezident po rozhovorech v Abú Zabí oznamuje dohodu připravit novou výměnu zajatců a další koordinaci. Reuters uvádí přetrvávající zásadní rozdíly včetně území. Dohoda o výměně není doklad jejího dokončení ani dosaženého všeobecného příměří. Zelenskyj po jednání s americkými emisary v Irsku očekává výměnu zajatců a další mnohostranné rozhovory s evropskými zástupci. Zpráva neprokazuje uskutečněnou výměnu ani všeobecné příměří.",
       "russian_involvement": "unknown",
       "attribution_basis": "Omezeno deklarovaným zdrojem; nezaměňovat důkaz účinku a původce. Diplomacie může pokračovat souběžně s údery. Oznámený termín není uskutečněné jednání, příměří ani změna vojenských rozhodnutí.",
       "links": [
@@ -1860,9 +1860,16 @@
           "line_id": "line-announced-20261111-abu-dhabi-prisoner-exchange",
           "claim": "Prezident po rozhovorech v Abú Zabí oznamuje dohodu připravit novou výměnu zajatců a další koordinaci. Reuters uvádí přetrvávající zásadní rozdíly včetně území. Dohoda o výměně není doklad jejího dokončení ani dosaženého všeobecného příměří.",
           "independence_basis": "Primární oznámení Kyjeva a zprostředkované výroky dalších účastníků od Reuters. Převzaté prezidentské výroky nejsou novou nezávislou linií a výměna nebyla ověřena jako uskutečněná."
+        },
+        {
+          "evidence_id": "announced-20261112-dublin-followup-talks",
+          "role": "followup",
+          "line_id": "line-announced-20261112-dublin-followup-talks",
+          "claim": "Zelenskyj po jednání s americkými emisary v Irsku očekává výměnu zajatců a další mnohostranné rozhovory s evropskými zástupci. Zpráva neprokazuje uskutečněnou výměnu ani všeobecné příměří.",
+          "independence_basis": "Přímé institucionální sdělení; přetisky téže informace nejsou další nezávislé potvrzení."
         }
       ],
-      "reviewed_at": "2026-11-12T07:09:16+01:00",
+      "reviewed_at": "2026-11-13T07:15:32+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-05T08:01:31+01:00",
       "next_action": "Ověřit chybějící rozsah, realizaci, nezávislou atribuci či výsledky."
@@ -3182,7 +3189,7 @@
         "LVA",
         "EST"
       ],
-      "summary": "NBS potvrzují tři narušení lotyšského vzdušného prostoru v noci 10.–11. listopadu: dvě krátká na východě a jeden průlet od Litvy směrem k Estonsku. Byly aktivovány obranné prostředky a alianční letouny. Některé další sledované objekty hranici nepřekročily. NBS neuvádějí původ těchto dronů ani ruský úmyslný útok či materiální škodu. Estonská vláda potvrzuje krátká narušení vzdušného prostoru během ukrajinských náletů na ruské cíle, reakci aliančních letounů a svolání bezpečnostního kabinetu. Premiér odmítl povolení využívat estonský vzdušný prostor; ministerstvo tento postoj znovu sdělilo ukrajinskému velvyslanci.",
+      "summary": "NBS potvrzují tři narušení lotyšského vzdušného prostoru v noci 10.–11. listopadu: dvě krátká na východě a jeden průlet od Litvy směrem k Estonsku. Byly aktivovány obranné prostředky a alianční letouny. Některé další sledované objekty hranici nepřekročily. NBS neuvádějí původ těchto dronů ani ruský úmyslný útok či materiální škodu. Estonská vláda potvrzuje krátká narušení vzdušného prostoru během ukrajinských náletů na ruské cíle, reakci aliančních letounů a svolání bezpečnostního kabinetu. Premiér odmítl povolení využívat estonský vzdušný prostor; ministerstvo tento postoj znovu sdělilo ukrajinskému velvyslanci. Ministr předává předběžné policejní zjištění, že roj pozorovaný u ruské lodi ve Finském zálivu přiletěl z ruského vzdušného prostoru. Znovu odmítá použití estonského území cizími armádami a podporuje pomoc Ukrajině. Směr příletu neurčuje provozovatele ani původ všech lotyšských a estonských průletů.",
       "russian_involvement": "unknown",
       "attribution_basis": "Lotyšská a estonská pozorování vlastního území téže noční epizody. Ruský původ či úmysl nejsou uzavřeny; souvislost s ukrajinskou operací zůstává alternativou.",
       "links": [
@@ -3199,9 +3206,16 @@
           "line_id": "line-obs-20261111-estonia-airspace-cabinet",
           "claim": "Estonská vláda potvrzuje krátká narušení vzdušného prostoru během ukrajinských náletů na ruské cíle, reakci aliančních letounů a svolání bezpečnostního kabinetu. Premiér odmítl povolení využívat estonský vzdušný prostor; ministerstvo tento postoj znovu sdělilo ukrajinskému velvyslanci.",
           "independence_basis": "Samostatné estonské úřední pozorování vlastního vzdušného prostoru v téže noční regionální epizodě. Není druhým nezávislým potvrzením ruské atribuce lotyšských dronů."
+        },
+        {
+          "evidence_id": "assessment-20261112-estonia-nb8-drone-origin",
+          "role": "followup",
+          "line_id": "line-assessment-20261112-estonia-nb8-drone-origin",
+          "claim": "Ministr předává předběžné policejní zjištění, že roj pozorovaný u ruské lodi ve Finském zálivu přiletěl z ruského vzdušného prostoru. Znovu odmítá použití estonského území cizími armádami a podporuje pomoc Ukrajině. Směr příletu neurčuje provozovatele ani původ všech lotyšských a estonských průletů.",
+          "independence_basis": "Samostatné nové zveřejnění estonského ministerstva v téže regionální epizodě; odvozené policejní zjištění není nezávislé na své policejní linii."
         }
       ],
-      "reviewed_at": "2026-11-12T07:09:16+01:00",
+      "reviewed_at": "2026-11-13T07:15:32+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-13T07:09:16+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
@@ -3262,7 +3276,7 @@
       "areas": [
         "BLR"
       ],
-      "summary": "Ministerstvo oznámilo účast náčelníka štábu na mobilizačním sběru úředníků a komisariátů. Program zahrnuje automatizaci evidence a přidělování zdrojů a vyhodnocení výcvikového roku 2025/2026; zpráva neoznamuje povolání nové masy osob ani bojový vstup do Ukrajiny.",
+      "summary": "Ministerstvo oznámilo účast náčelníka štábu na mobilizačním sběru úředníků a komisariátů. Program zahrnuje automatizaci evidence a přidělování zdrojů a vyhodnocení výcvikového roku 2025/2026; zpráva neoznamuje povolání nové masy osob ani bojový vstup do Ukrajiny. Běloruské MO popisuje praktický výcvik teritoriální obrany a záložníků proti simulované diverzní skupině. Jde o oznámené cvičení, nikoli doložený skutečný útok či bojový vstup do Ukrajiny.",
       "russian_involvement": "unknown",
       "attribution_basis": "Úřední školení a roční vyhodnocení jsou přímou alternativou k interpretaci, že začala mobilizace. Administrativní schopnost neprokazuje rozhodnutí, velikost skutečného povolávání ani přesun bojových sil.",
       "links": [
@@ -3272,13 +3286,130 @@
           "line_id": "line-reported-20261111-belarus-mobilization-officials-training",
           "claim": "Ministerstvo oznámilo účast náčelníka štábu na mobilizačním sběru úředníků a komisariátů. Program zahrnuje automatizaci evidence a přidělování zdrojů a vyhodnocení výcvikového roku 2025/2026; zpráva neoznamuje povolání nové masy osob ani bojový vstup do Ukrajiny.",
           "independence_basis": "Přímé sdělení instituce; přetisky nejsou další nezávislé potvrzení."
+        },
+        {
+          "evidence_id": "reported-20261112-belarus-territorial-exercise",
+          "role": "followup",
+          "line_id": "line-reported-20261112-belarus-territorial-exercise",
+          "claim": "Běloruské MO popisuje praktický výcvik teritoriální obrany a záložníků proti simulované diverzní skupině. Jde o oznámené cvičení, nikoli doložený skutečný útok či bojový vstup do Ukrajiny.",
+          "independence_basis": "Přímé institucionální sdělení; přetisky téže informace nejsou další nezávislé potvrzení."
         }
       ],
-      "reviewed_at": "2026-11-12T07:09:16+01:00",
+      "reviewed_at": "2026-11-13T07:15:32+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-13T07:09:16+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-ukraine-energy-operational-20261112",
+      "title": "Ukrenergo: výpadky a hodinová omezení 12. listopadu",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Ukrenergo hlásí po ruských útocích částečné výpadky v devíti oblastech a probíhající opravy. Pro část oblastí uvádí výkonová a hodinová omezení. Tento text neoznačuje omezení za skutečně zavedený nouzový režim.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Výpadky a běžné rozpisy mohou odrážet pokračující škody a obnovu. Příspěvek 5635 plánuje další hodinová omezení na 13. listopadu; plán ani hodinový rozpis nejsou novým energetickým ano.",
+      "links": [
+        {
+          "evidence_id": "obs-20261112-ukrenergo-hourly-outages",
+          "role": "first_report",
+          "line_id": "line-obs-20261112-ukrenergo-hourly-outages",
+          "claim": "Ukrenergo hlásí po ruských útocích částečné výpadky v devíti oblastech a probíhající opravy. Pro část oblastí uvádí výkonová a hodinová omezení. Tento text neoznačuje omezení za skutečně zavedený nouzový režim.",
+          "independence_basis": "Přímé institucionální sdělení; přetisky téže informace nejsou další nezávislé potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-13T07:15:32+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-14T07:15:32+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-starshield-renewed-restrictions-20261112",
+      "title": "Kyjev znovu hlásí omezení Starshieldu; příčina sporná",
+      "kind": "policy",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Zelenskyj znovu hlásí rychlostní omezení Starshieldu na okupovaném ukrajinském území a obtíže s protidronovou obranou. Žádá vysvětlení americké strany. Rozsah a rozhodovací příčina nejsou doloženy zveřejněným technickým auditem. SpaceX podle Axios popírá změnu služby.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Provozní či smluvní problém, nastavení služby a politické omezení zůstávají odlišné možnosti. Ruský prospěch a časová blízkost jednání samy nedokládají ruské způsobení nebo americké sebeodstrašení.",
+      "links": [
+        {
+          "evidence_id": "reported-20261112-starshield-renewed-disruption",
+          "role": "first_report",
+          "line_id": "line-reported-20261112-starshield-renewed-disruption",
+          "claim": "Zelenskyj znovu hlásí rychlostní omezení Starshieldu na okupovaném ukrajinském území a obtíže s protidronovou obranou. Žádá vysvětlení americké strany. Rozsah a rozhodovací příčina nejsou doloženy zveřejněným technickým auditem.",
+          "independence_basis": "Dva příspěvky téhož prezidentství tvoří jednu ukrajinskou linii; opakovaný popis není nezávislý audit."
+        },
+        {
+          "evidence_id": "reported-20261112-spacex-starshield-denial",
+          "role": "followup",
+          "line_id": "line-reported-20261112-spacex-starshield-denial",
+          "claim": "SpaceX podle Axios popírá změnu služby.",
+          "independence_basis": "Samostatná odpověď poskytovatele, nikoli druhé potvrzení ukrajinského tvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-13T07:15:32+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-14T07:15:32+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-pst-sabotage-assessment-20261112",
+      "title": "PST zvyšuje varování před sabotáží; pokus neodhalila",
+      "kind": "assessment",
+      "areas": [
+        "NOR"
+      ],
+      "summary": "PST zvyšuje norské hodnocení sabotáží a očekává ruskou sabotáž v příštím roce. Uvádí mapování norské infrastruktury aktéry napojenými na ruské služby; současně říká, že pokus o sabotáž norského cíle neodhalila.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Mapování může být zpravodajskou činností či přípravou. Dlouhý výhled neurčuje bezprostřední operaci do konce prosince. Norsko není EU a úřední varování není dokončený ozbrojený útok.",
+      "links": [
+        {
+          "evidence_id": "assessment-20261112-pst-sabotage-threat",
+          "role": "first_report",
+          "line_id": "line-assessment-20261112-pst-sabotage-threat",
+          "claim": "PST zvyšuje norské hodnocení sabotáží a očekává ruskou sabotáž v příštím roce. Uvádí mapování norské infrastruktury aktéry napojenými na ruské služby; současně říká, že pokus o sabotáž norského cíle neodhalila.",
+          "independence_basis": "Přímé institucionální sdělení; přetisky téže informace nejsou další nezávislé potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-13T07:15:32+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-14T07:15:32+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-gulf-finland-warship-strike-20261111",
+      "title": "SBU hlásí zásah ruské lodi; rozsah škod neuzavřen",
+      "kind": "incident",
+      "areas": [
+        "BALTIC_SEA"
+      ],
+      "summary": "SBU uvádí zásah ruské raketové lodi Naro-Fominsk v rámci operace proti ruské infrastruktuře 11. listopadu. Rozsah poškození lodi není nezávisle uzavřen. Yle uvádí finské pozorování zásahu podle jednoho nejmenovaného vysokého úředníka a estonské potvrzení výbuchu. Obě pozorování podporují výskyt události, nikoli plný rozsah škod nebo ruskou atribuci baltských průletů.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Ukrajinská operace proti ruskému cíli není ruský útok na NATO. Sama neurčuje původ jednotlivých dronů, které narušily alianční vzdušný prostor.",
+      "links": [
+        {
+          "evidence_id": "reported-20261111-sbu-baltic-warship-strike",
+          "role": "first_report",
+          "line_id": "line-reported-20261111-sbu-baltic-warship-strike",
+          "claim": "SBU uvádí zásah ruské raketové lodi Naro-Fominsk v rámci operace proti ruské infrastruktuře 11. listopadu. Rozsah poškození lodi není nezávisle uzavřen.",
+          "independence_basis": "Jedna ukrajinská operační linie. Převzetí v médiích nezvyšuje počet potvrzení účinku."
+        },
+        {
+          "evidence_id": "reported-20261111-yle-warship-explosion-observation",
+          "role": "followup",
+          "line_id": "line-reported-20261111-yle-warship-explosion-observation",
+          "claim": "Yle uvádí finské pozorování zásahu podle jednoho nejmenovaného vysokého úředníka a estonské potvrzení výbuchu. Obě pozorování podporují výskyt události, nikoli plný rozsah škod nebo ruskou atribuci baltských průletů.",
+          "independence_basis": "Finská úřední linie je odlišná od SBU; citace estonského ministra je převzatá z ERR a není novou vlastní linií Yle. Nejmenovaný zdroj je jeden, jeho podklady neveřejné."
+        }
+      ],
+      "reviewed_at": "2026-11-13T07:15:32+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-14T07:15:32+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
     }
   ],
-  "review_note": "Kontrola nově připojených zdrojových linií dne 12. listopadu. Staré anotace a historie evidence zachovány."
+  "review_note": "13. listopadu ověřeny nové anotace a připojené linie; předchozí anotace a evidence zachovány."
 }
