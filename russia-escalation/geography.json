@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-13T07:15:32+01:00",
+  "reviewed_at": "2026-11-14T07:21:23+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -3344,18 +3344,82 @@
       ],
       "title": "Kyjev po jednání očekává výměnu a další rozhovory",
       "note": "Geografický předmět podkladu, nikoli sídlo média. Umístění neprokazuje atribuci."
+    },
+    "obs-20261113-ukrenergo-twelve-oblast-outages": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo hlásí výpadky po ruských útocích ve dvanácti oblastech. Popsaná omezení jsou hodinové rozpisy a výkonové limity; text sám nepotvrzuje nově zavedený nouzový režim.",
+      "note": "Geografický předmět sdělení; nikoli sídlo média. "
+    },
+    "reported-20261113-ukraine-repair-reporting-gaps": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Prezident hlásí pomalé obnovování dodávek elektřiny, více dní bez proudu v některých městech a nepřesné místní výkazy. Nařizuje zlepšení výkaznictví a koordinace oprav.",
+      "note": "Geografický předmět sdělení; nikoli sídlo média. "
+    },
+    "claim-20261114-russian-mod-infrastructure-maritime-strikes": {
+      "areas": [
+        "UKR",
+        "BLACK_SEA"
+      ],
+      "title": "Ruské MO tvrdí, že v noci zasáhlo ukrajinskou energetickou a železniční infrastrukturu a nákladní loď. Vojenské využití lodi a rozsah škod nejsou nezávisle doloženy.",
+      "note": "Geografický předmět sdělení; nikoli sídlo média. Přesná poloha plavidla, hranice vod ani hodina zásahu nejsou veřejně určeny."
+    },
+    "announced-20261113-latvia-scheduled-training": {
+      "areas": [
+        "LVA"
+      ],
+      "title": "Lotyšské NBS oznamují plánované cvičení 13.–15. listopadu a upozorňují na vojenskou dopravu a cvičnou munici.",
+      "note": "Geografický předmět sdělení; nikoli sídlo média. Plánovaný interval 2026-11-13 až 2026-11-15; realizace nebyla ověřena, není přiřazen smyšlený přesný čas."
+    },
+    "reported-20261113-bild-security-demands": {
+      "areas": [
+        "FIN",
+        "BALTICS",
+        "NATO",
+        "UKR"
+      ],
+      "title": "BILD podle Yle popisuje neoficiální ruský návrh zahrnující odchod Finska z NATO a omezení aliančních základen v Pobaltí. Text návrhu ani jeho závazný status nejsou veřejně ověřeny.",
+      "note": "Geografie předmětu tvrzení; nejde o potvrzení atribuce ani úmyslu."
+    },
+    "statement-20261113-kremlin-denies-finland-demand": {
+      "areas": [
+        "FIN",
+        "NATO"
+      ],
+      "title": "Peskov 13. listopadu veřejně popřel, že Rusko při jednáních požadovalo odchod Finska z NATO.",
+      "note": "Geografie předmětu tvrzení; nejde o potvrzení atribuce ani úmyslu."
+    },
+    "statement-20261113-finland-rejects-nato-negotiation": {
+      "areas": [
+        "FIN",
+        "NATO"
+      ],
+      "title": "Finští ministři obrany a zahraničí odmítli vyjednávat o finském členství v NATO; Yle cituje jejich reakce.",
+      "note": "Geografie předmětu tvrzení; nejde o potvrzení atribuce ani úmyslu."
+    },
+    "assessment-20261113-finland-civilian-maritime-safety": {
+      "areas": [
+        "BALTIC_SEA"
+      ],
+      "title": "Finský ministr obrany po ukrajinském zásahu ruské lodi označil civilní plavbu na Baltu za bezpečnou a uvedl kontakt s Kyjevem.",
+      "note": "Geografie předmětu tvrzení; nejde o potvrzení atribuce ani úmyslu."
+    },
+    "obs-20261113-energoatom-znpp-radiation-range": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Energoatom za období 9.–13. listopadu uvádí gama dávkový příkon u ZNPP 0,1–0,3 μSv/h, v mezích přirozeného pozadí.",
+      "note": "Geografie předmětu tvrzení; nejde o potvrzení atribuce ani úmyslu."
     }
   },
   "review_scope": [
-    "followup-20261030-oleshky-aid-and-departure",
-    "reported-20261030-firepoint-refinery-strike",
-    "reported-20261030-novak-refinery-attacks-resumed",
-    "evt-20261030-us-patriot-sale-approval",
-    "reported-20261030-grynkewich-ongoing-deliveries",
-    "followup-20261030-zelensky-patriot-delivery-timing",
-    "evt-20261030-eu-canada-summit-conclusions",
-    "backfill-20261029-iaea-reported-worker-death",
-    "reported-20261030-italy-strike-observed-effects"
+    "obs-20261113-ukrenergo-twelve-oblast-outages",
+    "reported-20261113-ukraine-repair-reporting-gaps",
+    "claim-20261114-russian-mod-infrastructure-maritime-strikes",
+    "announced-20261113-latvia-scheduled-training"
   ],
-  "review_note": "Doplněn pouze nově přijatý polský podklad; dosavadní anotace a analytická uzávěrka beze změny."
+  "review_note": "Doplněny nové anotace 14. listopadu; starší metadata beze změny."
 }

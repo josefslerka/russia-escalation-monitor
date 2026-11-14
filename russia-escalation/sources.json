@@ -3040,6 +3040,57 @@
       "tier": 3,
       "cadence_days": 7,
       "priority": 2
+    },
+    {
+      "id": "doc-15092954d52b",
+      "name": "bild.de",
+      "url": "https://www.bild.de/politik/ausland-und-internationales/ukraine-krieg-bild-kennt-einen-geheimen-russischen-friedensvorschlag-6af482e1db4e2fa8f6eb7a55",
+      "areas": [
+        "NATO",
+        "BALTICS",
+        "BALTIC_SEA"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-0c75596fe55d",
+      "name": "interfax.ru",
+      "url": "https://www.interfax.ru/russia/1128830",
+      "areas": [
+        "NATO",
+        "BALTICS",
+        "BALTIC_SEA"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-334ced36381e",
+      "name": "bennet.senate.gov",
+      "url": "https://www.bennet.senate.gov/wp-content/uploads/2026/11/Bicameral-Starshield-Letter-to-Musk-FINAL.pdf",
+      "areas": [
+        "UKR",
+        "FIN",
+        "NATO"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents"
+      ],
+      "tier": 3,
+      "cadence_days": 7,
+      "priority": 2
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-13T07:15:32+01:00",
+  "reviewed_at": "2026-11-14T07:21:23+01:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -3386,7 +3386,7 @@
       "areas": [
         "BALTIC_SEA"
       ],
-      "summary": "SBU uvádí zásah ruské raketové lodi Naro-Fominsk v rámci operace proti ruské infrastruktuře 11. listopadu. Rozsah poškození lodi není nezávisle uzavřen. Yle uvádí finské pozorování zásahu podle jednoho nejmenovaného vysokého úředníka a estonské potvrzení výbuchu. Obě pozorování podporují výskyt události, nikoli plný rozsah škod nebo ruskou atribuci baltských průletů.",
+      "summary": "SBU uvádí zásah ruské raketové lodi Naro-Fominsk v rámci operace proti ruské infrastruktuře 11. listopadu. Rozsah poškození lodi není nezávisle uzavřen. Yle uvádí finské pozorování zásahu podle jednoho nejmenovaného vysokého úředníka a estonské potvrzení výbuchu. Obě pozorování podporují výskyt události, nikoli plný rozsah škod nebo ruskou atribuci baltských průletů. Finský ministr obrany po ukrajinském zásahu ruské lodi označil civilní plavbu na Baltu za bezpečnou a uvedl kontakt s Kyjevem.",
       "russian_involvement": "unknown",
       "attribution_basis": "Ukrajinská operace proti ruskému cíli není ruský útok na NATO. Sama neurčuje původ jednotlivých dronů, které narušily alianční vzdušný prostor.",
       "links": [
@@ -3403,13 +3403,182 @@
           "line_id": "line-reported-20261111-yle-warship-explosion-observation",
           "claim": "Yle uvádí finské pozorování zásahu podle jednoho nejmenovaného vysokého úředníka a estonské potvrzení výbuchu. Obě pozorování podporují výskyt události, nikoli plný rozsah škod nebo ruskou atribuci baltských průletů.",
           "independence_basis": "Finská úřední linie je odlišná od SBU; citace estonského ministra je převzatá z ERR a není novou vlastní linií Yle. Nejmenovaný zdroj je jeden, jeho podklady neveřejné."
+        },
+        {
+          "evidence_id": "assessment-20261113-finland-civilian-maritime-safety",
+          "role": "followup",
+          "line_id": "finnish-defence-minister-maritime-safety-20261113",
+          "claim": "Finský ministr obrany po ukrajinském zásahu ruské lodi označil civilní plavbu na Baltu za bezpečnou a uvedl kontakt s Kyjevem.",
+          "independence_basis": "Samostatná linie pouze pro zde vymezené tvrzení; reakce nepotvrzuje pravdivost výchozí zprávy."
         }
       ],
-      "reviewed_at": "2026-11-13T07:15:32+01:00",
+      "reviewed_at": "2026-11-14T07:21:23+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-14T07:15:32+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-ukraine-energy-operational-20261113",
+      "title": "Ukrenergo hlásí výpadky po ruských útocích ve dvanácti oblastech. Popsaná omezení jsou hodinové rozpisy a výkonové limity; text sám nepotvrzuje nově zavedený nouzový režim.",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Ukrenergo hlásí výpadky po ruských útocích ve dvanácti oblastech. Popsaná omezení jsou hodinové rozpisy a výkonové limity; text sám nepotvrzuje nově zavedený nouzový režim.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Kumulované škody a opravy mohou vysvětlit pokračující omezení bez dalšího strategického zlomu. Plán na 14. listopad není uskutečněná nouzová událost.",
+      "links": [
+        {
+          "evidence_id": "obs-20261113-ukrenergo-twelve-oblast-outages",
+          "role": "first_report",
+          "line_id": "line-obs-20261113-ukrenergo-twelve-oblast-outages",
+          "claim": "Ukrenergo hlásí výpadky po ruských útocích ve dvanácti oblastech. Popsaná omezení jsou hodinové rozpisy a výkonové limity; text sám nepotvrzuje nově zavedený nouzový režim.",
+          "independence_basis": "Přímé institucionální sdělení; opakování a překlad téže zprávy nejsou nezávislé potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-14T07:10:02+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-15T07:10:02+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-ukraine-repair-reporting-20261113",
+      "title": "Prezident hlásí pomalé obnovování dodávek elektřiny, více dní bez proudu v některých městech a nepřesné místní výkazy. Nařizuje zlepšení výkaznictví a koordinace oprav.",
+      "kind": "policy",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Prezident hlásí pomalé obnovování dodávek elektřiny, více dní bez proudu v některých městech a nepřesné místní výkazy. Nařizuje zlepšení výkaznictví a koordinace oprav.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Jde o vlastní hlášení vlády, nikoli nezávislý celostátní audit. Organizační nedostatky mohou prodlužovat dopad úderů, aniž by každý výpadek byl novým útokem.",
+      "links": [
+        {
+          "evidence_id": "reported-20261113-ukraine-repair-reporting-gaps",
+          "role": "first_report",
+          "line_id": "line-reported-20261113-ukraine-repair-reporting-gaps",
+          "claim": "Prezident hlásí pomalé obnovování dodávek elektřiny, více dní bez proudu v některých městech a nepřesné místní výkazy. Nařizuje zlepšení výkaznictví a koordinace oprav.",
+          "independence_basis": "Přímé institucionální sdělení; opakování a překlad téže zprávy nejsou nezávislé potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-14T07:10:02+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-15T07:10:02+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-claimed-20261114-russian-maritime-strike",
+      "title": "Ruské MO tvrdí, že v noci zasáhlo ukrajinskou energetickou a železniční infrastrukturu a nákladní loď. Vojenské využití lodi a rozsah škod nejsou nezávisle doloženy.",
+      "kind": "policy",
+      "areas": [
+        "UKR",
+        "BLACK_SEA"
+      ],
+      "summary": "Ruské MO tvrdí, že v noci zasáhlo ukrajinskou energetickou a železniční infrastrukturu a nákladní loď. Vojenské využití lodi a rozsah škod nejsou nezávisle doloženy.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Pokračování dosavadní úderové kampaně; válečné ministerstvo má motivaci zveličovat výsledky a vojenský charakter cíle. Neprokazuje ruský útok proti členu NATO.",
+      "links": [
+        {
+          "evidence_id": "claim-20261114-russian-mod-infrastructure-maritime-strikes",
+          "role": "first_report",
+          "line_id": "line-claim-20261114-russian-mod-infrastructure-maritime-strikes",
+          "claim": "Ruské MO tvrdí, že v noci zasáhlo ukrajinskou energetickou a železniční infrastrukturu a nákladní loď. Vojenské využití lodi a rozsah škod nejsou nezávisle doloženy.",
+          "independence_basis": "Přímé institucionální sdělení; opakování a překlad téže zprávy nejsou nezávislé potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-14T07:10:02+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-15T07:10:02+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-announced-latvia-training-20261113",
+      "title": "Lotyšské NBS oznamují plánované cvičení 13.–15. listopadu a upozorňují na vojenskou dopravu a cvičnou munici.",
+      "kind": "policy",
+      "areas": [
+        "LVA"
+      ],
+      "summary": "Lotyšské NBS oznamují plánované cvičení 13.–15. listopadu a upozorňují na vojenskou dopravu a cvičnou munici.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Konkrétní plán vysvětluje místní vojenskou aktivitu. Nepotvrzuje její uskutečnění ani nevyvrací nesouvisející dronové incidenty.",
+      "links": [
+        {
+          "evidence_id": "announced-20261113-latvia-scheduled-training",
+          "role": "first_report",
+          "line_id": "line-announced-20261113-latvia-scheduled-training",
+          "claim": "Lotyšské NBS oznamují plánované cvičení 13.–15. listopadu a upozorňují na vojenskou dopravu a cvičnou munici.",
+          "independence_basis": "Přímé institucionální sdělení; opakování a překlad téže zprávy nejsou nezávislé potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-14T07:10:02+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-15T07:10:02+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-reported-20261113-nato-security-demands",
+      "title": "BILD podle Yle popisuje neoficiální ruský návrh zahrnující odchod Finska z NATO a omezení aliančních základen v Pobaltí. Text návrhu ani jeho závazný status nejsou veřejně ověřeny.",
+      "kind": "policy",
+      "areas": [
+        "FIN",
+        "BALTICS",
+        "NATO",
+        "UKR"
+      ],
+      "summary": "BILD podle Yle popisuje neoficiální ruský návrh zahrnující odchod Finska z NATO a omezení aliančních základen v Pobaltí. Text návrhu ani jeho závazný status nejsou veřejně ověřeny. Peskov 13. listopadu veřejně popřel, že Rusko při jednáních požadovalo odchod Finska z NATO. Finští ministři obrany a zahraničí odmítli vyjednávat o finském členství v NATO; Yle cituje jejich reakce.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Může jít o nezávaznou vyjednávací pozici nebo nepřesně předaný návrh; samo o sobě nejde o ultimátum podložené vojenskou připraveností.",
+      "links": [
+        {
+          "evidence_id": "reported-20261113-bild-security-demands",
+          "role": "first_report",
+          "line_id": "bild-unofficial-security-proposal-20261113",
+          "claim": "BILD podle Yle popisuje neoficiální ruský návrh zahrnující odchod Finska z NATO a omezení aliančních základen v Pobaltí. Text návrhu ani jeho závazný status nejsou veřejně ověřeny.",
+          "independence_basis": "BILD -> Yle (a další přetisky) je jediná zprostředkovaná linie návrhu. BILD byl dostupný pouze ve volné úvodní části; úplný podklad nebyl získán."
+        },
+        {
+          "evidence_id": "statement-20261113-kremlin-denies-finland-demand",
+          "role": "refutation",
+          "line_id": "kremlin-peskov-briefing-20261113",
+          "claim": "Peskov 13. listopadu veřejně popřel, že Rusko při jednáních požadovalo odchod Finska z NATO.",
+          "independence_basis": "Samostatná linie pouze pro zde vymezené tvrzení; reakce nepotvrzuje pravdivost výchozí zprávy."
+        },
+        {
+          "evidence_id": "statement-20261113-finland-rejects-nato-negotiation",
+          "role": "followup",
+          "line_id": "finnish-ministers-response-20261113",
+          "claim": "Finští ministři obrany a zahraničí odmítli vyjednávat o finském členství v NATO; Yle cituje jejich reakce.",
+          "independence_basis": "Samostatná linie pouze pro zde vymezené tvrzení; reakce nepotvrzuje pravdivost výchozí zprávy."
+        }
+      ],
+      "reviewed_at": "2026-11-14T07:21:23+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-15T07:21:23+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-znpp-radiation-monitoring-20261109-13",
+      "title": "Energoatom za období 9.–13. listopadu uvádí gama dávkový příkon u ZNPP 0,1–0,3 μSv/h, v mezích přirozeného pozadí.",
+      "kind": "assessment",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Energoatom za období 9.–13. listopadu uvádí gama dávkový příkon u ZNPP 0,1–0,3 μSv/h, v mezích přirozeného pozadí.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Vymezené radiační měření neprokazuje bezpečný stav chlazení a vnějšího napájení ani nehodnotí jaderné zbraně.",
+      "links": [
+        {
+          "evidence_id": "obs-20261113-energoatom-znpp-radiation-range",
+          "role": "first_report",
+          "line_id": "energoatom-radiation-bulletin-20261113",
+          "claim": "Energoatom za období 9.–13. listopadu uvádí gama dávkový příkon u ZNPP 0,1–0,3 μSv/h, v mezích přirozeného pozadí.",
+          "independence_basis": "Samostatná linie pouze pro zde vymezené tvrzení; reakce nepotvrzuje pravdivost výchozí zprávy."
+        }
+      ],
+      "reviewed_at": "2026-11-14T07:21:23+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-15T07:21:23+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
     }
   ],
-  "review_note": "13. listopadu ověřeny nové anotace a připojené linie; předchozí anotace a evidence zachovány."
+  "review_note": "Kontrola nově připojených zdrojových linií dne 14. listopadu. Staré anotace a historie evidence zachovány."
 }
