@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-14T07:21:23+01:00",
+  "reviewed_at": "2026-11-15T07:07:49+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -3413,6 +3413,45 @@
       ],
       "title": "Energoatom za období 9.–13. listopadu uvádí gama dávkový příkon u ZNPP 0,1–0,3 μSv/h, v mezích přirozeného pozadí.",
       "note": "Geografie předmětu tvrzení; nejde o potvrzení atribuce ani úmyslu."
+    },
+    "announced-20261114-ukrenergo-nov15-hourly-schedules": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo oznámilo pro 15. listopad plánované hodinové odstávky v rozsahu 1–2 skupin a omezení pro průmysl po ruských útocích. Není to potvrzení nových skutečných nouzových omezení.",
+      "note": "Geografický předmět sdělení; umístění není důkaz atribuce ani uskutečnění plánu."
+    },
+    "claim-20261115-russian-mod-energy-maritime-strikes": {
+      "areas": [
+        "UKR",
+        "BLACK_SEA"
+      ],
+      "title": "Ruské MO tvrdí nové noční údery proti ukrajinské energetice, přístavní a železniční infrastruktuře a nákladnímu plavidlu na moři. Škody, deklarované vojenské využití a poloha plavidla nejsou nezávisle ověřeny.",
+      "note": "Geografický předmět sdělení; umístění není důkaz atribuce ani uskutečnění plánu."
+    },
+    "statement-20261113-poland-purl-funding-pause": {
+      "areas": [
+        "POL",
+        "UKR"
+      ],
+      "title": "Tusk uvedl, že Polsko nyní nepřidá další prostředky do PURL kvůli vlastní obraně a rozpočtovým omezením; ostatní pomoc Ukrajině podle něj pokračuje.",
+      "note": "Geografický předmět sdělení; umístění není důkaz atribuce ani uskutečnění plánu."
+    },
+    "statement-20261113-bulgaria-reiterates-aid-limits": {
+      "areas": [
+        "BGR",
+        "UKR"
+      ],
+      "title": "Bulharská vláda zveřejnila Radevovo zopakování omezení dodávek z armádních zásob a finančních možností. Humanitární pomoc připouští a nechce blokovat jiné státy.",
+      "note": "Geografický předmět sdělení; umístění není důkaz atribuce ani uskutečnění plánu."
+    },
+    "announced-20261113-eu-e5-negotiating-team": {
+      "areas": [
+        "EU",
+        "UKR"
+      ],
+      "title": "Costa oznámil dohodu evropských lídrů na vyjednávacím týmu institucí EU a E5. Financování Ukrajiny má být projednáno 26.–27. listopadu.",
+      "note": "Geografický předmět sdělení; umístění není důkaz atribuce ani uskutečnění plánu."
     }
   },
   "review_scope": [

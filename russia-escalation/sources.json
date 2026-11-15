@@ -3091,6 +3091,41 @@
       "tier": 3,
       "cadence_days": 7,
       "priority": 2
+    },
+    {
+      "id": "doc-953b788425e0",
+      "name": "meteo.gov.ua",
+      "url": "https://www.meteo.gov.ua/f/radiolog/radiolog%20dovidka/%D0%86%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D1%96%D0%B9%D0%BD%D0%B0%20%D0%B4%D0%BE%D0%B2%D1%96%D0%B4%D0%BA%D0%B0%20%D0%B2%D1%96%D0%B4%2014.11.2026%20%D0%B7%D0%B0%2010-00.pdf",
+      "areas": [
+        "UKR"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-59237366e1e1",
+      "name": "polskieradio.pl",
+      "url": "https://www.polskieradio.pl/395/9766/artykul/3752819,poland-to-play-key-role-in-ukraine-peace-talks%C2%A0pm",
+      "areas": [
+        "POL",
+        "BGR",
+        "EU",
+        "UKR"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",

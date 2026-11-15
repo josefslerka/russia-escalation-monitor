@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-14T07:21:23+01:00",
+  "reviewed_at": "2026-11-15T07:07:49+01:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -3578,7 +3578,131 @@
       "case_status": "open",
       "next_check_by": "2026-11-15T07:21:23+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-announced-20261115-hourly-schedules",
+      "title": "Ukrenergo oznámilo pro 15. listopad plánované hodinové odstávky v rozsahu 1–2 skupin a omezení pro průmysl po ruských útocích. Není to potvrzení nových skutečných nouzových omezení.",
+      "kind": "policy",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Ukrenergo oznámilo pro 15. listopad plánované hodinové odstávky v rozsahu 1–2 skupin a omezení pro průmysl po ruských útocích. Není to potvrzení nových skutečných nouzových omezení.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Plánované vyrovnávání poškozené sítě a opravy jsou odlišné od kvalifikujícího nového nouzového opatření.",
+      "links": [
+        {
+          "evidence_id": "announced-20261114-ukrenergo-nov15-hourly-schedules",
+          "role": "first_report",
+          "line_id": "line-case-announced-20261115-hourly-schedules",
+          "claim": "Ukrenergo oznámilo pro 15. listopad plánované hodinové odstávky v rozsahu 1–2 skupin a omezení pro průmysl po ruských útocích. Není to potvrzení nových skutečných nouzových omezení.",
+          "independence_basis": "Jedna původní institucionální nebo veřejná výroková linie; přetisky a reakce nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-15T07:07:49+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-16T07:07:49+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-claimed-20261115-russian-maritime-strike",
+      "title": "Ruské MO tvrdí nové noční údery proti ukrajinské energetice, přístavní a železniční infrastruktuře a nákladnímu plavidlu na moři. Škody, deklarované vojenské využití a poloha plavidla nejsou nezávisle ověřeny.",
+      "kind": "incident",
+      "areas": [
+        "UKR",
+        "BLACK_SEA"
+      ],
+      "summary": "Ruské MO tvrdí nové noční údery proti ukrajinské energetice, přístavní a železniční infrastruktuře a nákladnímu plavidlu na moři. Škody, deklarované vojenské využití a poloha plavidla nejsou nezávisle ověřeny.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Bojující strana může účinek či vojenské využití cíle zveličovat; sdělení nedokládá útok na NATO.",
+      "links": [
+        {
+          "evidence_id": "claim-20261115-russian-mod-energy-maritime-strikes",
+          "role": "first_report",
+          "line_id": "line-case-claimed-20261115-russian-maritime-strike",
+          "claim": "Ruské MO tvrdí nové noční údery proti ukrajinské energetice, přístavní a železniční infrastruktuře a nákladnímu plavidlu na moři. Škody, deklarované vojenské využití a poloha plavidla nejsou nezávisle ověřeny.",
+          "independence_basis": "Jedna původní institucionální nebo veřejná výroková linie; přetisky a reakce nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-15T07:07:49+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-16T07:07:49+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-poland-purl-funding-20261113",
+      "title": "Tusk uvedl, že Polsko nyní nepřidá další prostředky do PURL kvůli vlastní obraně a rozpočtovým omezením; ostatní pomoc Ukrajině podle něj pokračuje.",
+      "kind": "policy",
+      "areas": [
+        "POL",
+        "UKR"
+      ],
+      "summary": "Tusk uvedl, že Polsko nyní nepřidá další prostředky do PURL kvůli vlastní obraně a rozpočtovým omezením; ostatní pomoc Ukrajině podle něj pokračuje.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Konkurence rozpočtových priorit je doložené veřejné vysvětlení; ruské donucení, celkový objem ztracených dodávek ani konec veškeré pomoci doloženy nejsou.",
+      "links": [
+        {
+          "evidence_id": "statement-20261113-poland-purl-funding-pause",
+          "role": "first_report",
+          "line_id": "line-case-poland-purl-funding-20261113",
+          "claim": "Tusk uvedl, že Polsko nyní nepřidá další prostředky do PURL kvůli vlastní obraně a rozpočtovým omezením; ostatní pomoc Ukrajině podle něj pokračuje.",
+          "independence_basis": "Jedna původní institucionální nebo veřejná výroková linie; přetisky a reakce nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-15T07:07:49+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-16T07:07:49+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-bulgaria-aid-policy-reiteration-20261113",
+      "title": "Bulharská vláda zveřejnila Radevovo zopakování omezení dodávek z armádních zásob a finančních možností. Humanitární pomoc připouští a nechce blokovat jiné státy.",
+      "kind": "policy",
+      "areas": [
+        "BGR",
+        "UKR"
+      ],
+      "summary": "Bulharská vláda zveřejnila Radevovo zopakování omezení dodávek z armádních zásob a finančních možností. Humanitární pomoc připouští a nechce blokovat jiné státy.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Premiér sám označuje omezení zásob a neúčast v koalici za dřívější postoj. Přetisky 14. listopadu nejsou důkaz nového zastavení pomoci v tento den.",
+      "links": [
+        {
+          "evidence_id": "statement-20261113-bulgaria-reiterates-aid-limits",
+          "role": "first_report",
+          "line_id": "line-case-bulgaria-aid-policy-reiteration-20261113",
+          "claim": "Bulharská vláda zveřejnila Radevovo zopakování omezení dodávek z armádních zásob a finančních možností. Humanitární pomoc připouští a nechce blokovat jiné státy.",
+          "independence_basis": "Jedna původní institucionální nebo veřejná výroková linie; přetisky a reakce nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-15T07:07:49+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-16T07:07:49+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-eu-e5-negotiating-team-20261113",
+      "title": "Costa oznámil dohodu evropských lídrů na vyjednávacím týmu institucí EU a E5. Financování Ukrajiny má být projednáno 26.–27. listopadu.",
+      "kind": "policy",
+      "areas": [
+        "EU",
+        "UKR"
+      ],
+      "summary": "Costa oznámil dohodu evropských lídrů na vyjednávacím týmu institucí EU a E5. Financování Ukrajiny má být projednáno 26.–27. listopadu.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Dohodnuté zastoupení není uskutečněná účast, územní ústupek, příměří ani nové vyplacené finance.",
+      "links": [
+        {
+          "evidence_id": "announced-20261113-eu-e5-negotiating-team",
+          "role": "first_report",
+          "line_id": "line-case-eu-e5-negotiating-team-20261113",
+          "claim": "Costa oznámil dohodu evropských lídrů na vyjednávacím týmu institucí EU a E5. Financování Ukrajiny má být projednáno 26.–27. listopadu.",
+          "independence_basis": "Jedna původní institucionální nebo veřejná výroková linie; přetisky a reakce nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-15T07:07:49+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-16T07:07:49+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
     }
   ],
-  "review_note": "Kontrola nově připojených zdrojových linií dne 14. listopadu. Staré anotace a historie evidence zachovány."
+  "review_note": "Kontrola nově připojených zdrojových linií dne 15. listopadu. Staré anotace a historie evidence zachovány."
 }
