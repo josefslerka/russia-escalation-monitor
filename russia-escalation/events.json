@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-15T07:07:49+01:00",
+  "reviewed_at": "2026-11-16T07:47:29+01:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -3702,7 +3702,161 @@
       "case_status": "open",
       "next_check_by": "2026-11-16T07:07:49+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-estonia-threod-attempt-20261114",
+      "title": "Estonská prokuratura potvrzuje zmařený žhářský a výbuchový pokus proti Threod Systems dne 14. listopadu v 03:06 místního času. KAPO jej veřejně připisuje zadání GRU. Významné poškození nenastalo; osm podezřelých bylo zadrženo.",
+      "kind": "incident",
+      "areas": [
+        "EST"
+      ],
+      "summary": "Estonská prokuratura potvrzuje zmařený žhářský a výbuchový pokus proti Threod Systems dne 14. listopadu v 03:06 místního času. KAPO jej veřejně připisuje zadání GRU. Významné poškození nenastalo; osm podezřelých bylo zadrženo. Lotyšská VDD uvádí vlastní zjištění rizika, spolupráci při zmaření pokusu v Estonsku a prohlídky devíti míst v Lotyšsku se zajištěním výbušných prostředků, munice a datových nosičů.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Atribuce je oficiální vyšetřovací závěr, nikoli veřejný úplný důkazní spis nebo pravomocný rozsudek. Včasné zmaření vysvětluje malý účinek; nejde pouze o obecnou hrozbu.",
+      "links": [
+        {
+          "evidence_id": "evt-20261114-threod-arson-official-attribution",
+          "role": "first_report",
+          "line_id": "line-threod-kapo-investigation",
+          "claim": "Estonská prokuratura potvrzuje zmařený žhářský a výbuchový pokus proti Threod Systems dne 14. listopadu v 03:06 místního času. KAPO jej veřejně připisuje zadání GRU. Významné poškození nenastalo; osm podezřelých bylo zadrženo.",
+          "independence_basis": "Prokuratura, KAPO, estonské MFA a mediální přetisky sdílejí jednu vyšetřovací linii atribuce. Nejsou čtyřmi nezávislými důkazy řízení GRU."
+        },
+        {
+          "evidence_id": "evt-20261114-vdd-threod-prevention-searches",
+          "role": "followup",
+          "line_id": "line-threod-vdd-own-proceedings",
+          "claim": "Lotyšská VDD uvádí vlastní zjištění rizika, spolupráci při zmaření pokusu v Estonsku a prohlídky devíti míst v Lotyšsku se zajištěním výbušných prostředků, munice a datových nosičů.",
+          "independence_basis": "VDD popisuje vlastní získání informací a prohlídky. Částečně odlišná linie pro přípravu a zásah, sdílená přeshraniční operace; nepočítat jako druhé nezávislé odhalení GRU."
+        }
+      ],
+      "reviewed_at": "2026-11-16T07:47:29+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-17T07:47:29+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-estonia-border-policy-20261115",
+      "title": "Estonský premiér nařídil připravit kroky k případnému uzavření hranice s Ruskem. Uvádí, že výroba a dodávky Threod nebyly narušeny a podpora Ukrajiny bude pokračovat.",
+      "kind": "policy",
+      "areas": [
+        "EST",
+        "RUS"
+      ],
+      "summary": "Estonský premiér nařídil připravit kroky k případnému uzavření hranice s Ruskem. Uvádí, že výroba a dodávky Threod nebyly narušeny a podpora Ukrajiny bude pokračovat.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Primární text mluví o přípravě možnosti uzavření; mediální formulace hotového uzavření od 1. prosince je silnější. Bez dalšího rozhodnutí neoznačujeme hranici za uzavřenou.",
+      "links": [
+        {
+          "evidence_id": "policy-20261115-estonia-border-preparation",
+          "role": "first_report",
+          "line_id": "line-case-estonia-border-policy-20261115",
+          "claim": "Estonský premiér nařídil připravit kroky k případnému uzavření hranice s Ruskem. Uvádí, že výroba a dodávky Threod nebyly narušeny a podpora Ukrajiny bude pokračovat.",
+          "independence_basis": "Vlastní politický krok premiéra; popis útoku přebírá od KAPO a nezvyšuje počet vyšetřovacích potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-16T07:47:29+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-17T07:47:29+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-ukraine-grid-emergency-20261115",
+      "title": "Ukrenergo 15. listopadu ve 12:04:03 UTC potvrzuje skutečná nouzová omezení v Záporožské a Dněpropetrovské oblasti po novém ruském útoku na energetiku.",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Ukrenergo 15. listopadu ve 12:04:03 UTC potvrzuje skutečná nouzová omezení v Záporožské a Dněpropetrovské oblasti po novém ruském útoku na energetiku.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Jde o skutečný nouzový režim, ne běžný rozpis; dokládá další provozní den, nikoli automaticky nový strategický stupeň již probíhající energetické kampaně.",
+      "links": [
+        {
+          "evidence_id": "evt-20261115-ukrenergo-actual-emergency-restrictions",
+          "role": "first_report",
+          "line_id": "line-case-ukraine-grid-emergency-20261115",
+          "claim": "Ukrenergo 15. listopadu ve 12:04:03 UTC potvrzuje skutečná nouzová omezení v Záporožské a Dněpropetrovské oblasti po novém ruském útoku na energetiku.",
+          "independence_basis": "Jedna původní linie uvedeného tvrzení; přetisky nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-16T07:47:29+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-17T07:47:29+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-announced-20261116-hourly-schedules",
+      "title": "Ukrenergo oznámilo na 16. listopad plánované hodinové odstávky 1–3 skupin a omezení průmyslu po ruských útocích. Oznámení není novým skutečným nouzovým režimem.",
+      "kind": "policy",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Ukrenergo oznámilo na 16. listopad plánované hodinové odstávky 1–3 skupin a omezení průmyslu po ruských útocích. Oznámení není novým skutečným nouzovým režimem.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Řízený rozpis vyrovnává poškozenou síť; neprokazuje další novou kvalifikující nouzovou událost.",
+      "links": [
+        {
+          "evidence_id": "announced-20261115-ukrenergo-nov16-hourly-schedules",
+          "role": "first_report",
+          "line_id": "line-case-announced-20261116-hourly-schedules",
+          "claim": "Ukrenergo oznámilo na 16. listopad plánované hodinové odstávky 1–3 skupin a omezení průmyslu po ruských útocích. Oznámení není novým skutečným nouzovým režimem.",
+          "independence_basis": "Jedna původní linie uvedeného tvrzení; přetisky nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-16T07:47:29+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-17T07:47:29+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-romanian-waters-merchant-strikes-20261113-15",
+      "title": "Reuters s odkazem na rumunské představitele uvádí víkendové dronové zásahy obchodních lodí, včetně řecké Evia Petrol V a Marsol v rumunských teritoriálních vodách. Pachatel nebyl identifikován; požáry posádky zvládly bez hlášených obětí.",
+      "kind": "incident",
+      "areas": [
+        "ROU",
+        "BLACK_SEA"
+      ],
+      "summary": "Reuters s odkazem na rumunské představitele uvádí víkendové dronové zásahy obchodních lodí, včetně řecké Evia Petrol V a Marsol v rumunských teritoriálních vodách. Pachatel nebyl identifikován; požáry posádky zvládly bez hlášených obětí.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Rozšíření rizika pro plavbu není samo důkaz ruského záměrného útoku na NATO. Neidentifikované drony, přesah války i úmyslné cílení zůstávají odlišnými hypotézami.",
+      "links": [
+        {
+          "evidence_id": "reported-20261115-romanian-waters-merchant-strikes",
+          "role": "first_report",
+          "line_id": "line-case-romanian-waters-merchant-strikes-20261113-15",
+          "claim": "Reuters s odkazem na rumunské představitele uvádí víkendové dronové zásahy obchodních lodí, včetně řecké Evia Petrol V a Marsol v rumunských teritoriálních vodách. Pachatel nebyl identifikován; požáry posádky zvládly bez hlášených obětí.",
+          "independence_basis": "Reuters a AP zde přebírají rumunská úřední sdělení. Jedna rumunská linie pro výskyt a místo; bez nezávisle doložené ruské atribuce. Primární tisková zpráva č. 367 popisuje jiný ranní radarový kontakt a nedokládá tyto lodní zásahy."
+        }
+      ],
+      "reviewed_at": "2026-11-16T07:47:29+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-17T07:47:29+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-claimed-20261116-russian-maritime-strike",
+      "title": "Ruské MO tvrdí další noční zásah nákladní lodi mířící do Čornomorsku a železniční infrastruktury. Neuvádí identitu lodi ani její přesnou polohu; deklarovaný náklad a účinek nejsou nezávisle ověřeny.",
+      "kind": "incident",
+      "areas": [
+        "UKR",
+        "BLACK_SEA"
+      ],
+      "summary": "Ruské MO tvrdí další noční zásah nákladní lodi mířící do Čornomorsku a železniční infrastruktury. Neuvádí identitu lodi ani její přesnou polohu; deklarovaný náklad a účinek nejsou nezávisle ověřeny.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Bojová komunikace může zveličovat účinek a vojenské využití. Bez identity a času nelze tvrzení sloučit s rumunskými případy.",
+      "links": [
+        {
+          "evidence_id": "claim-20261116-russian-mod-maritime-strike",
+          "role": "first_report",
+          "line_id": "line-case-claimed-20261116-russian-maritime-strike",
+          "claim": "Ruské MO tvrdí další noční zásah nákladní lodi mířící do Čornomorsku a železniční infrastruktury. Neuvádí identitu lodi ani její přesnou polohu; deklarovaný náklad a účinek nejsou nezávisle ověřeny.",
+          "independence_basis": "Jedna původní linie uvedeného tvrzení; přetisky nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-16T07:47:29+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-17T07:47:29+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
     }
   ],
-  "review_note": "Kontrola nově připojených zdrojových linií dne 15. listopadu. Staré anotace a historie evidence zachovány."
+  "review_note": "Kontrola nově připojených zdrojových linií dne 16. listopadu. Staré anotace a historie evidence zachovány."
 }

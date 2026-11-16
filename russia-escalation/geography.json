@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-15T07:07:49+01:00",
+  "reviewed_at": "2026-11-16T08:00:33+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -3452,6 +3452,59 @@
       ],
       "title": "Costa oznámil dohodu evropských lídrů na vyjednávacím týmu institucí EU a E5. Financování Ukrajiny má být projednáno 26.–27. listopadu.",
       "note": "Geografický předmět sdělení; umístění není důkaz atribuce ani uskutečnění plánu."
+    },
+    "evt-20261114-threod-arson-official-attribution": {
+      "areas": [
+        "EST"
+      ],
+      "title": "KAPO připisuje zmařený útok na estonskou obrannou výrobu zadání GRU. Významné škody nenastaly.",
+      "note": "Geografický předmět; nejde o souřadnice ani samostatné potvrzení atribuce. Před prvním zveřejněním zkrácen popisek podle doloženého textu; atribuce a nejistota zachovány."
+    },
+    "evt-20261114-vdd-threod-prevention-searches": {
+      "areas": [
+        "EST",
+        "LVA"
+      ],
+      "title": "Lotyšská VDD uvádí vlastní zjištění rizika, spolupráci při zmaření pokusu v Estonsku a prohlídky devíti míst v Lotyšsku se zajištěním výbušných prostředků, munice a datových nosičů.",
+      "note": "Geografický předmět; nejde o souřadnice ani samostatné potvrzení atribuce."
+    },
+    "policy-20261115-estonia-border-preparation": {
+      "areas": [
+        "EST",
+        "RUS"
+      ],
+      "title": "Estonský premiér nařídil připravit kroky k případnému uzavření hranice s Ruskem. Uvádí, že výroba a dodávky Threod nebyly narušeny a podpora Ukrajiny bude pokračovat.",
+      "note": "Geografický předmět; nejde o souřadnice ani samostatné potvrzení atribuce."
+    },
+    "evt-20261115-ukrenergo-actual-emergency-restrictions": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo 15. listopadu ve 12:04:03 UTC potvrzuje skutečná nouzová omezení v Záporožské a Dněpropetrovské oblasti po novém ruském útoku na energetiku.",
+      "note": "Geografický předmět; nejde o souřadnice ani samostatné potvrzení atribuce."
+    },
+    "announced-20261115-ukrenergo-nov16-hourly-schedules": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo oznámilo na 16. listopad plánované hodinové odstávky 1–3 skupin a omezení průmyslu po ruských útocích. Oznámení není novým skutečným nouzovým režimem.",
+      "note": "Geografický předmět; nejde o souřadnice ani samostatné potvrzení atribuce."
+    },
+    "reported-20261115-romanian-waters-merchant-strikes": {
+      "areas": [
+        "ROU",
+        "BLACK_SEA"
+      ],
+      "title": "Reuters: zásahy lodí v rumunských teritoriálních vodách. Původce dronů není určen.",
+      "note": "Geografický předmět; nejde o souřadnice ani samostatné potvrzení atribuce. Před prvním zveřejněním zkrácen popisek podle doloženého textu; atribuce a nejistota zachovány."
+    },
+    "claim-20261116-russian-mod-maritime-strike": {
+      "areas": [
+        "UKR",
+        "BLACK_SEA"
+      ],
+      "title": "Ruské MO tvrdí další noční zásah nákladní lodi mířící do Čornomorsku a železniční infrastruktury. Neuvádí identitu lodi ani její přesnou polohu; deklarovaný náklad a účinek nejsou nezávisle ověřeny.",
+      "note": "Geografický předmět; nejde o souřadnice ani samostatné potvrzení atribuce."
     }
   },
   "review_scope": [

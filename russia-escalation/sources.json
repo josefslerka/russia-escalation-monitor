@@ -3126,6 +3126,56 @@
       "tier": 2,
       "cadence_days": 7,
       "priority": 2
+    },
+    {
+      "id": "doc-4066e8f85a84",
+      "name": "Estonská prokuratura / KAPO — Threod",
+      "url": "https://www.prokuratuur.ee/uudised/runnak-kaitsetoostusettevotte-threod-vastu",
+      "areas": [
+        "EST",
+        "LVA"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-7e79764a6bca",
+      "name": "Reuters — zásahy lodí u Rumunska",
+      "url": "https://www.streetinsider.com/Reuters/Three%2Bships%2Bstruck%2Bby%2Bdrones%2Bin%2BBlack%2BSea%2Bnear%2BRomanian%2Bshipping%2Bcanal%2C%2BPM%2Bsays/27346292.html",
+      "areas": [
+        "ROU",
+        "BLACK_SEA"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-b831c4e23dc1",
+      "name": "Estonské obranné síly — plánované cvičení Steadfast Duel 26",
+      "url": "https://mil.ee/en/news/the-nato-wide-command-post-exercise-steadfast-duel-26-has-begun/",
+      "areas": [
+        "NATO"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 1,
+      "cadence_days": 7,
+      "priority": 2
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",
