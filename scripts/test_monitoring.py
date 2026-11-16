@@ -201,6 +201,9 @@ class MonitoringChecks(unittest.TestCase):
         return next(f for f in self.bundle['forecast-register.jsonl'] if f['eligible'])
 
     def resolution(self, outcome='yes'):
+        # Synthetic adjudication tests start their own outcome history. Keep live
+        # outcomes in other tests, but do not treat this fixture as their correction.
+        self.bundle['forecast-resolutions.jsonl'] = []
         f = self.forecast()
         row = dict(id='test-resolution',forecast_id=f['id'],resolved_at='2027-01-02T10:00:00+01:00',outcome=outcome,event_time='2026-11-01T10:00:00+01:00',evidence_ids=[self.evidence[0]['id']],source_urls=['https://example.com/test'],rationale='TEST only',supersedes=None,coverage_basis='TEST reviewed horizon')
         self.bundle['forecast-resolutions.jsonl'].append(row)
