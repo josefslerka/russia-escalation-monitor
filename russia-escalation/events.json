@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-16T07:47:29+01:00",
+  "reviewed_at": "2026-11-17T07:07:25+01:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -2770,7 +2770,7 @@
       "areas": [
         "RUS"
       ],
-      "summary": "Ostorožno novosti od propuštěných z moskevské razie získaly tvrzení o předávání povolávacích předvolání dospělým a nabídkách smluv s ministerstvem obrany. Meduza shrnuje odhad 100–150 zadržených včetně nezletilých a policejní vysvětlení kontrolami veřejného pořádku. Idite lesom přidává třetí klientské svědectví o razii u Kitaj-gorodu a předvolání k aktualizaci vojenské evidence na 9. listopadu, údajně i při odkladu. Neuvádí prokázané následné nastoupení tohoto studenta do bojové služby.",
+      "summary": "Ostorožno novosti od propuštěných z moskevské razie získaly tvrzení o předávání povolávacích předvolání dospělým a nabídkách smluv s ministerstvem obrany. Meduza shrnuje odhad 100–150 zadržených včetně nezletilých a policejní vysvětlení kontrolami veřejného pořádku. Idite lesom přidává třetí klientské svědectví o razii u Kitaj-gorodu a předvolání k aktualizaci vojenské evidence na 9. listopadu, údajně i při odkladu. Neuvádí prokázané následné nastoupení tohoto studenta do bojové služby. Kyiv Independent v rozhovorech z 12. listopadu uvádí, že předvolání po razii 7. listopadu byla k ověření evidence. Právník Klyga popisuje jednoho klienta a nezná případ následného nuceného odeslání zadržených do války. Idite lesom současně uvádí širší nátlakový nábor.",
       "russian_involvement": "unknown",
       "attribution_basis": "Počet zadržených není počtem mobilizovaných. Lokální předvolání a nabídky smluv mohou být běžným odvodem či nátlakovým náborem; není doloženo přijetí do armády, koordinovaná nová celostátní vlna ani závazná kvóta 100 000.",
       "links": [
@@ -2787,9 +2787,16 @@
           "line_id": "line-iditelesom-client-raid-20261107",
           "claim": "Idite lesom přidává třetí klientské svědectví o razii u Kitaj-gorodu a předvolání k aktualizaci vojenské evidence na 9. listopadu, údajně i při odkladu. Neuvádí prokázané následné nastoupení tohoto studenta do bojové služby.",
           "independence_basis": "Jeden podpůrný projekt uvádí třetího klienta; překryv s dřívějšími mediálními svědky nelze vyloučit. Žádné násobení potvrzení počtem přetisků."
+        },
+        {
+          "evidence_id": "followup-20261112-kyivindependent-moscow-raid-limits",
+          "role": "followup",
+          "line_id": "line-case-reported-20261107-moscow-raid-summons-contracts",
+          "claim": "Kyiv Independent v rozhovorech z 12. listopadu uvádí, že předvolání po razii 7. listopadu byla k ověření evidence. Právník Klyga popisuje jednoho klienta a nezná případ následného nuceného odeslání zadržených do války. Idite lesom současně uvádí širší nátlakový nábor.",
+          "independence_basis": "Nový detail z přímého rozhovoru s právníkem. Svědectví Idite lesom a telegramový přetisk 16. listopadu navazují na již uloženou razii; nepřidávají samostatnou regionální linii. Překryv klientů nelze vyloučit."
         }
       ],
-      "reviewed_at": "2026-11-10T07:16:46+01:00",
+      "reviewed_at": "2026-11-17T07:07:25+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-09T07:19:47+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
@@ -3742,7 +3749,7 @@
         "EST",
         "RUS"
       ],
-      "summary": "Estonský premiér nařídil připravit kroky k případnému uzavření hranice s Ruskem. Uvádí, že výroba a dodávky Threod nebyly narušeny a podpora Ukrajiny bude pokračovat.",
+      "summary": "Estonský premiér nařídil připravit kroky k případnému uzavření hranice s Ruskem. Uvádí, že výroba a dodávky Threod nebyly narušeny a podpora Ukrajiny bude pokračovat. Nově dohledané estonské MFA a vnitro z 15. listopadu zpřesňují plán uzavření silničních přechodů s Ruskem od 1. prosince. Vnitro uvádí, že vláda bude teprve projednávat délku opatření. Nepotvrzují již uskutečněné uzavření.",
       "russian_involvement": "unknown",
       "attribution_basis": "Primární text mluví o přípravě možnosti uzavření; mediální formulace hotového uzavření od 1. prosince je silnější. Bez dalšího rozhodnutí neoznačujeme hranici za uzavřenou.",
       "links": [
@@ -3752,9 +3759,16 @@
           "line_id": "line-case-estonia-border-policy-20261115",
           "claim": "Estonský premiér nařídil připravit kroky k případnému uzavření hranice s Ruskem. Uvádí, že výroba a dodávky Threod nebyly narušeny a podpora Ukrajiny bude pokračovat.",
           "independence_basis": "Vlastní politický krok premiéra; popis útoku přebírá od KAPO a nezvyšuje počet vyšetřovacích potvrzení."
+        },
+        {
+          "evidence_id": "followup-20261115-estonia-border-proposed-start",
+          "role": "followup",
+          "line_id": "line-case-estonia-border-policy-20261115",
+          "claim": "Nově dohledané estonské MFA a vnitro z 15. listopadu zpřesňují plán uzavření silničních přechodů s Ruskem od 1. prosince. Vnitro uvádí, že vláda bude teprve projednávat délku opatření. Nepotvrzují již uskutečněné uzavření.",
+          "independence_basis": "Zpřesnění stejné estonské vládní politiky, nikoli nová nezávislá atribuce útoku. Datum publikace 15. listopadu se nepřepisuje datem dnešního dohledání."
         }
       ],
-      "reviewed_at": "2026-11-16T07:47:29+01:00",
+      "reviewed_at": "2026-11-17T07:07:25+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-17T07:47:29+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
@@ -3856,7 +3870,162 @@
       "case_status": "open",
       "next_check_by": "2026-11-17T07:47:29+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-betul8-distress-20261116",
+      "title": "BETUL 8: bulharské ministerstvo potvrzuje nouzi v ekonomické zóně",
+      "kind": "incident",
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "summary": "Bulharské ministerstvo dopravy potvrzuje přijetí tísňového hlášení BETUL 8 dne 16. listopadu v 09:15 místního času v bulharské výlučné ekonomické zóně. Uvádí somálskou vlajku, 12 členů posádky a záchrannou operaci; příčinu v tomto sdělení neurčuje. bTV přináší vlastní rozhovory s posádkou BETUL 8: členové posádky popisují dva zásahy námořními drony a záchranu všech 12 lidí. Výrok jednoho námořníka o pravděpodobně ruském dronu je jeho úsudek z trasy plavby, nikoli identifikace provozovatele.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Nouze a záchranný zásah nejsou samy potvrzením ruského útoku. Výlučná ekonomická zóna není teritoriální moře; somálská vlajka není vlajkou člena NATO.",
+      "links": [
+        {
+          "evidence_id": "evt-20261116-betul8-distress-bulgarian-eez",
+          "role": "first_report",
+          "line_id": "line-case-betul8-distress-20261116",
+          "claim": "Bulharské ministerstvo dopravy potvrzuje přijetí tísňového hlášení BETUL 8 dne 16. listopadu v 09:15 místního času v bulharské výlučné ekonomické zóně. Uvádí somálskou vlajku, 12 členů posádky a záchrannou operaci; příčinu v tomto sdělení neurčuje.",
+          "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        },
+        {
+          "evidence_id": "reported-20261116-betul8-crew-drone-testimony",
+          "role": "followup",
+          "line_id": "line-betul8-btv-crew",
+          "claim": "bTV přináší vlastní rozhovory s posádkou BETUL 8: členové posádky popisují dva zásahy námořními drony a záchranu všech 12 lidí. Výrok jednoho námořníka o pravděpodobně ruském dronu je jeho úsudek z trasy plavby, nikoli identifikace provozovatele.",
+          "independence_basis": "Vlastní rozhovory bTV jsou jiná cesta ke svědectví posádky než úřední příjem tísňového hlášení. Sdílejí jeden případ; neposkytují druhou nezávislou ruskou atribuci."
+        }
+      ],
+      "reviewed_at": "2026-11-17T07:07:25+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-18T07:07:25+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-romania-alert-20261116-17",
+      "title": "Rumunské MO: noční poplach bez zjištěného narušení vzdušného prostoru",
+      "kind": "incident",
+      "areas": [
+        "ROU",
+        "UKR"
+      ],
+      "summary": "Rumunské MO po nočním poplachu 16.–17. listopadu potvrzuje vzlet F-16 a výstrahu obyvatelstvu; výslovně uvádí, že nezaznamenalo neoprávněné vstupy do rumunského vzdušného prostoru. Výstraha trvala od 23:36 do 00:07 místního času.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Poplach a obranný vzlet reagují i na cíle nad sousední Ukrajinou. Konkrétní kontrolované nenarušení nelze rozšířit na jiné noci nebo námořní incidenty.",
+      "links": [
+        {
+          "evidence_id": "obs-20261117-romania-alert-no-incursion",
+          "role": "first_report",
+          "line_id": "line-case-romania-alert-20261116-17",
+          "claim": "Rumunské MO po nočním poplachu 16.–17. listopadu potvrzuje vzlet F-16 a výstrahu obyvatelstvu; výslovně uvádí, že nezaznamenalo neoprávněné vstupy do rumunského vzdušného prostoru. Výstraha trvala od 23:36 do 00:07 místního času.",
+          "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-17T07:07:25+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-18T07:07:25+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-ukraine-grid-emergency-20261116",
+      "title": "Ukrenergo: skutečná nouzová omezení 16. listopadu",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Ukrenergo dne 16. listopadu potvrzuje ranní použití nouzových odstávek v Charkovské a Poltavské oblasti po útocích. Pozdější sdělení popisuje rozsáhlé výpadky na východě. Rozpis plánovaných odstávek na 17. listopad je jiné oznámení, nikoli další potvrzená nouzová událost.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Nový provozní den potvrzuje pokračování již vyhodnocené energetické kampaně; nevyžaduje opětovné vyřešení již splněné týdenní otázky ani automatický růst zbývajících rizik.",
+      "links": [
+        {
+          "evidence_id": "evt-20261116-ukrenergo-actual-emergency-restrictions",
+          "role": "first_report",
+          "line_id": "line-case-ukraine-grid-emergency-20261116",
+          "claim": "Ukrenergo dne 16. listopadu potvrzuje ranní použití nouzových odstávek v Charkovské a Poltavské oblasti po útocích. Pozdější sdělení popisuje rozsáhlé výpadky na východě. Rozpis plánovaných odstávek na 17. listopad je jiné oznámení, nikoli další potvrzená nouzová událost.",
+          "independence_basis": "Dva příspěvky téhož provozovatele pro jeden den tvoří jednu zdrojovou linii; pozdější zpráva není druhé nezávislé potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-17T07:07:25+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-18T07:07:25+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-eu-defence-payment-20261116",
+      "title": "Ukrajinské MO potvrzuje přijetí 1,71 miliardy eur z EU",
+      "kind": "policy",
+      "areas": [
+        "EU",
+        "UKR"
+      ],
+      "summary": "Ukrajinské ministerstvo obrany potvrzuje převod 1,71 miliardy eur v obranné části Ukraine Support Loan. Peníze jsou určeny pro drony, munici a protivzdušnou obranu; konkrétní vybavení se má teprve nakoupit.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Jde o uskutečněnou platbu podle příjemce, nikoli důkaz dokončených dodávek zbraní nebo dostatku všech zdrojů. Pokračování schváleného programu samo neprokazuje příčinu západních rozhodnutí.",
+      "links": [
+        {
+          "evidence_id": "payment-20261116-eu-defence-loan-1710m",
+          "role": "first_report",
+          "line_id": "line-case-eu-defence-payment-20261116",
+          "claim": "Ukrajinské ministerstvo obrany potvrzuje převod 1,71 miliardy eur v obranné části Ukraine Support Loan. Peníze jsou určeny pro drony, munici a protivzdušnou obranu; konkrétní vybavení se má teprve nakoupit.",
+          "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-17T07:07:25+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-18T07:07:25+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-eu-facility-approval-20261116",
+      "title": "Rada EU schválila budoucí platbu téměř osmi miliard eur",
+      "kind": "policy",
+      "areas": [
+        "EU",
+        "UKR"
+      ],
+      "summary": "Rada EU dne 16. listopadu přijala rozhodnutí umožňující Ukrajině brzy obdržet téměř osm miliard eur v Ukraine Facility po splnění reformních kroků. Text neoznamuje dokončený převod. Jde o samostatné opatření od platby 1,71 miliardy eur na obranu.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Schválení podpory je protiváha hypotéze všeobecného ústupu, ale nelze je sečíst s přijatou platbou jako již vyplacené peníze ani zaměnit za dodávky zbraní.",
+      "links": [
+        {
+          "evidence_id": "decision-20261116-eu-facility-nearly-8bn",
+          "role": "first_report",
+          "line_id": "line-case-eu-facility-approval-20261116",
+          "claim": "Rada EU dne 16. listopadu přijala rozhodnutí umožňující Ukrajině brzy obdržet téměř osm miliard eur v Ukraine Facility po splnění reformních kroků. Text neoznamuje dokončený převod. Jde o samostatné opatření od platby 1,71 miliardy eur na obranu.",
+          "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-17T07:07:25+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-18T07:07:25+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-claimed-20261117-russian-maritime-strike",
+      "title": "Ruské MO tvrdí další zásahy energetiky, přístavů a lodí",
+      "kind": "incident",
+      "areas": [
+        "UKR",
+        "BLACK_SEA"
+      ],
+      "summary": "Ruské MO 17. listopadu tvrdí noční údery na ukrajinskou energetiku, dopravu, přístavy a lodě údajně využívané armádou. Identitu plavidel ani jejich přesné polohy neuvádí.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Oficiální válečné tvrzení může zveličovat účinek a vojenskou povahu cílů. Bez identity a času nelze přiřadit k BETUL 8 nebo předchozím rumunským zásahům.",
+      "links": [
+        {
+          "evidence_id": "claim-20261117-russian-mod-maritime-energy-strike",
+          "role": "first_report",
+          "line_id": "line-case-claimed-20261117-russian-maritime-strike",
+          "claim": "Ruské MO 17. listopadu tvrdí noční údery na ukrajinskou energetiku, dopravu, přístavy a lodě údajně využívané armádou. Identitu plavidel ani jejich přesné polohy neuvádí.",
+          "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-17T07:07:25+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-18T07:07:25+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
     }
   ],
-  "review_note": "Kontrola nově připojených zdrojových linií dne 16. listopadu. Staré anotace a historie evidence zachovány."
+  "review_note": "Kontrola nově připojených zdrojových linií dne 17. listopadu. Staré anotace a historie evidence zachovány."
 }

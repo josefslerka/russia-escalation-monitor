@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-16T08:00:33+01:00",
+  "reviewed_at": "2026-11-17T07:07:25+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -3505,6 +3505,74 @@
       ],
       "title": "Ruské MO tvrdí další noční zásah nákladní lodi mířící do Čornomorsku a železniční infrastruktury. Neuvádí identitu lodi ani její přesnou polohu; deklarovaný náklad a účinek nejsou nezávisle ověřeny.",
       "note": "Geografický předmět; nejde o souřadnice ani samostatné potvrzení atribuce."
+    },
+    "evt-20261116-betul8-distress-bulgarian-eez": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "title": "BETUL 8: bulharské ministerstvo potvrzuje nouzi v ekonomické zóně",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "reported-20261116-betul8-crew-drone-testimony": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "title": "BETUL 8: posádka uvádí zásahy námořních dronů; původce nepotvrzen",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "obs-20261117-romania-alert-no-incursion": {
+      "areas": [
+        "ROU",
+        "UKR"
+      ],
+      "title": "Rumunské MO: noční poplach bez zjištěného narušení vzdušného prostoru",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "evt-20261116-ukrenergo-actual-emergency-restrictions": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo: skutečná nouzová omezení 16. listopadu",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "payment-20261116-eu-defence-loan-1710m": {
+      "areas": [
+        "EU",
+        "UKR"
+      ],
+      "title": "Ukrajinské MO potvrzuje přijetí 1,71 miliardy eur z EU",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "decision-20261116-eu-facility-nearly-8bn": {
+      "areas": [
+        "EU",
+        "UKR"
+      ],
+      "title": "Rada EU schválila budoucí platbu téměř osmi miliard eur",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "followup-20261115-estonia-border-proposed-start": {
+      "areas": [
+        "EST",
+        "RUS"
+      ],
+      "title": "Estonské MFA: plán uzavřít silniční přechody od 1. prosince",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "followup-20261112-kyivindependent-moscow-raid-limits": {
+      "areas": [
+        "RUS"
+      ],
+      "title": "Moskevská razie: rozhovory rozlišují předvolání od nástupu do války",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "claim-20261117-russian-mod-maritime-energy-strike": {
+      "areas": [
+        "UKR",
+        "BLACK_SEA"
+      ],
+      "title": "Ruské MO tvrdí další zásahy energetiky, přístavů a lodí",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
     }
   },
   "review_scope": [

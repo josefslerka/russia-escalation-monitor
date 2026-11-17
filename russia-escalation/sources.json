@@ -3176,6 +3176,60 @@
       "tier": 1,
       "cadence_days": 7,
       "priority": 2
+    },
+    {
+      "id": "doc-3e7927aace17",
+      "name": "btvnovinite.bg",
+      "url": "https://btvnovinite.bg/bulgaria/morjak-ot-preobarnalija-se-korab-mislja-che-ni-udari-ruski-dron-edva-li-e-ukrainski-zashtoto-nie-idvahme-ot-ukrajna.html",
+      "areas": [
+        "NATO",
+        "BALTICS",
+        "ROU",
+        "BLACK_SEA"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-45eebf6556e1",
+      "name": "siseministeerium.ee",
+      "url": "https://www.siseministeerium.ee/uudised/siseminister-igor-taro-hakkame-ette-valmistama-piiri-sulgemist-venemaaga-detsembri-algusest",
+      "areas": [
+        "NATO",
+        "BALTICS",
+        "ROU",
+        "BLACK_SEA"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-0311749b340f",
+      "name": "kyivindependent.com",
+      "url": "https://kyivindependent.com/moscow-youth-raids-spark-mobilization-fears-as-russia-struggles-to-recruit-soldiers/",
+      "areas": [
+        "RUS"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",
