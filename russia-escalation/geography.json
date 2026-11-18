@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-17T07:07:25+01:00",
+  "reviewed_at": "2026-11-18T07:12:54+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -3572,6 +3572,82 @@
         "BLACK_SEA"
       ],
       "title": "Ruské MO tvrdí další zásahy energetiky, přístavů a lodí",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "evt-20261117-gas-husky-distress": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "title": "GAS HUSKY: potvrzená nouze, příčina neuzavřena",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "evt-20261117-ukrenergo-actual-emergency-restrictions": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo: skutečné nouzové odstávky 17. listopadu",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "claim-20261117-russian-contract-recruitment-plan": {
+      "areas": [
+        "RUS"
+      ],
+      "title": "Ruské MO tvrdí plnění náborového plánu; počet lidí neuvádí",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "claim-20261117-iditelesom-coercive-contract-appeals": {
+      "areas": [
+        "RUS"
+      ],
+      "title": "Idite lesom: nové klientské zprávy o nátlaku na smlouvy",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "commitment-20261117-uk-air-defence-240m": {
+      "areas": [
+        "GBR",
+        "UKR"
+      ],
+      "title": "Británie vyčleňuje 240 milionů liber na protivzdušnou obranu",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "statement-20261117-nato-purl-and-starshield": {
+      "areas": [
+        "NATO",
+        "UKR"
+      ],
+      "title": "NATO: dodávky přes PURL pokračují, obnovení služby nepotvrzeno",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "reported-20261117-france-training-presence": {
+      "areas": [
+        "FRA",
+        "UKR"
+      ],
+      "title": "Francouzský ministr podle Reuters popisuje výcvikovou přítomnost",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "assessment-20261116-wenra-energy-nuclear-safety": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Jaderní regulátoři varují před dopady útoků na ukrajinskou síť",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "claim-20261118-russian-mod-maritime-strike": {
+      "areas": [
+        "UKR",
+        "BLACK_SEA"
+      ],
+      "title": "Ruské MO tvrdí noční zásah nejmenované nákladní lodi",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "reported-20261117-colby-deep-strike-disagreement": {
+      "areas": [
+        "USA",
+        "NATO",
+        "UKR"
+      ],
+      "title": "AP: spor spojenců o hluboké údery",
       "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
     }
   },

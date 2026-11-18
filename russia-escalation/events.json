@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-17T07:07:25+01:00",
+  "reviewed_at": "2026-11-18T07:12:54+01:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -4025,7 +4025,253 @@
       "case_status": "open",
       "next_check_by": "2026-11-18T07:07:25+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-gas-husky-distress-20261117",
+      "title": "GAS HUSKY: potvrzená nouze, příčina neuzavřena",
+      "kind": "incident",
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "summary": "Bulharské ministerstvo dopravy uvádí tísňový signál GAS HUSKY 17. listopadu v 08:02 místního času, asi 50 námořních mil od pobřeží. Záchranná operace nalezla převrácené plavidlo považované za tuto loď. Příčinu sdělení neurčuje.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Nouze není sama potvrzeným dronovým útokem. Liberijská vlajka a širší mořský region neprokazují napadení území NATO; příčina může být útok, nehoda nebo jiný dosud neověřený mechanismus.",
+      "links": [
+        {
+          "evidence_id": "evt-20261117-gas-husky-distress",
+          "role": "first_report",
+          "line_id": "line-case-gas-husky-distress-20261117",
+          "claim": "Bulharské ministerstvo dopravy uvádí tísňový signál GAS HUSKY 17. listopadu v 08:02 místního času, asi 50 námořních mil od pobřeží. Záchranná operace nalezla převrácené plavidlo považované za tuto loď. Příčinu sdělení neurčuje.",
+          "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-18T07:12:54+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-19T07:12:54+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-ukraine-grid-emergency-20261117",
+      "title": "Ukrenergo: skutečné nouzové odstávky 17. listopadu",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Ukrenergo 17. listopadu potvrzuje nouzové odstávky po ruských útocích: ranní zpráva uvádí Poltavskou a Charkovskou oblast, navazující zpráva Kirovohradskou, Poltavskou a Sumskou. Plán hodinových omezení na 18. listopad není další potvrzená nouzová událost.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Pokračování kampaně je již v základním hodnocení. Jeden nový provozní den nepřidává další nezávislý výsledek již splněné smlouvy.",
+      "links": [
+        {
+          "evidence_id": "evt-20261117-ukrenergo-actual-emergency-restrictions",
+          "role": "first_report",
+          "line_id": "line-case-ukraine-grid-emergency-20261117",
+          "claim": "Ukrenergo 17. listopadu potvrzuje nouzové odstávky po ruských útocích: ranní zpráva uvádí Poltavskou a Charkovskou oblast, navazující zpráva Kirovohradskou, Poltavskou a Sumskou. Plán hodinových omezení na 18. listopad není další potvrzená nouzová událost.",
+          "independence_basis": "Dvě aktualizace jednoho provozovatele k jednomu dni, nikoli dvě nezávislé linie."
+        }
+      ],
+      "reviewed_at": "2026-11-18T07:12:54+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-19T07:12:54+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-russian-contract-plan-20261117",
+      "title": "Ruské MO tvrdí plnění náborového plánu; počet lidí neuvádí",
+      "kind": "assessment",
+      "areas": [
+        "RUS"
+      ],
+      "summary": "Ruské MO prostřednictvím Goremykina uvádí plnění ročního plánu smluvního náboru na 89,3 % a u bezpilotních sil na 98,7 %. Absolutní roční kvóta ani ověřený počet nových unikátních rekrutů nejsou uvedeny.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Výkonové sdělení může být náborovou propagací. Přestupy a dobrovolné smlouvy nejsou nová nucená mobilizační vlna; čísla sama nevylučují nátlak.",
+      "links": [
+        {
+          "evidence_id": "claim-20261117-russian-contract-recruitment-plan",
+          "role": "first_report",
+          "line_id": "line-case-russian-contract-plan-20261117",
+          "claim": "Ruské MO prostřednictvím Goremykina uvádí plnění ročního plánu smluvního náboru na 89,3 % a u bezpilotních sil na 98,7 %. Absolutní roční kvóta ani ověřený počet nových unikátních rekrutů nejsou uvedeny.",
+          "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-18T07:12:54+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-19T07:12:54+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-iditelesom-coercive-recruitment-20261117",
+      "title": "Idite lesom: nové klientské zprávy o nátlaku na smlouvy",
+      "kind": "series",
+      "areas": [
+        "RUS"
+      ],
+      "summary": "Idite lesom uvádí od začátku listopadu 12 civilních žádostí o pomoc kvůli nátlaku na smlouvu a v samostatném příspěvku 26 podnětů od branců či rodin. Jednotlivé popisy nejsou nezávisle ověřeny; nelze z nich odvodit národní počet nuceně povolaných.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Výběr žádostí o pomoc nemá populační jmenovatel. Překryv případů mezi kategoriemi a s dřívějšími články není vyloučen; počty se nesčítají. Některé popsané podpisy jsou již z konce října.",
+      "links": [
+        {
+          "evidence_id": "claim-20261117-iditelesom-coercive-contract-appeals",
+          "role": "first_report",
+          "line_id": "line-case-iditelesom-coercive-recruitment-20261117",
+          "claim": "Idite lesom uvádí od začátku listopadu 12 civilních žádostí o pomoc kvůli nátlaku na smlouvu a v samostatném příspěvku 26 podnětů od branců či rodin. Jednotlivé popisy nejsou nezávisle ověřeny; nelze z nich odvodit národní počet nuceně povolaných.",
+          "independence_basis": "Jedna organizace a její klientské podněty; dvě kategorizace nejsou nezávislé potvrzení celkového rozsahu."
+        }
+      ],
+      "reviewed_at": "2026-11-18T07:12:54+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-19T07:12:54+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-uk-air-defence-package-20261117",
+      "title": "Británie vyčleňuje 240 milionů liber na protivzdušnou obranu",
+      "kind": "policy",
+      "areas": [
+        "GBR",
+        "UKR"
+      ],
+      "summary": "Britská vláda vyčlenila 240 milionů liber na více než tisíc střel krátkého dosahu, odpalovací zařízení a radary. Dodávky mají začít v polovině prosince. Částka patří do již oznámeného balíku 500 milionů liber.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Závazek není uskutečněná dodávka a není dodatečný k celým 500 milionům. Pokračování podpory nevylučuje mezery v konkrétních schopnostech.",
+      "links": [
+        {
+          "evidence_id": "commitment-20261117-uk-air-defence-240m",
+          "role": "first_report",
+          "line_id": "line-case-uk-air-defence-package-20261117",
+          "claim": "Britská vláda vyčlenila 240 milionů liber na více než tisíc střel krátkého dosahu, odpalovací zařízení a radary. Dodávky mají začít v polovině prosince. Částka patří do již oznámeného balíku 500 milionů liber.",
+          "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-18T07:12:54+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-19T07:12:54+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-nato-purl-starshield-20261117",
+      "title": "NATO: dodávky přes PURL pokračují, obnovení služby nepotvrzeno",
+      "kind": "policy",
+      "areas": [
+        "NATO",
+        "UKR"
+      ],
+      "summary": "Rutte v UDCG uvádí pokračující dodávky přes PURL; v posledních měsících tudy přišla většina Patriotů a 75 % střel vzduch–vzduch. Na otázku Starshield říká, že se pracuje na obnovení normálu, ne že omezení již skončila.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Je doloženo úřední vyjádření, nikoli nezávislý audit dodávek či aktuální dostupnosti satelitní služby. Podpora může pokračovat současně s konkrétními omezeními.",
+      "links": [
+        {
+          "evidence_id": "statement-20261117-nato-purl-and-starshield",
+          "role": "first_report",
+          "line_id": "line-case-nato-purl-starshield-20261117",
+          "claim": "Rutte v UDCG uvádí pokračující dodávky přes PURL; v posledních měsících tudy přišla většina Patriotů a 75 % střel vzduch–vzduch. Na otázku Starshield říká, že se pracuje na obnovení normálu, ne že omezení již skončila.",
+          "independence_basis": "Dva přepisy vystoupení stejného představitele NATO jsou jedna institucionální linie. Čas dodávek je jen poslední měsíce."
+        }
+      ],
+      "reviewed_at": "2026-11-18T07:12:54+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-19T07:12:54+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-french-training-presence-20261117",
+      "title": "Francouzský ministr podle Reuters popisuje výcvikovou přítomnost",
+      "kind": "policy",
+      "areas": [
+        "FRA",
+        "UKR"
+      ],
+      "summary": "Reuters uvádí Barrotovo vyjádření, že francouzský vojenský personál na Ukrajině zajišťuje výcvik a technickou podporu. Zprávy o přítomnosti se týkají již probíhající činnosti, nikoli doloženého zahájení bojového nasazení 17. listopadu.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Nebojová technická přítomnost vytváří možné riziko kontaktu, ale sama nedokládá rozhodnutí Ruska zaútočit na Francii ani trvalejší přímé boje. Datum ministerského výroku není datem přesunu.",
+      "links": [
+        {
+          "evidence_id": "reported-20261117-france-training-presence",
+          "role": "first_report",
+          "line_id": "line-case-french-training-presence-20261117",
+          "claim": "Reuters uvádí Barrotovo vyjádření, že francouzský vojenský personál na Ukrajině zajišťuje výcvik a technickou podporu. Zprávy o přítomnosti se týkají již probíhající činnosti, nikoli doloženého zahájení bojového nasazení 17. listopadu.",
+          "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-18T07:12:54+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-19T07:12:54+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-wenra-nuclear-safety-20261116",
+      "title": "Jaderní regulátoři varují před dopady útoků na ukrajinskou síť",
+      "kind": "assessment",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Společné prohlášení WENRA, HERCA a NORA z 16. listopadu varuje, že útoky na ukrajinskou energetiku zhoršují jadernou bezpečnost a v krajním scénáři mohou vést k úniku radioaktivních látek. Neoznamuje uskutečněný únik ani zbraňovou detonaci.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Jde o preventivní bezpečnostní hodnocení, nikoli nové měření úniku. Bezpečnost civilních elektráren je jiná otázka než rozhodnutí použít jadernou zbraň.",
+      "links": [
+        {
+          "evidence_id": "assessment-20261116-wenra-energy-nuclear-safety",
+          "role": "first_report",
+          "line_id": "line-case-wenra-nuclear-safety-20261116",
+          "claim": "Společné prohlášení WENRA, HERCA a NORA z 16. listopadu varuje, že útoky na ukrajinskou energetiku zhoršují jadernou bezpečnost a v krajním scénáři mohou vést k úniku radioaktivních látek. Neoznamuje uskutečněný únik ani zbraňovou detonaci.",
+          "independence_basis": "Jedno společné prohlášení a jeho úřední reprodukce; tři organizace nejsou tři nezávislá pozorování nové havárie."
+        }
+      ],
+      "reviewed_at": "2026-11-18T07:12:54+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-19T07:12:54+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-claimed-20261118-russian-maritime-strike",
+      "title": "Ruské MO tvrdí noční zásah nejmenované nákladní lodi",
+      "kind": "incident",
+      "areas": [
+        "UKR",
+        "BLACK_SEA"
+      ],
+      "summary": "Ruské MO tvrdí noční útok na přístav Izmajil a nejmenovanou nákladní loď mířící k ukrajinskému přístavu. Identitu, přesný čas a polohu zásahu veřejný text nedokládá.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Válečné sdělení může zveličovat výsledek i vojenskou povahu nákladu. Bez identity a času jej nelze spojit s GAS HUSKY, BETUL 8 nebo jinými poškozenými loděmi.",
+      "links": [
+        {
+          "evidence_id": "claim-20261118-russian-mod-maritime-strike",
+          "role": "first_report",
+          "line_id": "line-case-claimed-20261118-russian-maritime-strike",
+          "claim": "Ruské MO tvrdí noční útok na přístav Izmajil a nejmenovanou nákladní loď mířící k ukrajinskému přístavu. Identitu, přesný čas a polohu zásahu veřejný text nedokládá.",
+          "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-18T07:12:54+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-19T07:12:54+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-udcg-deep-strike-disagreement-20261117",
+      "title": "AP: spor spojenců o hluboké údery",
+      "kind": "policy",
+      "areas": [
+        "USA",
+        "NATO",
+        "UKR"
+      ],
+      "summary": "AP popisuje Colbyho kritiku hlubokých úderů a nesouhlas britského a německého ministra. Výrok neobsahuje nové doložené zastavení pomoci.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Politický spor může ovlivnit budoucí rozhodnutí, ale argumentaci nelze zaměnit za již zavedené omezení podpory.",
+      "links": [
+        {
+          "evidence_id": "reported-20261117-colby-deep-strike-disagreement",
+          "role": "first_report",
+          "line_id": "line-case-udcg-deep-strike-disagreement-20261117",
+          "claim": "AP popisuje Colbyho kritiku hlubokých úderů a nesouhlas britského a německého ministra. Výrok neobsahuje nové doložené zastavení pomoci.",
+          "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-18T07:12:54+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-19T07:12:54+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
     }
   ],
-  "review_note": "Kontrola nově připojených zdrojových linií dne 17. listopadu. Staré anotace a historie evidence zachovány."
+  "review_note": "Kontrola nově připojených zdrojových linií dne 18. listopadu. Staré anotace a historie evidence zachovány."
 }

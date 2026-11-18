@@ -3230,6 +3230,42 @@
       "tier": 2,
       "cadence_days": 7,
       "priority": 2
+    },
+    {
+      "id": "doc-abdca940257c",
+      "name": "wenra.eu",
+      "url": "https://wenra.eu/sites/default/files/publications/2026-11-16_WENRA_HERCA_NORA_Statement_on_Ukraine.pdf",
+      "areas": [
+        "BLR",
+        "RUS",
+        "UKR"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-cc15cec1f350",
+      "name": "island.is",
+      "url": "https://island.is/en/news/joint-statement-by-wenra-herca-and-nora-on-the-potential-impact-on-nuclear-safety-from-russias-attacks-on-ukrainian-energy-infrastructure",
+      "areas": [
+        "BLR",
+        "RUS",
+        "UKR"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",
