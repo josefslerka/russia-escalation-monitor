@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-18T07:12:54+01:00",
+  "reviewed_at": "2026-11-19T07:32:35+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -3648,6 +3648,67 @@
         "UKR"
       ],
       "title": "AP: spor spojenců o hluboké údery",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "reported-20261118-polish-border-plot-disclosure": {
+      "areas": [
+        "POL"
+      ],
+      "title": "Polsko: nové podrobnosti o dřívějším údajném ruském plánu",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "reported-20261118-gas-husky-four-impacts": {
+      "areas": [
+        "BLACK_SEA"
+      ],
+      "title": "GAS HUSKY: gubernátor uvádí čtyři zásahy, původce neurčuje",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "evt-20261118-ukrenergo-actual-emergency-restrictions": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo potvrzuje nouzové odstávky 18. listopadu",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "proposal-20261118-ec-additional-45bn-2027": {
+      "areas": [
+        "EU",
+        "UKR"
+      ],
+      "title": "Komise navrhuje dalších 45 miliard eur pro rok 2027",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "policy-20261118-ukraine-purl-framework-approval": {
+      "areas": [
+        "UKR",
+        "NATO",
+        "EU"
+      ],
+      "title": "Ukrajina schválila podpis finančního rámce PURL",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "assessment-20261118-nukib-october-incidents": {
+      "areas": [
+        "CZE"
+      ],
+      "title": "NÚKIB: říjnový přehled neprokazuje ruskou listopadovou sabotáž",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "statement-20261119-kremlin-us-russia-meeting": {
+      "areas": [
+        "RUS",
+        "USA"
+      ],
+      "title": "Kreml oznámil jednání Putina a Trumpa, výsledek neuvedl",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "claim-20261119-russian-mod-maritime-strike": {
+      "areas": [
+        "BLACK_SEA",
+        "UKR"
+      ],
+      "title": "Ruské MO tvrdí další noční zásah nejmenované nákladní lodi",
       "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
     }
   },

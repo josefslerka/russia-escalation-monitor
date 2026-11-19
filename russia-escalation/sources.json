@@ -3266,6 +3266,120 @@
       "tier": 2,
       "cadence_days": 7,
       "priority": 2
+    },
+    {
+      "id": "doc-8da460c0c3ab",
+      "name": "rp.pl",
+      "url": "https://www.rp.pl/konflikty-zbrojne/art45490041-prowokacja-z-duza-liczba-ofiar-i-zrzuceniem-winy-na-ukraine-ustalilismy-co-powstrzymalo-rosje",
+      "areas": [
+        "EU",
+        "POL",
+        "EST",
+        "LVA"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-5afe49b9fbaa",
+      "name": "tokfm.pl",
+      "url": "https://www.tokfm.pl/swiat/rosja-szykowala-powtorke-z-prowokacji-gliwickiej-sluzby-posiadaly-konkretne-wskazania",
+      "areas": [
+        "EU",
+        "POL",
+        "EST",
+        "LVA"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-6e3808579bf4",
+      "name": "tvn24.pl",
+      "url": "https://tvn24.pl/polska/szef-mon-wladyslaw-kosiniak-kamysz-sluzby-wiedzialy-o-rosyjskiej-prowokacji-przy-granicy-i-odpowiednio-zareagowaly-st9346225",
+      "areas": [
+        "EU",
+        "POL",
+        "EST",
+        "LVA"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-b7aefc0fce9f",
+      "name": "sargs.lv",
+      "url": "https://www.sargs.lv/lv/tehnika-un-ekipejums/2026-11-18/no-mednieka-lidz-iris-t-18-novembra-parade-demonstre-latvijas",
+      "areas": [
+        "NATO",
+        "BALTICS",
+        "POL",
+        "BLACK_SEA"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-1dafd6c51b3b",
+      "name": "ebs.publicnow.com",
+      "url": "https://ebs.publicnow.com/view/9BF989CC8FBE7550548915BC87340ED997B2BF73",
+      "areas": [
+        "BLR",
+        "RUS",
+        "UKR"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
+    },
+    {
+      "id": "doc-f21675c55234",
+      "name": "enlargement.ec.europa.eu",
+      "url": "https://enlargement.ec.europa.eu/news/commission-proposes-eur45-billion-additional-financial-support-ukraine-2027-2026-11-18_en",
+      "areas": [
+        "EU",
+        "NATO",
+        "UKR",
+        "RUS",
+        "USA"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 2,
+      "cadence_days": 7,
+      "priority": 2
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",

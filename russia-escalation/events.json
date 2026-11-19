@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-18T07:12:54+01:00",
+  "reviewed_at": "2026-11-19T07:32:35+01:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -1460,7 +1460,7 @@
       "areas": [
         "POL"
       ],
-      "summary": "Boroń pro RMF potvrdil posily a zvláštní policejní operaci u ruské hranice. Dopis KGP z 1. listopadu spojuje pokyn z 29. října s východními službami, nikoli sporem o ústavní soud. RMF navíc uvádí zpravodajské varování před možným průnikem ozbrojených skupin; podklad není veřejný. Reportáž LRT z 3. listopadu popisuje výměnu informací mezi Litvou a Polskem a dodatečné sledování německou brigádou v Litvě. Přesný začátek opatření není uveden.",
+      "summary": "Boroń pro RMF potvrdil posily a zvláštní policejní operaci u ruské hranice. Dopis KGP z 1. listopadu spojuje pokyn z 29. října s východními službami, nikoli sporem o ústavní soud. RMF navíc uvádí zpravodajské varování před možným průnikem ozbrojených skupin; podklad není veřejný. Reportáž LRT z 3. listopadu popisuje výměnu informací mezi Litvou a Polskem a dodatečné sledování německou brigádou v Litvě. Přesný začátek opatření není uveden. Rzeczpospolita a rozhovor s autorem popisují údajný ruský plán provokace na přelomu října a listopadu s cílem připsat vinu Ukrajině. Ministr obrany podle PAP potvrzuje, že služby o provokaci věděly a reagovaly. Zveřejněné podklady neurčují přesný čas a stupeň realizované přípravy ani nedokládají uskutečněný ozbrojený útok.",
       "russian_involvement": "unknown",
       "attribution_basis": "Preventivní posílení ochrany může hrozbu odradit. Nepotvrzuje uskutečněný průnik, ruskou útočnou logistiku ani nezávislost zmiňovaných spojeneckých varování.",
       "links": [
@@ -1484,9 +1484,16 @@
           "line_id": "line-lrt-lithuanian-allied-monitoring-20261103",
           "claim": "Reportáž LRT z 3. listopadu popisuje výměnu informací mezi Litvou a Polskem a dodatečné sledování německou brigádou v Litvě. Přesný začátek opatření není uveden.",
           "independence_basis": "Nová informace této zdrojové linie. Přetisk, překlad nebo převzetí výroku se započítá jen jednou."
+        },
+        {
+          "evidence_id": "reported-20261118-polish-border-plot-disclosure",
+          "role": "followup",
+          "line_id": "line-case-obs-20261102-polish-border-security-operation",
+          "claim": "Rzeczpospolita a rozhovor s autorem popisují údajný ruský plán provokace na přelomu října a listopadu s cílem připsat vinu Ukrajině. Ministr obrany podle PAP potvrzuje, že služby o provokaci věděly a reagovaly. Zveřejněné podklady neurčují přesný čas a stupeň realizované přípravy ani nedokládají uskutečněný ozbrojený útok.",
+          "independence_basis": "Rzeczpospolita a rozhovor s jejím autorem jsou jedna novinářská linie. PAP zachycuje veřejnou reakci ministra, nikoli nezávislou zpravodajskou dokumentaci každého detailu plánu. Zahraniční přetisky se nepřipočítávají."
         }
       ],
-      "reviewed_at": "2026-11-06T08:09:13+01:00",
+      "reviewed_at": "2026-11-19T07:32:35+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-04T08:45:22+01:00",
       "next_action": "Ověřit nový stav, rozsah, atribuci a chybějící kritéria; nejistotu neuzavírat jako ne."
@@ -4033,7 +4040,7 @@
       "areas": [
         "BLACK_SEA"
       ],
-      "summary": "Bulharské ministerstvo dopravy uvádí tísňový signál GAS HUSKY 17. listopadu v 08:02 místního času, asi 50 námořních mil od pobřeží. Záchranná operace nalezla převrácené plavidlo považované za tuto loď. Příčinu sdělení neurčuje.",
+      "summary": "Bulharské ministerstvo dopravy uvádí tísňový signál GAS HUSKY 17. listopadu v 08:02 místního času, asi 50 námořních mil od pobřeží. Záchranná operace nalezla převrácené plavidlo považované za tuto loď. Příčinu sdělení neurčuje. Varnský gubernátor v bTV uvádí čtyři zásahy GAS HUSKY a rozporné výpovědi posádky o druhu dronů. Dne 18. listopadu ráno podle něj obě postižené lodě ještě nebyly potopené a znečištění nebylo zjištěno. Původce tím není určen.",
       "russian_involvement": "unknown",
       "attribution_basis": "Nouze není sama potvrzeným dronovým útokem. Liberijská vlajka a širší mořský region neprokazují napadení území NATO; příčina může být útok, nehoda nebo jiný dosud neověřený mechanismus.",
       "links": [
@@ -4043,9 +4050,16 @@
           "line_id": "line-case-gas-husky-distress-20261117",
           "claim": "Bulharské ministerstvo dopravy uvádí tísňový signál GAS HUSKY 17. listopadu v 08:02 místního času, asi 50 námořních mil od pobřeží. Záchranná operace nalezla převrácené plavidlo považované za tuto loď. Příčinu sdělení neurčuje.",
           "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        },
+        {
+          "evidence_id": "reported-20261118-gas-husky-four-impacts",
+          "role": "followup",
+          "line_id": "line-case-gas-husky-distress-20261117",
+          "claim": "Varnský gubernátor v bTV uvádí čtyři zásahy GAS HUSKY a rozporné výpovědi posádky o druhu dronů. Dne 18. listopadu ráno podle něj obě postižené lodě ještě nebyly potopené a znečištění nebylo zjištěno. Původce tím není určen.",
+          "independence_basis": "Jeden gubernátorův rozhovor pro počet zásahů; ministerské potvrzení záchrany je jiná linie pouze pro záchranu, nikoli pro původce útoku."
         }
       ],
-      "reviewed_at": "2026-11-18T07:12:54+01:00",
+      "reviewed_at": "2026-11-19T07:32:35+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-19T07:12:54+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
@@ -4271,7 +4285,156 @@
       "case_status": "open",
       "next_check_by": "2026-11-19T07:12:54+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-ukraine-grid-emergency-20261118",
+      "title": "Ukrenergo potvrzuje nouzové odstávky 18. listopadu",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Ukrenergo potvrzuje skutečné nouzové odstávky v Charkovské a Sumské oblasti kvůli poškození vybavení po ruských útocích. Výpadky hlásí celkem v osmi oblastech, nikoli nouzový režim ve všech osmi. Večerní rozpis na 19. listopad je plán hodinových omezení.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Jde o pokračování již doložené kampaně. Jeden další provozní den není nový výsledek již splněné týdenní energetické otázky.",
+      "links": [
+        {
+          "evidence_id": "evt-20261118-ukrenergo-actual-emergency-restrictions",
+          "role": "first_report",
+          "line_id": "line-case-ukraine-grid-emergency-20261118",
+          "claim": "Ukrenergo potvrzuje skutečné nouzové odstávky v Charkovské a Sumské oblasti kvůli poškození vybavení po ruských útocích. Výpadky hlásí celkem v osmi oblastech, nikoli nouzový režim ve všech osmi. Večerní rozpis na 19. listopad je plán hodinových omezení.",
+          "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-19T07:32:35+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-20T07:32:35+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-ec-additional-support-20261118",
+      "title": "Komise navrhuje dalších 45 miliard eur pro rok 2027",
+      "kind": "policy",
+      "areas": [
+        "EU",
+        "UKR"
+      ],
+      "summary": "Evropská komise navrhla až 45 miliard eur další podpory pro Ukrajinu v roce 2027: 25 miliard na obranu a 20 miliard na rozpočet. Návrh má projednat Parlament a Rada. Nejde o již vyplacené prostředky.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Návrh podporuje pokračování pomoci, ale politické schválení, financování a skutečné dodávky mohou zaostávat za potřebami. Částku nelze vykazovat jako dnešní vojenskou dodávku.",
+      "links": [
+        {
+          "evidence_id": "proposal-20261118-ec-additional-45bn-2027",
+          "role": "first_report",
+          "line_id": "line-case-ec-additional-support-20261118",
+          "claim": "Evropská komise navrhla až 45 miliard eur další podpory pro Ukrajinu v roce 2027: 25 miliard na obranu a 20 miliard na rozpočet. Návrh má projednat Parlament a Rada. Nejde o již vyplacené prostředky.",
+          "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-19T07:32:35+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-20T07:32:35+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-ukraine-purl-framework-20261118",
+      "title": "Ukrajina schválila podpis finančního rámce PURL",
+      "kind": "policy",
+      "areas": [
+        "UKR",
+        "NATO",
+        "EU"
+      ],
+      "summary": "Ukrajinská vláda schválila podpis rámcové dohody s NATO umožňující využít prostředky unijní půjčky k financování amerických balíků přes PURL. NATO má finanční zprostředkovatelskou roli. Samotná dohoda nezakládá povinnost vložit prostředky a neoznamuje provedenou platbu či dodávku.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Administrativní možnost podporuje budoucí realizaci, není však důkazem odstranění současného nedostatku munice nebo urychlení konkrétní dodávky.",
+      "links": [
+        {
+          "evidence_id": "policy-20261118-ukraine-purl-framework-approval",
+          "role": "first_report",
+          "line_id": "line-case-ukraine-purl-framework-20261118",
+          "claim": "Ukrajinská vláda schválila podpis rámcové dohody s NATO umožňující využít prostředky unijní půjčky k financování amerických balíků přes PURL. NATO má finanční zprostředkovatelskou roli. Samotná dohoda nezakládá povinnost vložit prostředky a neoznamuje provedenou platbu či dodávku.",
+          "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-19T07:32:35+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-20T07:32:35+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-nukib-october-2026-review",
+      "title": "NÚKIB: říjnový přehled neprokazuje ruskou listopadovou sabotáž",
+      "kind": "assessment",
+      "areas": [
+        "CZE"
+      ],
+      "summary": "NÚKIB v říjnovém přehledu eviduje 31 incidentů, z toho pět významných a žádný velmi významný podle své klasifikace. Přehled neuvádí ruskou atribuci těchto incidentů ani kvalifikující listopadový fyzický sabotážní čin.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Kategorie významný v evidenci úřadu není sama splněním naší definice významné ruské hybridní operace. Souhrnný měsíc neurčuje čas jednotlivých činů po začátku dlouhého okna ani v listopadových smlouvách.",
+      "links": [
+        {
+          "evidence_id": "assessment-20261118-nukib-october-incidents",
+          "role": "first_report",
+          "line_id": "line-case-nukib-october-2026-review",
+          "claim": "NÚKIB v říjnovém přehledu eviduje 31 incidentů, z toho pět významných a žádný velmi významný podle své klasifikace. Přehled neuvádí ruskou atribuci těchto incidentů ani kvalifikující listopadový fyzický sabotážní čin.",
+          "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-19T07:32:35+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-20T07:32:35+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-us-russia-meeting-20261119",
+      "title": "Kreml oznámil jednání Putina a Trumpa, výsledek neuvedl",
+      "kind": "policy",
+      "areas": [
+        "RUS",
+        "USA"
+      ],
+      "summary": "Kreml oznamuje rozhovor Putina s Trumpem při summitu APEC a uvádí účastníky. Přečtené sdělení neobsahuje dohodnuté podmínky příměří ani ověřený operační krok deeskalace.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Existence diplomatického kanálu umožňuje jednání, ale sama neukazuje změnu vojenských rozhodnutí nebo podpory Ukrajiny.",
+      "links": [
+        {
+          "evidence_id": "statement-20261119-kremlin-us-russia-meeting",
+          "role": "first_report",
+          "line_id": "line-case-us-russia-meeting-20261119",
+          "claim": "Kreml oznamuje rozhovor Putina s Trumpem při summitu APEC a uvádí účastníky. Přečtené sdělení neobsahuje dohodnuté podmínky příměří ani ověřený operační krok deeskalace.",
+          "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-19T07:32:35+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-20T07:32:35+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-claimed-20261119-russian-maritime-strike",
+      "title": "Ruské MO tvrdí další noční zásah nejmenované nákladní lodi",
+      "kind": "incident",
+      "areas": [
+        "BLACK_SEA",
+        "UKR"
+      ],
+      "summary": "Ruské MO tvrdí noční zásah nejmenované nákladní lodi na moři mířící k ukrajinskému přístavu. Identita, přesná poloha, čas a skutečný výsledek nejsou nezávisle doloženy.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Válečné sdělení může zveličovat výsledek i vojenskou povahu nákladu. Bez identity a času je nelze přiřadit k GAS HUSKY, BETUL 8 nebo starším rumunským případům.",
+      "links": [
+        {
+          "evidence_id": "claim-20261119-russian-mod-maritime-strike",
+          "role": "first_report",
+          "line_id": "line-case-claimed-20261119-russian-maritime-strike",
+          "claim": "Ruské MO tvrdí noční zásah nejmenované nákladní lodi na moři mířící k ukrajinskému přístavu. Identita, přesná poloha, čas a skutečný výsledek nejsou nezávisle doloženy.",
+          "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-19T07:32:35+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-20T07:32:35+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
     }
   ],
-  "review_note": "Kontrola nově připojených zdrojových linií dne 18. listopadu. Staré anotace a historie evidence zachovány."
+  "review_note": "Kontrola nově připojených zdrojových linií dne 19. listopadu. Staré anotace a historie evidence zachovány."
 }
