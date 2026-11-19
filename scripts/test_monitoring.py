@@ -70,9 +70,24 @@ class MonitoringChecks(unittest.TestCase):
             check[key] = old
 
     def test_geography_of_source_is_not_automatically_applied_to_new_evidence(self):
+        # Isolate a current, partial source review from live country coverage.
+        # Production checks can legitimately become stale or find Hungarian events.
+        at = m.payload(self.bundle, self.evidence, self.state)['as_of']
+        source = next(s for s in self.bundle['sources.json']['sources'] if s['id'] == 'hun-official')
+        self.bundle['coverage.jsonl'] = [c for c in self.bundle['coverage.jsonl'] if 'HUN' not in c['areas']]
+        self.bundle['coverage.jsonl'].append({
+            'id': 'test-hungarian-source-review', 'checked_at': at,
+            'run_id': 'test-source-geography', 'task_id': 'source:hun-official',
+            'source_ids': [source['id']], 'urls': [source['url']],
+            'areas': ['HUN'], 'domains': ['incidents'],
+            'scope_type': 'document_review', 'outcome': 'partial',
+            'evidence_ids': [],
+        })
+        evidence_before = copy.deepcopy(self.evidence)
         data = m.payload(self.bundle, self.evidence, self.state)
         self.assertEqual(data['countries']['HUN']['status'], 'partial')
-        self.assertFalse(any(e['id'].startswith('backfill-') and 'hun' in e['id'] for e in self.evidence))
+        self.assertIsNone(data['countries']['HUN']['last_success'])
+        self.assertEqual(self.evidence, evidence_before)
 
     def test_bis_overlapping_claims_share_one_source_family(self):
         event = next(e for e in self.bundle['events.json']['events'] if e['id'] == 'case-bis-annual-2025')
