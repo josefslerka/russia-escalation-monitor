@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-19T07:32:35+01:00",
+  "reviewed_at": "2026-11-20T07:44:28+01:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -4434,7 +4434,179 @@
       "case_status": "open",
       "next_check_by": "2026-11-20T07:32:35+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-ukraine-grid-emergency-20261119",
+      "title": "Ukrenergo: nouzová omezení 19. listopadu",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Ukrenergo potvrzuje skutečná nouzová omezení v Sumské, Poltavské, Charkovské a Dněpropetrovské oblasti po ruských útocích. Večerní rozpis na 20. listopad je samostatný plán hodinových odstávek.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Další provozní den pokračující kampaně není dalším výsledkem již splněné energetické smlouvy. Plánované hodinové odstávky nejsou automaticky nouzová omezení.",
+      "links": [
+        {
+          "evidence_id": "evt-20261119-ukrenergo-actual-emergency-restrictions",
+          "role": "first_report",
+          "line_id": "line-case-ukraine-grid-emergency-20261119",
+          "claim": "Ukrenergo potvrzuje skutečná nouzová omezení v Sumské, Poltavské, Charkovské a Dněpropetrovské oblasti po ruských útocích. Večerní rozpis na 20. listopad je samostatný plán hodinových odstávek.",
+          "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-20T07:44:28+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-21T07:44:28+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-ukraine-grid-emergency-20261120",
+      "title": "Ukrenergo: nouzová omezení 20. listopadu ve třech oblastech",
+      "kind": "incident",
+      "areas": [
+        "UKR"
+      ],
+      "summary": "Ukrenergo 20. listopadu potvrzuje již zavedené nouzové odstávky ve Lvovské, Zakarpatské a Ivano-Frankivské oblasti kvůli útoku na energetickou infrastrukturu. Přesný začátek omezení není uveden.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Jde o nezávislé provozní potvrzení omezení, nikoli o nezávislé ověření každého ruského tvrzení o zasaženém cíli. Současný týdenní energetický odhad už má výsledek ano.",
+      "links": [
+        {
+          "evidence_id": "evt-20261120-ukrenergo-actual-emergency-restrictions",
+          "role": "first_report",
+          "line_id": "line-case-ukraine-grid-emergency-20261120",
+          "claim": "Ukrenergo 20. listopadu potvrzuje již zavedené nouzové odstávky ve Lvovské, Zakarpatské a Ivano-Frankivské oblasti kvůli útoku na energetickou infrastrukturu. Přesný začátek omezení není uveden.",
+          "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-20T07:44:28+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-21T07:44:28+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-shenzhen-declaration-20261119",
+      "title": "USA, Rusko a Čína deklarují dialog o jaderném riziku",
+      "kind": "policy",
+      "areas": [
+        "GLOBAL"
+      ],
+      "summary": "Ve společné šenčenské deklaraci vedoucí představitelé USA, Ruska a Číny odmítají jadernou válku a slibují dialog o snižování jaderných rizik a nešíření. Text neobsahuje příměří na Ukrajině, ověřitelné limity arzenálů ani změnu pohotovosti.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Diplomatický kanál je protiváhou bezprostřední jaderné eskalace, avšak deklarace může zůstat symbolická. Jedna společná deklarace není trojí nezávislé potvrzení chování.",
+      "links": [
+        {
+          "evidence_id": "statement-20261119-shenzhen-nuclear-dialogue",
+          "role": "first_report",
+          "line_id": "line-case-shenzhen-declaration-20261119",
+          "claim": "Ve společné šenčenské deklaraci vedoucí představitelé USA, Ruska a Číny odmítají jadernou válku a slibují dialog o snižování jaderných rizik a nešíření. Text neobsahuje příměří na Ukrajině, ověřitelné limity arzenálů ani změnu pohotovosti.",
+          "independence_basis": "Jeden společný dokument. Čínská publikace, ruský záznam a agenturní přetisky nejsou tři nezávislé důkazy snížení pohotovosti."
+        }
+      ],
+      "reviewed_at": "2026-11-20T07:44:28+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-21T07:44:28+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-putin-retaliation-statement-20261119",
+      "title": "Putin odmítá dílčí příměří a hrozí odvetou",
+      "kind": "policy",
+      "areas": [
+        "RUS",
+        "UKR",
+        "BLACK_SEA"
+      ],
+      "summary": "Putin na tiskové konferenci po jednání v Číně odmítl jednat o dílčím klidu na moři či v energetice po útocích na Krymský most a slíbil další odpověď. Přihlásil se obecně k ruským odvetným námořním úderům, ale neztotožnil konkrétní civilní lodě ani jejich polohy.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Odmítnutí dílčí dohody může být vyjednávací pozice; není důkazem konce všech jednání. Obecné přihlášení k námořním úderům samo neřeší atribuci GAS HUSKY či BETUL 8 ani záměr testovat NATO.",
+      "links": [
+        {
+          "evidence_id": "statement-20261119-putin-rejects-limited-ceasefire",
+          "role": "first_report",
+          "line_id": "line-case-putin-retaliation-statement-20261119",
+          "claim": "Putin na tiskové konferenci po jednání v Číně odmítl jednat o dílčím klidu na moři či v energetice po útocích na Krymský most a slíbil další odpověď. Přihlásil se obecně k ruským odvetným námořním úderům, ale neztotožnil konkrétní civilní lodě ani jejich polohy.",
+          "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-20T07:44:28+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-21T07:44:28+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-uk-berlin-support-20261119",
+      "title": "Británie ohlašuje další podporu a zahájené dodávky LMM",
+      "kind": "policy",
+      "areas": [
+        "GBR",
+        "UKR"
+      ],
+      "summary": "Britská vláda uvádí nový balík za 260 milionů liber zahrnující přes 1 000 dálkových dronů a oznamuje, že dodávky dříve přislíbených střel LMM už začaly. Berlínský projev potvrzuje závazek podpory. Celý nový balík není doložen jako dodaný.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Nový příslib a začátek dílčích dodávek jsou protiváhou úplného ústupu, ale chybějí počty skutečně dodaných střel a jejich poměr k potřebám. Nepřičítat celý balík k realizovaným dodávkám.",
+      "links": [
+        {
+          "evidence_id": "policy-20261119-uk-berlin-support-and-lmm-deliveries",
+          "role": "first_report",
+          "line_id": "line-case-uk-berlin-support-20261119",
+          "claim": "Britská vláda uvádí nový balík za 260 milionů liber zahrnující přes 1 000 dálkových dronů a oznamuje, že dodávky dříve přislíbených střel LMM už začaly. Berlínský projev potvrzuje závazek podpory. Celý nový balík není doložen jako dodaný.",
+          "independence_basis": "Jedna britská vládní linie. Projev z 19. listopadu potvrzuje závazek, ne nezávisle dokončení dodávek."
+        }
+      ],
+      "reviewed_at": "2026-11-20T07:44:28+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-21T07:44:28+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-belarus-courts-contingency-20261119",
+      "title": "Lukašenko mluví o přípravě soudů pro případ války",
+      "kind": "assessment",
+      "areas": [
+        "BLR"
+      ],
+      "summary": "Oficiální zápis jednání se soudci uvádí Lukašenkův požadavek, aby systém fungoval i za války, a obecné testování válečných postupů. Současně relativizuje potřebu zvláštních zásahů do soudní soustavy. Zápis neoznamuje bojové nasazení běloruských jednotek na Ukrajině.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Obecná krizová kontinuita státu a domácí politická rétorika vysvětlují výrok bez rozhodnutí vstoupit do války. Chybí odpovídající doložená bojová operace a nezávislá operační konvergence.",
+      "links": [
+        {
+          "evidence_id": "statement-20261119-belarus-courts-contingency",
+          "role": "first_report",
+          "line_id": "line-case-belarus-courts-contingency-20261119",
+          "claim": "Oficiální zápis jednání se soudci uvádí Lukašenkův požadavek, aby systém fungoval i za války, a obecné testování válečných postupů. Současně relativizuje potřebu zvláštních zásahů do soudní soustavy. Zápis neoznamuje bojové nasazení běloruských jednotek na Ukrajině.",
+          "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-20T07:44:28+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-21T07:44:28+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-claimed-20261120-russian-infrastructure-maritime-strike",
+      "title": "Ruské MO tvrdí noční údery na energetiku a lodě",
+      "kind": "incident",
+      "areas": [
+        "UKR",
+        "BLACK_SEA"
+      ],
+      "summary": "Ruské MO uvádí masivní noční úder na ukrajinskou energetickou, dopravní a přístavní infrastrukturu i nejmenovaná námořní plavidla. Provozovatel sítě samostatně potvrzuje nouzová omezení, nikoli každou položku ruského seznamu zásahů.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Válečné sdělení může zveličovat výsledky a vojenskou povahu cílů; lodě neidentifikuje. Bez samostatného ověření nelze tvrzení přiřadit k dřívějším lodním případům nebo k území NATO.",
+      "links": [
+        {
+          "evidence_id": "claim-20261120-russian-mod-infrastructure-maritime-strikes",
+          "role": "first_report",
+          "line_id": "line-case-claimed-20261120-russian-infrastructure-maritime-strike",
+          "claim": "Ruské MO uvádí masivní noční úder na ukrajinskou energetickou, dopravní a přístavní infrastrukturu i nejmenovaná námořní plavidla. Provozovatel sítě samostatně potvrzuje nouzová omezení, nikoli každou položku ruského seznamu zásahů.",
+          "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        }
+      ],
+      "reviewed_at": "2026-11-20T07:44:28+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-21T07:44:28+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
     }
   ],
-  "review_note": "Kontrola nově připojených zdrojových linií dne 19. listopadu. Staré anotace a historie evidence zachovány."
+  "review_note": "Kontrola nově připojených zdrojových linií dne 20. listopadu. Staré anotace a historie evidence zachovány."
 }

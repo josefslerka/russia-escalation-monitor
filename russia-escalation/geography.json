@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-19T07:32:35+01:00",
+  "reviewed_at": "2026-11-20T07:44:28+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -3709,6 +3709,59 @@
         "UKR"
       ],
       "title": "Ruské MO tvrdí další noční zásah nejmenované nákladní lodi",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "evt-20261119-ukrenergo-actual-emergency-restrictions": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo: nouzová omezení 19. listopadu",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "evt-20261120-ukrenergo-actual-emergency-restrictions": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo: nouzová omezení 20. listopadu ve třech oblastech",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "statement-20261119-shenzhen-nuclear-dialogue": {
+      "areas": [
+        "GLOBAL"
+      ],
+      "title": "USA, Rusko a Čína deklarují dialog o jaderném riziku",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "statement-20261119-putin-rejects-limited-ceasefire": {
+      "areas": [
+        "RUS",
+        "UKR",
+        "BLACK_SEA"
+      ],
+      "title": "Putin odmítá dílčí příměří a hrozí odvetou",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "policy-20261119-uk-berlin-support-and-lmm-deliveries": {
+      "areas": [
+        "GBR",
+        "UKR"
+      ],
+      "title": "Británie ohlašuje další podporu a zahájené dodávky LMM",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "statement-20261119-belarus-courts-contingency": {
+      "areas": [
+        "BLR"
+      ],
+      "title": "Lukašenko mluví o přípravě soudů pro případ války",
+      "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "claim-20261120-russian-mod-infrastructure-maritime-strikes": {
+      "areas": [
+        "UKR",
+        "BLACK_SEA"
+      ],
+      "title": "Ruské MO tvrdí noční údery na energetiku a lodě",
       "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
     }
   },
