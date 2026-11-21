@@ -60,6 +60,11 @@ class MorningWorkflowTests(unittest.TestCase):
         for module in [monitor, forecast, publish_update]:
             stack.enter_context(patch.object(module, 'datetime', TestClock))
 
+        # Seed the completed prior exactly as publication does, only in this
+        # disposable copy. Before live publication its changed p may not yet be
+        # registered; the next synthetic morning must still inherit that p.
+        monitor.register_forecasts()
+
         # Exercise actual fetch/commit/push against a disposable local bare repo.
         # Even if the test patch fails, origin has no public/network destination.
         self.remote = Path(self.folder.name) / 'local-TEST-origin.git'

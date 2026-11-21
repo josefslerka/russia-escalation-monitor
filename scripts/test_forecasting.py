@@ -414,7 +414,25 @@ class FixedForecastTests(unittest.TestCase):
                 text=original.with_suffix(suffix).read_text().replace(previous_time,at.isoformat())
                 target=data/'reports'/next_name.removesuffix('.md')
                 target.with_suffix(suffix).write_text('<!-- TEST ONLY — not a new forecast -->\n'+text)
-            def save(): (data/'state.json').write_text(json.dumps(self.state))
+            def save():
+                (data/'state.json').write_text(json.dumps(self.state))
+                # A live prior can change while this historical TEST fixture
+                # retains its own p. Keep both disposable dashboards consistent
+                # with that synthetic revision; never weaken the real validator.
+                active = [h for h in self.state['hypotheses'].values()
+                          if h.get('status', 'active') == 'active']
+                for suffix in ('.md', '.en.md'):
+                    report = (data/'reports'/next_name.removesuffix('.md')).with_suffix(suffix)
+                    lines = report.read_text().splitlines()
+                    table = next(i for i, line in enumerate(lines) if line.startswith('|'))
+                    for i, h in enumerate(active, table + 2):
+                        cells = lines[i].split('|')
+                        self.assertEqual(len(cells), 9)
+                        cells[2:7] = [h['horizon'], f"{h['prior']*100:g} %",
+                                      f"{h['p']*100:g} %", f"{h['delta_pp']:g}",
+                                      f"{h['range'][0]*100:g}–{h['range'][1]*100:g} %"]
+                        lines[i] = '|'.join(cells)
+                    report.write_text('\n'.join(lines) + '\n')
             save()
             with patch.object(build_site,'DATA',data):
                 with self.assertRaisesRegex(ValueError,'Legacy forecast window rolls'):build_site.validate()
@@ -424,6 +442,7 @@ class FixedForecastTests(unittest.TestCase):
                 for key, review in f.methods().long_review(self.bundle, self.evidence, self.state, at).items():
                     h = self.state['hypotheses'][key]
                     h['prior'] = review['template']['prior_p']
+                    h['delta_pp'] = round(100 * (h['p'] - h['prior']), 8)
                     h['coherence_note'] = 'TEST ONLY distinct war and larger-attack definitions'
                     h['revision_decomposition'] = {**review['template'],
                         'delta_evidence_pp': 100 * (h['p'] - h['prior']),
