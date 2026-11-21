@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-20T07:44:28+01:00",
+  "reviewed_at": "2026-11-21T07:16:50+01:00",
   "method": "editorial_review_of_saved_evidence",
   "basis": [
     "summary",
@@ -3763,6 +3763,43 @@
       ],
       "title": "Ruské MO tvrdí noční údery na energetiku a lodě",
       "note": "Geografický předmět události; umístění nepotvrzuje ruské původcovství."
+    },
+    "evt-20261120-poland-russian-objects-official": {
+      "areas": [
+        "POL"
+      ],
+      "title": "Polsko potvrzuje ruské objekty; úmysl zůstává předběžným závěrem",
+      "note": "Geografický předmět události; bez odvozování ruské atribuce pouze z místa."
+    },
+    "reported-20261120-poland-local-roof-damage": {
+      "areas": [
+        "POL"
+      ],
+      "title": "Místní úřady hlásí menší poškození střechy; mechanismus není uzavřen",
+      "note": "Geografický předmět události; bez odvozování ruské atribuce pouze z místa."
+    },
+    "policy-20261120-estonia-road-border-suspension-adopted": {
+      "areas": [
+        "EST",
+        "RUS"
+      ],
+      "title": "Estonsko rozhodlo o silniční uzávěře od 1. prosince",
+      "note": "Geografický předmět události; bez odvozování ruské atribuce pouze z místa."
+    },
+    "followup-20261120-ukrenergo-additional-emergency-areas": {
+      "areas": [
+        "UKR"
+      ],
+      "title": "Ukrenergo doplňuje stav odstávek 20. listopadu",
+      "note": "Geografický předmět události; bez odvozování ruské atribuce pouze z místa."
+    },
+    "reported-20261120-conscription-exit-restrictions-belarus": {
+      "areas": [
+        "RUS",
+        "BLR"
+      ],
+      "title": "Idite lesom uvádí dva případy omezení výjezdu přes Bělorusko",
+      "note": "Geografický předmět události; bez odvozování ruské atribuce pouze z místa."
     }
   },
   "review_scope": [

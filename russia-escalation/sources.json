@@ -3416,6 +3416,60 @@
       "tier": 2,
       "cadence_days": 7,
       "priority": 2
+    },
+    {
+      "id": "pol-prosecutor",
+      "name": "gov.pl/web/po-lublin/",
+      "url": "https://www.gov.pl/web/po-lublin/komunikat-o-wszczeciu-sledztwa-po-upadku-niezidentyfikowanego-obiektu-w-powiecie-bilgorajskim",
+      "areas": [
+        "NATO",
+        "POL",
+        "BALTICS"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 1,
+      "cadence_days": 1,
+      "priority": 1
+    },
+    {
+      "id": "pol-radio-lublin",
+      "name": "radio.lublin.pl/",
+      "url": "https://radio.lublin.pl/2026/11/lubelski-wydzial-bezpieczenstwa-i-zarzadzania-kryzysowego-obiekt-ktory-spadl-obok-chmielek-caly-czas-plonie-aktualizacja/",
+      "areas": [
+        "NATO",
+        "POL",
+        "BALTICS"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 2,
+      "cadence_days": 1,
+      "priority": 1
+    },
+    {
+      "id": "pol-dziennik-wschodni",
+      "name": "dziennikwschodni.pl/",
+      "url": "https://www.dziennikwschodni.pl/artykul/394212,wybuch-rakiety-w-nowym-lipowcu-uszkodzony-dach-domu-sledczy-zbadaja-lej",
+      "areas": [
+        "NATO",
+        "POL",
+        "BALTICS"
+      ],
+      "domains": [
+        "official_assessment",
+        "incidents",
+        "policy_effect"
+      ],
+      "tier": 2,
+      "cadence_days": 1,
+      "priority": 1
     }
   ],
   "scope_note": "Registr uvádí plánované zdroje. Uvedení URL neznamená ověřenou dostupnost ani provedenou rešerši; skutečné kontroly jsou v coverage.jsonl.",

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "reviewed_at": "2026-11-20T07:44:28+01:00",
+  "reviewed_at": "2026-11-21T07:16:50+01:00",
   "scope": "Ruční revize uvedených případů. Zbylá evidence zatím nemá kanonické přiřazení; shoda URL vytváří jen kandidáta.",
   "events": [
     {
@@ -3756,7 +3756,7 @@
         "EST",
         "RUS"
       ],
-      "summary": "Estonský premiér nařídil připravit kroky k případnému uzavření hranice s Ruskem. Uvádí, že výroba a dodávky Threod nebyly narušeny a podpora Ukrajiny bude pokračovat. Nově dohledané estonské MFA a vnitro z 15. listopadu zpřesňují plán uzavření silničních přechodů s Ruskem od 1. prosince. Vnitro uvádí, že vláda bude teprve projednávat délku opatření. Nepotvrzují již uskutečněné uzavření.",
+      "summary": "Estonský premiér nařídil připravit kroky k případnému uzavření hranice s Ruskem. Uvádí, že výroba a dodávky Threod nebyly narušeny a podpora Ukrajiny bude pokračovat. Nově dohledané estonské MFA a vnitro z 15. listopadu zpřesňují plán uzavření silničních přechodů s Ruskem od 1. prosince. Vnitro uvádí, že vláda bude teprve projednávat délku opatření. Nepotvrzují již uskutečněné uzavření. Estonská vláda 20. listopadu přijala rozhodnutí přerušit silniční hraniční přechody s Ruskem od 1. prosince a posoudit omezení po šesti měsících. Nákladní železniční doprava má pokračovat podle platných omezení. Jde o posun dřívější přípravy k rozhodnutí, nikoli o dnešní realizaci či novou sabotáž.",
       "russian_involvement": "unknown",
       "attribution_basis": "Primární text mluví o přípravě možnosti uzavření; mediální formulace hotového uzavření od 1. prosince je silnější. Bez dalšího rozhodnutí neoznačujeme hranici za uzavřenou.",
       "links": [
@@ -3773,9 +3773,16 @@
           "line_id": "line-case-estonia-border-policy-20261115",
           "claim": "Nově dohledané estonské MFA a vnitro z 15. listopadu zpřesňují plán uzavření silničních přechodů s Ruskem od 1. prosince. Vnitro uvádí, že vláda bude teprve projednávat délku opatření. Nepotvrzují již uskutečněné uzavření.",
           "independence_basis": "Zpřesnění stejné estonské vládní politiky, nikoli nová nezávislá atribuce útoku. Datum publikace 15. listopadu se nepřepisuje datem dnešního dohledání."
+        },
+        {
+          "evidence_id": "policy-20261120-estonia-road-border-suspension-adopted",
+          "role": "followup",
+          "line_id": "line-estonian-government-border-policy",
+          "claim": "Estonská vláda 20. listopadu přijala rozhodnutí přerušit silniční hraniční přechody s Ruskem od 1. prosince a posoudit omezení po šesti měsících. Nákladní železniční doprava má pokračovat podle platných omezení. Jde o posun dřívější přípravy k rozhodnutí, nikoli o dnešní realizaci či novou sabotáž.",
+          "independence_basis": "Nové rozhodnutí v již sledovaném případu. Vládní a ministerské přetisky nejsou nové nezávislé doklady předchozích útoků."
         }
       ],
-      "reviewed_at": "2026-11-17T07:07:25+01:00",
+      "reviewed_at": "2026-11-21T07:16:50+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-17T07:47:29+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
@@ -4466,7 +4473,7 @@
       "areas": [
         "UKR"
       ],
-      "summary": "Ukrenergo 20. listopadu potvrzuje již zavedené nouzové odstávky ve Lvovské, Zakarpatské a Ivano-Frankivské oblasti kvůli útoku na energetickou infrastrukturu. Přesný začátek omezení není uveden.",
+      "summary": "Ukrenergo 20. listopadu potvrzuje již zavedené nouzové odstávky ve Lvovské, Zakarpatské a Ivano-Frankivské oblasti kvůli útoku na energetickou infrastrukturu. Přesný začátek omezení není uveden. Ukrenergo během 20. listopadu nově potvrzuje nouzové odstávky v Poltavské a Charkovské oblasti a vysvětluje, že opakované zásahy a bezpečnostní hrozby komplikují opravy. Další výpadky nejsou automaticky nouzovými opatřeními ve všech uvedených oblastech. Večerní rozpis na 21. listopad zůstává plánem hodinových omezení.",
       "russian_involvement": "russian_caused",
       "attribution_basis": "Jde o nezávislé provozní potvrzení omezení, nikoli o nezávislé ověření každého ruského tvrzení o zasaženém cíli. Současný týdenní energetický odhad už má výsledek ano.",
       "links": [
@@ -4476,9 +4483,16 @@
           "line_id": "line-case-ukraine-grid-emergency-20261120",
           "claim": "Ukrenergo 20. listopadu potvrzuje již zavedené nouzové odstávky ve Lvovské, Zakarpatské a Ivano-Frankivské oblasti kvůli útoku na energetickou infrastrukturu. Přesný začátek omezení není uveden.",
           "independence_basis": "Jedna linie pro uvedené tvrzení. Přetisky ani více uvedených oblastí nezvyšují počet nezávislých potvrzení."
+        },
+        {
+          "evidence_id": "followup-20261120-ukrenergo-additional-emergency-areas",
+          "role": "followup",
+          "line_id": "line-case-ukraine-grid-emergency-20261120",
+          "claim": "Ukrenergo během 20. listopadu nově potvrzuje nouzové odstávky v Poltavské a Charkovské oblasti a vysvětluje, že opakované zásahy a bezpečnostní hrozby komplikují opravy. Další výpadky nejsou automaticky nouzovými opatřeními ve všech uvedených oblastech. Večerní rozpis na 21. listopad zůstává plánem hodinových omezení.",
+          "independence_basis": "Provozní aktualizace stejného dne a stejné instituce jako již uložený evt-20261120-ukrenergo-actual-emergency-restrictions; nepřičítá nezávislou zdrojovou linii."
         }
       ],
-      "reviewed_at": "2026-11-20T07:44:28+01:00",
+      "reviewed_at": "2026-11-21T07:16:50+01:00",
       "case_status": "open",
       "next_check_by": "2026-11-21T07:44:28+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
@@ -4606,7 +4620,63 @@
       "case_status": "open",
       "next_check_by": "2026-11-21T07:44:28+01:00",
       "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-polish-missile-incursions-20261120",
+      "title": "Polsko potvrzuje ruské objekty; úmysl zůstává předběžným závěrem",
+      "kind": "incident",
+      "areas": [
+        "POL"
+      ],
+      "summary": "Polská vláda a MO potvrzují tři ruské objekty na polském území během útoku na Ukrajinu; jeden identifikují jako Ch-101, další identifikace jsou předběžné. Tusk považuje úmyslnou provokaci za pravděpodobnou, ale vládní text výslovně ponechává vazbu na spojenecké cvičení jako hypotézu. Oznámeny jsou konzultace o posílení ochrany, nikoli již uskutečněné nové posily. Radio Lublin a Dziennik Wschodni zachycují místní briefing o malém poškození střechy po dopadu objektu. Vojvoda a prokurátor popisují probíhající vyšetřování; vliv tlakové vlny či úlomků není uzavřen. To je v napětí s obecným vládním tvrzením o žádných škodách; žádný zdroj nehlásí zraněné.",
+      "russian_involvement": "russian_caused",
+      "attribution_basis": "Možným vysvětlením je nezáměrný přesah rozsáhlého útoku na Ukrajinu, technická chyba nebo rušení. Tři objekty a časování zvyšují podezření z úmyslu, veřejný důkaz jejich naprogramovaného cíle však chybí.",
+      "links": [
+        {
+          "evidence_id": "evt-20261120-poland-russian-objects-official",
+          "role": "first_report",
+          "line_id": "line-polish-operational-command-20261120",
+          "claim": "Polská vláda a MO potvrzují tři ruské objekty na polském území během útoku na Ukrajinu; jeden identifikují jako Ch-101, další identifikace jsou předběžné. Tusk považuje úmyslnou provokaci za pravděpodobnou, ale vládní text výslovně ponechává vazbu na spojenecké cvičení jako hypotézu. Oznámeny jsou konzultace o posílení ochrany, nikoli již uskutečněné nové posily.",
+          "independence_basis": "Premiér, MO a BBN vycházejí z téhož polského operačního hlášení. Reuters přebírá výroky a přidává vlastní svědky pouze k dopadu. Nejde o několik nezávislých potvrzení ruského úmyslu."
+        },
+        {
+          "evidence_id": "reported-20261120-poland-local-roof-damage",
+          "role": "followup",
+          "line_id": "line-lublin-local-investigation-20261120",
+          "claim": "Radio Lublin a Dziennik Wschodni zachycují místní briefing o malém poškození střechy po dopadu objektu. Vojvoda a prokurátor popisují probíhající vyšetřování; vliv tlakové vlny či úlomků není uzavřen. To je v napětí s obecným vládním tvrzením o žádných škodách; žádný zdroj nehlásí zraněné.",
+          "independence_basis": "Dvě média zachycují týž místní briefing, tedy jednu linii k drobné škodě. Jde o jiné místní zjištění než centrální operační hlášení; nepřidává nezávislou ruskou atribuci ani potvrzení úmyslu."
+        }
+      ],
+      "reviewed_at": "2026-11-21T07:16:50+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-22T07:16:50+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
+    },
+    {
+      "id": "case-conscription-exit-restrictions-20261120",
+      "title": "Idite lesom uvádí dva případy omezení výjezdu přes Bělorusko",
+      "kind": "incident",
+      "areas": [
+        "RUS",
+        "BLR"
+      ],
+      "summary": "Idite lesom zveřejnilo dvě klientská svědectví o odepření odletu z Běloruska kvůli ruskému odvodnímu omezení. Jeden příběh zahrnuje listopadový zákaz po odlišném říjnovém výpisu registru, druhý oznámení z 7. listopadu. Veřejně nejde o nezávisle ověřený celostátní soubor ani nový mobilizační příkaz.",
+      "russian_involvement": "unknown",
+      "attribution_basis": "Lze vysvětlit vymáháním běžných odvodních omezení. Dva případy nenahrazují nezávislá regionální data, rozhodnutí o mobilizaci ani skutečné povolání 100 000 osob.",
+      "links": [
+        {
+          "evidence_id": "reported-20261120-conscription-exit-restrictions-belarus",
+          "role": "first_report",
+          "line_id": "line-iditelesom-client-accounts-20261120",
+          "claim": "Idite lesom zveřejnilo dvě klientská svědectví o odepření odletu z Běloruska kvůli ruskému odvodnímu omezení. Jeden příběh zahrnuje listopadový zákaz po odlišném říjnovém výpisu registru, druhý oznámení z 7. listopadu. Veřejně nejde o nezávisle ověřený celostátní soubor ani nový mobilizační příkaz.",
+          "independence_basis": "Jedna poradenská organizace a klientské výpovědi; počet klientů není počet nezávislých ověřujících institucí."
+        }
+      ],
+      "reviewed_at": "2026-11-21T07:16:50+01:00",
+      "case_status": "open",
+      "next_check_by": "2026-11-22T07:16:50+01:00",
+      "next_action": "Ověřit nové rozhodnutí, realizaci nebo atribuci a čas ve vztahu k původní otázce."
     }
   ],
-  "review_note": "Kontrola nově připojených zdrojových linií dne 20. listopadu. Staré anotace a historie evidence zachovány."
+  "review_note": "Kontrola nově připojených zdrojových linií dne 21. listopadu. Staré anotace a historie evidence zachovány."
 }
